@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/chitosan",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/chitosan"
+  },
+  "name": {
+    "en": "Chitosan",
+    "zh-Hant": "甲殼素",
+    "zh-Hans": "甲壳素"
+  },
+  "westernTraditionalUsage": {
+    "en": "Chitosan is made commercially from chitin, the structural element in the exoskeleton of crustaceans, and is used as a so-called fat magnet. It has the capability of attracting fat from the digestive system and expelling it from the body so that users can lose weight without eating less.\n",
+    "zh-Hant": "",
+    "zh-Hans": ""
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/nutrients-en/chitosan/"
+}

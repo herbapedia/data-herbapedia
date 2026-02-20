@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/glucosamine-sulfate",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/glucosamine-sulfate"
+  },
+  "name": {
+    "en": "Glucosamine Sulfate",
+    "zh-Hant": "硫酸葡萄糖胺",
+    "zh-Hans": "硫酸葡萄糖胺"
+  },
+  "westernTraditionalUsage": {
+    "en": "Glucosamine stimulates the production of glycosaminoglycans, the key structural component of cartilage, the protective cushion around our joints. It also helps cartilage to incorporate sulphur, an element that is necessary for its production and repair, making it useful for people suffering wear and tear to their joints either through exercise or old age. Additionally it can also be used to treat and delay the progression of osteoarthritis.\n",
+    "zh-Hant": "",
+    "zh-Hans": ""
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/nutrients-en/glucosamine-sulfate/"
+}

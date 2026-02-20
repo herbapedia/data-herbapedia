@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/lecithin",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/lecithin"
+  },
+  "name": {
+    "en": "Lecithin",
+    "zh-Hant": "卵磷脂",
+    "zh-Hans": "卵磷脂"
+  },
+  "westernTraditionalUsage": {
+    "en": "Lecithin is a kind of phospholipid needed by every cell in the body, and is a key building block of cell membranes. Its fat emulsifying properties support efficient blood flow in the circulation by emulsifying big oil droplets into smaller ones. It is produced daily by the liver, provided there is adequate nutrition in the diet. Lecithin protects cells from oxidation and largely comprises the protective sheaths surrounding the brain.\n",
+    "zh-Hant": "",
+    "zh-Hans": ""
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/nutrients-en/lecithin/"
+}

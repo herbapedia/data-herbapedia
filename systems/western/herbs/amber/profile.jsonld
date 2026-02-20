@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/amber",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/amber"
+  },
+  "name": {
+    "en": "Amber",
+    "zh-Hant": "琥珀",
+    "zh-Hans": "琥珀"
+  },
+  "westernTraditionalUsage": {
+    "en": "Amber is fossilised resin or tree sap. Most of the world's amber dates from between 30 to 90 million years ago. Succinum, the type used by Vita Green, specifically relates to Baltic amber, which contains a chemical called succinic acid, which was traditionally used to treat rheumatic aches and pains. Baltic amber is often exposed by waves from rocks on the sea bed and cast up on beaches. It is prized as a gemstone for its beauty, while medicinally, amber arrests tremors and palpitations and calms the spirit, invigorates the blood and dissipates stasis, making it useful in cases of amenorrhea. It also reduces swelling and promotes healing.\n",
+    "zh-Hant": "琥珀是樹脂或樹汁液演變的化石。世界上大部分琥珀已有三千至九千萬年歷史。維特健靈選用波羅的海琥珀 - Succinum, 其化學物 succinic acid，傳統用作紓緩關節疼痛。琥珀除了擁有如寶石的外表，其藥效價值亦早被肯定。琥珀能安神定驚、使精神平靜，促進血液循環，有助改善月經不調、減淡紅印和促進痊癒。\n",
+    "zh-Hans": "琥珀是树脂或树汁液演变的化石。世界上大部分琥珀已有叁千至九千万年历史。维特健灵选用波罗的海琥珀 - Succinum, 其化学物 succinic acid，传统用作纾缓关节疼痛。琥珀除了拥有如宝石的外表，其药效价值亦早被肯定。琥珀能安神定惊、使精神平静，促进血液循环，有助改善月经不调、减淡红印和促进痊癒。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/westherbs-en/amber/"
+}

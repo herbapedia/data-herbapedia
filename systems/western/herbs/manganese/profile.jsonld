@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/manganese",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/manganese"
+  },
+  "name": {
+    "en": "Manganese",
+    "zh-Hant": "錳",
+    "zh-Hans": "锰"
+  },
+  "westernTraditionalUsage": {
+    "en": "Manganese is an essential trace nutrient that is used by the body for several functions. These include the formation of bone and the growth of other connective tissues; blood clotting; insulin action; cholesterol synthesis; and activating enzymes in the metabolism of carbohydrates, fats, proteins and nucleic acids.\n",
+    "zh-Hant": "錳是身體必須的微量元素。錳能維繫骨骼及結締組織的發展，協助及維持正常血液凝固，製造膽固醇，以及啟動在碳水化合物、脂肪、蛋白質和核酸的新陳代謝中需要的酵素。\n",
+    "zh-Hans": "锰是身体必须的微量元素。锰能维繫骨骼及结缔组织的发展，协助及维持正常血液凝固，製造胆固醇，以及启动在碳水化合物、脂肪、蛋白质和核酸的新陈代谢中需要的酵素。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/minerals-en/manganese/"
+}

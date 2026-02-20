@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/copper",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/copper"
+  },
+  "name": {
+    "en": "Copper",
+    "zh-Hant": "銅",
+    "zh-Hans": "铜"
+  },
+  "westernTraditionalUsage": {
+    "en": "Copper is necessary for facilitating the absorption of iron from the intestinal tract and releasing it from storage in the liver and the reticuloendothelial system. It is also essential for the formation of haemoglobin; for the production of a key enzyme that prevents hardening of the arteries; and for the production of phospholipids, which help protect nerve cells. Copper also helps regulate the function of lysyl oxidase, an enzyme needed for the creation of collagen in the bones, connective tissues, and skin, and the production of the skin pigment melanin, which is responsible for our hair and eye colour. A lack of copper in the diet may thus cause premature greying of the hair.\n",
+    "zh-Hant": "銅能促進腸道吸收鐵質，幫助釋放儲藏於肝臟和網狀內皮系統內的鐵質。銅也是構成紅血球中血紅蛋白的重要成份。\n",
+    "zh-Hans": "铜能促进肠道吸收铁质，帮助释放储藏於肝脏和网状内皮系统内的铁质。铜也是构成红血球中血红蛋白的重要成份。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/minerals-en/copper/"
+}

@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/lysine",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/lysine"
+  },
+  "name": {
+    "en": "Lysine",
+    "zh-Hant": "賴氨酸",
+    "zh-Hans": "赖氨酸"
+  },
+  "westernTraditionalUsage": {
+    "en": "Lysine is an essential amino acid that cannot be synthesized by the human body, so must be sourced from the diet. It is necessary for optimal growth in childhood, particularly in brain development, as it is a building block for protein production. L-Lysine also aids in calcium absorption and production of hormones, enzymes and antibodies.\n",
+    "zh-Hant": "賴氨酸是人體不能自行製造的必需氨基酸， 故身體必須由膳食中吸取。賴氨酸對於小孩的健康成長，尤其是大腦發育十分重要。\n",
+    "zh-Hans": "赖氨酸是人体不能自行製造的必需氨基酸， 故身体必须由膳食中吸取。赖氨酸对於小孩的健康成长，尤其是大脑发育十分重要。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/nutrients-en/lysine/"
+}

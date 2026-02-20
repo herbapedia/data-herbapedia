@@ -2,8 +2,7 @@
   "@context": "../../schema/context/western.jsonld",
   "@id": "western/grape-seed",
   "@type": [
-    "western:Herb",
-    "schema:DietarySupplement"
+    "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
     "@id": "plant/grape-seed"
@@ -13,29 +12,11 @@
     "zh-Hant": "葡萄核",
     "zh-Hans": "葡萄核"
   },
-  "scientificName": "Vitis vinifera",
-  "hasAction": [
-    {
-      "@id": "western/action/antioxidant"
-    }
-  ],
-  "hasOrganAffinity": [
-    {
-      "@id": "organ/skin"
-    }
-  ],
-  "westernHistory": null,
   "westernTraditionalUsage": {
     "en": "Grape seed extract is a rich source of antioxidants and bioflavanoids and helps to protect cells from damage caused by oxidation and free radicals. Its antioxidant properties can also prevent blood vessels from deteriorating as the body ages and grape seed is thus thought to be an effective supplement to promote healthy circulation. It is also considered helpful in improving and preserving the elasticity of skin by stabilising collagen and elastin.\n",
     "zh-Hant": "葡萄核蘊含豐富抗氧化劑和生物類黃酮，有助保護細胞免受由氧化和游離基造成之損害。葡萄核能促進健康循環，穩定膠原蛋白和彈性蛋白，改善和保護皮膚的彈性。\n",
     "zh-Hans": "葡萄核蕴含丰富抗氧化剂和生物类黄酮，有助保护细胞免受由氧化和游离基造成之损害。葡萄核能促进健康循环，稳定胶原蛋白和弹性蛋白，改善和保护皮肤的弹性。\n"
   },
   "source": "vitaherbapedia.com",
-  "created": "2026-02-19T15:32:30.552Z",
-  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "description": {
-    "en": "Grape seed extract is prepared from the seed of grapes.\n",
-    "zh-Hant": "葡萄核提取自葡萄的種子。\n",
-    "zh-Hans": "葡萄核提取自葡萄的种子。\n"
-  }
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/westherbs-en/grape-seed/"
 }

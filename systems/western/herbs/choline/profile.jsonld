@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/choline",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/choline"
+  },
+  "name": {
+    "en": "Choline",
+    "zh-Hant": "膽鹼",
+    "zh-Hans": "胆碱"
+  },
+  "westernTraditionalUsage": {
+    "en": "Choline, in the form choline bitartrate, is important for liver health and the prevention of cholesterol build-up. As part of the neurotransmitter acetyl choline, it helps to transmit nerve impulses. It also serves as a methyl donor and is essential for the phospholipid phosphatidylcholine, which forms cell membranes.\n",
+    "zh-Hant": "膽鹼對於維持肝臟健康和防止脂肪積聚肝臟異常重要。膽鹼是製造神經傳遞物質乙醯膽素的必要成份，它有助於傳送神經脈衝，可在各種不同的生化反應中提供甲基，而膽鹼亦是構成磷脂質 phosphatidylcholine 的必要成份，而phosphatidylcholine則有助建造細胞膜。\n",
+    "zh-Hans": "胆碱对於维持肝脏健康和防止脂肪积聚肝脏异常重要。胆碱是製造神经传递物质乙醯胆素的必要成份，它有助於传送神经脉衝，可在各种不同的生化反应中提供甲基，而胆碱亦是构成磷脂质 phosphatidylcholine 的必要成份，而phosphatidylcholine则有助建造细胞膜。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/nutrients-en/choline/"
+}

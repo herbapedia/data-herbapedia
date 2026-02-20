@@ -2,8 +2,7 @@
   "@context": "../../schema/context/western.jsonld",
   "@id": "western/sage-oil",
   "@type": [
-    "western:Herb",
-    "schema:DietarySupplement"
+    "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
     "@id": "plant/sage-oil"
@@ -13,35 +12,11 @@
     "zh-Hant": "鼠尾草精油",
     "zh-Hans": "鼠尾草精油"
   },
-  "scientificName": "Salvia officinalis (LINN.)",
-  "hasAction": [
-    {
-      "@id": "western/action/tonic"
-    }
-  ],
-  "hasOrganAffinity": [
-    {
-      "@id": "organ/liver"
-    },
-    {
-      "@id": "organ/kidney"
-    },
-    {
-      "@id": "organ/urinary"
-    }
-  ],
-  "westernHistory": null,
   "westernTraditionalUsage": {
     "en": "Sage oil has multiple uses. It is effective for stimulating the digestion and encouraging appetite; for treating the pain of rheumatism; as a tonic for the liver, kidneys and urinary tract; and due its hormonal regulatory effect, helps regulate menstrual problems and treat female sterility. Sage oil also stimulates the lymphatic system and thereby boosts glandular functions. As a topical remedy it can treat conditions including dermatitis, atonic wounds, sores, ulcers, as well as insect bites and help to reduce large pores. Emotionally, it helps people deal with grief and depression and quickens the senses.\n",
     "zh-Hant": "鼠尾草精油有多種用途。它有助於加強消化能力和改善胃口， 並舒緩關節痛楚。 它更能補助肝臟、腎臟和泌尿道；它能調節荷爾蒙分泌，故能幫助調節月經和治理不育；它能刺激淋巴系統，提昇腺功能。此外，鼠尾草精油亦局部應用於皮膚炎、傷口、疼痛發炎瘡，潰瘍腐爛處，以及一般蟲咬和幫助收縮脹大的毛孔。在情緒治療上，鼠尾草精油有助於改善悲傷和沮喪的情緒，並加快回復知覺。\n",
     "zh-Hans": "鼠尾草精油有多种用途。它有助于加强消化能力和改善胃口， 并舒缓关节痛楚。 它更能补助肝脏、肾脏和泌尿道；它能调节荷尔蒙分泌，故能帮助调节月经和治理不育；它能刺激淋巴系统，提升腺功能。此外，鼠尾草精油亦局部应用于皮肤炎、伤口、疼痛发炎疮，溃疡腐烂处，以及一般虫咬和帮助收缩胀大的毛孔。在情绪治疗上，鼠尾草精油有助于改善悲伤和沮丧的情绪，并加快回复知觉。\n"
   },
   "source": "vitaherbapedia.com",
-  "created": "2026-02-19T15:32:30.540Z",
-  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "description": {
-    "en": "Sage oil is extracted from the dried leaves from the culinary herb sage, Salvia officinalis, by steam distillation.\n",
-    "zh-Hant": "鼠尾草精油以蒸氣蒸餾的方式提煉自鼠尾草屬植物的枯葉\n",
-    "zh-Hans": "鼠尾草精油以蒸气蒸馏的方式提炼自鼠尾草属植物的枯叶\n"
-  }
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/westherbs-en/sage-oil/"
 }

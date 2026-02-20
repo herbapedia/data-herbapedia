@@ -2,8 +2,7 @@
   "@context": "../../schema/context/western.jsonld",
   "@id": "western/tea-tree-oil",
   "@type": [
-    "western:Herb",
-    "schema:DietarySupplement"
+    "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
     "@id": "plant/tea-tree-oil"
@@ -13,20 +12,6 @@
     "zh-Hant": "茶樹油",
     "zh-Hans": "茶树油"
   },
-  "scientificName": "Melaleuca alternifolia",
-  "hasAction": [
-    {
-      "@id": "western/action/expectorant"
-    }
-  ],
-  "hasOrganAffinity": [
-    {
-      "@id": "organ/immune"
-    },
-    {
-      "@id": "organ/skin"
-    }
-  ],
   "westernHistory": {
     "en": "Tea Tree oil was originally used by indigenous eastern Australians, who inhaled the vapour from crushed Melaleuca leaves to treat coughs and colds, as well applying them topically to wounds. The oil was not extracted for commercial use until the 1920s.\n",
     "zh-Hant": "茶樹油最初由澳洲東部人使用，他們會把Melaleuca 葉子壓碎， 吸取當中氣味來舒緩咳嗽和感冒，並應用於傷口。1920年後，茶樹油才作商業用途。\n",
@@ -38,11 +23,5 @@
     "zh-Hans": "茶树油被认定为最重要的天然防腐剂之一，并可用来纾缓被刺螫、烧伤、创伤和皮肤感染。茶树油具强烈的抗菌、发汗剂和袪痰剂作用。它能增强免疫系统，减少组织胺劝诱的皮肤发炎和大部份由细菌和真菌引起的细菌和由真菌引起的感染。茶树油亦广泛应用于外涂，包括口疮、痘痘、脚湿气、疣、蚊叮虫咬和疼痛发炎等。\n"
   },
   "source": "vitaherbapedia.com",
-  "created": "2026-02-19T15:32:30.548Z",
-  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "description": {
-    "en": "Tea tree oil is obtained by steam distillation from the leaves of Melaleuca alternifolia.\n",
-    "zh-Hant": "茶樹油經由蒸氣蒸餾原產於澳洲東北海岸的Melaleuca 的葉子取得。\n",
-    "zh-Hans": "茶树油经由蒸气蒸馏原产于澳洲东北海岸的Melaleuca 的叶子取得。\n"
-  }
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/westherbs-en/tea-tree-oil/"
 }

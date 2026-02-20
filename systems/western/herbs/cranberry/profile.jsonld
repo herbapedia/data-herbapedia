@@ -2,8 +2,7 @@
   "@context": "../../schema/context/western.jsonld",
   "@id": "western/cranberry",
   "@type": [
-    "western:Herb",
-    "schema:DietarySupplement"
+    "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
     "@id": "plant/cranberry"
@@ -13,26 +12,6 @@
     "zh-Hant": "紅莓",
     "zh-Hans": "红莓"
   },
-  "scientificName": "Vaccinium Macrocarpon",
-  "hasAction": [
-    {
-      "@id": "western/action/astringent"
-    },
-    {
-      "@id": "western/action/tonic"
-    }
-  ],
-  "hasOrganAffinity": [
-    {
-      "@id": "organ/liver"
-    },
-    {
-      "@id": "organ/kidney"
-    },
-    {
-      "@id": "organ/urinary"
-    }
-  ],
   "westernHistory": {
     "en": "Indigenous Americans used cranberries in poultices for treating wounds and blood poisoning. American sailors and colonists used cranberries to prevent scurvy, similar to the use of citrus by the British. They also used cranberries and their leaves for various conditions including blood disorders, stomach ailments, liver problems, fever, swollen glands, and mumps.\n",
     "zh-Hant": "土生土長的美國人以糊狀的紅莓來治理傷口和血液中毒，美國水手和殖民以紅莓預防壞血病。他們也利用紅莓和其葉子於不同的治理範疇上如：血液紊亂、胃部疾病、肝臟問題、發燒、腺腫脹和腮腺炎。\n",
@@ -44,11 +23,5 @@
     "zh-Hans": "红莓可以减少尿管道感染的机会，因此减少服用抗生素疗程，长期服用抗生素可能会令身体产生抗药性，甚至更严重的副作用，例如念珠阴道问题。透过阻碍有害微生物依附尿管道，红莓可防止有害微生物于尿管道繁殖。\n"
   },
   "source": "vitaherbapedia.com",
-  "created": "2026-02-19T15:32:30.529Z",
-  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "description": {
-    "en": "Cranberry is a native fruit of North America. Nowadays, almost 98% of the world's supply is cultivated in natural and artificial bogs in the northern United States and Canada. Cranberry extract is prepared from its ripe fruit.\n",
-    "zh-Hant": "紅莓土生於北美洲。當今世界上近乎98%的供應皆來自美國北部及加拿大的天然和人造沼澤中培育。紅莓精華是成熟紅莓的撮取物。\n",
-    "zh-Hans": "红莓土生于北美洲。当今世界上近乎98%的供应皆来自美国北部及加拿大的天然和人造沼泽中培育。红莓精华是成熟红莓的撮取物。\n"
-  }
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/westherbs-en/cranberry/"
 }

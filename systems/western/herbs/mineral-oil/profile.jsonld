@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/mineral-oil",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/mineral-oil"
+  },
+  "name": {
+    "en": "Mineral oil",
+    "zh-Hant": "精華油",
+    "zh-Hans": "精华油"
+  },
+  "westernTraditionalUsage": {
+    "en": "Mineral oil or liquid petrolatum is a colourless by-product from the distillation of petroleum with excellent emollient effects. It has a wide range of uses, being the main ingredient in baby oil, petroleum jelly and many lotions and cosmetics, especially lipstick. It is also an effective make-up remover.\n",
+    "zh-Hant": "精華油是嬰兒油、凡士林、其他潤膚霜和化妝品的主要成份， 特別是用作唇膏。精華油更能有效卸妝。\n",
+    "zh-Hans": "精华油是婴儿油、凡士林、其他润肤霜和化妆品的主要成份， 特别是用作唇膏。精华油更能有效卸妆。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/nutrients-en/mineral-oil/"
+}

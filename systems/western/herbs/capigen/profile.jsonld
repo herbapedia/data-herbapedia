@@ -1,0 +1,27 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/capigen",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/capigen"
+  },
+  "name": {
+    "en": "Capigen®",
+    "zh-Hant": "西方專利成份 Capigen®",
+    "zh-Hans": "西方专利成份 Capigen®"
+  },
+  "westernHistory": {
+    "en": "A key ingredient in hair regenerating treatments including Vita Hair Tonic.\n",
+    "zh-Hant": "",
+    "zh-Hans": ""
+  },
+  "westernTraditionalUsage": {
+    "en": "A new hair care substance from SEDERMA, Capigen® is based on an association of three active ingredients intended to slow hair loss and soothe the scalp while stimulating and regulating excessive sebaceous secretion, a frequent factor in hair loss. The three ingredients work synergistically to improve scalp and hair health. They include homotaurine, which increases blood flow to the scalp, supplies it with vital trace metal ions and regulates oily secretions; a bacterial filtrate; and a substance known as sulfomucopolysaccharide extract, which plays an essential role in hair follicle hygiene.\n",
+    "zh-Hant": "Capigen®是由三種活性成份而研製成的活髮專利成份, 有助減少過量脫髮, 刺激頭髮生長及調控頭油分泌, 也對脂溢性脫髮有幫助。嶄新活性成份 hormotaurine有助減輕頭皮不適, 對調控頭皮油脂分泌有幫助; 第二種成份是微生物過濾液, 有助促進新陳代謝, 改善血液循環;第三種成份是覆合多糖精華, 有助促進髮囊健康, 尤其對過量頭油分泌有幫助。結合上述三種活性成份, Capigen®有效調節過多油脂分泌, 幫助減少脫髮及刺激髮囊生長。\n",
+    "zh-Hans": "Capigen®是由叁种活性成份而研製成的活髮专利成份, 有助减少过量脱髮, 刺激头髮生长及调控头油分泌, 也对脂溢性脱髮有帮助。崭新活性成份 hormotaurine有助减轻头皮不适, 对调控头皮油脂分泌有帮助; 第二种成份是微生物过滤液, 有助促进新陈代谢, 改善血液循环;第叁种成份是覆合多糖精华, 有助促进髮囊健康, 尤其对过量头油分泌有帮助。结合上述叁种活性成份, Capigen®有效调节过多油脂分泌, 帮助减少脱髮及刺激髮囊生长。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/nutrients-en/capigen/"
+}

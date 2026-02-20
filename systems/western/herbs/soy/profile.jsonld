@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/soy",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/soy"
+  },
+  "name": {
+    "en": "Soy",
+    "zh-Hant": "大豆",
+    "zh-Hans": "大豆"
+  },
+  "westernTraditionalUsage": {
+    "en": "Soy is a rich source of isoflavones, which are phytoestrogens - plant-derived compounds that possess oestrogen-like biological properties. Isoflavones may reduce the risk of hormone-dependent cancers, such as breast and prostate cancer, as well as other cancers. Studies show they may also protect against heart disease. The mild oestrogen activity of soy isoflavones may also ease menopause symptoms for some women, and may help regulate hormone levels in premenopausal women. Soy isoflavones could also play a beneficial role in preventing osteoporosis and autoimmune conditions.\n",
+    "zh-Hant": "大豆中豐富的異黃酮素是一種由植物提取的非類固醇化合物，是具有與雌激素功能相似的植物雌激素，異黃酮素可減少患上與體內分泌有關的頑疾，如乳及前列腺頑疾等。根據研究顯示，異黃酮素有助避免心臟問題。大豆異黃酮素的輕微雌激素活動可紓緩女仕更年期不適及有助更年期女士平衡體內分泌。另外，大豆異黃酮素更可預防骨質脆弱及免疫力問題。\n",
+    "zh-Hans": "大豆中丰富的异黄酮素是一种由植物提取的非类固醇化合物，是具有与雌激素功能相似的植物雌激素，异黄酮素可减少患上与体内分泌有关的顽疾，如乳及前列腺顽疾等。根据研究显示，异黄酮素有助避免心脏问题。大豆异黄酮素的轻微雌激素活动可纾缓女仕更年期不适及有助更年期女士平衡体内分泌。另外，大豆异黄酮素更可预防骨质脆弱及免疫力问题。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/westherbs-en/soy/"
+}

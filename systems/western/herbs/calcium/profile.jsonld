@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/calcium",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/calcium"
+  },
+  "name": {
+    "en": "Calcium",
+    "zh-Hant": "鈣",
+    "zh-Hans": "钙"
+  },
+  "westernTraditionalUsage": {
+    "en": "The primary function of calcium is to build the bones and teeth and to maintain bone density. Other functions include enabling blood clotting; muscle contraction and relaxation, especially the heartbeat; helping nerves to transmit electrical pulses; maintaining cell wall permeability; enzyme activation; and secretion of a number of hormones and hormone-releasing factors. Without an adequate intake of calcium, the bones become brittle and thin, causing a condition called osteoporosis. It is particularly important that growing children get adequate calcium in their diet while their bones are being formed, and it is an important mineral too for women who have gone through the menopause, and who are therefore most at risk from developing brittle bones due to changes in their hormones.\n",
+    "zh-Hant": "鈣是建造骨頭和牙齒、保持骨質密度的重要營養素。鈣的其他功能包括促進血液凝固、肌肉 (尤其是心臟) 的收縮和放鬆，管理和傳遞腦訊息、維持細胞之間的滲透性、酵素的活化，以及控制荷爾蒙分泌等。\n",
+    "zh-Hans": "钙是建造骨头和牙齿、保持骨质密度的重要营养素。钙的其他功能包括促进血液凝固、肌肉 (尤其是心脏) 的收缩和放松，管理和传递脑讯息、维持细胞之间的渗透性、酵素的活化，以及控制荷尔蒙分泌等。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/minerals-en/calcium/"
+}

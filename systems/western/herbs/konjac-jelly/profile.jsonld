@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/konjac-jelly",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/konjac-jelly"
+  },
+  "name": {
+    "en": "Konjac jelly",
+    "zh-Hant": "蒟蒻",
+    "zh-Hans": "蒟蒻"
+  },
+  "westernTraditionalUsage": {
+    "en": "Konjac comes from a type of yam that is native to tropical Asian regions from Indonesia to Japan. The large, starchy corm of the plant can be used to make flour and jelly. Since konjac has almost no calories but is very high in fibre, it can be used to decrease the appetite and promote a slim figure.\n",
+    "zh-Hant": "蒟蒻是常見的食品，具化痰散結、行瘀消腫的功效。\n",
+    "zh-Hans": "蒟蒻是常见的食品，具化痰散结、行瘀消肿的功效。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/westherbs-en/konjac-jelly/"
+}

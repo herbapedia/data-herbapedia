@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/balm-mint-oil",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/balm-mint-oil"
+  },
+  "name": {
+    "en": "Balm mint oil",
+    "zh-Hant": "薄荷腦精油",
+    "zh-Hans": "薄荷脑精油"
+  },
+  "westernTraditionalUsage": {
+    "en": "Balm Mint has a sedative action, thus calming the nerves and helping to relieve depression as well as easing cases of hysteria and panic. It lowers high blood pressure and is a tonic to the heart while regulating the menstrual cycle, thus easing period pains. It is also antibacterial and antifungal, making it a useful topical application for fighting fungal infections. As a mosquito repellent, the crushed leaves of the plant may be rubbed straight on to the skin.\n",
+    "zh-Hant": "薄荷腦具鎮靜劑的功效， 因此為鎮靜神經和幫助減輕沮喪的情緒，包括激動的情緒和恐慌等。薄荷腦亦有助減低高血壓， 並有助調節月經的週期， 因此減輕周期性的疼痛。薄荷腦同時能對抗真菌引起的疾病。\n",
+    "zh-Hans": "薄荷脑具镇静剂的功效， 因此为镇静神经和帮助减轻沮丧的情绪，包括激动的情绪和恐慌等。薄荷脑亦有助减低高血压， 并有助调节月经的周期， 因此减轻周期性的疼痛。薄荷脑同时能对抗真菌引起的疾病。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/westherbs-en/balm-mint-oil/"
+}

@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/mpc",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/mpc"
+  },
+  "name": {
+    "en": "MPC",
+    "zh-Hant": "乳絡肽合物",
+    "zh-Hans": "乳络肽合物"
+  },
+  "westernTraditionalUsage": {
+    "en": "Milk Peptide Complex enhances recovery of damaged skin, formation of the dermal ground substance (the skin's middle layer), blocks ageing factors, and plays a role in cell re-energising and the firming of tissue. The result is smoother, firmer skin with reduced wrinkles.\n",
+    "zh-Hant": "",
+    "zh-Hans": ""
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/nutrients-en/mpc/"
+}

@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/chondroitin-sulfate",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/chondroitin-sulfate"
+  },
+  "name": {
+    "en": "Chondroitin Sulfate",
+    "zh-Hant": "軟骨素",
+    "zh-Hans": "软骨素"
+  },
+  "westernTraditionalUsage": {
+    "en": "Chondroitin helps maintain the elasticity and plasticity of the joint cartilage, and when taken in combination with glucosamine, can provide significant improvement in the relief of osteoarthritis. Chondroitin sulfate, as part of the extracellular matrix of cartilage, functions by drawing water into the tissues, creating a high osmotic pressure that causes swelling and expansion of the matrix. This expansion reduces pain caused by mild to moderate knee osteoarthritis, and enhances mobility. Furthermore, since oxygen and nutrients carried by blood are dissolved in the water, chondroitin plays a role in distributing these components in the tissues.\n",
+    "zh-Hant": "軟骨素有助保持關節間軟骨的彈性和柔軟性，當軟骨素配合葡萄糖胺一同使用，能夠大大紓緩骨性關節問題。軟骨素能把水份引入軟骨細胞內並重點鎖緊，當水份足夠，軟骨細胞便會更加飽滿和厚實，從而強化軟骨避震功能，紓緩輕至中度膝蓋的骨性關節問題，讓關節活動自如。而軟骨素把水份引入軟骨細胞同時亦把氧氣和營養送進軟骨細胞，讓軟骨細胞獲得足夠養份。\n",
+    "zh-Hans": "软骨素有助保持关节间软骨的弹性和柔软性，当软骨素配合葡萄糖胺一同使用，能够大大纾缓骨性关节问题。软骨素能把水份引入软骨细胞内并重点锁紧，当水份足够，软骨细胞便会更加饱满和厚实，从而强化软骨避震功能，纾缓轻至中度膝盖的骨性关节问题，让关节活动自如。而软骨素把水份引入软骨细胞同时亦把氧气和营养送进软骨细胞，让软骨细胞获得足够养份。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/nutrients-en/chondroitin-sulfate/"
+}

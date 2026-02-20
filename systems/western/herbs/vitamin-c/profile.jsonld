@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/vitamin-c",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/vitamin-c"
+  },
+  "name": {
+    "en": "Vitamin C",
+    "zh-Hant": "維他命 C",
+    "zh-Hans": "维他命 C"
+  },
+  "westernTraditionalUsage": {
+    "en": "Vitamin C is essential for the formation and maintenance of collagen, the substance that binds body cells together; for the metabolism of the amino acids tyrosine and tryptophan; the absorption and movement of iron; the metabolism of fats and lipids; cholesterol control; sound teeth and bones; strong capillary walls and healthy blood vessels; and the metabolism of folic acid. It is also a powerful antioxidant, neutralising free radicals and helping ward of symptoms associated with oxidation, from wrinkles to illnesses including cancer. Ascorbyl palmitate is a fat-soluble Vitamin C ester that exerts antioxidant activity characteristic of vitamin C on lipids throughout the body, and is the most widely used fat-soluble derivative of vitamin C in skin care. It has been found to protect cell membranes of human red blood cells and alpha-tocopherol (Vitamin E, a known antioxidant) from oxidative damage by neutralising free radicals, resulting in reducing the depth of wrinkles. Unlike vitamin C, it can be stored by the body.\n",
+    "zh-Hant": "維他命C是組成及維護膠原質的必然要素，它將大量的細胞捆綁在一起，並促進氨基酸中的酪胺酸和色氨酸進行新陳代謝。維他命C對鐵的吸收和活動、脂肪和脂質的新陳代謝、控制血脂、維持牙齒和骨骼健康、毛細管壁及血管健康，以及葉酸的新陳代謝均有幫助。維他命C更是一種強大的抗氧化劑，能中和游離基，保護身體免受與氧化有關的徵狀，包括從皺紋到頑疾等疾病。\n",
+    "zh-Hans": "维他命C是组成及维护胶原质的必然要素，它将大量的细胞捆绑在一起，并促进氨基酸中的酪胺酸和色氨酸进行新陈代谢。维他命C对铁的吸收和活动、脂肪和脂质的新陈代谢、控制血脂、维持牙齿和骨骼健康、毛细管壁及血管健康，以及叶酸的新陈代谢均有帮助。维他命C更是一种强大的抗氧化剂，能中和游离基，保护身体免受与氧化有关的徵状，包括从皱纹到顽疾等疾病。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/vitamins-en/vitamin-c/"
+}

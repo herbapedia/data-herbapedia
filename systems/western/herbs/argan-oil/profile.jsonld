@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/argan-oil",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/argan-oil"
+  },
+  "name": {
+    "en": "Argan oil",
+    "zh-Hant": "堅果油",
+    "zh-Hans": "坚果油"
+  },
+  "westernTraditionalUsage": {
+    "en": "With its unique profile of fatty acids, tocopherols (Vitamin E), squalene, sterols and phenolic compounds, Argan oil has traditionally been used as a treatment for skin diseases. It it also has valuable cancer chemopreventive effects and plays a beneficial role in the prevention of cardiovascular problems.\n",
+    "zh-Hant": "堅果油獨有脂肪酸、維生素 E（維生素 E)、角鯊烯、固醇和苯酚化合物等，傳統上用作治療皮膚疾病。堅果油同時有助改善頑疾，並於防治心血管問題上擔當著正面的角色。\n",
+    "zh-Hans": "坚果油独有脂肪酸、维生素 E（维生素 E)、角鲨烯、固醇和苯酚化合物等，传统上用作治疗皮肤疾病。坚果油同时有助改善顽疾，并於防治心血管问题上担当著正面的角色。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/westherbs-en/argan-oil/"
+}

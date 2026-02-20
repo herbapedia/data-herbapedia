@@ -2,8 +2,7 @@
   "@context": "../../schema/context/western.jsonld",
   "@id": "western/dandelion",
   "@type": [
-    "western:Herb",
-    "schema:DietarySupplement"
+    "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
     "@id": "plant/dandelion"
@@ -13,17 +12,6 @@
     "zh-Hant": "蒲公英",
     "zh-Hans": "蒲公英"
   },
-  "scientificName": "Taraxacum Officinale",
-  "hasAction": [
-    {
-      "@id": "western/action/tonic"
-    }
-  ],
-  "hasOrganAffinity": [
-    {
-      "@id": "organ/liver"
-    }
-  ],
   "westernHistory": {
     "en": "Dandelion leaves and roots have been used for centuries to treat liver, gall bladder, kidney, and joint problems. In some countries, dandelion is considered a blood purifier and is used for ailments such as eczema and cancer. Dandelion has also been used to treat poor digestion, water retention and diseases of the liver such as hepatitis. The first mention of the dandelion as a medicine was in the works of Arabian physicians of the tenth and eleventh centuries. Thirteenth-century Welsh medicine also lauds its properties.\n",
     "zh-Hant": "蒲公英的葉子和根部多年來用於治療肝臟、膽囊、腎和關節等病患。在一些國家，蒲公英被視為能淨化血液和治療某些疾病，如濕疹和癌症。蒲公英也能改善消化系統、水腫和肝臟疾病，如肝炎。蒲公英的藥用價值歷史悠長，最早可追溯到10和11世紀阿拉伯內科醫生的記載，至13世紀時其價值已受到肯定。\n",
@@ -35,11 +23,5 @@
     "zh-Hans": "蒲公英叶子中苦的物质和根部能刺激消化和有轻度通便的效果。它们也能增加胆汁生产，促进胆汁流到肝脏，故对因酗酒或饮食欠佳而导致肝脏功能缓慢者有所帮助。当胆汁流到肝脏的份量有所增加，便可促进身体脂肪（包括胆固醇）的新陈代谢。\n"
   },
   "source": "vitaherbapedia.com",
-  "created": "2026-02-19T15:32:30.531Z",
-  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "description": {
-    "en": "The dried roots of the plant are most widely used in medicine.\n",
-    "zh-Hant": "製乾後的植物根部最常應用於藥物之中。\n",
-    "zh-Hans": "製乾後的植物根部最常应用於药物之中。\n"
-  }
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/westherbs-en/dandelion/"
 }

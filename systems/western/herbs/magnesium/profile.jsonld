@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/magnesium",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/magnesium"
+  },
+  "name": {
+    "en": "Magnesium",
+    "zh-Hant": "鎂",
+    "zh-Hans": "镁"
+  },
+  "westernTraditionalUsage": {
+    "en": "A key constituent of bones and teeth. Magnesium is also an essential element for cellular metabolism, often as an activator of enzymes - including certain peptidases in protein digestion. It also relaxes nerve impulses, functioning antagonistically to calcium, which is stimulatory, and relaxes the heart muscles, preventing sudden surges in blood pressure.\n",
+    "zh-Hant": "鎂是建造骨頭和牙齒的主要成分。鎂也是細胞的新陳代謝的一個必要的元素，多用作酵素的催化劑。在消化蛋白質的過程中, 鎂負責啟動部份蛋白分解酵素。於神經系統中, 鎂是鈣的拮抗劑，負責放鬆神經脈衝。\n",
+    "zh-Hans": "镁是建造骨头和牙齿的主要成分。镁也是细胞的新陈代谢的一个必要的元素，多用作酵素的催化剂。在消化蛋白质的过程中, 镁负责启动部份蛋白分解酵素。於神经系统中, 镁是钙的拮抗剂，负责放松神经脉衝。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/minerals-en/magnesium/"
+}

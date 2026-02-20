@@ -2,8 +2,7 @@
   "@context": "../../schema/context/western.jsonld",
   "@id": "western/green-tea",
   "@type": [
-    "western:Herb",
-    "schema:DietarySupplement"
+    "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
     "@id": "plant/green-tea"
@@ -13,16 +12,10 @@
     "zh-Hant": "綠茶",
     "zh-Hans": "绿茶"
   },
-  "scientificName": "Camellia Sinensis",
-  "hasAction": [
-    {
-      "@id": "western/action/antioxidant"
-    }
-  ],
   "westernHistory": {
     "en": "In China green tea has been used for centuries to treat poor digestion, headaches, prevent fatigue and sharpen the mind. Tea plants themselves are indigenous to rainy Asian forests and are cultivated widely across China, Sri Lanka, India, Japan, Indonesia and the African continent.\n",
-    "zh-Hant": "【綠茶】在西方草藥學中的應用歷史悠久，現代研究證實其具有多種藥理活性。",
-    "zh-Hans": "【綠茶】在西方草药学中的应用历史悠久，現代研究证实其具有多种药理活性。"
+    "zh-Hant": "",
+    "zh-Hans": ""
   },
   "westernTraditionalUsage": {
     "en": "Green tea is renowned for its antioxidant properties, general health-enhancing effects and ability to help relieve mental and physical fatigue. It is also high in bioflavanoids, which help to fight free radicals. The traditional method is to steep the leaves in hot water to make a refreshing drink: green tea extract contains the leaves in a powdered form that has been standardised to guarantee a high dose of the active ingredients.\n",
@@ -30,11 +23,5 @@
     "zh-Hans": "绿茶为天然抗氧化剂，服用能增强健康，帮助纾缓身体与脑部疲劳。绿茶多用作对抗顽疾，防止脑血栓，降低体内胆固醇，调节血糖和瘦身减重。\n"
   },
   "source": "vitaherbapedia.com",
-  "created": "2026-02-19T15:32:30.555Z",
-  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "description": {
-    "en": "Green tea consists of the rapidly dried, freshly picked leaves and leaf buds of Camellia sinensis, a plant of the Theaceae family.\n",
-    "zh-Hant": "綠茶取自新鮮摘取及迅速製乾的野茶樹葉芽，它是雙子葉屬的植物，原生於多雨的亞洲森林，並在中國、斯里蘭卡、印度、日本、印尼以及非洲大陸廣泛培植。\n",
-    "zh-Hans": "绿茶取自新鲜摘取及迅速製乾的野茶树叶芽，它是双子叶属的植物，原生於多雨的亚洲森林，并在中国、斯里兰卡、印度、日本、印尼以及非洲大陆广泛培植。\n"
-  }
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/westherbs-en/green-tea/"
 }

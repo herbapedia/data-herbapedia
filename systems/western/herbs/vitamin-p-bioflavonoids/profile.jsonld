@@ -1,0 +1,27 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/vitamin-p-bioflavonoids",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/vitamin-p-bioflavonoids"
+  },
+  "name": {
+    "en": "Vitamin P, Bioflavonoids",
+    "zh-Hant": "維他命 P",
+    "zh-Hans": "维他命 P"
+  },
+  "westernHistory": {
+    "en": "",
+    "zh-Hant": "維他命P能加強維他命C的功效，建議應與維他命C同時服用。維他命P能幫助減輕疼痛，經常用於治療運動創傷，減低在運動碰撞時肌肉瘀傷的情形。它亦能減輕流血不止問題，預防出血性疾病、a low serum calcium、牙床出血。維他命P亦能強化毛细血管壁，增強血管健康及使其滲透性運作正常，讓失去彈性、易破裂的血管恢復彈性，使血液循環順暢。它有助製造膽汁，控制膽固醇水平，亦用作預防眼睛晶體退化問題。\n",
+    "zh-Hans": "维他命P能加强维他命C的功效，建议应与维他命C同时服用。维他命P能帮助减轻疼痛，经常用於治疗运动创伤，减低在运动碰撞时肌肉瘀伤的情形。它亦能减轻流血不止问题，预防出血性疾病、a low serum calcium、牙床出血。维他命P亦能强化毛细血管壁，增强血管健康及使其渗透性运作正常，让失去弹性、易破裂的血管恢复弹性，使血液循环顺畅。它有助製造胆汁，控制胆固醇水平，亦用作预防眼睛晶体退化问题。\n"
+  },
+  "westernTraditionalUsage": {
+    "en": "Bioflavonoids enhance the action of vitamin C, a key antioxidant, and possibly prolong the effectiveness of it as well. For this reason they should be taken together. Bioflavonoids are used in the treatment of sports injuries as they help to relieve pain. They can also lessen the symptoms of prolonged bleeding, a low serum calcium and oral herpes. It is thought that bioflavonoids may be active in preserving the structures of capillaries, have an antibacterial effect and promote circulation. They may also be indicated in the production of bile, lowering blood cholesterol levels and in the prevention and treatment of cataracts.\n",
+    "zh-Hant": "維他命P能提升維生素C的功效和或可延長它的效果。由於這個原因維他命 P和維生素C 應該多被一起服用。維他命P有效治療運動受傷，有助於紓緩痛楚。維他命P同時可以減輕某些症狀，包括流血不止和口腔皰疹等。維他命P被認為能保護毛細血管的結構，有抗微生物和促進血液循環的效果。維他命P也負責製造膽汁，控制血液膽固醇水平和防止晶體混濁。\n",
+    "zh-Hans": "维他命P能提升维生素C的功效和或可延长它的效果。由於这个原因维他命 P和维生素C 应该多被一起服用。维他命P有效治疗运动受伤，有助於纾缓痛楚。维他命P同时可以减轻某些症状，包括流血不止和口腔皰疹等。维他命P被认为能保护毛细血管的结构，有抗微生物和促进血液循环的效果。维他命P也负责製造胆汁，控制血液胆固醇水平和防止晶体混浊。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/vitamins-en/vitamin-p-bioflavonoids/"
+}

@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/squalene",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/squalene"
+  },
+  "name": {
+    "en": "Squalene",
+    "zh-Hant": "角鯊烯",
+    "zh-Hans": "角鲨烯"
+  },
+  "westernTraditionalUsage": {
+    "en": "Squalene is a naturally occurring oil that is relatively resistant to free radicals and may therefore protect the skin's surface from oxidative damage caused by exposure to sunlight and other sources. It has good moisturising properties, quickly penetrating the skin without leaving a greasy feeling.\n",
+    "zh-Hant": "角鯊烯能對抗游離基，保護肌膚免受陽光和其它物質帶來的氧化傷害。角鯊烯具滋潤的特性，能迅速滲入肌膚，潤而不膩。\n",
+    "zh-Hans": "角鲨烯能对抗游离基，保护肌肤免受阳光和其它物质带来的氧化伤害。角鲨烯具滋润的特性，能迅速渗入肌肤，润而不腻。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/nutrients-en/squalene/"
+}

@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/omega-6",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/omega-6"
+  },
+  "name": {
+    "en": "Omega 6",
+    "zh-Hant": "奧米加6",
+    "zh-Hans": "奥米加6"
+  },
+  "westernTraditionalUsage": {
+    "en": "Omega 6 is an essential unsaturated fatty acid, which means it cannot be made by our bodies and must be sourced from food. Most omega-6 fatty acids in the diet come from vegetable oils in the form of linoleic acid, which is converted to gamma-linolenic acid in the body and then further broken down to arachidonic acid. Clinical trials have shown that essential fatty acids protect against conditions including heart disease; cancer; autoimmune diseases including rheumatoid arthritis and multiple sclerosis; and skin diseases, including acne, atopic eczema and psoriasis. They may also protect against strokes.\n",
+    "zh-Hant": "",
+    "zh-Hans": ""
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/nutrients-en/omega-6/"
+}

@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/ceramides",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/ceramides"
+  },
+  "name": {
+    "en": "Ceramides",
+    "zh-Hant": "天然角磷質",
+    "zh-Hans": "天然角磷质"
+  },
+  "westernTraditionalUsage": {
+    "en": "Ceramides are bioactive molecules in the skin's epidermis. They form a barrier, protecting against water loss and blocking pollutants, and thus play a key role in keeping skin young and healthy looking. However, with age and environmental exposure, ceramides may be lost, resulting in dryness, fine lines and a rough complexion. Ceramides are a key ingredient in anti-aging and other high-tech beauty creams.\n",
+    "zh-Hant": "",
+    "zh-Hans": ""
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/nutrients-en/ceramides/"
+}

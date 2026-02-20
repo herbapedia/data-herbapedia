@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/epicutin-tt",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/epicutin-tt"
+  },
+  "name": {
+    "en": "Epicutin-TT",
+    "zh-Hant": "緩釋功能",
+    "zh-Hans": "缓释功能"
+  },
+  "westernTraditionalUsage": {
+    "en": "Epicutin-TT is Tea Tree oil in a time-release formulation. Tea Tree is an important natural antiseptic that has been used traditionally to treat stings, burns, wounds and skin infections of all kinds. It is strongly antiseptic, diaphoretic and expectorant. It can stimulate the immune system, reduce histamine-induced skin inflammation and is effective against a broad range of bacterial and fungal infections. Applied externally in is useful in the treatment of thrush, acne, athlete's foot, verrucae, warts, insect bites, cold sores and nits.\n",
+    "zh-Hant": "茶樹油獨有緩釋功能Epicutin-TT，能幫助保護皮膚24小時免受細菌感染。由於具強烈的殺菌效果，常用於牙科、防臭劑、除嗅劑和嗽口水等。\n",
+    "zh-Hans": "茶树油独有缓释功能Epicutin-TT，能帮助保护皮肤24小时免受细菌感染。由于具强烈的杀菌效果，常用于牙科、防臭剂、除嗅剂和嗽口水等。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/nutrients-en/epicutin-tt/"
+}

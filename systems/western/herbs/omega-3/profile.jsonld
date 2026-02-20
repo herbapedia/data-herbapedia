@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/omega-3",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/omega-3"
+  },
+  "name": {
+    "en": "Omega 3",
+    "zh-Hant": "奧米加3",
+    "zh-Hans": "奥米加3"
+  },
+  "westernTraditionalUsage": {
+    "en": "Omega 3 is an unsaturated essential fatty acid, which means it cannot be produced by the body and must be sourced from food. Omega 3 is thought to reduce the risk of heart disease. Other positive effects include anti-inflammatory and anti-blood clotting actions, lowering cholesterol and triglyceride levels, and reducing blood pressure. Omega 3 fatty acids may also reduce the risks and symptoms of other disorders including diabetes, stroke, rheumatoid arthritis, asthma, inflammatory bowel disease, ulcerative colitis, some cancers and mental decline.\n",
+    "zh-Hant": "",
+    "zh-Hans": ""
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/nutrients-en/omega-3/"
+}

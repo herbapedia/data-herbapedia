@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/vitamin-a",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/vitamin-a"
+  },
+  "name": {
+    "en": "Vitamin A",
+    "zh-Hant": "維他命A  又名胡蘿蔔素",
+    "zh-Hans": "维他命A  又名胡萝蔔素"
+  },
+  "westernTraditionalUsage": {
+    "en": "Vitamin A helps maintain normal vision in dim light and prevents night blindness and xerophthalmia (dry eyes). It is essential for body growth and necessary for normal bone and tooth development. It also plays a role in the synthesis of protein and glycogen, and is necessary for thyroxine formation, preventing the development of goitres. Retinyl Palmitate is a precursor chemical which the body uses to manufacture vitamin A. Studies show that topically applied retinyl palmitate reverses some aspects of skin ageing. After its absorption into the skin, retinyl palmitate is converted to retinol, and ultimately to retinoic acid (the active form of vitamin A present in Retin-A). Vitamin A is valued for its regenerating properties and is essential for proper formation of the body's tissues. It prevents atrophy in ageing skin and encourages the healthy growth and renewal of skin cells. People lacking in vitamin A frequently suffer from skin problems such as rashes and psoriasis, as well as poor sight.\n",
+    "zh-Hant": "維他命 A 幫助眼睛於暗弱光線下保持正常視力, 和降低夜盲症 (xerophthalmia) 的發生。維他命 A 能促進牙齒、骨骼正常生長。製造蛋白質、肝醣、防止甲狀腺腫瘤的形成的甲狀腺素都需要維他命 A。\n",
+    "zh-Hans": "维他命 A 帮助眼睛於暗弱光线下保持正常视力, 和降低夜盲症 (xerophthalmia) 的发生。维他命 A 能促进牙齿、骨骼正常生长。製造蛋白质、肝醣、防止甲状腺肿瘤的形成的甲状腺素都需要维他命 A。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/vitamins-en/vitamin-a/"
+}

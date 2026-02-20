@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/melatonin",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/melatonin"
+  },
+  "name": {
+    "en": "Melatonin",
+    "zh-Hant": "褪黑激素",
+    "zh-Hans": "褪黑激素"
+  },
+  "westernTraditionalUsage": {
+    "en": "Melatonin is a natural hormone that regulates the human biological clock. Double-blind research with young adults has showed that melatonin facilitates sleep. Another study of healthy, young adults found that melatonin significantly shortened the time needed to fall sleep, reduced the number of night awakenings, and improved sleep quality. Melatonin significantly reduces symptoms of jet lag and results in a quicker recovery of preflight energy levels and alertness.\n",
+    "zh-Hant": "褪黑激素是一種能調節人體生理時鐘的荷爾蒙。一項以青少年為研究對象的雙盲研究結果顯示褪黑激素能促進睡眠。另一項以健康成年人為對象的研究發現褪黑激素顯著地縮短入睡時間，減少晚上的覺醒的次數，改善睡眠質素。褪黑激素能顯著減少時差問題, 有助精神和敏感度迅速恢復。\n",
+    "zh-Hans": "褪黑激素是一种能调节人体生理时钟的荷尔蒙。一项以青少年为研究对象的双盲研究结果显示褪黑激素能促进睡眠。另一项以健康成年人为对象的研究发现褪黑激素显著地缩短入睡时间，减少晚上的觉醒的次数，改善睡眠质素。褪黑激素能显著减少时差问题, 有助精神和敏感度迅速恢复。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/nutrients-en/melatonin/"
+}

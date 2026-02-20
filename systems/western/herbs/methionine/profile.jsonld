@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/methionine",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/methionine"
+  },
+  "name": {
+    "en": "Methionine",
+    "zh-Hant": "甲硫氨酸",
+    "zh-Hans": "甲硫氨酸"
+  },
+  "westernTraditionalUsage": {
+    "en": "Methionine is an amino acid that assists in the breakdown of fats and thereby prevents a build-up of fat in the arteries. It also assists with the digestive system and removing heavy metals from the body since it can be converted to cysteine, a precursor to gluthione, which is of prime importance in detoxifying the liver. Methionine is also a great antioxidant as the sulphur it supplies inactivates free radicals.\n",
+    "zh-Hant": "",
+    "zh-Hans": ""
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/nutrients-en/methionine/"
+}

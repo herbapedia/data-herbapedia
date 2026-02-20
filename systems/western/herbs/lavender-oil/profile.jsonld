@@ -2,8 +2,7 @@
   "@context": "../../schema/context/western.jsonld",
   "@id": "western/lavender-oil",
   "@type": [
-    "western:Herb",
-    "schema:DietarySupplement"
+    "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
     "@id": "plant/lavender-oil"
@@ -13,32 +12,11 @@
     "zh-Hant": "薰衣草精油",
     "zh-Hans": "薰衣草精油"
   },
-  "scientificName": "Lavandula angustifolia, Lavandula officinalis",
-  "hasAction": [
-    {
-      "@id": "western/action/calming"
-    }
-  ],
-  "hasOrganAffinity": [
-    {
-      "@id": "organ/respiratory"
-    },
-    {
-      "@id": "organ/skin"
-    }
-  ],
-  "westernHistory": null,
   "westernTraditionalUsage": {
     "en": "Lavender oil, which has long been used in the production of perfume, can also be used in aromatherapy. The scent has a calming effect which may aid relaxation and reduce anxiety. It may also help to relieve pain from tension headaches when inhaled as vapour or diluted and rubbed on the skin. When added to a vaporiser, lavender oil may aid in the treatment of coughs and respiratory infections.\n",
     "zh-Hant": "薰衣草精油長期以來用於香水的生產，同時也用在香薰治療。薰衣草氣味有鎮靜的功效，可以幫助鬆弛和減少焦慮。薰衣草香氣有助舒緩頭痛不適，吸入薰衣草香氣或稀釋了的香氣，以及將薰衣草精油磨擦於肌膚上，便有助舒緩疼痛。當薰衣草精油加進蒸汽機，所揮發的氣味有助治療咳嗽和呼吸道的疾病。\n",
     "zh-Hans": "薰衣草精油长期以来用於香水的生产，同时也用在香薰治疗。薰衣草气味有镇静的功效，可以帮助松弛和减少焦虑。薰衣草香气有助舒缓头痛不适，吸入薰衣草香气或稀释了的香气，以及将薰衣草精油磨擦於肌肤上，便有助舒缓疼痛。当薰衣草精油加进蒸汽机，所挥发的气味有助治疗咳嗽和呼吸道的疾病。\n"
   },
   "source": "vitaherbapedia.com",
-  "created": "2026-02-19T15:32:30.534Z",
-  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "description": {
-    "en": "Lavender oil is extracted from the fresh flowers of the lavender plant by steam distillation.\n",
-    "zh-Hant": "薰衣草香精油經由蒸氣蒸餾新鮮薰衣草提取。\n",
-    "zh-Hans": "薰衣草香精油经由蒸气蒸馏新鲜薰衣草提取。\n"
-  }
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/westherbs-en/lavender-oil/"
 }

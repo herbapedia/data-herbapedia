@@ -2,8 +2,7 @@
   "@context": "../../schema/context/western.jsonld",
   "@id": "western/borage-extract",
   "@type": [
-    "western:Herb",
-    "schema:DietarySupplement"
+    "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
     "@id": "plant/borage-extract"
@@ -13,36 +12,11 @@
     "zh-Hant": "琉璃苣精華",
     "zh-Hans": "琉璃苣精华"
   },
-  "scientificName": "Borago officinalis L.",
-  "hasAction": [
-    {
-      "@id": "western/action/anti-inflammatory"
-    },
-    {
-      "@id": "western/action/diuretic"
-    },
-    {
-      "@id": "western/action/demulcent"
-    },
-    {
-      "@id": "western/action/emollient"
-    }
-  ],
-  "hasOrganAffinity": [
-    {
-      "@id": "organ/respiratory"
-    }
-  ],
-  "westernHistory": null,
   "westernTraditionalUsage": {
     "en": "Borage, also known as starflower, is grown across Europe, north Africa and Iran. It is used as a diuretic, a demulcent and emollient as well as being prized for its culinary uses. Borage is also sometimes used to alleviate and heal colds, bronchitis, and respiratory infections because of its anti-inflammatory and balsamic properties. In France it is used to treat fevers and pulmonary complaints. Externally, it is useful as a poultice for inflammatory swellings.\n",
     "zh-Hant": "琉璃苣可當作小便暢通劑、止痛劑和潤膚劑。在法國, 琉璃苣經常被用作治療發燒和肺病。外塗方面, 琉璃苣濕敷於膨脹的發炎傷口上。\n",
     "zh-Hans": "琉璃苣可当作小便畅通剂、止痛剂和润肤剂。在法国, 琉璃苣经常被用作治疗发烧和肺病。外塗方面, 琉璃苣湿敷於膨胀的发炎伤口上。\n"
   },
   "source": "vitaherbapedia.com",
-  "created": "2026-02-19T15:32:30.551Z",
-  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "description": {
-    "en": "Borago officinalis L.\n"
-  }
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/westherbs-en/borage-extract/"
 }

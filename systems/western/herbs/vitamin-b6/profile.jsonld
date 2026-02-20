@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/vitamin-b6",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/vitamin-b6"
+  },
+  "name": {
+    "en": "Vitamin B6",
+    "zh-Hant": "維他命 B6 又名抗皮炎素",
+    "zh-Hans": "维他命 B6 又名抗皮炎素"
+  },
+  "westernTraditionalUsage": {
+    "en": "Vitamin B6 functions as a coenzyme (pyridoxal phosphate) in the body. Part of the B group of vitamins, it is water soluble and necessary for both physical and mental health. It plays a role in the processing and metabolism of proteins, fats and carbohydrates; balances female hormones; and is necessary for a strong immune system.\n",
+    "zh-Hant": "維他命B6在身體中發揮輔酵素(哆醛磷酸鹽)的作用。部分維他命B雜是水溶性的，是身心健康的必要元素。維他命B6有助蛋白質、脂肪及碳水化合物的處理和生陳代謝，能平衡女性荷爾蒙，是維持強健免疫系統不可缺少的重要元素。\n",
+    "zh-Hans": "维他命B6在身体中发挥辅酵素(哆醛磷酸盐)的作用。部分维他命B杂是水溶性的，是身心健康的必要元素。维他命B6有助蛋白质、脂肪及碳水化合物的处理和生陈代谢，能平衡女性荷尔蒙，是维持强健免疫系统不可缺少的重要元素。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/vitamins-en/vitamin-b6/"
+}

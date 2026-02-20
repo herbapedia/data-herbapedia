@@ -2,8 +2,7 @@
   "@context": "../../schema/context/western.jsonld",
   "@id": "western/echinacea",
   "@type": [
-    "western:Herb",
-    "schema:DietarySupplement"
+    "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
     "@id": "plant/echinacea"
@@ -13,29 +12,6 @@
     "zh-Hant": "紫錐花",
     "zh-Hans": "紫锥花"
   },
-  "scientificName": "Echinacea purpurea (L.) Moench, Echinacea angustfolia DC",
-  "hasAction": [
-    {
-      "@id": "western/action/immunostimulant"
-    },
-    {
-      "@id": "western/action/immunomodulatory"
-    },
-    {
-      "@id": "western/action/antimycotic"
-    },
-    {
-      "@id": "western/action/stimulant"
-    }
-  ],
-  "hasOrganAffinity": [
-    {
-      "@id": "organ/respiratory"
-    },
-    {
-      "@id": "organ/liver"
-    }
-  ],
   "westernHistory": {
     "en": "Echinacea was the medicinal plant most widely used by native Americans. Ethnobotanist M.R. Gilmore noted, \"Echinacea seems to have been used as a remedy for more ailments than any other plant.\" These ailments included toothache, enlarged glands (mumps), sore throat, snakebites, coughs, burns and as an analgesic. It first became popular in Europe in the 1930s.\n",
     "zh-Hant": "紫錐花是美國土著最廣泛使用的藥用植物。Ethnobotanist M.R.Gilmore 提到：「紫錐花比其他植物更多用作即時治療疾病。」美國本土人使用紫錐花治理牙痛、擴大腮腺、咽喉不適、蛇咬傷、咳嗽、燒傷和痛症。\n",
@@ -47,11 +23,5 @@
     "zh-Hans": "紫锥花常用作减轻上呼吸道感染徵状，能促进免疫调节活动，刺激免疫功能和抵抗有害微生物，促进吞噬作用和增加血清中的白血球。\n"
   },
   "source": "vitaherbapedia.com",
-  "created": "2026-02-19T15:32:30.532Z",
-  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "description": {
-    "en": "Echinacea preparations consist of any one or more of the plant parts from three Echinacea species, including the fresh, above-ground parts, the fresh or dried root of E.purpurea (L.) Moench, and the fresh or dried root of E.pallida (Nutt.) Nutt., and/or E.angustifolia D.C.\n",
-    "zh-Hant": "紫錐花產品是從三種紫錐花品種中的一個或多個部份中提取，包括從紫錐菊莖部以上的新嫩部份或從其製乾的根部中撮取，或是從紫錐花葉片及/或狹葉紫錐菊的新嫩部份或其製乾的根部中撮取。\n",
-    "zh-Hans": "紫锥花产品是从叁种紫锥花品种中的一个或多个部份中提取，包括从紫锥菊茎部以上的新嫩部份或从其製乾的根部中撮取，或是从紫锥花叶片及/或狭叶紫锥菊的新嫩部份或其製乾的根部中撮取。\n"
-  }
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/westherbs-en/echinacea/"
 }

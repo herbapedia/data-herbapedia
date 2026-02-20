@@ -1,0 +1,27 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/aloe-vera",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/aloe-vera"
+  },
+  "name": {
+    "en": "Aloe Vera",
+    "zh-Hant": "蘆薈",
+    "zh-Hans": "芦荟"
+  },
+  "westernHistory": {
+    "en": "For thousands of years, transparent gel from the pulp of the meaty leaves of Aloe Vera has been used topically to treat wounds, skin infections, burns, and numerous other dermatologic conditions. The laxative effect of latex from the leaves has also long been known and prized.\n",
+    "zh-Hant": "蘆薈葉中蘊含多汁呈透明狀的果漿，數千年來被用於護理傷口、皮膚感染、燒傷和其他皮膚醫學用途上。蘆薈葉子內的乳液被弄乾後可服用，傳統上具幫助排便的作用。\n",
+    "zh-Hans": "芦荟叶中蕴含多汁呈透明状的果浆，数千年来用于护理伤口、皮肤感染、烧伤和其他皮肤医学上。\n"
+  },
+  "westernTraditionalUsage": {
+    "en": "Aloe Vera is a short-stemmed succulent plant native to North Africa with a long history of medicinal use. Dried latex from the leaves has traditionally been used as an oral laxative, and the mucilaginous juice of the plant is effective on small cuts and sunburn, and speeds healing. Its laxative properties are due to the presence of anthraquinone glycosides molecules, which are processed by stomach bacteria to form aglycones, a laxative substance.\n",
+    "zh-Hant": "蘆薈葉內的乳液被弄乾後可口服，有助排便，而黏稠的汁能夠加速小傷口和曬黑傷的痊癒。蘆薈葉內部的乳液包含 anthraquinone glycosides 分子，能夠被胃內微生物轉變成 aglycones，是一種有助排便的物質。\n",
+    "zh-Hans": "芦荟叶内的乳液弄干后可口服，有助排便，而黏稠的汁能够加速小伤口和晒伤的痊愈。芦荟叶内部的乳液包含 anthraquinone glycosides 分子，能够被胃内微生物转变成 aglycones，是一种有助排便的物质。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/westherbs-en/aloe-vera/"
+}

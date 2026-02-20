@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/zinc",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/zinc"
+  },
+  "name": {
+    "en": "Zinc",
+    "zh-Hant": "鋅",
+    "zh-Hans": "锌"
+  },
+  "westernTraditionalUsage": {
+    "en": "Zinc is needed to maintain healthy skin, bones and hair, and for the functioning of several enzymes involved in digestion and respiration. It is also required by the body for the transfer of carbon dioxide in red blood cells; for proper calcification of bones; for the synthesis and metabolism of proteins and nucleic acids; for the develpoment and functioning of reproductive organs; for wound and burn healing; for the functioning of insulin; and for a sense of taste. It is also an important mineral for maintaining a strong immune system.\n",
+    "zh-Hant": "鋅是維持皮膚、骨骼及毛髮健康所必須的微量元素，亦是負責消化和呼吸功能所需的酵素的重要成份。其他功能包括促進紅血球的二氧化碳傳送、加強骨骼內的鈣存量、強化骨質、促進核酸及蛋白質的合成和代謝，鋅更有助維持生殖系統健康、促進傷口癒合、維持胰島素保持正常水平及維持味覺功能。\n",
+    "zh-Hans": "锌是维持皮肤、骨骼及毛髮健康所必须的微量元素，亦是负责消化和呼吸功能所需的酵素的重要成份。其他功能包括促进红血球的二氧化碳传送、加强骨骼内的钙存量、强化骨质、促进核酸及蛋白质的合成和代谢，锌更有助维持生殖系统健康、促进伤口癒合、维持胰岛素保持正常水平及维持味觉功能。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/minerals-en/zinc/"
+}

@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/inositol",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/inositol"
+  },
+  "name": {
+    "en": "Inositol",
+    "zh-Hant": "肌醇",
+    "zh-Hans": "肌醇"
+  },
+  "westernTraditionalUsage": {
+    "en": "Inositol is necessary for the formation of lecithin and functions closely with a B complex vitamin, choline. It is a fundamental ingredient of cell membranes and is necessary for proper functioning of the nerves, brain and muscles. It also aids in the breakdown of fats, helps in the reduction of blood cholesterol, and can prevent thinning hair. Although it is often classified as a B vitamin itself and is sometimes referred to as vitamin B8, it is not really a vitamin as it can be manufactured by the human body.\n",
+    "zh-Hant": "",
+    "zh-Hans": ""
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/nutrients-en/inositol/"
+}

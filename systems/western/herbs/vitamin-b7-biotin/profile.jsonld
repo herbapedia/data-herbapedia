@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/vitamin-b7-biotin",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/vitamin-b7-biotin"
+  },
+  "name": {
+    "en": "Vitamin B7, Biotin",
+    "zh-Hant": "維他命 B7 又名生物素",
+    "zh-Hans": "维他命 B7 又名生物素"
+  },
+  "westernTraditionalUsage": {
+    "en": "Biotin is a water soluble vitamin and a member of the B-complex family. Its primary function is as a coenzyme in carbohydrate, amino acid, and lipid metabolism. Biotin is essential for cell growth and replication through its role in the manufacturing of DNA and RNA.\n",
+    "zh-Hant": "生物素是水溶性的維他命 B7，在碳水化合物、氨基酸和脂肪新陳代謝中扮演輔酵素的角色。生物素是製造脫氧核糖核酸(DNA)和核糖核酸(RNA)的成份，能幫助細胞成長和複製。\n",
+    "zh-Hans": "生物素是水溶性的维他命 B7，在碳水化合物、氨基酸和脂肪新陈代谢中扮演辅酵素的角色。生物素是製造脱氧核糖核酸(DNA)和核糖核酸(RNA)的成份，能帮助细胞成长和複製。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/vitamins-en/vitamin-b7-biotin/"
+}

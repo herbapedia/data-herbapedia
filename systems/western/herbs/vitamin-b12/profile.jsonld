@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/vitamin-b12",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/vitamin-b12"
+  },
+  "name": {
+    "en": "Vitamin B12",
+    "zh-Hant": "維他命 B12",
+    "zh-Hans": "维他命 B12"
+  },
+  "westernTraditionalUsage": {
+    "en": "Another member of the B vitamin group, Cyanocoblamin, or vitamin B12, helps convert food into energy. It is needed to produce the myelin sheaths that coat nerve cells; to form red blood cells; and for a healthy immune system. The B vitamins also help to maintain healthy hair. People with a deficiency of vitamin B12 may experience impaired mental functions.\n",
+    "zh-Hant": "維他命 B12 幫助將食物轉換成能量，包裹在神經周圍作保護的神經髓鞘、紅血球、負責維持健康的免疫系統也需要維他命 B12。缺乏維他命 B12 可能導致腦功能受損害。\n",
+    "zh-Hans": "维他命 B12 帮助将食物转换成能量，包裹在神经周围作保护的神经髓鞘、红血球、负责维持健康的免疫系统也需要维他命 B12。缺乏维他命 B12 可能导致脑功能受损害。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/vitamins-en/vitamin-b12/"
+}

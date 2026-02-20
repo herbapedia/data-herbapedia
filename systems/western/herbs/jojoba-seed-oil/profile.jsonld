@@ -2,8 +2,7 @@
   "@context": "../../schema/context/western.jsonld",
   "@id": "western/jojoba-seed-oil",
   "@type": [
-    "western:Herb",
-    "schema:DietarySupplement"
+    "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
     "@id": "plant/jojoba-seed-oil"
@@ -13,24 +12,11 @@
     "zh-Hant": "祖祖巴油",
     "zh-Hans": "祖祖巴油"
   },
-  "scientificName": "Simmondsia chinensis",
-  "hasOrganAffinity": [
-    {
-      "@id": "organ/skin"
-    }
-  ],
-  "westernHistory": null,
   "westernTraditionalUsage": {
     "en": "Jojoba oil comes from the seeds of Simmondsia chinensis, a shrub native to the southern states of the USA and northern Mexico. As the chemical composition of the oil is similar to the skin's own natural oils, it can easily penetrate and moisturise the epidermis, making it an important cosmetic ingredient. Rich in Vitamin E, it is a well known medicinal oil with fungicidal properties and is also used for treating eye and throat infections and all types of skin disorders.\n",
     "zh-Hant": "祖祖巴油經化學組合成，其油份與人體皮膚油份相似，容易滲入和滋潤皮膚表層，為化妝用品的重要成份之一。祖祖巴油蘊含豐富的維生素 E，亦是知名的藥用油，具有殺黴菌特性，可治療眼睛和咽喉感染及任何類型的皮膚病。\n",
     "zh-Hans": "祖祖巴油经化学组合成，其油份与人体皮肤油份相似，容易渗入和滋润皮肤表层，为化妆用品的重要成份之一。祖祖巴油蕴含丰富的维生素 E，亦是知名的药用油，具有杀霉菌特性，可治疗眼睛和咽喉感染及任何类型的皮肤病。\n"
   },
   "source": "vitaherbapedia.com",
-  "created": "2026-02-19T15:32:30.558Z",
-  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "description": {
-    "en": "Derived from the seeds of Simmondsia chinensis.\n",
-    "zh-Hant": "祖祖巴油源自美國南部和墨西哥北部的一種灌木Simmondsia chinensis 的種子。\n",
-    "zh-Hans": "祖祖巴油源自美国南部和墨西哥北部的一种灌木Simmondsia chinensis 的种子。\n"
-  }
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/westherbs-en/jojoba-seed-oil/"
 }

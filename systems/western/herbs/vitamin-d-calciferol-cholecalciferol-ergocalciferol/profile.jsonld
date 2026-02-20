@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/vitamin-d-calciferol-cholecalciferol-ergocalciferol",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/vitamin-d-calciferol-cholecalciferol-ergocalciferol"
+  },
+  "name": {
+    "en": "Vitamin D; Calciferol, Cholecalciferol, Ergocalciferol",
+    "zh-Hant": "維他命 D",
+    "zh-Hans": "维他命 D"
+  },
+  "westernTraditionalUsage": {
+    "en": "Vitamin D is essential for many bodily processes. It increases calcium absorption from the small intestine; promotes growth and mineralisation of bones and strong teeth; increases absorption of phosphorus through the intestinal wall and increases resorption of phosphates from the kidney tubules; maintains normal level of citrate in the blood; and protects against the loss of amino acids through the kidneys. A deficiency of vitamin D can cause rickets as well as malformed bones and teeth and has been linked to conditions including bone pain and diabetes.\n",
+    "zh-Hant": "維他命D是身體內的很多作用的必需品，能增加小腸對鈣的吸收、促進骨骼成長和礦化及維持牙齒健康。維他命D對增加小腸壁對磷的吸收、增加腎小球對磷酸鹽的再次吸收、保持血液中檸檬酸鹽的正常的水平，以及避免氨基酸從腎而流失均有幫助。缺乏維生素 D可導致佝僂病以及骨頭和牙齒變形，並會引發骨頭疼痛和血糖等問題。\n",
+    "zh-Hans": "维他命D是身体内的很多作用的必需品，能增加小肠对钙的吸收、促进骨骼成长和矿化及维持牙齿健康。维他命D对增加小肠壁对磷的吸收、增加肾小球对磷酸盐的再次吸收、保持血液中柠檬酸盐的正常的水平，以及避免氨基酸从肾而流失均有帮助。缺乏维生素 D可导致佝偻病以及骨头和牙齿变形，并会引发骨头疼痛和血糖等问题。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/vitamins-en/vitamin-d-calciferol-cholecalciferol-ergocalciferol/"
+}

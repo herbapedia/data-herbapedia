@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/paba",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/paba"
+  },
+  "name": {
+    "en": "PABA",
+    "zh-Hant": "胺基苯酸",
+    "zh-Hans": "胺基苯酸"
+  },
+  "westernTraditionalUsage": {
+    "en": "PABA is involved in the breakdown of protein used in the body. It also helps in red blood cell formation as well as assisting the manufacture of folic acid in the intestines. It supports all the functions of folic acid and is known specifically for helping to nourish healthy hair, and may even restore greying hair its original colour. A deficiency of PABA can cause depression and fatigue.\n",
+    "zh-Hant": "PABA可幫助蛋白質的代謝，能製造紅血球和於腸道製造葉酸，並有助提升葉酸的效用和有助滋養健康頭髮，是健康頭髮的必需品。\n",
+    "zh-Hans": "PABA可帮助蛋白质的代谢，能製造红血球和於肠道製造叶酸，并有助提升叶酸的效用和有助滋养健康头髮，是健康头髮的必需品。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/nutrients-en/paba/"
+}

@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/iron",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/iron"
+  },
+  "name": {
+    "en": "Iron",
+    "zh-Hant": "鐵",
+    "zh-Hans": "铁"
+  },
+  "westernTraditionalUsage": {
+    "en": "Iron combines with protein to make haemoglobin, the iron-containing compound in red blood cells that transports oxygen around the body. Iron is also stored in the muscles, so it can supply the oxygen need to make them contract. In addition, it is a component of enzymes which are involved in energy metabolism. Iron deficiency is the most common type of dietary deficiency worldwide, resulting in anaemia, which is characterised by pale skin, weakness, shortness of breath and dizziness.\n",
+    "zh-Hant": "於血液中負責運載氧氣的血紅蛋白，是由鐵與蛋白質結合而成。另外，在代謝過程中參予製造身體能量之酵素，也需要鐵。\n",
+    "zh-Hans": "於血液中负责运载氧气的血红蛋白，是由铁与蛋白质结合而成。另外，在代谢过程中参予製造身体能量之酵素，也需要铁。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/minerals-en/iron/"
+}

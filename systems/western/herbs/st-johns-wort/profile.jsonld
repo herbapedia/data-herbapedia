@@ -2,8 +2,7 @@
   "@context": "../../schema/context/western.jsonld",
   "@id": "western/st-johns-wort",
   "@type": [
-    "western:Herb",
-    "schema:DietarySupplement"
+    "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
     "@id": "plant/st-johns-wort"
@@ -13,17 +12,6 @@
     "zh-Hant": "貫葉連翹",
     "zh-Hans": "贯叶连翘"
   },
-  "scientificName": "Hypericum perforatum L.",
-  "hasAction": [
-    {
-      "@id": "western/action/relaxant"
-    }
-  ],
-  "hasOrganAffinity": [
-    {
-      "@id": "organ/skin"
-    }
-  ],
   "westernHistory": {
     "en": "The Greek physician Hippocrates was one of the first to document the therapeutic uses of St. John's Wort over 2,000 years ago. It is thought to have been used to treat mental disorders in Europe since the 15th century, as recorded by Swiss physician Paracelsus.\n",
     "zh-Hant": "希臘內科醫生希波克拉底是最早提供有關2000年來貫葉連翹用於醫學的文獻的先鋒之一。根據瑞士內科醫生 Paracelsus 記錄， 貫葉連翹自15世紀始已於歐洲國家用作治療心理疾病。\n",
@@ -35,11 +23,5 @@
     "zh-Hans": "贯叶连翘含一系列的活性成分，包括 hypericin，可以强化血清素 (一种神经传导物)的作用，从而平衡情绪，调整神经系统正常运作。hypericin 对于改善轻度到中度抑郁也具有不错的效果，它能改进专注力、记忆和接收能力，又不会令人渴睡。\n"
   },
   "source": "vitaherbapedia.com",
-  "created": "2026-02-19T15:32:30.541Z",
-  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "description": {
-    "en": "St. John's Wort preparations consist of dried above-ground parts of the plant, such as flowers and stems, gathered during the flowering season.\n",
-    "zh-Hant": "在開花季節期間，貫葉連翹泥土以上的乾身部份，例如花及莖，會被選取作提煉之用。\n",
-    "zh-Hans": "在开花季节期间，贯叶连翘泥土以上的乾身部份，例如花及茎，会被选取作提炼之用。\n"
-  }
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/westherbs-en/st-johns-wort/"
 }

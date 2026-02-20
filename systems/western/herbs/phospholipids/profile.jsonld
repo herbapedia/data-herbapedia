@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/phospholipids",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/phospholipids"
+  },
+  "name": {
+    "en": "Phospholipids",
+    "zh-Hant": "磷脂質",
+    "zh-Hans": "磷脂质"
+  },
+  "westernTraditionalUsage": {
+    "en": "Phospholipids are organic molecules commonly found in cell membranes which play an important role in keeping skin smooth and soft. They have an affinity with both oil and water, which makes them surfactants and emulsifiers. They can increase the hydration levels of the skin without being occlusive (forming a film to prevent water loss, and preventing normal cellular function). Environmental factors (sun, wind, pollution) actually strip the natural phospholipid content from the top layer of skin giving it a rough feel and a pitted appearance under a microscope.\n",
+    "zh-Hant": "",
+    "zh-Hans": ""
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/nutrients-en/phospholipids/"
+}

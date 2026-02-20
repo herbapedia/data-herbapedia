@@ -2,8 +2,7 @@
   "@context": "../../schema/context/western.jsonld",
   "@id": "western/evening-primrose-oil",
   "@type": [
-    "western:Herb",
-    "schema:DietarySupplement"
+    "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
     "@id": "plant/evening-primrose-oil"
@@ -13,7 +12,6 @@
     "zh-Hant": "月見草油",
     "zh-Hans": "月见草油"
   },
-  "scientificName": "Oenothera biennis L.",
   "westernHistory": {
     "en": "Evening Primrose is a plant native to North America. Traditionally, it was used externally to treat skin diseases and internally to treat breathing problems and arthritis. It was one of the first medicinal plants brought back to Europe by settlers in the 16th century.\n",
     "zh-Hant": "月見草是原產於北美的植物。傳統應用於外搽皮膚以治療皮膚病，內服治理呼吸問題和關節不適。月見草在16 世紀被移居民帶回歐洲，是其中一種最早的藥用植物。\n",
@@ -25,11 +23,5 @@
     "zh-Hans": "月见草油有丰富的脂肪酸，尤以伽玛次亚麻酸最为丰富。脂肪酸是人体必需的要素，临床研究指出，缺乏伽玛次亚麻酸与湿疹、经前综合症、糖尿周边神经病变有关，而进食月见草油则有助改善此情况。\n"
   },
   "source": "vitaherbapedia.com",
-  "created": "2026-02-19T15:32:30.550Z",
-  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "description": {
-    "en": "Evening primrose oil preparation consist of a clear, golden yellow oil extracted by cold expression, or solvent extraction, from the seeds of Evening Primrose (Oenothera biennis L.).\n",
-    "zh-Hant": "清澈、金黃色的月見草油是從月見草種子經冷凍擠壓或溶解提取而成。\n",
-    "zh-Hans": "清澈、金黄色的月见草油是从月见草种子经冷冻挤压或溶解提取而成。\n"
-  }
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/westherbs-en/evening-primrose-oil/"
 }

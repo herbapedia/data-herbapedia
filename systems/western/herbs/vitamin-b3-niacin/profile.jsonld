@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/vitamin-b3-niacin",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/vitamin-b3-niacin"
+  },
+  "name": {
+    "en": "Vitamin B3, Niacin",
+    "zh-Hant": "維他命B3 又名菸酸",
+    "zh-Hans": "维他命B3 又名菸酸"
+  },
+  "westernTraditionalUsage": {
+    "en": "Niacin is also known as nicotinic acid, or vitamin B3. For the normal functioning of the body, niacin works alongside other B vitamins to help release energy from food, promote healthy nervous and digestive systems, eye health, and keep the skin clear. Nicotinic acid, when taken in quantity, is able to lower bad cholesterol levels and help prevent heart attacks. Niacinamide is the amide of nicotinic acid. It is a constituent of nicotinamide adenine dinucleotide (NAD) and nicotinamide adenine dinucleotide phosphate (NADP), which are coenzymes involved in glycogenolysis, tissue respiration and lipid metabolism. Where niacinamide is lacking in the diet, the metabolism slows causing an intolerance to cold, and in severe cases, the patient develops pellagra.\n",
+    "zh-Hant": "菸酸又被稱為菸草酸。菸草酸能降低血液內的壞膽固醇水平，避免心臟問題。菸酸與其他維他命B能一起維持消化系統和神經系統正常運作，增加皮膚彈性。\n",
+    "zh-Hans": "菸酸又被称为菸草酸。菸草酸能降低血液内的坏胆固醇水平，避免心脏问题。菸酸与其他维他命B能一起维持消化系统和神经系统正常运作，增加皮肤弹性。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/vitamins-en/vitamin-b3-niacin/"
+}

@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/potassium",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/potassium"
+  },
+  "name": {
+    "en": "Potassium",
+    "zh-Hant": "鉀",
+    "zh-Hans": "钾"
+  },
+  "westernTraditionalUsage": {
+    "en": "Potassium is involved in a number of bodily functions, including regulating the transfer of nutrients in and out of every single cell in our bodies. It also plays a role in the relaxation of smooth muscle, including the heart muscle, is required for the secretion of insulin by the pancreas in enzyme reactions involving phosphorylation, and is important in nerve and brain function. Although potassium deficiency is uncommon, it can be caused by the use of diuretics, eating disorders, prolonged vomiting or kidney disease. Symptoms include fatigue, muscle cramps and weakness, abdominal pains and bloating.\n",
+    "zh-Hant": "鉀對身體的許多功能都十分重要，包括控制細胞之間的養份傳送和放鬆平滑肌(包括心肌肉)，釋放胰島素時磷酸化作用需要的酵素也需要鉀。\n",
+    "zh-Hans": "钾对身体的许多功能都十分重要，包括控制细胞之间的养份传送和放松平滑肌(包括心肌肉)，释放胰岛素时磷酸化作用需要的酵素也需要钾。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/minerals-en/potassium/"
+}

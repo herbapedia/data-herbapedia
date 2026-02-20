@@ -2,8 +2,7 @@
   "@context": "../../schema/context/western.jsonld",
   "@id": "western/blueberry",
   "@type": [
-    "western:Herb",
-    "schema:DietarySupplement"
+    "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
     "@id": "plant/blueberry"
@@ -13,24 +12,11 @@
     "zh-Hant": "美洲藍莓",
     "zh-Hans": "美洲蓝莓"
   },
-  "scientificName": "Vaccinium Cyanococcus L.",
-  "hasAction": [
-    {
-      "@id": "western/action/antioxidant"
-    }
-  ],
-  "westernHistory": null,
   "westernTraditionalUsage": {
     "en": "Blueberries are one of nature's most abundant source of antioxidants, including the potent substance anthocyanin. Anthocyanin, which comes from the Greek words for plant and blue, gives the berries their dark blue colour. Anthocyanins have been shown in tests to specifically target destructive free radicals that affect age-related mental deterioration and eye problems such as macular degeneration, night blindness and vision complications from diabetes. Anthocyanins also have other benefits for the vision, as they can moisturise the eyes, help improve blood circulation, relieve conjunctival redness and treat dark circles around the eyes.\n",
     "zh-Hant": "藍莓蘊含一種人體必要的養份─花青素，它有極好的抗氧化能力。花青素可以使眼睛增加水分，幫助促進眼球血液循環，減輕結膜泛紅和黑眼圈，對改善各種視力問題很有幫助。\n",
     "zh-Hans": "蓝莓蕴含一种人体必要的养份─花青素，它有极好的抗氧化能力。花青素可以使眼睛增加水分，帮助促进眼球血液循环，减轻结膜泛红和黑眼圈，对改善各种视力问题很有帮助。\n"
   },
   "source": "vitaherbapedia.com",
-  "created": "2026-02-19T15:32:30.526Z",
-  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "description": {
-    "en": "Blueberries are native to North America, eastern Asia and Northern Europe. The preparation is made from the ripe, dark purple fruit of Vaccinium Cyanococcus L.\n",
-    "zh-Hant": "美洲藍莓土生於北美、亞洲東部和歐洲北部。它是由成熟、深紫色的藍漿果果實提取而成。\n",
-    "zh-Hans": "美洲蓝莓土生於北美、亚洲东部和欧洲北部。它是由成熟、深紫色的蓝浆果果实提取而成。\n"
-  }
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/westherbs-en/blueberry/"
 }

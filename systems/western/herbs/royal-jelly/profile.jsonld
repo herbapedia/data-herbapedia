@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/royal-jelly",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/royal-jelly"
+  },
+  "name": {
+    "en": "Royal Jelly",
+    "zh-Hant": "蜂王漿",
+    "zh-Hans": "蜂王浆"
+  },
+  "westernTraditionalUsage": {
+    "en": "Royal jelly is a secretion made by honey bees and is collected from commercial hives. One healthy hive takes up to six months to produce around 500 grams of royal jelly. It is a naturally rich source of minerals, B-complex vitamins, protein and essential amino acids with antioxidant and anti-fatigue effects. It is a popular tonic and is often added to skin creams. It is also sometimes used to treat allergies; however, anyone allergic to honey or bee stings should not consume royal jelly.\n",
+    "zh-Hant": "蜂王漿含有豐富營養，包括礦物質、維他命 B、蛋白質及必需胺基酸，有助抗氧化及抗疲勞，更可用作紓緩過敏症狀，但對蜜糖及蜜蜂敏感人士不宜服用。\n",
+    "zh-Hans": "蜂王浆含有丰富营养，包括矿物质、维他命 B、蛋白质及必需胺基酸，有助抗氧化及抗疲劳，更可用作纾缓过敏症状，但对蜜糖及蜜蜂敏感人士不宜服用。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/westherbs-en/royal-jelly/"
+}

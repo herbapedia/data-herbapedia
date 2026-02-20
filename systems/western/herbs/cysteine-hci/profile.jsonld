@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/cysteine-hci",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/cysteine-hci"
+  },
+  "name": {
+    "en": "Cysteine (HCI)",
+    "zh-Hant": "L-半胱氨酸",
+    "zh-Hans": "L-半胱氨酸"
+  },
+  "westernTraditionalUsage": {
+    "en": "As a key constituent of glutathione, cysteine has many important physiological functions. Glutathione, formed from cysteine, glutamic acid and glycine, is found in all human tissues, with the highest concentrations in the liver and eyes. Glutathione is a potent antioxidant, protecting fatty tissues from the damaging effects of free radicals. The antioxidant activity of glutathione is attributed specifically to the presence of cysteine in the compound. Cysteine also has the ability to break down proteins found in mucus that settles in the lungs. As a result, this amino acid may be useful in the treatment of bronchitis and other respiratory problems.\n",
+    "zh-Hant": "",
+    "zh-Hans": ""
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/nutrients-en/cysteine-hci/"
+}

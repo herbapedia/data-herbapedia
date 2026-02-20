@@ -2,8 +2,7 @@
   "@context": "../../schema/context/western.jsonld",
   "@id": "western/saw-palmetto",
   "@type": [
-    "western:Herb",
-    "schema:DietarySupplement"
+    "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
     "@id": "plant/saw-palmetto"
@@ -13,7 +12,6 @@
     "zh-Hant": "鋸櫚",
     "zh-Hans": "锯榈"
   },
-  "scientificName": "Serenoa Serrulata",
   "westernHistory": {
     "en": "Saw palmetto berries were first used by Native Americans as a diuretic and sexual tonic, as well as for stomach ache and dysentery.\n",
     "zh-Hant": "鋸櫚果首先被美國人使用作利尿劑和誘發性慾的補藥，以及紓緩胃痛和腹瀉。\n",
@@ -25,11 +23,5 @@
     "zh-Hans": "锯榈能促进男士排水，减少排水时出现的痛楚，有助纾缓晚上如厕频密等问题。服用锯榈不会引起西药可能引起的副作用。锯榈有助降低在前列组织内 DHT的水平，纾缓前列变大症状。\n"
   },
   "source": "vitaherbapedia.com",
-  "created": "2026-02-19T15:32:30.556Z",
-  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "description": {
-    "en": "Saw Palmetto is a small, low-growing, dwarf-palm tree, native to southeastern North American, particularly Florida. The extract is prepared from its berries.\n",
-    "zh-Hant": "鋸櫚是一棵體形矮小的棕櫚樹，土生於北美洲東南部，特別是佛羅里達。鋸櫚精華是從其莓果抽取而來。\n",
-    "zh-Hans": "锯榈是一棵体形矮小的棕榈树，土生於北美洲东南部，特别是佛罗里达。锯榈精华是从其莓果抽取而来。\n"
-  }
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/nutrients-en/saw-palmetto/"
 }

@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/vitamin-b5",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/vitamin-b5"
+  },
+  "name": {
+    "en": "Vitamin B5",
+    "zh-Hant": "維他命 B5 又名泛酸",
+    "zh-Hans": "维他命 B5 又名泛酸"
+  },
+  "westernTraditionalUsage": {
+    "en": "Pantothenic acid, or vitamin B5, functions in the body as part of two different enzymes - coenzyme A (CoA) and acyl carrier protein (ACP). CoA helps in transmitting nerve impulses, synthesising hormones and haemoglobin - which is essential in building blood. CoA is also essential in the maintenance of normal blood sugar and formation of antibodies. D-calcium pantothenate, a synthetically made substance, is the name for the most common form of pantothenic acid used in vitamin supplements.\n",
+    "zh-Hant": "維他命B5又名泛酸，是輔酶A(CoA)及酰基載體蛋白(acyl carrier protein, ACP)的組成部分。CoA 幫助傳送神經脈衝，製造荷爾蒙和血紅蛋白，血紅蛋白是血液紅細胞的主要成分。CoA 也有助控制血糖和製造抗體。\n",
+    "zh-Hans": "维他命B5又名泛酸，是辅酶A(CoA)及酰基载体蛋白(acyl carrier protein, ACP)的组成部分。CoA 帮助传送神经脉衝，製造荷尔蒙和血红蛋白，血红蛋白是血液红细胞的主要成分。CoA 也有助控制血糖和製造抗体。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/vitamins-en/vitamin-b5/"
+}

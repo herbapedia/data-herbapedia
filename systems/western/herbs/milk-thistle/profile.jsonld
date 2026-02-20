@@ -2,8 +2,7 @@
   "@context": "../../schema/context/western.jsonld",
   "@id": "western/milk-thistle",
   "@type": [
-    "western:Herb",
-    "schema:DietarySupplement"
+    "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
     "@id": "plant/milk-thistle"
@@ -13,12 +12,6 @@
     "zh-Hant": "乳薊果",
     "zh-Hans": "乳蓟果"
   },
-  "scientificName": "Silybum marianum (L.) Gaertn",
-  "hasOrganAffinity": [
-    {
-      "@id": "organ/liver"
-    }
-  ],
   "westernHistory": {
     "en": "Milk Thistle preparations have been used in European medicine for over 2000 years to treat liver and biliary tract diseases, and to cure people who have ingested poisonous mushrooms.\n",
     "zh-Hant": "乳薊果於歐洲國家用作醫藥用途已超過2000 年，主要是大益肝臟和膽等健康。\n",
@@ -30,11 +23,5 @@
     "zh-Hans": "乳蓟果的种子含1.5-3.0%的黄酮木脂素类 (flavonolignans)，包括水飞蓟宾 (silybin)、水飞蓟宁 (silydianin)和水飞蓟亭 (silychristin)，现在统称为水飞蓟(silymarin)。动物研究和人类临床研究显示silymarin能保护肝脏，包括阻碍肝脏纤维化，有助解决由於酗酒或长期受病毒影响的肝脏问题。\n"
   },
   "source": "vitaherbapedia.com",
-  "created": "2026-02-19T15:32:30.543Z",
-  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "description": {
-    "en": "Milk Thistle preparations consist of the dried fruits (also known as achenes) of Silybum marianum (L.) Gaertn.\n",
-    "zh-Hant": "乳薊果從水飛薊乾果(也稱為瘦果)配製而成。\n",
-    "zh-Hans": "乳蓟果从水飞蓟乾果(也称为瘦果)配製而成。\n"
-  }
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/westherbs-en/milk-thistle/"
 }

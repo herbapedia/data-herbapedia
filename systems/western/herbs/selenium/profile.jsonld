@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/selenium",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/selenium"
+  },
+  "name": {
+    "en": "Selenium",
+    "zh-Hant": "硒",
+    "zh-Hans": "硒"
+  },
+  "westernTraditionalUsage": {
+    "en": "Selenium is an essential micronutrient for good health. It is a component of the enzyme glutathione peroxidase, the metabolic role of which is to protect against oxidation of polyunsaturated fatty acids and resultant tissue damage, meaning it can counter the damage caused by free radicals. It is also important for the functioning of the thyroid gland.\n",
+    "zh-Hant": "硒是體內麩胱甘肽過氧化酶構成物質，它能保護多元不飽和脂肪酸免受氧化，減低由游離基對組織所造成的損害。\n",
+    "zh-Hans": "硒是体内麸胱甘肽过氧化酶构成物质，它能保护多元不饱和脂肪酸免受氧化，减低由游离基对组织所造成的损害。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/minerals-en/selenium/"
+}

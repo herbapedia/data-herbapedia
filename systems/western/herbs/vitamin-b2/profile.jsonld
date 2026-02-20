@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/vitamin-b2",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/vitamin-b2"
+  },
+  "name": {
+    "en": "Vitamin B2",
+    "zh-Hant": "維他命 B2 又名核黃素",
+    "zh-Hans": "维他命 B2 又名核黄素"
+  },
+  "westernTraditionalUsage": {
+    "en": "Riboflavin aids in the production of enzymes necessary for the conversion of fats, proteins and carbohydrates into energy. It is needed for red blood cell formation and for the production of antibodies and neurotransmitters. Riboflavin also promotes healthy hair, skin, nails, and vision and is essential for the other B vitamins to function properly. Since riboflavin is water soluble, it is lost in sweat and urine and must be replaced daily from dietary sources.\n",
+    "zh-Hant": "核黃素參與碳水化合物、蛋白質和脂肪的代謝作用，製造紅血球、抗體和神經傳導物質也需要核黃素。核黃素也能加強其他維他命B的功效，確保其他維他命B能順利運作。核黃素屬水溶性，容易隨汗和尿液排出體外，必須從日常飲食中額外補充。\n",
+    "zh-Hans": "核黄素参与碳水化合物、蛋白质和脂肪的代谢作用，製造红血球、抗体和神经传导物质也需要核黄素。核黄素也能加强其他维他命B的功效，确保其他维他命B能顺利运作。核黄素属水溶性，容易随汗和尿液排出体外，必须从日常饮食中额外补充。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/vitamins-en/vitamin-b2/"
+}

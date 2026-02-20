@@ -2,8 +2,7 @@
   "@context": "../../schema/context/western.jsonld",
   "@id": "western/peppermint-oil",
   "@type": [
-    "western:Herb",
-    "schema:DietarySupplement"
+    "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
     "@id": "plant/peppermint-oil"
@@ -13,20 +12,6 @@
     "zh-Hant": "胡椒薄荷油",
     "zh-Hans": "胡椒薄荷油"
   },
-  "scientificName": "Mentha peperita",
-  "hasAction": [
-    {
-      "@id": "western/action/digestive"
-    }
-  ],
-  "hasOrganAffinity": [
-    {
-      "@id": "organ/digestive"
-    },
-    {
-      "@id": "organ/skin"
-    }
-  ],
   "westernHistory": {
     "en": "Peppermint has been cultivated from ancient times in China and Japan. It was also known as a medicinal herb to the Egyptians and ancient Greeks.\n",
     "zh-Hant": "薄荷植物於古代中國和日本已被培植。埃及人和古希臘人亦認同薄荷植物是中草藥之一。\n",
@@ -38,11 +23,5 @@
     "zh-Hans": "胡椒薄荷油带有让人愉快的薄荷香气，常被用作各种用途，从刺激消化系统到消除精神疲劳，均有帮助。胡椒薄荷也多用作治疗因分娩而产生的发烧和腹痛。胡椒薄荷能抑制细菌生长，而吸入或外涂胡椒薄荷油则有助舒缓和放松肌肉。\n"
   },
   "source": "vitaherbapedia.com",
-  "created": "2026-02-19T15:32:30.537Z",
-  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "description": {
-    "en": "Extracted from the Peppermint plant by steam distillation.\n",
-    "zh-Hant": "薄荷植物透過蒸汽蒸餾而提煉出的胡椒薄荷油。\n",
-    "zh-Hans": "薄荷植物透过蒸汽蒸馏而提炼出的胡椒薄荷油。\n"
-  }
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/westherbs-en/peppermint-oil/"
 }

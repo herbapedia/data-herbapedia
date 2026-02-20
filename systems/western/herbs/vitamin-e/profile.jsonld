@@ -1,0 +1,22 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/vitamin-e",
+  "@type": [
+    "herbapedia:WesternHerbProfile"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/vitamin-e"
+  },
+  "name": {
+    "en": "Vitamin E",
+    "zh-Hant": "維他命 E",
+    "zh-Hans": "维他命 E"
+  },
+  "westernTraditionalUsage": {
+    "en": "Vitamin E is a natural antioxidant that protects body cells from free radicals formed from unsaturated fatty acids, enhances elasticity of the connective tissue and is important for the skin's collagen metabolism. It also improves the metabolism of cells, smoothes skin and increases its ability to hold moisture, whilst having a normalising influence on micro-circulation. Around the body, it is essential to cellular respiration, primarily in the heart and skeletal muscle tissues. Natural vitamin E assimilates far better and is more bioactive than synthetic versions. Alpha-tocopherol is the most biologically active form of vitamin E.\n",
+    "zh-Hant": "維他命E 是一種天然抗氧化劑，能保護身體細胞，對抗由不飽和脂肪酸形成的游離基。它是細胞呼吸不可或缺的元素，尤其是心臟和骨骼肌肉組織。天然的維他命E 比合成的更容易被吸收和更具有生物活性。Alpha-tocopherol 是生化活性最活躍的維他命E形式。\n",
+    "zh-Hans": "维他命E 是一种天然抗氧化剂，能保护身体细胞，对抗从不饱和脂肪酸形成的游离基。它是细胞呼吸不可或缺的元素，尤其是在心和骨骼肌肉组织上。天然的维他命E 比合成的更容易被吸收和更具有生物活性。Alpha-tocopherol 是生化活性最活跃的维他命E形式。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/vitamins-en/vitamin-e/"
+}
