@@ -1,0 +1,53 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/guijia-or-guiban",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/guijia-or-guiban"
+  },
+  "name": {
+    "en": "Guijia or Guiban",
+    "zh-Hant": "龜板",
+    "zh-Hans": "龟板"
+  },
+  "pinyin": "Guijia or Guiban",
+  "chineseName": {
+    "zh-Hant": "龜板",
+    "zh-Hans": "龟板"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in the Divine Husbandman's Classic of the Materia Medica.\n",
+    "zh-Hant": "始載於《神農本草經》，列為上品。\n",
+    "zh-Hans": "始载于《神農本草经》，列为上品。\n"
+  },
+  "tcmTraditionalUsage": {
+    "en": "This medicine derived from the shells of fresh water turtles is salty, sweet and cold in nature. It enters the liver, kidney and heart meridians to nourish yin and anchor yang, tonify the kidneys, strengthen the bones and nourish the heart and blood. It can be used to treat symptoms of liver yin deficiency with rising fire, which include dizziness, vertigo, a flushed face and irritability. It can also address deficiencies of kidney yin and jing (essence), combatting symptoms such as weak bones, a sore back and weight loss. Since the kidneys are responsible for hair health, this herb will also help to improve weak, brittle or greying hair.\n",
+    "zh-Hant": "龜板是一味補陰藥材，藥味甘、鹹，藥性寒，歸屬肝、腎、心經，功效是滋陰潛陽、益腎健骨、固經止血、養血補心，主要用於腎虛所致的骨痿、腰酸、月經過多、崩漏等，亦會用於陰虛動風症，如頭暈、耳聲嘈雜、盜汗等症狀。《本草綱目》言：「其甲以補心、補腎、補血，皆以養陰也。」\n",
+    "zh-Hans": "龜板是一味补阴药材，药味甘、咸，药性寒，歸属肝、肾、心经，功效是滋阴潛阳、益肾健骨、固经止血、养血补心，主要用于肾虚所致的骨痿、腰酸、月经过多、崩漏等，亦會用于阴虚动風症，如头暈、耳聲嘈雜、盜汗等症狀。《本草綱目》言：「其甲以补心、补肾、补血，皆以养阴也。」\n"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:20.172Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    "https://www.wikidata.org/wiki/Q13486671"
+  ]
+}

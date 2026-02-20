@@ -1,0 +1,47 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/ginger",
+  "@type": [
+    "botany:Plant",
+    "schema:Thing"
+  ],
+  "name": {
+    "en": "Ginger",
+    "zh-Hant": "生薑",
+    "zh-Hans": "生姜"
+  },
+  "commonName": {
+    "en": "Ginger Root",
+    "zh-Hant": "生薑",
+    "zh-Hans": "生姜"
+  },
+  "scientificName": "Zingiber officinale",
+  "family": "Zingiberaceae",
+  "genus": "Zingiber",
+  "description": {
+    "en": "Ginger is a flowering plant whose rhizome is widely used as a spice and in folk medicine. Native to Southeast Asia, it is now cultivated throughout the tropics.",
+    "zh-Hant": "生薑是一種開花植物，其根莖被廣泛用作香料和民間藥物。原生於東南亞，現已在整個熱帶地區栽培。",
+    "zh-Hans": "生姜是一种开花植物，其根茎被广泛用作香料和民间药物。原生於东南亚，现已在整个热带地区栽培。"
+  },
+  "botanicalDescription": {
+    "en": "Perennial herb growing to 1 meter tall. Leaves are narrow, lanceolate, 15-30 cm long. Flowers are pale yellow with purple edges, produced in dense spikes. Rhizomes are knotted and branched, with brown skin and yellow flesh.",
+    "zh-Hant": "多年生草本植物，高1米。葉狹窄，披針形，長15-30厘米。花淡黃色帶紫色邊緣，密集成穗狀。根莖呈結狀和分枝狀，皮褐色，肉黃色。",
+    "zh-Hans": "多年生草本植物，高1米。叶狭窄，披针形，长15-30厘米。花淡黄色带紫色边缘，密集成穗状。根茎呈结状和分枝状，皮褐色，肉黄色。"
+  },
+  "image": "media/images/ginger/ginger.jpg",
+  "containsChemical": [
+    {
+      "@id": "chemical/gingerol"
+    },
+    {
+      "@id": "chemical/essential-oils"
+    }
+  ],
+  "sameAs": [
+    "https://www.wikidata.org/wiki/Q159964"
+  ],
+  "gbifId": "2755267",
+  "created": "2026-02-20T00:00:00.000Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "modified": "2026-02-19T23:24:40.399Z"
+}

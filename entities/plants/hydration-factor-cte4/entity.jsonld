@@ -1,0 +1,19 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/hydration-factor-cte4",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "name": {
+    "en": "Hydration Factor CTE4",
+    "zh-Hant": "獨特保濕因子CTE4",
+    "zh-Hans": "独特保湿因子CTE4"
+  },
+  "image": "media/images/hydration-factor-cte4/hydration-factor-cte4.jpg",
+  "url": "https://herbapedia.org/plants/hydration-factor-cte4",
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/nutrients-en/hydration-factor-cte4/",
+  "created": "2026-02-18T09:17:10.620Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+}

@@ -1,0 +1,31 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/lianqiao",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "scientificName": "Forsythia suspensa",
+  "name": {
+    "en": "Lianqiao",
+    "zh-Hant": "連翹",
+    "zh-Hans": "连翘"
+  },
+  "description": {
+    "en": "Fruit of Forsythi suspensa (Thunb.) Vahl., family Oleaceae.\n",
+    "zh-Hant": "連翹（學名：Forsythia suspensa）是一種具有藥用價值的天然產物。現代藥理學研究證實其含有多種生物活性成分，在傳統醫學和現代保健領域均有重要應用價值。",
+    "zh-Hans": "連翹（学名：Forsythia suspensa）是一种具有药用價值的天然產物。現代药理学研究证实其含有多种生物活性成分，在传统医学和現代保健領域均有重要应用價值。"
+  },
+  "image": "media/images/lianqiao/lianqiao.jpg",
+  "url": "https://herbapedia.org/plants/lianqiao",
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/chiherbs-en/lianqiao/",
+  "created": "2026-02-18T09:15:28.981Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.gbif.org/species/5415056"
+    }
+  ],
+  "gbifId": 5415056
+}

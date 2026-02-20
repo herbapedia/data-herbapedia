@@ -1,0 +1,294 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "https://herbapedia.org/",
+    "@vocab": "https://herbapedia.org/vocab/core/",
+
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+
+    "schema": "https://schema.org/",
+    "dc": "http://purl.org/dc/terms/",
+    "dwc": "http://rs.tdwg.org/dwc/terms/",
+    "gbif": "http://rs.gbif.org/terms/1.0/",
+
+    "wd": "http://www.wikidata.org/entity/",
+    "wdt": "http://www.wikidata.org/prop/direct/",
+
+    "herbapedia": "https://herbapedia.org/vocab/core/",
+    "tcm": "https://herbapedia.org/vocab/tcm/",
+    "ayurveda": "https://herbapedia.org/vocab/ayurveda/",
+    "western": "https://herbapedia.org/vocab/western/",
+
+    "id": "@id",
+    "type": "@type",
+    "graph": "@graph",
+
+    "MedicinalPlant": {
+      "@id": "herbapedia:MedicinalPlant",
+      "@type": "@id"
+    },
+    "ChemicalCompound": {
+      "@id": "herbapedia:ChemicalCompound",
+      "@type": "@id"
+    },
+    "PlantPart": {
+      "@id": "herbapedia:PlantPart",
+      "@type": "@id"
+    },
+    "PharmacologicalAction": {
+      "@id": "herbapedia:PharmacologicalAction",
+      "@type": "@id"
+    },
+    "HerbariumSpecimen": {
+      "@id": "herbapedia:HerbariumSpecimen",
+      "@type": "@id"
+    },
+    "Media": {
+      "@id": "herbapedia:Media",
+      "@type": "@id"
+    },
+    "Document": {
+      "@id": "herbapedia:Document",
+      "@type": "@id"
+    },
+    "Index": {
+      "@id": "herbapedia:Index",
+      "@type": "@id"
+    },
+
+    "gcmtiCode": {
+      "@id": "herbapedia:gcmtiCode",
+      "@type": "xsd:string"
+    },
+    "coordinates": {
+      "@id": "herbapedia:coordinates",
+      "@type": "@json"
+    },
+    "origin": {
+      "@id": "herbapedia:origin",
+      "@container": "@language"
+    },
+    "hasImages": {
+      "@id": "herbapedia:hasImages",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "hasMedia": {
+      "@id": "herbapedia:hasMedia",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "hasAnnotations": {
+      "@id": "herbapedia:hasAnnotations",
+      "@container": "@set"
+    },
+    "representsPlant": {
+      "@id": "herbapedia:representsPlant",
+      "@type": "@id"
+    },
+    "contentUrl": {
+      "@id": "schema:contentUrl",
+      "@type": "@id"
+    },
+    "thumbnailUrl": {
+      "@id": "schema:thumbnailUrl",
+      "@type": "@id"
+    },
+    "encodingFormat": {
+      "@id": "schema:encodingFormat",
+      "@type": "xsd:string"
+    },
+    "documentType": {
+      "@id": "herbapedia:documentType",
+      "@type": "xsd:string"
+    },
+    "filename": {
+      "@id": "herbapedia:filename",
+      "@type": "xsd:string"
+    },
+    "hasExtractedData": {
+      "@id": "herbapedia:hasExtractedData",
+      "@type": "@id"
+    },
+    "counts": {
+      "@id": "herbapedia:counts",
+      "@type": "@json"
+    },
+    "generated": {
+      "@id": "dc:created",
+      "@type": "xsd:dateTime"
+    },
+
+    "name": {
+      "@id": "schema:name",
+      "@container": "@language"
+    },
+    "description": {
+      "@id": "schema:description",
+      "@container": "@language"
+    },
+    "alternateName": {
+      "@id": "schema:alternateName",
+      "@container": "@set"
+    },
+
+    "scientificName": {
+      "@id": "dwc:scientificName",
+      "@type": "xsd:string"
+    },
+    "family": {
+      "@id": "dwc:family",
+      "@type": "xsd:string"
+    },
+    "genus": {
+      "@id": "dwc:genus",
+      "@type": "xsd:string"
+    },
+    "species": {
+      "@id": "dwc:specificEpithet",
+      "@type": "xsd:string"
+    },
+    "taxonID": {
+      "@id": "dwc:taxonID",
+      "@type": "xsd:string"
+    },
+    "gbifID": {
+      "@id": "gbif:GBIFID",
+      "@type": "xsd:string"
+    },
+
+    "image": {
+      "@id": "schema:image",
+      "@type": "@id"
+    },
+    "url": {
+      "@id": "schema:url",
+      "@type": "@id"
+    },
+
+    "sameAs": {
+      "@id": "schema:sameAs",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "isRelatedTo": {
+      "@id": "schema:isRelatedTo",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "isSimilarTo": {
+      "@id": "schema:isSimilarTo",
+      "@type": "@id",
+      "@container": "@set"
+    },
+
+    "hasPart": {
+      "@id": "herbapedia:hasPart",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "partOf": {
+      "@id": "herbapedia:partOf",
+      "@type": "@id"
+    },
+    "containsChemical": {
+      "@id": "herbapedia:containsChemical",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "hasPharmacologicalAction": {
+      "@id": "herbapedia:hasPharmacologicalAction",
+      "@type": "@id",
+      "@container": "@set"
+    },
+
+    "slug": {
+      "@id": "herbapedia:slug",
+      "@type": "xsd:string"
+    },
+    "commonName": {
+      "@id": "herbapedia:commonName",
+      "@container": "@language"
+    },
+
+    "botanicalDescription": {
+      "@id": "herbapedia:botanicalDescription",
+      "@container": "@language"
+    },
+    "geographicalDistribution": {
+      "@id": "herbapedia:geographicalDistribution",
+      "@container": "@language"
+    },
+    "foodSources": {
+      "@id": "herbapedia:foodSources",
+      "@container": "@set"
+    },
+
+    "source": {
+      "@id": "dc:source",
+      "@type": "xsd:string"
+    },
+    "sourceUrl": {
+      "@id": "dc:source",
+      "@type": "xsd:anyURI"
+    },
+    "creator": {
+      "@id": "dc:creator",
+      "@type": "xsd:string"
+    },
+    "created": {
+      "@id": "dc:created",
+      "@type": "xsd:dateTime"
+    },
+    "modified": {
+      "@id": "dc:modified",
+      "@type": "xsd:dateTime"
+    },
+    "license": {
+      "@id": "dc:license",
+      "@type": "@id"
+    },
+
+    "inLanguage": {
+      "@id": "schema:inLanguage",
+      "@type": "xsd:string"
+    },
+
+    "category": {
+      "@id": "schema:category",
+      "@type": "@id"
+    },
+
+    "prefLabel": {
+      "@id": "skos:prefLabel",
+      "@container": "@language"
+    },
+    "altLabel": {
+      "@id": "skos:altLabel",
+      "@container": "@set"
+    },
+    "definition": {
+      "@id": "skos:definition",
+      "@container": "@language"
+    },
+    "broader": {
+      "@id": "skos:broader",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "narrower": {
+      "@id": "skos:narrower",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "related": {
+      "@id": "skos:related",
+      "@type": "@id",
+      "@container": "@set"
+    }
+  }
+}

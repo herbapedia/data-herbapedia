@@ -1,0 +1,60 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/dihuang",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/dihuang"
+  },
+  "name": {
+    "en": "Dihuang",
+    "zh-Hant": "生地黃、乾地黃  又名地黃",
+    "zh-Hans": "生地黄、乾地黄  又名地黄"
+  },
+  "pinyin": "Dihuang",
+  "chineseName": {
+    "zh-Hant": "生地黃、乾地黃  又名地黃",
+    "zh-Hans": "生地黄、乾地黄  又名地黄"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Divine Husbandman's Classic of the Materia Medica.\n",
+    "zh-Hant": "【生地黃、乾地黃  又名地黃】History內容待翻譯補充。",
+    "zh-Hans": "【生地黃、干地黃  又名地黃】History內容待翻譯补充。"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Dihuang is a sweet, cooling herb that affects the heart, kidney and liver channels. It is used primarily for clearing heat and cooling the blood, and especially for eliminating toxins and soothing dermatological disorders caused by heat. It also nourishes yin and promotes the generation of body fluids.\n",
+    "zh-Hant": "生地黃是玄參科草本植物地黃的根，全國大部分地區均有栽培，藥味甘、苦，能清熱涼血、養陰生津，可鮮用或乾燥切片生用，鮮用者稱為鮮生地，藥性大寒，清熱力較強，乾燥者稱為乾地黃，藥性寒，具有一定滋陰能力，生地常用於清熱涼血，治療如口乾舌絳、口腔潰瘍、夜熱早涼、腸燥便秘等等。\n",
+    "zh-Hans": "生地黃是玄參科草本植物地黃的根，全国大部分地区均有栽培，药味甘、苦，能清热涼血、养阴生津，可鮮用或干燥切片生用，鮮用者稱为鮮生地，药性大寒，清热力較强，干燥者稱为干地黃，药性寒，具有一定滋阴能力，生地常用于清热涼血，治疗如口干舌絳、口腔潰瘍、夜热早涼、肠燥便秘等等。\n"
+  },
+  "tcmModernResearch": {
+    "en": "Dihuang has anti-inflammatory properties and affects the endocrine system, as shown by pharmacological studies.\n",
+    "zh-Hant": "【生地黃、乾地黃  又名地黃】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【生地黃、干地黃  又名地黃】Modern Research內容待翻譯补充。"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:10.040Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q1071605"
+    }
+  ]
+}

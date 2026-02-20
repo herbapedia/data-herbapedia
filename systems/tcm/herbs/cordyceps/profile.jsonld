@@ -1,0 +1,60 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/cordyceps",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/cordyceps"
+  },
+  "name": {
+    "en": "Cordyceps",
+    "zh-Hant": "冬蟲夏草",
+    "zh-Hans": "冬蟲夏草"
+  },
+  "pinyin": "Cordyceps",
+  "chineseName": {
+    "zh-Hant": "冬蟲夏草",
+    "zh-Hans": "冬蟲夏草"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "Cordyceps is a traditional Chinese medicinal herb which has been used for centuries as a food, albeit a rare, expensive one. It has an extensive history of use in maintaining the health of the lung and respirating system. It first appeared in Omissions from the Grand Materia Medica.\n",
+    "zh-Hant": "始載於《本草綱目拾遺》\n",
+    "zh-Hans": "始载于《本草綱目拾遺》\n"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Cordyceps is a precious herb derived from a parasitic fungus that grows on a Tibetan caterpillar. Specimens gathered in the wild, particularly in the Tibetan regions, are thought to be the most medicinally potent. Both the fungus and the caterpillar are used, combining yin and yang elements. Cordyceps enhances kidney, lung and immune functions, helps to tonify kidney yin and lung yin and soothes kidney symptoms and chronic breathing discomforts. It also promotes longevity, strengthens overall energy, rejuvenates the body and is suitable for use all in all seasons. It is the best remedy for balancing bodily yin and yang.\n",
+    "zh-Hant": "冬蟲夏草為珍貴的補陽藥，其藥味甘而藥性平和，能有效益腎壯陽、補肺平喘，改善因肺虛、腎虛所導致的慢性咳喘、小便欠佳等問題，有助提升免疫力，是高效的養生藥材。冬蟲夏草藥性溫和，四季合用。\n",
+    "zh-Hans": "冬蟲夏草为珍貴的补阳药，其药味甘而药性平和，能有效益肾壮阳、补肺平喘，改善因肺虚、肾虚所導致的慢性咳喘、小便欠佳等問題，有助提升免疫力，是高效的养生药材。冬蟲夏草药性溫和，四季合用。\n"
+  },
+  "tcmModernResearch": {
+    "en": "A series of studies has shown that the herb has respiratory, renal, hepatic, cardiovascular, immunologic and nervous system enhancing properties. Cordyceps has proved to be extremely safe, even at very high doses and after prolonged use.\n",
+    "zh-Hant": "【冬蟲夏草】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【冬蟲夏草】Modern Research內容待翻譯补充。"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:05.035Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q398300"
+    }
+  ]
+}

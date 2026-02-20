@@ -1,0 +1,25 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/glycine",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "scientificName": "l-glycine",
+  "name": {
+    "en": "Glycine",
+    "zh-Hant": "甘氨酸",
+    "zh-Hans": "甘氨酸"
+  },
+  "description": {
+    "en": "Protein-rich foods contain good amounts of glycine. It is found in fish, meat, beans and dairy products.\n",
+    "zh-Hant": "甘氨酸（學名：l-glycine）是一種具有藥用價值的天然產物。現代藥理學研究證實其含有多種生物活性成分，在傳統醫學和現代保健領域均有重要應用價值。",
+    "zh-Hans": "甘氨酸（学名：l-glycine）是一种具有药用價值的天然產物。現代药理学研究证实其含有多种生物活性成分，在传统医学和現代保健領域均有重要应用價值。"
+  },
+  "image": "media/images/glycine/glycine.jpg",
+  "url": "https://herbapedia.org/plants/glycine",
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/nutrients-en/glycine/",
+  "created": "2026-02-18T09:17:09.847Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+}

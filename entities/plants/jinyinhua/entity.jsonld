@@ -1,0 +1,31 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/jinyinhua",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "scientificName": "Lonicera japonica",
+  "name": {
+    "en": "Jinyinhua",
+    "zh-Hant": "金銀花",
+    "zh-Hans": "金银花"
+  },
+  "description": {
+    "en": "From the flower bud of Lonicera japonica Thunb., or a few species under same genus, family Caprifoliaceae.\n",
+    "zh-Hant": "金銀花（學名：Lonicera japonica）是一種具有藥用價值的天然產物。現代藥理學研究證實其含有多種生物活性成分，在傳統醫學和現代保健領域均有重要應用價值。",
+    "zh-Hans": "金銀花（学名：Lonicera japonica）是一种具有药用價值的天然產物。現代药理学研究证实其含有多种生物活性成分，在传统医学和現代保健領域均有重要应用價值。"
+  },
+  "image": "media/images/jinyinhua/jinyinhua.jpg",
+  "url": "https://herbapedia.org/plants/jinyinhua",
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/chiherbs-en/jinyinhua/",
+  "created": "2026-02-18T09:15:26.522Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.gbif.org/species/5334240"
+    }
+  ],
+  "gbifId": 5334240
+}

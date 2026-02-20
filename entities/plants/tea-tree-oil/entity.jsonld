@@ -1,0 +1,31 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/tea-tree-oil",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "scientificName": "Melaleuca alternifolia",
+  "name": {
+    "en": "Tea Tree oil",
+    "zh-Hant": "茶樹油",
+    "zh-Hans": "茶树油"
+  },
+  "description": {
+    "en": "Tea tree oil is obtained by steam distillation from the leaves of Melaleuca alternifolia.\n",
+    "zh-Hant": "茶樹油（學名：Melaleuca alternifolia）萃取自植物種子或果實，富含不飽和脂肪酸和維生素E等營養成分。具有滋潤皮膚、抗氧化等功效，廣泛應用於保健和美容領域。",
+    "zh-Hans": "茶樹油（学名：Melaleuca alternifolia）萃取自植物种子或果实，富含不飽和脂肪酸和維生素E等營养成分。具有滋润皮肤、抗氧化等功效，廣泛应用于保健和美容領域。"
+  },
+  "image": "media/images/tea-tree-oil/tea-tree-oil.jpg",
+  "url": "https://herbapedia.org/plants/tea-tree-oil",
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/westherbs-en/tea-tree-oil/",
+  "created": "2026-02-18T09:16:37.796Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.gbif.org/species/5416091"
+    }
+  ],
+  "gbifId": 5416091
+}

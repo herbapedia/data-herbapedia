@@ -1,0 +1,188 @@
+{
+  "@context": "../schema/context/tcm.jsonld",
+  "@graph": [
+    {
+      "@id": "meridian/lung",
+      "@type": "tcm:Meridian",
+      "meridian": "lung",
+      "prefLabel": {
+        "en": "Lung Meridian",
+        "zh-Hant": "肺經",
+        "zh-Hans": "肺经",
+        "pinyin": "Fèi Jīng"
+      },
+      "pinyin": "Fei Jing",
+      "chineseName": "肺經",
+      "element": "metal",
+      "yinYang": "yin",
+      "description": {
+        "en": "The Lung Meridian governs Qi and respiration, controls the skin and hair, and regulates water passages."
+      }
+    },
+    {
+      "@id": "meridian/large-intestine",
+      "@type": "tcm:Meridian",
+      "meridian": "large-intestine",
+      "prefLabel": {
+        "en": "Large Intestine Meridian",
+        "zh-Hant": "大腸經",
+        "zh-Hans": "大肠经",
+        "pinyin": "Dà Cháng Jīng"
+      },
+      "pinyin": "Da Chang Jing",
+      "chineseName": "大腸經",
+      "element": "metal",
+      "yinYang": "yang"
+    },
+    {
+      "@id": "meridian/stomach",
+      "@type": "tcm:Meridian",
+      "meridian": "stomach",
+      "prefLabel": {
+        "en": "Stomach Meridian",
+        "zh-Hant": "胃經",
+        "zh-Hans": "胃经",
+        "pinyin": "Wèi Jīng"
+      },
+      "pinyin": "Wei Jing",
+      "chineseName": "胃經",
+      "element": "earth",
+      "yinYang": "yang"
+    },
+    {
+      "@id": "meridian/spleen",
+      "@type": "tcm:Meridian",
+      "meridian": "spleen",
+      "prefLabel": {
+        "en": "Spleen Meridian",
+        "zh-Hant": "脾經",
+        "zh-Hans": "脾经",
+        "pinyin": "Pí Jīng"
+      },
+      "pinyin": "Pi Jing",
+      "chineseName": "脾經",
+      "element": "earth",
+      "yinYang": "yin"
+    },
+    {
+      "@id": "meridian/heart",
+      "@type": "tcm:Meridian",
+      "meridian": "heart",
+      "prefLabel": {
+        "en": "Heart Meridian",
+        "zh-Hant": "心經",
+        "zh-Hans": "心经",
+        "pinyin": "Xīn Jīng"
+      },
+      "pinyin": "Xin Jing",
+      "chineseName": "心經",
+      "element": "fire",
+      "yinYang": "yin"
+    },
+    {
+      "@id": "meridian/small-intestine",
+      "@type": "tcm:Meridian",
+      "meridian": "small-intestine",
+      "prefLabel": {
+        "en": "Small Intestine Meridian",
+        "zh-Hant": "小腸經",
+        "zh-Hans": "小肠经",
+        "pinyin": "Xiǎo Cháng Jīng"
+      },
+      "pinyin": "Xiao Chang Jing",
+      "chineseName": "小腸經",
+      "element": "fire",
+      "yinYang": "yang"
+    },
+    {
+      "@id": "meridian/bladder",
+      "@type": "tcm:Meridian",
+      "meridian": "bladder",
+      "prefLabel": {
+        "en": "Bladder Meridian",
+        "zh-Hant": "膀胱經",
+        "zh-Hans": "膀胱经",
+        "pinyin": "Páng Guāng Jīng"
+      },
+      "pinyin": "Pang Guang Jing",
+      "chineseName": "膀胱經",
+      "element": "water",
+      "yinYang": "yang"
+    },
+    {
+      "@id": "meridian/kidney",
+      "@type": "tcm:Meridian",
+      "meridian": "kidney",
+      "prefLabel": {
+        "en": "Kidney Meridian",
+        "zh-Hant": "腎經",
+        "zh-Hans": "肾经",
+        "pinyin": "Shèn Jīng"
+      },
+      "pinyin": "Shen Jing",
+      "chineseName": "腎經",
+      "element": "water",
+      "yinYang": "yin"
+    },
+    {
+      "@id": "meridian/pericardium",
+      "@type": "tcm:Meridian",
+      "meridian": "pericardium",
+      "prefLabel": {
+        "en": "Pericardium Meridian",
+        "zh-Hant": "心包經",
+        "zh-Hans": "心包经",
+        "pinyin": "Xīn Bāo Jīng"
+      },
+      "pinyin": "Xin Bao Jing",
+      "chineseName": "心包經",
+      "element": "fire",
+      "yinYang": "yin"
+    },
+    {
+      "@id": "meridian/triple-burner",
+      "@type": "tcm:Meridian",
+      "meridian": "triple-burner",
+      "prefLabel": {
+        "en": "Triple Burner Meridian",
+        "zh-Hant": "三焦經",
+        "zh-Hans": "三焦经",
+        "pinyin": "Sān Jiāo Jīng"
+      },
+      "pinyin": "San Jiao Jing",
+      "chineseName": "三焦經",
+      "element": "fire",
+      "yinYang": "yang"
+    },
+    {
+      "@id": "meridian/gallbladder",
+      "@type": "tcm:Meridian",
+      "meridian": "gallbladder",
+      "prefLabel": {
+        "en": "Gallbladder Meridian",
+        "zh-Hant": "膽經",
+        "zh-Hans": "胆经",
+        "pinyin": "Dǎn Jīng"
+      },
+      "pinyin": "Dan Jing",
+      "chineseName": "膽經",
+      "element": "wood",
+      "yinYang": "yang"
+    },
+    {
+      "@id": "meridian/liver",
+      "@type": "tcm:Meridian",
+      "meridian": "liver",
+      "prefLabel": {
+        "en": "Liver Meridian",
+        "zh-Hant": "肝經",
+        "zh-Hans": "肝经",
+        "pinyin": "Gān Jīng"
+      },
+      "pinyin": "Gan Jing",
+      "chineseName": "肝經",
+      "element": "wood",
+      "yinYang": "yin"
+    }
+  ]
+}

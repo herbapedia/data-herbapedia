@@ -1,0 +1,31 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/chrysanthemum",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "scientificName": "Chrysanthemum morifolium",
+  "name": {
+    "en": "Chrysanthemum",
+    "zh-Hant": "菊花 又名杭菊",
+    "zh-Hans": "菊花 又名杭菊"
+  },
+  "description": {
+    "en": "Capitulum of Chrysanthemum morifolium Ramat., family Compositae.\n",
+    "zh-Hant": "菊花 又名杭菊（學名：Chrysanthemum morifolium）是一種具有藥用價值的天然產物。現代藥理學研究證實其含有多種生物活性成分，在傳統醫學和現代保健領域均有重要應用價值。",
+    "zh-Hans": "菊花 又名杭菊（学名：Chrysanthemum morifolium）是一种具有药用價值的天然產物。現代药理学研究证实其含有多种生物活性成分，在传统医学和現代保健領域均有重要应用價值。"
+  },
+  "image": "media/images/chrysanthemum/chrysanthemum.jpg",
+  "url": "https://herbapedia.org/plants/chrysanthemum",
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/chiherbs-en/chrysanthemum/",
+  "created": "2026-02-18T09:15:02.568Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.gbif.org/species/3150767"
+    }
+  ],
+  "gbifId": 3150767
+}

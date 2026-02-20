@@ -1,0 +1,135 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@import": "./core.jsonld",
+
+    "western": "https://herbapedia.org/vocab/western/",
+
+    "Herb": {
+      "@id": "western:Herb",
+      "@type": "@id"
+    },
+    "HerbalAction": {
+      "@id": "western:HerbalAction",
+      "@type": "@id"
+    },
+    "OrganAffinity": {
+      "@id": "western:OrganAffinity",
+      "@type": "@id"
+    },
+    "SystemAffinity": {
+      "@id": "western:SystemAffinity",
+      "@type": "@id"
+    },
+    "EnergeticQuality": {
+      "@id": "western:EnergeticQuality",
+      "@type": "@id"
+    },
+
+    "derivedFromPlant": {
+      "@id": "western:derivedFromPlant",
+      "@type": "@id"
+    },
+
+    "hasAction": {
+      "@id": "western:hasAction",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "hasOrganAffinity": {
+      "@id": "western:hasOrganAffinity",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "hasSystemAffinity": {
+      "@id": "western:hasSystemAffinity",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "hasEnergeticQuality": {
+      "@id": "western:hasEnergeticQuality",
+      "@type": "@id",
+      "@container": "@set"
+    },
+
+    "partsUsed": {
+      "@id": "western:partsUsed",
+      "@container": "@set"
+    },
+    "preparationMethod": {
+      "@id": "western:preparationMethod",
+      "@container": "@set"
+    },
+    "westernDosage": {
+      "@id": "western:dosage",
+      "@container": "@language"
+    },
+
+    "actions": {
+      "@id": "western:actions",
+      "@container": "@set"
+    },
+    "indications": {
+      "@id": "western:indications",
+      "@container": "@set"
+    },
+    "contraindications": {
+      "@id": "western:contraindications",
+      "@container": "@language"
+    },
+    "interactions": {
+      "@id": "western:interactions",
+      "@container": "@language"
+    },
+
+    "westernHistory": {
+      "@id": "western:history",
+      "@container": "@language"
+    },
+    "westernTraditionalUsage": {
+      "@id": "western:traditionalUsage",
+      "@container": "@language"
+    },
+    "westernModernResearch": {
+      "@id": "western:modernResearch",
+      "@container": "@language"
+    },
+    "westernClinicalNotes": {
+      "@id": "western:clinicalNotes",
+      "@container": "@language"
+    },
+    "westernFunctions": {
+      "@id": "western:functions",
+      "@container": "@language"
+    },
+    "westernImportance": {
+      "@id": "western:importance",
+      "@container": "@language"
+    },
+    "westernSafetyConsideration": {
+      "@id": "western:safetyConsideration",
+      "@container": "@language"
+    },
+    "westernBotanicalSource": {
+      "@id": "western:botanicalSource",
+      "@container": "@language"
+    },
+    "constituentProfile": {
+      "@id": "western:constituentProfile",
+      "@container": "@language"
+    },
+
+    "actionValue": {
+      "@id": "western:actionValue",
+      "@type": "xsd:string"
+    },
+    "organValue": {
+      "@id": "western:organValue",
+      "@type": "xsd:string"
+    },
+    "systemValue": {
+      "@id": "western:systemValue",
+      "@type": "xsd:string"
+    }
+  }
+}

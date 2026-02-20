@@ -1,0 +1,53 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/birds-nest",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/birds-nest"
+  },
+  "name": {
+    "en": "Bird&#039;s Nest",
+    "zh-Hant": "燕窩",
+    "zh-Hans": "燕窩"
+  },
+  "pinyin": "Bird&#039;s Nest",
+  "chineseName": {
+    "zh-Hant": "燕窩",
+    "zh-Hans": "燕窩"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in the Thoroughly Revised Materia Medica.\n",
+    "zh-Hant": "【燕窩】History內容待翻譯補充。",
+    "zh-Hans": "【燕窩】History內容待翻譯补充。"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Bird's Nest is obtained from the small, edible nests of cave swiftlets which are spun from saliva. They are collected from high up on cave walls and found across South East Asia, notably Thailand, Vietnam, Indonesia and Malaysia. They have been used in Chinese cooking for over 400 years, and are a cornerstone of Chinese food therapy. The nests are first soaked and cleaned to remove debris before being prepared as food or medicine. Containing high levels of calcium, potassium, iron and magnesium, birds nest is used to nourish the skin, improve the appetite, promote a better complexion and tonify lung yin. It is considered beneficial for people with weak lungs and those with chronic coughing, gasping and other related symptoms.\n",
+    "zh-Hant": "燕窩屬傳統補虛食品，據《本草綱目》記載，燕窩「入肺主氣、入腎滋水、入胃補脾、補而不燥」，「大養肺陰，化痰止嗽，補而能清，為調理虛勞之聖藥」，燕窩味甘而藥性平和，歸肺、胃、腎經，能潤肺止咳、補胃潤燥，常用於肺虛久咳等不適、以及養顏潤膚等。\n",
+    "zh-Hans": "燕窩属传统补虚食品，据《本草綱目》记载，燕窩「入肺主气、入肾滋水、入胃补脾、补而不燥」，「大养肺阴，化痰止嗽，补而能清，为调理虚勞之聖药」，燕窩味甘而药性平和，歸肺、胃、肾经，能润肺止咳、补胃润燥，常用于肺虚久咳等不適、以及养颜润肤等。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:14:54.474Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    "https://www.wikidata.org/wiki/Q860416"
+  ]
+}

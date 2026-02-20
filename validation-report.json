@@ -1,0 +1,3553 @@
+{
+  "summary": {
+    "totalFiles": 331,
+    "validFiles": 331,
+    "invalidFiles": 0,
+    "warnings": 177,
+    "errors": 0
+  },
+  "files": [
+    {
+      "path": "entities/plants/algae/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/aloe-vera/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/amber/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/american-ginseng/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/argan-oil/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/asparagus-root/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/baizhu/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/baiziren/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/balm-mint-oil/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/barley/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/beishashen/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/bilberry/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/birds-nest/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/bitter-orange/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/black-sesame-seed/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/blueberry/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/borage-extract/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/buguzhi/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/calcium/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/cangzhu/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/capigen/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/cardamom/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/ceramides/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/chamomile/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/changpu/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/chinese-angelica-or-dong-quai/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/chinese-bellflower/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/chinese-mugwort-leaf/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/chinese-rhubarb-root/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/chitosan/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/choline/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/chondroitin-sulfate/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/chrysanthemum/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/chuanxinlian/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/chuanxiong/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/clove-oil/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/copper/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/cordyceps/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/corn-silk/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/cranberry/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/cysteine-hci/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/dandelion/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/dangshen/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/danshen/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/deer-antler/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/deer-horn-gelatine/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/dihuang/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/dragon-bone/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/duhuo/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/duzhong/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/echinacea/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/epicutin-tt/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description",
+          "issue": "Missing description"
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/eucalyptus-oil/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/evening-primrose-oil/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/evodia-fruit/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/factor-arl/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description",
+          "issue": "Missing description"
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/fangfeng/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/fangji/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/fleece-flower/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/fuling/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/garcinia-cambogia-fruit/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/garlic/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/ginger/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/ginkgo/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/ginseng/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/glucosamine-sulfate/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/glycerin/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/glycine/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/gouqizi/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/grape-seed/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/great-burdock/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/green-tea/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/guijia-or-guiban/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/hawthorn/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/hehuanhua/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/honey/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/horny-goat-weed/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/hydration-factor-cte4/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description",
+          "issue": "Missing description"
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/indian-mulberry-root/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/indigowoad-root-banlangen/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/inositol/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/iodine/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/iron/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/jiaogulan/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/jinyingzi/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/jinyinhua/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/jobs-tears/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/jojoba-seed-oil/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/konjac-jelly/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/kushen/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/lavender-oil/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/lecithin/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/lianqiao/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/lingzhi-reishi/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/lingzhi-spores/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/linolenic-acid/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/liquorice-root/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/lotus-leaf/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/lysine/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/magnesium/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/maidong/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/manganese/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/melatonin/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/methionine/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/milk-thistle/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/milk-vetch/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/mineral-oil/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/mint/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/mohanlian/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/mpc/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description",
+          "issue": "Missing description"
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/muli/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/niuxi/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/nuzhenzi/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/omega-3/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/omega-6/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/omega-9/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/orobanches/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/paba/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/panax-ginseng/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/patchouli/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/peilan/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/peppermint-oil/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/petrolatum/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/phospholipids/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/potassium/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/quanshen/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/rhodiola/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/rosemary-oil/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/roucongrong/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/royal-jelly/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/sage-oil/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/saw-palmetto/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/selenium/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/shanzha/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/shanzhuyu/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/shegan/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/shengma/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/shenqu/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/shihu/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/shoudihuang/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/shouwuteng/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/soy/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/squalene/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/st-johns-wort/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/suanzaoren/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/suoyang/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/tangerine-peel/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/taoren-or-peach-kernel/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/tea-tree-oil/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/thyme-oil/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/tianma/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/tree-peony/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/turmeric/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/tusizi/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/valerian/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/vitamin-a/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/vitamin-b1/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/vitamin-b12/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/vitamin-b2/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/vitamin-b3-niacin/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/vitamin-b5/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/vitamin-b6/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/vitamin-b7-biotin/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/vitamin-b9-folate-folic-acid/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/vitamin-c/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/vitamin-d-calciferol-cholecalciferol-ergocalciferol/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/vitamin-e/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/vitamin-p-bioflavonoids/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/wheat/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/white-mulberry-leaf/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/white-peony-root/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/white-willow-bark/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/wild-yam/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/woad-or-glastum/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/wuweizi/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/xinyihua/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/xiongcane/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/yuanzhi/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/yunzhi/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/zexie/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/zhiko/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/zhusun/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/zinc/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "entities/plants/zingiber-officinale/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description.en",
+          "issue": "Consider using more medical/academic terminology",
+          "suggestion": true
+        }
+      ]
+    },
+    {
+      "path": "entities/plants/zisuye/entity.jsonld",
+      "type": "plant-entity",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "reference/chemicals/compounds.jsonld",
+      "type": "reference-data",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "schema/context/ayurveda.jsonld",
+      "type": "schema",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "schema/context/core.jsonld",
+      "type": "schema",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "schema/context/index.jsonld",
+      "type": "schema",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "schema/context/tcm.jsonld",
+      "type": "schema",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "schema/context/western.jsonld",
+      "type": "schema",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/ayurveda/doshas.jsonld",
+      "type": "reference-data",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/ayurveda/dravyas/nagara/profile.jsonld",
+      "type": "ayurveda-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/ayurveda/gunas.jsonld",
+      "type": "reference-data",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description (guna/guru).zh-Hant",
+          "issue": "Optional: Missing zh-Hant translation"
+        },
+        {
+          "field": "description (guna/guru).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (guna/laghu).zh-Hant",
+          "issue": "Optional: Missing zh-Hant translation"
+        },
+        {
+          "field": "description (guna/laghu).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (guna/sheeta).zh-Hant",
+          "issue": "Optional: Missing zh-Hant translation"
+        },
+        {
+          "field": "description (guna/sheeta).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (guna/ushna).zh-Hant",
+          "issue": "Optional: Missing zh-Hant translation"
+        },
+        {
+          "field": "description (guna/ushna).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (guna/sniqda).zh-Hant",
+          "issue": "Optional: Missing zh-Hant translation"
+        },
+        {
+          "field": "description (guna/sniqda).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (guna/ruksha).zh-Hant",
+          "issue": "Optional: Missing zh-Hant translation"
+        },
+        {
+          "field": "description (guna/ruksha).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (guna/manda).zh-Hant",
+          "issue": "Optional: Missing zh-Hant translation"
+        },
+        {
+          "field": "description (guna/manda).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (guna/tikshna).zh-Hant",
+          "issue": "Optional: Missing zh-Hant translation"
+        },
+        {
+          "field": "description (guna/tikshna).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (guna/shlakshna).zh-Hant",
+          "issue": "Optional: Missing zh-Hant translation"
+        },
+        {
+          "field": "description (guna/shlakshna).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (guna/khara).zh-Hant",
+          "issue": "Optional: Missing zh-Hant translation"
+        },
+        {
+          "field": "description (guna/khara).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (guna/sandra).zh-Hant",
+          "issue": "Optional: Missing zh-Hant translation"
+        },
+        {
+          "field": "description (guna/sandra).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (guna/drava).zh-Hant",
+          "issue": "Optional: Missing zh-Hant translation"
+        },
+        {
+          "field": "description (guna/drava).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (guna/mrudu).zh-Hant",
+          "issue": "Optional: Missing zh-Hant translation"
+        },
+        {
+          "field": "description (guna/mrudu).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (guna/kathina).zh-Hant",
+          "issue": "Optional: Missing zh-Hant translation"
+        },
+        {
+          "field": "description (guna/kathina).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (guna/sthira).zh-Hant",
+          "issue": "Optional: Missing zh-Hant translation"
+        },
+        {
+          "field": "description (guna/sthira).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (guna/chala).zh-Hant",
+          "issue": "Optional: Missing zh-Hant translation"
+        },
+        {
+          "field": "description (guna/chala).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (guna/sukshma).zh-Hant",
+          "issue": "Optional: Missing zh-Hant translation"
+        },
+        {
+          "field": "description (guna/sukshma).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (guna/sthula).zh-Hant",
+          "issue": "Optional: Missing zh-Hant translation"
+        },
+        {
+          "field": "description (guna/sthula).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (guna/picchila).zh-Hant",
+          "issue": "Optional: Missing zh-Hant translation"
+        },
+        {
+          "field": "description (guna/picchila).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (guna/vishada).zh-Hant",
+          "issue": "Optional: Missing zh-Hant translation"
+        },
+        {
+          "field": "description (guna/vishada).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        }
+      ]
+    },
+    {
+      "path": "systems/ayurveda/rasas.jsonld",
+      "type": "reference-data",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description (rasa/madhura).zh-Hant",
+          "issue": "Optional: Missing zh-Hant translation"
+        },
+        {
+          "field": "description (rasa/madhura).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (rasa/amla).zh-Hant",
+          "issue": "Optional: Missing zh-Hant translation"
+        },
+        {
+          "field": "description (rasa/amla).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (rasa/lavana).zh-Hant",
+          "issue": "Optional: Missing zh-Hant translation"
+        },
+        {
+          "field": "description (rasa/lavana).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (rasa/katu).zh-Hant",
+          "issue": "Optional: Missing zh-Hant translation"
+        },
+        {
+          "field": "description (rasa/katu).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (rasa/tikta).zh-Hant",
+          "issue": "Optional: Missing zh-Hant translation"
+        },
+        {
+          "field": "description (rasa/tikta).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (rasa/kashaya).zh-Hant",
+          "issue": "Optional: Missing zh-Hant translation"
+        },
+        {
+          "field": "description (rasa/kashaya).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        }
+      ]
+    },
+    {
+      "path": "systems/ayurveda/vipakas.jsonld",
+      "type": "reference-data",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description (vipaka/madhura).zh-Hant",
+          "issue": "Optional: Missing zh-Hant translation"
+        },
+        {
+          "field": "description (vipaka/madhura).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (vipaka/amla).zh-Hant",
+          "issue": "Optional: Missing zh-Hant translation"
+        },
+        {
+          "field": "description (vipaka/amla).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (vipaka/katu).zh-Hant",
+          "issue": "Optional: Missing zh-Hant translation"
+        },
+        {
+          "field": "description (vipaka/katu).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        }
+      ]
+    },
+    {
+      "path": "systems/ayurveda/viryas.jsonld",
+      "type": "reference-data",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description (virya/ushna).zh-Hant",
+          "issue": "Optional: Missing zh-Hant translation"
+        },
+        {
+          "field": "description (virya/ushna).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (virya/sheeta).zh-Hant",
+          "issue": "Optional: Missing zh-Hant translation"
+        },
+        {
+          "field": "description (virya/sheeta).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        }
+      ]
+    },
+    {
+      "path": "systems/tcm/categories.jsonld",
+      "type": "reference-data",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description (category/release-exterior).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (category/clear-heat).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (category/downward-draining).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (category/wind-damp-dispelling).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (category/transform-dampness).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (category/leach-dampness).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (category/warm-interior).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (category/rectify-qi).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (category/digestive).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (category/stop-bleeding).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (category/invigorate-blood).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (category/relieve-cough-wheezing).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (category/spirit-quieting).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (category/liver-calming).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (category/orifice-opening).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (category/tonify).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (category/astringent).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (category/parasites-toxins).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (category/external).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        }
+      ]
+    },
+    {
+      "path": "systems/tcm/flavors.jsonld",
+      "type": "reference-data",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description (flavor/sweet).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (flavor/sour).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (flavor/bitter).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (flavor/acrid).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (flavor/salty).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (flavor/astringent).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (flavor/bland).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        }
+      ]
+    },
+    {
+      "path": "systems/tcm/herbs/algae/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "tcmTraditionalUsage.zh-Hans",
+          "issue": "Consider using more TCM medical terminology"
+        }
+      ]
+    },
+    {
+      "path": "systems/tcm/herbs/american-ginseng/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/asparagus-root/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/baizhu/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "tcmTraditionalUsage.en",
+          "issue": "Consider using more TCM medical terminology"
+        }
+      ]
+    },
+    {
+      "path": "systems/tcm/herbs/baiziren/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/barley/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/beishashen/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/birds-nest/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/black-sesame-seed/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/buguzhi/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/cangzhu/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/cardamom/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "tcmTraditionalUsage.en",
+          "issue": "Consider using more TCM medical terminology"
+        }
+      ]
+    },
+    {
+      "path": "systems/tcm/herbs/changpu/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/chinese-angelica-or-dong-quai/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/chinese-bellflower/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "tcmTraditionalUsage.en",
+          "issue": "Consider using more TCM medical terminology"
+        }
+      ]
+    },
+    {
+      "path": "systems/tcm/herbs/chinese-mugwort-leaf/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/chinese-rhubarb-root/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/chrysanthemum/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/chuanxinlian/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/chuanxiong/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "tcmTraditionalUsage.en",
+          "issue": "Consider using more TCM medical terminology"
+        }
+      ]
+    },
+    {
+      "path": "systems/tcm/herbs/cordyceps/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/corn-silk/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/dangshen/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/danshen/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/deer-antler/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/deer-horn-gelatine/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/dihuang/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/dragon-bone/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/duhuo/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "tcmTraditionalUsage.zh-Hans",
+          "issue": "Consider using more TCM medical terminology"
+        }
+      ]
+    },
+    {
+      "path": "systems/tcm/herbs/duzhong/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "tcmTraditionalUsage.en",
+          "issue": "Consider using more TCM medical terminology"
+        }
+      ]
+    },
+    {
+      "path": "systems/tcm/herbs/evodia-fruit/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/fangfeng/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/fangji/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/fleece-flower/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/fuling/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/ginseng/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/gouqizi/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/great-burdock/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/guijia-or-guiban/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/hehuanhua/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/honey/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "tcmTraditionalUsage.zh-Hant",
+          "issue": "Consider using more TCM medical terminology"
+        },
+        {
+          "field": "tcmTraditionalUsage.zh-Hans",
+          "issue": "Consider using more TCM medical terminology"
+        }
+      ]
+    },
+    {
+      "path": "systems/tcm/herbs/horny-goat-weed/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/indian-mulberry-root/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/indigowoad-root-banlangen/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/jiaogulan/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/jinyingzi/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/jinyinhua/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/jobs-tears/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/kushen/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/lianqiao/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/lingzhi-reishi/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/lingzhi-spores/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/liquorice-root/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "tcmTraditionalUsage.zh-Hans",
+          "issue": "Consider using more TCM medical terminology"
+        }
+      ]
+    },
+    {
+      "path": "systems/tcm/herbs/lotus-leaf/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/maidong/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/milk-vetch/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/mint/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/mohanlian/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/muli/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/niuxi/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/nuzhenzi/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/orobanches/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "tcmTraditionalUsage.zh-Hans",
+          "issue": "Consider using more TCM medical terminology"
+        }
+      ]
+    },
+    {
+      "path": "systems/tcm/herbs/patchouli/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/peilan/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/quanshen/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "tcmTraditionalUsage.en",
+          "issue": "Consider using more TCM medical terminology"
+        }
+      ]
+    },
+    {
+      "path": "systems/tcm/herbs/ren-shen/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/rhodiola/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/roucongrong/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "tcmTraditionalUsage.zh-Hans",
+          "issue": "Consider using more TCM medical terminology"
+        }
+      ]
+    },
+    {
+      "path": "systems/tcm/herbs/shanzha/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/shanzhuyu/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/shegan/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/sheng-jiang/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "tcmTraditionalUsage.en",
+          "issue": "Consider using more TCM medical terminology"
+        }
+      ]
+    },
+    {
+      "path": "systems/tcm/herbs/shengma/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/shenqu/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/shihu/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/shoudihuang/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/shouwuteng/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/suanzaoren/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/suoyang/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/tangerine-peel/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "tcmTraditionalUsage.en",
+          "issue": "Consider using more TCM medical terminology"
+        }
+      ]
+    },
+    {
+      "path": "systems/tcm/herbs/taoren-or-peach-kernel/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "tcmTraditionalUsage.zh-Hant",
+          "issue": "Consider using more TCM medical terminology"
+        },
+        {
+          "field": "tcmTraditionalUsage.zh-Hans",
+          "issue": "Consider using more TCM medical terminology"
+        }
+      ]
+    },
+    {
+      "path": "systems/tcm/herbs/tianma/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/tree-peony/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/tusizi/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/wheat/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "tcmTraditionalUsage.en",
+          "issue": "Consider using more TCM medical terminology"
+        }
+      ]
+    },
+    {
+      "path": "systems/tcm/herbs/white-mulberry-leaf/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/white-peony-root/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/white-willow-bark/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "tcmTraditionalUsage.en",
+          "issue": "Consider using more TCM medical terminology"
+        },
+        {
+          "field": "tcmTraditionalUsage.zh-Hant",
+          "issue": "Consider using more TCM medical terminology"
+        },
+        {
+          "field": "tcmTraditionalUsage.zh-Hans",
+          "issue": "Consider using more TCM medical terminology"
+        }
+      ]
+    },
+    {
+      "path": "systems/tcm/herbs/wild-yam/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "tcmTraditionalUsage.zh-Hant",
+          "issue": "Consider using more TCM medical terminology"
+        },
+        {
+          "field": "tcmTraditionalUsage.zh-Hans",
+          "issue": "Consider using more TCM medical terminology"
+        }
+      ]
+    },
+    {
+      "path": "systems/tcm/herbs/woad-or-glastum/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/wuweizi/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/xinyihua/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/xiongcane/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/yuanzhi/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/yunzhi/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/tcm/herbs/zexie/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "tcmTraditionalUsage.zh-Hans",
+          "issue": "Consider using more TCM medical terminology"
+        }
+      ]
+    },
+    {
+      "path": "systems/tcm/herbs/zhiko/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "tcmTraditionalUsage.en",
+          "issue": "Consider using more TCM medical terminology"
+        }
+      ]
+    },
+    {
+      "path": "systems/tcm/herbs/zhusun/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "tcmTraditionalUsage.en",
+          "issue": "Consider using more TCM medical terminology"
+        },
+        {
+          "field": "tcmTraditionalUsage.zh-Hant",
+          "issue": "Consider using more TCM medical terminology"
+        },
+        {
+          "field": "tcmTraditionalUsage.zh-Hans",
+          "issue": "Consider using more TCM medical terminology"
+        }
+      ]
+    },
+    {
+      "path": "systems/tcm/herbs/zisuye/profile.jsonld",
+      "type": "tcm-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "tcmTraditionalUsage.en",
+          "issue": "Consider using more TCM medical terminology"
+        }
+      ]
+    },
+    {
+      "path": "systems/tcm/meridians.jsonld",
+      "type": "reference-data",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description (meridian/lung).zh-Hant",
+          "issue": "Optional: Missing zh-Hant translation"
+        },
+        {
+          "field": "description (meridian/lung).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        }
+      ]
+    },
+    {
+      "path": "systems/tcm/natures.jsonld",
+      "type": "reference-data",
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        {
+          "field": "description (nature/hot).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (nature/warm).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (nature/neutral).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (nature/cool).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        },
+        {
+          "field": "description (nature/cold).zh-Hans",
+          "issue": "Optional: Missing zh-Hans translation"
+        }
+      ]
+    },
+    {
+      "path": "systems/western/actions.jsonld",
+      "type": "reference-data",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/western/herbs/bilberry/profile.jsonld",
+      "type": "western-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/western/herbs/blueberry/profile.jsonld",
+      "type": "western-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/western/herbs/borage-extract/profile.jsonld",
+      "type": "western-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/western/herbs/chamomile/profile.jsonld",
+      "type": "western-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/western/herbs/clove-oil/profile.jsonld",
+      "type": "western-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/western/herbs/cranberry/profile.jsonld",
+      "type": "western-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/western/herbs/dandelion/profile.jsonld",
+      "type": "western-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/western/herbs/echinacea/profile.jsonld",
+      "type": "western-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/western/herbs/eucalyptus-oil/profile.jsonld",
+      "type": "western-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/western/herbs/evening-primrose-oil/profile.jsonld",
+      "type": "western-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/western/herbs/garlic/profile.jsonld",
+      "type": "western-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/western/herbs/ginger/profile.jsonld",
+      "type": "western-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/western/herbs/ginkgo/profile.jsonld",
+      "type": "western-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/western/herbs/grape-seed/profile.jsonld",
+      "type": "western-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/western/herbs/green-tea/profile.jsonld",
+      "type": "western-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/western/herbs/hawthorn/profile.jsonld",
+      "type": "western-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/western/herbs/jojoba-seed-oil/profile.jsonld",
+      "type": "western-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/western/herbs/lavender-oil/profile.jsonld",
+      "type": "western-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/western/herbs/milk-thistle/profile.jsonld",
+      "type": "western-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/western/herbs/mint/profile.jsonld",
+      "type": "western-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/western/herbs/peppermint-oil/profile.jsonld",
+      "type": "western-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/western/herbs/rosemary-oil/profile.jsonld",
+      "type": "western-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/western/herbs/sage-oil/profile.jsonld",
+      "type": "western-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/western/herbs/saw-palmetto/profile.jsonld",
+      "type": "western-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/western/herbs/st-johns-wort/profile.jsonld",
+      "type": "western-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/western/herbs/tea-tree-oil/profile.jsonld",
+      "type": "western-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/western/herbs/thyme-oil/profile.jsonld",
+      "type": "western-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/western/herbs/turmeric/profile.jsonld",
+      "type": "western-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/western/herbs/valerian/profile.jsonld",
+      "type": "western-profile",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "systems/western/organs.jsonld",
+      "type": "reference-data",
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    }
+  ],
+  "missingLanguages": [
+    {
+      "file": "systems/ayurveda/gunas.jsonld",
+      "field": "description (guna/guru).zh-Hant"
+    },
+    {
+      "file": "systems/ayurveda/gunas.jsonld",
+      "field": "description (guna/guru).zh-Hans"
+    },
+    {
+      "file": "systems/ayurveda/gunas.jsonld",
+      "field": "description (guna/laghu).zh-Hant"
+    },
+    {
+      "file": "systems/ayurveda/gunas.jsonld",
+      "field": "description (guna/laghu).zh-Hans"
+    },
+    {
+      "file": "systems/ayurveda/gunas.jsonld",
+      "field": "description (guna/sheeta).zh-Hant"
+    },
+    {
+      "file": "systems/ayurveda/gunas.jsonld",
+      "field": "description (guna/sheeta).zh-Hans"
+    },
+    {
+      "file": "systems/ayurveda/gunas.jsonld",
+      "field": "description (guna/ushna).zh-Hant"
+    },
+    {
+      "file": "systems/ayurveda/gunas.jsonld",
+      "field": "description (guna/ushna).zh-Hans"
+    },
+    {
+      "file": "systems/ayurveda/gunas.jsonld",
+      "field": "description (guna/sniqda).zh-Hant"
+    },
+    {
+      "file": "systems/ayurveda/gunas.jsonld",
+      "field": "description (guna/sniqda).zh-Hans"
+    },
+    {
+      "file": "systems/ayurveda/gunas.jsonld",
+      "field": "description (guna/ruksha).zh-Hant"
+    },
+    {
+      "file": "systems/ayurveda/gunas.jsonld",
+      "field": "description (guna/ruksha).zh-Hans"
+    },
+    {
+      "file": "systems/ayurveda/gunas.jsonld",
+      "field": "description (guna/manda).zh-Hant"
+    },
+    {
+      "file": "systems/ayurveda/gunas.jsonld",
+      "field": "description (guna/manda).zh-Hans"
+    },
+    {
+      "file": "systems/ayurveda/gunas.jsonld",
+      "field": "description (guna/tikshna).zh-Hant"
+    },
+    {
+      "file": "systems/ayurveda/gunas.jsonld",
+      "field": "description (guna/tikshna).zh-Hans"
+    },
+    {
+      "file": "systems/ayurveda/gunas.jsonld",
+      "field": "description (guna/shlakshna).zh-Hant"
+    },
+    {
+      "file": "systems/ayurveda/gunas.jsonld",
+      "field": "description (guna/shlakshna).zh-Hans"
+    },
+    {
+      "file": "systems/ayurveda/gunas.jsonld",
+      "field": "description (guna/khara).zh-Hant"
+    },
+    {
+      "file": "systems/ayurveda/gunas.jsonld",
+      "field": "description (guna/khara).zh-Hans"
+    },
+    {
+      "file": "systems/ayurveda/gunas.jsonld",
+      "field": "description (guna/sandra).zh-Hant"
+    },
+    {
+      "file": "systems/ayurveda/gunas.jsonld",
+      "field": "description (guna/sandra).zh-Hans"
+    },
+    {
+      "file": "systems/ayurveda/gunas.jsonld",
+      "field": "description (guna/drava).zh-Hant"
+    },
+    {
+      "file": "systems/ayurveda/gunas.jsonld",
+      "field": "description (guna/drava).zh-Hans"
+    },
+    {
+      "file": "systems/ayurveda/gunas.jsonld",
+      "field": "description (guna/mrudu).zh-Hant"
+    },
+    {
+      "file": "systems/ayurveda/gunas.jsonld",
+      "field": "description (guna/mrudu).zh-Hans"
+    },
+    {
+      "file": "systems/ayurveda/gunas.jsonld",
+      "field": "description (guna/kathina).zh-Hant"
+    },
+    {
+      "file": "systems/ayurveda/gunas.jsonld",
+      "field": "description (guna/kathina).zh-Hans"
+    },
+    {
+      "file": "systems/ayurveda/gunas.jsonld",
+      "field": "description (guna/sthira).zh-Hant"
+    },
+    {
+      "file": "systems/ayurveda/gunas.jsonld",
+      "field": "description (guna/sthira).zh-Hans"
+    },
+    {
+      "file": "systems/ayurveda/gunas.jsonld",
+      "field": "description (guna/chala).zh-Hant"
+    },
+    {
+      "file": "systems/ayurveda/gunas.jsonld",
+      "field": "description (guna/chala).zh-Hans"
+    },
+    {
+      "file": "systems/ayurveda/gunas.jsonld",
+      "field": "description (guna/sukshma).zh-Hant"
+    },
+    {
+      "file": "systems/ayurveda/gunas.jsonld",
+      "field": "description (guna/sukshma).zh-Hans"
+    },
+    {
+      "file": "systems/ayurveda/gunas.jsonld",
+      "field": "description (guna/sthula).zh-Hant"
+    },
+    {
+      "file": "systems/ayurveda/gunas.jsonld",
+      "field": "description (guna/sthula).zh-Hans"
+    },
+    {
+      "file": "systems/ayurveda/gunas.jsonld",
+      "field": "description (guna/picchila).zh-Hant"
+    },
+    {
+      "file": "systems/ayurveda/gunas.jsonld",
+      "field": "description (guna/picchila).zh-Hans"
+    },
+    {
+      "file": "systems/ayurveda/gunas.jsonld",
+      "field": "description (guna/vishada).zh-Hant"
+    },
+    {
+      "file": "systems/ayurveda/gunas.jsonld",
+      "field": "description (guna/vishada).zh-Hans"
+    },
+    {
+      "file": "systems/ayurveda/rasas.jsonld",
+      "field": "description (rasa/madhura).zh-Hant"
+    },
+    {
+      "file": "systems/ayurveda/rasas.jsonld",
+      "field": "description (rasa/madhura).zh-Hans"
+    },
+    {
+      "file": "systems/ayurveda/rasas.jsonld",
+      "field": "description (rasa/amla).zh-Hant"
+    },
+    {
+      "file": "systems/ayurveda/rasas.jsonld",
+      "field": "description (rasa/amla).zh-Hans"
+    },
+    {
+      "file": "systems/ayurveda/rasas.jsonld",
+      "field": "description (rasa/lavana).zh-Hant"
+    },
+    {
+      "file": "systems/ayurveda/rasas.jsonld",
+      "field": "description (rasa/lavana).zh-Hans"
+    },
+    {
+      "file": "systems/ayurveda/rasas.jsonld",
+      "field": "description (rasa/katu).zh-Hant"
+    },
+    {
+      "file": "systems/ayurveda/rasas.jsonld",
+      "field": "description (rasa/katu).zh-Hans"
+    },
+    {
+      "file": "systems/ayurveda/rasas.jsonld",
+      "field": "description (rasa/tikta).zh-Hant"
+    },
+    {
+      "file": "systems/ayurveda/rasas.jsonld",
+      "field": "description (rasa/tikta).zh-Hans"
+    },
+    {
+      "file": "systems/ayurveda/rasas.jsonld",
+      "field": "description (rasa/kashaya).zh-Hant"
+    },
+    {
+      "file": "systems/ayurveda/rasas.jsonld",
+      "field": "description (rasa/kashaya).zh-Hans"
+    },
+    {
+      "file": "systems/ayurveda/vipakas.jsonld",
+      "field": "description (vipaka/madhura).zh-Hant"
+    },
+    {
+      "file": "systems/ayurveda/vipakas.jsonld",
+      "field": "description (vipaka/madhura).zh-Hans"
+    },
+    {
+      "file": "systems/ayurveda/vipakas.jsonld",
+      "field": "description (vipaka/amla).zh-Hant"
+    },
+    {
+      "file": "systems/ayurveda/vipakas.jsonld",
+      "field": "description (vipaka/amla).zh-Hans"
+    },
+    {
+      "file": "systems/ayurveda/vipakas.jsonld",
+      "field": "description (vipaka/katu).zh-Hant"
+    },
+    {
+      "file": "systems/ayurveda/vipakas.jsonld",
+      "field": "description (vipaka/katu).zh-Hans"
+    },
+    {
+      "file": "systems/ayurveda/viryas.jsonld",
+      "field": "description (virya/ushna).zh-Hant"
+    },
+    {
+      "file": "systems/ayurveda/viryas.jsonld",
+      "field": "description (virya/ushna).zh-Hans"
+    },
+    {
+      "file": "systems/ayurveda/viryas.jsonld",
+      "field": "description (virya/sheeta).zh-Hant"
+    },
+    {
+      "file": "systems/ayurveda/viryas.jsonld",
+      "field": "description (virya/sheeta).zh-Hans"
+    },
+    {
+      "file": "systems/tcm/categories.jsonld",
+      "field": "description (category/release-exterior).zh-Hans"
+    },
+    {
+      "file": "systems/tcm/categories.jsonld",
+      "field": "description (category/clear-heat).zh-Hans"
+    },
+    {
+      "file": "systems/tcm/categories.jsonld",
+      "field": "description (category/downward-draining).zh-Hans"
+    },
+    {
+      "file": "systems/tcm/categories.jsonld",
+      "field": "description (category/wind-damp-dispelling).zh-Hans"
+    },
+    {
+      "file": "systems/tcm/categories.jsonld",
+      "field": "description (category/transform-dampness).zh-Hans"
+    },
+    {
+      "file": "systems/tcm/categories.jsonld",
+      "field": "description (category/leach-dampness).zh-Hans"
+    },
+    {
+      "file": "systems/tcm/categories.jsonld",
+      "field": "description (category/warm-interior).zh-Hans"
+    },
+    {
+      "file": "systems/tcm/categories.jsonld",
+      "field": "description (category/rectify-qi).zh-Hans"
+    },
+    {
+      "file": "systems/tcm/categories.jsonld",
+      "field": "description (category/digestive).zh-Hans"
+    },
+    {
+      "file": "systems/tcm/categories.jsonld",
+      "field": "description (category/stop-bleeding).zh-Hans"
+    },
+    {
+      "file": "systems/tcm/categories.jsonld",
+      "field": "description (category/invigorate-blood).zh-Hans"
+    },
+    {
+      "file": "systems/tcm/categories.jsonld",
+      "field": "description (category/relieve-cough-wheezing).zh-Hans"
+    },
+    {
+      "file": "systems/tcm/categories.jsonld",
+      "field": "description (category/spirit-quieting).zh-Hans"
+    },
+    {
+      "file": "systems/tcm/categories.jsonld",
+      "field": "description (category/liver-calming).zh-Hans"
+    },
+    {
+      "file": "systems/tcm/categories.jsonld",
+      "field": "description (category/orifice-opening).zh-Hans"
+    },
+    {
+      "file": "systems/tcm/categories.jsonld",
+      "field": "description (category/tonify).zh-Hans"
+    },
+    {
+      "file": "systems/tcm/categories.jsonld",
+      "field": "description (category/astringent).zh-Hans"
+    },
+    {
+      "file": "systems/tcm/categories.jsonld",
+      "field": "description (category/parasites-toxins).zh-Hans"
+    },
+    {
+      "file": "systems/tcm/categories.jsonld",
+      "field": "description (category/external).zh-Hans"
+    },
+    {
+      "file": "systems/tcm/flavors.jsonld",
+      "field": "description (flavor/sweet).zh-Hans"
+    },
+    {
+      "file": "systems/tcm/flavors.jsonld",
+      "field": "description (flavor/sour).zh-Hans"
+    },
+    {
+      "file": "systems/tcm/flavors.jsonld",
+      "field": "description (flavor/bitter).zh-Hans"
+    },
+    {
+      "file": "systems/tcm/flavors.jsonld",
+      "field": "description (flavor/acrid).zh-Hans"
+    },
+    {
+      "file": "systems/tcm/flavors.jsonld",
+      "field": "description (flavor/salty).zh-Hans"
+    },
+    {
+      "file": "systems/tcm/flavors.jsonld",
+      "field": "description (flavor/astringent).zh-Hans"
+    },
+    {
+      "file": "systems/tcm/flavors.jsonld",
+      "field": "description (flavor/bland).zh-Hans"
+    },
+    {
+      "file": "systems/tcm/meridians.jsonld",
+      "field": "description (meridian/lung).zh-Hant"
+    },
+    {
+      "file": "systems/tcm/meridians.jsonld",
+      "field": "description (meridian/lung).zh-Hans"
+    },
+    {
+      "file": "systems/tcm/natures.jsonld",
+      "field": "description (nature/hot).zh-Hans"
+    },
+    {
+      "file": "systems/tcm/natures.jsonld",
+      "field": "description (nature/warm).zh-Hans"
+    },
+    {
+      "file": "systems/tcm/natures.jsonld",
+      "field": "description (nature/neutral).zh-Hans"
+    },
+    {
+      "file": "systems/tcm/natures.jsonld",
+      "field": "description (nature/cool).zh-Hans"
+    },
+    {
+      "file": "systems/tcm/natures.jsonld",
+      "field": "description (nature/cold).zh-Hans"
+    }
+  ],
+  "missingFields": [],
+  "terminologyIssues": [],
+  "referenceIssues": []
+}

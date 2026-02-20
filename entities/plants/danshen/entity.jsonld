@@ -1,0 +1,31 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/danshen",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "scientificName": "Salvia miltiorrhiza",
+  "name": {
+    "en": "Danshen",
+    "zh-Hant": "丹蔘",
+    "zh-Hans": "丹蔘"
+  },
+  "description": {
+    "en": "The root and rhizome of Salvia militiorrhiza Bunge, family Labiatae.\n",
+    "zh-Hant": "丹蔘（學名：Salvia miltiorrhiza）是一種具有藥用價值的天然產物。現代藥理學研究證實其含有多種生物活性成分，在傳統醫學和現代保健領域均有重要應用價值。",
+    "zh-Hans": "丹参（学名：Salvia miltiorrhiza）是一种具有药用價值的天然產物。現代药理学研究证实其含有多种生物活性成分，在传统医学和現代保健領域均有重要应用價值。"
+  },
+  "image": "media/images/danshen/danshen.jpg",
+  "url": "https://herbapedia.org/plants/danshen",
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/chiherbs-en/danshen/",
+  "created": "2026-02-18T09:15:07.577Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.gbif.org/species/7308369"
+    }
+  ],
+  "gbifId": 7308369
+}

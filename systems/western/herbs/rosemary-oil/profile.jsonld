@@ -1,0 +1,48 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/rosemary-oil",
+  "@type": [
+    "western:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/rosemary-oil"
+  },
+  "name": {
+    "en": "Rosemary oil",
+    "zh-Hant": "迷迭香油",
+    "zh-Hans": "迷迭香油"
+  },
+  "scientificName": "Rosmarinus Officinalis",
+  "hasAction": [
+    {
+      "@id": "western/action/astringent"
+    }
+  ],
+  "hasOrganAffinity": [
+    {
+      "@id": "organ/respiratory"
+    },
+    {
+      "@id": "organ/skin"
+    }
+  ],
+  "westernHistory": {
+    "en": "The Egyptians, Hebrews, Greeks and Romans considered rosemary to be sacred, and even in the Middle Ages it was used to ward off evil spirits and for protection against the plague. It has also long been associated with improving the memory.\n",
+    "zh-Hant": "埃及人、希伯來人、希臘人和羅馬人均認為迷迭香油是神聖的， 甚至直至中世紀它仍用來驅除惡邪和避免瘟疫發生。此外， 迷迭香油被視為能改善記憶。\n",
+    "zh-Hans": "埃及人、希伯来人、希腊人和罗马人均认为迷迭香油是神圣的， 甚至直至中世纪它仍用来驱除恶邪和避免瘟疫发生。此外， 迷迭香油被视为能改善记忆。\n"
+  },
+  "westernTraditionalUsage": {
+    "en": "Rosemary oil has a strong, refreshing herbal smell and is valued for its ability to fight mental fatigue and help with headaches. It also has an antiseptic and astringent effect. When applied topically in a lotion it is most beneficial for improving blood circulation and decongesting the skin, helping to ease puffiness and swelling and treating conditions such as acne, dermatitis and eczema. It is also beneficial for respiratory problems.\n",
+    "zh-Hant": "迷迭香油具濃郁和清新的草藥氣味，能消除精神疲勞和舒緩頭痛。迷迭香油亦有消毒和止血的作用。當迷迭香油用作潤膚霜時，可以幫助改善血液循環、改善皮膚紅腫、減輕擁塞、腫大和有助治療痘痘、皮膚炎和濕疹。迷迭香油同時有助舒緩呼吸道問題。\n",
+    "zh-Hans": "迷迭香油具浓郁和清新的草药气味，能消除精神疲劳和舒缓头痛。迷迭香油亦有消毒和止血的作用。当迷迭香油用作润肤霜时，可以帮助改善血液循环、改善皮肤红肿、减轻拥塞、肿大和有助治疗痘痘、皮肤炎和湿疹。迷迭香油同时有助舒缓呼吸道问题。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-19T15:32:30.539Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "description": {
+    "en": "Extracted from the fresh flowering tops of the plant Rosmarinus Officinalis by steam distillation.\n",
+    "zh-Hant": "迷迭香油透過蒸氣蒸餾方法提取自新鮮的植物 (Rosmarinus Officinalis) 頂部。\n",
+    "zh-Hans": "迷迭香油透过蒸气蒸馏方法提取自新鲜的植物 (Rosmarinus Officinalis) 顶部。\n"
+  }
+}

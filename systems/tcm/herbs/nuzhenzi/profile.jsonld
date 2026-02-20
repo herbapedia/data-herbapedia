@@ -1,0 +1,60 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/nuzhenzi",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/nuzhenzi"
+  },
+  "name": {
+    "en": "Nuzhenzi",
+    "zh-Hant": "女貞子",
+    "zh-Hans": "女贞子"
+  },
+  "pinyin": "Nuzhenzi",
+  "chineseName": {
+    "zh-Hant": "女貞子",
+    "zh-Hans": "女贞子"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Divine Husbandman's Classic of the Materia Medica, classified as upper class.\n",
+    "zh-Hant": "始載於《神農本草經》，列為上品\n",
+    "zh-Hans": "始载于《神農本草经》，列为上品\n"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Nuzhenzi is made from the ripe fruits of the ligustrum, or glossy privet plant. Bitter and sweet tasting, this cooling herb enters the kidney and liver meridians to tonify the liver and kidney, clear heat and brighten the eyes. It also improves the supply of nutrition to the hair follicles, preventing premature greying of hair and promoting hair growth.\n",
+    "zh-Hant": "女貞子味甘、苦，藥性涼，歸於肝、腎藥，傳統認為能補肝腎之陰、烏鬚明目，常用於肝腎陰虛所致的鬚髮早白、目暗不明、腰酸耳鳴、陰虛發熱等，常與墨旱蓮同用，因藥力平和，須緩慢取效。\n",
+    "zh-Hans": "女貞子味甘、苦，药性涼，歸于肝、肾药，传统認为能补肝肾之阴、烏鬚明目，常用于肝肾阴虚所致的鬚发早白、目暗不明、腰酸耳鳴、阴虚發热等，常与墨旱蓮同用，因药力平和，須缓慢取效。\n"
+  },
+  "tcmModernResearch": {
+    "en": "Nuzhenzi has immunostimulant, anti-diabetic, haematological, anti-inflamatory, antibiotic and hepaprotective effects. It has been used with good results to treat chronic hepatitis and high cholesterol.\n",
+    "zh-Hant": "【女貞子】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【女貞子】Modern Research內容待翻譯补充。"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:38.097Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q732933"
+    }
+  ]
+}

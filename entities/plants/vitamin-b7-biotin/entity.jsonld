@@ -1,0 +1,25 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/vitamin-b7-biotin",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "scientificName": "Vitamin H",
+  "name": {
+    "en": "Vitamin B7, Biotin",
+    "zh-Hant": "維他命 B7 又名生物素",
+    "zh-Hans": "维他命 B7 又名生物素"
+  },
+  "description": {
+    "en": "Found in foods including cheese, kidney, liver, cauliflower, eggs, mushrooms, nuts, sardines and salmon. Considerable amounts of biotin are also synthesised by microorganisms in the intestinal tract.\n",
+    "zh-Hant": "維他命 B7 又名生物素是一種重要的營養素，參與人體多種生理代謝過程。作為必需營養素，對維持機體正常功能具有重要作用。臨床研究表明適量補充有助於維持身體健康。",
+    "zh-Hans": "維他命 B7 又名生物素是一种重要的營养素，參与人体多种生理代謝过程。作为必需營养素，對維持机体正常功能具有重要作用。臨床研究表明適量补充有助于維持身体健康。"
+  },
+  "image": "media/images/vitamin-b7-biotin/vitamin-b7-biotin.jpg",
+  "url": "https://herbapedia.org/plants/vitamin-b7-biotin",
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/vitamins-en/vitamin-b7-biotin/",
+  "created": "2026-02-18T09:16:46.460Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+}

@@ -1,0 +1,67 @@
+{
+  "name": "@herbapedia/data",
+  "version": "0.1.0",
+  "description": "JSON-LD knowledge base for medicinal botany - the authoritative Herbapedia data repository",
+  "type": "module",
+  "main": "./types/index.ts",
+  "types": "./types/index.ts",
+  "exports": {
+    ".": {
+      "types": "./types/index.ts",
+      "default": "./types/index.ts"
+    },
+    "./types": {
+      "types": "./types/index.ts",
+      "default": "./types/index.ts"
+    },
+    "./types/*": {
+      "types": "./types/*.ts",
+      "default": "./types/*.ts"
+    },
+    "./schema/context/*": "./schema/context/*.jsonld",
+    "./entities/*": "./entities/*",
+    "./systems/*": "./systems/*"
+  },
+  "files": [
+    "types",
+    "schema",
+    "entities",
+    "systems",
+    "media"
+  ],
+  "scripts": {
+    "validate": "node scripts/validate.js",
+    "build-index": "node scripts/build-index.js",
+    "migrate": "node scripts/migrate-yaml-to-jsonld.js"
+  },
+  "keywords": [
+    "herbapedia",
+    "medicinal-plants",
+    "herbal-medicine",
+    "tcm",
+    "traditional-chinese-medicine",
+    "ayurveda",
+    "json-ld",
+    "linked-data",
+    "semantic-web",
+    "botanical"
+  ],
+  "author": "Herbapedia",
+  "license": "CC-BY-SA-4.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/herbapedia/data-herbapedia.git"
+  },
+  "bugs": {
+    "url": "https://github.com/herbapedia/data-herbapedia/issues"
+  },
+  "homepage": "https://herbapedia.org",
+  "devDependencies": {
+    "jsonld": "^8.3.2",
+    "typescript": "^5.3.0",
+    "yaml": "^2.8.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

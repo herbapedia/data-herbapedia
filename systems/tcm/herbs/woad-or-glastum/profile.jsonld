@@ -1,0 +1,60 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/woad-or-glastum",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/woad-or-glastum"
+  },
+  "name": {
+    "en": "Woad or Glastum",
+    "zh-Hant": "大青葉",
+    "zh-Hans": "大青叶"
+  },
+  "pinyin": "Woad or Glastum",
+  "chineseName": {
+    "zh-Hant": "大青葉",
+    "zh-Hans": "大青叶"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in the Tang Materia Medica. Woad is an ancient plant native to central and western Asia and Russia, but widely cultivated across Europe. Europeans prized it for its blue dye, which has been used to colour clothes and make paint. The first archaeological finds of woad seeds date to the Neolithic period and were discovered in caves in France\n",
+    "zh-Hant": "【大青葉】History內容待翻譯補充。",
+    "zh-Hans": "【大青叶】History內容待翻譯补充。"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Daqingye comes from the leaves of the woad plant, which are harvested in summer. A bitter, cold herb that affects the heart, lung and stomach meridians, it is primarily used for clearing heat, eliminating toxins and cooling the blood. It is used to treat symptoms accompanied by fever, such as the early stages of flu, measles, mumps, meningitis and scarlet fever.\n",
+    "zh-Hant": "大青葉是傳統的清熱解毒藥，味苦、鹹，藥性大寒，能清熱解毒、涼血消斑，歸心、肺、胃經，常用於清心胃二經實火，又善解瘟疫時毒所致的熱性外感。大青葉植物中的靛藍色天然色素可提煉另一清熱解毒中藥青黛，功效類似。\n",
+    "zh-Hans": "大青叶是传统的清热解毒药，味苦、咸，药性大寒，能清热解毒、涼血消斑，歸心、肺、胃经，常用于清心胃二经实火，又善解瘟疫时毒所致的热性外感。大青叶植物中的靛藍色天然色素可提煉另一清热解毒中药青黛，功效类似。\n"
+  },
+  "tcmModernResearch": {
+    "en": "Woad has potential as a treatment to prevent cancer, since it contains more than 20 times the amount of glucobrassicin, an anticancer agent, than is found in broccoli. Young leaves when damaged can produce more glucobrassicin, up to 65 times as much. The plant also has antibiotic and anti-inflammatory properties. It has been used with good results to treat upper respiratory tract infections, measles and pneumonia in clinical studies. It also contains indirubin, which has a positive inhibiting effect against cancer cells in mice.\n",
+    "zh-Hant": "【大青葉】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【大青叶】Modern Research內容待翻譯补充。"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:16:00.620Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q212547"
+    }
+  ]
+}

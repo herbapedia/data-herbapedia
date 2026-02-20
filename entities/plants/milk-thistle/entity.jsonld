@@ -1,0 +1,40 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/milk-thistle",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "scientificName": "Silybum marianum",
+  "name": {
+    "en": "Milk Thistle",
+    "zh-Hant": "乳薊果",
+    "zh-Hans": "乳蓟果"
+  },
+  "description": {
+    "en": "Milk Thistle preparations consist of the dried fruits (also known as achenes) of Silybum marianum (L.) Gaertn.\n",
+    "zh-Hant": "乳薊果（學名：Silybum marianum）是一種具有藥用價值的天然產物。現代藥理學研究證實其含有多種生物活性成分，在傳統醫學和現代保健領域均有重要應用價值。",
+    "zh-Hans": "乳薊果（学名：Silybum marianum）是一种具有药用價值的天然產物。現代药理学研究证实其含有多种生物活性成分，在传统医学和現代保健領域均有重要应用價值。"
+  },
+  "image": "media/images/milk-thistle/milk-thistle.jpg",
+  "url": "https://herbapedia.org/plants/milk-thistle",
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/westherbs-en/milk-thistle/",
+  "created": "2026-02-18T09:16:32.060Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.gbif.org/species/3145214"
+    }
+  ],
+  "gbifId": 3145214,
+  "containsChemical": [
+    {
+      "@id": "chemical/silymarin"
+    },
+    {
+      "@id": "chemical/flavonoids"
+    }
+  ],
+  "modified": "2026-02-19T23:24:40.401Z"
+}

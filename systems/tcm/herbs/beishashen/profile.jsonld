@@ -1,0 +1,55 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/beishashen",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/beishashen"
+  },
+  "name": {
+    "en": "Beishashen",
+    "zh-Hant": "北沙參",
+    "zh-Hans": "北沙参"
+  },
+  "pinyin": "Beishashen",
+  "chineseName": {
+    "zh-Hant": "北沙參",
+    "zh-Hans": "北沙参"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Divine Husbandman's Classic of the Materia Medica.\n",
+    "zh-Hant": "【北沙參】History內容待翻譯補充。",
+    "zh-Hans": "【北沙參】History內容待翻譯补充。"
+  },
+  "tcmTraditionalUsage": {
+    "en": "A sweet herb that has a slightly cold nature, beishashen enters the lung and stomach meridians. It is used to tonify the yin, clear the lungs, nourish the stomach, generate body fluids and tonify the liver and kidney yin. It is often used to treat chronic respiratory disorders such as tuberculosis or bronchitis.\n",
+    "zh-Hant": "北沙蔘是補陰藥，味甘、微苦，藥性微寒，歸肺、胃經，能養陰清肺、益胃生津。\n",
+    "zh-Hans": "北沙参是补阴药，味甘、微苦，药性微寒，歸肺、胃经，能养阴清肺、益胃生津。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:14:53.694Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q15548072"
+    }
+  ]
+}

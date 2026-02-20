@@ -1,0 +1,60 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/baizhu",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/baizhu"
+  },
+  "name": {
+    "en": "Baizhu",
+    "zh-Hant": "白朮",
+    "zh-Hans": "白朮"
+  },
+  "pinyin": "Baizhu",
+  "chineseName": {
+    "zh-Hant": "白朮",
+    "zh-Hans": "白朮"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Divine Husbandman's Classic of the Materia Medica with no categorisation between Bai zhu and Cang zhu.\n",
+    "zh-Hant": "始載於《神農本草經》，但無白朮、蒼朮之分，統稱為\"朮\"。\n",
+    "zh-Hans": "始载于《神農本草经》，但無白朮、蒼朮之分，统稱为\"朮\"。\n"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Baizhu is a bitter tasting herb that is aromatic and warm in nature. It is associated with the spleen and stomach, making it a good choice for regulating the digestive system. It is able to tonify the chi, strengthen the spleen, dry dampness and eliminate water accumulation, prevent excessive sweating and stabilise pregnancy. Because it aids digestion and absorption, it can be used in multiherb remedies where the other ingredients may overburden the digestive system.\n",
+    "zh-Hant": "白朮是補氣藥，味苦、甘，藥性溫，歸脾、胃、肝經，能補氣健脾，常用於改善消化系統問題。\n",
+    "zh-Hans": "白朮是补气药，味苦、甘，药性溫，歸脾、胃、肝经，能补气健脾，常用于改善消化系统問題。\n"
+  },
+  "tcmModernResearch": {
+    "en": "Baizhu has been used in clinical trials to treat constipation, diarrhea, liver disorders, dizziness and excessive salivation with good results.\n",
+    "zh-Hant": "【白朮】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【白朮】Modern Research內容待翻譯补充。"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:14:51.359Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q8208640"
+    }
+  ]
+}

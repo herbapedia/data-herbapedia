@@ -1,0 +1,80 @@
+{
+  "@context": "../schema/context/tcm.jsonld",
+  "@graph": [
+    {
+      "@id": "nature/hot",
+      "@type": "tcm:Nature",
+      "natureValue": "hot",
+      "prefLabel": {
+        "en": "Hot",
+        "zh-Hant": "熱",
+        "zh-Hans": "热",
+        "pinyin": "Rè"
+      },
+      "description": {
+        "en": "Hot nature herbs strongly warm the body, dispel cold, and may injure Yin if used excessively.",
+        "zh-Hant": "熱性藥物溫裡散寒力強，過用易傷陰。"
+      }
+    },
+    {
+      "@id": "nature/warm",
+      "@type": "tcm:Nature",
+      "natureValue": "warm",
+      "prefLabel": {
+        "en": "Warm",
+        "zh-Hant": "溫",
+        "zh-Hans": "温",
+        "pinyin": "Wēn"
+      },
+      "description": {
+        "en": "Warm nature herbs gently warm the body and dispel cold pathogens.",
+        "zh-Hant": "溫性藥物溫裡散寒，作用較熱性緩和。"
+      }
+    },
+    {
+      "@id": "nature/neutral",
+      "@type": "tcm:Nature",
+      "natureValue": "neutral",
+      "prefLabel": {
+        "en": "Neutral",
+        "zh-Hant": "平",
+        "zh-Hans": "平",
+        "pinyin": "Píng"
+      },
+      "description": {
+        "en": "Neutral nature herbs neither warm nor cool the body, suitable for most constitutions.",
+        "zh-Hant": "平性藥物寒熱屬性不明顯，適合多數體質。"
+      }
+    },
+    {
+      "@id": "nature/cool",
+      "@type": "tcm:Nature",
+      "natureValue": "cool",
+      "prefLabel": {
+        "en": "Cool",
+        "zh-Hant": "涼",
+        "zh-Hans": "凉",
+        "pinyin": "Liáng"
+      },
+      "description": {
+        "en": "Cool nature herbs gently clear heat and may injure Yang if used excessively.",
+        "zh-Hant": "涼性藥物清熱，作用較寒性緩和。"
+      }
+    },
+    {
+      "@id": "nature/cold",
+      "@type": "tcm:Nature",
+      "natureValue": "cold",
+      "prefLabel": {
+        "en": "Cold",
+        "zh-Hant": "寒",
+        "zh-Hans": "寒",
+        "pinyin": "Hán"
+      },
+      "description": {
+        "en": "Cold nature herbs strongly clear heat and may injure Yang and stomach Qi if used excessively.",
+        "zh-Hant": "寒性藥物清熱力強，過用易傷陽傷胃氣。"
+      }
+    }
+  ]
+}

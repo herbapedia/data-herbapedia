@@ -1,0 +1,40 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/milk-thistle",
+  "@type": [
+    "western:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/milk-thistle"
+  },
+  "name": {
+    "en": "Milk Thistle",
+    "zh-Hant": "乳薊果",
+    "zh-Hans": "乳蓟果"
+  },
+  "scientificName": "Silybum marianum (L.) Gaertn",
+  "hasOrganAffinity": [
+    {
+      "@id": "organ/liver"
+    }
+  ],
+  "westernHistory": {
+    "en": "Milk Thistle preparations have been used in European medicine for over 2000 years to treat liver and biliary tract diseases, and to cure people who have ingested poisonous mushrooms.\n",
+    "zh-Hant": "乳薊果於歐洲國家用作醫藥用途已超過2000 年，主要是大益肝臟和膽等健康。\n",
+    "zh-Hans": "乳蓟果於欧洲国家用作医药用途已超过2000 年，主要是大益肝脏和胆等健康。\n"
+  },
+  "westernTraditionalUsage": {
+    "en": "Milk thistle improves the liver's ability to get rid of dangerous toxins and repair damage to the organ. This is because the seeds of the plant contain 1.5-3.0% flavonolignans including silybin, silydianin, and silychristin - chemicals collectively referred to as silymarin. Animal research and human clinical trials have suggested that the liver protecting properties of silymarin may include anti-fibrotic activity, helping to treat damage caused as a result of alcohol abuse or chronic active viral hepatitis. This western herb can also be used in traditional Chinese medicine to supplement liver and spleen yin, clear heat and remove toxins.\n",
+    "zh-Hant": "乳薊果的種子含1.5-3.0%的黃酮木脂素類 (flavonolignans)，包括水飛薊賓 (silybin)、水飛薊寧 (silydianin)和水飛薊亭 (silychristin)，現在統稱為水飛薊(silymarin)。動物研究和人類臨床研究顯示silymarin能保護肝臟，包括阻礙肝臟纖維化，有助解決由於酗酒或長期受病毒影響的肝臟問題。\n",
+    "zh-Hans": "乳蓟果的种子含1.5-3.0%的黄酮木脂素类 (flavonolignans)，包括水飞蓟宾 (silybin)、水飞蓟宁 (silydianin)和水飞蓟亭 (silychristin)，现在统称为水飞蓟(silymarin)。动物研究和人类临床研究显示silymarin能保护肝脏，包括阻碍肝脏纤维化，有助解决由於酗酒或长期受病毒影响的肝脏问题。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-19T15:32:30.543Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "description": {
+    "en": "Milk Thistle preparations consist of the dried fruits (also known as achenes) of Silybum marianum (L.) Gaertn.\n",
+    "zh-Hant": "乳薊果從水飛薊乾果(也稱為瘦果)配製而成。\n",
+    "zh-Hans": "乳蓟果从水飞蓟乾果(也称为瘦果)配製而成。\n"
+  }
+}

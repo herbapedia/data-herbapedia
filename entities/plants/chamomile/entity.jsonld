@@ -1,0 +1,47 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/chamomile",
+  "@type": [
+    "botany:Plant",
+    "schema:Thing"
+  ],
+  "name": {
+    "en": "Chamomile",
+    "zh-Hant": "洋甘菊",
+    "zh-Hans": "洋甘菊"
+  },
+  "commonName": {
+    "en": "German Chamomile",
+    "zh-Hant": "德國洋甘菊",
+    "zh-Hans": "德国洋甘菊"
+  },
+  "scientificName": "Matricaria chamomilla",
+  "family": "Asteraceae",
+  "genus": "Matricaria",
+  "description": {
+    "en": "Chamomile is an annual plant of the daisy family, native to Europe and western Asia. The flowers are used medicinally for their calming and anti-inflammatory properties.",
+    "zh-Hant": "洋甘菊是菊科一年生植物，原生於歐洲和西亞。其花朵因具有鎮靜和抗炎特性而被用於藥用。",
+    "zh-Hans": "洋甘菊是菊科一年生植物，原生於欧洲和西亚。其花朵因具有镇静和抗炎特性而被用于药用。"
+  },
+  "botanicalDescription": {
+    "en": "Annual herb growing 15-60 cm tall. Leaves are bipinnate or tripinnate, finely divided. Flowers are white ray florets surrounding yellow disc florets, 1-2 cm in diameter.",
+    "zh-Hant": "一年生草本植物，高15-60厘米。葉為二回或三回羽狀，細裂。花為白色舌狀花圍繞黃色管狀花，直徑1-2厘米。",
+    "zh-Hans": "一年生草本植物，高15-60厘米。叶为二回或三回羽状，细裂。花为白色舌状花围绕黄色管状花，直径1-2厘米。"
+  },
+  "image": "media/images/chamomile/chamomile.jpg",
+  "containsChemical": [
+    {
+      "@id": "chemical/essential-oils"
+    },
+    {
+      "@id": "chemical/flavonoids"
+    }
+  ],
+  "sameAs": [
+    "https://www.wikidata.org/wiki/Q146135"
+  ],
+  "gbifId": "3121302",
+  "created": "2026-02-20T00:00:00.000Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "modified": "2026-02-19T23:24:40.401Z"
+}

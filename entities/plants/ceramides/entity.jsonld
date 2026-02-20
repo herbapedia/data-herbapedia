@@ -1,0 +1,24 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/ceramides",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "name": {
+    "en": "Ceramides",
+    "zh-Hant": "天然角磷質",
+    "zh-Hans": "天然角磷质"
+  },
+  "description": {
+    "en": "Ceramides are composed of sphingosine and a fatty acid. They are found in high concentrations within the membranes surrounding cells.\n",
+    "zh-Hant": "天然角磷質（學名：待定）是一種具有藥用價值的天然產物。現代藥理學研究證實其含有多種生物活性成分，在傳統醫學和現代保健領域均有重要應用價值。",
+    "zh-Hans": "天然角磷质（学名：待定）是一种具有药用價值的天然產物。現代药理学研究证实其含有多种生物活性成分，在传统医学和現代保健領域均有重要应用價值。"
+  },
+  "image": "media/images/ceramides/ceramides.jpg",
+  "url": "https://herbapedia.org/plants/ceramides",
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/nutrients-en/ceramides/",
+  "created": "2026-02-18T09:17:02.678Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+}

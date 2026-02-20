@@ -1,0 +1,39 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/hawthorn",
+  "@type": [
+    "western:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/hawthorn"
+  },
+  "name": {
+    "en": "Hawthorn",
+    "zh-Hant": "山楂",
+    "zh-Hans": "山楂"
+  },
+  "scientificName": "Crataegus monogyna",
+  "hasAction": [
+    { "@id": "western/action/circulatory" },
+    { "@id": "western/action/antioxidant" },
+    { "@id": "western/action/cardiotonic" }
+  ],
+  "hasOrganAffinity": [
+    { "@id": "western/organ/heart" },
+    { "@id": "western/organ/cardiovascular" }
+  ],
+  "westernHistory": {
+    "en": "Hawthorn has been used in traditional medicine since the first century AD. The Greek herbalist Dioscorides wrote about its health benefits. In European folk medicine, it was known as a symbol of hope and used for heart ailments.",
+    "zh-Hant": "山楂自公元一世紀以來一直用於傳統醫學。希臘草藥學家迪奧斯科里德斯曾記載其健康益處。在歐洲民間醫學中，它被視為希望的象徵，用於治療心臟疾病。",
+    "zh-Hans": "山楂自公元一世纪以来一直用于传统医学。希腊草药学家迪奥斯科里德斯曾记载其健康益处。在欧洲民间医学中，它被视为希望的象征，用于治疗心脏疾病。"
+  },
+  "westernTraditionalUsage": {
+    "en": "Hawthorn berries, leaves, and flowers are used to support cardiovascular health. It helps strengthen the heart muscle, improve circulation, and regulate blood pressure. Traditionally used for angina, heart failure, and irregular heartbeat.",
+    "zh-Hant": "山楂漿果、葉子和花朵用於支持心血管健康。它有助於增強心肌、改善血液循環和調節血壓。傳統上用於治療心絞痛、心力衰竭和心律不整。",
+    "zh-Hans": "山楂浆果、叶子和花朵用于支持心血管健康。它有助于增强心肌、改善血液循环和调节血压。传统上用于治疗心绞痛、心力衰竭和心律不整。"
+  },
+  "source": "herbapedia.com",
+  "created": "2026-02-20T00:00:00.000Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+}

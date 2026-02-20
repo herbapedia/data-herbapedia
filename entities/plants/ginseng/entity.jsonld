@@ -1,0 +1,37 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/ginseng",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "scientificName": "Panax Ginseng",
+  "name": {
+    "en": "Ginseng",
+    "zh-Hant": "人蔘",
+    "zh-Hans": "人蔘"
+  },
+  "description": {
+    "en": "From the root of Panax Ginseng C.A. Mey, family Araliaceae.\n",
+    "zh-Hant": "人蔘（學名：Panax Ginseng）為多年生草本植物，以其根部入藥。在中醫藥理論中歸屬於補益類藥物，具有補氣養血、健脾益肺等功效，是重要的傳統中藥材。",
+    "zh-Hans": "人参（学名：Panax Ginseng）为多年生草本植物，以其根部入药。在中医药理論中歸属于补益类药物，具有补气养血、健脾益肺等功效，是重要的传统中药材。"
+  },
+  "image": "media/images/ginseng/ginseng.jpg",
+  "url": "https://herbapedia.org/plants/ginseng",
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/chiherbs-en/ginseng/",
+  "created": "2026-02-18T09:15:17.614Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "containsChemical": [
+    {
+      "@id": "chemical/ginsenosides"
+    },
+    {
+      "@id": "chemical/polysaccharides"
+    },
+    {
+      "@id": "chemical/saponins"
+    }
+  ],
+  "modified": "2026-02-19T23:24:40.396Z"
+}

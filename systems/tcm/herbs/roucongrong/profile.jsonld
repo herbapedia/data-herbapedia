@@ -1,0 +1,55 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/roucongrong",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/roucongrong"
+  },
+  "name": {
+    "en": "Roucongrong",
+    "zh-Hant": "肉蓯蓉",
+    "zh-Hans": "肉苁蓉"
+  },
+  "pinyin": "Roucongrong",
+  "chineseName": {
+    "zh-Hant": "肉蓯蓉",
+    "zh-Hans": "肉苁蓉"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Divine Husbandman's Classic of the Materia Medica, classified as upper class.\n",
+    "zh-Hant": "始載於《神農本草經》，列為上品\n",
+    "zh-Hans": "始载于《神農本草经》，列为上品\n"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Roucongrong is sweet and salty in taste with warming properties. It enters the large intestines and kidneys. Its uses include tonifying the kidneys and strengthening the yang, moistening the large intestines and treating constipation. As a kidney tonic, Roucongrong addresses associated symptoms such as weakness in the joints, soreness in the back and knees, tinnitus, dizziness, loss of hearing and forgetfulness. It is also able to improve hair health, since in Chinese medicine the kidneys are associated with nourishing the hair.\n",
+    "zh-Hant": "肉蓯蓉味甘、鹹，藥性溫，歸屬腎、大腸經，能補腎陽、益精血、潤腸通便，主治腎陽不足引起的不適，例如性功能下降、腰膝酸軟、筋骨無力、耳聲嘈雜、虛風眩暈等，亦可改善腸燥便秘，常與巴戟天、杜仲等同用。\n",
+    "zh-Hans": "肉蓯蓉味甘、咸，药性溫，歸属肾、大肠经，能补肾阳、益精血、润肠通便，主治肾阳不足引起的不適，例如性功能下降、腰膝酸软、筋骨無力、耳聲嘈雜、虚風眩暈等，亦可改善肠燥便秘，常与巴戟天、杜仲等同用。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:43.080Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q5122273"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/turmeric",
+  "@type": [
+    "western:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/turmeric"
+  },
+  "name": {
+    "en": "Turmeric",
+    "zh-Hant": "薑黃",
+    "zh-Hans": "姜黄"
+  },
+  "scientificName": "Curcuma longa",
+  "hasAction": [
+    { "@id": "western/action/anti-inflammatory" },
+    { "@id": "western/action/antioxidant" },
+    { "@id": "western/action/hepatic" },
+    { "@id": "western/action/cholagogue" }
+  ],
+  "hasOrganAffinity": [
+    { "@id": "western/organ/liver" },
+    { "@id": "western/organ/digestive" },
+    { "@id": "western/organ/cardiovascular" }
+  ],
+  "westernHistory": {
+    "en": "Turmeric has been used in Indian Ayurvedic medicine and traditional Chinese medicine for over 4,000 years. It was introduced to the West by Arab traders and became popular in medieval Europe as a saffron substitute.",
+    "zh-Hant": "薑黃在印度阿育吠陀醫學和傳統中醫中已使用了超過4000年。它由阿拉伯商人引入西方，在中世紀歐洲成為流行的藏紅花替代品。",
+    "zh-Hans": "姜黄在印度阿育吠陀医学和传统中医中已使用了超过4000年。它由阿拉伯商人引入西方，在中世纪欧洲成为流行的藏红花替代品。"
+  },
+  "westernTraditionalUsage": {
+    "en": "Turmeric root is valued for its anti-inflammatory and antioxidant properties, primarily attributed to curcumin. It supports liver health, aids digestion, and may help with joint inflammation. Often combined with black pepper to enhance absorption.",
+    "zh-Hant": "薑黃根因其抗炎和抗氧化特性而受到重視，主要歸功於薑黃素。它支持肝臟健康，有助消化，並可能有助於關節炎症。常與黑胡椒一起使用以增強吸收。",
+    "zh-Hans": "姜黄根因其抗炎和抗氧化特性而受到重视，主要归功于姜黄素。它支持肝脏健康，有助消化，并可能有助于关节炎症。常与黑胡椒一起使用以增强吸收。"
+  },
+  "source": "herbapedia.com",
+  "created": "2026-02-20T00:00:00.000Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+}

@@ -1,0 +1,60 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/shanzha",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/shanzha"
+  },
+  "name": {
+    "en": "Shanzha",
+    "zh-Hant": "山楂",
+    "zh-Hans": "山楂"
+  },
+  "pinyin": "Shanzha",
+  "chineseName": {
+    "zh-Hant": "山楂",
+    "zh-Hans": "山楂"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Supplement to the Extension of the Materia Medica.\n",
+    "zh-Hant": "【山楂】History內容待翻譯補充。",
+    "zh-Hans": "【山楂】History內容待翻譯补充。"
+  },
+  "tcmTraditionalUsage": {
+    "en": "A sour, sweet tasting herb with warming properties, Shanzha enters the spleen, liver and stomach meridians. It reduces food stagnation, transforms blood stasis and dissipates clumps. Recently it has been used to treat hypertension, coronary artery diseases and hyperlipidemia. It may also be used as a nutritional supplement for children.\n",
+    "zh-Hant": "山楂味酸、甘，藥性微溫，歸屬脾、胃、肝經。能消食化積、行氣散瘀。主治肉食積滯、胃脘脹滿、血瘀經閉、產後血瘀、心腹刺痛，可分生用或炒用，活血散瘀宜生用。\n",
+    "zh-Hans": "山楂味酸、甘，药性微溫，歸属脾、胃、肝经。能消食化积、行气散瘀。主治肉食积滯、胃脘脹滿、血瘀经閉、產后血瘀、心腹刺痛，可分生用或炒用，活血散瘀宜生用。\n"
+  },
+  "tcmModernResearch": {
+    "en": "An extract of the herb has been shown to have a cardio-tonic effect and a slow but prolonged hypotensive action in anesthetised animals. It also inhibited arrhythmias of experimental animals. The herb lowered serum cholesterol and triglyceride level in rabbits, indicating its anti-hyperlipidemic effects.\n",
+    "zh-Hant": "【山楂】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【山楂】Modern Research內容待翻譯补充。"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:44.041Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q1141735"
+    }
+  ]
+}

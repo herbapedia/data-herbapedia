@@ -1,0 +1,60 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/jobs-tears",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/jobs-tears"
+  },
+  "name": {
+    "en": "Job&#039;s Tears",
+    "zh-Hant": "薏苡仁",
+    "zh-Hans": "薏苡仁"
+  },
+  "pinyin": "Job&#039;s Tears",
+  "chineseName": {
+    "zh-Hant": "薏苡仁",
+    "zh-Hans": "薏苡仁"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Divine Husbandman's Classic of the Materia Medica.\n",
+    "zh-Hant": "【薏苡仁】History內容待翻譯補充。",
+    "zh-Hans": "【薏苡仁】History內容待翻譯补充。"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Yiyiren is a grain, also known as Job's Tears, that is native to Southeast Asia. Used both as a food and medicine, it has sweet, cooling properties and affects the lung, spleen and stomach meridians. It is mainly used to strengthen the spleen, drain dampness and clear heat. It also effectively treats muscle, joint and tendon pain caused by dampness and is useful for all conditions caused by water accumulation.\n",
+    "zh-Hant": "薏苡仁市面上可分生用（生薏仁）和炒用（熟薏仁）兩種，藥味甘、淡，生者藥性微寒而熟者藥性平和，歸於脾、胃、肺經，有利水滲濕，能健脾、除痺、清熱排膿，常用於脾虛造成的浮腫、小便不利、泄瀉等，以及濕痺關節不適。\n",
+    "zh-Hans": "薏苡仁市面上可分生用（生薏仁）和炒用（熟薏仁）兩种，药味甘、淡，生者药性微寒而熟者药性平和，歸于脾、胃、肺经，有利水滲湿，能健脾、除痺、清热排膿，常用于脾虚造成的浮腫、小便不利、泄瀉等，以及湿痺关节不適。\n"
+  },
+  "tcmModernResearch": {
+    "en": "The extract of the herb prepared with ethanol contains coixenolide, a substance with significant antiplastic, anti-inflammatory, immunoregulatory and sedative activities. Other active chemical constituents have a hypoglycemic effect.\n",
+    "zh-Hant": "【薏苡仁】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【薏苡仁】Modern Research內容待翻譯补充。"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:27.344Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q827098"
+    }
+  ]
+}

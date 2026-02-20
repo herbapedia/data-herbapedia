@@ -1,0 +1,55 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/orobanches",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/orobanches"
+  },
+  "name": {
+    "en": "Orobanches",
+    "zh-Hant": "不老草",
+    "zh-Hans": "不老草"
+  },
+  "pinyin": "Orobanches",
+  "chineseName": {
+    "zh-Hant": "不老草",
+    "zh-Hans": "不老草"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "Herba Orobanches is a precious plant that grows wild on the high peaks of Changbai Mountain, an ancient, sacred region on the border between China and North Korea. The plant was discovered by indigenous inhabitants. who prize it for its rejuvenating properties.\n",
+    "zh-Hant": "長白山區朝鮮族民間藥，東北三寶之一。\n",
+    "zh-Hans": "长白山区朝鮮族民間药，东北三寶之一。\n"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Herba Orobanches is a sweet, bland, cooling herb that has an effect on the kidney and stomach meridians. It is used to tonify the kidneys and yang, nourish the intestines, brighten the eyes and strengthen the back, tendons and bones. It is especially prized for endowing vigour and vitality related to kidney health: improving vision, stiffness in the back and joints, improving the body's immune response, aiding detoxification and fighting the signs of ageing.\n",
+    "zh-Hant": "不老草味甘，藥性溫，歸腎經，能補腎壯陽、潤腸通便，主治腎陽虛衰所致的腰膝冷痛，亦用於腸燥便秘，對老年習慣性便秘尤佳。\n",
+    "zh-Hans": "不老草味甘，药性溫，歸肾经，能补肾壮阳、润肠通便，主治肾阳虚衰所致的腰膝冷痛，亦用于肠燥便秘，對老年習慣性便秘尤佳。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:38.873Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q160895"
+    }
+  ]
+}

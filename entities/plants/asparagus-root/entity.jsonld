@@ -1,0 +1,31 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/asparagus-root",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "scientificName": "Asparagus cochinchinensis",
+  "name": {
+    "en": "Asparagus Root",
+    "zh-Hant": "天冬",
+    "zh-Hans": "天冬"
+  },
+  "description": {
+    "en": "From the roots of Asparagus cochinchinensis (Lour.) Merr.\n",
+    "zh-Hant": "天冬（學名：Asparagus cochinchinensis）為多年生草本植物，以其根部入藥。在中醫藥理論中歸屬於補益類藥物，具有補氣養血、健脾益肺等功效，是重要的傳統中藥材。",
+    "zh-Hans": "天冬（学名：Asparagus cochinchinensis）为多年生草本植物，以其根部入药。在中医药理論中歸属于补益类药物，具有补气养血、健脾益肺等功效，是重要的传统中药材。"
+  },
+  "image": "media/images/asparagus-root/asparagus-root.jpg",
+  "url": "https://herbapedia.org/plants/asparagus-root",
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/chiherbs-en/asparagus-root/",
+  "created": "2026-02-18T09:14:50.582Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.gbif.org/species/2768772"
+    }
+  ],
+  "gbifId": 2768772
+}

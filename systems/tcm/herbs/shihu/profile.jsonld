@@ -1,0 +1,55 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/shihu",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/shihu"
+  },
+  "name": {
+    "en": "Shihu",
+    "zh-Hant": "石斛",
+    "zh-Hans": "石斛"
+  },
+  "pinyin": "Shihu",
+  "chineseName": {
+    "zh-Hant": "石斛",
+    "zh-Hans": "石斛"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Divine Husbandman's Classic of the Materia Medica.\n",
+    "zh-Hant": "【石斛】History內容待翻譯補充。",
+    "zh-Hans": "【石斛】History內容待翻譯补充。"
+  },
+  "tcmTraditionalUsage": {
+    "en": "A sweet, bland tasting herb that is slightly cold in nature, shihu is obtained from the stem of a golden coloured orchid. It enters the kidney and stomach meridians to nourish the yin, clear heat, generate fluids, replenish stomach yin deficiency, brighten the vision and strengthen the lower back. It is useful for treating blurred vision and dizziness caused by yin deficiency in the kidneys and liver.\n",
+    "zh-Hant": "石斛味甘而藥性微寒，歸肝、腎、胃經，能補腎、養肝明目、養陰清熱、益胃生津，主治陰虛、肝火或津虧導致的口燥咽乾、視力減退等。\n",
+    "zh-Hans": "石斛味甘而药性微寒，歸肝、肾、胃经，能补肾、养肝明目、养阴清热、益胃生津，主治阴虚、肝火或津虧導致的口燥咽干、視力減退等。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:48.233Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q636713"
+    }
+  ]
+}

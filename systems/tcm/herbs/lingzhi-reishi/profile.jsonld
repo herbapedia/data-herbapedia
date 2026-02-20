@@ -1,0 +1,60 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/lingzhi-reishi",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/lingzhi-reishi"
+  },
+  "name": {
+    "en": "Lingzhi (Reishi)",
+    "zh-Hant": "野生靈芝",
+    "zh-Hans": "野生灵芝"
+  },
+  "pinyin": "Lingzhi (Reishi)",
+  "chineseName": {
+    "zh-Hant": "野生靈芝",
+    "zh-Hans": "野生灵芝"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "Lingzhi first appeared in Shui Wen and the Divine Husbandman's Classic of the Materia Medica, classified as upper class. Lingzhi has been prized in Asian medicine for around 4,000 years. It grows around the bases and stumps of deciduous trees, mostly in virgin forests high in the mountains. Its rarity and the inaccesibility of its habitat mean that most Lingzhi products on the market today are made from artificially cultivated specimens. However, Chinese doctors have long stressed the importance of harvesting the fungus in their natural habitat, so Vita Green Lingzhi is made from natural and wild mushrooms to harness the full healing effects of this powerful herb.\n",
+    "zh-Hant": "首載於《說文》，《神農本草經》列為上品，認為「久食，輕身不老，延年神仙」，記載有赤芝、黑芝、青芝、白芝、黃芝、紫芝六種。\n",
+    "zh-Hans": "首载于《说文》，《神農本草经》列为上品，認为「久食，輕身不老，延年神仙」，记载有赤芝、黑芝、青芝、白芝、黃芝、紫芝六种。\n"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Lingzhi (also known as Reishi) is a type of fungus that grows on trees: there are more than 100 different types, but only six are prized for their medicinal properties. These six are sorted into five different colours according to their healing paths. Red Lingzhi treats chest discomfort, replenishes vital energy, improves memory and helps to attain longevity. Violet Lingzhi treats deafness, benefits the joints and bones and replenishes vital energy to strengthen the body. Yellow Lingzhi treats abdominal discomfort, benefits the digestive system and calms the spirit. White Lingzhi nourishes the lungs to soothe coughs and respiratory disorders, relieves congestion of the oral and nasal cavity, and calms the spirit. Black Lingzhi tonifies the kidneys. Green Lingzhi can improve vision and tonify the liver, as well as calm the spirit and improve memory. Lingzhi is sweet and neutral in nature, making it suitable for all constitutions. Conventionally, the different types of Lingzhi can be consumed as a general tonic for health maintenance. According to the Pharmacopoeia of the People's Republic of China 2005, Lingzhi can be used to relieve conditions including dizziness, insomnia, palpitations, shortness of breath, asthmatic coughs and asthma.\n",
+    "zh-Hant": "味甘、微苦，藥性平和，主要功能是補中益氣，養心安神，用於虛勞羸弱、食慾不振、心悸怔仲、失眠健忘以及咳痰喘息，久嗽不止。現還用於促進心腦血管系統健康，以及改善神經衰弱、慢性呼吸系統毛病等。\n",
+    "zh-Hans": "味甘、微苦，药性平和，主要功能是补中益气，养心安神，用于虚勞羸弱、食慾不振、心悸怔仲、失眠健忘以及咳痰喘息，久嗽不止。現还用于促进心脑血管系统健康，以及改善神经衰弱、慢性呼吸系统毛病等。\n"
+  },
+  "tcmModernResearch": {
+    "en": "Studies have shown Lingzhi increases the body’s antioxidant levels, strengthens the immune system, helps protect kidney cells and may posses anti-ageing properties such as increasing appetite and energy levels, reducing white hair and age spots, and aiding sleep.\n",
+    "zh-Hant": "【野生靈芝】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【野生靈芝】Modern Research內容待翻譯补充。"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:29.840Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q271098"
+    }
+  ]
+}

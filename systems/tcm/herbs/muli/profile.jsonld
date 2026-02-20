@@ -1,0 +1,60 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/muli",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/muli"
+  },
+  "name": {
+    "en": "Muli",
+    "zh-Hant": "牡蠣",
+    "zh-Hans": "牡蛎"
+  },
+  "pinyin": "Muli",
+  "chineseName": {
+    "zh-Hant": "牡蠣",
+    "zh-Hans": "牡蛎"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Divine Husbandman's Classic of the Materia Medica, classified as upper class.\n",
+    "zh-Hant": "始載於《神農本草經》，列為上品\n",
+    "zh-Hans": "始载于《神農本草经》，列为上品\n"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Made from crushed oyster shell, muli is salty, astringent and cool in nature, entering the liver and kidney channels. It calms liver yang, helping to relieve symptoms of sadness, insomnia and dizziness; dissipates nodules; neutralises stomach acid; and prevents excessive loss of fluids such as profuse sweating.\n",
+    "zh-Hant": "牡蠣味鹹、澀，藥性微寒，歸肝、腎兩經。能平肝潛陽，軟堅散結，收斂固澀。主治肝陽上亢引起之頭暈目眩；痰核、瘰癧、癥瘕等積聚之症；牡蠣煅用具收斂制酸作用，可用於治療胃痛泛酸。\n",
+    "zh-Hans": "牡蠣味咸、涩，药性微寒，歸肝、肾兩经。能平肝潛阳，软堅散结，收斂固涩。主治肝阳上亢引起之头暈目眩；痰核、瘰癧、癥瘕等积聚之症；牡蠣煅用具收斂制酸作用，可用于治疗胃痛泛酸。\n"
+  },
+  "tcmModernResearch": {
+    "en": "Its extract is able to inhibit the growth of poliovirus in vivo.\n",
+    "zh-Hant": "【牡蠣】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【牡蠣】Modern Research內容待翻譯补充。"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:36.455Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q20857"
+    }
+  ]
+}

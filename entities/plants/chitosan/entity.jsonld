@@ -1,0 +1,24 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/chitosan",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "name": {
+    "en": "Chitosan",
+    "zh-Hant": "甲殼素",
+    "zh-Hans": "甲壳素"
+  },
+  "description": {
+    "en": "Chitosan is produced by the deacetylation of chitin, which is the structural element in the exoskeleton of crustaceans such as crabs and shrimp.\n",
+    "zh-Hant": "甲殼素（學名：待定）是一種具有藥用價值的天然產物。現代藥理學研究證實其含有多種生物活性成分，在傳統醫學和現代保健領域均有重要應用價值。",
+    "zh-Hans": "甲殼素（学名：待定）是一种具有药用價值的天然產物。現代药理学研究证实其含有多种生物活性成分，在传统医学和現代保健領域均有重要应用價值。"
+  },
+  "image": "media/images/chitosan/chitosan.jpg",
+  "url": "https://herbapedia.org/plants/chitosan",
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/nutrients-en/chitosan/",
+  "created": "2026-02-18T09:17:03.460Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+}

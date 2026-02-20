@@ -1,0 +1,20 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/epicutin-tt",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "scientificName": "Timed Release Formation Epicutin-TT",
+  "name": {
+    "en": "Epicutin-TT",
+    "zh-Hant": "緩釋功能",
+    "zh-Hans": "缓释功能"
+  },
+  "image": "media/images/epicutin-tt/epicutin-tt.jpg",
+  "url": "https://herbapedia.org/plants/epicutin-tt",
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/nutrients-en/epicutin-tt/",
+  "created": "2026-02-18T09:17:06.570Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+}

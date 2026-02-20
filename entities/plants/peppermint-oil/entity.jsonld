@@ -1,0 +1,31 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/peppermint-oil",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "scientificName": "Mentha peperita",
+  "name": {
+    "en": "Peppermint oil",
+    "zh-Hant": "胡椒薄荷油",
+    "zh-Hans": "胡椒薄荷油"
+  },
+  "description": {
+    "en": "Extracted from the Peppermint plant by steam distillation.\n",
+    "zh-Hant": "胡椒薄荷油（學名：Mentha peperita）萃取自植物種子或果實，富含不飽和脂肪酸和維生素E等營養成分。具有滋潤皮膚、抗氧化等功效，廣泛應用於保健和美容領域。",
+    "zh-Hans": "胡椒薄荷油（学名：Mentha peperita）萃取自植物种子或果实，富含不飽和脂肪酸和維生素E等營养成分。具有滋润皮肤、抗氧化等功效，廣泛应用于保健和美容領域。"
+  },
+  "image": "media/images/peppermint-oil/peppermint-oil.jpg",
+  "url": "https://herbapedia.org/plants/peppermint-oil",
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/westherbs-en/peppermint-oil/",
+  "created": "2026-02-18T09:16:32.861Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.gbif.org/species/8707933"
+    }
+  ],
+  "gbifId": 8707933
+}

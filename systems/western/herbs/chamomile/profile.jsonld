@@ -1,0 +1,41 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/chamomile",
+  "@type": [
+    "western:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/chamomile"
+  },
+  "name": {
+    "en": "Chamomile",
+    "zh-Hant": "洋甘菊",
+    "zh-Hans": "洋甘菊"
+  },
+  "scientificName": "Matricaria chamomilla",
+  "hasAction": [
+    { "@id": "western/action/sedative" },
+    { "@id": "western/action/anti-inflammatory" },
+    { "@id": "western/action/carminative" },
+    { "@id": "western/action/antispasmodic" }
+  ],
+  "hasOrganAffinity": [
+    { "@id": "western/organ/digestive" },
+    { "@id": "western/organ/nervous-system" },
+    { "@id": "western/organ/skin" }
+  ],
+  "westernHistory": {
+    "en": "Chamomile has been used for centuries in traditional medicine, dating back to ancient Egypt, Greece, and Rome. The name comes from Greek 'chamos' (ground) and 'melos' (apple), referring to its low growth and apple-like scent.",
+    "zh-Hant": "洋甘菊在傳統醫學中已使用了幾個世紀，可追溯到古埃及、希臘和羅馬。其名稱來自希臘語「chamos」（地面）和「melos」（蘋果），指其低矮生長和蘋果般的香氣。",
+    "zh-Hans": "洋甘菊在传统医学中已使用了几个世纪，可追溯到古埃及、希腊和罗马。其名称来自希腊语「chamos」（地面）和「melos」（苹果），指其低矮生长和苹果般的香气。"
+  },
+  "westernTraditionalUsage": {
+    "en": "Chamomile flowers are used to make a soothing tea for digestive issues, anxiety, and insomnia. Applied topically, it helps with skin irritations and wounds. Known for its gentle calming effects suitable for children and adults.",
+    "zh-Hant": "洋甘菊花用於製作緩解消化問題、焦慮和失眠的舒緩茶。外用時，有助於緩解皮膚刺激和傷口。以其溫和的鎮靜效果而聞名，適合兒童和成人使用。",
+    "zh-Hans": "洋甘菊花用于制作缓解消化问题、焦虑和失眠的舒缓茶。外用时，有助于缓解皮肤刺激和伤口。以其温和的镇静效果而闻名，适合儿童和成人使用。"
+  },
+  "source": "herbapedia.com",
+  "created": "2026-02-20T00:00:00.000Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+}

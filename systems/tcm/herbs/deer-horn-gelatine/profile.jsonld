@@ -1,0 +1,50 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/deer-horn-gelatine",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/deer-horn-gelatine"
+  },
+  "name": {
+    "en": "Deer horn gelatine",
+    "zh-Hant": "鹿角膠",
+    "zh-Hans": "鹿角胶"
+  },
+  "pinyin": "Deer horn gelatine",
+  "chineseName": {
+    "zh-Hant": "鹿角膠",
+    "zh-Hans": "鹿角胶"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Divine Husbandman's Classic of the Materia Medica.\n",
+    "zh-Hant": "始載於《神農本草經》，列為中品\n",
+    "zh-Hans": "始载于《神農本草经》，列为中品\n"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Deer horn gelatine is sweet, salty and warm in nature. This preparation is used for warming the kidneys, replenishing the liver and nourishing the vital essence and blood. It is most suitable for people suffering from kidney yang deficiency and jing (vital essence) exhaustion.\n",
+    "zh-Hant": "將鹿角經水煎熬濃縮而成的固體膠就是鹿角膠，其藥性甘、鹹，溫。歸於肝、腎經，能溫補肝腎、益精血，用於腎陽虛弱、精血不足，常用以調理虛寒體質，需要烊化服用，或加入中成藥中使用。\n",
+    "zh-Hans": "将鹿角经水煎熬浓縮而成的固体胶就是鹿角胶，其药性甘、咸，溫。歸于肝、肾经，能溫补肝肾、益精血，用于肾阳虚弱、精血不足，常用以调理虚寒体质，需要烊化服用，或加入中成药中使用。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:09.216Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+}

@@ -1,0 +1,229 @@
+{
+  "@context": "../schema/context/core.jsonld",
+  "@graph": [
+    {
+      "@id": "chemical/ginsenosides",
+      "@type": "herbapedia:ChemicalCompound",
+      "prefLabel": {
+        "en": "Ginsenosides",
+        "zh-Hant": "人參皂苷",
+        "zh-Hans": "人参皂苷"
+      },
+      "description": {
+        "en": "Active compounds found in Panax ginseng, responsible for adaptogenic and tonic effects",
+        "zh-Hant": "人參中的活性化合物，具有適應原和補益作用",
+        "zh-Hans": "人参中的活性化合物，具有适应原和补益作用"
+      }
+    },
+    {
+      "@id": "chemical/polysaccharides",
+      "@type": "herbapedia:ChemicalCompound",
+      "prefLabel": {
+        "en": "Polysaccharides",
+        "zh-Hant": "多醣",
+        "zh-Hans": "多糖"
+      },
+      "description": {
+        "en": "Complex carbohydrates that support immune function",
+        "zh-Hant": "支持免疫功能複雜碳水化合物",
+        "zh-Hans": "支持免疫功能复杂碳水化合物"
+      }
+    },
+    {
+      "@id": "chemical/curcumin",
+      "@type": "herbapedia:ChemicalCompound",
+      "prefLabel": {
+        "en": "Curcumin",
+        "zh-Hant": "薑黃素",
+        "zh-Hans": "姜黄素"
+      },
+      "description": {
+        "en": "Active compound in turmeric with anti-inflammatory and antioxidant properties",
+        "zh-Hant": "薑黃中的活性化合物，具有抗炎和抗氧化特性",
+        "zh-Hans": "姜黄中的活性化合物，具有抗炎和抗氧化特性"
+      }
+    },
+    {
+      "@id": "chemical/gingerol",
+      "@type": "herbapedia:ChemicalCompound",
+      "prefLabel": {
+        "en": "Gingerol",
+        "zh-Hant": "薑辣素",
+        "zh-Hans": "姜辣素"
+      },
+      "description": {
+        "en": "Active compound in ginger responsible for its spicy flavor and therapeutic effects",
+        "zh-Hant": "生薑中的活性化合物，賦予其辛辣風味和治療效果",
+        "zh-Hans": "生姜中的活性化合物，赋予其辛辣风味和治疗效果"
+      }
+    },
+    {
+      "@id": "chemical/flavonoids",
+      "@type": "herbapedia:ChemicalCompound",
+      "prefLabel": {
+        "en": "Flavonoids",
+        "zh-Hant": "類黃酮",
+        "zh-Hans": "类黄酮"
+      },
+      "description": {
+        "en": "Plant compounds with antioxidant and anti-inflammatory properties",
+        "zh-Hant": "具有抗氧化和抗炎特性的植物化合物",
+        "zh-Hans": "具有抗氧化和抗炎特性的植物化合物"
+      }
+    },
+    {
+      "@id": "chemical/tannins",
+      "@type": "herbapedia:ChemicalCompound",
+      "prefLabel": {
+        "en": "Tannins",
+        "zh-Hant": "單寧",
+        "zh-Hans": "单宁"
+      },
+      "description": {
+        "en": "Astringent compounds that can bind and precipitate proteins",
+        "zh-Hant": "能結合和沉澱蛋白質的收斂化合物",
+        "zh-Hans": "能结合和沉淀蛋白质的收敛化合物"
+      }
+    },
+    {
+      "@id": "chemical/essential-oils",
+      "@type": "herbapedia:ChemicalCompound",
+      "prefLabel": {
+        "en": "Essential Oils",
+        "zh-Hant": "精油",
+        "zh-Hans": "精油"
+      },
+      "description": {
+        "en": "Volatile aromatic compounds extracted from plants",
+        "zh-Hant": "從植物中提取的揮發性芳香化合物",
+        "zh-Hans": "从植物中提取的挥发性芳香化合物"
+      }
+    },
+    {
+      "@id": "chemical/alkaloids",
+      "@type": "herbapedia:ChemicalCompound",
+      "prefLabel": {
+        "en": "Alkaloids",
+        "zh-Hant": "生物鹼",
+        "zh-Hans": "生物碱"
+      },
+      "description": {
+        "en": "Nitrogen-containing organic compounds with pharmacological effects",
+        "zh-Hant": "具有藥理作用的含氮有機化合物",
+        "zh-Hans": "具有药理作用的含氮有机化合物"
+      }
+    },
+    {
+      "@id": "chemical/saponins",
+      "@type": "herbapedia:ChemicalCompound",
+      "prefLabel": {
+        "en": "Saponins",
+        "zh-Hant": "皂苷",
+        "zh-Hans": "皂苷"
+      },
+      "description": {
+        "en": "Foam-forming compounds with various biological activities",
+        "zh-Hant": "具有多種生物活性的起泡化合物",
+        "zh-Hans": "具有多种生物活性的起泡化合物"
+      }
+    },
+    {
+      "@id": "chemical/terpenes",
+      "@type": "herbapedia:ChemicalCompound",
+      "prefLabel": {
+        "en": "Terpenes",
+        "zh-Hant": "萜烯",
+        "zh-Hans": "萜烯"
+      },
+      "description": {
+        "en": "Aromatic compounds found in many essential oils",
+        "zh-Hant": "許多精油中發現的芳香化合物",
+        "zh-Hans": "许多精油中发现的芳香化合物"
+      }
+    },
+    {
+      "@id": "chemical/anthocyanins",
+      "@type": "herbapedia:ChemicalCompound",
+      "prefLabel": {
+        "en": "Anthocyanins",
+        "zh-Hant": "花青素",
+        "zh-Hans": "花青素"
+      },
+      "description": {
+        "en": "Pigments responsible for red, purple, and blue colors in plants with antioxidant properties",
+        "zh-Hant": "負責植物紅色、紫色和藍色的色素，具有抗氧化特性",
+        "zh-Hans": "负责植物红色、紫色和蓝色的色素，具有抗氧化特性"
+      }
+    },
+    {
+      "@id": "chemical/catechins",
+      "@type": "herbapedia:ChemicalCompound",
+      "prefLabel": {
+        "en": "Catechins",
+        "zh-Hant": "兒茶素",
+        "zh-Hans": "儿茶素"
+      },
+      "description": {
+        "en": "Type of flavonoid found in green tea with potent antioxidant properties",
+        "zh-Hant": "綠茶中發現的類黃酮，具有強效抗氧化特性",
+        "zh-Hans": "绿茶中发现的类黄酮，具有强效抗氧化特性"
+      }
+    },
+    {
+      "@id": "chemical/resveratrol",
+      "@type": "herbapedia:ChemicalCompound",
+      "prefLabel": {
+        "en": "Resveratrol",
+        "zh-Hant": "白藜蘆醇",
+        "zh-Hans": "白藜芦醇"
+      },
+      "description": {
+        "en": "Polyphenol with antioxidant and anti-aging properties",
+        "zh-Hant": "具有抗氧化和抗衰老特性的多酚",
+        "zh-Hans": "具有抗氧化和抗衰老特性的多酚"
+      }
+    },
+    {
+      "@id": "chemical/berberine",
+      "@type": "herbapedia:ChemicalCompound",
+      "prefLabel": {
+        "en": "Berberine",
+        "zh-Hant": "小檗鹼",
+        "zh-Hans": "小檗碱"
+      },
+      "description": {
+        "en": "Alkaloid with antimicrobial and blood sugar regulating properties",
+        "zh-Hant": "具有抗菌和調節血糖作用的生物鹼",
+        "zh-Hans": "具有抗菌和调节血糖作用的生物碱"
+      }
+    },
+    {
+      "@id": "chemical/silymarin",
+      "@type": "herbapedia:ChemicalCompound",
+      "prefLabel": {
+        "en": "Silymarin",
+        "zh-Hant": "水飛薊素",
+        "zh-Hans": "水飞蓟素"
+      },
+      "description": {
+        "en": "Flavonoid complex from milk thistle that supports liver health",
+        "zh-Hant": "來自乳薊的類黃酮複合物，支持肝臟健康",
+        "zh-Hans": "来自乳蓟的类黄酮复合物，支持肝脏健康"
+      }
+    },
+    {
+      "@id": "chemical/nucleosides",
+      "@type": "herbapedia:ChemicalCompound",
+      "prefLabel": {
+        "en": "Nucleosides",
+        "zh-Hant": "核苷",
+        "zh-Hans": "核苷"
+      },
+      "description": {
+        "en": "Building blocks of DNA and RNA with various biological activities",
+        "zh-Hant": "DNA和RNA的構建塊，具有多種生物活性",
+        "zh-Hans": "DNA和RNA的构建块，具有多种生物活性"
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/clove-oil",
+  "@type": [
+    "western:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/clove-oil"
+  },
+  "name": {
+    "en": "Clove oil",
+    "zh-Hant": "丁香油",
+    "zh-Hans": "丁香油"
+  },
+  "scientificName": "Eugenia caryophyllata (Thumb)",
+  "hasAction": [
+    {
+      "@id": "western/action/analgesic"
+    }
+  ],
+  "hasOrganAffinity": [
+    {
+      "@id": "organ/respiratory"
+    }
+  ],
+  "westernHistory": null,
+  "westernTraditionalUsage": {
+    "en": "Spicy smelling clove oil has been used for centuries in connection with respiratory ailments such as asthma and bronchitis; muscle aches, sprains and strains; and arthritis and rheumatism. Many individuals use clove oil for its analgesic effects, including treating mouth ulcers and toothache. Clove oil is also a constituent of Narayan Oil, an ayurvedic treatment for aches and pains.\n",
+    "zh-Hant": "氣味濃烈的丁香油自古以來治療呼吸道疾病, 包括哮喘和支氣管炎、肌肉疼痛、肌肉扭傷或拉緊、關節炎和風濕病。人們多以丁香油來止痛, 包括口瘡和牙痛。丁香油有助舒緩各種痛症。\n",
+    "zh-Hans": "气味浓烈的丁香油自古以来治疗呼吸道疾病, 包括哮喘和支气管炎、肌肉疼痛、肌肉扭伤或拉紧、关节炎和风湿病。人们多以丁香油来止痛, 包括口疮和牙痛。丁香油有助舒缓各种痛症。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-19T15:32:30.547Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "description": {
+    "en": "Derived from the clove plant, Syzygium aromaticum, the oil may be extracted from the leaves, stems and buds by steam distillation.\n",
+    "zh-Hant": "提取自丁香植物, 並以蒸餾方式提煉丁香油。\n",
+    "zh-Hans": "提取自丁香植物, 并以蒸馏方式提炼丁香油。\n"
+  }
+}

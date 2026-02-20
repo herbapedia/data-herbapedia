@@ -1,0 +1,31 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/suanzaoren",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "scientificName": "Ziziphus jujuba var spinosa",
+  "name": {
+    "en": "Suanzaoren",
+    "zh-Hant": "酸棗仁",
+    "zh-Hans": "酸枣仁"
+  },
+  "description": {
+    "en": "Seed of Ziziphus spinosa Hu, family Rhamnaceae.\n",
+    "zh-Hant": "酸棗仁（學名：Ziziphus jujuba var spinosa）是一種具有藥用價值的天然產物。現代藥理學研究證實其含有多種生物活性成分，在傳統醫學和現代保健領域均有重要應用價值。",
+    "zh-Hans": "酸棗仁（学名：Ziziphus jujuba var spinosa）是一种具有药用價值的天然產物。現代药理学研究证实其含有多种生物活性成分，在传统医学和現代保健領域均有重要应用價值。"
+  },
+  "image": "media/images/suanzaoren/suanzaoren.jpg",
+  "url": "https://herbapedia.org/plants/suanzaoren",
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/chiherbs-en/suanzaoren/",
+  "created": "2026-02-18T09:15:50.691Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.gbif.org/species/3039423"
+    }
+  ],
+  "gbifId": 3039423
+}

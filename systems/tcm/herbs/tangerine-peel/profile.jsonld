@@ -1,0 +1,60 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/tangerine-peel",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/tangerine-peel"
+  },
+  "name": {
+    "en": "Tangerine peel",
+    "zh-Hant": "陳皮",
+    "zh-Hans": "陈皮"
+  },
+  "pinyin": "Tangerine peel",
+  "chineseName": {
+    "zh-Hant": "陳皮",
+    "zh-Hans": "陈皮"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Divine Husbandman's Classic of the Materia Medica.\n",
+    "zh-Hant": "始載於《神農本草經》，列為上品\n",
+    "zh-Hans": "始载于《神農本草经》，列为上品\n"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Chenpi, made from the rind of tangerine fruits, can regulate the flow of chi, invigorate the functions of the spleen, eliminate damp and help to relieve phlegm and coughs. Bitter and warm in nature, it affects the lung and spleen channels. Its use is indicated where the patient suffers from distention and fullness in the chest and upper abdomen with anorexia, vomiting and diarrhea, and a cough with copious phlegm. Because it aids digestion and absorption, it can be used in multiherb remedies where the other ingredients may overburden the digestive system.\n",
+    "zh-Hant": "陳皮是理氣藥，亦稱為橘皮，其味辛而苦，藥性溫，歸入脾、肺經，能理氣健脾、燥濕化痰，常用於脾胃氣滯、脘腹脹悶、噁心嘔吐、脾虛泄瀉、咳嗽寒痰等。\n",
+    "zh-Hans": "陳皮是理气药，亦稱为橘皮，其味辛而苦，药性溫，歸入脾、肺经，能理气健脾、燥湿化痰，常用于脾胃气滯、脘腹脹悶、噁心嘔吐、脾虚泄瀉、咳嗽寒痰等。\n"
+  },
+  "tcmModernResearch": {
+    "en": "A flavonoid in the herb, which is called hesperidin, possesses antiallergic, antioxidative and antistomatitic properties. It has been used to treat mastitis, bronchitis and burns with good results.\n",
+    "zh-Hant": "【陳皮】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【陳皮】Modern Research內容待翻譯补充。"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:52.432Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q125337"
+    }
+  ]
+}

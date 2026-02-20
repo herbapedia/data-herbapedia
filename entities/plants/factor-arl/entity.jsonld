@@ -1,0 +1,19 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/factor-arl",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "name": {
+    "en": "Factor ARL",
+    "zh-Hant": "ARL 抗皺因子",
+    "zh-Hans": "ARL 抗皱因子"
+  },
+  "image": "media/images/factor-arl/factor-arl.jpg",
+  "url": "https://herbapedia.org/plants/factor-arl",
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/nutrients-en/factor-arl/",
+  "created": "2026-02-18T09:17:07.391Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+}

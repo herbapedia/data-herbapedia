@@ -1,0 +1,55 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/chuanxinlian",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/chuanxinlian"
+  },
+  "name": {
+    "en": "Chuanxinlian",
+    "zh-Hant": "穿心蓮",
+    "zh-Hans": "穿心莲"
+  },
+  "pinyin": "Chuanxinlian",
+  "chineseName": {
+    "zh-Hant": "穿心蓮",
+    "zh-Hans": "穿心莲"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Handbook of Commonly used Traditional Chinese Herbs by Guangzhou People's Liberation Army Medical Brigade.\n",
+    "zh-Hant": "始載於〔廣州部墜〕《常用中草葯手冊》\n",
+    "zh-Hans": "始载于〔廣州部墜〕《常用中草葯手冊》\n"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Chuanxinlian is a bitter herb that is cold in nature. It affects the lung, stomach, large intestine and small intestine meridians, clearing heat and toxins and helping to dissipate dampness. It is useful for treating cases of diarrhoea and dysentry due to damp-heat.\n",
+    "zh-Hant": "穿心蓮為味苦而藥性大寒的清熱藥，歸於肺、胃、大腸、小腸經，能清熱解毒、燥濕消腫，常用於熱毒導致的咽喉腫痛等。\n",
+    "zh-Hans": "穿心蓮为味苦而药性大寒的清热药，歸于肺、胃、大肠、小肠经，能清热解毒、燥湿消腫，常用于热毒導致的咽喉腫痛等。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:03.380Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q1551608"
+    }
+  ]
+}

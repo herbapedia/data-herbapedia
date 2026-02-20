@@ -1,0 +1,60 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/danshen",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/danshen"
+  },
+  "name": {
+    "en": "Danshen",
+    "zh-Hant": "丹蔘",
+    "zh-Hans": "丹蔘"
+  },
+  "pinyin": "Danshen",
+  "chineseName": {
+    "zh-Hant": "丹蔘",
+    "zh-Hans": "丹蔘"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in the Divine Husbandman's Classic of the Materia Medica, classified as upper class.\n",
+    "zh-Hant": "始載於《神農本草經》，列為上品。\n",
+    "zh-Hans": "始载于《神農本草经》，列为上品。\n"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Danshen, also known as salvia root, is a cooling herb for the heart and liver meridians. It activates blood circulation, clears blood stasis, cools the blood, reduces swellings, nourishes blood and calms the spirit. It can be used to address various disorders caused by blood stagnation, including chest pains and an enlarged liver. Its calming properties also mean it can treat palpitations and insomnia caused by heart-blood deficiency.\n",
+    "zh-Hant": "丹蔘傳統用作活血化瘀調經藥，味苦而藥性微寒，歸心、肝經，能活血調經、涼血消癰、安神，是婦女月經不調、痛經、閉經、或產後活血化瘀的常用藥，因其活血化瘀之力顯著，亦常用於心血瘀阻引起的心胸痞悶、疼痛等，丹蔘既能活血又能養心，近年常用於促進心血管系統健康。\n",
+    "zh-Hans": "丹参传统用作活血化瘀调经药，味苦而药性微寒，歸心、肝经，能活血调经、涼血消癰、安神，是婦女月经不调、痛经、閉经、或產后活血化瘀的常用药，因其活血化瘀之力顯著，亦常用于心血瘀阻引起的心胸痞悶、疼痛等，丹参既能活血又能养心，近年常用于促进心血管系统健康。\n"
+  },
+  "tcmModernResearch": {
+    "en": "Danshen has several pharmacological properties. It is an anticoagulant, antibiotic, hepaprotective, a sedative, and can dilate the coronary arteries. It has been used in clinical studies to treat conditions including chronic hepatitis, coronary artery disease, thrombosis and insomnia with good results.\n",
+    "zh-Hant": "【丹蔘】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【丹参】Modern Research內容待翻譯补充。"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:07.577Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q1000854"
+    }
+  ]
+}

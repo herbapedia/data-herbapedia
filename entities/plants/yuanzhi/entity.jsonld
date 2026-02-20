@@ -1,0 +1,31 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/yuanzhi",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "scientificName": "Polygala tenuifolia",
+  "name": {
+    "en": "Yuanzhi",
+    "zh-Hant": "遠志",
+    "zh-Hans": "远志"
+  },
+  "description": {
+    "en": "The dried root of Polygala tenufolia, willd.,family polygalaceae.\n",
+    "zh-Hant": "遠志（學名：Polygala tenuifolia）是一種具有藥用價值的天然產物。現代藥理學研究證實其含有多種生物活性成分，在傳統醫學和現代保健領域均有重要應用價值。",
+    "zh-Hans": "遠志（学名：Polygala tenuifolia）是一种具有药用價值的天然產物。現代药理学研究证实其含有多种生物活性成分，在传统医学和現代保健領域均有重要应用價值。"
+  },
+  "image": "media/images/yuanzhi/yuanzhi.jpg",
+  "url": "https://herbapedia.org/plants/yuanzhi",
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/chiherbs-en/yuanzhi/",
+  "created": "2026-02-18T09:16:03.773Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.gbif.org/species/7593997"
+    }
+  ],
+  "gbifId": 7593997
+}

@@ -1,0 +1,25 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/argan-oil",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "scientificName": "Argania Spinosa",
+  "name": {
+    "en": "Argan oil",
+    "zh-Hant": "堅果油",
+    "zh-Hans": "坚果油"
+  },
+  "description": {
+    "en": "Derived from the fruit of the Argan tree, which grows in the Moroccan dessert surviving the harshest of dry weather conditions.\n",
+    "zh-Hant": "堅果油（學名：Argania Spinosa）萃取自植物種子或果實，富含不飽和脂肪酸和維生素E等營養成分。具有滋潤皮膚、抗氧化等功效，廣泛應用於保健和美容領域。",
+    "zh-Hans": "堅果油（学名：Argania Spinosa）萃取自植物种子或果实，富含不飽和脂肪酸和維生素E等營养成分。具有滋润皮肤、抗氧化等功效，廣泛应用于保健和美容領域。"
+  },
+  "image": "media/images/argan-oil/argan-oil.jpg",
+  "url": "https://herbapedia.org/plants/argan-oil",
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/westherbs-en/argan-oil/",
+  "created": "2026-02-18T09:16:14.798Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+}

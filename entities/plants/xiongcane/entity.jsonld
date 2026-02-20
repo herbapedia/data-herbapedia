@@ -1,0 +1,31 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/xiongcane",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "scientificName": "Bombyx mori",
+  "name": {
+    "en": "Xiongcane",
+    "zh-Hant": "雄蠶蛾  又名僵蠶",
+    "zh-Hans": "雄蚕蛾  又名僵蚕"
+  },
+  "description": {
+    "en": "Obtained Bombyx mori L. larvae, the dried body of the silkworm larva that has died from white muscardine disease.\n",
+    "zh-Hant": "雄蠶蛾  又名僵蠶（學名：Bombyx mori）是一種具有藥用價值的天然產物。現代藥理學研究證實其含有多種生物活性成分，在傳統醫學和現代保健領域均有重要應用價值。",
+    "zh-Hans": "雄蠶蛾  又名僵蠶（学名：Bombyx mori）是一种具有药用價值的天然產物。現代药理学研究证实其含有多种生物活性成分，在传统医学和現代保健領域均有重要应用價值。"
+  },
+  "image": "media/images/xiongcane/xiongcane.jpg",
+  "url": "https://herbapedia.org/plants/xiongcane",
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/chiherbs-en/xiongcane/",
+  "created": "2026-02-18T09:16:02.997Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.gbif.org/species/1868664"
+    }
+  ],
+  "gbifId": 1868664
+}

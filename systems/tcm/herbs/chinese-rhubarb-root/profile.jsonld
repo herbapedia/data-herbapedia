@@ -1,0 +1,60 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/chinese-rhubarb-root",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/chinese-rhubarb-root"
+  },
+  "name": {
+    "en": "Chinese rhubarb root",
+    "zh-Hant": "大黃",
+    "zh-Hans": "大黄"
+  },
+  "pinyin": "Chinese rhubarb root",
+  "chineseName": {
+    "zh-Hant": "大黃",
+    "zh-Hans": "大黄"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Divine Husbandman's Classic of the Materia Medica, classified as lower class.\n",
+    "zh-Hant": "始載於《神農本草經》，列為下品\n",
+    "zh-Hans": "始载于《神農本草经》，列为下品\n"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Made from the roots of the Chinese rhubarb plant, dahuang is a bitter, cooling herb for the meridians of the heart, spleen, stomach, liver and large intestine. It is traditionally used as a purgative or laxative; to clear damp-heat, eliminate heat and toxins; and to activate blood circulation. It can treat constipation caused by heat and chi stagnation or excess heat, often in combination with other herbs.\n",
+    "zh-Hant": "大黃為蓼科多年生草本植物，是十分常用的攻下藥，其藥味苦而藥性寒涼，歸脾、胃、大腸、肝、心經，能通便瀉下、清熱解毒，傳統常用於陽明腑實證，例如熱結便秘、胃腸積滯，以及其他熱毒症狀。\n",
+    "zh-Hans": "大黃为蓼科多年生草本植物，是十分常用的攻下药，其药味苦而药性寒涼，歸脾、胃、大肠、肝、心经，能通便瀉下、清热解毒，传统常用于阳明腑实证，例如热结便秘、胃肠积滯，以及其他热毒症狀。\n"
+  },
+  "tcmModernResearch": {
+    "en": "Dahuang has many proven pharmacological effects. It contains the substances sennoside A, aloe-emodin and rhein, which account for its strong purgative properties. It also has hepatoprotective properties, is haemostatic, antibiotic, and has an effect on the cardiovascular system. It has been used with good results to treat nephropathy, upper gastrointestinal bleeding, constipation, hepatitis and other conditions.\n",
+    "zh-Hant": "【大黃】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【大黃】Modern Research內容待翻譯补充。"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:01.716Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q1109580"
+    }
+  ]
+}

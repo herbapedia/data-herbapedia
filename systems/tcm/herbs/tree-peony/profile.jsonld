@@ -1,0 +1,60 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/tree-peony",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/tree-peony"
+  },
+  "name": {
+    "en": "Tree Peony",
+    "zh-Hant": "牡丹皮",
+    "zh-Hans": "牡丹皮"
+  },
+  "pinyin": "Tree Peony",
+  "chineseName": {
+    "zh-Hant": "牡丹皮",
+    "zh-Hans": "牡丹皮"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Divine Husbandman's Classic of the Materia Medica, classified as middle class.\n",
+    "zh-Hant": "首載於《神農本草經》曰: [主寒熱、中風瘈瘲、痙、驚癎邪氣、除堅癥瘀血、留舍腸胃、安五臟、療壅瘡。] 《珍珠囊》曰: [治腸胃積血、衄血、吐血、無汗骨蒸。]\n",
+    "zh-Hans": "首载于《神農本草经》曰: [主寒热、中風瘈瘲、痙、惊癎邪气、除堅癥瘀血、留舍肠胃、安五脏、疗壅瘡。] 《珍珠囊》曰: [治肠胃积血、衄血、吐血、無汗骨蒸。]\n"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Mudanpi has cooling, bitter properties that enter the heart, liver and kidney meridians. It is used to cool blood heat, invigorate circulation and disperse blood stasis. Its indications include menopausal symptoms; red blotchy skin; menstrual disorders; night fevers; irritability; amenorrhea and bruises caused by trauma.\n",
+    "zh-Hant": "牡丹皮味苦、性寒。歸心、肝、腎等經。具有溫毒發班、血熱吐衄、火濕病傷陽、陰虛發熱、夜熱早涼、無汗骨蒸，血滯經閉、痛經、跌打損傷、壅腫瘡毒等症。 溫毒發班、血熱吐衄 牡丹皮味苦、性寒。入心肝血分。善能清營分，血分實熱，功能清熱，涼血止血。治溫病熱入營血，迫血妄行所致發班，吐血、衄血可配犀牛角、生地黃、赤芍等藥用; 治溫毒發班，可配梔子、大黃、黃芩等藥共用; 如牡丹湯 (《聖濟總錄》) ; 若治血熱吐衄，可配大黃、大薊、茜草根等藥用 ; 如十灰散 (《十藥神書》) ; 若治陰虛血熱吐衄，可配生地黃、梔子等藥用 ; 如流水清肝飲 (《醫宗己任編》) 。 溫熱傷陰、陰虛發熱、夜熱早涼、無汗骨蒸、皮膚痕癢、疥癬 牡丹皮味苦、性辛寒。入血分而善於清透陰分伏熱，為治無汗骨蒸之要藥，常配鱉甲、知母、生地黃等藥用 ; 如清蒿鱉甲湯 (《十溫病條辨》)。 血滯經閉、痛經、跌打損傷 牡丹皮辛行苦泄，有活血去瘀之功。治血滯經閉、痛經，可配桃仁、川芎、桂枝等藥用 ; 如桂枝茯苓丸 (《金匱要略》) ; 治跌打損傷等症，可配紅花、乳香、沒藥等藥用 ; 如牡丹皮散 (《證治准繩》)。 壅腫瘡毒 牡丹皮味苦、性辛寒。清熱涼血之中，善於散瘀，消壅，壅腫瘡毒，治火毒熾盛等症，可配伍大黃、白芷、甘草等藥用 ; 如將軍散 (《本草滙言》)。若配大黃、桃仁、芒硝等藥用 ; 可治瘀熱互結之腸壅初起 ; 如大黃牡丹皮湯 (《金匱要略》)。\n",
+    "zh-Hans": "牡丹皮味苦、性寒。歸心、肝、肾等经。具有溫毒發班、血热吐衄、火湿病傷阳、阴虚發热、夜热早涼、無汗骨蒸，血滯经閉、痛经、跌打損傷、壅腫瘡毒等症。 溫毒發班、血热吐衄 牡丹皮味苦、性寒。入心肝血分。善能清營分，血分实热，功能清热，涼血止血。治溫病热入營血，迫血妄行所致發班，吐血、衄血可配犀牛角、生地黃、赤芍等药用; 治溫毒發班，可配梔子、大黃、黃芩等药共用; 如牡丹汤 (《聖濟總录》) ; 若治血热吐衄，可配大黃、大薊、茜草根等药用 ; 如十灰散 (《十药神书》) ; 若治阴虚血热吐衄，可配生地黃、梔子等药用 ; 如流水清肝饮 (《医宗己任編》) 。 溫热傷阴、阴虚發热、夜热早涼、無汗骨蒸、皮肤痕癢、疥癬 牡丹皮味苦、性辛寒。入血分而善于清透阴分伏热，为治無汗骨蒸之要药，常配鱉甲、知母、生地黃等药用 ; 如清蒿鱉甲汤 (《十溫病條辨》)。 血滯经閉、痛经、跌打損傷 牡丹皮辛行苦泄，有活血去瘀之功。治血滯经閉、痛经，可配桃仁、川芎、桂枝等药用 ; 如桂枝茯苓丸 (《金匱要略》) ; 治跌打損傷等症，可配紅花、乳香、沒药等药用 ; 如牡丹皮散 (《证治准繩》)。 壅腫瘡毒 牡丹皮味苦、性辛寒。清热涼血之中，善于散瘀，消壅，壅腫瘡毒，治火毒熾盛等症，可配伍大黃、白芷、甘草等药用 ; 如将軍散 (《本草滙言》)。若配大黃、桃仁、芒硝等药用 ; 可治瘀热互结之肠壅初起 ; 如大黃牡丹皮汤 (《金匱要略》)。\n"
+  },
+  "tcmFunctions": {
+    "zh-Hant": "牡丹皮味苦、辛、性微寒。歸心、肝、腎等經。 牡丹皮具有清熱涼血作用，活血化瘀功效，主治溫毒發班，吐血、衄血、夜熱早涼，無汗骨蒸，經閉痛經，壅腫瘡毒，跌跤修痛等作用。《本草經疏》曰: [其味苦、微辛、性微寒而無毒。辛以散結聚，苦寒除血熱，入血分，涼血熱之要藥也。]\n",
+    "zh-Hans": "牡丹皮味苦、辛、性微寒。歸心、肝、肾等经。 牡丹皮具有清热涼血作用，活血化瘀功效，主治溫毒發班，吐血、衄血、夜热早涼，無汗骨蒸，经閉痛经，壅腫瘡毒，跌跤修痛等作用。《本草经疏》曰: [其味苦、微辛、性微寒而無毒。辛以散结聚，苦寒除血热，入血分，涼血热之要药也。]\n",
+    "en": "[Functions information for Tree Peony - translation needed]"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:54.813Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q163018"
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@import": "./core.jsonld",
+
+    "tcm": "https://herbapedia.org/vocab/tcm/",
+
+    "Herb": {
+      "@id": "tcm:Herb",
+      "@type": "@id"
+    },
+    "Category": {
+      "@id": "tcm:Category",
+      "@type": "@id"
+    },
+    "Meridian": {
+      "@id": "tcm:Meridian",
+      "@type": "@id"
+    },
+    "Nature": {
+      "@id": "tcm:Nature",
+      "@type": "@id"
+    },
+    "Flavor": {
+      "@id": "tcm:Flavor",
+      "@type": "@id"
+    },
+
+    "derivedFromPlant": {
+      "@id": "tcm:derivedFromPlant",
+      "@type": "@id"
+    },
+    "derivedFromSpecimen": {
+      "@id": "tcm:derivedFromSpecimen",
+      "@type": "@id"
+    },
+    "processingMethod": {
+      "@id": "tcm:processingMethod",
+      "@type": "xsd:string"
+    },
+    "latinPharmaceuticalName": {
+      "@id": "tcm:latinPharmaceuticalName",
+      "@type": "xsd:string"
+    },
+    "medicinalPart": {
+      "@id": "tcm:medicinalPart",
+      "@container": "@language"
+    },
+    "adverseReaction": {
+      "@id": "tcm:adverseReaction",
+      "@container": "@language"
+    },
+    "prohibitedCombination": {
+      "@id": "tcm:prohibitedCombination",
+      "@container": "@language"
+    },
+    "storageInstructions": {
+      "@id": "tcm:storageInstructions",
+      "@container": "@language"
+    },
+    "sideEffects": {
+      "@id": "tcm:sideEffects",
+      "@container": "@language"
+    },
+
+    "hasCategory": {
+      "@id": "tcm:hasCategory",
+      "@type": "@id"
+    },
+    "entersMeridian": {
+      "@id": "tcm:entersMeridian",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "hasNature": {
+      "@id": "tcm:hasNature",
+      "@type": "@id"
+    },
+    "hasFlavor": {
+      "@id": "tcm:hasFlavor",
+      "@type": "@id",
+      "@container": "@set"
+    },
+
+    "pinyin": {
+      "@id": "tcm:pinyin",
+      "@type": "xsd:string"
+    },
+    "chineseName": {
+      "@id": "tcm:chineseName",
+      "@container": "@language"
+    },
+
+    "actions": {
+      "@id": "tcm:actions",
+      "@container": "@set"
+    },
+    "indications": {
+      "@id": "tcm:indications",
+      "@container": "@set"
+    },
+    "contraindications": {
+      "@id": "tcm:contraindications",
+      "@container": "@language"
+    },
+    "dosage": {
+      "@id": "tcm:dosage",
+      "@container": "@language"
+    },
+    "preparation": {
+      "@id": "tcm:preparation",
+      "@container": "@language"
+    },
+
+    "combinesWith": {
+      "@id": "tcm:combinesWith",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "comparesTo": {
+      "@id": "tcm:comparesTo",
+      "@type": "@id",
+      "@container": "@set"
+    },
+
+    "tcmHistory": {
+      "@id": "tcm:history",
+      "@container": "@language"
+    },
+    "tcmTraditionalUsage": {
+      "@id": "tcm:traditionalUsage",
+      "@container": "@language"
+    },
+    "tcmModernResearch": {
+      "@id": "tcm:modernResearch",
+      "@container": "@language"
+    },
+    "tcmClinicalNotes": {
+      "@id": "tcm:clinicalNotes",
+      "@container": "@language"
+    },
+    "tcmClassicalReference": {
+      "@id": "tcm:classicalReference",
+      "@container": "@language"
+    },
+    "tcmFunctions": {
+      "@id": "tcm:functions",
+      "@container": "@language"
+    },
+    "tcmImportance": {
+      "@id": "tcm:importance",
+      "@container": "@language"
+    },
+    "tcmSafetyConsideration": {
+      "@id": "tcm:safetyConsideration",
+      "@container": "@language"
+    },
+    "tcmBotanicalSource": {
+      "@id": "tcm:botanicalSource",
+      "@container": "@language"
+    },
+
+    "meridianValue": {
+      "@id": "tcm:meridianValue",
+      "@type": "xsd:string"
+    },
+    "natureValue": {
+      "@id": "tcm:natureValue",
+      "@type": "xsd:string"
+    },
+    "flavorValue": {
+      "@id": "tcm:flavorValue",
+      "@type": "xsd:string"
+    },
+    "element": {
+      "@id": "tcm:element",
+      "@type": "xsd:string"
+    },
+    "yinYang": {
+      "@id": "tcm:yinYang",
+      "@type": "xsd:string"
+    },
+    "associatedOrgan": {
+      "@id": "tcm:associatedOrgan",
+      "@type": "xsd:string"
+    }
+  }
+}

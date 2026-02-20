@@ -1,0 +1,65 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/kushen",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/kushen"
+  },
+  "name": {
+    "en": "Kushen",
+    "zh-Hant": "苦蔘",
+    "zh-Hans": "苦蔘"
+  },
+  "pinyin": "Kushen",
+  "chineseName": {
+    "zh-Hant": "苦蔘",
+    "zh-Hans": "苦蔘"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Divine Husbandman's Classic of the Materia Medica, classified as middle class.\n",
+    "zh-Hant": "首載於《神農本草經》曰: [主心腹氣結，癥瘕積聚，黃疸，溺有餘瀝，逐水，除壅腫。] 《本草正義》曰: [苦蔘味大苦、性大寒。退熱泄降，蕩滌濕火，其功效與黃芩、黃連、龍膽皆相近，而苦蔘之苦愈甚，其燥尤烈，故能殺濕熱之蟲，較之黃芩、黃連力量尤烈。近人故不敢以入煎劑，蓋不特畏其苦味難服，亦嫌其崚勵而避之也。然毒風惡癩，非此不除，今人但以為洗瘡之用，恐未免因噎廢食耳。]\n",
+    "zh-Hans": "首载于《神農本草经》曰: [主心腹气结，癥瘕积聚，黃疸，溺有餘瀝，逐水，除壅腫。] 《本草正義》曰: [苦参味大苦、性大寒。退热泄降，蕩滌湿火，其功效与黃芩、黃連、龍胆皆相近，而苦参之苦愈甚，其燥尤烈，故能殺湿热之蟲，較之黃芩、黃連力量尤烈。近人故不敢以入煎剂，蓋不特畏其苦味難服，亦嫌其崚勵而避之也。然毒風惡癩，非此不除，今人但以为洗瘡之用，恐未免因噎廢食耳。]\n"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Kushen is a cold, bitter herb made from the roots of the sophora plant that enters the heart, liver, stomach, large intestine and bladder meridians. It is used to clear heat, dispel wind and dampness, kill parasites and promote urination. It has long been used to treat chronic skin problems including itching and eczema.\n",
+    "zh-Hant": "苦蔘味苦、性寒。歸心、胃、肝、大腸、膀胱等經。具有清熱燥濕、殺蟲、止癢、利尿等多重作用，主治熱痢便血，黃疸，尿閉，赤白帶下，陽癢陽腫，濕疹，濕瘡，皮膚痕癢，疥癬痲瘋等。 濕熱瀉痢 苦蔘味苦、性寒。入大腸、膀胱等經。功能清熱燥濕而治胃腸濕熱所致泄瀉、痢疾、可單用，如 (《仁存堂經驗方》) 以苦蔘制丸服，治血痢不止 ; 或配木香用，如香蔘丸 (《奇方類編》) ; 治濕熱便血，痔漏出血，可配生地黃用，如苦蔘地黃丸 (《外科大成》) ; 若治溫蒸濕熱之黃疸，可配龍膽，牛膽汁用，如 (《補缺肘後方》) 之治谷疸方。 濕熱帶下、陽癢陽腫、濕疹、濕瘡、皮膚痕癢、疥癬 苦蔘既能清熱燥濕而治胃腸熱所致泄瀉，及為治濕熱所致之帶下症及某些皮膚病的常用藥。若治濕熱帶下、陽癢陽腫、可配蛇床子、鶴虱等藥用，如榻癢湯(《外科正宗》) ; 若治濕疹、濕瘡，單用煎水外洗有效，或配黃柏、蛇床子煎水外洗 ; 治皮膚痕癢，可用皂角、荊介等藥用，如蔘角丸，(《雞峰普劑方》) ; 若配防風、蟬脫、荊介等藥用，可治風疹瘙癢，如消風散 (《外科正宗》) ; 若治疥癬，可配花椒煎湯外搽，如蔘椒湯 (《外科證治全書》) ; 或配枯凡，硫磺製成軟膏外塗。 濕熱小便不利 苦蔘既能清熱、利尿、可用濕熱溫結之小便不利灼熱澀痛，常配石偉、車前子、梔子等藥用。\n",
+    "zh-Hans": "苦参味苦、性寒。歸心、胃、肝、大肠、膀胱等经。具有清热燥湿、殺蟲、止癢、利尿等多重作用，主治热痢便血，黃疸，尿閉，赤白帶下，阳癢阳腫，湿疹，湿瘡，皮肤痕癢，疥癬痲瘋等。 湿热瀉痢 苦参味苦、性寒。入大肠、膀胱等经。功能清热燥湿而治胃肠湿热所致泄瀉、痢疾、可單用，如 (《仁存堂经验方》) 以苦参制丸服，治血痢不止 ; 或配木香用，如香参丸 (《奇方类編》) ; 治湿热便血，痔漏出血，可配生地黃用，如苦参地黃丸 (《外科大成》) ; 若治溫蒸湿热之黃疸，可配龍胆，牛胆汁用，如 (《补缺肘后方》) 之治谷疸方。 湿热帶下、阳癢阳腫、湿疹、湿瘡、皮肤痕癢、疥癬 苦参既能清热燥湿而治胃肠热所致泄瀉，及为治湿热所致之帶下症及某些皮肤病的常用药。若治湿热帶下、阳癢阳腫、可配蛇床子、鶴虱等药用，如榻癢汤(《外科正宗》) ; 若治湿疹、湿瘡，單用煎水外洗有效，或配黃柏、蛇床子煎水外洗 ; 治皮肤痕癢，可用皂角、荊介等药用，如参角丸，(《雞峰普剂方》) ; 若配防風、蟬脫、荊介等药用，可治風疹瘙癢，如消風散 (《外科正宗》) ; 若治疥癬，可配花椒煎汤外搽，如参椒汤 (《外科证治全书》) ; 或配枯凡，硫磺制成软膏外塗。 湿热小便不利 苦参既能清热、利尿、可用湿热溫结之小便不利灼热涩痛，常配石偉、車前子、梔子等药用。\n"
+  },
+  "tcmModernResearch": {
+    "en": "Kushen shows promise in laboratory tests as a treatment for heart arrhythmia, high cholesterol, asthma, and as an antibiotic.\n",
+    "zh-Hant": "【苦蔘】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【苦参】Modern Research內容待翻譯补充。"
+  },
+  "tcmFunctions": {
+    "zh-Hant": "苦蔘味苦、性寒。歸心、胃、肝、大腸、膀胱等經。 苦寒，具有清熱燥濕，殺蟲止癢作用，苦蔘總生物鹼，有抗病原生物，抗心肌缺血，抗心律失常，抗過敏、平喘、鎮靜安定和增強心肌收縮力等作用。\n",
+    "zh-Hans": "苦参味苦、性寒。歸心、胃、肝、大肠、膀胱等经。 苦寒，具有清热燥湿，殺蟲止癢作用，苦参總生物鹼，有抗病原生物，抗心肌缺血，抗心律失常，抗过敏、平喘、镇静安定和增强心肌收縮力等作用。\n",
+    "en": "[Functions information for Kushen - translation needed]"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:28.129Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q31795573"
+    }
+  ]
+}

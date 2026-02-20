@@ -1,0 +1,47 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/hawthorn",
+  "@type": [
+    "botany:Plant",
+    "schema:Thing"
+  ],
+  "name": {
+    "en": "Hawthorn",
+    "zh-Hant": "山楂",
+    "zh-Hans": "山楂"
+  },
+  "commonName": {
+    "en": "Hawthorn Berry",
+    "zh-Hant": "山楂果",
+    "zh-Hans": "山楂果"
+  },
+  "scientificName": "Crataegus monogyna",
+  "family": "Rosaceae",
+  "genus": "Crataegus",
+  "description": {
+    "en": "Hawthorn is a thorny shrub or small tree native to Europe, northwest Africa, and western Asia. The berries, leaves, and flowers are used medicinally.",
+    "zh-Hant": "山楂是一種多刺的灌木或小樹，原生於歐洲、非洲西北部和西亞。其漿果、葉子和花朵可用於藥用。",
+    "zh-Hans": "山楂是一种多刺的灌木或小树，原生於欧洲、非洲西北部和西亚。其浆果、叶子和花朵可用于药用。"
+  },
+  "botanicalDescription": {
+    "en": "Deciduous shrub or small tree growing to 5-14 meters tall, with dense thorny branches. Leaves are 2-4 cm long, deeply lobed. Flowers are white, produced in clusters. Fruit is a dark red pome 6-10 mm diameter.",
+    "zh-Hant": "落葉灌木或小樹，高5-14米，有密集的刺枝。葉長2-4厘米，深裂。花白色，成簇生長。果實為暗紅色梨果，直徑6-10毫米。",
+    "zh-Hans": "落叶灌木或小树，高5-14米，有密集的刺枝。叶长2-4厘米，深裂。花白色，成簇生长。果实为暗红色梨果，直径6-10毫米。"
+  },
+  "image": "media/images/hawthorn/hawthorn.jpg",
+  "containsChemical": [
+    {
+      "@id": "chemical/flavonoids"
+    },
+    {
+      "@id": "chemical/tannins"
+    }
+  ],
+  "sameAs": [
+    "https://www.wikidata.org/wiki/Q157413"
+  ],
+  "gbifId": "3013665",
+  "created": "2026-02-20T00:00:00.000Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "modified": "2026-02-19T23:24:40.402Z"
+}

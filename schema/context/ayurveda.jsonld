@@ -1,0 +1,185 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@import": "./core.jsonld",
+
+    "ayurveda": "https://herbapedia.org/vocab/ayurveda/",
+
+    "Dravya": {
+      "@id": "ayurveda:Dravya",
+      "@type": "@id"
+    },
+    "Dosha": {
+      "@id": "ayurveda:Dosha",
+      "@type": "@id"
+    },
+    "Rasa": {
+      "@id": "ayurveda:Rasa",
+      "@type": "@id"
+    },
+    "Virya": {
+      "@id": "ayurveda:Virya",
+      "@type": "@id"
+    },
+    "Vipaka": {
+      "@id": "ayurveda:Vipaka",
+      "@type": "@id"
+    },
+    "Guna": {
+      "@id": "ayurveda:Guna",
+      "@type": "@id"
+    },
+    "Karma": {
+      "@id": "ayurveda:Karma",
+      "@type": "@id"
+    },
+    "Prabhava": {
+      "@id": "ayurveda:Prabhava",
+      "@type": "@id"
+    },
+
+    "derivedFromPlant": {
+      "@id": "ayurveda:derivedFromPlant",
+      "@type": "@id"
+    },
+
+    "sanskritName": {
+      "@id": "ayurveda:sanskritName",
+      "@container": "@language"
+    },
+    "hindiName": {
+      "@id": "ayurveda:hindiName",
+      "@container": "@language"
+    },
+
+    "hasRasa": {
+      "@id": "ayurveda:hasRasa",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "hasVirya": {
+      "@id": "ayurveda:hasVirya",
+      "@type": "@id"
+    },
+    "hasVipaka": {
+      "@id": "ayurveda:hasVipaka",
+      "@type": "@id"
+    },
+    "hasGuna": {
+      "@id": "ayurveda:hasGuna",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "hasPrabhava": {
+      "@id": "ayurveda:hasPrabhava",
+      "@type": "@id",
+      "@container": "@set"
+    },
+
+    "balancesDosha": {
+      "@id": "ayurveda:balancesDosha",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "increasesDosha": {
+      "@id": "ayurveda:increasesDosha",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "decreasesDosha": {
+      "@id": "ayurveda:decreasesDosha",
+      "@type": "@id",
+      "@container": "@set"
+    },
+
+    "karma": {
+      "@id": "ayurveda:karma",
+      "@container": "@set"
+    },
+    "indications": {
+      "@id": "ayurveda:indications",
+      "@container": "@set"
+    },
+    "contraindications": {
+      "@id": "ayurveda:contraindications",
+      "@container": "@language"
+    },
+    "dosage": {
+      "@id": "ayurveda:dosage",
+      "@container": "@language"
+    },
+    "anupana": {
+      "@id": "ayurveda:anupana",
+      "@container": "@language"
+    },
+
+    "ayurvedaHistory": {
+      "@id": "ayurveda:history",
+      "@container": "@language"
+    },
+    "ayurvedaTraditionalUsage": {
+      "@id": "ayurveda:traditionalUsage",
+      "@container": "@language"
+    },
+    "ayurvedaModernResearch": {
+      "@id": "ayurveda:modernResearch",
+      "@container": "@language"
+    },
+    "ayurvedaClinicalNotes": {
+      "@id": "ayurveda:clinicalNotes",
+      "@container": "@language"
+    },
+    "ayurvedaClassicalReference": {
+      "@id": "ayurveda:classicalReference",
+      "@container": "@language"
+    },
+    "ayurvedaFunctions": {
+      "@id": "ayurveda:functions",
+      "@container": "@language"
+    },
+    "ayurvedaImportance": {
+      "@id": "ayurveda:importance",
+      "@container": "@language"
+    },
+    "ayurvedaSafetyConsideration": {
+      "@id": "ayurveda:safetyConsideration",
+      "@container": "@language"
+    },
+    "ayurvedaBotanicalSource": {
+      "@id": "ayurveda:botanicalSource",
+      "@container": "@language"
+    },
+
+    "mahabhuta": {
+      "@id": "ayurveda:mahabhuta",
+      "@type": "xsd:string",
+      "@container": "@set"
+    },
+
+    "rasaValue": {
+      "@id": "ayurveda:rasaValue",
+      "@type": "xsd:string"
+    },
+    "viryaValue": {
+      "@id": "ayurveda:viryaValue",
+      "@type": "xsd:string"
+    },
+    "vipakaValue": {
+      "@id": "ayurveda:vipakaValue",
+      "@type": "xsd:string"
+    },
+    "gunaValue": {
+      "@id": "ayurveda:gunaValue",
+      "@type": "xsd:string"
+    },
+    "doshaType": {
+      "@id": "ayurveda:doshaType",
+      "@type": "xsd:string"
+    },
+
+    "opposite": {
+      "@id": "ayurveda:opposite",
+      "@type": "@id"
+    }
+  }
+}

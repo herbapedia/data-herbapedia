@@ -1,0 +1,355 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@graph": [
+    {
+      "@id": "western/organ/liver",
+      "@type": "western:OrganAffinity",
+      "prefLabel": {
+        "en": "Liver",
+        "zh-Hant": "肝臟",
+        "zh-Hans": "肝脏"
+      },
+      "description": {
+        "en": "Supports liver function and detoxification",
+        "zh-Hant": "支持肝臟功能和排毒",
+        "zh-Hans": "支持肝脏功能和排毒"
+      }
+    },
+    {
+      "@id": "western/organ/kidney",
+      "@type": "western:OrganAffinity",
+      "prefLabel": {
+        "en": "Kidney",
+        "zh-Hant": "腎臟",
+        "zh-Hans": "肾脏"
+      },
+      "description": {
+        "en": "Supports kidney function and fluid balance",
+        "zh-Hant": "支持腎臟功能和體液平衡",
+        "zh-Hans": "支持肾脏功能和体液平衡"
+      }
+    },
+    {
+      "@id": "western/organ/heart",
+      "@type": "western:OrganAffinity",
+      "prefLabel": {
+        "en": "Heart",
+        "zh-Hant": "心臟",
+        "zh-Hans": "心脏"
+      },
+      "description": {
+        "en": "Supports cardiovascular health",
+        "zh-Hant": "支持心血管健康",
+        "zh-Hans": "支持心血管健康"
+      }
+    },
+    {
+      "@id": "western/organ/lung",
+      "@type": "western:OrganAffinity",
+      "prefLabel": {
+        "en": "Lung",
+        "zh-Hant": "肺",
+        "zh-Hans": "肺"
+      },
+      "description": {
+        "en": "Supports respiratory health",
+        "zh-Hant": "支持呼吸系統健康",
+        "zh-Hans": "支持呼吸系统健康"
+      }
+    },
+    {
+      "@id": "western/organ/stomach",
+      "@type": "western:OrganAffinity",
+      "prefLabel": {
+        "en": "Stomach",
+        "zh-Hant": "胃",
+        "zh-Hans": "胃"
+      },
+      "description": {
+        "en": "Supports digestive health",
+        "zh-Hant": "支持消化健康",
+        "zh-Hans": "支持消化健康"
+      }
+    },
+    {
+      "@id": "western/organ/intestine",
+      "@type": "western:OrganAffinity",
+      "prefLabel": {
+        "en": "Intestine",
+        "zh-Hant": "腸道",
+        "zh-Hans": "肠道"
+      },
+      "description": {
+        "en": "Supports intestinal health",
+        "zh-Hant": "支持腸道健康",
+        "zh-Hans": "支持肠道健康"
+      }
+    },
+    {
+      "@id": "western/organ/skin",
+      "@type": "western:OrganAffinity",
+      "prefLabel": {
+        "en": "Skin",
+        "zh-Hant": "皮膚",
+        "zh-Hans": "皮肤"
+      },
+      "description": {
+        "en": "Supports skin health and appearance",
+        "zh-Hant": "支持皮膚健康和外觀",
+        "zh-Hans": "支持皮肤健康和外观"
+      }
+    },
+    {
+      "@id": "western/organ/brain",
+      "@type": "western:OrganAffinity",
+      "prefLabel": {
+        "en": "Brain",
+        "zh-Hant": "腦",
+        "zh-Hans": "脑"
+      },
+      "description": {
+        "en": "Supports cognitive function",
+        "zh-Hant": "支持認知功能",
+        "zh-Hans": "支持认知功能"
+      }
+    },
+    {
+      "@id": "western/organ/nervous-system",
+      "@type": "western:OrganAffinity",
+      "prefLabel": {
+        "en": "Nervous System",
+        "zh-Hant": "神經系統",
+        "zh-Hans": "神经系统"
+      },
+      "description": {
+        "en": "Supports nervous system function",
+        "zh-Hant": "支持神經系統功能",
+        "zh-Hans": "支持神经系统功能"
+      }
+    },
+    {
+      "@id": "western/organ/immune-system",
+      "@type": "western:OrganAffinity",
+      "prefLabel": {
+        "en": "Immune System",
+        "zh-Hant": "免疫系統",
+        "zh-Hans": "免疫系统"
+      },
+      "description": {
+        "en": "Supports immune function",
+        "zh-Hant": "支持免疫功能",
+        "zh-Hans": "支持免疫功能"
+      }
+    },
+    {
+      "@id": "western/organ/reproductive",
+      "@type": "western:OrganAffinity",
+      "prefLabel": {
+        "en": "Reproductive System",
+        "zh-Hant": "生殖系統",
+        "zh-Hans": "生殖系统"
+      },
+      "description": {
+        "en": "Supports reproductive health",
+        "zh-Hant": "支持生殖健康",
+        "zh-Hans": "支持生殖健康"
+      }
+    },
+    {
+      "@id": "western/organ/prostate",
+      "@type": "western:OrganAffinity",
+      "prefLabel": {
+        "en": "Prostate",
+        "zh-Hant": "前列腺",
+        "zh-Hans": "前列腺"
+      },
+      "description": {
+        "en": "Supports prostate health",
+        "zh-Hant": "支持前列腺健康",
+        "zh-Hans": "支持前列腺健康"
+      }
+    },
+    {
+      "@id": "western/organ/urinary-tract",
+      "@type": "western:OrganAffinity",
+      "prefLabel": {
+        "en": "Urinary Tract",
+        "zh-Hant": "泌尿道",
+        "zh-Hans": "泌尿道"
+      },
+      "description": {
+        "en": "Supports urinary tract health",
+        "zh-Hant": "支持泌尿道健康",
+        "zh-Hans": "支持泌尿道健康"
+      }
+    },
+    {
+      "@id": "western/organ/bladder",
+      "@type": "western:OrganAffinity",
+      "prefLabel": {
+        "en": "Bladder",
+        "zh-Hant": "膀胱",
+        "zh-Hans": "膀胱"
+      },
+      "description": {
+        "en": "Supports bladder function",
+        "zh-Hant": "支持膀胱功能",
+        "zh-Hans": "支持膀胱功能"
+      }
+    },
+    {
+      "@id": "western/organ/gallbladder",
+      "@type": "western:OrganAffinity",
+      "prefLabel": {
+        "en": "Gallbladder",
+        "zh-Hant": "膽囊",
+        "zh-Hans": "胆囊"
+      },
+      "description": {
+        "en": "Supports gallbladder function and bile flow",
+        "zh-Hant": "支持膽囊功能和膽汁流動",
+        "zh-Hans": "支持胆囊功能和胆汁流动"
+      }
+    },
+    {
+      "@id": "western/organ/pancreas",
+      "@type": "western:OrganAffinity",
+      "prefLabel": {
+        "en": "Pancreas",
+        "zh-Hant": "胰臟",
+        "zh-Hans": "胰脏"
+      },
+      "description": {
+        "en": "Supports pancreatic function and blood sugar regulation",
+        "zh-Hant": "支持胰臟功能和血糖調節",
+        "zh-Hans": "支持胰脏功能和血糖调节"
+      }
+    },
+    {
+      "@id": "western/organ/spleen",
+      "@type": "western:OrganAffinity",
+      "prefLabel": {
+        "en": "Spleen",
+        "zh-Hant": "脾臟",
+        "zh-Hans": "脾脏"
+      },
+      "description": {
+        "en": "Supports spleen function and immunity",
+        "zh-Hant": "支持脾臟功能和免疫力",
+        "zh-Hans": "支持脾脏功能和免疫力"
+      }
+    },
+    {
+      "@id": "western/organ/cardiovascular",
+      "@type": "western:OrganAffinity",
+      "prefLabel": {
+        "en": "Cardiovascular System",
+        "zh-Hant": "心血管系統",
+        "zh-Hans": "心血管系统"
+      },
+      "description": {
+        "en": "Supports cardiovascular health and circulation",
+        "zh-Hant": "支持心血管健康和血液循環",
+        "zh-Hans": "支持心血管健康和血液循环"
+      }
+    },
+    {
+      "@id": "western/organ/endocrine",
+      "@type": "western:OrganAffinity",
+      "prefLabel": {
+        "en": "Endocrine System",
+        "zh-Hant": "內分泌系統",
+        "zh-Hans": "内分泌系统"
+      },
+      "description": {
+        "en": "Supports hormonal balance and endocrine function",
+        "zh-Hant": "支持荷爾蒙平衡和內分泌功能",
+        "zh-Hans": "支持荷尔蒙平衡和内分泌功能"
+      }
+    },
+    {
+      "@id": "western/organ/digestive",
+      "@type": "western:OrganAffinity",
+      "prefLabel": {
+        "en": "Digestive System",
+        "zh-Hant": "消化系統",
+        "zh-Hans": "消化系统"
+      },
+      "description": {
+        "en": "Supports digestive function",
+        "zh-Hant": "支持消化功能",
+        "zh-Hans": "支持消化功能"
+      }
+    },
+    {
+      "@id": "western/organ/respiratory",
+      "@type": "western:OrganAffinity",
+      "prefLabel": {
+        "en": "Respiratory System",
+        "zh-Hant": "呼吸系統",
+        "zh-Hans": "呼吸系统"
+      },
+      "description": {
+        "en": "Supports respiratory function",
+        "zh-Hant": "支持呼吸功能",
+        "zh-Hans": "支持呼吸功能"
+      }
+    },
+    {
+      "@id": "western/organ/musculoskeletal",
+      "@type": "western:OrganAffinity",
+      "prefLabel": {
+        "en": "Musculoskeletal System",
+        "zh-Hant": "肌肉骨骼系統",
+        "zh-Hans": "肌肉骨骼系统"
+      },
+      "description": {
+        "en": "Supports muscles, bones and joints",
+        "zh-Hant": "支持肌肉、骨骼和關節",
+        "zh-Hans": "支持肌肉、骨骼和关节"
+      }
+    },
+    {
+      "@id": "western/organ/eye",
+      "@type": "western:OrganAffinity",
+      "prefLabel": {
+        "en": "Eye",
+        "zh-Hant": "眼睛",
+        "zh-Hans": "眼睛"
+      },
+      "description": {
+        "en": "Supports eye health and vision",
+        "zh-Hant": "支持眼睛健康和視力",
+        "zh-Hans": "支持眼睛健康和视力"
+      }
+    },
+    {
+      "@id": "western/organ/thyroid",
+      "@type": "western:OrganAffinity",
+      "prefLabel": {
+        "en": "Thyroid",
+        "zh-Hant": "甲狀腺",
+        "zh-Hans": "甲状腺"
+      },
+      "description": {
+        "en": "Supports thyroid function",
+        "zh-Hant": "支持甲狀腺功能",
+        "zh-Hans": "支持甲状腺功能"
+      }
+    },
+    {
+      "@id": "western/organ/throat",
+      "@type": "western:OrganAffinity",
+      "prefLabel": {
+        "en": "Throat",
+        "zh-Hant": "喉嚨",
+        "zh-Hans": "喉咙"
+      },
+      "description": {
+        "en": "Supports throat health",
+        "zh-Hant": "支持喉嚨健康",
+        "zh-Hans": "支持喉咙健康"
+      }
+    }
+  ]
+}

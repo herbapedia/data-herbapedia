@@ -1,0 +1,115 @@
+{
+  "@context": "../schema/context/tcm.jsonld",
+  "@graph": [
+    {
+      "@id": "flavor/sweet",
+      "@type": "tcm:Flavor",
+      "flavorValue": "sweet",
+      "prefLabel": {
+        "en": "Sweet",
+        "zh-Hant": "甘",
+        "zh-Hans": "甘",
+        "pinyin": "Gān"
+      },
+      "description": {
+        "en": "Sweet flavor tonifies, harmonizes, and moistens. Associated with Earth element and Spleen.",
+        "zh-Hant": "甘味補益、和中、緩急。屬土，入脾。"
+      },
+      "associatedOrgan": "spleen"
+    },
+    {
+      "@id": "flavor/sour",
+      "@type": "tcm:Flavor",
+      "flavorValue": "sour",
+      "prefLabel": {
+        "en": "Sour",
+        "zh-Hant": "酸",
+        "zh-Hans": "酸",
+        "pinyin": "Suān"
+      },
+      "description": {
+        "en": "Sour flavor astringes and consolidates. Associated with Wood element and Liver.",
+        "zh-Hant": "酸味收斂固澀。屬木，入肝。"
+      },
+      "associatedOrgan": "liver"
+    },
+    {
+      "@id": "flavor/bitter",
+      "@type": "tcm:Flavor",
+      "flavorValue": "bitter",
+      "prefLabel": {
+        "en": "Bitter",
+        "zh-Hant": "苦",
+        "zh-Hans": "苦",
+        "pinyin": "Kǔ"
+      },
+      "description": {
+        "en": "Bitter flavor drains, dries dampness, and descends. Associated with Fire element and Heart.",
+        "zh-Hant": "苦味洩、燥濕、降洩。屬火，入心。"
+      },
+      "associatedOrgan": "heart"
+    },
+    {
+      "@id": "flavor/acrid",
+      "@type": "tcm:Flavor",
+      "flavorValue": "acrid",
+      "prefLabel": {
+        "en": "Acrid/Pungent",
+        "zh-Hant": "辛",
+        "zh-Hans": "辛",
+        "pinyin": "Xīn"
+      },
+      "description": {
+        "en": "Acrid flavor disperses, promotes circulation, and releases exterior. Associated with Metal element and Lung.",
+        "zh-Hant": "辛味發散、行氣、行血。屬金，入肺。"
+      },
+      "associatedOrgan": "lung"
+    },
+    {
+      "@id": "flavor/salty",
+      "@type": "tcm:Flavor",
+      "flavorValue": "salty",
+      "prefLabel": {
+        "en": "Salty",
+        "zh-Hant": "鹹",
+        "zh-Hans": "咸",
+        "pinyin": "Xián"
+      },
+      "description": {
+        "en": "Salty flavor softens hardness and drains downward. Associated with Water element and Kidney.",
+        "zh-Hant": "鹹味軟堅、瀉下。屬水，入腎。"
+      },
+      "associatedOrgan": "kidney"
+    },
+    {
+      "@id": "flavor/astringent",
+      "@type": "tcm:Flavor",
+      "flavorValue": "astringent",
+      "prefLabel": {
+        "en": "Astringent",
+        "zh-Hant": "澀",
+        "zh-Hans": "涩",
+        "pinyin": "Sè"
+      },
+      "description": {
+        "en": "Astringent flavor consolidates and binds. Similar to sour in function.",
+        "zh-Hant": "澀味收斂固澀，與酸味相似。"
+      }
+    },
+    {
+      "@id": "flavor/bland",
+      "@type": "tcm:Flavor",
+      "flavorValue": "bland",
+      "prefLabel": {
+        "en": "Bland",
+        "zh-Hant": "淡",
+        "zh-Hans": "淡",
+        "pinyin": "Dàn"
+      },
+      "description": {
+        "en": "Bland flavor leaches out dampness and promotes urination. Often paired with sweet.",
+        "zh-Hant": "淡味滲濕、利尿。常與甘味並見。"
+      }
+    }
+  ]
+}

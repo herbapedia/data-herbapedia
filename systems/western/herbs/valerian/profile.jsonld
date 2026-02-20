@@ -1,0 +1,39 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/valerian",
+  "@type": [
+    "western:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/valerian"
+  },
+  "name": {
+    "en": "Valerian",
+    "zh-Hant": "纈草",
+    "zh-Hans": "缬草"
+  },
+  "scientificName": "Valeriana officinalis",
+  "hasAction": [
+    { "@id": "western/action/sedative" },
+    { "@id": "western/action/anxiolytic" },
+    { "@id": "western/action/nervine" }
+  ],
+  "hasOrganAffinity": [
+    { "@id": "western/organ/nervous-system" },
+    { "@id": "western/organ/brain" }
+  ],
+  "westernHistory": {
+    "en": "Valerian has been used as a medicinal herb since ancient Greek and Roman times. Hippocrates described its properties, and Galen prescribed it for insomnia. It was widely used in medieval Europe as a sleep aid and calmative.",
+    "zh-Hant": "纈草自古希臘和羅馬時代以來一直被用作藥用草藥。希波克拉底描述了其特性，蓋倫將其用於治療失眠。在中世紀歐洲，它被廣泛用作助眠劑和鎮靜劑。",
+    "zh-Hans": "缬草自古希腊和罗马时代以来一直被用作药用草药。希波克拉底描述了其特性，盖伦将其用于治疗失眠。在中世纪欧洲，它被广泛用作助眠剂和镇静剂。"
+  },
+  "westernTraditionalUsage": {
+    "en": "Valerian root is primarily used to promote relaxation and sleep. It helps reduce anxiety, improve sleep quality, and ease nervous tension. Often combined with other calming herbs like chamomile and lemon balm.",
+    "zh-Hant": "纈草根主要用於促進放鬆和睡眠。它有助於減少焦慮、改善睡眠質量和緩解神經緊張。常與洋甘菊和香蜂草等其他鎮靜草藥一起使用。",
+    "zh-Hans": "缬草根主要用于促进放松和睡眠。它有助于减少焦虑、改善睡眠质量和缓解神经紧张。常与洋甘菊和香蜂草等其他镇静草药一起使用。"
+  },
+  "source": "herbapedia.com",
+  "created": "2026-02-20T00:00:00.000Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+}

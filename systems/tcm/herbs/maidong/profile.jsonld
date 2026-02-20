@@ -1,0 +1,55 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/maidong",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/maidong"
+  },
+  "name": {
+    "en": "Maidong",
+    "zh-Hant": "麥冬",
+    "zh-Hans": "麦冬"
+  },
+  "pinyin": "Maidong",
+  "chineseName": {
+    "zh-Hant": "麥冬",
+    "zh-Hans": "麦冬"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Divine Husbandman's Classic of the Materia Medica.\n",
+    "zh-Hant": "【麥冬】History內容待翻譯補充。",
+    "zh-Hans": "【麥冬】History內容待翻譯补充。"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Maimendong is sweet and slightly bitter in taste with a cold nature, entering the heart, lung and stomach meridians. It can moisten the lungs and stop coughs, nourish the stomach yin, generate fluids and moisten the intestines. It is also useful for clearing heat, especially in cases of irritability and insomnia caused by yin deficiency. It is often combined with other herbs to treat chronic dry coughs.\n",
+    "zh-Hant": "麥冬是百合科草本植物，藥用部份是塊根，採挖後經去心曬乾生用，藥味甘、微苦，藥性微寒，歸心、肺、胃經，具有養陰潤肺、益胃生津、清心除煩，常用於肺陰不足而有燥熱的乾咳、黃痰，常配天冬使用，亦可治陰虛的口渴咽乾、心煩不眠等。\n",
+    "zh-Hans": "麥冬是百合科草本植物，药用部份是塊根，採挖后经去心曬干生用，药味甘、微苦，药性微寒，歸心、肺、胃经，具有养阴润肺、益胃生津、清心除煩，常用于肺阴不足而有燥热的干咳、黃痰，常配天冬使用，亦可治阴虚的口渴咽干、心煩不眠等。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:33.059Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q537448"
+    }
+  ]
+}

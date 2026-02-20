@@ -1,0 +1,48 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/tea-tree-oil",
+  "@type": [
+    "western:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/tea-tree-oil"
+  },
+  "name": {
+    "en": "Tea Tree oil",
+    "zh-Hant": "茶樹油",
+    "zh-Hans": "茶树油"
+  },
+  "scientificName": "Melaleuca alternifolia",
+  "hasAction": [
+    {
+      "@id": "western/action/expectorant"
+    }
+  ],
+  "hasOrganAffinity": [
+    {
+      "@id": "organ/immune"
+    },
+    {
+      "@id": "organ/skin"
+    }
+  ],
+  "westernHistory": {
+    "en": "Tea Tree oil was originally used by indigenous eastern Australians, who inhaled the vapour from crushed Melaleuca leaves to treat coughs and colds, as well applying them topically to wounds. The oil was not extracted for commercial use until the 1920s.\n",
+    "zh-Hant": "茶樹油最初由澳洲東部人使用，他們會把Melaleuca 葉子壓碎， 吸取當中氣味來舒緩咳嗽和感冒，並應用於傷口。1920年後，茶樹油才作商業用途。\n",
+    "zh-Hans": "茶树油最初由澳洲东部人使用，他们会把Melaleuca 叶子压碎， 吸取当中气味来舒缓咳嗽和感冒，并应用于伤口。1920年后，茶树油才作商业用途。\n"
+  },
+  "westernTraditionalUsage": {
+    "en": "Tea Tree oil comes from the leaves of Melaleuca alternifolia, a species native to the northeast coast of New South Wales in Australia. It is considered one of the most important natural antiseptics, and can be used to treat stings, burns, wounds and skin infections of all kinds. Tea Tree oil is strongly antiseptic, diaphoretic and expectorant. It can stimulate the immune system, reduce histamine-induced skin inflammation and is effective against a broad range of bacterial and fungal infections. It is used externally in the treatment of thrush, acne, athlete's foot, verrucae, warts, insect bites, cold sores and nits.\n",
+    "zh-Hant": "茶樹油被認定為最重要的天然防腐劑之一，並可用來紓緩被刺螫、燒傷、創傷和皮膚感染。茶樹油具強烈的抗菌、發汗劑和袪痰劑作用。它能增強免疫系統，減少組織胺勸誘的皮膚發炎和大部份由細菌和真菌引起的細菌和由真菌引起的感染。茶樹油亦廣泛應用於外塗，包括口瘡、痘痘、腳濕氣、疣、蚊叮蟲咬和疼痛發炎等。\n",
+    "zh-Hans": "茶树油被认定为最重要的天然防腐剂之一，并可用来纾缓被刺螫、烧伤、创伤和皮肤感染。茶树油具强烈的抗菌、发汗剂和袪痰剂作用。它能增强免疫系统，减少组织胺劝诱的皮肤发炎和大部份由细菌和真菌引起的细菌和由真菌引起的感染。茶树油亦广泛应用于外涂，包括口疮、痘痘、脚湿气、疣、蚊叮虫咬和疼痛发炎等。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-19T15:32:30.548Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "description": {
+    "en": "Tea tree oil is obtained by steam distillation from the leaves of Melaleuca alternifolia.\n",
+    "zh-Hant": "茶樹油經由蒸氣蒸餾原產於澳洲東北海岸的Melaleuca 的葉子取得。\n",
+    "zh-Hans": "茶树油经由蒸气蒸馏原产于澳洲东北海岸的Melaleuca 的叶子取得。\n"
+  }
+}

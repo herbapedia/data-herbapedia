@@ -1,0 +1,60 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/ginseng",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/ginseng"
+  },
+  "name": {
+    "en": "Ginseng",
+    "zh-Hant": "人蔘",
+    "zh-Hans": "人蔘"
+  },
+  "pinyin": "Ginseng",
+  "chineseName": {
+    "zh-Hant": "人蔘",
+    "zh-Hans": "人蔘"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "Ginseng first appeared in the Divine Husbandman's Classic of the Materia Medica. The species Panax ginseng is thought to have been discovered over 5,000 years ago in the mountains of Manchuria, China. Although probably originally used as food, it quickly became revered for its strength-giving and rejuvenating powers and became an important trade item with neighbouring countries. It is prized for restoring harmony and balance to body: a concept understood in Chinese medicine as Yin Yang Theory. Western medicine looks upon ginseng as an adaptogen, a modern term which essentially means the same thing: restoring natural balance to the body.\n",
+    "zh-Hant": "【人蔘】History內容待翻譯補充。",
+    "zh-Hans": "【人参】History內容待翻譯补充。"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Ginseng, known in Chinese as renshen, meaning \"man's root\", is one of the most well-known traditional Asian medicines. It is named after its roots, which often grow into the shape of a human form. This herb is sweet, bitter and slightly warm. It enters the lung and spleen meridians, where it tonifies the yuan chi (the source of the body's chi); benefits the spleen, lungs, chi and blood; promotes the generation of body fluids; calms the spirit and improves mental functions. Ginseng is the best herb to strengthen the body and restore vitality. It can also treat deficiencies of the middle jiao characterised by fatigue, lack of energy, nausea and a sallow complexion; and lung deficiencies that are characterised by breathing problems. It is also recommended for improving memory, overcoming confusion and forgetfulness, insomnia, headaches and excessive worrying.\n",
+    "zh-Hant": "人蔘是最常用的補氣藥， 市面上分為多種規格：野生者稱為「山蔘」， 栽培者稱為「園蔘」，鮮蔘洗淨後乾燥者稱為「生曬蔘」，蒸製後乾燥者稱為「紅蔘」，灼燙浸糖後乾燥者稱為「糖蔘」或「白蔘」，加工斷下的細根稱為「蔘鬚」。人蔘藥味甘、微苦，藥性微溫，歸心、肺、脾經，主要功能是大補元氣，尤其善於補肺補脾，能有助改善氣虛引起的疲乏無力、少氣喘促、自汗等症狀，同時亦能生津、安神，可用於心悸等症狀。\n",
+    "zh-Hans": "人参是最常用的补气药， 市面上分为多种規格：野生者稱为「山参」， 栽培者稱为「園参」，鮮参洗淨后干燥者稱为「生曬参」，蒸制后干燥者稱为「紅参」，灼燙浸糖后干燥者稱为「糖参」或「白参」，加工斷下的细根稱为「参鬚」。人参药味甘、微苦，药性微溫，歸心、肺、脾经，主要功能是大补元气，尤其善于补肺补脾，能有助改善气虚引起的疲乏無力、少气喘促、自汗等症狀，同时亦能生津、安神，可用于心悸等症狀。\n"
+  },
+  "tcmModernResearch": {
+    "en": "Ginseng contains active chemical components called ginsenosides or panaxosides. It is thought to be an adaptogen, meaning that it adapts itself as necessary to treat imbalances in the body. It has been shown to benefit pressure, sugar, triglyceride levels in both men and women. Some studies have also indicated possible beneficial effects on immune function.\n",
+    "zh-Hant": "【人蔘】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【人参】Modern Research內容待翻譯补充。"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:17.614Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q20817212"
+    }
+  ]
+}

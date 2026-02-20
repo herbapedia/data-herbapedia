@@ -1,0 +1,48 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/thyme-oil",
+  "@type": [
+    "western:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/thyme-oil"
+  },
+  "name": {
+    "en": "Thyme oil",
+    "zh-Hant": "百里香油",
+    "zh-Hans": "百里香油"
+  },
+  "scientificName": null,
+  "hasAction": [
+    {
+      "@id": "western/action/antioxidant"
+    },
+    {
+      "@id": "western/action/calming"
+    }
+  ],
+  "hasOrganAffinity": [
+    {
+      "@id": "organ/respiratory"
+    }
+  ],
+  "westernHistory": {
+    "en": "Thyme oil has a long history of use and was valued for its medicinal properties by the Greeks, Egyptians and Romans. Its name comes from the Greek word \"thymos\", meaning perfume, since thyme oil was used as incense in temples. It was also one of the substances used by Egyptians in the embalming process.\n",
+    "zh-Hant": "百里香油具悠長歷史，希臘人、埃及人和羅馬人均重視其藥用方面的價值。百里香油的名稱源自希臘語「thymos」，意指香水，在廟裡作為香用。百里香油亦被埃及人用作防腐。\n",
+    "zh-Hans": "百里香油具悠长历史，希腊人、埃及人和罗马人均重视其药用方面的价值。百里香油的名称源自希腊语「thymos」，意指香水，在庙里作为香用。百里香油亦被埃及人用作防腐。\n"
+  },
+  "westernTraditionalUsage": {
+    "en": "An amber coloured liquid with a strong herbal smell, the volatile oil of Thymus has long been used to treat respiratory problems including coughs and chest congestion. It also exerts a calming influence on smooth muscle and has been found to contain flavonoids that give the herb antioxidant properties.\n",
+    "zh-Hant": "百里香油帶有琥珀的顏色，兼有一種強烈的草藥氣味，長期以來被用來治療咳嗽和胸膛擁塞等呼吸問題。百里香油具鬆弛肌肉的效用，並含有抗氧化活性的黃酮類化合物(flavonoids)。\n",
+    "zh-Hans": "百里香油带有琥珀的颜色，兼有一种强烈的草药气味，长期以来被用来治疗咳嗽和胸膛拥塞等呼吸问题。百里香油具松弛肌肉的效用，并含有抗氧化活性的黄酮类化合物(flavonoids)。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-19T15:32:30.544Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "description": {
+    "en": "Extracted by steam distillation from the flowering tops and leaves of the plant Thymus Vulgaris.\n",
+    "zh-Hant": "百里香油提取自百里香花的頂部和葉子, 並以蒸氣蒸餾的方式來提取精油。\n",
+    "zh-Hans": "百里香油提取自百里香花的顶部和叶子, 并以蒸气蒸馏的方式来提取精油。\n"
+  }
+}

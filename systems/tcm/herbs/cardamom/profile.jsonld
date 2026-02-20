@@ -1,0 +1,60 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/cardamom",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/cardamom"
+  },
+  "name": {
+    "en": "Cardamom",
+    "zh-Hant": "砂仁",
+    "zh-Hans": "砂仁"
+  },
+  "pinyin": "Cardamom",
+  "chineseName": {
+    "zh-Hant": "砂仁",
+    "zh-Hans": "砂仁"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Origins of the Materia Medica.\n",
+    "zh-Hant": "【砂仁】History內容待翻譯補充。",
+    "zh-Hans": "【砂仁】History內容待翻譯补充。"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Sharen, the fruit of the cardamom plant, is an aromatic herb with a warming nature. It regulates the chi, dissolves dampness, strengthens the spleen, warms the middle and is used to prevent miscarriage. It helps to relieve stomach stagnation and aid digestion, and is a popular addition to tonic formulas.\n",
+    "zh-Hant": "砂仁是一種芳香化濕的中藥，味辛性溫，歸脾、胃經，功效是化濕行氣、溫中止嘔止瀉、安胎，用於濕困脾胃或氣滯所致的嘔吐、腹瀉、食慾不振等，因能安胎，亦常用於改善妊娠嘔吐的情況。\n",
+    "zh-Hans": "砂仁是一种芳香化湿的中药，味辛性溫，歸脾、胃经，功效是化湿行气、溫中止嘔止瀉、安胎，用于湿困脾胃或气滯所致的嘔吐、腹瀉、食慾不振等，因能安胎，亦常用于改善妊娠嘔吐的情況。\n"
+  },
+  "tcmModernResearch": {
+    "en": "The volatile oil and aqueous decoction of Sharen has been found in studies to have an inhibitory affect against the bacteria staphylococcus aureus and posses anti-ulcerous effects.\n",
+    "zh-Hant": "【砂仁】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【砂仁】Modern Research內容待翻譯补充。"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:14:57.649Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q2843829"
+    }
+  ]
+}

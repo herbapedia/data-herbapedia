@@ -1,0 +1,60 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/lotus-leaf",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/lotus-leaf"
+  },
+  "name": {
+    "en": "Lotus leaf",
+    "zh-Hant": "荷葉",
+    "zh-Hans": "荷叶"
+  },
+  "pinyin": "Lotus leaf",
+  "chineseName": {
+    "zh-Hant": "荷葉",
+    "zh-Hans": "荷叶"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Divine Husbandman's Classic of the Materia Medica.\n",
+    "zh-Hant": "【荷葉】History內容待翻譯補充。",
+    "zh-Hans": "【荷叶】History內容待翻譯补充。"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Lotus leaves are bitter and neutral in character. They enter the heart, liver and spleen meridians to drain dampness and clear summer heat. It can stop bleeding and is also traditionally taken as a daily supplement for obesity to drain dampness and break down fats. Lotus leaves are collected in the summer and autumn months and the stalks removed before being prepared for medicinal use.\n",
+    "zh-Hant": "荷葉味苦、澀，藥性平，歸屬心、肝、脾三經。功效清暑利濕，升陽止血。主治暑熱病症，如：煩燥、汗多尿少，另治水氣浮腫、脾虛泄瀉。\n",
+    "zh-Hans": "荷叶味苦、涩，药性平，歸属心、肝、脾三经。功效清暑利湿，升阳止血。主治暑热病症，如：煩燥、汗多尿少，另治水气浮腫、脾虚泄瀉。\n"
+  },
+  "tcmModernResearch": {
+    "en": "Its extract and decoction has a hypotensive effect on animals and is a vasodilator. An active component of the herb, nuciferine, exerts antispasmodic effects on smooth muscles.\n",
+    "zh-Hant": "【荷葉】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【荷叶】Modern Research內容待翻譯补充。"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:32.257Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q16528"
+    }
+  ]
+}

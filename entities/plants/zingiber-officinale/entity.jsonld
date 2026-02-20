@@ -1,0 +1,76 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/zingiber-officinale",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "scientificName": "Zingiber officinale",
+  "family": "Zingiberaceae",
+  "genus": "Zingiber",
+  "species": "officinale",
+  "gbifID": "2752573",
+  "name": {
+    "en": "Ginger",
+    "zh-Hant": "薑",
+    "zh-Hans": "姜",
+    "hi": "अदरक",
+    "sa": "आर्द्रक"
+  },
+  "commonName": {
+    "en": "Common Ginger, True Ginger",
+    "zh-Hant": "生薑",
+    "hi": "अदरक",
+    "zh-Hans": "姜"
+  },
+  "alternateName": [
+    "Garden Ginger",
+    "Stem Ginger"
+  ],
+  "description": {
+    "en": "A flowering plant whose rhizome (ginger root) is widely used as a spice and folk medicine. Native to Maritime Southeast Asia.",
+    "zh-Hant": "薑（學名：Zingiber officinale）是一種具有藥用價值的天然產物。現代藥理學研究證實其含有多種生物活性成分，在傳統醫學和現代保健領域均有重要應用價值。",
+    "zh-Hans": "薑（学名：Zingiber officinale）是一种具有药用價值的天然產物。現代药理学研究证实其含有多种生物活性成分，在传统医学和現代保健領域均有重要应用價值。"
+  },
+  "botanicalDescription": {
+    "en": "Zingiber officinale is a herbaceous perennial growing 30-100 cm tall. The plant produces annual pseudostems from a horizontal rhizome. Leaves are lanceolate, 15-30 cm long. Flowers are pale yellow with purple edges, produced on dense spikes."
+  },
+  "geographicalDistribution": {
+    "en": "Native to Southeast Asia. Widely cultivated in tropical and subtropical regions including India, China, Nigeria, and Jamaica."
+  },
+  "hasPart": [
+    {
+      "@id": "plant/zingiber-officinale#rhizome",
+      "@type": "herbapedia:PlantPart",
+      "name": {
+        "en": "Rhizome",
+        "zh-Hant": "根莖",
+        "hi": "कंद"
+      }
+    }
+  ],
+  "containsChemical": [
+    {
+      "@id": "chemical/gingerol"
+    },
+    {
+      "@id": "chemical/shogaol"
+    },
+    {
+      "@id": "chemical/zingerone"
+    },
+    {
+      "@id": "chemical/zingiberene"
+    }
+  ],
+  "image": "media/images/zingiber-officinale/main.jpg",
+  "url": "https://herbapedia.org/plants/zingiber-officinale",
+  "sameAs": [
+    "http://www.wikidata.org/entity/Q129639",
+    "https://www.gbif.org/species/2752573",
+    "https://en.wikipedia.org/wiki/Ginger"
+  ],
+  "source": "https://www.vitaherbapedia.com",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "created": "2026-02-19T00:00:00Z"
+}

@@ -1,0 +1,45 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/ginkgo",
+  "@type": [
+    "western:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/ginkgo"
+  },
+  "name": {
+    "en": "Ginkgo",
+    "zh-Hant": "銀杏葉",
+    "zh-Hans": "银杏叶"
+  },
+  "scientificName": "Ginkgo biloba L.",
+  "hasAction": [
+    {
+      "@id": "western/action/astringent"
+    }
+  ],
+  "hasOrganAffinity": [
+    {
+      "@id": "organ/respiratory"
+    }
+  ],
+  "westernHistory": {
+    "en": "Ginkgo is the oldest living species of tree on earth, dating back to the Paleozoic period (more than 225 million years ago). The medicinal use of ginkgo leaf is first mentioned in Chinese medicine in the Ming dynasty in 1436. A standardised extract of ginkgo leaf is one of the most clinically tested and frequently prescribed phytomedicines in Europe, and has been one of the 10 best-selling herbal dietary supplements in the US for about six years.\n",
+    "zh-Hant": "銀杏是地球上最久遠的存活樹木品種，可追溯到古生代時期(早於二億二千五百萬年前)。銀杏葉作藥用最早見於1436 年明代中藥的記載。於歐洲，標準的銀杏葉精華是最常作臨床測試和作草本治療的植物精華之一，更曾登上美國十大最暢銷草本營養補充劑榜達六年之久。\n",
+    "zh-Hans": "银杏是地球上最久远的存活树木品种，可追溯到古生代时期(早于二亿二千五百万年前)。银杏叶作药用最早见于1436 年明代中药的记载。于欧洲，标准的银杏叶精华是最常作临床测试和作草本治疗的植物精华之一，更曾登上美国十大最畅销草本营养补充剂榜达六年之久。\n"
+  },
+  "westernTraditionalUsage": {
+    "en": "Ginkgo leaf affects the lung meridian, and has sweet, bitter, astringent and neutral properties. It is primarily used to improve lung health, reduce wheezing and treat chest pain. In terms of Western medicine, it works by increasing the fluidity of the blood by inhibiting platelet aggregation, thus improving blood flow and reducing thrombosis, inflammation, allergies and bronchoconstriction. Ginkgo use results in improvement of a variety of conditions including cognition; working memory; tinnitus, short-term visual memory, attention and concentration spans and social functioning in patients with dementia; short-term memory in people with cerebral insufficiency; intermittent claudication (muscle cramps); activities of daily living (ADL) scores in people under 60 years old; and mood and sleep in older individuals.\n",
+    "zh-Hant": "銀杏葉可抑制血小板聚集，增加血液的流動性，從而促進血液循環，減少血栓症、過敏和支氣管收縮。銀杏葉亦有助減少氣喘和疼痛，有益肺部健康。銀杏葉有助改善認知力、記憶、耳鳴、短期視覺記憶、注意力、集中力、癡呆病人的社交能力、間歇的跛行(肌肉絞痛)、以及老人的情緒和睡眠等問題。\n",
+    "zh-Hans": "银杏叶可抑制血小板聚集，增加血液的流动性，从而促进血液循环，减少血栓症、过敏和支气管收缩。银杏叶亦有助减少气喘和疼痛，有益肺部健康。银杏叶有助改善认知力、记忆、耳鸣、短期视觉记忆、注意力、集中力、痴呆病人的社交能力、间歇的跛行(肌肉绞痛)、以及老人的情绪和睡眠等问题。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-19T15:32:30.545Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "description": {
+    "en": "The leaf of Ginkgo biloba L., family Ginkgoaceae.\n",
+    "zh-Hant": "銀杏科植物的葉，無毒，其成熟種子為白果，種皮有毒。\n",
+    "zh-Hans": "银杏科植物的叶，无毒，其成熟种子为白果，种皮有毒。\n"
+  }
+}

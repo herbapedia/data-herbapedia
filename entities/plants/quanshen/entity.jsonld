@@ -1,0 +1,31 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/quanshen",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "scientificName": "Bistorta officinalis",
+  "name": {
+    "en": "Quanshen",
+    "zh-Hant": "拳蔘",
+    "zh-Hans": "拳蔘"
+  },
+  "description": {
+    "en": "Derived from the root and rhizome of Polygonum bistorta L., family polygonaceae.\n",
+    "zh-Hant": "拳蔘（學名：Bistorta officinalis）是一種具有藥用價值的天然產物。現代藥理學研究證實其含有多種生物活性成分，在傳統醫學和現代保健領域均有重要應用價值。",
+    "zh-Hans": "拳参（学名：Bistorta officinalis）是一种具有药用價值的天然產物。現代药理学研究证实其含有多种生物活性成分，在传统医学和現代保健領域均有重要应用價值。"
+  },
+  "image": "media/images/quanshen/quanshen.jpg",
+  "url": "https://herbapedia.org/plants/quanshen",
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/chiherbs-en/quanshen/",
+  "created": "2026-02-18T09:15:41.474Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.gbif.org/species/7925535"
+    }
+  ],
+  "gbifId": 7925535
+}

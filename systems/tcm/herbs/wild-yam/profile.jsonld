@@ -1,0 +1,60 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/wild-yam",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/wild-yam"
+  },
+  "name": {
+    "en": "Wild Yam",
+    "zh-Hant": "野山芋",
+    "zh-Hans": "野山芋"
+  },
+  "pinyin": "Wild Yam",
+  "chineseName": {
+    "zh-Hant": "野山芋",
+    "zh-Hans": "野山芋"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "In the 18th and 19th centuries, wild yam was used by herbalists to treat female complaints such as menstrual cramps and complications with childbirth. Early Americans primarily used it to treat colic, and it was also used for many other complaints across the Americas, from inflammation to asthma.\n",
+    "zh-Hant": "在18、19世紀，草本植物學家以野生芋治療女性疾病包括經痛和分娩痛楚。而美國人最初以野生芋治療腹絞痛，而至後來野生芋更被廣泛應用到治療其他疾病如：發炎或呼吸困難等。\n",
+    "zh-Hans": "在18、19世纪，草本植物学家以野生芋治疗女性疾病包括经痛和分娩痛楚。而美国人最初以野生芋治疗腹絞痛，而至后来野生芋更被廣泛应用到治疗其他疾病如：發炎或呼吸困難等。\n"
+  },
+  "tcmTraditionalUsage": {
+    "en": "The tubers of wild yam contain high levels of diosgenin, a steroid-like substance with many pharmaceutical uses that can enhance metabolic activity, protect skin from free radicals and stimulate remodeling enzymes.\n",
+    "zh-Hant": "野山芋的塊莖蘊含高濃度的 diosgenin，這種類似類固醇的物質多用作製藥，可提升新陳代謝，同時保護肌膚免受游離基的傷害。\n",
+    "zh-Hans": "野山芋的塊莖蘊含高浓度的 diosgenin，这种类似类固醇的物质多用作制药，可提升新陳代謝，同时保護肌肤免受游離基的傷害。\n"
+  },
+  "tcmModernResearch": {
+    "en": "Since diosgenin can be used to generate the hormone progesterone in laboratory conditions, it has been used to manufacture hormones and in the development of the birth control pill.\n",
+    "zh-Hant": "【野山芋】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【野山芋】Modern Research內容待翻譯补充。"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:59.806Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q309632"
+    }
+  ]
+}

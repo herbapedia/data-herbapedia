@@ -1,0 +1,55 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/fangfeng",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/fangfeng"
+  },
+  "name": {
+    "en": "Fangfeng",
+    "zh-Hant": "防風",
+    "zh-Hans": "防风"
+  },
+  "pinyin": "Fangfeng",
+  "chineseName": {
+    "zh-Hant": "防風",
+    "zh-Hans": "防风"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Divine Husbandman's Classic of the Materia Medica.\n",
+    "zh-Hant": "【防風】History內容待翻譯補充。",
+    "zh-Hans": "【防風】History內容待翻譯补充。"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Fangfeng is an acrid, sweet and slightly warm herb that enters the bladder, liver and spleen meridians. It releases the exterior, expels wind and dampness, alleviates pain and stops tremors. It is also useful for itchy skin conditions caused by wind such as rashes, eczma, boils and rubella and acne on the upper body. In patients suffering from a disharmony between the liver and spleen, fangfeng can treat diarrhea, bleeding and abdominal pain.\n",
+    "zh-Hant": "防風屬傘形科多年生草本植物，藥用部份是根部，是常用的發散風寒藥，味甘、辛而藥性微溫，歸膀胱、肝、脾經，能發表散風、勝濕止痛、止痙止瀉。傳統用於治療外感風濕引起的感冒、痺痛、肢痙，以及肝鬱侮脾的腹痛泄瀉。《本草匯言》中記載：「主諸風周身不遂，骨節酸痛，四肢攣急，痿痺癇痙等症。」\n",
+    "zh-Hans": "防風属傘形科多年生草本植物，药用部份是根部，是常用的發散風寒药，味甘、辛而药性微溫，歸膀胱、肝、脾经，能發表散風、勝湿止痛、止痙止瀉。传统用于治疗外感風湿引起的感冒、痺痛、肢痙，以及肝郁侮脾的腹痛泄瀉。《本草匯言》中记载：「主諸風周身不遂，骨节酸痛，四肢攣急，痿痺癇痙等症。」\n"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:14.133Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q5100860"
+    }
+  ]
+}

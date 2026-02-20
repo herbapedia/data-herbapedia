@@ -1,0 +1,121 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/ren-shen",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/panax-ginseng#root"
+  },
+  "processingMethod": "dried",
+  "name": {
+    "en": "Ginseng Root",
+    "zh-Hant": "人蔘",
+    "zh-Hans": "人参"
+  },
+  "pinyin": "Rén Shēn",
+  "chineseName": {
+    "zh-Hant": "人蔘",
+    "zh-Hans": "人参"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/warm"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    },
+    {
+      "@id": "flavor/bitter"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    },
+    {
+      "@id": "meridian/lung"
+    },
+    {
+      "@id": "meridian/heart"
+    }
+  ],
+  "actions": [
+    "Tonify Yuan Qi",
+    "Tonify Spleen Qi",
+    "Tonify Lung Qi",
+    "Generate Body Fluids",
+    "Calm the Spirit (Shen)"
+  ],
+  "indications": [
+    "Qi deficiency patterns",
+    "Spleen Qi deficiency: fatigue, poor appetite, loose stools",
+    "Lung Qi deficiency: shortness of breath, weak voice",
+    "Heart Qi deficiency: palpitations, insomnia",
+    "Severe Qi collapse: shock, faint pulse"
+  ],
+  "contraindications": {
+    "en": "Contraindicated in excess heat patterns, Yin deficiency with heat signs. Avoid with high fever. Not to be used with Veratrum (Li Lu).",
+    "zh-Hant": "實熱證、陰虛火旺者忌用。高熱時禁用。反藜蘆。",
+    "zh-Hans": "实热证、阴虚火旺者忌用。高热时禁用。反藜蘆。"
+  },
+  "dosage": {
+    "en": "3-9g decocted; 1-2g powder. For rescue from collapse: 15-30g.",
+    "zh-Hant": "煎服3-9克；研粉1-2克。急救固脫15-30克。",
+    "zh-Hans": "煎服3-9克；研粉1-2克。急救固脫15-30克。"
+  },
+  "preparation": {
+    "en": "May be used raw, dry-fried, or steamed with wine."
+  },
+  "tcmHistory": {
+    "en": "Ginseng has been used in Traditional Chinese Medicine for over 5,000 years. The name \"Panax\" derives from the Greek word for \"all-healing,\" reflecting its reputation as a panacea. Wild ginseng was so valued that it was reserved for emperors and nobility in ancient China.",
+    "zh-Hant": "人蔘在中醫藥中已有五千多年歷史。《神農本草經》列為上品，謂「主補五臟，安精神，定魂魄，止驚悸，除邪氣，明目，開心益智。」",
+    "zh-Hans": "人参在中医药中已有五千多年历史。《神農本草经》列为上品，謂「主补五脏，安精神，定魂魄，止惊悸，除邪气，明目，开心益智。」"
+  },
+  "tcmTraditionalUsage": {
+    "en": "In TCM, Ginseng (Ren Shen) is classified as a supreme Qi tonic, primarily used to:\n\n- Tonify Yuan (Original) Qi: The foundation of all Qi in the body\n- Strengthen the Spleen and Lung: Improve digestion and respiration\n- Generate body fluids: Especially useful in thirst and dryness\n- Calm the Spirit (Shen): For anxiety, insomnia, and palpitations\n- Rescue from collapse: In critical conditions with fading pulse",
+    "zh-Hant": "人蔘大補元氣，復脈固脫，補脾益肺，生津養血，安神益智。用於體虛欲脫、肢冷脈微、脾虛食少、肺虛喘咳、津傷口渴、內熱消渴、氣血虧虛、久病虛羸、驚悸失眠、陽痿宮冷。",
+    "zh-Hans": "人参大补元气，復脉固脫，补脾益肺，生津养血，安神益智。用于体虚欲脫、肢冷脉微、脾虚食少、肺虚喘咳、津傷口渴、內热消渴、气血虧虚、久病虚羸、惊悸失眠、阳痿宮冷。"
+  },
+  "tcmModernResearch": {
+    "en": "Contemporary research has identified ginsenosides as the primary active compounds. Studies suggest potential benefits for:\n\n- Cognitive function and memory enhancement\n- Immune system modulation\n- Fatigue reduction and physical performance\n- Blood sugar regulation\n- Cardiovascular health\n- Anti-inflammatory and antioxidant effects\n\nClinical trials continue to explore its adaptogenic properties and potential applications in cancer supportive care.",
+    "zh-Hant": "【人蔘】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【人参】Modern Research內容待翻譯补充。"
+  },
+  "tcmFunctions": {
+    "en": "- Adaptogenic stress support\n- Cognitive enhancement and mental clarity\n- Immune system modulation\n- Energy and vitality support\n- Blood sugar regulation\n- Cardiovascular tonic",
+    "zh-Hant": "大補元氣，復脈固脫，補脾益肺，生津養血，安神益智",
+    "zh-Hans": "大补元气，復脉固脫，补脾益肺，生津养血，安神益智"
+  },
+  "tcmSafetyConsideration": {
+    "en": "May interact with blood thinners (warfarin), diabetes medications, stimulants, and MAO inhibitors. Not recommended during pregnancy without medical supervision. Avoid in hypertension, acute infections, or excess heat conditions. Long-term high-dose use may cause side effects including insomnia, nervousness, and hypertension.",
+    "zh-Hant": "可能與華法林、糖尿病藥物、興奮劑、單胺氧化酶抑制劑相互作用。孕婦慎用。高血壓、急性感染、實熱證者忌用。長期大量服用可能導致失眠、煩躁、血壓升高。"
+  },
+  "tcmBotanicalSource": {
+    "en": "Panax ginseng is a slow-growing perennial herb in the Araliaceae family, native to the mountainous regions of Korea, Northeast China, and far eastern Russia. Wild ginseng is increasingly rare and protected; most commercial supply is cultivated. The plant requires 5-7 years to mature before harvest. The root is the primary medicinal part, characterized by its human-like shape."
+  },
+  "tcmClassicalReference": {
+    "zh-Hant": "《神農本草經》：「人蔘，味甘微寒。主補五臟，安精神，定魂魄，止驚悸，除邪氣，明目，開心益智。久服輕身延年。」"
+  },
+  "combinesWith": [
+    {
+      "@id": "tcm/bai-zhu"
+    },
+    {
+      "@id": "tcm/fu-ling"
+    },
+    {
+      "@id": "tcm/gan-cao"
+    }
+  ],
+  "sameAs": [
+    "http://www.wikidata.org/entity/Q192163"
+  ],
+  "source": "https://www.vitaherbapedia.com/ginseng",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "created": "2026-02-19T00:00:00Z"
+}

@@ -1,0 +1,31 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/niuxi",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "scientificName": "Achyranthes bidentata",
+  "name": {
+    "en": "Niuxi",
+    "zh-Hant": "牛膝",
+    "zh-Hans": "牛膝"
+  },
+  "description": {
+    "en": "The root of Achyranthes bidentata Bl., family Amaranthaceae.\n",
+    "zh-Hant": "牛膝（學名：Achyranthes bidentata）是一種具有藥用價值的天然產物。現代藥理學研究證實其含有多種生物活性成分，在傳統醫學和現代保健領域均有重要應用價值。",
+    "zh-Hans": "牛膝（学名：Achyranthes bidentata）是一种具有药用價值的天然產物。現代药理学研究证实其含有多种生物活性成分，在传统医学和現代保健領域均有重要应用價值。"
+  },
+  "image": "media/images/niuxi/niuxi.jpg",
+  "url": "https://herbapedia.org/plants/niuxi",
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/chiherbs-en/niuxi/",
+  "created": "2026-02-18T09:15:37.275Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.gbif.org/species/3085175"
+    }
+  ],
+  "gbifId": 3085175
+}

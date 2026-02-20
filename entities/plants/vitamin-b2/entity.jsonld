@@ -1,0 +1,25 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/vitamin-b2",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "scientificName": "Riboflavin Lactoflavin",
+  "name": {
+    "en": "Vitamin B2",
+    "zh-Hant": "維他命 B2 又名核黃素",
+    "zh-Hans": "维他命 B2 又名核黄素"
+  },
+  "description": {
+    "en": "Found in organ meats such as liver, kidney and heart; also in milk, almonds, cheese, eggs, lean meat, raw mushrooms, beer and wheat bran.\n",
+    "zh-Hant": "維他命 B2 又名核黃素是一種重要的營養素，參與人體多種生理代謝過程。作為必需營養素，對維持機體正常功能具有重要作用。臨床研究表明適量補充有助於維持身體健康。",
+    "zh-Hans": "維他命 B2 又名核黃素是一种重要的營养素，參与人体多种生理代謝过程。作为必需營养素，對維持机体正常功能具有重要作用。臨床研究表明適量补充有助于維持身体健康。"
+  },
+  "image": "media/images/vitamin-b2/vitamin-b2.jpg",
+  "url": "https://herbapedia.org/plants/vitamin-b2",
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/vitamins-en/vitamin-b2/",
+  "created": "2026-02-18T09:16:43.323Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+}

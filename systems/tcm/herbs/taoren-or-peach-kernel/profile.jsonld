@@ -1,0 +1,55 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/taoren-or-peach-kernel",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/taoren-or-peach-kernel"
+  },
+  "name": {
+    "en": "Taoren or peach kernel",
+    "zh-Hant": "桃仁",
+    "zh-Hans": "桃仁"
+  },
+  "pinyin": "Taoren or peach kernel",
+  "chineseName": {
+    "zh-Hant": "桃仁",
+    "zh-Hans": "桃仁"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmTraditionalUsage": {
+    "en": "Semen Persicae, a Chinese remedy derived from the kernels of ripe peaches, has been traditionally used to resolve problems associated with blood stasis including menstrual disorders, abdominal pain, traumatic injury, flank pain and intestinal abscesses. It also moistens the intestines and unblocks the bowels, making it useful for constipation due to dry intestines. Bitter and neutral in character, it affects the heart, large intestine, liver and lung meridians.\n",
+    "zh-Hant": "桃仁是中國傳統的草藥，提取自成熟桃子內的果核，傳統用作解決血行停滯等問題如：包括月經紊亂、腹痛、外傷口、脅腹痛和腸膿腫。桃仁同時能潤腸和疏通腸道，有助紓緩排便問題。\n",
+    "zh-Hans": "桃仁是中国传统的草药，提取自成熟桃子內的果核，传统用作解決血行停滯等問題如：包括月经紊亂、腹痛、外傷口、脅腹痛和肠膿腫。桃仁同时能润肠和疏通肠道，有助紓缓排便問題。\n"
+  },
+  "tcmModernResearch": {
+    "en": "More recently peach kernels have been used in skin care to moisturise and rehydrate skin. Peach kernel oil is light and nourishing, containing a blend of useful vitamins including A and E. It easily penetrates the epidermis without leaving a greasy feeling. Medicinally, peach kernels contain phytochemicals that show haematological, anti-inflammatory and laxative effects.\n",
+    "zh-Hant": "【桃仁】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【桃仁】Modern Research內容待翻譯补充。"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:53.232Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q13189"
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <https://schema.org/> .
+@prefix tcm: <https://herbapedia.org/vocab/tcm/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+
+# TCM Herb Profile Shape
+tcm:HerbShape
+  a sh:NodeShape ;
+  sh:targetClass tcm:Herb ;
+
+  # Required: must link to a plant
+  sh:property [
+    sh:path tcm:derivedFromPlant ;
+    sh:nodeKind sh:IRI ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "TCM Herb must reference exactly one plant (tcm:derivedFromPlant)" ;
+  ] ;
+
+  # Required: name
+  sh:property [
+    sh:path schema:name ;
+    sh:nodeKind sh:Literal ;
+    sh:minCount 1 ;
+    sh:message "TCM Herb must have at least one name" ;
+  ] ;
+
+  # Required: pinyin
+  sh:property [
+    sh:path tcm:pinyin ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "TCM Herb must have pinyin romanization (tcm:pinyin)" ;
+  ] ;
+
+  # TCM Classification (required)
+  sh:property [
+    sh:path tcm:hasCategory ;
+    sh:nodeKind sh:IRI ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "TCM Herb must have exactly one category (tcm:hasCategory)" ;
+  ] ;
+
+  sh:property [
+    sh:path tcm:hasNature ;
+    sh:nodeKind sh:IRI ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "TCM Herb must have exactly one nature (tcm:hasNature)" ;
+  ] ;
+
+  sh:property [
+    sh:path tcm:hasFlavor ;
+    sh:nodeKind sh:IRI ;
+    sh:minCount 1 ;
+    sh:message "TCM Herb must have at least one flavor (tcm:hasFlavor)" ;
+  ] ;
+
+  sh:property [
+    sh:path tcm:entersMeridian ;
+    sh:nodeKind sh:IRI ;
+    sh:minCount 1 ;
+    sh:message "TCM Herb must enter at least one meridian (tcm:entersMeridian)" ;
+  ] ;
+
+  # Content properties (TCM-scoped)
+  sh:property [
+    sh:path tcm:traditionalUsage ;
+    sh:nodeKind sh:Literal ;
+    sh:maxCount 1 ;
+  ] ;
+
+  sh:property [
+    sh:path tcm:modernResearch ;
+    sh:nodeKind sh:Literal ;
+    sh:maxCount 1 ;
+  ] ;
+
+  sh:property [
+    sh:path tcm:functions ;
+    sh:nodeKind sh:Literal ;
+    sh:maxCount 1 ;
+  ] ;
+
+  sh:property [
+    sh:path tcm:history ;
+    sh:nodeKind sh:Literal ;
+    sh:maxCount 1 ;
+  ] ;
+
+  sh:property [
+    sh:path tcm:classicalReference ;
+    sh:nodeKind sh:Literal ;
+    sh:maxCount 1 ;
+  ] ;
+
+  sh:property [
+    sh:path tcm:botanicalSource ;
+    sh:nodeKind sh:Literal ;
+    sh:maxCount 1 ;
+  ] ;
+
+  sh:property [
+    sh:path tcm:safetyConsideration ;
+    sh:nodeKind sh:Literal ;
+    sh:maxCount 1 ;
+  ] ;
+
+  # Actions and Indications
+  sh:property [
+    sh:path tcm:actions ;
+    sh:nodeKind sh:Literal ;
+  ] ;
+
+  sh:property [
+    sh:path tcm:indications ;
+    sh:nodeKind sh:Literal ;
+  ] ;
+
+  # Safety
+  sh:property [
+    sh:path tcm:contraindications ;
+    sh:nodeKind sh:Literal ;
+    sh:maxCount 1 ;
+  ] ;
+
+  sh:property [
+    sh:path tcm:dosage ;
+    sh:nodeKind sh:Literal ;
+    sh:maxCount 1 ;
+  ] ;
+
+  sh:property [
+    sh:path tcm:preparation ;
+    sh:nodeKind sh:Literal ;
+    sh:maxCount 1 ;
+  ] ;
+
+  # Relationships
+  sh:property [
+    sh:path tcm:combinesWith ;
+    sh:nodeKind sh:IRI ;
+  ] ;
+
+  sh:property [
+    sh:path tcm:comparesTo ;
+    sh:nodeKind sh:IRI ;
+  ] ;
+
+  sh:property [
+    sh:path schema:isRelatedTo ;
+    sh:nodeKind sh:IRI ;
+  ] ;
+
+  sh:property [
+    sh:path schema:isSimilarTo ;
+    sh:nodeKind sh:IRI ;
+  ] ;
+
+  sh:property [
+    sh:path schema:sameAs ;
+    sh:nodeKind sh:IRI ;
+  ] ;
+
+  # Processing
+  sh:property [
+    sh:path tcm:processingMethod ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+  ] .
+
+# TCM Nature Shape
+tcm:NatureShape
+  a sh:NodeShape ;
+  sh:targetClass tcm:Nature ;
+
+  sh:property [
+    sh:path tcm:natureValue ;
+    sh:datatype xsd:string ;
+    sh:in ("hot" "warm" "neutral" "cool" "cold") ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "Nature value must be one of: hot, warm, neutral, cool, cold" ;
+  ] ;
+
+  sh:property [
+    sh:path schema:name ;
+    sh:nodeKind sh:Literal ;
+    sh:minCount 1 ;
+  ] .
+
+# TCM Flavor Shape
+tcm:FlavorShape
+  a sh:NodeShape ;
+  sh:targetClass tcm:Flavor ;
+
+  sh:property [
+    sh:path tcm:flavorValue ;
+    sh:datatype xsd:string ;
+    sh:in ("sweet" "sour" "bitter" "acrid" "salty" "astringent" "bland") ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "Flavor value must be one of: sweet, sour, bitter, acrid, salty, astringent, bland" ;
+  ] .
+
+# TCM Meridian Shape
+tcm:MeridianShape
+  a sh:NodeShape ;
+  sh:targetClass tcm:Meridian ;
+
+  sh:property [
+    sh:path tcm:meridianValue ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] ;
+
+  sh:property [
+    sh:path tcm:element ;
+    sh:datatype xsd:string ;
+    sh:in ("wood" "fire" "earth" "metal" "water") ;
+    sh:maxCount 1 ;
+  ] ;
+
+  sh:property [
+    sh:path tcm:yinYang ;
+    sh:datatype xsd:string ;
+    sh:in ("yin" "yang") ;
+    sh:maxCount 1 ;
+  ] .

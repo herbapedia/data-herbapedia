@@ -1,0 +1,60 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/zisuye",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/zisuye"
+  },
+  "name": {
+    "en": "Zisuye",
+    "zh-Hant": "紫蘇葉",
+    "zh-Hans": "紫苏叶"
+  },
+  "pinyin": "Zisuye",
+  "chineseName": {
+    "zh-Hant": "紫蘇葉",
+    "zh-Hans": "紫苏叶"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Materia Medica of Medicinal Properties.\n",
+    "zh-Hant": "【紫蘇葉】History內容待翻譯補充。",
+    "zh-Hans": "【紫蘇叶】History內容待翻譯补充。"
+  },
+  "tcmTraditionalUsage": {
+    "en": "A pungent herb that is warm in nature, zisuye enters the lungs and spleen to release the exterior and to dispel wind cold, treating associated wind-cold symptoms such as headache and blocked nose. It also harmonises the middle burner to stop vomiting and regulate stomach function, calms foetal chi to prevent morning sickness or risk of miscarriage, and treats the symptoms of seafood poisoning.\n",
+    "zh-Hant": "紫蘇是一種發散風寒的中藥，藥味辛，藥性溫，能發汗解表，應用於感受風寒、頭痛惡寒、鼻塞流涕等情況，更能行氣寬中，是行氣止嘔的良藥，適用於脾胃氣滯、胸悶嘔吐等症狀。\n",
+    "zh-Hans": "紫蘇是一种發散風寒的中药，药味辛，药性溫，能發汗解表，应用于感受風寒、头痛惡寒、鼻塞流涕等情況，更能行气寬中，是行气止嘔的良药，適用于脾胃气滯、胸悶嘔吐等症狀。\n"
+  },
+  "tcmModernResearch": {
+    "en": "The extract and decoction have been found to have a weak antipyretic effect, reducing fever. In vitro studies, the herb inhibits the growth of staphylococcus.\n",
+    "zh-Hant": "【紫蘇葉】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【紫蘇叶】Modern Research內容待翻譯补充。"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:16:08.717Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q1076038"
+    }
+  ]
+}

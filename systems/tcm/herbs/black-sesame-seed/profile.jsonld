@@ -1,0 +1,58 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/black-sesame-seed",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/black-sesame-seed"
+  },
+  "name": {
+    "en": "Black Sesame Seed",
+    "zh-Hant": "巨勝子",
+    "zh-Hans": "巨胜子"
+  },
+  "pinyin": "Black Sesame Seed",
+  "chineseName": {
+    "zh-Hant": "巨勝子",
+    "zh-Hans": "巨胜子"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Divine Husbandman's Classic of the Materia Medica.\n",
+    "zh-Hant": "【巨勝子】History內容待翻譯補充。",
+    "zh-Hans": "【巨勝子】History內容待翻譯补充。"
+  },
+  "tcmTraditionalUsage": {
+    "en": "A sweet tasting herb that is neutral in nature, jushengzi is derived from black sesame seeds. It enters the liver and kidney meridians and has many uses including tonifiying the kidney essence (jing) and blood, moistening dryness and lubricating the intestines. According to traditional Chinese medicine, the health of ligaments and bones are related to the liver and kidney respectively, so this herb is also used to strengthen the joints.\n",
+    "zh-Hant": "巨勝子為傳統的補腎藥，味甘而藥性平和，歸肝、腎經，能補肝腎、強筋骨，改善筋骨酸痛等問題，亦能潤腸，改善腸燥便秘。\n",
+    "zh-Hans": "巨勝子为传统的补肾药，味甘而药性平和，歸肝、肾经，能补肝肾、强筋骨，改善筋骨酸痛等問題，亦能润肠，改善肠燥便秘。\n"
+  },
+  "tcmModernResearch": {
+    "en": "It possesses anti-ageing and antiadrenergic activities, and can be used for the treatment of hyperglycemia.\n",
+    "zh-Hant": "【巨勝子】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【巨勝子】Modern Research內容待翻譯补充。"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:14:55.250Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    "https://www.wikidata.org/wiki/Q2763698"
+  ]
+}

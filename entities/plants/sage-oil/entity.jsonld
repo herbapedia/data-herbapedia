@@ -1,0 +1,31 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/sage-oil",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "scientificName": "Salvia officinalis",
+  "name": {
+    "en": "Sage oil",
+    "zh-Hant": "鼠尾草精油",
+    "zh-Hans": "鼠尾草精油"
+  },
+  "description": {
+    "en": "Sage oil is extracted from the dried leaves from the culinary herb sage, Salvia officinalis, by steam distillation.\n",
+    "zh-Hant": "鼠尾草精油（學名：Salvia officinalis）萃取自植物種子或果實，富含不飽和脂肪酸和維生素E等營養成分。具有滋潤皮膚、抗氧化等功效，廣泛應用於保健和美容領域。",
+    "zh-Hans": "鼠尾草精油（学名：Salvia officinalis）萃取自植物种子或果实，富含不飽和脂肪酸和維生素E等營养成分。具有滋润皮肤、抗氧化等功效，廣泛应用于保健和美容領域。"
+  },
+  "image": "media/images/sage-oil/sage-oil.jpg",
+  "url": "https://herbapedia.org/plants/sage-oil",
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/westherbs-en/sage-oil/",
+  "created": "2026-02-18T09:16:35.236Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.gbif.org/species/2927004"
+    }
+  ],
+  "gbifId": 2927004
+}

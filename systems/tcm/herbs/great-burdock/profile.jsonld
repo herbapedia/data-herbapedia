@@ -1,0 +1,55 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/great-burdock",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/great-burdock"
+  },
+  "name": {
+    "en": "Great Burdock",
+    "zh-Hant": "牛蒡",
+    "zh-Hans": "牛蒡"
+  },
+  "pinyin": "Great Burdock",
+  "chineseName": {
+    "zh-Hant": "牛蒡",
+    "zh-Hans": "牛蒡"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmTraditionalUsage": {
+    "en": "Burdock is spicy, bitter and cold and is associated with the lung and stomach meridians. Its main function is to expel wind-heat and soothe associated symptoms, including constipation, sore throat, tonsillitis, coughs and fever. It also promotes the eruption of measles when the rash has not fully vented. The herb is prepared from burdock fruit, which are gathered in autumn and dried in the sun.\n",
+    "zh-Hant": "傳統中藥藥用部份是牛蒡的成熟果實牛蒡子，其味辛、苦，性寒涼，歸肺、胃經，能疏散風熱、透疹利咽、解毒散腫，常用於外感風熱、發熱咽痛，並具溫和的潤腸通便作用。\n",
+    "zh-Hans": "传统中药药用部份是牛蒡的成熟果实牛蒡子，其味辛、苦，性寒涼，歸肺、胃经，能疏散風热、透疹利咽、解毒散腫，常用于外感風热、發热咽痛，並具溫和的润肠通便作用。\n"
+  },
+  "tcmModernResearch": {
+    "en": "Oily extract of burdock root contains fatty acids and other essential nutrients for maintaining a healthy scalp and hair.\n",
+    "zh-Hant": "【牛蒡】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【牛蒡】Modern Research內容待翻譯补充。"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:19.339Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q26932"
+    }
+  ]
+}

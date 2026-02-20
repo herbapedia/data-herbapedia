@@ -1,0 +1,137 @@
+{
+  "@context": "../../schema/context/ayurveda.jsonld",
+  "@graph": [
+    {
+      "@id": "dosha/vata",
+      "@type": "ayurveda:Dosha",
+      "doshaType": "vata",
+      "prefLabel": {
+        "en": "Vata",
+        "sa": "वात",
+        "hi": "वात",
+        "zh-Hant": "風型（瓦塔）",
+        "zh-Hans": "风型（瓦塔）"
+      },
+      "sanskritName": "Vāta",
+      "description": {
+        "en": "Vata governs movement, breath, circulation, and nervous system functions. It is composed of Air and Ether elements.",
+        "sa": "वातः शरीरस्य चलनं नियन्त्रयति।",
+        "zh-Hant": "主司運動、呼吸、循環及神經系統功能，由風與以太元素組成",
+        "zh-Hans": "主司运动、呼吸、循環及神经系统功能，由風与以太元素組成"
+      },
+      "mahabhuta": [
+        "air",
+        "ether"
+      ],
+      "gunas": [
+        {
+          "@id": "guna/dry"
+        },
+        {
+          "@id": "guna/light"
+        },
+        {
+          "@id": "guna/cold"
+        },
+        {
+          "@id": "guna/rough"
+        },
+        {
+          "@id": "guna/subtle"
+        },
+        {
+          "@id": "guna/mobile"
+        }
+      ]
+    },
+    {
+      "@id": "dosha/pitta",
+      "@type": "ayurveda:Dosha",
+      "doshaType": "pitta",
+      "prefLabel": {
+        "en": "Pitta",
+        "sa": "पित्त",
+        "hi": "पित्त",
+        "zh-Hant": "火型（皮塔）",
+        "zh-Hans": "火型（皮塔）"
+      },
+      "sanskritName": "Pitta",
+      "description": {
+        "en": "Pitta governs digestion, metabolism, transformation, and body temperature. It is composed of Fire and Water elements.",
+        "sa": "पित्तं पाकक्रियां नियन्त्रयति।",
+        "zh-Hant": "主司消化、代謝、轉化及體溫，由火與水元素組成",
+        "zh-Hans": "主司消化、代謝、轉化及体溫，由火与水元素組成"
+      },
+      "mahabhuta": [
+        "fire",
+        "water"
+      ],
+      "gunas": [
+        {
+          "@id": "guna/hot"
+        },
+        {
+          "@id": "guna/sharp"
+        },
+        {
+          "@id": "guna/light"
+        },
+        {
+          "@id": "guna/oily"
+        },
+        {
+          "@id": "guna/mobile"
+        },
+        {
+          "@id": "guna/liquid"
+        }
+      ]
+    },
+    {
+      "@id": "dosha/kapha",
+      "@type": "ayurveda:Dosha",
+      "doshaType": "kapha",
+      "prefLabel": {
+        "en": "Kapha",
+        "sa": "कफ",
+        "hi": "कफ",
+        "zh-Hant": "水型（卡法）",
+        "zh-Hans": "水型（卡法）"
+      },
+      "sanskritName": "Kapha",
+      "description": {
+        "en": "Kapha governs structure, stability, lubrication, and immune function. It is composed of Earth and Water elements.",
+        "sa": "कफः शरीरस्य स्थिरतां बलं च ददाति।",
+        "zh-Hant": "主司結構、穩定、潤滑及免疫功能，由土與水元素組成",
+        "zh-Hans": "主司结构、稳定、润滑及免疫功能，由土与水元素組成"
+      },
+      "mahabhuta": [
+        "earth",
+        "water"
+      ],
+      "gunas": [
+        {
+          "@id": "guna/heavy"
+        },
+        {
+          "@id": "guna/cold"
+        },
+        {
+          "@id": "guna/oily"
+        },
+        {
+          "@id": "guna/smooth"
+        },
+        {
+          "@id": "guna/dense"
+        },
+        {
+          "@id": "guna/soft"
+        },
+        {
+          "@id": "guna/stable"
+        }
+      ]
+    }
+  ]
+}

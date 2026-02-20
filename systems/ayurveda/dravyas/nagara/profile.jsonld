@@ -1,0 +1,106 @@
+{
+  "@context": "../../schema/context/ayurveda.jsonld",
+  "@id": "ayurveda/nagara",
+  "@type": ["ayurveda:Dravya", "schema:DietarySupplement"],
+
+  "derivedFromPlant": { "@id": "plant/zingiber-officinale#rhizome" },
+
+  "name": {
+    "en": "Ginger (Dry)",
+    "zh-Hant": "乾薑",
+    "zh-Hans": "干姜",
+    "sa": "नागर",
+    "hi": "सौंठ"
+  },
+
+  "sanskritName": {
+    "sa": "नागर (Nāgara)",
+    "en": "Nagara"
+  },
+
+  "hindiName": {
+    "hi": "सौंठ (Sonth)",
+    "en": "Sonth"
+  },
+
+  "hasRasa": [
+    { "@id": "rasa/katu" }
+  ],
+  "hasVirya": { "@id": "virya/ushna" },
+  "hasVipaka": { "@id": "vipaka/katu" },
+  "hasGuna": [
+    { "@id": "guna/laghu" },
+    { "@id": "guna/tikshna" }
+  ],
+
+  "balancesDosha": [
+    { "@id": "dosha/vata" },
+    { "@id": "dosha/kapha" }
+  ],
+  "increasesDosha": [
+    { "@id": "dosha/pitta" }
+  ],
+
+  "karma": [
+    "Deepana (kindles digestion)",
+    "Pachana (digests ama)",
+    "Shleshmahara (reduces Kapha)",
+    "Vatahara (reduces Vata)",
+    "Ruchikara (improves taste)"
+  ],
+
+  "indications": [
+    "Digestive disorders",
+    "Loss of appetite",
+    "Cough and cold",
+    "Joint pain (Vata type)",
+    "Nausea",
+    "Respiratory congestion"
+  ],
+
+  "contraindications": {
+    "en": "Avoid in high Pitta conditions, bleeding disorders, and pregnancy in high doses.",
+    "sa": "पित्ते रक्तपित्ते च वर्जयेत्"
+  },
+
+  "dosage": {
+    "en": "1-3g powder; 5-10g fresh rhizome decoction."
+  },
+
+  "anupana": {
+    "en": "Take with warm water, honey, or as directed."
+  },
+
+  "ayurvedaHistory": {
+    "en": "Ginger (Nagara/Shunthi) has been used in Ayurveda for millennia. It is classified as a Mahaaushadha (great medicine). Both fresh (Ardra) and dry (Shunthi) forms are used, with different properties.",
+    "sa": "नागरं शुण्ठी विश्वौषधं महौषधं च"
+  },
+
+  "ayurvedaTraditionalUsage": {
+    "en": "In Ayurveda, dry Ginger (Nagara/Shunthi) is primarily used to:\n\n- Kindle digestive fire (Agni)\n- Reduce Vata and Kapha doshas\n- Relieve cough and respiratory issues\n- Alleviate joint pain\n- Treat nausea and motion sickness",
+    "sa": "शुण्ठी दीपनी पाचनी कटूष्णा कफवातनुत्"
+  },
+
+  "ayurvedaFunctions": {
+    "en": "- Digestive stimulant\n- Anti-inflammatory\n- Expectorant\n- Carminative\n- Analgesic"
+  },
+
+  "ayurvedaClassicalReference": {
+    "sa": "चरकसंहितायां शुण्ठी दीपनी पाचनी कटूष्णा कफवातनुत् इति वर्णिता।",
+    "en": "In Charaka Samhita, ginger is described as digestive stimulant, carminative, and reducer of Kapha and Vata."
+  },
+
+  "ayurvedaSafetyConsideration": {
+    "en": "May increase Pitta. Use cautiously in peptic ulcers, gallstones, and bleeding disorders. May interact with anticoagulants."
+  },
+
+  "mahabhuta": ["fire", "air"],
+
+  "sameAs": [
+    "http://www.wikidata.org/entity/Q129639"
+  ],
+
+  "source": "Ayurvedic Pharmacopoeia of India",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "created": "2026-02-19T00:00:00Z"
+}

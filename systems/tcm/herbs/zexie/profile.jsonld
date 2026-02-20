@@ -1,0 +1,55 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/zexie",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/zexie"
+  },
+  "name": {
+    "en": "Zexie",
+    "zh-Hant": "澤瀉",
+    "zh-Hans": "泽泻"
+  },
+  "pinyin": "Zexie",
+  "chineseName": {
+    "zh-Hant": "澤瀉",
+    "zh-Hans": "泽泻"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in the Divine Husbandman's Classic of the Materia Medica.\n",
+    "zh-Hant": "【澤瀉】History內容待翻譯補充。",
+    "zh-Hans": "【澤瀉】History內容待翻譯补充。"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Zexie is made from the tuberous stems of water plantain. A sweet, bland herb that is cold in nature, it enters the kidney and bladder meridians to promote urination, drain dampness, reduce oedema and clear deficiency fire from the kidneys. It is useful for treating urinary disorders and vertigo, dizziness and tinnitus caused by excessive phlegm.\n",
+    "zh-Hant": "澤瀉是傳統的利水滲濕藥，味甘、淡，藥性寒，歸腎、膀胱經，能利水滲濕、泄熱，傳統醫學廣泛用於濕濁造成的浮腫、小便不利、泄瀉、淋濁帶下等症。\n",
+    "zh-Hans": "澤瀉是传统的利水滲湿药，味甘、淡，药性寒，歸肾、膀胱经，能利水滲湿、泄热，传统医学廣泛用于湿濁造成的浮腫、小便不利、泄瀉、淋濁帶下等症。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:16:06.222Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q21063"
+    }
+  ]
+}

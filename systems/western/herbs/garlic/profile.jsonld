@@ -1,0 +1,48 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/garlic",
+  "@type": [
+    "western:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/garlic"
+  },
+  "name": {
+    "en": "Garlic",
+    "zh-Hant": "大蒜",
+    "zh-Hans": "大蒜"
+  },
+  "scientificName": "Allium sativum L.",
+  "hasAction": [
+    {
+      "@id": "western/action/antioxidant"
+    },
+    {
+      "@id": "western/action/antimicrobial"
+    }
+  ],
+  "hasOrganAffinity": [
+    {
+      "@id": "organ/cardiovascular"
+    }
+  ],
+  "westernHistory": {
+    "en": "In traditional British herbal-based medicine, garlic was used garlic to treat hoarseness and coughs, both as a syrup and in a salve made of garlic and lard, which was rubbed on the chest and back. Cherokee Indians also used it as an expectorant for coughs and croup. In 1858, Louis Pasteur observed garlic's antibacterial activity, and it was used as an antiseptic to prevent gangrene during World War I and World War II.\n",
+    "zh-Hant": "在美國和西歐，大蒜是其中一種最受歡迎的物質，能減低與心臟疾病有關的不同風險。\n",
+    "zh-Hans": "在美国和西欧，大蒜是其中一种最受欢迎的物质，能减低与心脏疾病有关的不同风险。\n"
+  },
+  "westernTraditionalUsage": {
+    "en": "The active ingredient in garlic is allicin, a powerful antibiotic and anti-fungal compound. Garlic is mainly prized for its heart-protecting properties, but is also able to reduce blood glucose levels, is an antioxidant, an antimicrobial, has anti-cancer properties, and helps control sickle cell anaemia. In the management of heart disease, garlic lowers cholesterol and triglycerides, helps prevent the formation of plaque in the blood and lowers blood pressure. It is even thought to be effective as a mosquito repellent, although there are many more pleasant smelling alternatives.\n",
+    "zh-Hant": "進食大蒜能促進心臟健康，亦能減少血液中血糖水平。大蒜能抗氧化、抗微生物和對抗頑疾，同時能幫助控制鎌刀型貧血症。大蒜亦能降低膽固醇和三酸甘油脂，幫助阻止脂肪粒在血液中的形成和促進血壓健康。\n",
+    "zh-Hans": "进食大蒜能促进心脏健康，亦能减少血液中血糖水平。大蒜能抗氧化、抗微生物和对抗顽疾，同时能帮助控制鎌刀型贫血症。大蒜亦能降低胆固醇和叁酸甘油脂，帮助阻止脂肪粒在血液中的形成和促进血压健康。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-19T15:32:30.554Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "description": {
+    "en": "Garlic preparations consist of the fresh or dried bulbs (main bulb and secondary bulbs or cloves) of Allium sativum L.\n",
+    "zh-Hant": "大蒜由新鮮或製乾的大蒜球莖(主球莖及次球莖或小鱗莖)製成。\n",
+    "zh-Hans": "大蒜由新鲜或製乾的大蒜球茎(主球茎及次球茎或小鳞茎)製成。\n"
+  }
+}

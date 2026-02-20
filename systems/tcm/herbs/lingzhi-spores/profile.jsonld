@@ -1,0 +1,60 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/lingzhi-spores",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/lingzhi-spores"
+  },
+  "name": {
+    "en": "Lingzhi Spores",
+    "zh-Hant": "野生靈芝",
+    "zh-Hans": "野生灵芝"
+  },
+  "pinyin": "Lingzhi Spores",
+  "chineseName": {
+    "zh-Hant": "野生靈芝",
+    "zh-Hans": "野生灵芝"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "zh-Hant": "首載於《說文》，《神農本草經》列為上品，認為「久食，輕身不老，延年神仙」，記載有赤芝、黑芝、青芝、白芝、黃芝、紫芝六種。\n",
+    "zh-Hans": "首载于《说文》，《神農本草经》列为上品，認为「久食，輕身不老，延年神仙」，记载有赤芝、黑芝、青芝、白芝、黃芝、紫芝六种。\n",
+    "en": "[History information for Lingzhi Spores - translation needed]"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Lingzhi is reputed to have many medicinal properties: it nourishes the heart and blood; pacifies the spirit; tonifies the chi; relieves coughing symptoms and supports weak digestion. Sweet and neutral in nature, it is suitable for all constitutions and has conventionally been consumed as a general tonic for health maintenance. Its specific applications include deficiency fatigue and insomnia, etc. The spores of the mushroom have particularly strong therapeutic effects as compared to the fruiting body; however, the outer casing of the spores is tough and indigestible, so must be cracked using advanced nanotechnology before coating them immediately to prevent oxidation and preserve the active chemicals.\n",
+    "zh-Hant": "味甘、微苦，藥性平和，主要功能是補中益氣，養心安神，用於虛勞羸弱、食慾不振、心悸怔仲、失眠健忘以及咳痰喘息，久嗽不止。現還用於促進心腦血管系統健康，以及改善神經衰弱、慢性呼吸系統毛病等。\n",
+    "zh-Hans": "味甘、微苦，药性平和，主要功能是补中益气，养心安神，用于虚勞羸弱、食慾不振、心悸怔仲、失眠健忘以及咳痰喘息，久嗽不止。現还用于促进心脑血管系统健康，以及改善神经衰弱、慢性呼吸系统毛病等。\n"
+  },
+  "tcmModernResearch": {
+    "en": "University studies have confirmed lingzhi is able to boost the body's antioxidant levels, deter the growth of unwelcome cell lines, strengthen the immune system, protect kidney cells and has anti-ageing effects; increasing appetite and energy levels, improving sleep and reducing white hair and age spots.\n",
+    "zh-Hant": "【野生靈芝】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【野生靈芝】Modern Research內容待翻譯补充。"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:30.622Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q271098"
+    }
+  ]
+}

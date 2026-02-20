@@ -1,0 +1,55 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/tusizi",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/tusizi"
+  },
+  "name": {
+    "en": "Tusizi",
+    "zh-Hant": "菟絲子",
+    "zh-Hans": "菟丝子"
+  },
+  "pinyin": "Tusizi",
+  "chineseName": {
+    "zh-Hant": "菟絲子",
+    "zh-Hans": "菟丝子"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Divine Husbandman's Classic of the Materia Medica, classified as upper class.\n",
+    "zh-Hant": "始載於《神農本草經》，列為上品\n",
+    "zh-Hans": "始载于《神農本草经》，列为上品\n"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Tusizi is a sweet herb that is neutral in nature, entering the kidney and liver meridians. It is used to tonify kidney yin and yang, consolidate kidney essence (jing) and reserve urine and stop diarrhea. It can also nourish the liver, the organ responsible for eye health, and thus improves blurred vision and dry eyes. Since tusizi improves kidney health, it can be taken to improve conditions stemming from poorly nourished kidneys, such as weak or greying hair and premature ageing.\n",
+    "zh-Hant": "菟絲子是一味溫和的補陽藥，其味甘而性溫，歸肝、腎、脾經，能補腎固精、養肝明目、補脾止瀉、安胎。主治由肝腎不足引起的腰痛、尿頻、白帶過多、視力下降、胎動不安等等，此外，還能治腎虛消渴，酒浸外用對白癜風亦有一定療效。\n",
+    "zh-Hans": "菟絲子是一味溫和的补阳药，其味甘而性溫，歸肝、肾、脾经，能补肾固精、养肝明目、补脾止瀉、安胎。主治由肝肾不足引起的腰痛、尿頻、白帶过多、視力下降、胎动不安等等，此外，还能治肾虚消渴，酒浸外用對白癜風亦有一定疗效。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:55.594Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q5366185"
+    }
+  ]
+}

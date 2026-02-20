@@ -1,0 +1,55 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/wheat",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/wheat"
+  },
+  "name": {
+    "en": "Wheat",
+    "zh-Hant": "小麥",
+    "zh-Hans": "小麦"
+  },
+  "pinyin": "Wheat",
+  "chineseName": {
+    "zh-Hant": "小麥",
+    "zh-Hans": "小麦"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Treasury of Words on the Materia Medica.\n",
+    "zh-Hant": "【小麥】History內容待翻譯補充。",
+    "zh-Hans": "【小麥】History內容待翻譯补充。"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Made from wheat that has been soaked in water and dried, xiaomai is sweet and cool in nature, entering the heart channels. It nourishes the heart and calms the spirit, relieving symptoms of irritability and unhappiness. It can also be used to treat painful urination caused by heat accumulation in the bladder.\n",
+    "zh-Hant": "小麥味甘，藥性微寒，而未成熟的穎果稱為浮小麥，藥性較涼，具清熱作用。小麥歸心經，能斂汗、益氣、除熱，常用於自汗、盜汗或臟躁情緒不安等情況。\n",
+    "zh-Hans": "小麥味甘，药性微寒，而未成熟的穎果稱为浮小麥，药性較涼，具清热作用。小麥歸心经，能斂汗、益气、除热，常用于自汗、盜汗或脏躁情緒不安等情況。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:56.452Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q161098"
+    }
+  ]
+}

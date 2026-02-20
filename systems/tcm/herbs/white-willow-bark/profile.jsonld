@@ -1,0 +1,55 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/white-willow-bark",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/white-willow-bark"
+  },
+  "name": {
+    "en": "White Willow Bark",
+    "zh-Hant": "白柳樹皮",
+    "zh-Hans": "白柳树皮"
+  },
+  "pinyin": "White Willow Bark",
+  "chineseName": {
+    "zh-Hant": "白柳樹皮",
+    "zh-Hans": "白柳树皮"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "The use of white willow bark medicinally is a centuries old practice. Ancient Egyptians used white willow to treat inflammation. The Greek physician Hippocrates also wrote about white willow's medicinal uses in the 5th century B.C.\n",
+    "zh-Hant": "把白柳樹樹皮作藥用已是多個世紀前的做法。古埃及人用白柳樹治療發炎。古希臘名醫希波克拉底也曾在公元前5世紀記述白柳樹作藥用的情況。\n",
+    "zh-Hans": "把白柳樹樹皮作药用已是多个世纪前的做法。古埃及人用白柳樹治疗發炎。古希臘名医希波克拉底也曾在公元前5世纪记述白柳樹作药用的情況。\n"
+  },
+  "tcmTraditionalUsage": {
+    "en": "The bark of the white willow tree is a source of salicin and other salicylates – compounds which are similar in structure to aspirin (acetyl salicylic acid). Today, white willow bark is often used as a natural alternative to aspirin. Another common use is in dietary supplements as an adjunct for weight loss. It is thought to extend or increase the activity of several thermogenic ingredients in elevating energy expenditure and promoting fat metabolism.\n",
+    "zh-Hant": "白柳樹皮含水楊酸及水楊酸鹽類(水楊酸鹽類是結構類似以阿司匹林的複合物)，是現代經常用作替代阿司匹林的天然成份。此外，它有加速卡路里的燃燒、促進脂肪代謝的功能，是常用作輔助減肥的營養補充劑。\n",
+    "zh-Hans": "白柳樹皮含水楊酸及水楊酸鹽类(水楊酸鹽类是结构类似以阿司匹林的複合物)，是現代经常用作替代阿司匹林的天然成份。此外，它有加速卡路里的燃燒、促进脂肪代謝的功能，是常用作輔助減肥的營养补充剂。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:58.960Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q156918"
+    }
+  ]
+}

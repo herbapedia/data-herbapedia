@@ -1,0 +1,53 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/shoudihuang",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/shoudihuang"
+  },
+  "name": {
+    "en": "Shoudihuang",
+    "zh-Hant": "熟地 又名熟地黃",
+    "zh-Hans": "熟地 又名熟地黄"
+  },
+  "pinyin": "Shoudihuang",
+  "chineseName": {
+    "zh-Hant": "熟地 又名熟地黃",
+    "zh-Hans": "熟地 又名熟地黄"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in the Illustrated Classic of Materia Medica.\n",
+    "zh-Hant": "【熟地 又名熟地黃】History內容待翻譯補充。",
+    "zh-Hans": "【熟地 又名熟地黃】History內容待翻譯补充。"
+  },
+  "tcmTraditionalUsage": {
+    "en": "A sweet, warming herb for the kidney and liver meridians with invigorating and rejuvenating effects. It is used for nourishing the blood, tonifying the liver and kidney yin, replenishing jing (kidney essence) and stopping coughing and wheezing. As a treatment for blood deficiency it is useful in cases of menstrual disorders and anaemia, while its ability to replenish jing means it can be prescribed in cases of premature ageing such as greying hair, dizziness, forgetfulness, impotence and tinnitus. This herb is made from the roots of the Chinese Foxglove, which are harvested in autumn and prepared by stewing in wine.\n",
+    "zh-Hant": "參科性甘，藥性微溫，歸屬肝、腎兩經。功效補血滋陰，益精填髓。主治血虛萎黃，眩暈，心悸失眠，月經不調，崩漏，潮熱盗汗，腰膝酸軟，腎虛耳聲嘈雜等。\n",
+    "zh-Hans": "參科性甘，药性微溫，歸属肝、肾兩经。功效补血滋阴，益精填髓。主治血虚萎黃，眩暈，心悸失眠，月经不调，崩漏，潮热盗汗，腰膝酸软，肾虚耳聲嘈雜等。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:49.052Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    "https://www.wikidata.org/wiki/Q1071605"
+  ]
+}

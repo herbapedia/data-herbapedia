@@ -1,0 +1,45 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/st-johns-wort",
+  "@type": [
+    "western:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/st-johns-wort"
+  },
+  "name": {
+    "en": "St. John&#039;s Wort",
+    "zh-Hant": "貫葉連翹",
+    "zh-Hans": "贯叶连翘"
+  },
+  "scientificName": "Hypericum perforatum L.",
+  "hasAction": [
+    {
+      "@id": "western/action/relaxant"
+    }
+  ],
+  "hasOrganAffinity": [
+    {
+      "@id": "organ/skin"
+    }
+  ],
+  "westernHistory": {
+    "en": "The Greek physician Hippocrates was one of the first to document the therapeutic uses of St. John's Wort over 2,000 years ago. It is thought to have been used to treat mental disorders in Europe since the 15th century, as recorded by Swiss physician Paracelsus.\n",
+    "zh-Hant": "希臘內科醫生希波克拉底是最早提供有關2000年來貫葉連翹用於醫學的文獻的先鋒之一。根據瑞士內科醫生 Paracelsus 記錄， 貫葉連翹自15世紀始已於歐洲國家用作治療心理疾病。\n",
+    "zh-Hans": "希腊内科医生希波克拉底是最早提供有关2000年来贯叶连翘用于医学的文献的先锋之一。根据瑞士内科医生 Paracelsus 记录， 贯叶连翘自15世纪始已于欧洲国家用作治疗心理疾病。\n"
+  },
+  "westernTraditionalUsage": {
+    "en": "St John's Wort contains a combination of bioactive ingredients, including hypericin, that appear to boost levels of chemicals in the brain that affect mood, making it an effective antidepressant for cases of mild to moderate depression. As a relaxant, it may also improve concentration powers, memory and receptivity without causing drowsiness. People taking St John's Wort should be aware that it can affect the efficacy of the contraceptive pill and make the skin more susceptible to sun sensitivity, and should not be taken if you have already been prescribed antidepressant medication.\n",
+    "zh-Hant": "貫葉連翹含一系列的活性成分，包括 hypericin，可以強化血清素 (一種神經傳導物)的作用，從而平衡情緒，調整神經系統正常運作。hypericin 對於改善輕度到中度抑鬱也具有不錯的效果，它能改進專注力、記憶和接收能力，又不會令人渴睡。\n",
+    "zh-Hans": "贯叶连翘含一系列的活性成分，包括 hypericin，可以强化血清素 (一种神经传导物)的作用，从而平衡情绪，调整神经系统正常运作。hypericin 对于改善轻度到中度抑郁也具有不错的效果，它能改进专注力、记忆和接收能力，又不会令人渴睡。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-19T15:32:30.541Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "description": {
+    "en": "St. John's Wort preparations consist of dried above-ground parts of the plant, such as flowers and stems, gathered during the flowering season.\n",
+    "zh-Hant": "在開花季節期間，貫葉連翹泥土以上的乾身部份，例如花及莖，會被選取作提煉之用。\n",
+    "zh-Hans": "在开花季节期间，贯叶连翘泥土以上的乾身部份，例如花及茎，会被选取作提炼之用。\n"
+  }
+}

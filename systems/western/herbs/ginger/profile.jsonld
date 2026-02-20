@@ -1,0 +1,41 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/ginger",
+  "@type": [
+    "western:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/ginger"
+  },
+  "name": {
+    "en": "Ginger",
+    "zh-Hant": "生薑",
+    "zh-Hans": "生姜"
+  },
+  "scientificName": "Zingiber officinale",
+  "hasAction": [
+    { "@id": "western/action/carminative" },
+    { "@id": "western/action/anti-inflammatory" },
+    { "@id": "western/action/diaphoretic" },
+    { "@id": "western/action/antispasmodic" }
+  ],
+  "hasOrganAffinity": [
+    { "@id": "western/organ/digestive" },
+    { "@id": "western/organ/stomach" },
+    { "@id": "western/organ/respiratory" }
+  ],
+  "westernHistory": {
+    "en": "Ginger has been used in traditional medicine systems for over 5,000 years. It was one of the first spices exported from Asia to Europe. Ancient Greeks and Romans valued it for its medicinal properties.",
+    "zh-Hant": "生薑在傳統醫學系統中已使用了超過5000年。它是從亞洲出口到歐洲的第一批香料之一。古希臘人和羅馬人重視其藥用特性。",
+    "zh-Hans": "生姜在传统医学系统中已使用了超过5000年。它是从亚洲出口到欧洲的第一批香料之一。古希腊人和罗马人重视其药用特性。"
+  },
+  "westernTraditionalUsage": {
+    "en": "Ginger root is widely used to treat nausea, motion sickness, and digestive issues. It has warming properties and is used for colds, flu, and poor circulation. Fresh and dried forms have different therapeutic applications.",
+    "zh-Hant": "生薑根被廣泛用於治療噁心、暈車和消化問題。它具有溫暖特性，用於感冒、流感和血液循環不良。新鮮和乾燥形式有不同的治療應用。",
+    "zh-Hans": "生姜根被广泛用于治疗恶心、晕车和消化问题。它具有温暖特性，用于感冒、流感和血液循环不良。新鲜和干燥形式有不同的治疗应用。"
+  },
+  "source": "herbapedia.com",
+  "created": "2026-02-20T00:00:00.000Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+}

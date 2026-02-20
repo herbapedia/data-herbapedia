@@ -1,0 +1,47 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/turmeric",
+  "@type": [
+    "botany:Plant",
+    "schema:Thing"
+  ],
+  "name": {
+    "en": "Turmeric",
+    "zh-Hant": "薑黃",
+    "zh-Hans": "姜黄"
+  },
+  "commonName": {
+    "en": "Turmeric",
+    "zh-Hant": "薑黃",
+    "zh-Hans": "姜黄"
+  },
+  "scientificName": "Curcuma longa",
+  "family": "Zingiberaceae",
+  "genus": "Curcuma",
+  "description": {
+    "en": "Turmeric is a flowering plant of the ginger family, native to the Indian subcontinent and Southeast Asia. The rhizomes are used as a spice and in traditional medicine.",
+    "zh-Hant": "薑黃是薑科開花植物，原生於印度次大陸和東南亞。其根莖被用作香料和傳統醫學。",
+    "zh-Hans": "姜黄是姜科开花植物，原生於印度次大陆和东南亚。其根茎被用作香料和传统医学。"
+  },
+  "botanicalDescription": {
+    "en": "Perennial herb growing to 1 meter tall. Leaves are oblong-lanceolate, 50-80 cm long. Flowers are pale yellow to orange, produced in dense spikes. Rhizomes are bright orange-yellow inside.",
+    "zh-Hant": "多年生草本植物，高1米。葉為長圓狀披針形，長50-80厘米。花淡黃色至橙色，密集成穗狀。根莖內部為鮮橙黃色。",
+    "zh-Hans": "多年生草本植物，高1米。叶为长圆状披针形，长50-80厘米。花淡黄色至橙色，密集成穗状。根茎内部为鲜橙黄色。"
+  },
+  "image": "media/images/turmeric/turmeric.jpg",
+  "containsChemical": [
+    {
+      "@id": "chemical/curcumin"
+    },
+    {
+      "@id": "chemical/flavonoids"
+    }
+  ],
+  "sameAs": [
+    "https://www.wikidata.org/wiki/Q183755"
+  ],
+  "gbifId": "2757202",
+  "created": "2026-02-20T00:00:00.000Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "modified": "2026-02-19T23:24:40.399Z"
+}

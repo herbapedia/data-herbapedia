@@ -1,0 +1,60 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/buguzhi",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/buguzhi"
+  },
+  "name": {
+    "en": "Buguzhi",
+    "zh-Hant": "補骨脂",
+    "zh-Hans": "补骨脂"
+  },
+  "pinyin": "Buguzhi",
+  "chineseName": {
+    "zh-Hant": "補骨脂",
+    "zh-Hans": "补骨脂"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in GrandfatherLei's Discussions of Herb Preparation.\n",
+    "zh-Hant": "始載於《雷公炮炙論》 Leigong Baozhi Lun\n",
+    "zh-Hans": "始载于《雷公炮炙論》 Leigong Baozhi Lun\n"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Buguzhi is an acrid, bitter herb that is very warming in nature. It enters the kidney and spleen meridians, and is thus useful for tonifying the kidneys and fortifying the yang, consolidating the jing (kidney essence) and warming the spleen. Yang and jing deficiencies allow wind and cold to affect the kidneys, characterised by symptoms such as impotence, a cold and painful lower back, and feelings of prolapse: all of which can be treated with buguzhi. This herb also warms the spleen and stops diarrhea.\n",
+    "zh-Hant": "補骨脂是補陽藥，藥味辛而苦，藥性溫，歸於腎、脾經，能補腎助陽、納氣平喘，主治腎陽不足之性功能下降、腰痛、小便頻繁、遺尿、五更腎虛寒泄、月經不調、子宮冷感、腎虛滑胎、白帶清冷、老年腎虛氣喘等。\n",
+    "zh-Hans": "补骨脂是补阳药，药味辛而苦，药性溫，歸于肾、脾经，能补肾助阳、納气平喘，主治肾阳不足之性功能下降、腰痛、小便頻繁、遺尿、五更肾虚寒泄、月经不调、子宮冷感、肾虚滑胎、白帶清冷、老年肾虚气喘等。\n"
+  },
+  "tcmModernResearch": {
+    "en": "Clinical studies have confirmed buguzhi possesses antibiotic properties, can dilate the coronary artery, stimulate the immune system, relax the smooth muscles and treat asthma.\n",
+    "zh-Hant": "【補骨脂】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【补骨脂】Modern Research內容待翻譯补充。"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:14:56.022Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q3595165"
+    }
+  ]
+}

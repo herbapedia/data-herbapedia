@@ -1,0 +1,31 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/indigowoad-root-banlangen",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "scientificName": "Isatis tinctoria",
+  "name": {
+    "en": "Indigowoad Root (Banlangen)",
+    "zh-Hant": "板藍根",
+    "zh-Hans": "板蓝根"
+  },
+  "description": {
+    "en": "Derived from the root of Isatis tinctoria L., family Cruciferae, or Baphicacanthus cusia ( Nees) Berm, family Acanthaceae.\n",
+    "zh-Hant": "板藍根（學名：Isatis tinctoria）為多年生草本植物，以其根部入藥。在中醫藥理論中歸屬於補益類藥物，具有補氣養血、健脾益肺等功效，是重要的傳統中藥材。",
+    "zh-Hans": "板藍根（学名：Isatis tinctoria）为多年生草本植物，以其根部入药。在中医药理論中歸属于补益类药物，具有补气养血、健脾益肺等功效，是重要的传统中药材。"
+  },
+  "image": "media/images/indigowoad-root-banlangen/indigowoad-root-banlangen.jpg",
+  "url": "https://herbapedia.org/plants/indigowoad-root-banlangen",
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/chiherbs-en/indigowoad-root-banlangen/",
+  "created": "2026-02-18T09:15:24.168Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.gbif.org/species/5374118"
+    }
+  ],
+  "gbifId": 5374118
+}

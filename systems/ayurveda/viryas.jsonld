@@ -1,0 +1,39 @@
+{
+  "@context": "../../schema/context/ayurveda.jsonld",
+  "@graph": [
+    {
+      "@id": "virya/ushna",
+      "@type": "ayurveda:Virya",
+      "viryaValue": "heating",
+      "prefLabel": {
+        "en": "Heating (Ushna)",
+        "sa": "उष्ण",
+        "hi": "गर्म",
+        "zh-Hant": "Heating (Ushna)",
+        "zh-Hans": "Heating (Ushna)"
+      },
+      "sanskritName": "Ushna",
+      "description": {
+        "en": "Heating potency increases body heat, improves digestion, reduces Kapha and Vata, may increase Pitta. Useful in cold conditions and weak digestion.",
+        "sa": "उष्णवीर्यं जठराग्निं दीपयति।"
+      }
+    },
+    {
+      "@id": "virya/sheeta",
+      "@type": "ayurveda:Virya",
+      "viryaValue": "cooling",
+      "prefLabel": {
+        "en": "Cooling (Sheeta)",
+        "sa": "शीत",
+        "hi": "ठंडा",
+        "zh-Hant": "Cooling (Sheeta)",
+        "zh-Hans": "Cooling (Sheeta)"
+      },
+      "sanskritName": "Sheeta",
+      "description": {
+        "en": "Cooling potency reduces body heat, pacifies Pitta, may increase Kapha and Vata. Useful in inflammatory conditions and excess heat.",
+        "sa": "शीतवीर्यं पित्तं शमयति।"
+      }
+    }
+  ]
+}

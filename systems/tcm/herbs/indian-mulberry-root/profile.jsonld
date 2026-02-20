@@ -1,0 +1,55 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/indian-mulberry-root",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/indian-mulberry-root"
+  },
+  "name": {
+    "en": "Indian Mulberry Root",
+    "zh-Hant": "巴戟天",
+    "zh-Hans": "巴戟天"
+  },
+  "pinyin": "Indian Mulberry Root",
+  "chineseName": {
+    "zh-Hant": "巴戟天",
+    "zh-Hans": "巴戟天"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Divine Husbandman's Classic of the Materia Medica, classified as upper class.\n",
+    "zh-Hant": "始載於《神農本草經》，列為上品\n",
+    "zh-Hans": "始载于《神農本草经》，列为上品\n"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Bajitian is a sweet, warming herb associated with the kidney and liver channels. The plant is harvested during spring or winter, and the herb is prepared by drying the roots, then steaming them and slicing the softer outer parts. Its main use is for reinforcing kidney yang and invigorating the body, strengthening sinews and bones, and treating painful obstruction syndrome in which the flow of chi and blood is blocked.\n",
+    "zh-Hant": "巴戟天是補陽藥，味甘、辛，藥性微溫，歸肝、腎經，能補腎陽、強筋骨、袪風濕，常用於腎陽虛引起的不適，例如腰膝酸軟、小便清長、耳聲嘈雜等。\n",
+    "zh-Hans": "巴戟天是补阳药，味甘、辛，药性微溫，歸肝、肾经，能补肾阳、强筋骨、袪風湿，常用于肾阳虚引起的不適，例如腰膝酸软、小便清长、耳聲嘈雜等。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:23.347Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q2220745"
+    }
+  ]
+}

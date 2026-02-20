@@ -1,0 +1,509 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@graph": [
+    {
+      "@id": "western/action/antioxidant",
+      "@type": "western:HerbalAction",
+      "prefLabel": {
+        "en": "Antioxidant",
+        "zh-Hant": "抗氧化",
+        "zh-Hans": "抗氧化"
+      },
+      "description": {
+        "en": "Protects cells from damage caused by free radicals",
+        "zh-Hant": "保護細胞免受自由基造成的損害",
+        "zh-Hans": "保护细胞免受自由基造成的损害"
+      }
+    },
+    {
+      "@id": "western/action/anti-inflammatory",
+      "@type": "western:HerbalAction",
+      "prefLabel": {
+        "en": "Anti-inflammatory",
+        "zh-Hant": "抗炎",
+        "zh-Hans": "抗炎"
+      },
+      "description": {
+        "en": "Reduces inflammation and swelling in the body",
+        "zh-Hant": "減少身體的炎症和腫脹",
+        "zh-Hans": "减少身体的炎症和肿胀"
+      }
+    },
+    {
+      "@id": "western/action/adaptogen",
+      "@type": "western:HerbalAction",
+      "prefLabel": {
+        "en": "Adaptogen",
+        "zh-Hant": "適應原",
+        "zh-Hans": "适应原"
+      },
+      "description": {
+        "en": "Helps the body adapt to stress and normalize bodily functions",
+        "zh-Hant": "幫助身體適應壓力並調節身體功能",
+        "zh-Hans": "帮助身体适应压力并调节身体功能"
+      }
+    },
+    {
+      "@id": "western/action/diuretic",
+      "@type": "western:HerbalAction",
+      "prefLabel": {
+        "en": "Diuretic",
+        "zh-Hant": "利尿劑",
+        "zh-Hans": "利尿剂"
+      },
+      "description": {
+        "en": "Increases urine production and promotes fluid elimination",
+        "zh-Hant": "增加尿液產生並促進液體排出",
+        "zh-Hans": "增加尿液产生并促进液体排出"
+      }
+    },
+    {
+      "@id": "western/action/carminative",
+      "@type": "western:HerbalAction",
+      "prefLabel": {
+        "en": "Carminative",
+        "zh-Hant": "驅風劑",
+        "zh-Hans": "驱风剂"
+      },
+      "description": {
+        "en": "Relieves gas and bloating in the digestive tract",
+        "zh-Hant": "緩解消化道中的氣體和腹脹",
+        "zh-Hans": "缓解消化道中的气体和腹胀"
+      }
+    },
+    {
+      "@id": "western/action/expectorant",
+      "@type": "western:HerbalAction",
+      "prefLabel": {
+        "en": "Expectorant",
+        "zh-Hant": "祛痰劑",
+        "zh-Hans": "祛痰剂"
+      },
+      "description": {
+        "en": "Helps expel mucus from the respiratory tract",
+        "zh-Hant": "幫助從呼吸道排出黏液",
+        "zh-Hans": "帮助从呼吸道排出黏液"
+      }
+    },
+    {
+      "@id": "western/action/antimicrobial",
+      "@type": "western:HerbalAction",
+      "prefLabel": {
+        "en": "Antimicrobial",
+        "zh-Hant": "抗菌",
+        "zh-Hans": "抗菌"
+      },
+      "description": {
+        "en": "Fights against bacteria, viruses, and fungi",
+        "zh-Hant": "對抗細菌、病毒和真菌",
+        "zh-Hans": "对抗细菌、病毒和真菌"
+      }
+    },
+    {
+      "@id": "western/action/antifungal",
+      "@type": "western:HerbalAction",
+      "prefLabel": {
+        "en": "Antifungal",
+        "zh-Hant": "抗真菌",
+        "zh-Hans": "抗真菌"
+      },
+      "description": {
+        "en": "Fights fungal infections",
+        "zh-Hant": "對抗真菌感染",
+        "zh-Hans": "对抗真菌感染"
+      }
+    },
+    {
+      "@id": "western/action/antispasmodic",
+      "@type": "western:HerbalAction",
+      "prefLabel": {
+        "en": "Antispasmodic",
+        "zh-Hant": "抗痙攣劑",
+        "zh-Hans": "抗痉挛剂"
+      },
+      "description": {
+        "en": "Relieves muscle spasms and cramps",
+        "zh-Hant": "緩解肌肉痙攣和抽筋",
+        "zh-Hans": "缓解肌肉痉挛和抽筋"
+      }
+    },
+    {
+      "@id": "western/action/analgesic",
+      "@type": "western:HerbalAction",
+      "prefLabel": {
+        "en": "Analgesic",
+        "zh-Hant": "止痛劑",
+        "zh-Hans": "止痛剂"
+      },
+      "description": {
+        "en": "Relieves pain",
+        "zh-Hant": "緩解疼痛",
+        "zh-Hans": "缓解疼痛"
+      }
+    },
+    {
+      "@id": "western/action/sedative",
+      "@type": "western:HerbalAction",
+      "prefLabel": {
+        "en": "Sedative",
+        "zh-Hant": "鎮靜劑",
+        "zh-Hans": "镇静剂"
+      },
+      "description": {
+        "en": "Promotes calmness and reduces anxiety",
+        "zh-Hant": "促進平靜並減少焦慮",
+        "zh-Hans": "促进平静并减少焦虑"
+      }
+    },
+    {
+      "@id": "western/action/nervine",
+      "@type": "western:HerbalAction",
+      "prefLabel": {
+        "en": "Nervine",
+        "zh-Hant": "神經補劑",
+        "zh-Hans": "神经补剂"
+      },
+      "description": {
+        "en": "Supports and nourishes the nervous system",
+        "zh-Hant": "支持和滋養神經系統",
+        "zh-Hans": "支持和滋养神经系统"
+      }
+    },
+    {
+      "@id": "western/action/astringent",
+      "@type": "western:HerbalAction",
+      "prefLabel": {
+        "en": "Astringent",
+        "zh-Hant": "收斂劑",
+        "zh-Hans": "收敛剂"
+      },
+      "description": {
+        "en": "Tissues and reduces discharge",
+        "zh-Hant": "收緊組織並減少分泌物",
+        "zh-Hans": "收紧组织并减少分泌物"
+      }
+    },
+    {
+      "@id": "western/action/demulcent",
+      "@type": "western:HerbalAction",
+      "prefLabel": {
+        "en": "Demulcent",
+        "zh-Hant": "潤滑劑",
+        "zh-Hans": "润滑剂"
+      },
+      "description": {
+        "en": "Soothes and protects irritated tissues",
+        "zh-Hant": "舒緩和保護受刺激的組織",
+        "zh-Hans": "舒缓和保护受刺激的组织"
+      }
+    },
+    {
+      "@id": "western/action/tonic",
+      "@type": "western:HerbalAction",
+      "prefLabel": {
+        "en": "Tonic",
+        "zh-Hant": "補劑",
+        "zh-Hans": "补剂"
+      },
+      "description": {
+        "en": "Restores and strengthens body systems",
+        "zh-Hant": "恢復和增強身體系統",
+        "zh-Hans": "恢复和增强身体系统"
+      }
+    },
+    {
+      "@id": "western/action/laxative",
+      "@type": "western:HerbalAction",
+      "prefLabel": {
+        "en": "Laxative",
+        "zh-Hant": "瀉藥",
+        "zh-Hans": "泻药"
+      },
+      "description": {
+        "en": "Promotes bowel movements",
+        "zh-Hant": "促進腸道蠕動",
+        "zh-Hans": "促进肠道蠕动"
+      }
+    },
+    {
+      "@id": "western/action/cholagogue",
+      "@type": "western:HerbalAction",
+      "prefLabel": {
+        "en": "Cholagogue",
+        "zh-Hant": "促膽汁劑",
+        "zh-Hans": "促胆汁剂"
+      },
+      "description": {
+        "en": "Stimulates bile flow from the gallbladder",
+        "zh-Hant": "刺激膽囊分泌膽汁",
+        "zh-Hans": "刺激胆囊分泌胆汁"
+      }
+    },
+    {
+      "@id": "western/action/hepatic",
+      "@type": "western:HerbalAction",
+      "prefLabel": {
+        "en": "Hepatic",
+        "zh-Hant": "肝臟補劑",
+        "zh-Hans": "肝脏补剂"
+      },
+      "description": {
+        "en": "Supports liver function",
+        "zh-Hant": "支持肝臟功能",
+        "zh-Hans": "支持肝脏功能"
+      }
+    },
+    {
+      "@id": "western/action/vulnerary",
+      "@type": "western:HerbalAction",
+      "prefLabel": {
+        "en": "Vulnerary",
+        "zh-Hant": "傷癒劑",
+        "zh-Hans": "伤癒剂"
+      },
+      "description": {
+        "en": "Promotes wound healing",
+        "zh-Hant": "促進傷口癒合",
+        "zh-Hans": "促进伤口愈合"
+      }
+    },
+    {
+      "@id": "western/action/immunomodulator",
+      "@type": "western:HerbalAction",
+      "prefLabel": {
+        "en": "Immunomodulator",
+        "zh-Hant": "免疫調節劑",
+        "zh-Hans": "免疫调节剂"
+      },
+      "description": {
+        "en": "Modulates and supports the immune system",
+        "zh-Hant": "調節和支持免疫系統",
+        "zh-Hans": "调节和支持免疫系统"
+      }
+    },
+    {
+      "@id": "western/action/hypoglycemic",
+      "@type": "western:HerbalAction",
+      "prefLabel": {
+        "en": "Hypoglycemic",
+        "zh-Hant": "降血糖劑",
+        "zh-Hans": "降血糖剂"
+      },
+      "description": {
+        "en": "Lowers blood sugar levels",
+        "zh-Hant": "降低血糖水平",
+        "zh-Hans": "降低血糖水平"
+      }
+    },
+    {
+      "@id": "western/action/hypolipidemic",
+      "@type": "western:HerbalAction",
+      "prefLabel": {
+        "en": "Hypolipidemic",
+        "zh-Hant": "降血脂劑",
+        "zh-Hans": "降血脂剂"
+      },
+      "description": {
+        "en": "Lowers cholesterol and lipid levels",
+        "zh-Hant": "降低膽固醇和血脂水平",
+        "zh-Hans": "降低胆固醇和血脂水平"
+      }
+    },
+    {
+      "@id": "western/action/vasodilator",
+      "@type": "western:HerbalAction",
+      "prefLabel": {
+        "en": "Vasodilator",
+        "zh-Hant": "血管擴張劑",
+        "zh-Hans": "血管扩张剂"
+      },
+      "description": {
+        "en": "Widens blood vessels and improves circulation",
+        "zh-Hant": "擴張血管並改善血液循環",
+        "zh-Hans": "扩张血管并改善血液循环"
+      }
+    },
+    {
+      "@id": "western/action/circulatory",
+      "@type": "western:HerbalAction",
+      "prefLabel": {
+        "en": "Circulatory",
+        "zh-Hant": "循環促進劑",
+        "zh-Hans": "循环促进剂"
+      },
+      "description": {
+        "en": "Improves blood circulation",
+        "zh-Hant": "改善血液循環",
+        "zh-Hans": "改善血液循环"
+      }
+    },
+    {
+      "@id": "western/action/estrogenic",
+      "@type": "western:HerbalAction",
+      "prefLabel": {
+        "en": "Estrogenic",
+        "zh-Hant": "雌激素作用",
+        "zh-Hans": "雌激素作用"
+      },
+      "description": {
+        "en": "Mimics or supports estrogen activity",
+        "zh-Hant": "模擬或支持雌激素活動",
+        "zh-Hans": "模拟或支持雌激素活动"
+      }
+    },
+    {
+      "@id": "western/action/diaphoretic",
+      "@type": "western:HerbalAction",
+      "prefLabel": {
+        "en": "Diaphoretic",
+        "zh-Hant": "發汗劑",
+        "zh-Hans": "发汗剂"
+      },
+      "description": {
+        "en": "Promotes sweating",
+        "zh-Hant": "促進發汗",
+        "zh-Hans": "促进发汗"
+      }
+    },
+    {
+      "@id": "western/action/emmenagogue",
+      "@type": "western:HerbalAction",
+      "prefLabel": {
+        "en": "Emmenagogue",
+        "zh-Hant": "通經劑",
+        "zh-Hans": "通经剂"
+      },
+      "description": {
+        "en": "Stimulates menstrual flow",
+        "zh-Hant": "刺激月經流量",
+        "zh-Hans": "刺激月经流量"
+      }
+    },
+    {
+      "@id": "western/action/antiallergenic",
+      "@type": "western:HerbalAction",
+      "prefLabel": {
+        "en": "Antiallergenic",
+        "zh-Hant": "抗過敏",
+        "zh-Hans": "抗过敏"
+      },
+      "description": {
+        "en": "Reduces allergic reactions",
+        "zh-Hant": "減少過敏反應",
+        "zh-Hans": "减少过敏反应"
+      }
+    },
+    {
+      "@id": "western/action/antiviral",
+      "@type": "western:HerbalAction",
+      "prefLabel": {
+        "en": "Antiviral",
+        "zh-Hant": "抗病毒",
+        "zh-Hans": "抗病毒"
+      },
+      "description": {
+        "en": "Fights against viruses",
+        "zh-Hant": "對抗病毒",
+        "zh-Hans": "对抗病毒"
+      }
+    },
+    {
+      "@id": "western/action/antiseptic",
+      "@type": "western:HerbalAction",
+      "prefLabel": {
+        "en": "Antiseptic",
+        "zh-Hant": "防腐劑",
+        "zh-Hans": "防腐剂"
+      },
+      "description": {
+        "en": "Prevents infection and stops the growth of microorganisms",
+        "zh-Hant": "預防感染並阻止微生物生長",
+        "zh-Hans": "预防感染并阻止微生物生长"
+      }
+    },
+    {
+      "@id": "western/action/antidepressant",
+      "@type": "western:HerbalAction",
+      "prefLabel": {
+        "en": "Antidepressant",
+        "zh-Hant": "抗抑鬱",
+        "zh-Hans": "抗抑郁"
+      },
+      "description": {
+        "en": "Alleviates symptoms of depression",
+        "zh-Hant": "緩解抑鬱症狀",
+        "zh-Hans": "缓解抑郁症状"
+      }
+    },
+    {
+      "@id": "western/action/anxiolytic",
+      "@type": "western:HerbalAction",
+      "prefLabel": {
+        "en": "Anxiolytic",
+        "zh-Hant": "抗焦慮",
+        "zh-Hans": "抗焦虑"
+      },
+      "description": {
+        "en": "Reduces anxiety",
+        "zh-Hant": "減少焦慮",
+        "zh-Hans": "减少焦虑"
+      }
+    },
+    {
+      "@id": "western/action/nootropic",
+      "@type": "western:HerbalAction",
+      "prefLabel": {
+        "en": "Nootropic",
+        "zh-Hant": "益智",
+        "zh-Hans": "益智"
+      },
+      "description": {
+        "en": "Enhances cognitive function and memory",
+        "zh-Hant": "增強認知功能和記憶力",
+        "zh-Hans": "增强认知功能和记忆力"
+      }
+    },
+    {
+      "@id": "western/action/digestive-bitter",
+      "@type": "western:HerbalAction",
+      "prefLabel": {
+        "en": "Digestive Bitter",
+        "zh-Hant": "消化苦味劑",
+        "zh-Hans": "消化苦味剂"
+      },
+      "description": {
+        "en": "Stimulates digestive secretions via bitter taste receptors",
+        "zh-Hant": "通過苦味受體刺激消化分泌",
+        "zh-Hans": "通过苦味受体刺激消化分泌"
+      }
+    },
+    {
+      "@id": "western/action/hemostatic",
+      "@type": "western:HerbalAction",
+      "prefLabel": {
+        "en": "Hemostatic",
+        "zh-Hant": "止血劑",
+        "zh-Hans": "止血剂"
+      },
+      "description": {
+        "en": "Stops bleeding",
+        "zh-Hant": "止血",
+        "zh-Hans": "止血"
+      }
+    },
+    {
+      "@id": "western/action/cardiotonic",
+      "@type": "western:HerbalAction",
+      "prefLabel": {
+        "en": "Cardiotonic",
+        "zh-Hant": "強心",
+        "zh-Hans": "强心"
+      },
+      "description": {
+        "en": "Strengthens and tones the heart muscle",
+        "zh-Hant": "增強和調理心肌",
+        "zh-Hans": "增强和调理心肌"
+      }
+    }
+  ]
+}

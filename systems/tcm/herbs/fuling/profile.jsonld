@@ -1,0 +1,60 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/fuling",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/fuling"
+  },
+  "name": {
+    "en": "Fuling",
+    "zh-Hant": "茯苓",
+    "zh-Hans": "茯苓"
+  },
+  "pinyin": "Fuling",
+  "chineseName": {
+    "zh-Hant": "茯苓",
+    "zh-Hans": "茯苓"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Divine Husbandman's Classic of the Materia Medica, classified as upper class.\n",
+    "zh-Hant": "始載於《神農本草經》，列為上品\n",
+    "zh-Hans": "始载于《神農本草经》，列为上品\n"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Fuling, or poria, is a type of fungus that is thinly sliced or diced into blocks. Sweet, bland and neutral in nature, it enters the heart, spleen and kidney meridians. Its primary use is to drain dampness and promote urination, making it a useful treatment for oedema. It also calms the spirit, resolving conditions including insomnia and palpitations.\n",
+    "zh-Hant": "茯苓在中藥中屬於利水消腫藥，藥味甘淡，藥性平和，歸心、脾、腎經，能利水滲濕、健脾安神，用於水腫、脾胃虛弱、心悸失眠。茯苓是寄生於松科植物赤松或馬尾松的多孔菌科真菌的菌核，而中心抱有松根者稱為「茯神」，其安神功能較佳。\n",
+    "zh-Hans": "茯苓在中药中属于利水消腫药，药味甘淡，药性平和，歸心、脾、肾经，能利水滲湿、健脾安神，用于水腫、脾胃虚弱、心悸失眠。茯苓是寄生于松科植物赤松或馬尾松的多孔菌科真菌的菌核，而中心抱有松根者稱为「茯神」，其安神功能較佳。\n"
+  },
+  "tcmModernResearch": {
+    "en": "Found to have diuretic, sedative and anti-tumour effects. The decoction of the herb is an immune enhancer.\n",
+    "zh-Hant": "【茯苓】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【茯苓】Modern Research內容待翻譯补充。"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:16.796Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q54370411"
+    }
+  ]
+}

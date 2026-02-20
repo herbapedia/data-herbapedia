@@ -1,0 +1,104 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/sheng-jiang",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/zingiber-officinale#rhizome"
+  },
+  "processingMethod": "fresh",
+  "name": {
+    "en": "Fresh Ginger",
+    "zh-Hant": "生薑",
+    "zh-Hans": "生姜"
+  },
+  "pinyin": "Shēng Jiāng",
+  "chineseName": {
+    "zh-Hant": "生薑",
+    "zh-Hans": "生姜"
+  },
+  "hasCategory": {
+    "@id": "category/warm-acrid-release-exterior"
+  },
+  "hasNature": {
+    "@id": "nature/warm"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/acrid"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/lung"
+    },
+    {
+      "@id": "meridian/spleen"
+    },
+    {
+      "@id": "meridian/stomach"
+    }
+  ],
+  "actions": [
+    "Release exterior",
+    "Warm middle burner",
+    "Stop vomiting",
+    "Resolve phlegm",
+    "Detoxify"
+  ],
+  "indications": [
+    "Exterior cold pattern",
+    "Common cold with chills",
+    "Nausea and vomiting",
+    "Cough with white phlegm",
+    "Fish and crab detoxification"
+  ],
+  "contraindications": {
+    "en": "Contraindicated in Yin deficiency with heat signs, lung heat cough.",
+    "zh-Hant": "陰虛內熱、肺熱咳嗽者忌用。",
+    "zh-Hans": "阴虚內热、肺热咳嗽者忌用。"
+  },
+  "dosage": {
+    "en": "3-10g decocted; 15-30g for detoxification.",
+    "zh-Hant": "煎服3-10克；解毒15-30克。",
+    "zh-Hans": "煎服3-10克；解毒15-30克。"
+  },
+  "tcmHistory": {
+    "en": "Ginger has been cultivated for over 5,000 years. In TCM, fresh and dried ginger are considered distinct herbs with different properties and indications.",
+    "zh-Hant": "生薑入藥始見於《名醫別錄》。《本草綱目》載：「薑，辛而不葷，去邪辟惡，生啖熟食，醋、醬、糟、鹽、蜜煎調和，無不宜之。」",
+    "zh-Hans": "生薑入药始見于《名医別录》。《本草綱目》载：「薑，辛而不葷，去邪辟惡，生啖熟食，醋、醬、糟、鹽、蜜煎调和，無不宜之。」"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Fresh Ginger (Sheng Jiang) is primarily used to:\n\n- Release exterior and disperse cold\n- Warm the middle and stop vomiting\n- Warm the lung and resolve phlegm\n- Detoxify fish, crab, and other toxins",
+    "zh-Hant": "生薑發汗解表，溫中止嘔，溫肺止咳。用於風寒感冒、胃寒嘔吐、寒痰咳嗽、魚蟹中毒。",
+    "zh-Hans": "生薑發汗解表，溫中止嘔，溫肺止咳。用于風寒感冒、胃寒嘔吐、寒痰咳嗽、魚蟹中毒。"
+  },
+  "tcmFunctions": {
+    "en": "- Releases exterior and disperses cold\n- Warms the middle and stops vomiting\n- Warms the lung and resolves phlegm\n- Detoxifies",
+    "zh-Hant": "發汗解表，溫中止嘔，溫肺止咳，解毒",
+    "zh-Hans": "發汗解表，溫中止嘔，溫肺止咳，解毒"
+  },
+  "tcmClassicalReference": {
+    "zh-Hant": "《名醫別錄》：「生薑，味辛，微溫。主傷寒頭痛鼻塞，咳逆上氣，止嘔吐。」"
+  },
+  "tcmSafetyConsideration": {
+    "en": "Avoid in Yin deficiency with heat signs. Excessive consumption may cause internal heat.",
+    "zh-Hant": "陰虛內熱者忌用。多食損目。"
+  },
+  "combinesWith": [
+    {
+      "@id": "tcm/da-zao"
+    },
+    {
+      "@id": "tcm/bai-zhu"
+    }
+  ],
+  "sameAs": [
+    "http://www.wikidata.org/entity/Q129639"
+  ],
+  "source": "https://www.vitaherbapedia.com",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "created": "2026-02-19T00:00:00Z"
+}

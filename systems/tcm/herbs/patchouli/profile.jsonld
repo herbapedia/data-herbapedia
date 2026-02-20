@@ -1,0 +1,60 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/patchouli",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/patchouli"
+  },
+  "name": {
+    "en": "Patchouli",
+    "zh-Hant": "藿香葉 又名廣藿香",
+    "zh-Hans": "藿香叶 又名广藿香"
+  },
+  "pinyin": "Patchouli",
+  "chineseName": {
+    "zh-Hant": "藿香葉 又名廣藿香",
+    "zh-Hans": "藿香叶 又名广藿香"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Miscellaneous Records of Famous Physicians.\n",
+    "zh-Hant": "【藿香葉 又名廣藿香】History內容待翻譯補充。",
+    "zh-Hans": "【藿香叶 又名廣藿香】History內容待翻譯补充。"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Huoxiang comes from the patchouli plant, an aromatic flowering herb that has long been used in perfumes. This remedy is warm and aromatic. It enters the spleen, stomach and lung meridians and is able to dispel dampness, release the exterior, treat fungal infections and relieve nausea and vomiting. It can treat symptoms of damp that include thick, sticky saliva, a greasy coating on the tongue, nausea and abdominal bloating.\n",
+    "zh-Hant": "藿香屬於芳香化濕藥，藥味辛，藥性微溫，歸脾、胃、肺經，能化濕、解暑、止嘔，用於濕滯中焦引起的脘腹痞悶、食慾不振、噁心嘔吐，又能解表，用於外感濕邪的感冒，常與佩蘭等化濕藥同用。\n",
+    "zh-Hans": "藿香属于芳香化湿药，药味辛，药性微溫，歸脾、胃、肺经，能化湿、解暑、止嘔，用于湿滯中焦引起的脘腹痞悶、食慾不振、噁心嘔吐，又能解表，用于外感湿邪的感冒，常与佩蘭等化湿药同用。\n"
+  },
+  "tcmModernResearch": {
+    "en": "A decoction made from the herb has been found to have antifungal, spirocheticidal and antiviral activities.\n",
+    "zh-Hant": "【藿香葉 又名廣藿香】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【藿香叶 又名廣藿香】Modern Research內容待翻譯补充。"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:39.794Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q257757"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/milk-vetch",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "scientificName": "Astragalus membranaceus",
+  "name": {
+    "en": "Milk Vetch",
+    "zh-Hant": "黃耆",
+    "zh-Hans": "黄耆"
+  },
+  "description": {
+    "en": "Dried Root of Astragalus membranaceus (Fisch. ) Bunge, family Leguminosae.\n",
+    "zh-Hant": "黃耆（學名：Astragalus membranaceus）是一種具有藥用價值的天然產物。現代藥理學研究證實其含有多種生物活性成分，在傳統醫學和現代保健領域均有重要應用價值。",
+    "zh-Hans": "黃耆（学名：Astragalus membranaceus）是一种具有药用價值的天然產物。現代药理学研究证实其含有多种生物活性成分，在传统医学和現代保健領域均有重要应用價值。"
+  },
+  "image": "media/images/milk-vetch/milk-vetch.jpg",
+  "url": "https://herbapedia.org/plants/milk-vetch",
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/chiherbs-en/milk-vetch/",
+  "created": "2026-02-18T09:15:33.900Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+}

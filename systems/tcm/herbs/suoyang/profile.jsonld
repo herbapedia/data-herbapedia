@@ -1,0 +1,55 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/suoyang",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/suoyang"
+  },
+  "name": {
+    "en": "Suoyang",
+    "zh-Hant": "鎖陽",
+    "zh-Hans": "锁阳"
+  },
+  "pinyin": "Suoyang",
+  "chineseName": {
+    "zh-Hant": "鎖陽",
+    "zh-Hans": "锁阳"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Supplement to the Extension of the Materia Medica.\n",
+    "zh-Hant": "始載於《本草衍義補遺》\n",
+    "zh-Hans": "始载于《本草衍義补遺》\n"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Suoyang is made from the roots of cynomorium, a purple-coloured herb native to southwest Asia. This sweet, warming remedy enters the liver, kidney and large intestine channels and has a mild but powerful effect on the kidneys. It is used to tonify kidney yang and treat symptoms of jing (essence) efficiency such as impotence, amenorrhea and infertility, as well as overcome weakness of the back and knees. Suoyang is also an effective treatment for constipation.\n",
+    "zh-Hant": "鎖陽味甘而藥性溫，歸肝、腎、大腸經，能補腎陽、益精血、潤腸通便，主治腎陽虛衰的性功能下降、耳聲聽障、腰膝酸軟等，亦可用於腸燥便秘，常與肉蓯蓉、巴戟天、補骨脂等藥材同用。\n",
+    "zh-Hans": "鎖阳味甘而药性溫，歸肝、肾、大肠经，能补肾阳、益精血、润肠通便，主治肾阳虚衰的性功能下降、耳聲聽障、腰膝酸软等，亦可用于肠燥便秘，常与肉蓯蓉、巴戟天、补骨脂等药材同用。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:51.477Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q1188249"
+    }
+  ]
+}

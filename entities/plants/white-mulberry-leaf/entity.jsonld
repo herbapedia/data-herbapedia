@@ -1,0 +1,31 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/white-mulberry-leaf",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "scientificName": "Morus alba",
+  "name": {
+    "en": "White Mulberry Leaf",
+    "zh-Hant": "桑白皮",
+    "zh-Hans": "桑白皮"
+  },
+  "description": {
+    "en": "From the root epidemis of Morus alba L., family Moraceae.\n",
+    "zh-Hant": "桑白皮（學名：Morus alba）是一種具有藥用價值的漿果類植物。現代研究表明其富含花青素、類黃酮等抗氧化物質，具有保護心血管、改善視力等藥理活性。",
+    "zh-Hans": "桑白皮（学名：Morus alba）是一种具有药用價值的浆果类植物。現代研究表明其富含花青素、类黃酮等抗氧化物质，具有保護心血管、改善視力等药理活性。"
+  },
+  "image": "media/images/white-mulberry-leaf/white-mulberry-leaf.jpg",
+  "url": "https://herbapedia.org/plants/white-mulberry-leaf",
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/chiherbs-en/white-mulberry-leaf/",
+  "created": "2026-02-18T09:15:57.244Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.gbif.org/species/5361889"
+    }
+  ],
+  "gbifId": 5361889
+}

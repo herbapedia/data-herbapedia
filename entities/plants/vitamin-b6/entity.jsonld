@@ -1,0 +1,25 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/vitamin-b6",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "scientificName": "Pyridoxine Pyridoxal Pyridoxamine",
+  "name": {
+    "en": "Vitamin B6",
+    "zh-Hant": "維他命 B6 又名抗皮炎素",
+    "zh-Hans": "维他命 B6 又名抗皮炎素"
+  },
+  "description": {
+    "en": "Found in rice bran, wheat bran, sunflower seeds, avocados, bananas, corn, fish, kidney, lean meat, liver, nuts, poultry, rice (brown), soybeans and whole grains. Pyridoxine hydrochloride is the most commonly available synthetic form. Yeast (such as brewer's yeast), rice polish, and wheat germ are used as natural source supplements. As vitamin B6 is limited in many foods, supplemental B6 with synthetic pyridoxine hydrochloride may be indicated, especially for infants and during pregnancy and lactation, since processing and cooking foods may destroy up to 50 per cent of its vitamin B6 content.\n",
+    "zh-Hant": "維他命 B6 又名抗皮炎素是一種重要的營養素，參與人體多種生理代謝過程。作為必需營養素，對維持機體正常功能具有重要作用。臨床研究表明適量補充有助於維持身體健康。",
+    "zh-Hans": "維他命 B6 又名抗皮炎素是一种重要的營养素，參与人体多种生理代謝过程。作为必需營养素，對維持机体正常功能具有重要作用。臨床研究表明適量补充有助于維持身体健康。"
+  },
+  "image": "media/images/vitamin-b6/vitamin-b6.jpg",
+  "url": "https://herbapedia.org/plants/vitamin-b6",
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/vitamins-en/vitamin-b6/",
+  "created": "2026-02-18T09:16:45.679Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+}

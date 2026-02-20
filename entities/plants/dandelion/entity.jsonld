@@ -1,0 +1,34 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/dandelion",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "scientificName": "Taraxacum Officinale",
+  "name": {
+    "en": "Dandelion",
+    "zh-Hant": "蒲公英",
+    "zh-Hans": "蒲公英"
+  },
+  "description": {
+    "en": "The dried roots of the plant are most widely used in medicine.\n",
+    "zh-Hant": "蒲公英（學名：Taraxacum Officinale）是一種具有藥用價值的天然產物。現代藥理學研究證實其含有多種生物活性成分，在傳統醫學和現代保健領域均有重要應用價值。",
+    "zh-Hans": "蒲公英（学名：Taraxacum Officinale）是一种具有药用價值的天然產物。現代药理学研究证实其含有多种生物活性成分，在传统医学和現代保健領域均有重要应用價值。"
+  },
+  "image": "media/images/dandelion/dandelion.jpg",
+  "url": "https://herbapedia.org/plants/dandelion",
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/westherbs-en/dandelion/",
+  "created": "2026-02-18T09:16:21.567Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "containsChemical": [
+    {
+      "@id": "chemical/flavonoids"
+    },
+    {
+      "@id": "chemical/tannins"
+    }
+  ],
+  "modified": "2026-02-19T23:24:40.402Z"
+}

@@ -1,0 +1,60 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/milk-vetch",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/milk-vetch"
+  },
+  "name": {
+    "en": "Milk Vetch",
+    "zh-Hant": "黃耆",
+    "zh-Hans": "黄耆"
+  },
+  "pinyin": "Milk Vetch",
+  "chineseName": {
+    "zh-Hant": "黃耆",
+    "zh-Hans": "黄耆"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Divine Husbandman's Classic of the Materia Medica.\n",
+    "zh-Hant": "【黃耆】History內容待翻譯補充。",
+    "zh-Hans": "【黃耆】History內容待翻譯补充。"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Huangqi is a warm, sweet tasting herb that enters the lung and spleen meridians. Its main use is to tonify the chi and raise the yang, making it a useful treatment for extreme fatigue due to spleen deficiency; prolapsed organs; lung and blood deficiencies; chi collapse caused by heavy blood loss and chi deficiency caused by clinical cancer therapies. It also regulates water circulation, reduces oedema, relieves numbness or pain and promotes the healing of ulcers and sores. Huangqi replenishes lung chi, which means it can increase the respiratory tract's resistance to pathogens or allergens.\n",
+    "zh-Hant": "黃蓍是常用的補氣藥之一，性味甘而微溫，歸屬脾、肺經，能補氣升陽、益氣固表、利水消腫、托瘡生肌等，常用於治療因氣虛而引起的症狀，如：倦怠無力、食欲不振、容易腹瀉、器官下垂、自汗、浮腫、小便不利、面色萎黃等。\n",
+    "zh-Hans": "黃蓍是常用的补气药之一，性味甘而微溫，歸属脾、肺经，能补气升阳、益气固表、利水消腫、托瘡生肌等，常用于治疗因气虚而引起的症狀，如：倦怠無力、食欲不振、容易腹瀉、器官下垂、自汗、浮腫、小便不利、面色萎黃等。\n"
+  },
+  "tcmModernResearch": {
+    "en": "Astragalus had been found to have numerous pharmacological effects in laboratory studies, including decreasing the blood pressure, raising the metabolism, sedative and analgesic effects and acting as an antibiotic in the presence of certain bacteria.\n",
+    "zh-Hant": "【黃耆】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【黃耆】Modern Research內容待翻譯补充。"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:33.900Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q15532251"
+    }
+  ]
+}

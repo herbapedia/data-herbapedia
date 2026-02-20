@@ -1,0 +1,25 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/vitamin-b1",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "scientificName": "Thiamin",
+  "name": {
+    "en": "Vitamin B1",
+    "zh-Hant": "維他命 B1 又名硫安素",
+    "zh-Hans": "维他命 B1 又名硫安素"
+  },
+  "description": {
+    "en": "Thiamin is found in a large variety of animal and vegetable products but is abundant in few. Sources include lean pork, sunflower seeds, peanuts, wheat bran, kidney, nuts, whole wheat flour, enriched rice and white bread made with fortified flour.\n",
+    "zh-Hant": "維他命 B1 又名硫安素是一種重要的營養素，參與人體多種生理代謝過程。作為必需營養素，對維持機體正常功能具有重要作用。臨床研究表明適量補充有助於維持身體健康。",
+    "zh-Hans": "維他命 B1 又名硫安素是一种重要的營养素，參与人体多种生理代謝过程。作为必需營养素，對維持机体正常功能具有重要作用。臨床研究表明適量补充有助于維持身体健康。"
+  },
+  "image": "media/images/vitamin-b1/vitamin-b1.jpg",
+  "url": "https://herbapedia.org/plants/vitamin-b1",
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/vitamins-en/vitamin-b1/",
+  "created": "2026-02-18T09:16:41.684Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+}

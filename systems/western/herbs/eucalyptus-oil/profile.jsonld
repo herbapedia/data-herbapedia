@@ -1,0 +1,40 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/eucalyptus-oil",
+  "@type": [
+    "western:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/eucalyptus-oil"
+  },
+  "name": {
+    "en": "Eucalyptus oil",
+    "zh-Hant": "尤加利精油",
+    "zh-Hans": "尤加利精油"
+  },
+  "scientificName": "Eucalyptus globulus",
+  "hasOrganAffinity": [
+    {
+      "@id": "organ/respiratory"
+    }
+  ],
+  "westernHistory": {
+    "en": "Derived from the native Australian Blue-gum tree, its antiseptic qualities meant the fresh leaves were used by aborigines to treat wounds. The extracted oil has been popular in Europe for over 200 years.\n",
+    "zh-Hant": "尤加利精油起源於澳洲Blue-gum樹,其能消毒的性質被土著居民用作治理傷口。尤加利精油於歐洲200年來也大受歡迎。\n",
+    "zh-Hans": "尤加利精油起源於澳洲Blue-gum树,其能消毒的性质被土著居民用作治理伤口。尤加利精油於欧洲200年来也大受欢迎。\n"
+  },
+  "westernTraditionalUsage": {
+    "en": "Eucalyptus oil is most frequently used to relieve respiratory problems. Externally, its antiseptic and deodorant qualities make it suitable for use on purulent wounds and ulcers. Diluted, it can be applied to cold sores or used as a massage oil or antiseptic gargle. It can also be inhaled to aid clear thinking and concentration.\n",
+    "zh-Hant": "尤加利精油經常被用於舒緩呼吸道的問題。外用方面, 其防腐防臭的特質適用於已化膿的傷口和治理潰瘍。 被稀釋後的尤加利精油, 可適用於凍瘡或作按摩油或消毒漱口劑。 尤加利精油的香氣能保持頭腦清晰和精神集中。\n",
+    "zh-Hans": "尤加利精油经常被用於舒缓呼吸道的问题。外用方面, 其防腐防臭的特质适用於已化脓的伤口和治理溃疡。 被稀释後的尤加利精油, 可适用於冻疮或作按摩油或消毒漱口剂。 尤加利精油的香气能保持头脑清晰和精神集中。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-19T15:32:30.549Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "description": {
+    "en": "Produced by distillation of the leaves and twigs of the Eucalyptus tree.\n",
+    "zh-Hant": "尤加利精油提取自桉樹的樹葉和嫩枝。\n",
+    "zh-Hans": "尤加利精油提取自桉树的树叶和嫩枝。\n"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/zisuye",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "scientificName": "Perilla frutescens",
+  "name": {
+    "en": "Zisuye",
+    "zh-Hant": "紫蘇葉",
+    "zh-Hans": "紫苏叶"
+  },
+  "description": {
+    "en": "The leaf of Perilla frutescens (L.) Britt. var. acuta (Thunb.) Kudo, family Labiatae.\n",
+    "zh-Hant": "紫蘇葉（學名：Perilla frutescens）是一種具有藥用價值的天然產物。現代藥理學研究證實其含有多種生物活性成分，在傳統醫學和現代保健領域均有重要應用價值。",
+    "zh-Hans": "紫蘇叶（学名：Perilla frutescens）是一种具有药用價值的天然產物。現代药理学研究证实其含有多种生物活性成分，在传统医学和現代保健領域均有重要应用價值。"
+  },
+  "image": "media/images/zisuye/zisuye.jpg",
+  "url": "https://herbapedia.org/plants/zisuye",
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/chiherbs-en/zisuye/",
+  "created": "2026-02-18T09:16:08.717Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.gbif.org/species/5341394"
+    }
+  ],
+  "gbifId": 5341394
+}

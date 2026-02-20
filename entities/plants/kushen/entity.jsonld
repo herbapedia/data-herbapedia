@@ -1,0 +1,31 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/kushen",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "scientificName": "Sophora flavescens",
+  "name": {
+    "en": "Kushen",
+    "zh-Hant": "苦蔘",
+    "zh-Hans": "苦蔘"
+  },
+  "description": {
+    "en": "From the root of Sophora flavescens Ait., family Leguminosae.\n",
+    "zh-Hant": "苦蔘（學名：Sophora flavescens）是一種具有藥用價值的天然產物。現代藥理學研究證實其含有多種生物活性成分，在傳統醫學和現代保健領域均有重要應用價值。",
+    "zh-Hans": "苦参（学名：Sophora flavescens）是一种具有药用價值的天然產物。現代药理学研究证实其含有多种生物活性成分，在传统医学和現代保健領域均有重要应用價值。"
+  },
+  "image": "media/images/kushen/kushen.jpg",
+  "url": "https://herbapedia.org/plants/kushen",
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/chiherbs-en/kushen/",
+  "created": "2026-02-18T09:15:28.129Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.gbif.org/species/2959073"
+    }
+  ],
+  "gbifId": 2959073
+}

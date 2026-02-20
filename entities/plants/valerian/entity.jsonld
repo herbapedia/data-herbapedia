@@ -1,0 +1,47 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/valerian",
+  "@type": [
+    "botany:Plant",
+    "schema:Thing"
+  ],
+  "name": {
+    "en": "Valerian",
+    "zh-Hant": "纈草",
+    "zh-Hans": "缬草"
+  },
+  "commonName": {
+    "en": "Valerian Root",
+    "zh-Hant": "纈草根",
+    "zh-Hans": "缬草根"
+  },
+  "scientificName": "Valeriana officinalis",
+  "family": "Caprifoliaceae",
+  "genus": "Valeriana",
+  "description": {
+    "en": "Valerian is a perennial flowering plant native to Europe and Asia. The root is used medicinally for its calming and sedative properties.",
+    "zh-Hant": "纈草是一種多年生開花植物，原生於歐洲和亞洲。其根部因具有鎮靜和安神特性而被用於藥用。",
+    "zh-Hans": "缬草是一种多年生开花植物，原生於欧洲和亚洲。其根部因具有镇静和安神特性而被用于药用。"
+  },
+  "botanicalDescription": {
+    "en": "Perennial herb growing to 1-2 meters tall. Leaves are pinnate, divided into several leaflets. Flowers are pink or white, produced in dense clusters. The root has a strong, distinctive odor.",
+    "zh-Hant": "多年生草本植物，高1-2米。葉為羽狀，分成多個小葉。花粉紅色或白色，密集成簇生長。根部有強烈的特殊氣味。",
+    "zh-Hans": "多年生草本植物，高1-2米。叶为羽状，分成多个小叶。花粉红色或白色，密集成簇生长。根部有强烈的特殊气味。"
+  },
+  "image": "media/images/valerian/valerian.jpg",
+  "containsChemical": [
+    {
+      "@id": "chemical/alkaloids"
+    },
+    {
+      "@id": "chemical/essential-oils"
+    }
+  ],
+  "sameAs": [
+    "https://www.wikidata.org/wiki/Q158852"
+  ],
+  "gbifId": "2888748",
+  "created": "2026-02-20T00:00:00.000Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "modified": "2026-02-19T23:24:40.401Z"
+}

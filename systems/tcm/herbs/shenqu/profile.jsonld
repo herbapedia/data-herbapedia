@@ -1,0 +1,55 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/shenqu",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/shenqu"
+  },
+  "name": {
+    "en": "Shenqu",
+    "zh-Hant": "炒神曲",
+    "zh-Hans": "炒神曲"
+  },
+  "pinyin": "Shenqu",
+  "chineseName": {
+    "zh-Hant": "炒神曲",
+    "zh-Hans": "炒神曲"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Materia Medica of Medicinal Properties.\n",
+    "zh-Hant": "【炒神曲】History內容待翻譯補充。",
+    "zh-Hans": "【炒神曲】History內容待翻譯补充。"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Shenqu, a leavened mixture of grains and herbs, is sweet, acrid and warm in nature. It enters the spleen and stomach meridians to aid in the digestion and absorption of nutrients, reduce food stagnation and bring harmony and balance to the stomach.\n",
+    "zh-Hant": "神曲是由麵粉和多種藥材混合發酵而成，味道甘、辛，藥性溫，歸脾、胃經，功效是消食和胃，用於治療飲食積滯而致的胃脹腹痛、食慾不振，本品略有解表之力，所以尤其適合外感兼食滯的情況。\n",
+    "zh-Hans": "神曲是由麵粉和多种药材混合發酵而成，味道甘、辛，药性溫，歸脾、胃经，功效是消食和胃，用于治疗饮食积滯而致的胃脹腹痛、食慾不振，本品略有解表之力，所以尤其適合外感兼食滯的情況。\n"
+  },
+  "tcmModernResearch": {
+    "en": "Shenqu contains many different enzymes which aid the digestion of carbohydrates, and has been found to be extremely effective in treating indigestion in infants and young children.\n",
+    "zh-Hant": "【炒神曲】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【炒神曲】Modern Research內容待翻譯补充。"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:47.311Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+}

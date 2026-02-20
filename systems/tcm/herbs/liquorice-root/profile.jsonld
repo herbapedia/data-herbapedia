@@ -1,0 +1,60 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/liquorice-root",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/liquorice-root"
+  },
+  "name": {
+    "en": "Liquorice Root",
+    "zh-Hant": "甘草",
+    "zh-Hans": "甘草"
+  },
+  "pinyin": "Liquorice Root",
+  "chineseName": {
+    "zh-Hant": "甘草",
+    "zh-Hans": "甘草"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Divine Husbandman's Classic of the Materia Medica, clasified as upper class.\n",
+    "zh-Hant": "始載於《神農本草經》，列為上品\n",
+    "zh-Hans": "始载于《神農本草经》，列为上品\n"
+  },
+  "tcmTraditionalUsage": {
+    "en": "A sweet tasting and smelling herb commonly known in English as liquorice root, gancao is able to enter all of the meridians, especially the stomach, spleen, lung and heart, making it one of the most useful substances in Chinese medicine. Its uses are to tonify the spleen and augment the chi. It also moderates and harmonises the characteristics of other herbs, moistens the lungs, relieves pain, clears heat and treats poisoning. Gancao is used to treat zang zao disorder, in which the patient typically suffers from emotional instability with a wan appearance and disturbed sleep caused by a combination of heart deficiency and liver stagnation.\n",
+    "zh-Hant": "甘草可分生用或蜜炙用，生甘草功能是清熱解毒、袪痰止咳，常用於外感熱邪、咽喉腫痛等情況，炙甘草味甘而藥性平和，在中藥中被稱為「國老」，能補中益氣、緩急止痛，並能調和各藥藥性，因此十分常用。\n",
+    "zh-Hans": "甘草可分生用或蜜炙用，生甘草功能是清热解毒、袪痰止咳，常用于外感热邪、咽喉腫痛等情況，炙甘草味甘而药性平和，在中药中被稱为「国老」，能补中益气、缓急止痛，並能调和各药药性，因此十分常用。\n"
+  },
+  "tcmModernResearch": {
+    "en": "Its active ingredient, glycyrrhizin, can help regulate gastric functions and has a marked detoxifying effect in treating poisoning by certain drugs, foods, and substances such as enterotoxin, herbicides and pesticides. It is also an analgesic and anti-inflammatory.\n",
+    "zh-Hant": "【甘草】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【甘草】Modern Research內容待翻譯补充。"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:31.423Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q1196166"
+    }
+  ]
+}

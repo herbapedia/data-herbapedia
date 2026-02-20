@@ -1,0 +1,209 @@
+{
+  "@context": "../../schema/context/ayurveda.jsonld",
+  "@graph": [
+    {
+      "@id": "rasa/madhura",
+      "@type": "ayurveda:Rasa",
+      "rasaValue": "sweet",
+      "prefLabel": {
+        "en": "Sweet",
+        "sa": "मधुर",
+        "hi": "मीठा",
+        "zh-Hant": "Sweet",
+        "zh-Hans": "Sweet"
+      },
+      "sanskritName": "Madhura",
+      "description": {
+        "en": "Sweet taste nourishes tissues, increases Kapha, decreases Vata and Pitta. It promotes strength and longevity.",
+        "sa": "मधुररसः शरीरं पुष्टिं च ददाति।"
+      },
+      "mahabhuta": [
+        "earth",
+        "water"
+      ],
+      "increasesDosha": [
+        {
+          "@id": "dosha/kapha"
+        }
+      ],
+      "decreasesDosha": [
+        {
+          "@id": "dosha/vata"
+        },
+        {
+          "@id": "dosha/pitta"
+        }
+      ]
+    },
+    {
+      "@id": "rasa/amla",
+      "@type": "ayurveda:Rasa",
+      "rasaValue": "sour",
+      "prefLabel": {
+        "en": "Sour",
+        "sa": "अम्ल",
+        "hi": "खट्टा",
+        "zh-Hant": "Sour",
+        "zh-Hans": "Sour"
+      },
+      "sanskritName": "Amla",
+      "description": {
+        "en": "Sour taste stimulates digestion, increases Pitta and Kapha, decreases Vata. It promotes appetite and secretion of enzymes.",
+        "sa": "अम्लरसः अग्निं दीपयति।"
+      },
+      "mahabhuta": [
+        "earth",
+        "fire"
+      ],
+      "increasesDosha": [
+        {
+          "@id": "dosha/pitta"
+        },
+        {
+          "@id": "dosha/kapha"
+        }
+      ],
+      "decreasesDosha": [
+        {
+          "@id": "dosha/vata"
+        }
+      ]
+    },
+    {
+      "@id": "rasa/lavana",
+      "@type": "ayurveda:Rasa",
+      "rasaValue": "salty",
+      "prefLabel": {
+        "en": "Salty",
+        "sa": "लवण",
+        "hi": "नमकीन",
+        "zh-Hant": "Salty",
+        "zh-Hans": "Salty"
+      },
+      "sanskritName": "Lavana",
+      "description": {
+        "en": "Salty taste softens tissues, increases Pitta and Kapha, decreases Vata. It promotes digestion and retention of water.",
+        "sa": "लवणरसः मृदुतां जनयति।"
+      },
+      "mahabhuta": [
+        "water",
+        "fire"
+      ],
+      "increasesDosha": [
+        {
+          "@id": "dosha/pitta"
+        },
+        {
+          "@id": "dosha/kapha"
+        }
+      ],
+      "decreasesDosha": [
+        {
+          "@id": "dosha/vata"
+        }
+      ]
+    },
+    {
+      "@id": "rasa/katu",
+      "@type": "ayurveda:Rasa",
+      "rasaValue": "pungent",
+      "prefLabel": {
+        "en": "Pungent",
+        "sa": "कटु",
+        "hi": "तीखा",
+        "zh-Hant": "Pungent",
+        "zh-Hans": "Pungent"
+      },
+      "sanskritName": "Katu",
+      "description": {
+        "en": "Pungent taste stimulates digestion and circulation, increases Vata and Pitta, decreases Kapha. It promotes sweating and cleansing.",
+        "sa": "कटुरसः अग्निं वर्धयति।"
+      },
+      "mahabhuta": [
+        "fire",
+        "air"
+      ],
+      "increasesDosha": [
+        {
+          "@id": "dosha/vata"
+        },
+        {
+          "@id": "dosha/pitta"
+        }
+      ],
+      "decreasesDosha": [
+        {
+          "@id": "dosha/kapha"
+        }
+      ]
+    },
+    {
+      "@id": "rasa/tikta",
+      "@type": "ayurveda:Rasa",
+      "rasaValue": "bitter",
+      "prefLabel": {
+        "en": "Bitter",
+        "sa": "तिक्त",
+        "hi": "कड़वा",
+        "zh-Hant": "Bitter",
+        "zh-Hans": "Bitter"
+      },
+      "sanskritName": "Tikta",
+      "description": {
+        "en": "Bitter taste cleanses the mouth, increases Vata, decreases Pitta and Kapha. It promotes detoxification and clarity.",
+        "sa": "तिक्तरसः शोधनं करोति।"
+      },
+      "mahabhuta": [
+        "air",
+        "ether"
+      ],
+      "increasesDosha": [
+        {
+          "@id": "dosha/vata"
+        }
+      ],
+      "decreasesDosha": [
+        {
+          "@id": "dosha/pitta"
+        },
+        {
+          "@id": "dosha/kapha"
+        }
+      ]
+    },
+    {
+      "@id": "rasa/kashaya",
+      "@type": "ayurveda:Rasa",
+      "rasaValue": "astringent",
+      "prefLabel": {
+        "en": "Astringent",
+        "sa": "कषाय",
+        "hi": "कसैला",
+        "zh-Hant": "Astringent",
+        "zh-Hans": "Astringent"
+      },
+      "sanskritName": "Kashaya",
+      "description": {
+        "en": "Astringent taste binds and dries, increases Vata, decreases Pitta and Kapha. It promotes healing and binding of tissues.",
+        "sa": "कषायरसः संग्रही भवति।"
+      },
+      "mahabhuta": [
+        "air",
+        "earth"
+      ],
+      "increasesDosha": [
+        {
+          "@id": "dosha/vata"
+        }
+      ],
+      "decreasesDosha": [
+        {
+          "@id": "dosha/pitta"
+        },
+        {
+          "@id": "dosha/kapha"
+        }
+      ]
+    }
+  ]
+}

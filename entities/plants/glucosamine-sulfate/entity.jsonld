@@ -1,0 +1,25 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/glucosamine-sulfate",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "scientificName": "Glucosamine Sulfate",
+  "name": {
+    "en": "Glucosamine Sulfate",
+    "zh-Hant": "硫酸葡萄糖胺",
+    "zh-Hans": "硫酸葡萄糖胺"
+  },
+  "description": {
+    "en": "Supplemental sources of glucosamine sulfate are derived from chitin, the hard outer shells of shrimp, lobsters and crabs.\n",
+    "zh-Hant": "硫酸葡萄糖胺（學名：Glucosamine Sulfate）是一種具有藥用價值的天然產物。現代藥理學研究證實其含有多種生物活性成分，在傳統醫學和現代保健領域均有重要應用價值。",
+    "zh-Hans": "硫酸葡萄糖胺（学名：Glucosamine Sulfate）是一种具有药用價值的天然產物。現代药理学研究证实其含有多种生物活性成分，在传统医学和現代保健領域均有重要应用價值。"
+  },
+  "image": "media/images/glucosamine-sulfate/glucosamine-sulfate.jpg",
+  "url": "https://herbapedia.org/plants/glucosamine-sulfate",
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/nutrients-en/glucosamine-sulfate/",
+  "created": "2026-02-18T09:17:08.171Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+}

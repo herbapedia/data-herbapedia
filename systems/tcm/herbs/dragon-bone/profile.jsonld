@@ -1,0 +1,53 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/dragon-bone",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/dragon-bone"
+  },
+  "name": {
+    "en": "Dragon bone",
+    "zh-Hant": "龍骨",
+    "zh-Hans": "龙骨"
+  },
+  "pinyin": "Dragon bone",
+  "chineseName": {
+    "zh-Hant": "龍骨",
+    "zh-Hans": "龙骨"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in the Divine Husbandman's Classic of the Materia Medica, classified as upper class.\n",
+    "zh-Hant": "始載於《神農本草經》，列為上品\n",
+    "zh-Hans": "始载于《神農本草经》，列为上品\n"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Known as dragon bones, longgu is in fact obtained from the fossils of prehistoric animals such as deer and rhinoceros found in China's central and northeast provinces. A sweet, acrid herb that is cool in nature, it enters the heart and liver meridians. Longu helps to calm the liver, anchor rising yang, prevent the leakage of fluids and relieve symptoms of sadness. It benefits people with feelings of unhappiness, insomnia, dizziness and other associated symptoms.\n",
+    "zh-Hant": "龍骨是最常用的重鎮安神中藥，是古代多種大哺乳類動物的骨骼化石，藥味甘、澀，藥性平，歸心、肝、腎經，能夠鎮驚安神、平肝潛陽、收斂固澀，用於心神不寧、心悸失眠、肝陽頭暈、煩躁易怒等情況，常與牡蠣同用。\n",
+    "zh-Hans": "龍骨是最常用的重镇安神中药，是古代多种大哺乳类动物的骨骼化石，药味甘、涩，药性平，歸心、肝、肾经，能夠镇惊安神、平肝潛阳、收斂固涩，用于心神不寧、心悸失眠、肝阳头暈、煩躁易怒等情況，常与牡蠣同用。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:10.838Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    "https://www.wikidata.org/wiki/Q27630944"
+  ]
+}

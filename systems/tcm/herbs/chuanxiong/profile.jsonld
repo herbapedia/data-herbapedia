@@ -1,0 +1,60 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/chuanxiong",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/chuanxiong"
+  },
+  "name": {
+    "en": "Chuanxiong",
+    "zh-Hant": "川芎",
+    "zh-Hans": "川芎"
+  },
+  "pinyin": "Chuanxiong",
+  "chineseName": {
+    "zh-Hant": "川芎",
+    "zh-Hans": "川芎"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in the Divine Husbandman's Classic of the Materia Medica, classified as upper class.\n",
+    "zh-Hant": "始載於《神農本草經》，列為上品\n",
+    "zh-Hans": "始载于《神農本草经》，列为上品\n"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Chuanxiong, made from the roots of the Sichuan lovage plant, is a warming herb that enters the liver, gallbladder and pericardium channels. It activates chi and blood circulation, dispels wind and relieves all kinds of aches and pains. It is especially useful for treating headaches, whether caused by wind, blood stasis or a deficiency of the blood. Other common uses include treating menstrual and obstetric disorders.\n",
+    "zh-Hant": "川芎是傳統的活血止痛藥，藥味辛，藥性溫，歸於肝、膽、心包經，能活血行氣、袪風止痛，常用於氣滯血瘀的痛症，例如頭痛、腹痛、胸脅疼痛、關節疼痛、外傷腫痛等，亦常用於月經不調，例如遲經、閉經等等。\n",
+    "zh-Hans": "川芎是传统的活血止痛药，药味辛，药性溫，歸于肝、胆、心包经，能活血行气、袪風止痛，常用于气滯血瘀的痛症，例如头痛、腹痛、胸脅疼痛、关节疼痛、外傷腫痛等，亦常用于月经不调，例如遲经、閉经等等。\n"
+  },
+  "tcmModernResearch": {
+    "en": "Chuanxiong contains the compound ligustrazine, which has been used to treat conditions including renal failure, lung diseases with fibrosis and strokes, due to its anti-inflammatory and antioxidant properties.\n",
+    "zh-Hant": "【川芎】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【川芎】Modern Research內容待翻譯补充。"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:04.206Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q15583445"
+    }
+  ]
+}

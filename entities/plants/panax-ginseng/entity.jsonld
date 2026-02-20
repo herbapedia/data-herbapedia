@@ -1,0 +1,81 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/panax-ginseng",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "scientificName": "Panax ginseng",
+  "family": "Araliaceae",
+  "genus": "Panax",
+  "species": "ginseng",
+  "gbifID": "3036592",
+  "name": {
+    "en": "Ginseng",
+    "zh-Hant": "人蔘",
+    "zh-Hans": "人参",
+    "ko": "인삼",
+    "ja": "人参"
+  },
+  "commonName": {
+    "en": "Asian Ginseng, Korean Ginseng",
+    "zh-Hant": "高麗蔘",
+    "ko": "고려인삼",
+    "zh-Hans": "人参"
+  },
+  "alternateName": [
+    "Chinese Ginseng",
+    "Oriental Ginseng"
+  ],
+  "description": {
+    "en": "A slow-growing perennial plant native to the mountainous forests of East Asia. The root has been used medicinally for thousands of years.",
+    "zh-Hant": "人蔘（學名：Panax ginseng）為多年生草本植物，以其根部入藥。在中醫藥理論中歸屬於補益類藥物，具有補氣養血、健脾益肺等功效，是重要的傳統中藥材。",
+    "zh-Hans": "人参（学名：Panax ginseng）为多年生草本植物，以其根部入药。在中医药理論中歸属于补益类药物，具有补气养血、健脾益肺等功效，是重要的传统中药材。"
+  },
+  "botanicalDescription": {
+    "en": "Panax ginseng is a perennial herb growing 30-60 cm tall. The plant has a fleshy root that can live for over 100 years. Leaves are compound with 5 leaflets arranged in a palmate pattern. Small white flowers bloom in summer, followed by red berries."
+  },
+  "geographicalDistribution": {
+    "en": "Native to mountainous regions of Korea, Northeast China (Manchuria), and far eastern Russia. Cultivated extensively in Korea, China, and Japan."
+  },
+  "hasPart": [
+    {
+      "@id": "plant/panax-ginseng#root",
+      "@type": "herbapedia:PlantPart",
+      "name": {
+        "en": "Root",
+        "zh-Hant": "根"
+      }
+    },
+    {
+      "@id": "plant/panax-ginseng#leaf",
+      "@type": "herbapedia:PlantPart",
+      "name": {
+        "en": "Leaf",
+        "zh-Hant": "葉"
+      }
+    }
+  ],
+  "containsChemical": [
+    {
+      "@id": "chemical/ginsenosides"
+    },
+    {
+      "@id": "chemical/polysaccharides"
+    },
+    {
+      "@id": "chemical/ginsenoses"
+    }
+  ],
+  "image": "media/images/panax-ginseng/main.jpg",
+  "url": "https://herbapedia.org/plants/panax-ginseng",
+  "sameAs": [
+    "http://www.wikidata.org/entity/Q192163",
+    "https://www.gbif.org/species/3036592",
+    "https://en.wikipedia.org/wiki/Ginseng"
+  ],
+  "source": "https://www.vitaherbapedia.com/ginseng",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "created": "2026-02-19T00:00:00Z",
+  "modified": "2026-02-19T00:00:00Z"
+}

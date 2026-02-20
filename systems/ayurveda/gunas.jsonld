@@ -1,0 +1,365 @@
+{
+  "@context": "../../schema/context/ayurveda.jsonld",
+  "@graph": [
+    {
+      "@id": "guna/guru",
+      "@type": "ayurveda:Guna",
+      "gunaValue": "heavy",
+      "prefLabel": {
+        "en": "Heavy (Guru)",
+        "sa": "गुरु",
+        "zh-Hant": "Heavy (Guru)",
+        "zh-Hans": "Heavy (Guru)"
+      },
+      "sanskritName": "Guru",
+      "description": {
+        "en": "Heavy quality promotes stability, grounding, and increases Kapha. Opposite of light."
+      },
+      "opposite": {
+        "@id": "guna/laghu"
+      }
+    },
+    {
+      "@id": "guna/laghu",
+      "@type": "ayurveda:Guna",
+      "gunaValue": "light",
+      "prefLabel": {
+        "en": "Light (Laghu)",
+        "sa": "लघु",
+        "zh-Hant": "Light (Laghu)",
+        "zh-Hans": "Light (Laghu)"
+      },
+      "sanskritName": "Laghu",
+      "description": {
+        "en": "Light quality promotes mobility, clarity, and increases Vata. Opposite of heavy."
+      },
+      "opposite": {
+        "@id": "guna/guru"
+      }
+    },
+    {
+      "@id": "guna/sheeta",
+      "@type": "ayurveda:Guna",
+      "gunaValue": "cold",
+      "prefLabel": {
+        "en": "Cold (Sheeta)",
+        "sa": "शीत",
+        "zh-Hant": "Cold (Sheeta)",
+        "zh-Hans": "Cold (Sheeta)"
+      },
+      "sanskritName": "Sheeta",
+      "description": {
+        "en": "Cold quality reduces heat, increases Kapha and Vata. Opposite of hot."
+      },
+      "opposite": {
+        "@id": "guna/ushna"
+      }
+    },
+    {
+      "@id": "guna/ushna",
+      "@type": "ayurveda:Guna",
+      "gunaValue": "hot",
+      "prefLabel": {
+        "en": "Hot (Ushna)",
+        "sa": "उष्ण",
+        "zh-Hant": "Hot (Ushna)",
+        "zh-Hans": "Hot (Ushna)"
+      },
+      "sanskritName": "Ushna",
+      "description": {
+        "en": "Hot quality increases heat, digestion, and Pitta. Opposite of cold."
+      },
+      "opposite": {
+        "@id": "guna/sheeta"
+      }
+    },
+    {
+      "@id": "guna/sniqda",
+      "@type": "ayurveda:Guna",
+      "gunaValue": "oily",
+      "prefLabel": {
+        "en": "Oily/Unctuous (Snigdha)",
+        "sa": "स्निग्ध",
+        "zh-Hant": "Oily/Unctuous (Snigdha)",
+        "zh-Hans": "Oily/Unctuous (Snigdha)"
+      },
+      "sanskritName": "Snigdha",
+      "description": {
+        "en": "Oily quality promotes lubrication, smoothness, and increases Kapha and Pitta. Opposite of dry."
+      },
+      "opposite": {
+        "@id": "guna/ruksha"
+      }
+    },
+    {
+      "@id": "guna/ruksha",
+      "@type": "ayurveda:Guna",
+      "gunaValue": "dry",
+      "prefLabel": {
+        "en": "Dry (Ruksha)",
+        "sa": "रूक्ष",
+        "zh-Hant": "Dry (Ruksha)",
+        "zh-Hans": "Dry (Ruksha)"
+      },
+      "sanskritName": "Ruksha",
+      "description": {
+        "en": "Dry quality promotes absorption, reduces moisture, and increases Vata. Opposite of oily."
+      },
+      "opposite": {
+        "@id": "guna/sniqda"
+      }
+    },
+    {
+      "@id": "guna/manda",
+      "@type": "ayurveda:Guna",
+      "gunaValue": "dull",
+      "prefLabel": {
+        "en": "Dull/Slow (Manda)",
+        "sa": "मन्द",
+        "zh-Hant": "Dull/Slow (Manda)",
+        "zh-Hans": "Dull/Slow (Manda)"
+      },
+      "sanskritName": "Manda",
+      "description": {
+        "en": "Dull quality promotes slowness, lethargy, and increases Kapha. Opposite of sharp."
+      },
+      "opposite": {
+        "@id": "guna/tikshna"
+      }
+    },
+    {
+      "@id": "guna/tikshna",
+      "@type": "ayurveda:Guna",
+      "gunaValue": "sharp",
+      "prefLabel": {
+        "en": "Sharp/Penetrating (Tikshna)",
+        "sa": "तीक्ष्ण",
+        "zh-Hant": "Sharp/Penetrating (Tikshna)",
+        "zh-Hans": "Sharp/Penetrating (Tikshna)"
+      },
+      "sanskritName": "Tikshna",
+      "description": {
+        "en": "Sharp quality promotes quick action, penetration, and increases Pitta. Opposite of dull."
+      },
+      "opposite": {
+        "@id": "guna/manda"
+      }
+    },
+    {
+      "@id": "guna/shlakshna",
+      "@type": "ayurveda:Guna",
+      "gunaValue": "smooth",
+      "prefLabel": {
+        "en": "Smooth (Shlakshna)",
+        "sa": "श्लक्ष्ण",
+        "zh-Hant": "Smooth (Shlakshna)",
+        "zh-Hans": "Smooth (Shlakshna)"
+      },
+      "sanskritName": "Shlakshna",
+      "description": {
+        "en": "Smooth quality promotes comfort, healing, and increases Kapha. Opposite of rough."
+      },
+      "opposite": {
+        "@id": "guna/khara"
+      }
+    },
+    {
+      "@id": "guna/khara",
+      "@type": "ayurveda:Guna",
+      "gunaValue": "rough",
+      "prefLabel": {
+        "en": "Rough (Khara)",
+        "sa": "खर",
+        "zh-Hant": "Rough (Khara)",
+        "zh-Hans": "Rough (Khara)"
+      },
+      "sanskritName": "Khara",
+      "description": {
+        "en": "Rough quality promotes friction, scraping, and increases Vata. Opposite of smooth."
+      },
+      "opposite": {
+        "@id": "guna/shlakshna"
+      }
+    },
+    {
+      "@id": "guna/sandra",
+      "@type": "ayurveda:Guna",
+      "gunaValue": "dense",
+      "prefLabel": {
+        "en": "Dense (Sandra)",
+        "sa": "सन्द्र",
+        "zh-Hant": "Dense (Sandra)",
+        "zh-Hans": "Dense (Sandra)"
+      },
+      "sanskritName": "Sandra",
+      "description": {
+        "en": "Dense quality promotes solidity, stability, and increases Kapha. Opposite of liquid."
+      },
+      "opposite": {
+        "@id": "guna/drava"
+      }
+    },
+    {
+      "@id": "guna/drava",
+      "@type": "ayurveda:Guna",
+      "gunaValue": "liquid",
+      "prefLabel": {
+        "en": "Liquid (Drava)",
+        "sa": "द्रव",
+        "zh-Hant": "Liquid (Drava)",
+        "zh-Hans": "Liquid (Drava)"
+      },
+      "sanskritName": "Drava",
+      "description": {
+        "en": "Liquid quality promotes flow, nourishment, and increases Kapha and Pitta. Opposite of dense."
+      },
+      "opposite": {
+        "@id": "guna/sandra"
+      }
+    },
+    {
+      "@id": "guna/mrudu",
+      "@type": "ayurveda:Guna",
+      "gunaValue": "soft",
+      "prefLabel": {
+        "en": "Soft (Mrudu)",
+        "sa": "मृदु",
+        "zh-Hant": "Soft (Mrudu)",
+        "zh-Hans": "Soft (Mrudu)"
+      },
+      "sanskritName": "Mrudu",
+      "description": {
+        "en": "Soft quality promotes gentleness, flexibility, and increases Kapha. Opposite of hard."
+      },
+      "opposite": {
+        "@id": "guna/kathina"
+      }
+    },
+    {
+      "@id": "guna/kathina",
+      "@type": "ayurveda:Guna",
+      "gunaValue": "hard",
+      "prefLabel": {
+        "en": "Hard (Kathina)",
+        "sa": "कठिन",
+        "zh-Hant": "Hard (Kathina)",
+        "zh-Hans": "Hard (Kathina)"
+      },
+      "sanskritName": "Kathina",
+      "description": {
+        "en": "Hard quality promotes rigidity, structure, and increases Vata. Opposite of soft."
+      },
+      "opposite": {
+        "@id": "guna/mrudu"
+      }
+    },
+    {
+      "@id": "guna/sthira",
+      "@type": "ayurveda:Guna",
+      "gunaValue": "stable",
+      "prefLabel": {
+        "en": "Stable (Sthira)",
+        "sa": "स्थिर",
+        "zh-Hant": "Stable (Sthira)",
+        "zh-Hans": "Stable (Sthira)"
+      },
+      "sanskritName": "Sthira",
+      "description": {
+        "en": "Stable quality promotes grounding, steadiness, and increases Kapha. Opposite of mobile."
+      },
+      "opposite": {
+        "@id": "guna/chala"
+      }
+    },
+    {
+      "@id": "guna/chala",
+      "@type": "ayurveda:Guna",
+      "gunaValue": "mobile",
+      "prefLabel": {
+        "en": "Mobile (Chala)",
+        "sa": "चल",
+        "zh-Hant": "Mobile (Chala)",
+        "zh-Hans": "Mobile (Chala)"
+      },
+      "sanskritName": "Chala",
+      "description": {
+        "en": "Mobile quality promotes movement, change, and increases Vata. Opposite of stable."
+      },
+      "opposite": {
+        "@id": "guna/sthira"
+      }
+    },
+    {
+      "@id": "guna/sukshma",
+      "@type": "ayurveda:Guna",
+      "gunaValue": "subtle",
+      "prefLabel": {
+        "en": "Subtle (Sukshma)",
+        "sa": "सूक्ष्म",
+        "zh-Hant": "Subtle (Sukshma)",
+        "zh-Hans": "Subtle (Sukshma)"
+      },
+      "sanskritName": "Sukshma",
+      "description": {
+        "en": "Subtle quality promotes penetration to deep tissues and increases Vata. Opposite of gross."
+      },
+      "opposite": {
+        "@id": "guna/sthula"
+      }
+    },
+    {
+      "@id": "guna/sthula",
+      "@type": "ayurveda:Guna",
+      "gunaValue": "gross",
+      "prefLabel": {
+        "en": "Gross (Sthula)",
+        "sa": "स्थूल",
+        "zh-Hant": "Gross (Sthula)",
+        "zh-Hans": "Gross (Sthula)"
+      },
+      "sanskritName": "Sthula",
+      "description": {
+        "en": "Gross quality promotes mass, bulk, and increases Kapha. Opposite of subtle."
+      },
+      "opposite": {
+        "@id": "guna/sukshma"
+      }
+    },
+    {
+      "@id": "guna/picchila",
+      "@type": "ayurveda:Guna",
+      "gunaValue": "cloudy",
+      "prefLabel": {
+        "en": "Cloudy/Viscous (Picchila)",
+        "sa": "पिच्छिल",
+        "zh-Hant": "Cloudy/Viscous (Picchila)",
+        "zh-Hans": "Cloudy/Viscous (Picchila)"
+      },
+      "sanskritName": "Picchila",
+      "description": {
+        "en": "Cloudy/viscous quality promotes stickiness, cohesion, and increases Kapha. Opposite of clear."
+      },
+      "opposite": {
+        "@id": "guna/vishada"
+      }
+    },
+    {
+      "@id": "guna/vishada",
+      "@type": "ayurveda:Guna",
+      "gunaValue": "clear",
+      "prefLabel": {
+        "en": "Clear (Vishada)",
+        "sa": "विशद",
+        "zh-Hant": "Clear (Vishada)",
+        "zh-Hans": "Clear (Vishada)"
+      },
+      "sanskritName": "Vishada",
+      "description": {
+        "en": "Clear quality promotes clarity, non-stickiness, and increases Vata. Opposite of cloudy."
+      },
+      "opposite": {
+        "@id": "guna/picchila"
+      }
+    }
+  ]
+}

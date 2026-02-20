@@ -1,0 +1,25 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/chondroitin-sulfate",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "scientificName": "Chondroitin Sulfate/ Galactosaminoglucuronoglycan Sulfate",
+  "name": {
+    "en": "Chondroitin Sulfate",
+    "zh-Hant": "軟骨素",
+    "zh-Hans": "软骨素"
+  },
+  "description": {
+    "en": "Extracted from cartilaginous rings of bovine trachea, pork byproducts (ears and snout), shark cartilage and whale septum cartilage.\n",
+    "zh-Hant": "軟骨素（學名：Chondroitin Sulfate/ Galactosaminoglucuronoglycan Sulfate）是一種具有藥用價值的天然產物。現代藥理學研究證實其含有多種生物活性成分，在傳統醫學和現代保健領域均有重要應用價值。",
+    "zh-Hans": "软骨素（学名：Chondroitin Sulfate/ Galactosaminoglucuronoglycan Sulfate）是一种具有药用價值的天然產物。現代药理学研究证实其含有多种生物活性成分，在传统医学和現代保健領域均有重要应用價值。"
+  },
+  "image": "media/images/chondroitin-sulfate/chondroitin-sulfate.jpg",
+  "url": "https://herbapedia.org/plants/chondroitin-sulfate",
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/nutrients-en/chondroitin-sulfate/",
+  "created": "2026-02-18T09:17:05.001Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+}

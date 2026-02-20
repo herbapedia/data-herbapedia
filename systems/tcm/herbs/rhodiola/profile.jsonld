@@ -1,0 +1,60 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/rhodiola",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/rhodiola"
+  },
+  "name": {
+    "en": "Rhodiola",
+    "zh-Hant": "紅景天",
+    "zh-Hans": "红景天"
+  },
+  "pinyin": "Rhodiola",
+  "chineseName": {
+    "zh-Hant": "紅景天",
+    "zh-Hans": "红景天"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Xi Bu Yi Dian.\n",
+    "zh-Hant": "【紅景天】History內容待翻譯補充。",
+    "zh-Hans": "【紅景天】History內容待翻譯补充。"
+  },
+  "tcmTraditionalUsage": {
+    "en": "This preparation is made from the roots of Rhodiola, a plant that grows high in the mountains of Tibet. Neutral in nature, it helps to tonify and promote circulation. Rhodiola replenishes energy and promotes the oxygen-carrying capacity of the blood, making it useful for treating fatigue and preventing high altitude sickness.\n",
+    "zh-Hant": "紅景天藥味甘、微苦，藥性微涼，能補氣養陰，強心益智，一般用於心力衰弱、體虛乏力、頭昏健忘等症。\n",
+    "zh-Hans": "紅景天药味甘、微苦，药性微涼，能补气养阴，强心益智，一般用于心力衰弱、体虚乏力、头昏健忘等症。\n"
+  },
+  "tcmModernResearch": {
+    "en": "Used for the prevention of acute mountain sickness.\n",
+    "zh-Hant": "【紅景天】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【紅景天】Modern Research內容待翻譯补充。"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:42.291Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q10927966"
+    }
+  ]
+}

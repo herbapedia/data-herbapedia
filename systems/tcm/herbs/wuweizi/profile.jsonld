@@ -1,0 +1,60 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/wuweizi",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/wuweizi"
+  },
+  "name": {
+    "en": "Wuweizi",
+    "zh-Hant": "五味子",
+    "zh-Hans": "五味子"
+  },
+  "pinyin": "Wuweizi",
+  "chineseName": {
+    "zh-Hant": "五味子",
+    "zh-Hans": "五味子"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in the Divine Husbandman's Classic of the Materia Medica.\n",
+    "zh-Hant": "【五味子】History內容待翻譯補充。",
+    "zh-Hans": "【五味子】History內容待翻譯补充。"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Wuweizi is made from the dried berries of schisandra, a woody vine native to northern China. Sour and warm in nature, it affects the kidney, lung and heart meridians. Its actions include containing the leakage of lung chi, stopping coughs, nourishing the kidneys, generating body fluids, binding jing (kidney essence) and calming the spirit. It can be used to treat symptoms of weak kidneys such as spermatorrhea and urinary problems.\n",
+    "zh-Hant": "五味子是常用的收斂藥，味酸而甘， 藥性微溫， 歸肺、心、腎經，能斂肺滋腎、生津斂汗、澀精止瀉、寧心安神，常用症狀包括津傷口渴、自汗、盜汗、滑精、心悸、失眠、多夢、肺虛久咳等。\n",
+    "zh-Hans": "五味子是常用的收斂药，味酸而甘， 药性微溫， 歸肺、心、肾经，能斂肺滋肾、生津斂汗、涩精止瀉、寧心安神，常用症狀包括津傷口渴、自汗、盜汗、滑精、心悸、失眠、多夢、肺虚久咳等。\n"
+  },
+  "tcmModernResearch": {
+    "en": "Schisandra berries are particularly high in antioxidants, substances which scavenge free radicals and prevent damage to cells that can cause certain diseases and premature ageing. In addition, schisandra contains at least 30 different lignans. Lignans are known to have liver-protective properties and to regenerate damaged liver tissue. Lignans also interfere with a compound called platelet activating factor, which promotes inflammation.\n",
+    "zh-Hant": "【五味子】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【五味子】Modern Research內容待翻譯补充。"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:16:01.404Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q900986"
+    }
+  ]
+}

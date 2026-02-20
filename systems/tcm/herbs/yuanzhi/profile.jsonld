@@ -1,0 +1,60 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/yuanzhi",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/yuanzhi"
+  },
+  "name": {
+    "en": "Yuanzhi",
+    "zh-Hant": "遠志",
+    "zh-Hans": "远志"
+  },
+  "pinyin": "Yuanzhi",
+  "chineseName": {
+    "zh-Hant": "遠志",
+    "zh-Hans": "远志"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Divine Husbandman's Classic of the Materia Medica\n",
+    "zh-Hant": "【遠志】History內容待翻譯補充。",
+    "zh-Hans": "【遠志】History內容待翻譯补充。"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Yuanzhi is a bitter, acrid herb that is slightly warm in nature, and enters the heart and lung meridians. It is known to calm the spirit and quiet the heart, making it a useful treatment for conditions such as insomnia, palpitations, anxiety, disorientation and restlessness. It is prepared from the roots of the perenial herb Polygala tenuifolia, which mainly grows around Shanxi and Henan. It is harvested during the autumn months, cleaned and dried in the sun.\n",
+    "zh-Hant": "遠志屬於遠志科多年生草本植物，藥用部份是根部，藥味苦、辛，藥性微溫，歸心、腎、肺經，是交通心腎、寧心安神的要藥，尤其適用於心悸、失眠、健忘等情況，其豁痰開竅之效，亦有助於改善痰濕蒙蔽清竅所致的神昏迷糊等狀態，更有助消散癰腫，可用於乳房脹痛等情況。\n",
+    "zh-Hans": "遠志属于遠志科多年生草本植物，药用部份是根部，药味苦、辛，药性微溫，歸心、肾、肺经，是交通心肾、寧心安神的要药，尤其適用于心悸、失眠、健忘等情況，其豁痰开竅之效，亦有助于改善痰湿蒙蔽清竅所致的神昏迷糊等狀態，更有助消散癰腫，可用于乳房脹痛等情況。\n"
+  },
+  "tcmModernResearch": {
+    "en": "Yuanzhi has an effect on some cancer cell lines - an aqueous extract of the herb was found to have an inhibitory effect on HL-60 cancer cells, indicating its potential use for patients with breast cancer. Active ingredients include onjisaponin A, B, C, D, E, F,G, tenuidine, polygalitol, xanthones and trimethoxycinnamic acid.\n",
+    "zh-Hant": "【遠志】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【遠志】Modern Research內容待翻譯补充。"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:16:03.773Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q1043050"
+    }
+  ]
+}

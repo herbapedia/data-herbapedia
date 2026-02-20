@@ -1,0 +1,55 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/chinese-bellflower",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/chinese-bellflower"
+  },
+  "name": {
+    "en": "Chinese Bellflower",
+    "zh-Hant": "桔梗",
+    "zh-Hans": "桔梗"
+  },
+  "pinyin": "Chinese Bellflower",
+  "chineseName": {
+    "zh-Hant": "桔梗",
+    "zh-Hans": "桔梗"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Divine Husbandman's Classic of the Materia Medica.\n",
+    "zh-Hant": "【桔梗】History內容待翻譯補充。",
+    "zh-Hans": "【桔梗】History內容待翻譯补充。"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Chinese Bellflower root has bitter, acrid neutral characteristics and promotes healthy lung functions; expelling phlegm, discharging pus and benefiting the throat. It is considered among the strongest of herbs for dispelling phlegm and pus, and can also be used to clear heat and toxins to treat lung abscesses. In addition it raises the chi of the lung and large intestines, treating diarrhea and associated problems.\n",
+    "zh-Hant": "桔梗是化痰藥，藥味苦、辛，藥性平和，歸肺經，能宣肺袪痰、利咽排膿，常用於咳嗽痰多、咽痛不適等症狀。\n",
+    "zh-Hans": "桔梗是化痰药，药味苦、辛，药性平和，歸肺经，能宣肺袪痰、利咽排膿，常用于咳嗽痰多、咽痛不適等症狀。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:00.071Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q104386792"
+    }
+  ]
+}

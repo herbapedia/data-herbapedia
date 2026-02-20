@@ -1,0 +1,60 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/fleece-flower",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/fleece-flower"
+  },
+  "name": {
+    "en": "Fleece Flower",
+    "zh-Hant": "野生制首烏",
+    "zh-Hans": "野生制首乌"
+  },
+  "pinyin": "Fleece Flower",
+  "chineseName": {
+    "zh-Hant": "野生制首烏",
+    "zh-Hans": "野生制首乌"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Materia Medica of Ri Hua-Zi.\n",
+    "zh-Hant": "【野生制首烏】History內容待翻譯補充。",
+    "zh-Hans": "【野生制首烏】History內容待翻譯补充。"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Also known as Fleece Flower, zhiheshouwu is sweet and warm in nature and targets the liver and kidney meridians. It acts as a blood tonic, a laxative, lowers cholesterol and has antibacterial properties. It is useful for tonifying the liver, replenishing blood and yin, and tonifying the kidneys to prevent the premature greying of hair and hair loss.\n",
+    "zh-Hant": "本品是蔘科植物何首烏的塊根，以黑豆汁拌勻，蒸至內外均呈棕褐色再顯乾，便成為常用於補血的制何首烏。只經乾燥處理者為生首烏。制何首烏味甘、澀，藥性微溫，歸肝、腎經，具補益精血、固腎烏鬚的作用，對於一切由於肝腎精血不足而致的症狀，例如脫髮白髮、頭暈目眩、心悸失眠、腰膝酸軟、月經不調、性功能問題均有良效。\n",
+    "zh-Hans": "本品是参科植物何首烏的塊根，以黑豆汁拌勻，蒸至內外均呈棕褐色再顯干，便成为常用于补血的制何首烏。只经干燥處理者为生首烏。制何首烏味甘、涩，药性微溫，歸肝、肾经，具补益精血、固肾烏鬚的作用，對于一切由于肝肾精血不足而致的症狀，例如脫发白发、头暈目眩、心悸失眠、腰膝酸软、月经不调、性功能問題均有良效。\n"
+  },
+  "tcmModernResearch": {
+    "en": "In vitro studies have showed that zhiheshouwu can protect the liver by inhibiting lipid oxidation and the destruction of liver cells. It has also been found to lower the blood cholesterol, triglycerides and β- lipoproteins of high lipid animals.\n",
+    "zh-Hant": "【野生制首烏】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【野生制首烏】Modern Research內容待翻譯补充。"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:15.777Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q7170299"
+    }
+  ]
+}

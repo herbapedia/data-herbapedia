@@ -1,0 +1,25 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/deer-horn-gelatine",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "scientificName": "Colla Cornus Cervi",
+  "name": {
+    "en": "Deer horn gelatine",
+    "zh-Hant": "鹿角膠",
+    "zh-Hans": "鹿角胶"
+  },
+  "description": {
+    "en": "Gelatinous masses, stewed and concentrated from the horn of the male beast of Cervus nippon Temminck or C. elaphus L., family Verridae.\n",
+    "zh-Hant": "鹿角膠（學名：Colla Cornus Cervi）是一種具有藥用價值的天然產物。現代藥理學研究證實其含有多種生物活性成分，在傳統醫學和現代保健領域均有重要應用價值。",
+    "zh-Hans": "鹿角胶（学名：Colla Cornus Cervi）是一种具有药用價值的天然產物。現代药理学研究证实其含有多种生物活性成分，在传统医学和現代保健領域均有重要应用價值。"
+  },
+  "image": "media/images/deer-horn-gelatine/deer-horn-gelatine.jpg",
+  "url": "https://herbapedia.org/plants/deer-horn-gelatine",
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/chiherbs-en/deer-horn-gelatine/",
+  "created": "2026-02-18T09:15:09.216Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+}

@@ -1,0 +1,53 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/evodia-fruit",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/evodia-fruit"
+  },
+  "name": {
+    "en": "Evodia Fruit",
+    "zh-Hant": "吳茱萸",
+    "zh-Hans": "吴茱萸"
+  },
+  "pinyin": "Evodia Fruit",
+  "chineseName": {
+    "zh-Hant": "吳茱萸",
+    "zh-Hans": "吴茱萸"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Divine Husbandman's Classic of the Materia Medica.\n",
+    "zh-Hant": "【吳茱萸】History內容待翻譯補充。",
+    "zh-Hans": "【吳茱萸】History內容待翻譯补充。"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Acrid, hot and bitter in nature, this herb made from the fruit of the Evodia enters the kidney, spleen, liver and stomach meridians. It expels cold, dries dampness, activates chi circulation, alleviates pain and warms the middle burner (stomach and spleen) to stop vomiting and diarrhoea. It is particularly suitable for treating stomach problems and abdominal pain caused by cold and dampness or excess liver heat.\n",
+    "zh-Hant": "吳茱萸藥味辛、苦，藥性熱，有小毒，歸肝、脾、胃、腎經，能散寒止痛、溫中止嘔、助陽止瀉，可用於寒滯肝脈的脅脹腹痛，以及胃寒造成的脘腹冷痛、嘔吐、泄瀉等。\n",
+    "zh-Hans": "吳茱萸药味辛、苦，药性热，有小毒，歸肝、脾、胃、肾经，能散寒止痛、溫中止嘔、助阳止瀉，可用于寒滯肝脉的脅脹腹痛，以及胃寒造成的脘腹冷痛、嘔吐、泄瀉等。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "sameAs": [
+    "https://www.wikidata.org/wiki/Q10919698"
+  ],
+  "created": "2026-02-18T09:15:13.185Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+}

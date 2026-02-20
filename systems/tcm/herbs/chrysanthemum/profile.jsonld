@@ -1,0 +1,60 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/chrysanthemum",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/chrysanthemum"
+  },
+  "name": {
+    "en": "Chrysanthemum",
+    "zh-Hant": "菊花 又名杭菊",
+    "zh-Hans": "菊花 又名杭菊"
+  },
+  "pinyin": "Chrysanthemum",
+  "chineseName": {
+    "zh-Hant": "菊花 又名杭菊",
+    "zh-Hans": "菊花 又名杭菊"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Divine Husbandman's Classic of the Materia Medica, classified as upper class.\n",
+    "zh-Hant": "始載於《神農本草經》，列為上品\n",
+    "zh-Hans": "始载于《神農本草经》，列为上品\n"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Sweet, bitter and slightly cold in nature, chrysanthemum enters the liver and lung meridians. This herb is useful for dispersing wind and clearing heat, detoxifying the liver, clearing the eyes and tonifying in general. It can be used for treating the common cold, headaches, reddening of the eyes and deafness.\n",
+    "zh-Hant": "菊花是常用的疏散風熱藥，藥味甘、辛而苦，藥性微寒，歸肝、肺經，能疏散風熱、平肝明目、清熱解毒，除用於風熱感冒外，亦常用於風熱之邪所致的目赤、眩暈等。\n",
+    "zh-Hans": "菊花是常用的疏散風热药，药味甘、辛而苦，药性微寒，歸肝、肺经，能疏散風热、平肝明目、清热解毒，除用于風热感冒外，亦常用于風热之邪所致的目赤、眩暈等。\n"
+  },
+  "tcmModernResearch": {
+    "en": "The decoction of the herb has been found to dilate the coronary arteries, thus increase blood flow. The herb can also inhibit the growth of Staphylococcus aureus, Shigella dysenteriae and nine different skin fungi. It can also help the body to fight the flu virus and leptospirae.\n",
+    "zh-Hant": "【菊花 又名杭菊】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【菊花 又名杭菊】Modern Research內容待翻譯补充。"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:02.568Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q59882"
+    }
+  ]
+}

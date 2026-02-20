@@ -1,0 +1,31 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/horny-goat-weed",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "scientificName": "Epimedium brevicornum",
+  "name": {
+    "en": "Horny Goat Weed",
+    "zh-Hant": "淫羊藿",
+    "zh-Hans": "淫羊藿"
+  },
+  "description": {
+    "en": "From the branches and leaves of Epimedium sagittatum ( Sieb. Et Zucc.) maxim, or E. brevicornum Maxim., family Berberidaceae.\n",
+    "zh-Hant": "淫羊藿（學名：Epimedium brevicornum）是一種具有藥用價值的天然產物。現代藥理學研究證實其含有多種生物活性成分，在傳統醫學和現代保健領域均有重要應用價值。",
+    "zh-Hans": "淫羊藿（学名：Epimedium brevicornum）是一种具有药用價值的天然產物。現代药理学研究证实其含有多种生物活性成分，在传统医学和現代保健領域均有重要应用價值。"
+  },
+  "image": "media/images/horny-goat-weed/horny-goat-weed.jpg",
+  "url": "https://herbapedia.org/plants/horny-goat-weed",
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/chiherbs-en/horny-goat-weed/",
+  "created": "2026-02-18T09:15:22.519Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.gbif.org/species/3981041"
+    }
+  ],
+  "gbifId": 3981041
+}

@@ -1,0 +1,65 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/jinyinhua",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/jinyinhua"
+  },
+  "name": {
+    "en": "Jinyinhua",
+    "zh-Hant": "金銀花",
+    "zh-Hans": "金银花"
+  },
+  "pinyin": "Jinyinhua",
+  "chineseName": {
+    "zh-Hant": "金銀花",
+    "zh-Hans": "金银花"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Tang Materia Medica.\n",
+    "zh-Hant": "載於《本草綱目》曰: [一切風濕氣，及諸腫毒，壅疽疥癬，楊梅諸惡瘡，散熱解毒。] 《本草拾遺》曰: [主熱毒、血痢、水痢、濃煎服之。]\n",
+    "zh-Hans": "载于《本草綱目》曰: [一切風湿气，及諸腫毒，壅疽疥癬，楊梅諸惡瘡，散热解毒。] 《本草拾遺》曰: [主热毒、血痢、水痢、浓煎服之。]\n"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Known in English as honeysuckle, jinyinhua is a sweet and cooling herb that enters the lung, stomach and large intestine meridians. It is used to clear heat, relieve the body of toxins and expel wind heat, as well as treat diarrhea and dysentery caused by toxic heat. It is a useful herb to treat people in the early stages of a fever.\n",
+    "zh-Hant": "金銀花因其味甘、性亦寒，故特定地用於清熱解毒、涼散風熱，效果奇佳。 且歸肺、胃、大腸等經，主治外感發熱，在治療瘡壅節腫、熱毒瀉痢、喉痺、丹毒、熱毒血痢、風熱感冒、溫病發熱等諸症。 壅腫疔瘡 金銀花味甘苦、性辛寒。清熱解毒、消壅散腫，為治一切內壅、外壅之要藥。 治療初起之壅腫瘡毒，紅腫熱痛者，可單用本品煎服，並用藥渣外敷患處，亦可與皂角刺、穿山甲、白芷配伍，如仙方活卸飲 (《婦人良方》) ; 治疔瘡腫毒，堅硬根深者，常與紫地花丁、蒲公英、野菊花同用，如五味消毒散 (《醫宗金鑒》) ; 用治腸壅腹痛者，常與當歸、地榆、黃芩配伍同用，如清腸飲(《辨證錄》) ; 用治肺壅咳吐膿血者，常與魚腥草、桃仁、蘆根配伍同用，以清肺排膿。 外感風熱、溫病初起 金銀花味甘苦，歸肺經。其芳香疏散之性，善散肺經熱邪。透熱發表，常與牛蒡子、連翹、薄荷同用、治療外感風熱或溫病初起，身熱頭痛，咽痛口渴，如銀翹解毒散 (《溫病條辨》)。金銀花亦善清心、胃熱毒，有透營轉氣之功，配伍水牛角、生地、黃連等同用，可治熱入營血，舌絳晨昏，心煩少燥，如清營湯 (《溫病條辨》)。若與連翹、香薷、厚樸同用、可治療暑溫，發熱煩渴，頭痛無汗，如新加香薷飲 (《溫病條辨》)。 熱毒血痢 金銀花味甘苦、性辛寒。具有清熱解毒、涼血止痢功效，故常用於解熱毒痢疾，下痢膿血，單用濃煎口服可奏效 ; 亦可與黃連、黃芩、白頭翁等藥同用，以增強治痢效果。 此外，金銀花尚可治咽喉腫痛，小兒熱瘡及痱子。\n",
+    "zh-Hans": "金銀花因其味甘、性亦寒，故特定地用于清热解毒、涼散風热，效果奇佳。 且歸肺、胃、大肠等经，主治外感發热，在治疗瘡壅节腫、热毒瀉痢、喉痺、丹毒、热毒血痢、風热感冒、溫病發热等諸症。 壅腫疔瘡 金銀花味甘苦、性辛寒。清热解毒、消壅散腫，为治一切內壅、外壅之要药。 治疗初起之壅腫瘡毒，紅腫热痛者，可單用本品煎服，並用药渣外敷患處，亦可与皂角刺、穿山甲、白芷配伍，如仙方活卸饮 (《婦人良方》) ; 治疔瘡腫毒，堅硬根深者，常与紫地花丁、蒲公英、野菊花同用，如五味消毒散 (《医宗金鑒》) ; 用治肠壅腹痛者，常与當歸、地榆、黃芩配伍同用，如清肠饮(《辨证录》) ; 用治肺壅咳吐膿血者，常与魚腥草、桃仁、蘆根配伍同用，以清肺排膿。 外感風热、溫病初起 金銀花味甘苦，歸肺经。其芳香疏散之性，善散肺经热邪。透热發表，常与牛蒡子、連翹、薄荷同用、治疗外感風热或溫病初起，身热头痛，咽痛口渴，如銀翹解毒散 (《溫病條辨》)。金銀花亦善清心、胃热毒，有透營轉气之功，配伍水牛角、生地、黃連等同用，可治热入營血，舌絳晨昏，心煩少燥，如清營汤 (《溫病條辨》)。若与連翹、香薷、厚樸同用、可治疗暑溫，發热煩渴，头痛無汗，如新加香薷饮 (《溫病條辨》)。 热毒血痢 金銀花味甘苦、性辛寒。具有清热解毒、涼血止痢功效，故常用于解热毒痢疾，下痢膿血，單用浓煎口服可奏效 ; 亦可与黃連、黃芩、白头翁等药同用，以增强治痢效果。 此外，金銀花尚可治咽喉腫痛，小兒热瘡及痱子。\n"
+  },
+  "tcmModernResearch": {
+    "en": "Jinyinhua has been used satisfactorily to treat patients with appendicitis, mastitis, common colds and flu, and to prevent upper respiratory tract infections.\n",
+    "zh-Hant": "【金銀花】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【金銀花】Modern Research內容待翻譯补充。"
+  },
+  "tcmFunctions": {
+    "zh-Hant": "金銀花味甘、性寒。歸肺、胃、大腸等經。 金銀花具有清熱解毒功效，主治外感發熱，瘡壅節腫，熱毒瀉痢。\n",
+    "zh-Hans": "金銀花味甘、性寒。歸肺、胃、大肠等经。 金銀花具有清热解毒功效，主治外感發热，瘡壅节腫，热毒瀉痢。\n",
+    "en": "[Functions information for Jinyinhua - translation needed]"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:26.522Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q161083"
+    }
+  ]
+}

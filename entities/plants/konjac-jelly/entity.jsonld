@@ -1,0 +1,31 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/konjac-jelly",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "scientificName": "Amorphophallus konjac",
+  "name": {
+    "en": "Konjac jelly",
+    "zh-Hant": "蒟蒻",
+    "zh-Hans": "蒟蒻"
+  },
+  "description": {
+    "en": "The corm of the plant Amorphophallus Konjac, family Araceae.\n",
+    "zh-Hant": "蒟蒻是一種珍貴的天然滋補品，富含蛋白質、氨基酸和多種微量元素。在中醫藥學中被視為滋陰潤燥、益氣補虛的上品，具有顯著的營養保健價值。",
+    "zh-Hans": "蒟蒻是一种珍貴的天然滋补品，富含蛋白质、氨基酸和多种微量元素。在中医药学中被視为滋阴润燥、益气补虚的上品，具有顯著的營养保健價值。"
+  },
+  "image": "media/images/konjac-jelly/konjac-jelly.jpg",
+  "url": "https://herbapedia.org/plants/konjac-jelly",
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/westherbs-en/konjac-jelly/",
+  "created": "2026-02-18T09:16:30.404Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.gbif.org/species/2871520"
+    }
+  ],
+  "gbifId": 2871520
+}

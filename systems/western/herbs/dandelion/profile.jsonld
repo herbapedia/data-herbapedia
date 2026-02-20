@@ -1,0 +1,45 @@
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/dandelion",
+  "@type": [
+    "western:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/dandelion"
+  },
+  "name": {
+    "en": "Dandelion",
+    "zh-Hant": "蒲公英",
+    "zh-Hans": "蒲公英"
+  },
+  "scientificName": "Taraxacum Officinale",
+  "hasAction": [
+    {
+      "@id": "western/action/tonic"
+    }
+  ],
+  "hasOrganAffinity": [
+    {
+      "@id": "organ/liver"
+    }
+  ],
+  "westernHistory": {
+    "en": "Dandelion leaves and roots have been used for centuries to treat liver, gall bladder, kidney, and joint problems. In some countries, dandelion is considered a blood purifier and is used for ailments such as eczema and cancer. Dandelion has also been used to treat poor digestion, water retention and diseases of the liver such as hepatitis. The first mention of the dandelion as a medicine was in the works of Arabian physicians of the tenth and eleventh centuries. Thirteenth-century Welsh medicine also lauds its properties.\n",
+    "zh-Hant": "蒲公英的葉子和根部多年來用於治療肝臟、膽囊、腎和關節等病患。在一些國家，蒲公英被視為能淨化血液和治療某些疾病，如濕疹和癌症。蒲公英也能改善消化系統、水腫和肝臟疾病，如肝炎。蒲公英的藥用價值歷史悠長，最早可追溯到10和11世紀阿拉伯內科醫生的記載，至13世紀時其價值已受到肯定。\n",
+    "zh-Hans": "蒲公英的叶子和根部多年来用于治疗肝脏、胆囊、肾和关节等病患。在一些国家，蒲公英被视为能净化血液和治疗某些疾病，如湿疹和癌症。蒲公英也能改善消化系统、水肿和肝脏疾病，如肝炎。蒲公英的药用价值历史悠长，最早可追溯到10和11世纪阿拉伯内科医生的记载，至13世纪时其价值已受到肯定。\n"
+  },
+  "westernTraditionalUsage": {
+    "en": "The bitter compounds in the leaves and root of the dandelion plant help to stimulate digestion and have a mild laxative effect. They also increase bile production in the gall bladder and bile flow from the liver, making dandelion a useful tonic for people with sluggish liver function due to alcohol abuse or a poor diet. The increase in bile flow can also help improve the body's metabolism of fat (including cholesterol). In Chinese medicine terms, dandelion is considered to be a bitter, cool herb that enters the liver, stomach and bladder meridians to clear heat and drain dampness.\n",
+    "zh-Hant": "蒲公英葉子中苦的物質和根部能刺激消化和有輕度通便的效果。它們也能增加膽汁生產，促進膽汁流到肝臟，故對因酗酒或飲食欠佳而導致肝臟功能緩慢者有所幫助。當膽汁流到肝臟的份量有所增加，便可促進身體脂肪（包括膽固醇）的新陳代謝。\n",
+    "zh-Hans": "蒲公英叶子中苦的物质和根部能刺激消化和有轻度通便的效果。它们也能增加胆汁生产，促进胆汁流到肝脏，故对因酗酒或饮食欠佳而导致肝脏功能缓慢者有所帮助。当胆汁流到肝脏的份量有所增加，便可促进身体脂肪（包括胆固醇）的新陈代谢。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-19T15:32:30.531Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "description": {
+    "en": "The dried roots of the plant are most widely used in medicine.\n",
+    "zh-Hant": "製乾後的植物根部最常應用於藥物之中。\n",
+    "zh-Hans": "製乾後的植物根部最常应用於药物之中。\n"
+  }
+}

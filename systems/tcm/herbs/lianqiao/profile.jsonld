@@ -1,0 +1,60 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/lianqiao",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/lianqiao"
+  },
+  "name": {
+    "en": "Lianqiao",
+    "zh-Hant": "連翹",
+    "zh-Hans": "连翘"
+  },
+  "pinyin": "Lianqiao",
+  "chineseName": {
+    "zh-Hant": "連翹",
+    "zh-Hans": "连翘"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Divine Husbandman's Classic of the Materia Medica, classified as lower class.\n",
+    "zh-Hant": "始載於《神農本草經》，列為下品\n",
+    "zh-Hans": "始载于《神農本草经》，列为下品\n"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Lianqiao is a bitter and cool herb that enters the lung, heart and gallbladder meridians. It clears heat and toxins and promotes urination. It ability to dispel externally contracted wind-heat and feverish symptoms make it a useful treatment for illnesses such as flu and sore throats.\n",
+    "zh-Hant": "連翹是傳統的清熱解毒中藥，藥味苦，藥性微寒，歸肺、心、膽經，能清熱解毒、消癰散結、疏散風熱，用於熱毒瘡瘍，有「瘡家聖藥」之稱，亦用於治療外感風熱，常與金銀花同用。\n",
+    "zh-Hans": "連翹是传统的清热解毒中药，药味苦，药性微寒，歸肺、心、胆经，能清热解毒、消癰散结、疏散風热，用于热毒瘡瘍，有「瘡家聖药」之稱，亦用于治疗外感風热，常与金銀花同用。\n"
+  },
+  "tcmModernResearch": {
+    "en": "Lianqiao has antibiotic, anti-inflammatory, anti-pyretic and diuretic properties.\n",
+    "zh-Hant": "【連翹】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【連翹】Modern Research內容待翻譯补充。"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:28.981Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q1275024"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/borage-extract",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "scientificName": "Borago officinalis",
+  "name": {
+    "en": "Borage Extract",
+    "zh-Hant": "琉璃苣精華",
+    "zh-Hans": "琉璃苣精华"
+  },
+  "description": {
+    "en": "Borago officinalis L.\n",
+    "zh-Hant": "琉璃苣精華（學名：Borago officinalis）萃取自植物種子或果實，富含不飽和脂肪酸和維生素E等營養成分。具有滋潤皮膚、抗氧化等功效，廣泛應用於保健和美容領域。",
+    "zh-Hans": "琉璃苣精华（学名：Borago officinalis）萃取自植物种子或果实，富含不飽和脂肪酸和維生素E等營养成分。具有滋润皮肤、抗氧化等功效，廣泛应用于保健和美容領域。"
+  },
+  "image": "media/images/borage-extract/borage-extract.jpg",
+  "url": "https://herbapedia.org/plants/borage-extract",
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/westherbs-en/borage-extract/",
+  "created": "2026-02-18T09:16:19.112Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.gbif.org/species/2926110"
+    }
+  ],
+  "gbifId": 2926110
+}

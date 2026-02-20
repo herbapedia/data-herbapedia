@@ -1,0 +1,110 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <https://schema.org/> .
+@prefix herbapedia: <https://herbapedia.org/vocab/core/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+
+# Plant Entity Shape
+herbapedia:PlantShape
+  a sh:NodeShape ;
+  sh:targetClass herbapedia:MedicinalPlant ;
+  sh:targetObjectsOf herbapedia:hasPart ;
+
+  # Required properties
+  sh:property [
+    sh:path dwc:scientificName ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "Plant must have exactly one scientific name (dwc:scientificName)" ;
+  ] ;
+
+  sh:property [
+    sh:path schema:name ;
+    sh:nodeKind sh:Literal ;
+    sh:minCount 1 ;
+    sh:message "Plant must have at least one name" ;
+  ] ;
+
+  # Taxonomic properties
+  sh:property [
+    sh:path dwc:family ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+  ] ;
+
+  sh:property [
+    sh:path dwc:genus ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+  ] ;
+
+  sh:property [
+    sh:path dwc:specificEpithet ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+  ] ;
+
+  # Optional properties
+  sh:property [
+    sh:path schema:description ;
+    sh:nodeKind sh:Literal ;
+    sh:maxCount 1 ;
+  ] ;
+
+  sh:property [
+    sh:path herbapedia:botanicalDescription ;
+    sh:nodeKind sh:Literal ;
+  ] ;
+
+  sh:property [
+    sh:path herbapedia:geographicalDistribution ;
+    sh:nodeKind sh:Literal ;
+  ] ;
+
+  sh:property [
+    sh:path herbapedia:hasPart ;
+    sh:class herbapedia:PlantPart ;
+  ] ;
+
+  sh:property [
+    sh:path herbapedia:containsChemical ;
+    sh:nodeKind sh:IRI ;
+  ] ;
+
+  sh:property [
+    sh:path schema:image ;
+    sh:nodeKind sh:IRI ;
+    sh:maxCount 1 ;
+  ] ;
+
+  sh:property [
+    sh:path schema:url ;
+    sh:nodeKind sh:IRI ;
+    sh:maxCount 1 ;
+  ] ;
+
+  sh:property [
+    sh:path schema:sameAs ;
+    sh:nodeKind sh:IRI ;
+  ] ;
+
+  # Provenance
+  sh:property [
+    sh:path dc:source ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+  ] ;
+
+  sh:property [
+    sh:path dc:license ;
+    sh:nodeKind sh:IRI ;
+    sh:maxCount 1 ;
+  ] ;
+
+  sh:property [
+    sh:path dc:created ;
+    sh:datatype xsd:dateTime ;
+    sh:maxCount 1 ;
+  ] .

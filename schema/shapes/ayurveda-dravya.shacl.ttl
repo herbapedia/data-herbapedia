@@ -1,0 +1,209 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <https://schema.org/> .
+@prefix ayurveda: <https://herbapedia.org/vocab/ayurveda/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+
+# Ayurveda Dravya Profile Shape
+ayurveda:DravyaShape
+  a sh:NodeShape ;
+  sh:targetClass ayurveda:Dravya ;
+
+  # Required: must link to a plant
+  sh:property [
+    sh:path ayurveda:derivedFromPlant ;
+    sh:nodeKind sh:IRI ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "Ayurveda Dravya must reference exactly one plant (ayurveda:derivedFromPlant)" ;
+  ] ;
+
+  # Required: name
+  sh:property [
+    sh:path schema:name ;
+    sh:nodeKind sh:Literal ;
+    sh:minCount 1 ;
+    sh:message "Ayurveda Dravya must have at least one name" ;
+  ] ;
+
+  # Rasa Panchaka (Required)
+  sh:property [
+    sh:path ayurveda:hasRasa ;
+    sh:nodeKind sh:IRI ;
+    sh:minCount 1 ;
+    sh:message "Ayurveda Dravya must have at least one rasa (taste)" ;
+  ] ;
+
+  sh:property [
+    sh:path ayurveda:hasVirya ;
+    sh:nodeKind sh:IRI ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "Ayurveda Dravya must have exactly one virya (potency)" ;
+  ] ;
+
+  sh:property [
+    sh:path ayurveda:hasVipaka ;
+    sh:nodeKind sh:IRI ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "Ayurveda Dravya must have exactly one vipaka (post-digestive effect)" ;
+  ] ;
+
+  sh:property [
+    sh:path ayurveda:hasGuna ;
+    sh:nodeKind sh:IRI ;
+    sh:minCount 1 ;
+    sh:message "Ayurveda Dravya must have at least one guna (quality)" ;
+  ] ;
+
+  # Dosha Effects
+  sh:property [
+    sh:path ayurveda:balancesDosha ;
+    sh:nodeKind sh:IRI ;
+  ] ;
+
+  sh:property [
+    sh:path ayurveda:increasesDosha ;
+    sh:nodeKind sh:IRI ;
+  ] ;
+
+  sh:property [
+    sh:path ayurveda:decreasesDosha ;
+    sh:nodeKind sh:IRI ;
+  ] ;
+
+  # Content properties (Ayurveda-scoped)
+  sh:property [
+    sh:path ayurveda:traditionalUsage ;
+    sh:nodeKind sh:Literal ;
+    sh:maxCount 1 ;
+  ] ;
+
+  sh:property [
+    sh:path ayurveda:modernResearch ;
+    sh:nodeKind sh:Literal ;
+    sh:maxCount 1 ;
+  ] ;
+
+  sh:property [
+    sh:path ayurveda:functions ;
+    sh:nodeKind sh:Literal ;
+    sh:maxCount 1 ;
+  ] ;
+
+  sh:property [
+    sh:path ayurveda:history ;
+    sh:nodeKind sh:Literal ;
+    sh:maxCount 1 ;
+  ] ;
+
+  sh:property [
+    sh:path ayurveda:classicalReference ;
+    sh:nodeKind sh:Literal ;
+    sh:maxCount 1 ;
+  ] ;
+
+  sh:property [
+    sh:path ayurveda:botanicalSource ;
+    sh:nodeKind sh:Literal ;
+    sh:maxCount 1 ;
+  ] ;
+
+  sh:property [
+    sh:path ayurveda:safetyConsideration ;
+    sh:nodeKind sh:Literal ;
+    sh:maxCount 1 ;
+  ] ;
+
+  # Actions
+  sh:property [
+    sh:path ayurveda:karma ;
+    sh:nodeKind sh:Literal ;
+  ] ;
+
+  sh:property [
+    sh:path ayurveda:indications ;
+    sh:nodeKind sh:Literal ;
+  ] ;
+
+  # Safety
+  sh:property [
+    sh:path ayurveda:contraindications ;
+    sh:nodeKind sh:Literal ;
+    sh:maxCount 1 ;
+  ] ;
+
+  sh:property [
+    sh:path ayurveda:dosage ;
+    sh:nodeKind sh:Literal ;
+    sh:maxCount 1 ;
+  ] ;
+
+  sh:property [
+    sh:path ayurveda:anupana ;
+    sh:nodeKind sh:Literal ;
+    sh:maxCount 1 ;
+  ] ;
+
+  # Mahabhuta
+  sh:property [
+    sh:path ayurveda:mahabhuta ;
+    sh:datatype xsd:string ;
+  ] .
+
+# Dosha Shape
+ayurveda:DoshaShape
+  a sh:NodeShape ;
+  sh:targetClass ayurveda:Dosha ;
+
+  sh:property [
+    sh:path ayurveda:doshaType ;
+    sh:datatype xsd:string ;
+    sh:in ("vata" "pitta" "kapha") ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "Dosha type must be one of: vata, pitta, kapha" ;
+  ] .
+
+# Rasa Shape
+ayurveda:RasaShape
+  a sh:NodeShape ;
+  sh:targetClass ayurveda:Rasa ;
+
+  sh:property [
+    sh:path ayurveda:rasaValue ;
+    sh:datatype xsd:string ;
+    sh:in ("sweet" "sour" "salty" "pungent" "bitter" "astringent") ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "Rasa value must be one of: sweet, sour, salty, pungent, bitter, astringent" ;
+  ] .
+
+# Virya Shape
+ayurveda:ViryaShape
+  a sh:NodeShape ;
+  sh:targetClass ayurveda:Virya ;
+
+  sh:property [
+    sh:path ayurveda:viryaValue ;
+    sh:datatype xsd:string ;
+    sh:in ("heating" "cooling") ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "Virya value must be one of: heating, cooling" ;
+  ] .
+
+# Vipaka Shape
+ayurveda:VipakaShape
+  a sh:NodeShape ;
+  sh:targetClass ayurveda:Vipaka ;
+
+  sh:property [
+    sh:path ayurveda:vipakaValue ;
+    sh:datatype xsd:string ;
+    sh:in ("sweet" "sour" "pungent") ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "Vipaka value must be one of: sweet, sour, pungent" ;
+  ] .

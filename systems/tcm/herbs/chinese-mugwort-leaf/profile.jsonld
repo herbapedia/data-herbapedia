@@ -1,0 +1,55 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/chinese-mugwort-leaf",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/chinese-mugwort-leaf"
+  },
+  "name": {
+    "en": "Chinese Mugwort Leaf",
+    "zh-Hant": "艾葉",
+    "zh-Hans": "艾叶"
+  },
+  "pinyin": "Chinese Mugwort Leaf",
+  "chineseName": {
+    "zh-Hant": "艾葉",
+    "zh-Hans": "艾叶"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Miscellaneous Records of Famous Physicians.\n",
+    "zh-Hant": "【艾葉】History內容待翻譯補充。",
+    "zh-Hans": "【艾叶】History內容待翻譯补充。"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Mugwort has bitter, pungent and warm properties and is associated with the liver and spleen and kidney. Taken internally, the herb warms the womb, disperses cold and alleviates pain, especially menstrual pain due to cold as a result of yang deficiency. It grows across China and South East Asia and is commonly used in moxibustion to warm the meridians and promote the flow of chi and blood.\n",
+    "zh-Hant": "艾葉味苦、辛，藥性溫，歸肝、脾、腎經，內服可溫宮散寒、止痛，常用於因陽虛導致的經痛，亦常應用於艾灸之中，有助於促進氣血運行、溫經止痛，適用於各種因氣血不通而致的症狀。\n",
+    "zh-Hans": "艾叶味苦、辛，药性溫，歸肝、脾、肾经，內服可溫宮散寒、止痛，常用于因阳虚導致的经痛，亦常应用于艾灸之中，有助于促进气血运行、溫经止痛，適用于各种因气血不通而致的症狀。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:00.860Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q4797490"
+    }
+  ]
+}

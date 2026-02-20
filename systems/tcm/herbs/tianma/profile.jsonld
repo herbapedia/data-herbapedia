@@ -1,0 +1,60 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/tianma",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/tianma"
+  },
+  "name": {
+    "en": "Tianma",
+    "zh-Hant": "天麻",
+    "zh-Hans": "天麻"
+  },
+  "pinyin": "Tianma",
+  "chineseName": {
+    "zh-Hant": "天麻",
+    "zh-Hans": "天麻"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Divine Husbandman's Classic of the Materia Medica.\n",
+    "zh-Hant": "【天麻】History內容待翻譯補充。",
+    "zh-Hans": "【天麻】History內容待翻譯补充。"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Tianma is made from Gastrodia elatae, an unusual type of orchid that grows on a fungus. It is a sweet tasting, neutral herb that enters the liver meridian. It is used to expel wind, to stop spasms and tremors, pacify the liver, anchor the yang and relieve pain. It can be used to treat symptoms of rising liver yang such as headache, vertigo, dizziness and hypertension.\n",
+    "zh-Hant": "天麻是平息肝風的要藥，味甘而藥性平和，歸肝經，能息風止痙、平抑肝陽、袪風通絡，用於肝風內動引起的抽搐、頭暈、頭痛等，因有通經絡作用，亦可用於風濕痺痛。\n",
+    "zh-Hans": "天麻是平息肝風的要药，味甘而药性平和，歸肝经，能息風止痙、平抑肝阳、袪風通络，用于肝風內动引起的抽搐、头暈、头痛等，因有通经络作用，亦可用于風湿痺痛。\n"
+  },
+  "tcmModernResearch": {
+    "en": "Tianma has clinically proven sedative, anti-convulsant and cardiovascular properties. It has been used with good results to treat patients with headaches and nerve pain.\n",
+    "zh-Hant": "【天麻】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【天麻】Modern Research內容待翻譯补充。"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:54.026Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q650760"
+    }
+  ]
+}

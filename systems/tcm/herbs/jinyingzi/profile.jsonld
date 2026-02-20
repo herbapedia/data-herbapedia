@@ -1,0 +1,60 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/jinyingzi",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/jinyingzi"
+  },
+  "name": {
+    "en": "Jinyingzi",
+    "zh-Hant": "金櫻子",
+    "zh-Hans": "金樱子"
+  },
+  "pinyin": "Jinyingzi",
+  "chineseName": {
+    "zh-Hant": "金櫻子",
+    "zh-Hans": "金樱子"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Grandfather Lei's Discussions of Herb Preparation.\n",
+    "zh-Hant": "【金櫻子】History內容待翻譯補充。",
+    "zh-Hans": "【金櫻子】History內容待翻譯补充。"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Jinyingzi, the Golden Cherry fruit, is sour and neutral in nature, entering the kidney, bladder and large intestine meridians. It is used for stabilising the kidneys and retaining the vital essence. It prevents the leakage of fluids, including urinary incontinence and a frequent need to urinate, and is also able to bind the intestines, stopping diarrhea and dysentery.\n",
+    "zh-Hant": "金櫻子為薔薇科常綠攀灌植物金櫻子的成熟果實， 味酸、澀，藥性平， 歸屬腎、膀胱、大腸經， 能固精縮尿， 澀腸止瀉。主治腎虛遺精、久瀉不止，白帶偏多，肺虛喘咳，自汗盗汗，崩漏等症。\n",
+    "zh-Hans": "金櫻子为薔薇科常綠攀灌植物金櫻子的成熟果实， 味酸、涩，药性平， 歸属肾、膀胱、大肠经， 能固精縮尿， 涩肠止瀉。主治肾虚遺精、久瀉不止，白帶偏多，肺虚喘咳，自汗盗汗，崩漏等症。\n"
+  },
+  "tcmModernResearch": {
+    "en": "Tests have confirmed jinyingzi's ability to reduce the frequency of urination as well as an ability to lower cholesterol and lipoproteins in laboratory animals.\n",
+    "zh-Hant": "【金櫻子】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【金櫻子】Modern Research內容待翻譯补充。"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:25.740Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q1070309"
+    }
+  ]
+}

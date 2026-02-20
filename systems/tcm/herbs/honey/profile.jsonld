@@ -1,0 +1,58 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/honey",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/honey"
+  },
+  "name": {
+    "en": "Honey",
+    "zh-Hant": "蜂王漿",
+    "zh-Hans": "蜂蜜"
+  },
+  "pinyin": "Honey",
+  "chineseName": {
+    "zh-Hant": "蜂王漿",
+    "zh-Hans": "蜂蜜"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Divine Husbandman's Classic of the Materia Medica, classified as upper class. In the west, it is thought that honey has been used for at least 2700 years to treat a variety of ailments through topical application.\n",
+    "zh-Hant": "【蜂王漿】History內容待翻譯補充。",
+    "zh-Hans": "【蜂王浆】History內容待翻譯补充。"
+  },
+  "tcmTraditionalUsage": {
+    "en": "According to Chinese traditional medicine, honey is sweet and neutral in nature, entering the spleen and large intestine meridians and tonifying both associated organs, relieving pain and increasing appetite, as well as treating constipation. It also enters the lung meridian and moistens the lungs to stop coughing. Western medicine also prizes honey for its antiseptic and antibacterial properties, and it has long been used both as a topical treatment for skin ailments and taken internally to relieve sore throats and coughing. The antibacterial properties of honey are the result of the combined effects of low water activity causing osmosis, the presence of hydrogen peroxide and high acidity.\n",
+    "zh-Hant": "蜂王漿含有豐富營養，包括礦物質、維他命 B、蛋白質及必需胺基酸，有助抗氧化及抗疲勞，更可用作紓緩過敏症狀，但對蜜糖及蜜蜂敏感人士不宜服用。\n",
+    "zh-Hans": "蜂王浆含有豐富營养，包括礦物质、維他命 B、蛋白质及必需胺基酸，有助抗氧化及抗疲勞，更可用作紓缓过敏症狀，但對蜜糖及蜜蜂敏感人士不宜服用。\n"
+  },
+  "tcmModernResearch": {
+    "en": "Honey shows laxative, anti-tumour and detoxifying effects. It can also increase humoral immune functions. Wound gels that contain antibacterial honey and have regulatory approval for wound care are now available to help conventional medicine in the battle against drug resistant strains of the bacteria MRSA.\n",
+    "zh-Hant": "【蜂王漿】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【蜂王浆】Modern Research內容待翻譯补充。"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:21.742Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    "https://www.wikidata.org/wiki/Q10987"
+  ]
+}

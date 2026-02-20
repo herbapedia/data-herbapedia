@@ -1,0 +1,56 @@
+{
+  "@context": "../../schema/context/ayurveda.jsonld",
+  "@graph": [
+    {
+      "@id": "vipaka/madhura",
+      "@type": "ayurveda:Vipaka",
+      "vipakaValue": "sweet",
+      "prefLabel": {
+        "en": "Sweet (Post-digestive)",
+        "sa": "मधुरविपाक",
+        "hi": "मीठा विपाक",
+        "zh-Hant": "Sweet (Post-digestive)",
+        "zh-Hans": "Sweet (Post-digestive)"
+      },
+      "sanskritName": "Madhura Vipaka",
+      "description": {
+        "en": "Sweet post-digestive effect nourishes tissues, increases Kapha, promotes strength and anabolism.",
+        "sa": "मधुरविपाकः पुष्टिं जनयति।"
+      }
+    },
+    {
+      "@id": "vipaka/amla",
+      "@type": "ayurveda:Vipaka",
+      "vipakaValue": "sour",
+      "prefLabel": {
+        "en": "Sour (Post-digestive)",
+        "sa": "अम्लविपाक",
+        "hi": "खट्टा विपाक",
+        "zh-Hant": "Sour (Post-digestive)",
+        "zh-Hans": "Sour (Post-digestive)"
+      },
+      "sanskritName": "Amla Vipaka",
+      "description": {
+        "en": "Sour post-digestive effect increases Pitta, promotes digestion and metabolism, may cause acidity in excess.",
+        "sa": "अम्लविपाकः पित्तं वर्धयति।"
+      }
+    },
+    {
+      "@id": "vipaka/katu",
+      "@type": "ayurveda:Vipaka",
+      "vipakaValue": "pungent",
+      "prefLabel": {
+        "en": "Pungent (Post-digestive)",
+        "sa": "कटुविपाक",
+        "hi": "तीखा विपाक",
+        "zh-Hant": "Pungent (Post-digestive)",
+        "zh-Hans": "Pungent (Post-digestive)"
+      },
+      "sanskritName": "Katu Vipaka",
+      "description": {
+        "en": "Pungent post-digestive effect increases Vata, promotes elimination and drying, reduces Kapha.",
+        "sa": "कटुविपाकः वातं वर्धयति।"
+      }
+    }
+  ]
+}

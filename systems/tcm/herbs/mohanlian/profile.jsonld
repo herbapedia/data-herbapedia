@@ -1,0 +1,60 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/mohanlian",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/mohanlian"
+  },
+  "name": {
+    "en": "Mohanlian",
+    "zh-Hant": "墨旱蓮",
+    "zh-Hans": "墨旱莲"
+  },
+  "pinyin": "Mohanlian",
+  "chineseName": {
+    "zh-Hant": "墨旱蓮",
+    "zh-Hans": "墨旱莲"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "Mohanlian is prized across Asia for its therapeutic powers as a liver tonic and for improving hair health. In India it is known as bhangra, and used as part of traditional ayurvedic medicine to rejuvenate and promote longevity, strengthen the liver and improve the condition of hair. A black dye can also be obtained from the plant for colouring hair and tattooing. It was first mentioned in the Tang Materia Medica as a cooling herb for use in traditional Chinese medicine.\n",
+    "zh-Hant": "【墨旱蓮】History內容待翻譯補充。",
+    "zh-Hans": "【墨旱蓮】History內容待翻譯补充。"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Mohanlian, made from the Eclipta, or false daisy plant, is sweet and sour tasting and cold in nature. It enters the body's liver and kidney meridians to nourish the yin and tonify the kidneys. Since the liver is associated with the eyes and the kidneys with hair health, this herb can improve symptoms including blurred vision and prematurely grey hair. It can also cool the blood and stop bleeding, and is considered to be a powerful liver tonic.\n",
+    "zh-Hant": "墨旱蓮為菊科一年生草本植物鱧腸的地上部分，味甘、酸，藥性寒，歸肝、腎二經，有效補肝腎陰，涼血止血。主治腎虛所致的牙齒鬆動、鬚髮早白、眩暈、耳聲嘈雜、腰膝酸軟等，常與女貞子同用。《本草綱目》中記載：「烏髭髮，益腎陰。」\n",
+    "zh-Hans": "墨旱蓮为菊科一年生草本植物鱧肠的地上部分，味甘、酸，药性寒，歸肝、肾二经，有效补肝肾阴，涼血止血。主治肾虚所致的牙齒鬆动、鬚发早白、眩暈、耳聲嘈雜、腰膝酸软等，常与女貞子同用。《本草綱目》中记载：「烏髭发，益肾阴。」\n"
+  },
+  "tcmModernResearch": {
+    "en": "Scientific research has found that the Eclipta plant contains wedelolactone, a substance that possesses a wide range of biological activities and is used for the treatment of hepatitis and cirrhosis, as an antibacterial and as an anti-hemorrhagic, confirming its powerful therapeutic properties.\n",
+    "zh-Hant": "【墨旱蓮】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【墨旱蓮】Modern Research內容待翻譯补充。"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:35.637Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q857092"
+    }
+  ]
+}

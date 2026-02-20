@@ -1,0 +1,60 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/fangji",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "derivedFromPlant": {
+    "@id": "plant/fangji"
+  },
+  "name": {
+    "en": "Fangji",
+    "zh-Hant": "防己",
+    "zh-Hans": "防己"
+  },
+  "pinyin": "Fangji",
+  "chineseName": {
+    "zh-Hant": "防己",
+    "zh-Hans": "防己"
+  },
+  "hasCategory": {
+    "@id": "category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "meridian/spleen"
+    }
+  ],
+  "tcmHistory": {
+    "en": "First appeared in Divine Husbandman's Classic of the Materia Medica, classified as middle class.\n",
+    "zh-Hant": "始載於《神農本草經》，列為中品。\n",
+    "zh-Hans": "始载于《神農本草经》，列为中品。\n"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Fangji is bitter and very cold in nature, and enters the bladder, lung and kidney meridians to expel wind and dampness, alleviate pain and promote urination. Its diuretic properties make it useful for reducing oedema and treating the pain caused by heat and dampness\n",
+    "zh-Hant": "防已曬乾後生用，其味苦、辛，藥性寒，為袪風濕、止痛、利水消腫的要藥，對浮腫、關節痺痛等症狀均有良效。容易導致腎衰竭的馬兜鈴科植物廣防己（木防己）現已棄用。\n",
+    "zh-Hans": "防已曬干后生用，其味苦、辛，药性寒，为袪風湿、止痛、利水消腫的要药，對浮腫、关节痺痛等症狀均有良效。容易導致肾衰竭的馬兜鈴科植物廣防己（木防己）現已棄用。\n"
+  },
+  "tcmModernResearch": {
+    "en": "Fangji has been used in studies to treat patients suffering from hypertension, coronary artery disorders, silicosis and lung cancer with good results.\n",
+    "zh-Hant": "【防己】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【防己】Modern Research內容待翻譯补充。"
+  },
+  "source": "vitaherbapedia.com",
+  "created": "2026-02-18T09:15:14.953Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.wikidata.org/wiki/Q1023664"
+    }
+  ]
+}

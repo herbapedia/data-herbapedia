@@ -1,0 +1,415 @@
+{
+  "@context": "../../schema/context/tcm.jsonld",
+  "@graph": [
+    {
+      "@id": "category/release-exterior",
+      "@type": ["tcm:Category", "skos:Concept"],
+      "prefLabel": {
+        "en": "Release Exterior",
+        "zh-Hant": "解表藥",
+        "zh-Hans": "解表药",
+        "pinyin": "Jiě Biǎo Yào"
+      },
+      "description": {
+        "en": "Herbs that release the exterior treat exterior patterns such as common cold and flu by inducing sweating or cooling.",
+        "zh-Hant": "解表藥發散表邪，治療感冒、流感等表證。"
+      },
+      "narrower": [
+        { "@id": "category/warm-acrid-release-exterior" },
+        { "@id": "category/cool-acrid-release-exterior" }
+      ]
+    },
+    {
+      "@id": "category/warm-acrid-release-exterior",
+      "@type": ["tcm:Category", "skos:Concept"],
+      "prefLabel": {
+        "en": "Warm-Acrid Release Exterior",
+        "zh-Hant": "辛溫解表藥",
+        "zh-Hans": "辛温解表药",
+        "pinyin": "Xīn Wēn Jiě Biǎo Yào"
+      },
+      "broader": [{ "@id": "category/release-exterior" }],
+      "exampleHerbs": ["tcm/ma-huang", "tcm/gui-zhi", "tcm/sheng-jiang"]
+    },
+    {
+      "@id": "category/cool-acrid-release-exterior",
+      "@type": ["tcm:Category", "skos:Concept"],
+      "prefLabel": {
+        "en": "Cool-Acrid Release Exterior",
+        "zh-Hant": "辛涼解表藥",
+        "zh-Hans": "辛凉解表药",
+        "pinyin": "Xīn Liáng Jiě Biǎo Yào"
+      },
+      "broader": [{ "@id": "category/release-exterior" }],
+      "exampleHerbs": ["tcm/bo-he", "tcm/sang-ye", "tcm/ju-hua"]
+    },
+    {
+      "@id": "category/clear-heat",
+      "@type": ["tcm:Category", "skos:Concept"],
+      "prefLabel": {
+        "en": "Clear Heat",
+        "zh-Hant": "清熱藥",
+        "zh-Hans": "清热药",
+        "pinyin": "Qīng Rè Yào"
+      },
+      "description": {
+        "en": "Herbs that clear heat treat various heat patterns including fever, inflammation, and infection.",
+        "zh-Hant": "清熱藥清解裡熱，治療發熱、炎症、感染等熱證。"
+      },
+      "narrower": [
+        { "@id": "category/clear-heat-drain-fire" },
+        { "@id": "category/clear-heat-dampness" },
+        { "@id": "category/clear-heat-cool-blood" },
+        { "@id": "category/clear-heat-toxin" },
+        { "@id": "category/clear-deficiency-heat" }
+      ]
+    },
+    {
+      "@id": "category/clear-heat-drain-fire",
+      "@type": ["tcm:Category", "skos:Concept"],
+      "prefLabel": {
+        "en": "Clear Heat and Drain Fire",
+        "zh-Hant": "清熱瀉火藥",
+        "zh-Hans": "清热泻火药",
+        "pinyin": "Qīng Rè Xiè Huǒ Yào"
+      },
+      "broader": [{ "@id": "category/clear-heat" }]
+    },
+    {
+      "@id": "category/clear-heat-dampness",
+      "@type": ["tcm:Category", "skos:Concept"],
+      "prefLabel": {
+        "en": "Clear Heat and Dry Dampness",
+        "zh-Hant": "清熱燥濕藥",
+        "zh-Hans": "清热燥湿药",
+        "pinyin": "Qīng Rè Zào Shī Yào"
+      },
+      "broader": [{ "@id": "category/clear-heat" }]
+    },
+    {
+      "@id": "category/clear-heat-cool-blood",
+      "@type": ["tcm:Category", "skos:Concept"],
+      "prefLabel": {
+        "en": "Clear Heat and Cool Blood",
+        "zh-Hant": "清熱涼血藥",
+        "zh-Hans": "清热凉血药",
+        "pinyin": "Qīng Rè Liáng Xuè Yào"
+      },
+      "broader": [{ "@id": "category/clear-heat" }]
+    },
+    {
+      "@id": "category/clear-heat-toxin",
+      "@type": ["tcm:Category", "skos:Concept"],
+      "prefLabel": {
+        "en": "Clear Heat and Resolve Toxicity",
+        "zh-Hant": "清熱解毒藥",
+        "zh-Hans": "清热解毒药",
+        "pinyin": "Qīng Rè Jiě Dú Yào"
+      },
+      "broader": [{ "@id": "category/clear-heat" }]
+    },
+    {
+      "@id": "category/clear-deficiency-heat",
+      "@type": ["tcm:Category", "skos:Concept"],
+      "prefLabel": {
+        "en": "Clear Deficiency Heat",
+        "zh-Hant": "清虛熱藥",
+        "zh-Hans": "清虚热药",
+        "pinyin": "Qīng Xū Rè Yào"
+      },
+      "broader": [{ "@id": "category/clear-heat" }]
+    },
+    {
+      "@id": "category/downward-draining",
+      "@type": ["tcm:Category", "skos:Concept"],
+      "prefLabel": {
+        "en": "Downward-Draining (Purgatives)",
+        "zh-Hant": "瀉下藥",
+        "zh-Hans": "泻下药",
+        "pinyin": "Xiè Xià Yào"
+      },
+      "description": {
+        "en": "Herbs that promote bowel movements to purge accumulation, heat, or water.",
+        "zh-Hant": "瀉下藥通便、瀉熱、逐水。"
+      }
+    },
+    {
+      "@id": "category/wind-damp-dispelling",
+      "@type": ["tcm:Category", "skos:Concept"],
+      "prefLabel": {
+        "en": "Dispels Wind-Dampness",
+        "zh-Hant": "祛風濕藥",
+        "zh-Hans": "祛风湿药",
+        "pinyin": "Qū Fēng Shī Yào"
+      },
+      "description": {
+        "en": "Herbs that dispel wind-dampness to treat joint pain, arthritis, and bi syndrome.",
+        "zh-Hant": "祛風濕藥治療關節痛、痹證。"
+      }
+    },
+    {
+      "@id": "category/transform-dampness",
+      "@type": ["tcm:Category", "skos:Concept"],
+      "prefLabel": {
+        "en": "Transform Dampness",
+        "zh-Hant": "化濕藥",
+        "zh-Hans": "化湿药",
+        "pinyin": "Huà Shī Yào"
+      },
+      "description": {
+        "en": "Aromatic herbs that transform dampness and revive the Spleen.",
+        "zh-Hant": "芳香化濕藥醒脾化濕。"
+      }
+    },
+    {
+      "@id": "category/leach-dampness",
+      "@type": ["tcm:Category", "skos:Concept"],
+      "prefLabel": {
+        "en": "Leach Out Dampness (Diuretics)",
+        "zh-Hant": "利水滲濕藥",
+        "zh-Hans": "利水渗湿药",
+        "pinyin": "Lì Shuǐ Shèn Shī Yào"
+      },
+      "description": {
+        "en": "Herbs that promote urination to drain dampness.",
+        "zh-Hant": "利水滲濕藥利尿通淋。"
+      }
+    },
+    {
+      "@id": "category/warm-interior",
+      "@type": ["tcm:Category", "skos:Concept"],
+      "prefLabel": {
+        "en": "Warm the Interior",
+        "zh-Hant": "溫裡藥",
+        "zh-Hans": "温里药",
+        "pinyin": "Wēn Lǐ Yào"
+      },
+      "description": {
+        "en": "Herbs that warm the interior and expel cold.",
+        "zh-Hant": "溫裡藥溫中散寒。"
+      }
+    },
+    {
+      "@id": "category/rectify-qi",
+      "@type": ["tcm:Category", "skos:Concept"],
+      "prefLabel": {
+        "en": "Rectify Qi",
+        "zh-Hant": "理氣藥",
+        "zh-Hans": "理气药",
+        "pinyin": "Lǐ Qì Yào"
+      },
+      "description": {
+        "en": "Herbs that promote Qi circulation and resolve stagnation.",
+        "zh-Hant": "理氣藥行氣解鬱。"
+      }
+    },
+    {
+      "@id": "category/digestive",
+      "@type": ["tcm:Category", "skos:Concept"],
+      "prefLabel": {
+        "en": "Digestive/Food Stagnation",
+        "zh-Hant": "消食藥",
+        "zh-Hans": "消食药",
+        "pinyin": "Xiāo Shí Yào"
+      },
+      "description": {
+        "en": "Herbs that promote digestion and relieve food stagnation.",
+        "zh-Hant": "消食藥消食導滯。"
+      }
+    },
+    {
+      "@id": "category/stop-bleeding",
+      "@type": ["tcm:Category", "skos:Concept"],
+      "prefLabel": {
+        "en": "Stop Bleeding",
+        "zh-Hant": "止血藥",
+        "zh-Hans": "止血药",
+        "pinyin": "Zhǐ Xuè Yào"
+      },
+      "description": {
+        "en": "Herbs that stop various types of bleeding.",
+        "zh-Hant": "止血藥收斂止血。"
+      }
+    },
+    {
+      "@id": "category/invigorate-blood",
+      "@type": ["tcm:Category", "skos:Concept"],
+      "prefLabel": {
+        "en": "Invigorate Blood",
+        "zh-Hant": "活血化瘀藥",
+        "zh-Hans": "活血化瘀药",
+        "pinyin": "Huó Xuè Huà Yū Yào"
+      },
+      "description": {
+        "en": "Herbs that invigorate blood circulation and dispel blood stasis.",
+        "zh-Hant": "活血化瘀藥行血祛瘀。"
+      }
+    },
+    {
+      "@id": "category/relieve-cough-wheezing",
+      "@type": ["tcm:Category", "skos:Concept"],
+      "prefLabel": {
+        "en": "Relieve Cough and Wheezing",
+        "zh-Hant": "止咳平喘藥",
+        "zh-Hans": "止咳平喘药",
+        "pinyin": "Zhǐ Ké Píng Chuǎn Yào"
+      },
+      "description": {
+        "en": "Herbs that stop cough and relieve wheezing/asthma.",
+        "zh-Hant": "止咳平喘藥止咳定喘。"
+      }
+    },
+    {
+      "@id": "category/spirit-quieting",
+      "@type": ["tcm:Category", "skos:Concept"],
+      "prefLabel": {
+        "en": "Spirit-Quieting (An Shen)",
+        "zh-Hant": "安神藥",
+        "zh-Hans": "安神药",
+        "pinyin": "Ān Shén Yào"
+      },
+      "description": {
+        "en": "Herbs that calm the spirit (Shen) for insomnia, anxiety, and palpitations.",
+        "zh-Hant": "安神藥寧心安神，治療失眠、驚悸。"
+      }
+    },
+    {
+      "@id": "category/liver-calming",
+      "@type": ["tcm:Category", "skos:Concept"],
+      "prefLabel": {
+        "en": "Calms Liver and Extinguishes Wind",
+        "zh-Hant": "平肝息風藥",
+        "zh-Hans": "平肝息风药",
+        "pinyin": "Píng Gān Xī Fēng Yào"
+      },
+      "description": {
+        "en": "Herbs that calm Liver wind for dizziness, tremors, and convulsions.",
+        "zh-Hant": "平肝息風藥平肝潛陽，治療眩暈、抽搐。"
+      }
+    },
+    {
+      "@id": "category/orifice-opening",
+      "@type": ["tcm:Category", "skos:Concept"],
+      "prefLabel": {
+        "en": "Open Orifices",
+        "zh-Hant": "開竅藥",
+        "zh-Hans": "开窍药",
+        "pinyin": "Kāi Qiào Yào"
+      },
+      "description": {
+        "en": "Aromatic herbs that open the sensory orifices for unconsciousness and coma.",
+        "zh-Hant": "開竅藥醒神開竅。"
+      }
+    },
+    {
+      "@id": "category/tonify",
+      "@type": ["tcm:Category", "skos:Concept"],
+      "prefLabel": {
+        "en": "Tonify (Bu Yi)",
+        "zh-Hant": "補益藥",
+        "zh-Hans": "补益药",
+        "pinyin": "Bǔ Yì Yào"
+      },
+      "description": {
+        "en": "Herbs that tonify Qi, Blood, Yin, or Yang for deficiency patterns.",
+        "zh-Hant": "補益藥補氣、補血、補陰、補陽。"
+      },
+      "narrower": [
+        { "@id": "category/tonify-qi" },
+        { "@id": "category/tonify-blood" },
+        { "@id": "category/tonify-yin" },
+        { "@id": "category/tonify-yang" }
+      ]
+    },
+    {
+      "@id": "category/tonify-qi",
+      "@type": ["tcm:Category", "skos:Concept"],
+      "prefLabel": {
+        "en": "Tonify Qi",
+        "zh-Hant": "補氣藥",
+        "zh-Hans": "补气药",
+        "pinyin": "Bǔ Qì Yào"
+      },
+      "broader": [{ "@id": "category/tonify" }],
+      "exampleHerbs": ["tcm/ren-shen", "tcm/huang-qi", "tcm/bai-zhu"]
+    },
+    {
+      "@id": "category/tonify-blood",
+      "@type": ["tcm:Category", "skos:Concept"],
+      "prefLabel": {
+        "en": "Tonify Blood",
+        "zh-Hant": "補血藥",
+        "zh-Hans": "补血药",
+        "pinyin": "Bǔ Xuè Yào"
+      },
+      "broader": [{ "@id": "category/tonify" }],
+      "exampleHerbs": ["tcm/dang-gui", "tcm/shu-di", "tcm/e-jiao"]
+    },
+    {
+      "@id": "category/tonify-yin",
+      "@type": ["tcm:Category", "skos:Concept"],
+      "prefLabel": {
+        "en": "Tonify Yin",
+        "zh-Hant": "補陰藥",
+        "zh-Hans": "补阴药",
+        "pinyin": "Bǔ Yīn Yào"
+      },
+      "broader": [{ "@id": "category/tonify" }],
+      "exampleHerbs": ["tcm/sha-shen", "tcm/mai-dong", "tcm/gou-qi-zi"]
+    },
+    {
+      "@id": "category/tonify-yang",
+      "@type": ["tcm:Category", "skos:Concept"],
+      "prefLabel": {
+        "en": "Tonify Yang",
+        "zh-Hant": "補陽藥",
+        "zh-Hans": "补阳药",
+        "pinyin": "Bǔ Yáng Yào"
+      },
+      "broader": [{ "@id": "category/tonify" }],
+      "exampleHerbs": ["tcm/lu-rong", "tcm/du-zhong", "tcm/ba-ji-tian"]
+    },
+    {
+      "@id": "category/astringent",
+      "@type": ["tcm:Category", "skos:Concept"],
+      "prefLabel": {
+        "en": "Astringent/Secure and Consolidate",
+        "zh-Hant": "收澀藥",
+        "zh-Hans": "收涩药",
+        "pinyin": "Shōu Sè Yào"
+      },
+      "description": {
+        "en": "Herbs that astringe and consolidate for excessive discharge or leakage.",
+        "zh-Hant": "收澀藥收斂固澀，治療滑脫之證。"
+      }
+    },
+    {
+      "@id": "category/parasites-toxins",
+      "@type": ["tcm:Category", "skos:Concept"],
+      "prefLabel": {
+        "en": "Expel Parasites",
+        "zh-Hant": "驅蟲藥",
+        "zh-Hans": "驱虫药",
+        "pinyin": "Qū Chóng Yào"
+      },
+      "description": {
+        "en": "Herbs that kill or expel parasites.",
+        "zh-Hant": "驅蟲藥殺蟲驅蟲。"
+      }
+    },
+    {
+      "@id": "category/external",
+      "@type": ["tcm:Category", "skos:Concept"],
+      "prefLabel": {
+        "en": "External Application",
+        "zh-Hant": "外用藥",
+        "zh-Hans": "外用药",
+        "pinyin": "Wài Yòng Yào"
+      },
+      "description": {
+        "en": "Herbs used externally for skin conditions, wounds, and topical applications.",
+        "zh-Hant": "外用藥外敷治療皮膚病、創傷。"
+      }
+    }
+  ]
+}

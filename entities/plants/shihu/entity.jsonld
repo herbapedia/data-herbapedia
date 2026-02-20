@@ -1,0 +1,31 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/shihu",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "scientificName": "Dendrobium nobile",
+  "name": {
+    "en": "Shihu",
+    "zh-Hant": "石斛",
+    "zh-Hans": "石斛"
+  },
+  "description": {
+    "en": "From the stems of Dendrobium nobile Lindl., D. chrysanthum Wall. Ex Lindl., D. loddigesii Rolfe and Ephemerantha fimbriata (Bl.) Hunt et summerh., family Orchidaceae.\n",
+    "zh-Hant": "石斛（學名：Dendrobium nobile）是一種具有藥用價值的天然產物。現代藥理學研究證實其含有多種生物活性成分，在傳統醫學和現代保健領域均有重要應用價值。",
+    "zh-Hans": "石斛（学名：Dendrobium nobile）是一种具有药用價值的天然產物。現代药理学研究证实其含有多种生物活性成分，在传统医学和現代保健領域均有重要应用價值。"
+  },
+  "image": "media/images/shihu/shihu.jpg",
+  "url": "https://herbapedia.org/plants/shihu",
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/chiherbs-en/shihu/",
+  "created": "2026-02-18T09:15:48.233Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.gbif.org/species/5317489"
+    }
+  ],
+  "gbifId": 5317489
+}

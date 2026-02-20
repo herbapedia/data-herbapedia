@@ -1,0 +1,31 @@
+{
+  "@context": "../../schema/context/core.jsonld",
+  "@id": "plant/zhusun",
+  "@type": [
+    "schema:Plant",
+    "herbapedia:MedicinalPlant"
+  ],
+  "scientificName": "Dictyophora indusiata",
+  "name": {
+    "en": "Zhusun",
+    "zh-Hant": "竹笙",
+    "zh-Hans": "竹笙"
+  },
+  "description": {
+    "en": "Fungi of Dictyophora indusiata Fischer, family phallaceae.\n",
+    "zh-Hant": "竹笙（學名：Dictyophora indusiata）是一種具有藥用價值的天然產物。現代藥理學研究證實其含有多種生物活性成分，在傳統醫學和現代保健領域均有重要應用價值。",
+    "zh-Hans": "竹笙（学名：Dictyophora indusiata）是一种具有药用價值的天然產物。現代药理学研究证实其含有多种生物活性成分，在传统医学和現代保健領域均有重要应用價值。"
+  },
+  "image": "media/images/zhusun/zhusun.jpg",
+  "url": "https://herbapedia.org/plants/zhusun",
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/chiherbs-en/zhusun/",
+  "created": "2026-02-18T09:16:07.899Z",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": [
+    {
+      "@id": "https://www.gbif.org/species/2524108"
+    }
+  ],
+  "gbifId": 2524108
+}
