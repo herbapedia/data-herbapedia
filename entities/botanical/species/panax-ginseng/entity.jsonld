@@ -1,0 +1,56 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "botanical/species/panax-ginseng",
+  "@type": [
+    "botany:PlantSpecies",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Ginseng",
+    "zh-Hant": "人蔘",
+    "zh-Hans": "人参",
+    "ko": "인삼",
+    "ja": "人参"
+  },
+  "scientificName": "Panax ginseng",
+  "family": "Araliaceae",
+  "genus": "Panax",
+  "description": {
+    "en": "A slow-growing perennial plant native to the mountainous forests of East Asia. The root has been used medicinally for thousands of years.",
+    "zh-Hant": "人蔘（學名：Panax ginseng）為多年生草本植物，以其根部入藥。在中醫藥理論中歸屬於補益類藥物，具有補氣養血、健脾益肺等功效，是重要的傳統中藥材。",
+    "zh-Hans": "人参（学名：Panax ginseng）为多年生草本植物，以其根部入药。在中医药理論中歸属于补益类药物，具有补气养血、健脾益肺等功效，是重要的传统中药材。"
+  },
+  "commonName": {
+    "en": "Asian Ginseng, Korean Ginseng",
+    "zh-Hant": "高麗蔘",
+    "ko": "고려인삼",
+    "zh-Hans": "人参"
+  },
+  "botanicalDescription": {
+    "en": "Panax ginseng is a perennial herb growing 30-60 cm tall. The plant has a fleshy root that can live for over 100 years. Leaves are compound with 5 leaflets arranged in a palmate pattern. Small white flowers bloom in summer, followed by red berries."
+  },
+  "geographicalDistribution": {
+    "en": "Native to mountainous regions of Korea, Northeast China (Manchuria), and far eastern Russia. Cultivated extensively in Korea, China, and Japan."
+  },
+  "image": "media/images/panax-ginseng/panax-ginseng.jpg",
+  "gbifID": "3036592",
+  "wikidataID": "Q192163",
+  "containsChemical": [
+    {
+      "@id": "botanical/chemical/ginsenosides"
+    },
+    {
+      "@id": "botanical/chemical/polysaccharides"
+    },
+    {
+      "@id": "botanical/chemical/ginsenoses"
+    }
+  ],
+  "provenance": {
+    "created": "2026-02-19T00:00:00Z",
+    "modified": "2026-02-20T15:18:31.912Z",
+    "migratedFrom": "entities/plants/panax-ginseng/entity.jsonld",
+    "source": "https://www.vitaherbapedia.com/ginseng",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}
