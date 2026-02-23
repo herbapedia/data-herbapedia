@@ -1,0 +1,239 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/chemical/polygoni-avicularis",
+  "@type": ["herbapedia:ChemicalAnalysisData", "schema:Dataset"],
+  "dataType": "ChemicalAnalysis",
+  "sourceDocument": "CHEM____Polygoni_Avicularis_Herba_V1.pdf",
+  "scientificName": "Polygonum aviculare L.",
+  "chineseName": "萹蓄",
+  "pinyinName": "Bian Xu",
+  "identificationMethod": ["TLC", "HPLC-Fingerprint", "HPLC-Assay"],
+  "referenceCompounds": [
+    {
+      "name": "Myricitrin",
+      "chineseName": "楊梅苷",
+      "formula": "C₂₁H₂₀O₁₂",
+      "purpose": ["TLC identification", "HPLC fingerprint marker", "Assay quantification"]
+    },
+    {
+      "name": "Quercitrin",
+      "chineseName": "槲皮苷",
+      "purpose": ["HPLC fingerprint marker"]
+    }
+  ],
+  "assayLimits": {
+    "myricitrin": {
+      "compound": "Myricitrin",
+      "formula": "C₂₁H₂₀O₁₂",
+      "minimumContent": "0.051%",
+      "basis": "dried substance"
+    }
+  },
+  "tlcMethod": {
+    "appendixReference": "Appendix I",
+    "stationaryPhase": "HPTLC silica gel F₂₅₄ plate",
+    "developingSolvent": {
+      "components": ["ethyl acetate", "formic acid", "methanol", "water"],
+      "ratio": "25:1:1:1 (v/v)"
+    },
+    "sprayReagent": {
+      "composition": "2.5 g aluminum chloride in 100 mL ethanol",
+      "visualization": "Air dry until spots/bands visible (approx. 5 min)"
+    },
+    "testSolution": {
+      "sampleAmount": "1.0 g",
+      "solvent": "70% methanol",
+      "solventVolume": "10 mL",
+      "extraction": "ultrasonication (140 W) for 30 minutes",
+      "centrifugation": "2800 × g for 10 minutes",
+      "evaporation": "rotary evaporator under reduced pressure",
+      "finalVolume": "1 mL of 70% methanol",
+      "filtration": "0.45 μm nylon membrane"
+    },
+    "standardSolutions": {
+      "concentration": "1.0 mg/mL in methanol",
+      "compounds": ["Myricitrin"]
+    },
+    "applicationVolumes": {
+      "standardSolution": "2 μL",
+      "testSolution": "2 μL"
+    },
+    "developingDistance": "6 cm",
+    "chamberSaturation": "15 minutes",
+    "visualization": "UV light at 254 nm",
+    "identificationCriteria": {
+      "positiveMarkers": ["Myricitrin"]
+    }
+  },
+  "hplcFingerprint": {
+    "appendixReference": "Appendix II",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm",
+        "poreSize": "190 Å",
+        "carbonLoading": "12%"
+      },
+      "detector": "DAD",
+      "detectionWavelength": "254 nm",
+      "columnTemperature": "35°C",
+      "flowRate": "1.0 mL/min",
+      "injectionVolume": "10 μL"
+    },
+    "mobilePhase": {
+      "solventA": "0.2% Acetic acid",
+      "solventB": "Methanol",
+      "gradientProgram": [
+        {
+          "timeRange": "0-45 min",
+          "solventA": "80% → 40%",
+          "solventB": "20% → 60%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "myricitrin": {
+        "concentration": "40 mg/L (2.0 mg in 50 mL of 60% methanol)",
+        "storage": "as per laboratory guidelines"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "1.0 g",
+      "solvent": "60% methanol",
+      "solventVolume": "45 mL",
+      "maceration": "1 hour",
+      "reflux": "30 minutes",
+      "cooling": "room temperature",
+      "centrifugation": "3800 × g for 10 minutes",
+      "finalVolume": "50 mL with 60% methanol",
+      "filtration": "0.45 μm PTFE microporous membrane"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "peakAreaRSD": "≤ 5.0% (Myricitrin)",
+      "retentionTimeRSD": "≤ 2.0% (Myricitrin)",
+      "theoreticalPlates": "≥ 20,000 (based on Myricitrin)",
+      "resolution": "≥ 1.0 (between peak 1 and adjacent peak)"
+    },
+    "identificationCriteria": {
+      "retentionTimeTolerance": "≤ 2.0% difference between sample and standard"
+    }
+  },
+  "hplcAssay": {
+    "appendixReference": "Appendix III",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "DAD",
+      "detectionWavelength": "254 nm",
+      "columnTemperature": "35°C",
+      "flowRate": "1.0 mL/min"
+    },
+    "mobilePhase": {
+      "solventA": "0.2% Acetic acid",
+      "solventB": "Methanol",
+      "gradientProgram": [
+        {
+          "timeRange": "0-45 min",
+          "solventA": "80% → 40%",
+          "solventB": "20% → 60%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "stockSolution": {
+        "concentration": "1000 mg/L",
+        "compounds": ["Myricitrin"],
+        "preparation": "as per monograph",
+        "storage": "as per laboratory guidelines"
+      },
+      "workingSolutions": {
+        "concentrations": ["25", "50", "100", "200", "400 mg/L"],
+        "description": "Series of standard solutions for 5-point calibration curve"
+      },
+      "injectionVolume": "10 μL (for calibration)"
+    },
+    "testSolution": {
+      "sampleAmount": "1.0 g",
+      "solvent": "60% methanol",
+      "extractionVolume": "45 mL",
+      "maceration": "1 hour",
+      "reflux": "30 minutes",
+      "centrifugation": "3800 × g for 10 minutes",
+      "finalVolume": "50 mL",
+      "filtration": "0.45 μm PTFE filter",
+      "injectionVolume": "10 μL"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "injectionVolume": "10 μL",
+      "standardConcentration": "10 mg/L (Myricitrin Std-AS)",
+      "peakAreaRSD": "≤ 5.0% (Myricitrin)",
+      "retentionTimeRSD": "≤ 2.0% (Myricitrin)",
+      "theoreticalPlates": "≥ 20,000 (based on Myricitrin)",
+      "resolution": "≥ 1.5 (between Myricitrin and adjacent peak)"
+    },
+    "calibration": {
+      "method": "5-point calibration curve",
+      "plot": "Peak area vs. concentration (mg/L)",
+      "identificationTolerance": "≤ 2.0% difference in retention times"
+    }
+  },
+  "rrtValues": [
+    {
+      "peakNumber": 1,
+      "compound": "Myricitrin",
+      "chineseName": "楊梅苷",
+      "rrt": 1.00,
+      "acceptableRange": null,
+      "referenceMarker": true,
+      "referenceTo": "self"
+    },
+    {
+      "peakNumber": 2,
+      "compound": "Unidentified",
+      "rrt": 1.12,
+      "acceptableRange": "± 0.03",
+      "referenceMarker": false,
+      "referenceTo": "Myricitrin"
+    },
+    {
+      "peakNumber": 3,
+      "compound": "Unidentified",
+      "rrt": 1.25,
+      "acceptableRange": "± 0.03",
+      "referenceMarker": false,
+      "referenceTo": "Myricitrin"
+    },
+    {
+      "peakNumber": 4,
+      "compound": "Quercitrin",
+      "chineseName": "槲皮苷",
+      "rrt": 1.30,
+      "acceptableRange": "± 0.03",
+      "referenceMarker": false,
+      "referenceTo": "Myricitrin"
+    }
+  ],
+  "appendices": {
+    "appendixI": {
+      "title": "Chromatography - Thin-Layer Chromatography",
+      "description": "General procedures for TLC including plate types, application methods, developing chambers, and Rf calculation"
+    },
+    "appendixII": {
+      "title": "GC and HPLC/UHPLC Fingerprinting",
+      "description": "Methods for establishing chromatographic fingerprints using marker peaks and RRT values"
+    },
+    "appendixIII": {
+      "title": "Chromatography - HPLC/UHPLC",
+      "description": "General HPLC/UHPLC procedures including system suitability tests (theoretical plates, repeatability, resolution, tailing factor) and quantitative calculations"
+    }
+  },
+  "extractedAt": "2026-02-21"
+}

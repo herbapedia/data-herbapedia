@@ -1,0 +1,37 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/preparation/vitamin-d-calciferol-cholecalciferol-ergocalciferol",
+  "@type": [
+    "herbal:HerbalPreparation",
+    "schema:DietarySupplement"
+  ],
+  "name": {
+    "en": "Vitamin D; Calciferol, Cholecalciferol, Ergocalciferol",
+    "zh-Hant": "維他命 D",
+    "zh-Hans": "维他命 D"
+  },
+  "derivedFrom": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/vitamin-d-calciferol-cholecalciferol-ergocalciferol"
+    }
+  ],
+  "preparationMethod": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/method/dried"
+  },
+  "form": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/form/whole"
+  },
+  "hasWesternProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/western/profile/vitamin-d-calciferol-cholecalciferol-ergocalciferol"
+    }
+  ],
+  "provenance": {
+    "created": "2026-02-20",
+    "source": "Generated from Western profile",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "image": "media/images/vitamin-d-calciferol-cholecalciferol-ergocalciferol/vitamin-d-calciferol-cholecalciferol-ergocalciferol.jpg"
+}

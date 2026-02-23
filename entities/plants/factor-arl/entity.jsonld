@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/factor-arl",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/factor-arl",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"

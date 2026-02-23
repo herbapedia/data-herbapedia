@@ -1,12 +1,12 @@
 {
-  "@context": "../../schema/context/tcm.jsonld",
-  "@id": "tcm/chinese-rhubarb-root",
+  "@context": "https://www.herbapedia.org/schema/context/tcm.jsonld",
+  "@id": "https://www.herbapedia.org/system/tcm/profile/chinese-rhubarb-root",
   "@type": [
     "tcm:Herb",
     "schema:DietarySupplement"
   ],
   "derivedFromPlant": {
-    "@id": "plant/chinese-rhubarb-root"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/chinese-rhubarb-root"
   },
   "name": {
     "en": "Chinese rhubarb root",
@@ -19,19 +19,19 @@
     "zh-Hans": "大黄"
   },
   "hasCategory": {
-    "@id": "category/tonify-qi"
+    "@id": "https://www.herbapedia.org/system/tcm/category/downward-draining"
   },
   "hasNature": {
-    "@id": "nature/neutral"
+    "@id": "https://www.herbapedia.org/system/tcm/nature/neutral"
   },
   "hasFlavor": [
     {
-      "@id": "flavor/sweet"
+      "@id": "https://www.herbapedia.org/system/tcm/flavor/sweet"
     }
   ],
   "entersMeridian": [
     {
-      "@id": "meridian/spleen"
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/spleen"
     }
   ],
   "tcmHistory": {

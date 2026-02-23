@@ -1,0 +1,153 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herbapedia.org/schema/json-schema/profiles/western-profile.schema.json",
+  "title": "Western Herbal Profile",
+  "description": "Western herbalism interpretation of an HerbalPreparation. Uses Western herbal concepts like actions (carminative, anti-inflammatory), organ affinities, and evidence-based indications.",
+  "type": "object",
+  "allOf": [
+    { "$ref": "./profile-base.schema.json" }
+  ],
+  "required": ["@id", "@type", "name", "profiles"],
+  "properties": {
+    "@id": {
+      "description": "Unique identifier: western/profile/{slug}.",
+      "type": "string",
+      "pattern": "^western/profile/[a-z0-9-]+$",
+      "examples": ["western/profile/fresh-ginger", "western/profile/ginseng-root"]
+    },
+    "@type": {
+      "type": "array",
+      "items": { "type": "string" },
+      "contains": { "const": "western:HerbProfile" },
+      "examples": [["western:HerbProfile", "schema:DietarySupplement"]]
+    },
+    "profiles": {
+      "description": "The HerbalPreparation that this profile interprets.",
+      "$ref": "../core/iri-reference.schema.json",
+      "examples": [{ "@id": "preparation/fresh-ginger-rhizome" }]
+    },
+    "hasAction": {
+      "description": "Western herbal actions - what the herb DOES physiologically.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" },
+      "minItems": 1,
+      "examples": [
+        [
+          { "@id": "western/action/carminative" },
+          { "@id": "western/action/anti-inflammatory" },
+          { "@id": "western/action/anti-emetic" }
+        ]
+      ]
+    },
+    "hasOrganAffinity": {
+      "description": "Organ systems this herb has affinity for.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" },
+      "examples": [
+        [
+          { "@id": "western/organ/digestive" },
+          { "@id": "western/organ/respiratory" }
+        ]
+      ]
+    },
+    "hasSystemAffinity": {
+      "description": "Body systems this herb affects.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" },
+      "examples": [
+        [
+          { "@id": "western/system/gastrointestinal" },
+          { "@id": "western/system/cardiovascular" }
+        ]
+      ]
+    },
+    "westernHistory": {
+      "description": "Historical use in Western herbalism.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "westernTraditionalUsage": {
+      "description": "Traditional Western herbal usage.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "westernModernResearch": {
+      "description": "Modern scientific research.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "evidenceLevel": {
+      "description": "Level of scientific evidence supporting use.",
+      "type": "string",
+      "enum": ["traditional", "preliminary", "moderate", "strong", "well-established"],
+      "examples": ["moderate"]
+    },
+    "clinicalTrials": {
+      "description": "References to clinical trials.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": { "type": "string" },
+          "url": { "type": "string", "format": "uri" },
+          "summary": { "type": "string" },
+          "year": { "type": "integer" }
+        }
+      }
+    },
+    "constituents": {
+      "description": "Key active constituents.",
+      "type": "array",
+      "items": { "type": "string" },
+      "examples": [["Gingerols", "Shogaols", "Zingerone"]]
+    },
+    "mechanismOfAction": {
+      "description": "Known or proposed mechanisms of action.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "pharmacokinetics": {
+      "description": "Absorption, distribution, metabolism, excretion data.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "drugInteractions": {
+      "description": "Known drug interactions.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "drug": { "type": "string" },
+          "interaction": { "type": "string" },
+          "severity": { "type": "string", "enum": ["mild", "moderate", "severe"] }
+        }
+      }
+    },
+    "pregnancyCategory": {
+      "description": "Pregnancy safety category.",
+      "type": "string",
+      "enum": ["A", "B", "C", "D", "X", "unknown"],
+      "_comment": "A=Safest, X=Contraindicated, based on Australian categorization"
+    },
+    "breastfeedingSafety": {
+      "description": "Safety during breastfeeding.",
+      "type": "string",
+      "enum": ["safe", "caution", "avoid", "unknown"]
+    }
+  },
+  "additionalProperties": true,
+  "_documentation": {
+    "iriPattern": "western/profile/{slug}",
+    "directory": "systems/western/profiles/{slug}/profile.jsonld",
+    "keyDifferenceFromTCM": "Western herbalism focuses on physiological actions and organ affinities rather than energetic properties (nature, flavor, meridian)",
+    "actions": {
+      "common": [
+        "carminative - relieves flatulence",
+        "anti-inflammatory - reduces inflammation",
+        "anti-emetic - prevents vomiting",
+        "analgesic - relieves pain",
+        "antispasmodic - relieves muscle spasms",
+        "diaphoretic - promotes sweating",
+        "diuretic - promotes urine flow",
+        "expectorant - promotes mucus expulsion",
+        "nervine - supports nervous system",
+        "vulnerary - promotes wound healing"
+      ]
+    }
+  }
+}

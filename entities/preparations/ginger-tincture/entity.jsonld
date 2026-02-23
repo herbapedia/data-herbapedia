@@ -1,0 +1,35 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/preparation/ginger-tincture",
+  "@type": [
+    "herbal:HerbalPreparation",
+    "schema:DietarySupplement"
+  ],
+  "name": {
+    "en": "Ginger Tincture",
+    "zh-Hant": "薑酊",
+    "zh-Hans": "姜酊"
+  },
+  "derivedFrom": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/part/ginger-rhizome"
+    }
+  ],
+  "preparationMethod": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/method/tinctured"
+  },
+  "form": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/form/tincture"
+  },
+  "description": {
+    "en": "Alcohol-based extract of ginger rhizome. Concentrated form for medicinal use."
+  },
+  "provenance": {
+    "created": "2026-02-21",
+    "source": "Herbapedia Team",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "image": "media/images/ginger-tincture/ginger-tincture.jpg"
+}

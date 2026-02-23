@@ -1,12 +1,12 @@
 {
-  "@context": "../../schema/context/tcm.jsonld",
-  "@id": "tcm/shouwuteng",
+  "@context": "https://www.herbapedia.org/schema/context/tcm.jsonld",
+  "@id": "https://www.herbapedia.org/system/tcm/profile/shouwuteng",
   "@type": [
     "tcm:Herb",
     "schema:DietarySupplement"
   ],
   "derivedFromPlant": {
-    "@id": "plant/shouwuteng"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/shouwuteng"
   },
   "name": {
     "en": "Shouwuteng",
@@ -19,19 +19,19 @@
     "zh-Hans": "首乌藤"
   },
   "hasCategory": {
-    "@id": "category/tonify-qi"
+    "@id": "https://www.herbapedia.org/system/tcm/category/calm-spirit"
   },
   "hasNature": {
-    "@id": "nature/neutral"
+    "@id": "https://www.herbapedia.org/system/tcm/nature/neutral"
   },
   "hasFlavor": [
     {
-      "@id": "flavor/sweet"
+      "@id": "https://www.herbapedia.org/system/tcm/flavor/sweet"
     }
   ],
   "entersMeridian": [
     {
-      "@id": "meridian/spleen"
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/spleen"
     }
   ],
   "tcmHistory": {

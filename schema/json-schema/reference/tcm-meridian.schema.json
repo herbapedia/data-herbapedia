@@ -1,0 +1,141 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herbapedia.org/schema/json-schema/reference/tcm-meridian.schema.json",
+  "title": "TCM Meridian",
+  "description": "Traditional Chinese Medicine meridian/channel (经脉 - Jing Mai). The energetic pathways through which qi and blood flow. Herbs 'enter' specific meridians, directing their action to related organs and body areas.",
+  "type": "object",
+  "allOf": [
+    { "$ref": "./reference-entity.schema.json" }
+  ],
+  "required": ["@id", "@type", "name"],
+  "properties": {
+    "@id": {
+      "description": "Unique identifier: tcm/meridian/{slug}.",
+      "type": "string",
+      "pattern": "^tcm/meridian/[a-z0-9-]+$",
+      "examples": [
+        "tcm/meridian/lung",
+        "tcm/meridian/large-intestine",
+        "tcm/meridian/stomach",
+        "tcm/meridian/spleen",
+        "tcm/meridian/heart",
+        "tcm/meridian/small-intestine",
+        "tcm/meridian/bladder",
+        "tcm/meridian/kidney",
+        "tcm/meridian/pericardium",
+        "tcm/meridian/triple-burner",
+        "tcm/meridian/gallbladder",
+        "tcm/meridian/liver",
+        "tcm/meridian/governor",
+        "tcm/meridian/conception"
+      ]
+    },
+    "@type": {
+      "type": "array",
+      "items": { "type": "string" },
+      "contains": { "const": "tcm:Meridian" },
+      "examples": [["tcm:Meridian"]]
+    },
+    "name": {
+      "description": "Meridian name in Chinese and English.",
+      "$ref": "../core/language-map.schema.json",
+      "examples": [{ "zh-Hant": "肺經", "zh-Hans": "肺经", "en": "Lung Meridian" }]
+    },
+    "pinyin": {
+      "description": "Pinyin romanization.",
+      "type": "string",
+      "examples": ["Fèi Jīng", "Dà Cháng Jīng", "Wèi Jīng"]
+    },
+    "symbol": {
+      "description": "Chinese characters.",
+      "type": "string",
+      "examples": ["肺經", "大腸經", "胃經"]
+    },
+    "abbreviation": {
+      "description": "Standard acupuncture abbreviation.",
+      "type": "string",
+      "examples": ["LU", "LI", "ST", "SP", "HT", "SI", "BL", "KI", "PC", "TB", "GB", "LR", "GV", "CV"]
+    },
+    "isRegularMeridian": {
+      "description": "Whether this is one of the 12 regular meridians.",
+      "type": "boolean"
+    },
+    "isExtraordinaryMeridian": {
+      "description": "Whether this is one of the 8 extraordinary meridians.",
+      "type": "boolean"
+    },
+    "pairedMeridian": {
+      "description": "The paired meridian (interior-exterior relationship).",
+      "$ref": "../core/iri-reference.schema.json"
+    },
+    "associatedOrgan": {
+      "description": "The zang or fu organ associated with this meridian.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "organType": {
+      "description": "Whether this is a zang (yin) or fu (yang) meridian.",
+      "type": "string",
+      "enum": ["zang", "fu", "extraordinary"],
+      "_documentation": {
+        "zang": "Yin organs - Liver, Heart, Spleen, Lung, Kidney, Pericardium",
+        "fu": "Yang organs - Gallbladder, Small Intestine, Stomach, Large Intestine, Bladder, Triple Burner",
+        "extraordinary": "Extra meridians - Governor, Conception, etc."
+      }
+    },
+    "element": {
+      "description": "Associated Five Element phase.",
+      "type": "string",
+      "enum": ["wood", "fire", "earth", "metal", "water", "none"]
+    },
+    "timeOfPeakFlow": {
+      "description": "Time of peak qi flow (Chinese two-hour periods).",
+      "type": "string",
+      "examples": ["3-5am", "5-7am", "7-9am", "9-11am", "11am-1pm"]
+    },
+    "pathway": {
+      "description": "General pathway description.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "functions": {
+      "description": "Functions of this meridian.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "commonIndications": {
+      "description": "Conditions treated via this meridian.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "numberOfPoints": {
+      "description": "Number of acupuncture points on this meridian.",
+      "type": "integer"
+    }
+  },
+  "additionalProperties": true,
+  "_documentation": {
+    "iriPattern": "tcm/meridian/{slug}",
+    "directory": "systems/tcm/reference/meridians.jsonld",
+    "twelveRegularMeridians": {
+      "hand_taiyin": "Lung (LU) - 3-5am - Metal",
+      "hand_yangming": "Large Intestine (LI) - 5-7am - Metal",
+      "foot_yangming": "Stomach (ST) - 7-9am - Earth",
+      "foot_taiyin": "Spleen (SP) - 9-11am - Earth",
+      "hand_shaoyin": "Heart (HT) - 11am-1pm - Fire",
+      "hand_taiyang": "Small Intestine (SI) - 1-3pm - Fire",
+      "foot_taiyang": "Bladder (BL) - 3-5pm - Water",
+      "foot_shaoyin": "Kidney (KI) - 5-7pm - Water",
+      "hand_jueyin": "Pericardium (PC) - 7-9pm - Fire",
+      "hand_shaoyang": "Triple Burner (TB) - 9-11pm - Fire",
+      "foot_shaoyang": "Gallbladder (GB) - 11pm-1am - Wood",
+      "foot_jueyin": "Liver (LR) - 1-3am - Wood"
+    },
+    "eightExtraordinaryMeridians": {
+      "du_mai": "Governor Vessel (GV) - Yang master",
+      "ren_mai": "Conception Vessel (CV) - Yin master",
+      "chong_mai": "Penetrating Vessel - Sea of blood",
+      "dai_mai": "Girdle Vessel - Belt",
+      "yangqiao_mai": "Yang Motility",
+      "yinqiao_mai": "Yin Motility",
+      "yangwei_mai": "Yang Linking",
+      "yinwei_mai": "Yin Linking"
+    }
+  }
+}

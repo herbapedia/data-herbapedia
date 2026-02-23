@@ -1,0 +1,127 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/system/ayurveda/profile/reference/viryas",
+  "@type": [
+    "ayurveda:ReferenceCollection",
+    "skos:Collection"
+  ],
+  "name": {
+    "en": "Ayurveda Viryas (Potencies)",
+    "sa": "वीर्य"
+  },
+  "description": {
+    "en": "The two potencies (वीर्य - Virya) in Ayurveda: Heating (Ushna) and Cooling (Sheeta). Virya describes the heating or cooling effect of a substance."
+  },
+  "members": [
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/virya/heating",
+      "@type": [
+        "ayurveda:Virya"
+      ],
+      "name": {
+        "en": "Heating",
+        "sa": "उष्ण"
+      },
+      "sanskritName": "उष्ण",
+      "sanskritTransliteration": "Uṣṇa",
+      "englishName": "Heating",
+      "code": "H",
+      "oppositeOf": {
+        "@id": "https://www.herbapedia.org/system/ayurveda/profile/virya/cooling"
+      },
+      "effectOnDoshas": {
+        "vata": "decreases",
+        "pitta": "increases",
+        "kapha": "decreases"
+      },
+      "effectOnAgni": {
+        "en": "Increases digestive fire (Agni), promotes metabolism"
+      },
+      "physiologicalEffect": {
+        "en": "Increases body heat, promotes circulation, stimulates digestion, reduces cold and dampness"
+      },
+      "indications": [
+        "vata disorders",
+        "kapha disorders",
+        "cold conditions",
+        "low agni",
+        "obesity"
+      ],
+      "contraindications": [
+        "pitta disorders",
+        "fever",
+        "inflammation",
+        "bleeding disorders",
+        "hot climates"
+      ],
+      "exampleSubstances": [
+        "ginger",
+        "black pepper",
+        "garlic",
+        "cinnamon",
+        "clove",
+        "asafoetida"
+      ],
+      "tcmNatureEquivalent": {
+        "@id": "https://www.herbapedia.org/system/tcm/nature/hot"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/virya/cooling",
+      "@type": [
+        "ayurveda:Virya"
+      ],
+      "name": {
+        "en": "Cooling",
+        "sa": "शीत"
+      },
+      "sanskritName": "शीत",
+      "sanskritTransliteration": "Śīta",
+      "englishName": "Cooling",
+      "code": "C",
+      "oppositeOf": {
+        "@id": "https://www.herbapedia.org/system/ayurveda/profile/virya/heating"
+      },
+      "effectOnDoshas": {
+        "vata": "increases",
+        "pitta": "decreases",
+        "kapha": "increases"
+      },
+      "effectOnAgni": {
+        "en": "Can reduce digestive fire if used excessively, but soothes inflamed agni"
+      },
+      "physiologicalEffect": {
+        "en": "Reduces body heat, soothes inflammation, calms pitta, promotes calmness"
+      },
+      "indications": [
+        "pitta disorders",
+        "fever",
+        "inflammation",
+        "burning sensations",
+        "hot conditions"
+      ],
+      "contraindications": [
+        "vata disorders",
+        "kapha disorders",
+        "cold conditions",
+        "weak digestion"
+      ],
+      "exampleSubstances": [
+        "amalaki",
+        "coconut",
+        "coriander",
+        "fennel",
+        "mint",
+        "aloe vera"
+      ],
+      "tcmNatureEquivalent": {
+        "@id": "https://www.herbapedia.org/system/tcm/nature/cold"
+      }
+    }
+  ],
+  "_documentation": {
+    "classicalReference": "Charaka Samhita, Sutrasthana",
+    "note": "Some substances are considered 'anushna' (neither heating nor cooling), but most herbs have a discernible virya",
+    "clinicalApplication": "Heating herbs are used for vata/kapha conditions; cooling herbs for pitta conditions"
+  }
+}

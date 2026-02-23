@@ -1,11 +1,11 @@
 {
-  "@context": "../../schema/context/western.jsonld",
-  "@id": "western/amber",
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/amber",
   "@type": [
     "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
-    "@id": "plant/amber"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/amber"
   },
   "name": {
     "en": "Amber",

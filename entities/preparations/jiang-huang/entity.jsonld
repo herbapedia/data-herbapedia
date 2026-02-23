@@ -1,0 +1,46 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/preparation/jiang-huang",
+  "@type": [
+    "herbal:HerbalPreparation",
+    "schema:DietarySupplement"
+  ],
+  "name": {
+    "en": "Turmeric",
+    "zh-Hant": "薑黃",
+    "zh-Hans": "姜黄"
+  },
+  "derivedFrom": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/turmeric"
+    }
+  ],
+  "preparationMethod": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/method/dried"
+  },
+  "form": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/form/whole"
+  },
+  "hasTCMProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/profile/jiang-huang"
+    }
+  ],
+  "safetyInfo": {
+    "generalContraindications": {
+      "en": "Contraindicated in pregnancy (promotes blood circulation), and in cases of bleeding without stasis.",
+      "zh-Hant": "孕婦忌用。無瘀血者慎用。"
+    }
+  },
+  "provenance": {
+    "created": "2026-02-20",
+    "source": "Generated from TCM profile",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "description": {
+    "en": "Herbal preparation derived from Turmeric. Used for blood stasis patterns with pain, irregular menstruation, dysmenorrhea, amenorrhea, chest and abdominal pain, traumatic injuries, and wind-damp painful obstruction. Also used for jaundice and ..."
+  },
+  "image": "media/images/jiang-huang/jiang-huang.jpg"
+}

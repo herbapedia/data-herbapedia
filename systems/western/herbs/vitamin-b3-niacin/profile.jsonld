@@ -1,11 +1,11 @@
 {
-  "@context": "../../schema/context/western.jsonld",
-  "@id": "western/vitamin-b3-niacin",
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/vitamin-b3-niacin",
   "@type": [
     "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
-    "@id": "plant/vitamin-b3-niacin"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/vitamin-b3-niacin"
   },
   "name": {
     "en": "Vitamin B3, Niacin",

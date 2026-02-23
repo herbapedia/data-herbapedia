@@ -1,12 +1,12 @@
 {
-  "@context": "../../schema/context/western.jsonld",
-  "@id": "western/chamomile",
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/chamomile",
   "@type": [
     "western:Herb",
     "schema:DietarySupplement"
   ],
   "derivedFromPlant": {
-    "@id": "plant/chamomile"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/chamomile"
   },
   "name": {
     "en": "Chamomile",
@@ -15,15 +15,29 @@
   },
   "scientificName": "Matricaria chamomilla",
   "hasAction": [
-    { "@id": "western/action/sedative" },
-    { "@id": "western/action/anti-inflammatory" },
-    { "@id": "western/action/carminative" },
-    { "@id": "western/action/antispasmodic" }
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/sedative"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/anti-inflammatory"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/carminative"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/antispasmodic"
+    }
   ],
   "hasOrganAffinity": [
-    { "@id": "western/organ/digestive" },
-    { "@id": "western/organ/nervous-system" },
-    { "@id": "western/organ/skin" }
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/digestive"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/nervous-system"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/skin"
+    }
   ],
   "westernHistory": {
     "en": "Chamomile has been used for centuries in traditional medicine, dating back to ancient Egypt, Greece, and Rome. The name comes from Greek 'chamos' (ground) and 'melos' (apple), referring to its low growth and apple-like scent.",

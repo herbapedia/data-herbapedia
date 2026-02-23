@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herbapedia.org/schema/json-schema/reference/persian-degree.schema.json",
+  "title": "Persian Degree",
+  "description": "Traditional Persian Medicine degree (درجه - Darajah) of potency. Degrees range from 1 (mildest) to 4 (strongest). Higher degrees indicate greater therapeutic effect but also increased potential for adverse effects.",
+  "type": "object",
+  "allOf": [
+    { "$ref": "./reference-entity.schema.json" }
+  ],
+  "required": ["@id", "@type", "name", "degree"],
+  "properties": {
+    "@id": {
+      "description": "Unique identifier: persian/degree/{number}.",
+      "type": "string",
+      "pattern": "^persian/degree/[1-4]$",
+      "examples": ["persian/degree/1", "persian/degree/2", "persian/degree/3", "persian/degree/4"]
+    },
+    "@type": {
+      "type": "array",
+      "items": { "type": "string" },
+      "contains": { "const": "persian:Degree" },
+      "examples": [["persian:Degree"]]
+    },
+    "name": {
+      "description": "Degree name in Persian and English.",
+      "$ref": "../core/language-map.schema.json",
+      "examples": [{ "fa": "درجه اول", "en": "First Degree" }]
+    },
+    "degree": {
+      "description": "The degree number (1-4).",
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 4
+    },
+    "persianName": {
+      "description": "Persian name.",
+      "type": "string",
+      "examples": ["درجه اول", "درجه دوم", "درجه سوم", "درجه چهارم"]
+    },
+    "description": {
+      "description": "Description of this degree's potency.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "therapeuticStrength": {
+      "description": "Relative therapeutic strength.",
+      "type": "string",
+      "enum": ["mild", "moderate", "strong", "very-strong"]
+    },
+    "safetyProfile": {
+      "description": "Safety considerations at this degree.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "usageGuidelines": {
+      "description": "Guidelines for using substances of this degree.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "exampleSubstances": {
+      "description": "Example substances with this degree.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "cautions": {
+      "description": "Cautions for this degree.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "contraindications": {
+      "description": "Contraindications for this degree.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "correctivesNeeded": {
+      "description": "Whether correctives (Musleh) are typically needed.",
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": true,
+  "_documentation": {
+    "iriPattern": "persian/degree/{number}",
+    "directory": "systems/persian/reference/degrees.jsonld",
+    "fourDegrees": {
+      "1": {
+        "name": "First Degree (درجه اول)",
+        "strength": "Mild",
+        "safety": "Safe for most people, including children and elderly",
+        "usage": "Can be used freely as food or mild medicine",
+        "examples": ["Chamomile", "Fennel", "Coriander"]
+      },
+      "2": {
+        "name": "Second Degree (درجه دوم)",
+        "strength": "Moderate",
+        "safety": "Generally safe, some caution needed",
+        "usage": "Used as medicine, can be consumed regularly",
+        "examples": ["Ginger", "Cinnamon", "Peppermint"]
+      },
+      "3": {
+        "name": "Third Degree (درجه سوم)",
+        "strength": "Strong",
+        "safety": "Requires caution, may need correctives",
+        "usage": "Used therapeutically, not for casual consumption",
+        "examples": ["Myrrh", "Aloe", "Saffron"]
+      },
+      "4": {
+        "name": "Fourth Degree (درجه چهارم)",
+        "strength": "Very Strong",
+        "safety": "Potentially toxic, requires careful dosing",
+        "usage": "Used only by skilled practitioners, often with correctives",
+        "examples": ["Opium", "Henbane", "Aconite"]
+      }
+    }
+  }
+}

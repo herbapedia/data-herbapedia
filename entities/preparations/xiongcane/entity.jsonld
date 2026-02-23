@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/preparation/xiongcane",
+  "@type": [
+    "herbal:HerbalPreparation",
+    "schema:DietarySupplement"
+  ],
+  "name": {
+    "en": "Xiongcane",
+    "zh-Hant": "雄蠶蛾  又名僵蠶",
+    "zh-Hans": "雄蚕蛾  又名僵蚕"
+  },
+  "derivedFrom": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/xiongcane"
+    }
+  ],
+  "preparationMethod": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/method/dried"
+  },
+  "form": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/form/whole"
+  },
+  "hasTCMProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/profile/xiongcane"
+    }
+  ],
+  "safetyInfo": {},
+  "provenance": {
+    "created": "2026-02-20",
+    "source": "Generated from TCM profile",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "description": {
+    "en": "Herbal preparation derived from Xiongcane. Xiongcane, a salty, acrid medicine that is neutral in nature, enters the liver, lung and stomach meridians. It is useful for tonifying kidney yang, aiding recuperation, expelling wind heat and extingu..."
+  },
+  "image": "media/images/xiongcane/xiongcane.jpg"
+}

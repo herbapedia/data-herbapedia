@@ -1,0 +1,238 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herbapedia.org/schema/json-schema/profiles/ayurveda-profile.schema.json",
+  "title": "Ayurveda Profile",
+  "description": "Ayurvedic interpretation of an HerbalPreparation. Uses Ayurvedic concepts like Rasa (taste), Guna (qualities), Virya (potency), Vipaka (post-digestive effect), and Dosha effects. This profile INTERPRETS a preparation through the Ayurvedic theoretical framework.",
+  "type": "object",
+  "allOf": [
+    { "$ref": "./profile-base.schema.json" }
+  ],
+  "required": ["@id", "@type", "name", "profiles", "hasRasa", "hasVirya"],
+  "properties": {
+    "@id": {
+      "description": "Unique identifier: ayurveda/profile/{slug}.",
+      "type": "string",
+      "pattern": "^ayurveda/profile/[a-z0-9-]+$",
+      "examples": ["ayurveda/profile/nagara", "ayurveda/profile/haridra", "ayurveda/profile/ashwagandha"]
+    },
+    "@type": {
+      "type": "array",
+      "items": { "type": "string" },
+      "contains": { "const": "ayurveda:DravyaProfile" },
+      "examples": [["ayurveda:DravyaProfile", "schema:DietarySupplement"]]
+    },
+    "profiles": {
+      "description": "The HerbalPreparation that this profile interprets.",
+      "$ref": "../core/iri-reference.schema.json",
+      "examples": [{ "@id": "preparation/fresh-ginger-rhizome" }]
+    },
+    "sanskritName": {
+      "description": "Sanskrit name of the dravya (substance).",
+      "type": "string",
+      "examples": ["Nāgara", "Haridrā", "Aśvagandhā"]
+    },
+    "hindiName": {
+      "description": "Hindi name of the dravya.",
+      "type": "string",
+      "examples": ["Adrak", "Haldi", "Ashwagandha"]
+    },
+    "hasRasa": {
+      "description": "Rasa (रस) - The six tastes according to Ayurveda. Each taste has specific effects on the doshas and body. Most dravyas have one primary rasa, some have multiple.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" },
+      "minItems": 1,
+      "examples": [
+        [{ "@id": "ayurveda/rasa/katu" }],
+        [{ "@id": "ayurveda/rasa/madhura" }, { "@id": "ayurveda/rasa/tikta" }]
+      ],
+      "_documentation": {
+        "rasas": {
+          "madhura": "Sweet (मधुर) - Increases Kapha, decreases Vata/Pitta, nourishes tissues",
+          "amla": "Sour (अम्ल) - Increases Pitta/Kapha, decreases Vata, stimulates digestion",
+          "lavana": "Salty (लवण) - Increases Pitta/Kapha, decreases Vata, softens tissues",
+          "katu": "Pungent (कटु) - Increases Vata/Pitta, decreases Kapha, stimulates digestion",
+          "tikta": "Bitter (तिक्त) - Increases Vata, decreases Pitta/Kapha, cleanses tissues",
+          "kashaya": "Astringent (कषाय) - Increases Vata, decreases Pitta/Kapha, binds tissues"
+        }
+      }
+    },
+    "hasGuna": {
+      "description": "Guna (गुण) - The qualities or attributes of the dravya. There are 20 gunas (10 pairs of opposites). A dravya typically has several gunas.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" },
+      "examples": [
+        [
+          { "@id": "ayurveda/guna/laghu" },
+          { "@id": "ayurveda/guna/ruksha" }
+        ]
+      ],
+      "_documentation": {
+        "gunas": {
+          "guru-laghu": "Heavy-Light (affects digestion and tissue building)",
+          "sheeta-ushna": "Cold-Hot (affects metabolism and doshas)",
+          "snigdha-ruksha": "Oily-Dry (affects tissues and elimination)",
+          "manda-tikshna": "Dull-Sharp (affects penetration and action)",
+          "sthira-sara": "Stable-Mobile (affects movement and stability)",
+          "mridu-kathina": "Soft-Hard (affects tissue texture)",
+          "vishada-picchila": "Clear-Slimy (affects clarity and binding)",
+          "shlakshna-khara": "Smooth-Rough (affects texture and absorption)",
+          "sandra-drava": "Solid-Liquid (affects form and flow)",
+          "mrdu-kathina": "Soft-Hard (secondary)"
+        }
+      }
+    },
+    "hasVirya": {
+      "description": "Virya (वीर्य) - The potency or energetic effect. There are two main viryas: Ushna (heating) and Sheeta (cooling). This is crucial for understanding how the dravya affects the doshas.",
+      "$ref": "../core/iri-reference.schema.json",
+      "examples": [
+        { "@id": "ayurveda/virya/ushna" },
+        { "@id": "ayurveda/virya/sheeta" }
+      ],
+      "_documentation": {
+        "effects": {
+          "ushna": "Heating - Increases Pitta, decreases Vata/Kapha, stimulates metabolism",
+          "sheeta": "Cooling - Decreases Pitta, can increase Vata/Kapha, pacifies heat"
+        }
+      }
+    },
+    "hasVipaka": {
+      "description": "Vipaka (विपाक) - The post-digestive effect. After digestion, the rasa transforms into one of three vipakas which have long-term effects on the body.",
+      "$ref": "../core/iri-reference.schema.json",
+      "examples": [
+        { "@id": "ayurveda/vipaka/madhura" },
+        { "@id": "ayurveda/vipaka/amla" },
+        { "@id": "ayurveda/vipaka/katu" }
+      ],
+      "_documentation": {
+        "effects": {
+          "madhura": "Sweet vipaka - Nourishes tissues, increases Kapha",
+          "amla": "Sour vipaka - Increases Pitta, can aggravate blood disorders",
+          "katu": "Pungent vipaka - Increases Vata, reduces Kapha"
+        }
+      }
+    },
+    "hasPrabhava": {
+      "description": "Prabhava (प्रभाव) - The special or unique effect that cannot be explained by rasa, virya, or vipaka. This represents idiosyncratic or specific actions.",
+      "$ref": "../core/iri-reference.schema.json",
+      "examples": [{ "@id": "ayurveda/prabhava/rasayana" }]
+    },
+    "affectsDosha": {
+      "description": "How this dravya affects the three doshas (Vata, Pitta, Kapha). Each dosha can be increased (vriddhi), decreased (kshaya), or balanced (sama).",
+      "type": "object",
+      "properties": {
+        "vata": {
+          "type": "object",
+          "properties": {
+            "effect": {
+              "type": "string",
+              "enum": ["increases", "decreases", "balances"]
+            },
+            "notes": { "type": "string" }
+          }
+        },
+        "pitta": {
+          "type": "object",
+          "properties": {
+            "effect": {
+              "type": "string",
+              "enum": ["increases", "decreases", "balances"]
+            },
+            "notes": { "type": "string" }
+          }
+        },
+        "kapha": {
+          "type": "object",
+          "properties": {
+            "effect": {
+              "type": "string",
+              "enum": ["increases", "decreases", "balances"]
+            },
+            "notes": { "type": "string" }
+          }
+        }
+      },
+      "examples": [
+        {
+          "vata": { "effect": "decreases" },
+          "pitta": { "effect": "decreases" },
+          "kapha": { "effect": "increases" }
+        }
+      ]
+    },
+    "ayurvedaCategory": {
+      "description": "Ayurvedic classification of the dravya (e.g., Rasayana, Medhya, etc.).",
+      "$ref": "../core/iri-reference.schema.json",
+      "examples": [{ "@id": "ayurveda/category/rasayana" }]
+    },
+    "karma": {
+      "description": "Karma (कर्म) - The actions or therapeutic effects in Ayurvedic terms.",
+      "type": "array",
+      "items": { "type": "string" },
+      "examples": [["Deepana", "Pachana", "Anulomana"]]
+    },
+    "ayurvedaHistory": {
+      "description": "Historical background in Ayurveda.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "ayurvedaTraditionalUsage": {
+      "description": "Traditional usage according to Ayurveda.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "ayurvedaModernResearch": {
+      "description": "Modern scientific research relevant to Ayurvedic use.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "classicalReferences": {
+      "description": "References to classical Ayurvedic texts (Charaka Samhita, Sushruta Samhita, etc.).",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": { "type": "string" },
+          "reference": { "type": "string" },
+          "quote": { "$ref": "../core/language-map.schema.json" }
+        }
+      }
+    },
+    "contraIndications": {
+      "description": "Contraindications according to Ayurveda.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "dosage": {
+      "description": "Dosage information.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "anupana": {
+      "description": "Anupana (अनुपान) - The vehicle or carrier substance used to administer the dravya (e.g., milk, honey, warm water).",
+      "type": "array",
+      "items": { "type": "string" },
+      "examples": [["milk", "honey", "warm water"]]
+    },
+    "sevanaKala": {
+      "description": "Sevana Kala (सेवन काल) - The optimal time to take the dravya.",
+      "type": "string",
+      "enum": ["pratah", "madhyahna", "sayam", "nishi", "bhaktad", "abhyaktad", "annadau", "annamadhye", "annapashcat"],
+      "examples": ["pratah"],
+      "_documentation": {
+        "times": {
+          "pratah": "Morning (before sunrise)",
+          "madhyahna": "Midday",
+          "sayam": "Evening",
+          "nishi": "Night",
+          "bhaktad": "After food",
+          "abhyaktad": "Empty stomach",
+          "annadau": "Beginning of meal",
+          "annamadhye": "Middle of meal",
+          "annapashcat": "After meal"
+        }
+      }
+    }
+  },
+  "additionalProperties": true,
+  "_documentation": {
+    "iriPattern": "ayurveda/profile/{slug}",
+    "directory": "systems/ayurveda/profiles/{slug}/profile.jsonld",
+    "keyDifferenceFromTCM": "Ayurveda uses Rasa-Guna-Virya-Vipaka-Dosha framework, not Nature-Flavor-Meridian like TCM",
+    "keyDifferenceFromWestern": "Ayurveda uses energetic properties (virya, guna) rather than pharmacological actions"
+  }
+}

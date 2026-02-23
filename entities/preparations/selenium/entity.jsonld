@@ -1,0 +1,37 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/preparation/selenium",
+  "@type": [
+    "herbal:HerbalPreparation",
+    "schema:DietarySupplement"
+  ],
+  "name": {
+    "en": "Selenium",
+    "zh-Hant": "硒",
+    "zh-Hans": "硒"
+  },
+  "derivedFrom": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/selenium"
+    }
+  ],
+  "preparationMethod": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/method/dried"
+  },
+  "form": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/form/whole"
+  },
+  "hasWesternProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/western/profile/selenium"
+    }
+  ],
+  "provenance": {
+    "created": "2026-02-20",
+    "source": "Generated from Western profile",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "image": "media/images/selenium/selenium.jpg"
+}

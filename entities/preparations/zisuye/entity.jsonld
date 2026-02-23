@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/preparation/zisuye",
+  "@type": [
+    "herbal:HerbalPreparation",
+    "schema:DietarySupplement"
+  ],
+  "name": {
+    "en": "Zisuye",
+    "zh-Hant": "紫蘇葉",
+    "zh-Hans": "紫苏叶"
+  },
+  "derivedFrom": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/zisuye"
+    }
+  ],
+  "preparationMethod": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/method/dried"
+  },
+  "form": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/form/whole"
+  },
+  "hasTCMProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/profile/zisuye"
+    }
+  ],
+  "safetyInfo": {},
+  "provenance": {
+    "created": "2026-02-20",
+    "source": "Generated from TCM profile",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "description": {
+    "en": "Herbal preparation derived from Zisuye. A pungent herb that is warm in nature, zisuye enters the lungs and spleen to release the exterior and to dispel wind cold, treating associated wind-cold symptoms such as headache and blocked nose. It ..."
+  },
+  "image": "media/images/zisuye/zisuye.jpg"
+}

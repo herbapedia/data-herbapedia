@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/soy",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/soy",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"

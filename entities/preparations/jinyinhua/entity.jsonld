@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/preparation/jinyinhua",
+  "@type": [
+    "herbal:HerbalPreparation",
+    "schema:DietarySupplement"
+  ],
+  "name": {
+    "en": "Jinyinhua",
+    "zh-Hant": "金銀花",
+    "zh-Hans": "金银花"
+  },
+  "derivedFrom": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/jinyinhua"
+    }
+  ],
+  "preparationMethod": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/method/dried"
+  },
+  "form": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/form/whole"
+  },
+  "hasTCMProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/profile/jinyinhua"
+    }
+  ],
+  "safetyInfo": {},
+  "provenance": {
+    "created": "2026-02-20",
+    "source": "Generated from TCM profile",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "description": {
+    "en": "Herbal preparation derived from Jinyinhua. Known in English as honeysuckle, jinyinhua is a sweet and cooling herb that enters the lung, stomach and large intestine meridians. It is used to clear heat, relieve the body of toxins and expel wind ..."
+  },
+  "image": "media/images/jinyinhua/jinyinhua.jpg"
+}

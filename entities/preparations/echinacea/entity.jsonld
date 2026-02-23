@@ -1,0 +1,37 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/preparation/echinacea",
+  "@type": [
+    "herbal:HerbalPreparation",
+    "schema:DietarySupplement"
+  ],
+  "name": {
+    "en": "Echinacea",
+    "zh-Hant": "紫錐花",
+    "zh-Hans": "紫锥花"
+  },
+  "derivedFrom": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/echinacea"
+    }
+  ],
+  "preparationMethod": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/method/dried"
+  },
+  "form": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/form/whole"
+  },
+  "hasWesternProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/western/profile/echinacea"
+    }
+  ],
+  "provenance": {
+    "created": "2026-02-20",
+    "source": "Generated from Western profile",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "image": "media/images/echinacea/echinacea.jpg"
+}

@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/wuweizi",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/wuweizi",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"

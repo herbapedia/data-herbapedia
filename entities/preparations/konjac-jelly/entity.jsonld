@@ -1,0 +1,37 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/preparation/konjac-jelly",
+  "@type": [
+    "herbal:HerbalPreparation",
+    "schema:DietarySupplement"
+  ],
+  "name": {
+    "en": "Konjac jelly",
+    "zh-Hant": "蒟蒻",
+    "zh-Hans": "蒟蒻"
+  },
+  "derivedFrom": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/konjac-jelly"
+    }
+  ],
+  "preparationMethod": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/method/dried"
+  },
+  "form": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/form/whole"
+  },
+  "hasWesternProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/western/profile/konjac-jelly"
+    }
+  ],
+  "provenance": {
+    "created": "2026-02-20",
+    "source": "Generated from Western profile",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "image": "media/images/konjac-jelly/konjac-jelly.jpg"
+}

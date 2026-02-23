@@ -1,0 +1,34 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/eucalyptus",
+  "@type": [
+    "herbapedia:BotanicalSource",
+    "botany:PlantSpecies",
+    "schema:Plant"
+  ],
+  "sourceType": "botanical",
+  "sourceSubType": "plant",
+  "scientificName": "Eucalyptus globulus",
+  "family": "Myrtaceae",
+  "name": {
+    "en": "Eucalyptus",
+    "zh-Hant": "尤加利",
+    "zh-Hans": "尤加利"
+  },
+  "description": {
+    "en": "A tall evergreen tree native to Australia."
+  },
+  "wikidataID": "Q156895",
+  "hasExtract": [
+    {
+      "@id": "https://www.herbapedia.org/entity/preparation/eucalyptus-oil"
+    }
+  ],
+  "provenance": {
+    "created": "2026-02-21",
+    "source": "Created as source plant for essential oil",
+    "purpose": "Enable proper linking of essential oil extracts"
+  },
+  "gbifID": "3180210",
+  "ncbiTaxonID": "39312"
+}

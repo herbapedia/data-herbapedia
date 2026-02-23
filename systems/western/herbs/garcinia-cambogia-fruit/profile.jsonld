@@ -1,11 +1,11 @@
 {
-  "@context": "../../schema/context/western.jsonld",
-  "@id": "western/garcinia-cambogia-fruit",
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/garcinia-cambogia-fruit",
   "@type": [
     "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
-    "@id": "plant/garcinia-cambogia-fruit"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/garcinia-cambogia-fruit"
   },
   "name": {
     "en": "Garcinia Cambogia Fruit",

@@ -1,0 +1,37 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/preparation/argan-oil",
+  "@type": [
+    "herbal:HerbalPreparation",
+    "schema:DietarySupplement"
+  ],
+  "name": {
+    "en": "Argan oil",
+    "zh-Hant": "堅果油",
+    "zh-Hans": "坚果油"
+  },
+  "derivedFrom": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/argan"
+    }
+  ],
+  "preparationMethod": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/method/cold-pressed"
+  },
+  "form": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/form/oil"
+  },
+  "hasWesternProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/western/profile/argan-oil"
+    }
+  ],
+  "provenance": {
+    "created": "2026-02-20",
+    "source": "Generated from Western profile",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "image": "media/images/argan-oil/argan-oil.jpg"
+}

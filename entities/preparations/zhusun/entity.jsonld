@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/preparation/zhusun",
+  "@type": [
+    "herbal:HerbalPreparation",
+    "schema:DietarySupplement"
+  ],
+  "name": {
+    "en": "Zhusun",
+    "zh-Hant": "竹笙",
+    "zh-Hans": "竹笙"
+  },
+  "derivedFrom": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/zhusun"
+    }
+  ],
+  "preparationMethod": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/method/dried"
+  },
+  "form": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/form/whole"
+  },
+  "hasTCMProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/profile/zhusun"
+    }
+  ],
+  "safetyInfo": {},
+  "provenance": {
+    "created": "2026-02-20",
+    "source": "Generated from TCM profile",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "description": {
+    "en": "Herbal preparation derived from Zhusun. Zhusun is a precious edible fungi that is sweet and cold in nature. It is used to regulate the flow of chi, tonify the spleen and stimulate the appetite. It can also help stimulate peristalsis of the ..."
+  },
+  "image": "media/images/zhusun/zhusun.jpg"
+}

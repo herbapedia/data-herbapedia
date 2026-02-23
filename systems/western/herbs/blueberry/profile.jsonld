@@ -1,11 +1,11 @@
 {
-  "@context": "../../schema/context/western.jsonld",
-  "@id": "western/blueberry",
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/blueberry",
   "@type": [
     "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
-    "@id": "plant/blueberry"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/blueberry"
   },
   "name": {
     "en": "Blueberry",

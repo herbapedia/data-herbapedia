@@ -1,0 +1,157 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "https://www.herbapedia.org/vocab/tcm/",
+
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "schema": "https://schema.org/",
+
+    "herbapedia": "https://www.herbapedia.org/vocab/core/",
+    "tcm": "https://www.herbapedia.org/vocab/tcm/"
+  },
+
+  "@graph": [
+    {
+      "@id": "https://www.herbapedia.org/vocab/tcm/",
+      "@type": "owl:Ontology",
+      "rdfs:label": {
+        "en": "Herbapedia Traditional Chinese Medicine Vocabulary"
+      },
+      "rdfs:comment": "TCM vocabulary including herb types, thermal natures, flavors, meridians, and categories."
+    },
+
+    {
+      "@id": "tcm:Herb",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": ["herbapedia:MedicineSystemProfile", "schema:DietarySupplement"],
+      "rdfs:label": {
+        "en": "TCM Herb",
+        "zh-Hant": "中草藥"
+      },
+      "rdfs:comment": "A Traditional Chinese Medicine herb profile with thermal nature, flavor, meridian entry, and therapeutic functions."
+    },
+
+    {
+      "@id": "tcm:Nature",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "skos:Concept",
+      "rdfs:label": {
+        "en": "Thermal Nature",
+        "zh-Hant": "四氣"
+      },
+      "rdfs:comment": "The four thermal natures: hot (熱), warm (溫), neutral (平), cool (涼), cold (寒)."
+    },
+
+    {
+      "@id": "tcm:Flavor",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "skos:Concept",
+      "rdfs:label": {
+        "en": "Flavor",
+        "zh-Hant": "五味"
+      },
+      "rdfs:comment": "The five flavors: acrid/辛, sweet/甘, sour/酸, bitter/苦, salty/鹹."
+    },
+
+    {
+      "@id": "tcm:Meridian",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "skos:Concept",
+      "rdfs:label": {
+        "en": "Meridian",
+        "zh-Hant": "經絡"
+      },
+      "rdfs:comment": "The twelve meridians: Lung/肺, Large Intestine/大腸, Stomach/胃, Spleen/脾, Heart/心, Small Intestine/小腸, Bladder/膀胱, Kidney/腎, Pericardium/心包, Sanjiao/三焦, Gallbladder/膽, Liver/肝."
+    },
+
+    {
+      "@id": "tcm:Category",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "skos:Concept",
+      "rdfs:label": {
+        "en": "Herb Category",
+        "zh-Hant": "分類"
+      },
+      "rdfs:comment": "TCM herb categories: tonifying (補), regulating (調), clearing (清), draining (瀉), etc."
+    },
+
+    {
+      "@id": "tcm:hasNature",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "tcm:Herb",
+      "rdfs:range": "tcm:Nature",
+      "rdfs:label": {
+        "en": "has thermal nature",
+        "zh-Hant": "有四氣"
+      }
+    },
+
+    {
+      "@id": "tcm:hasFlavor",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "tcm:Herb",
+      "rdfs:range": "tcm:Flavor",
+      "rdfs:label": {
+        "en": "has flavor",
+        "zh-Hant": "有五味"
+      }
+    },
+
+    {
+      "@id": "tcm:entersMeridian",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "tcm:Herb",
+      "rdfs:range": "tcm:Meridian",
+      "rdfs:label": {
+        "en": "enters meridian",
+        "zh-Hant": "歸經"
+      }
+    },
+
+    {
+      "@id": "tcm:hasCategory",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "tcm:Herb",
+      "rdfs:range": "tcm:Category",
+      "rdfs:label": {
+        "en": "has category",
+        "zh-Hant": "有分類"
+      }
+    },
+
+    {
+      "@id": "tcm:derivedFromPlant",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "tcm:Herb",
+      "rdfs:range": "botany:PlantSpecies",
+      "rdfs:label": {
+        "en": "derived from plant",
+        "zh-Hant": "來自植物"
+      }
+    },
+
+    {
+      "@id": "tcm:pinyin",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "tcm:Herb",
+      "rdfs:range": "xsd:string",
+      "rdfs:label": {
+        "en": "pinyin name",
+        "zh-Hant": "拼音"
+      }
+    },
+
+    {
+      "@id": "tcm:tcmFunctions",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "tcm:Herb",
+      "rdfs:range": "rdfs:Literal",
+      "rdfs:label": {
+        "en": "TCM functions",
+        "zh-Hant": "功效"
+      }
+    }
+  ]
+}

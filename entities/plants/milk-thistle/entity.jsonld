@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/milk-thistle",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/milk-thistle",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"
@@ -30,10 +30,10 @@
   "gbifId": 3145214,
   "containsChemical": [
     {
-      "@id": "chemical/silymarin"
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/silymarin"
     },
     {
-      "@id": "chemical/flavonoids"
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/flavonoids"
     }
   ],
   "modified": "2026-02-19T23:24:40.401Z"

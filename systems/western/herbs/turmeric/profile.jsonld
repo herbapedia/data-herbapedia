@@ -1,12 +1,12 @@
 {
-  "@context": "../../schema/context/western.jsonld",
-  "@id": "western/turmeric",
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/turmeric",
   "@type": [
     "western:Herb",
     "schema:DietarySupplement"
   ],
   "derivedFromPlant": {
-    "@id": "plant/turmeric"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/turmeric"
   },
   "name": {
     "en": "Turmeric",
@@ -15,15 +15,29 @@
   },
   "scientificName": "Curcuma longa",
   "hasAction": [
-    { "@id": "western/action/anti-inflammatory" },
-    { "@id": "western/action/antioxidant" },
-    { "@id": "western/action/hepatic" },
-    { "@id": "western/action/cholagogue" }
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/anti-inflammatory"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/antioxidant"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/hepatic"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/cholagogue"
+    }
   ],
   "hasOrganAffinity": [
-    { "@id": "western/organ/liver" },
-    { "@id": "western/organ/digestive" },
-    { "@id": "western/organ/cardiovascular" }
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/liver"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/digestive"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/cardiovascular"
+    }
   ],
   "westernHistory": {
     "en": "Turmeric has been used in Indian Ayurvedic medicine and traditional Chinese medicine for over 4,000 years. It was introduced to the West by Arab traders and became popular in medieval Europe as a saffron substitute.",

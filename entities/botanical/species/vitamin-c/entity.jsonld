@@ -1,0 +1,38 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/vitamin-c",
+  "@type": [
+    "herbapedia:ChemicalSource",
+    "schema:Thing"
+  ],
+  "name": {
+    "en": "Vitamin C",
+    "zh-Hant": "維他命 C",
+    "zh-Hans": "维他命 C"
+  },
+  "scientificName": "Ascorbic acid, ascorbyl palmitate",
+  "family": null,
+  "genus": null,
+  "description": {
+    "en": "Vitamin C is found naturally in fruits (especially citrus fruits) and leafy vegetables. Good sources include acerola cherries, rose hips, citrus fruits or juice, guavas, peppers, blackcurrants, parsley, mustard greens, green leafy vegetables, cantaloupe, papaya, strawberries, and tomatoes. Vitamin C is the most unstable of all vitamins and is quickly destroyed by heat, light and exposure to air.\n",
+    "zh-Hant": "維他命 C是一種重要的營養素，參與人體多種生理代謝過程。作為必需營養素，對維持機體正常功能具有重要作用。臨床研究表明適量補充有助於維持身體健康。",
+    "zh-Hans": "維他命 C是一种重要的營养素，參与人体多种生理代謝过程。作为必需營养素，對維持机体正常功能具有重要作用。臨床研究表明適量补充有助于維持身体健康。"
+  },
+  "image": "media/images/ascorbic-acid-ascorbyl-palmitate/main.jpg",
+  "provenance": {
+    "created": "2026-02-18T09:16:48.080Z",
+    "modified": "2026-02-21T01:46:20.760Z",
+    "migratedFrom": "entities/plants/vitamin-c/entity.jsonld",
+    "source": "vitaherbapedia.com",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "classificationNote": "Reclassified as ChemicalSource"
+  },
+  "wikidataID": "Q175623",
+  "sourceType": "chemical",
+  "sourceSubType": "nutrient",
+  "hasWesternProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/western/profile/vitamin-c"
+    }
+  ]
+}

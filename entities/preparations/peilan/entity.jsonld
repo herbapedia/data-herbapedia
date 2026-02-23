@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/preparation/peilan",
+  "@type": [
+    "herbal:HerbalPreparation",
+    "schema:DietarySupplement"
+  ],
+  "name": {
+    "en": "Peilan",
+    "zh-Hant": "佩蘭葉 又名佩蘭",
+    "zh-Hans": "佩兰叶 又名佩兰"
+  },
+  "derivedFrom": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/peilan"
+    }
+  ],
+  "preparationMethod": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/method/dried"
+  },
+  "form": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/form/whole"
+  },
+  "hasTCMProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/profile/peilan"
+    }
+  ],
+  "safetyInfo": {},
+  "provenance": {
+    "created": "2026-02-20",
+    "source": "Generated from TCM profile",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "description": {
+    "en": "Herbal preparation derived from Peilan. Peilan is a type of orchid with neutral, bitter properties that aromatically transforms dampness and expels summer heat. It enters the spleen and stomach meridians, and is useful for patients sufferin..."
+  },
+  "image": "media/images/peilan/peilan.jpg"
+}

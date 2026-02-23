@@ -1,0 +1,55 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/tcm.jsonld",
+  "@id": "https://www.herbapedia.org/system/tcm/profile/shouwuteng",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "profiles": {
+    "@id": "https://www.herbapedia.org/entity/preparation/shouwuteng"
+  },
+  "name": {
+    "en": "Shouwuteng",
+    "zh-Hant": "首烏藤",
+    "zh-Hans": "首乌藤"
+  },
+  "pinyin": "Shouwuteng",
+  "chineseName": {
+    "zh-Hant": "首烏藤",
+    "zh-Hans": "首乌藤"
+  },
+  "derivedFromPlant": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/shouwuteng"
+  },
+  "hasCategory": {
+    "@id": "https://www.herbapedia.org/system/tcm/category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "https://www.herbapedia.org/system/tcm/nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/spleen"
+    }
+  ],
+  "tcmTraditionalUsage": {
+    "en": "Shouwuteng, a herb made from the stems of the Fleece Flower plant, has a sweet, neutral character. It enters the heart and liver meridians, and has traditionally been used as a sedative and tonic. It is useful for calming the spirit, nourishing the blood and treating general bodily weakness. It is also useful for anxiety and insomnia, especially in cases of dream-disturbed sleep.\n",
+    "zh-Hant": "首烏藤又名夜交藤，是蓼科多年生蔓生草本植物何首烏的藤莖或帶葉藤莖。味甘，藥性平。歸經屬心、肝。能有效養心安神，袪風通絡。主治虛煩不眠，多夢，血虛頭暈，筋骨酸痛等，常與合歡花同用。\n",
+    "zh-Hans": "首烏藤又名夜交藤，是蓼科多年生蔓生草本植物何首烏的藤莖或帶叶藤莖。味甘，药性平。歸经属心、肝。能有效养心安神，袪風通络。主治虚煩不眠，多夢，血虚头暈，筋骨酸痛等，常与合歡花同用。\n"
+  },
+  "tcmHistory": {
+    "en": "First appeared in Journey to the Origin of the Classic of Materia Medica.\n",
+    "zh-Hant": "【首烏藤】History內容待翻譯補充。",
+    "zh-Hans": "【首烏藤】History內容待翻譯补充。"
+  },
+  "provenance": {
+    "created": "2026-02-20T15:20:59.837Z",
+    "modified": "2026-02-20T15:20:59.837Z",
+    "migratedFrom": "systems/tcm/herbs/shouwuteng/profile.jsonld"
+  }
+}

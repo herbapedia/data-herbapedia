@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/tangerine-peel",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/tangerine-peel",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"

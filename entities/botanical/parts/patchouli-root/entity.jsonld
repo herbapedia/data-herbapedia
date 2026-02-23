@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/patchouli-root",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Patchouli Root",
+    "zh-Hant": "藿香葉 又名廣藿香",
+    "zh-Hans": "藿香叶 又名广藿香"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/patchouli"
+  },
+  "partType": "root",
+  "description": {
+    "en": "The root of Pogostemon cablin, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.825Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

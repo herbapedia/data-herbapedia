@@ -1,0 +1,88 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/dna/coptis-chinensis",
+  "@type": ["herbapedia:DNASequenceData", "schema:Dataset"],
+  "dataType": "DNASequence",
+  "sourceFile": "DNA____Coptis_chinensis_V1.pdf",
+  "sourceDocument": "GCMTI FS:2024-2",
+  "title": {
+    "en": "Fact sheet of reference DNA sequences of Coptis chinensis",
+    "zh-hk": "黃連(Coptis chinensis)之參考 DNA 序列資料表"
+  },
+  "scientificName": {
+    "full": "Coptis chinensis Franch.",
+    "genus": "Coptis",
+    "species": "chinensis",
+    "author": "Franch."
+  },
+  "loci": [
+    {
+      "name": "ITS2",
+      "fullName": "Internal transcribed spacer 2",
+      "description": {
+        "en": "Internal transcribed spacer 2 (ITS2) of plant voucher specimen of Coptis chinensis and Chinese Materia Medica (CMM) Rhizoma Coptidis",
+        "zh-hk": "植物憑證標本及中藥材黃連標本的核糖體 DNA 第二內部轉錄間隔區(ITS2)序列"
+      },
+      "sequenceLength": 230,
+      "consensusSequence": "CGCACAGCGTCGCACCCCGCCACTCCTGCTGGACGGGGAGCGGAGATTGGCCCCCCGGGCACCCGCTGCACGGCCGGCTCAAATGACTGTCCCCGGCGACGAGCGTCGCTATTATCGTGGTGGATCAAAGCTGAGATAAGGCGTTCTCGCCGCCACAGTAGGGACAGATCGACCCCCGGACGCCGTCACCGACGGCGCTCACCCTG",
+      "specimenCount": 21,
+      "specimens": [
+        "23RD27-1B", "23RD28-1B", "23RD29-1B", "23RD30-1A", "23RD31-1B",
+        "23RD32-1B", "23RD33-1B", "23RD33-2B", "23RD33-3B", "23RD33-4B",
+        "23RD33-5A", "23RD33-6A", "23RD131-4A", "23RD132-2B", "23RD132-3A",
+        "23RD133-1B", "23RD133-2B", "23RD133-3A", "23RD133-4A", "23RD133-6A"
+      ],
+      "notes": "Some specimens showed minor sequence variations at positions with ambiguous bases (Y at position 54, R at position 156)"
+    },
+    {
+      "name": "psbA-trnH",
+      "fullName": "Chloroplast psbA-trnH intergenic spacer",
+      "description": {
+        "en": "Chloroplast psbA-trnH intergenic spacer (psbA-trnH) of plant voucher specimen of Coptis chinensis and Chinese Materia Medica (CMM) Rhizoma Coptidis",
+        "zh-hk": "植物憑證標本及中藥材黃連標本的葉綠體 psbA-trnH 基因間區(psbA-trnH)序列"
+      },
+      "sequenceLength": 316,
+      "consensusSequence": "TCCACAAATGGCTAGGTCTTAGTGTACGCGAGTTTTAGTGTATATGAGTTGTTGAAGTTGCAGGAGTAATACCAAAATTCTTGTTTTGTTAAGAATTTTGGTATTACTCCTGCATTTTTTTTTTTTTTTAGTAAAAATAAGAAAATAGAATAGATCTTTGGAAAATTCTTGATTATAATATGTTCTGTATTATTTTCTTATAAAATAATATTATATATAATACAATCTAAATATGTTCTTAACACTTTTTATTTTTATAAAGATAATATAAAGTAGAAGGGCGGA",
+      "specimenCount": 21,
+      "specimens": [
+        "23RD27-1B", "23RD28-1B", "23RD29-1B", "23RD30-1A", "23RD31-1B",
+        "23RD32-1B", "23RD33-1B", "23RD33-2B", "23RD33-3B", "23RD33-4B",
+        "23RD33-5A", "23RD33-6A", "23RD131-4A", "23RD132-2B", "23RD132-3A",
+        "23RD133-1B", "23RD133-2B", "23RD133-3A", "23RD133-4A", "23RD133-6A"
+      ],
+      "notes": "Variable sequence length (275-316 bp) across specimens due to poly-T repeat region; some specimens start at different positions"
+    },
+    {
+      "name": "rbcL",
+      "fullName": "Partial chloroplast ribulose bisphosphate carboxylase large chain",
+      "description": {
+        "en": "Partial chloroplast ribulose bisphosphate carboxylase large chain (rbcL) of plant voucher specimen of Coptis chinensis and Chinese Materia Medica (CMM) Rhizoma Coptidis",
+        "zh-hk": "植物憑證標本及中藥材黃連標本的葉綠體二磷酸核酮糖羧化酶大鏈(rbcL)部分序列"
+      },
+      "sequenceLength": 554,
+      "consensusSequence": "AAGTGTTGGCTTCAAAGCGGGCGTTAAAGATTACAAATTGACTTATTATACTCCTCAATATACACCCAAAGATACTGATACCCTGGCAGCATTCCGAGTAACTCCTCAACCTGGAGTTCCACCGGAAGAAGCGGGGGCTGCTGTAGCTGCCGAATCTTCTACAGGTACATGGACAACTGTGTGGACCGATGGACTTACCAGCCTTGATCGTTACAAAGGACGATGCTACGACATCGAGCCCGTTGCTGGAGAAGAAAATCAATATATTTGTTATGTAGCCTATCCTTTAGACCTTTTTGAAGAGGGTTCTGTTACTAACATGTTTACTTCCATTGTGGGTAATGTTTTTGGGTTCAAAGCGCTACGCGCTCTACGTTTGGAGGATCTGCGAATTCCTGTTGCTTATGTTAAAACTTTCCAGGGGCCGCCCCATGGTATCCAAGTTGAGAGAGATAAATTGAACAAGTATGGTCGTCCCCTATTGGGATGTACTATTAAACCAAAATTGGGATTATCTGCTAAGAACTACGGTAGAGCGGTTTATGAATGTCTC",
+      "specimenCount": 21,
+      "specimens": [
+        "23RD27-1B", "23RD28-1B", "23RD29-1B", "23RD30-1A", "23RD31-1B",
+        "23RD32-1B", "23RD33-1B", "23RD33-2B", "23RD33-3B", "23RD33-4B",
+        "23RD33-5A", "23RD33-6A", "23RD131-4A", "23RD132-2B", "23RD132-3A",
+        "23RD133-1B", "23RD133-2B", "23RD133-3A", "23RD133-4A", "23RD133-6A"
+      ],
+      "notes": "Highly conserved across all specimens; minor variations at position 487 (M/K) and position 493 (K) in specimen 23RD133-6A"
+    }
+  ],
+  "specimen": {
+    "gcmtiCode": "GB0000848a00",
+    "type": "Chinese Materia Medica (CMM) Rhizoma Coptidis",
+    "totalSpecimens": 21
+  },
+  "methodology": {
+    "format": "FASTA",
+    "sequencingTargets": ["ITS2", "psbA-trnH", "rbcL"],
+    "specimenTypes": ["Plant voucher specimen", "Chinese Materia Medica (CMM) Rhizoma Coptidis"]
+  },
+  "extracted": {
+    "date": "2026-02-20",
+    "extractedBy": "automated extraction from PDF"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/formula/epicutin-tt",
+  "@type": [
+    "herbapedia:Formula",
+    "schema:DietarySupplement"
+  ],
+  "name": {
+    "en": "Epicutin-TT",
+    "zh-Hant": "緩釋功能",
+    "zh-Hans": "缓释功能"
+  },
+  "scientificName": "Timed Release Formation Epicutin-TT",
+  "family": null,
+  "genus": null,
+  "description": {
+    "en": "Timed release functional ingredient used in cosmetic formulations."
+  },
+  "image": "media/images/epicutin-tt/epicutin-tt.jpg",
+  "provenance": {
+    "created": "2026-02-18T09:17:06.570Z",
+    "modified": "2026-02-21T01:46:20.750Z",
+    "migratedFrom": "entities/plants/epicutin-tt/entity.jsonld",
+    "source": "vitaherbapedia.com",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "classificationNote": "Reclassified as Formula"
+  },
+  "sourceType": "formula",
+  "sourceSubType": "proprietary"
+}

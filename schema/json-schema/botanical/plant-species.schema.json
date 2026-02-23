@@ -1,0 +1,148 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herbapedia.org/schema/json-schema/botanical/plant-species.schema.json",
+  "title": "Plant Species",
+  "description": "A botanical species entity. Contains ONLY botanical facts (taxonomy, nomenclature, distribution). Does NOT contain medicinal or therapeutic information - that belongs in system profiles linked via HerbalPreparation.",
+  "type": "object",
+  "allOf": [
+    { "$ref": "../core/entity.schema.json" }
+  ],
+  "required": ["@id", "@type", "name", "scientificName"],
+  "properties": {
+    "@id": {
+      "description": "Unique identifier: botanical/species/{slug}. Slug should be the lowercased, hyphenated scientific name.",
+      "type": "string",
+      "pattern": "^botanical/species/[a-z0-9-]+$",
+      "examples": ["botanical/species/zingiber-officinale", "botanical/species/panax-ginseng"]
+    },
+    "@type": {
+      "type": "array",
+      "items": { "type": "string" },
+      "contains": { "const": "botany:PlantSpecies" },
+      "examples": [["botany:PlantSpecies", "schema:Plant"]]
+    },
+    "scientificName": {
+      "description": "The Latin binomial (genus + species) per botanical nomenclature rules. Should match GBIF/POWO exactly.",
+      "type": "string",
+      "examples": ["Zingiber officinale", "Panax ginseng", "Curcuma longa"]
+    },
+    "scientificNameAuthorship": {
+      "description": "The author citation for the scientific name.",
+      "type": "string",
+      "examples": ["Roscoe", "C.A.Mey.", "L."]
+    },
+    "family": {
+      "description": "The botanical family.",
+      "type": "string",
+      "examples": ["Zingiberaceae", "Araliaceae", "Apiaceae"]
+    },
+    "genus": {
+      "description": "The botanical genus.",
+      "type": "string",
+      "examples": ["Zingiber", "Panax", "Curcuma"]
+    },
+    "specificEpithet": {
+      "description": "The species epithet (second part of binomial).",
+      "type": "string",
+      "examples": ["officinale", "ginseng", "longa"]
+    },
+    "taxonomicClassification": {
+      "description": "Full taxonomic hierarchy.",
+      "type": "object",
+      "properties": {
+        "kingdom": { "type": "string", "examples": ["Plantae"] },
+        "phylum": { "type": "string", "examples": ["Tracheophyta"] },
+        "class": { "type": "string", "examples": ["Magnoliopsida"] },
+        "order": { "type": "string", "examples": ["Zingiberales"] },
+        "family": { "type": "string", "examples": ["Zingiberaceae"] },
+        "genus": { "type": "string", "examples": ["Zingiber"] }
+      }
+    },
+    "gbifID": {
+      "description": "GBIF species identifier.",
+      "type": "string",
+      "examples": ["2751589", "3038555"]
+    },
+    "powoID": {
+      "description": "Plants of the World Online identifier.",
+      "type": "string"
+    },
+    "ncbiTaxonID": {
+      "description": "NCBI Taxonomy database identifier.",
+      "type": "string"
+    },
+    "wikidataID": {
+      "description": "Wikidata entity ID (Q number).",
+      "type": "string",
+      "pattern": "^Q\\d+$",
+      "examples": ["Q1097047", "Q192163"]
+    },
+    "commonName": {
+      "description": "Common names in multiple languages.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "habitat": {
+      "description": "Natural habitat where this species grows.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "origin": {
+      "description": "Geographic origin or native range.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "geographicalDistribution": {
+      "description": "Current geographical distribution.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "growthForm": {
+      "description": "Growth form of the plant.",
+      "type": "string",
+      "enum": ["herb", "shrub", "tree", "vine", "climber", "epiphyte", "aquatic"]
+    },
+    "lifecycle": {
+      "description": "Lifecycle duration.",
+      "type": "string",
+      "enum": ["annual", "biennial", "perennial"]
+    },
+    "hasParts": {
+      "description": "Plant parts that belong to this species.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" }
+    },
+    "hasChemicalProfile": {
+      "description": "Chemical composition profile for this species.",
+      "$ref": "../core/iri-reference.schema.json"
+    },
+    "hasDNABarcode": {
+      "description": "DNA barcode for species identification.",
+      "$ref": "../core/iri-reference.schema.json"
+    },
+    "containsChemical": {
+      "description": "Chemical compounds known to be present.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" }
+    },
+    "conservationStatus": {
+      "description": "IUCN conservation status.",
+      "type": "string",
+      "enum": ["LC", "NT", "VU", "EN", "CR", "EW", "EX", "DD", "NE"]
+    }
+  },
+  "additionalProperties": true,
+  "_documentation": {
+    "iriPattern": "botanical/species/{slug}",
+    "slugFormat": "Lowercased scientific name with hyphens (e.g., zingiber-officinale)",
+    "directory": "entities/botanical/species/{slug}/entity.jsonld",
+    "separationOfConcerns": {
+      "belongsToPlantSpecies": [
+        "Taxonomy", "Nomenclature", "Distribution", "Morphology",
+        "External IDs", "Parts composition"
+      ],
+      "doesNOTBelongHere": [
+        "TCM properties - belongs in TCMProfile",
+        "Western herbal actions - belongs in WesternHerbalProfile",
+        "Ayurvedic properties - belongs in AyurvedaProfile",
+        "Traditional usage, Modern research, Dosage - belongs in system profiles"
+      ]
+    }
+  }
+}

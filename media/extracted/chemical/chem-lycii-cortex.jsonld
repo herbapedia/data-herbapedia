@@ -1,0 +1,268 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/chemical/lycii-cortex",
+  "@type": ["herbapedia:ChemicalAnalysisData", "schema:Dataset"],
+  "dataType": "ChemicalAnalysis",
+  "sourceDocument": "CHEM_____Lycii_Cortex_v6_V1.pdf",
+  "scientificName": "Lycium chinense",
+  "chineseName": "地骨皮",
+  "pinyinName": "Di Gu Pi",
+  "identificationMethod": ["TLC", "HPLC-Fingerprint", "HPLC-Assay"],
+  "referenceCompounds": [
+    {
+      "name": "Kukoamine B",
+      "chineseName": "地骨皮乙素",
+      "formula": "C₂₈H₄₂N₄O₆",
+      "purpose": ["HPLC fingerprint marker", "HPLC assay quantification"]
+    },
+    {
+      "name": "Scopoletin",
+      "chineseName": "東莨菪素",
+      "formula": "C₁₀H₈O₄",
+      "purpose": ["TLC identification"]
+    },
+    {
+      "name": "Kukoamine A",
+      "chineseName": "地骨皮甲素",
+      "purpose": ["HPLC fingerprint marker"]
+    }
+  ],
+  "assayLimits": {
+    "kukoamineB": {
+      "compound": "Kukoamine B",
+      "formula": "C₂₈H₄₂N₄O₆",
+      "minimumContent": "1.0%",
+      "basis": "dried substance"
+    }
+  },
+  "tlcMethod": {
+    "appendixReference": "Appendix I",
+    "stationaryPhase": "HPTLC silica gel F₂₅₄ plate",
+    "developingSolvent": {
+      "components": ["ethyl acetate", "cyclohexane", "glacial acetic acid"],
+      "ratio": "6:5:0.2 (v/v)"
+    },
+    "testSolution": {
+      "sampleAmount": "1.0 g",
+      "solvent": "methanol",
+      "solventVolume": "20 mL",
+      "extraction": "ultrasonication for 30 minutes",
+      "evaporation": "rotary evaporator to dryness",
+      "finalVolume": "1 mL methanol"
+    },
+    "standardSolutions": {
+      "scopoletin": {
+        "concentration": "0.5 mg/mL in methanol",
+        "volume": "0.5 mg in 10 mL methanol"
+      }
+    },
+    "applicationVolumes": {
+      "standardSolutions": "2 μL (Scopoletin)",
+      "testSolution": "5 μL"
+    },
+    "developingDistance": "8.5 cm",
+    "visualization": "UV light at 366 nm",
+    "identificationCriteria": {
+      "positiveMarker": "Scopoletin",
+      "rfTolerance": "corresponding Rf value to Scopoletin"
+    }
+  },
+  "hplcFingerprint": {
+    "appendixReference": "Appendix II",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "PDA",
+      "detectionWavelength": "280 nm",
+      "columnTemperature": "40°C",
+      "flowRate": "1.0 mL/min",
+      "injectionVolume": "10 μL"
+    },
+    "mobilePhase": {
+      "solventA": "0.15% trifluoroacetic acid in water",
+      "solventB": "methanol",
+      "gradientProgram": [
+        {
+          "timeRange": "0-10 min",
+          "solventA": "88%",
+          "solventB": "12%",
+          "elution": "isocratic"
+        },
+        {
+          "timeRange": "10-20 min",
+          "solventA": "88% → 84%",
+          "solventB": "12% → 16%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "20-40 min",
+          "solventA": "84%",
+          "solventB": "16%",
+          "elution": "isocratic"
+        },
+        {
+          "timeRange": "40-60 min",
+          "solventA": "84% → 78%",
+          "solventB": "16% → 22%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "kukoamineB": {
+        "concentration": "370 mg/L",
+        "preparation": "3.7 mg in 10 mL 50% methanol and 0.5% acetic acid"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "0.2 g",
+      "solvent": "50% methanol and 0.5% acetic acid",
+      "solventVolume": "20 mL",
+      "extraction": "ultrasonication for 30 minutes",
+      "centrifugation": "4000 × g for 10 minutes",
+      "filtration": "0.45 μm nylon filter"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "peakAreaRSD": "≤ 5.0% (Kukoamine B)",
+      "retentionTimeRSD": "≤ 2.0% (Kukoamine B)",
+      "theoreticalPlates": "≥ 10,000 (based on Kukoamine B)",
+      "resolution": "≥ 1.5 (between Kukoamine B and adjacent peaks)"
+    },
+    "identificationCriteria": {
+      "retentionTimeTolerance": "≤ 2.0% difference between sample and standard"
+    }
+  },
+  "hplcAssay": {
+    "appendixReference": "Appendix III",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "PDA",
+      "detectionWavelength": "280 nm",
+      "columnTemperature": "40°C",
+      "flowRate": "1.0 mL/min",
+      "injectionVolume": "10 μL"
+    },
+    "mobilePhase": {
+      "solventA": "0.15% trifluoroacetic acid in water",
+      "solventB": "methanol",
+      "gradientProgram": [
+        {
+          "timeRange": "0-10 min",
+          "solventA": "88%",
+          "solventB": "12%",
+          "elution": "isocratic"
+        },
+        {
+          "timeRange": "10-20 min",
+          "solventA": "88% → 84%",
+          "solventB": "12% → 16%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "20-40 min",
+          "solventA": "84%",
+          "solventB": "16%",
+          "elution": "isocratic"
+        },
+        {
+          "timeRange": "40-60 min",
+          "solventA": "84% → 78%",
+          "solventB": "16% → 22%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "stockSolution": {
+        "concentration": "2000 mg/L",
+        "compound": "Kukoamine B",
+        "preparation": "2.0 mg in 1 mL 50% methanol and 0.5% acetic acid"
+      },
+      "workingSolutions": {
+        "concentrations": ["40", "60", "80", "180", "360 mg/L"],
+        "description": "Series of mixed standard solutions"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "0.2 g",
+      "solvent": "50% methanol and 0.5% acetic acid",
+      "extractionVolume": "7 mL × 3 extractions",
+      "extraction": "ultrasonication for 30 minutes",
+      "centrifugation": "4000 × g for 10 minutes",
+      "finalVolume": "25 mL",
+      "filtration": "0.45 μm nylon filter"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "standardConcentration": "80 mg/L (Kukoamine B Std-AS)",
+      "peakAreaRSD": "≤ 5.0% (Kukoamine B)",
+      "retentionTimeRSD": "≤ 2.0% (Kukoamine B)",
+      "theoreticalPlates": "≥ 10,000 (based on Kukoamine B)",
+      "resolution": "≥ 1.5 (between Kukoamine B and adjacent peaks)"
+    },
+    "calibration": {
+      "method": "5-point calibration curve",
+      "plot": "Peak area vs. concentration (mg/L)",
+      "identificationTolerance": "≤ 5.0% difference in retention times"
+    }
+  },
+  "rrtValues": [
+    {
+      "peakNumber": 1,
+      "compound": "Unknown",
+      "rrt": 0.47,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Kukoamine B"
+    },
+    {
+      "peakNumber": 2,
+      "compound": "Kukoamine B",
+      "chineseName": "地骨皮乙素",
+      "rrt": 1.00,
+      "acceptableRange": null,
+      "referenceMarker": true,
+      "referenceTo": "self"
+    },
+    {
+      "peakNumber": 3,
+      "compound": "Kukoamine A",
+      "chineseName": "地骨皮甲素",
+      "rrt": 1.11,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Kukoamine B"
+    },
+    {
+      "peakNumber": 4,
+      "compound": "Unknown",
+      "rrt": 1.26,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Kukoamine B"
+    }
+  ],
+  "appendices": {
+    "appendixI": {
+      "title": "Chromatography — Thin-Layer Chromatography",
+      "description": "General procedures for TLC including plate types, application methods, developing chambers, and Rf calculation"
+    },
+    "appendixII": {
+      "title": "GC and HPLC/UHPLC Fingerprinting",
+      "description": "Methods for establishing chromatographic fingerprints using marker peaks and RRT values"
+    },
+    "appendixIII": {
+      "title": "Chromatography — HPLC/UHPLC",
+      "description": "General HPLC/UHPLC procedures including system suitability tests (theoretical plates, repeatability, resolution, tailing factor) and quantitative calculations"
+    }
+  },
+  "extractedAt": "2026-02-20"
+}

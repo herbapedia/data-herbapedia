@@ -1,0 +1,255 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/chemical/farfarae-flos",
+  "@type": ["herbapedia:ChemicalAnalysisData", "schema:Dataset"],
+  "dataType": "ChemicalAnalysis",
+  "sourceDocument": "CHEM_____Farfarae_Flos_V1.pdf",
+  "scientificName": "Tussilago farfara L.",
+  "chineseName": "款冬花",
+  "pinyinName": "Kuan Dong Hua",
+  "identificationMethod": ["TLC", "HPLC-Fingerprint", "HPLC-Assay"],
+  "referenceCompounds": [
+    {
+      "name": "Tussilagone",
+      "chineseName": "款冬酮",
+      "formula": "C₂₃H₃₄O₅",
+      "purpose": ["TLC identification", "HPLC fingerprint marker", "HPLC assay quantification"]
+    }
+  ],
+  "assayLimits": {
+    "tussilagone": {
+      "compound": "Tussilagone",
+      "formula": "C₂₃H₃₄O₅",
+      "minimumContent": "0.081%",
+      "basis": "dried substance"
+    }
+  },
+  "tlcMethod": {
+    "appendixReference": "Appendix I",
+    "stationaryPhase": "TLC silica gel F₂₅₄ plate",
+    "developingSolvent": {
+      "components": ["petroleum ether (60-80°C)", "ethyl acetate"],
+      "ratio": "4:1 (v/v)"
+    },
+    "testSolution": {
+      "sampleAmount": "1.0 g",
+      "solvent": "ethanol",
+      "solventVolume": "20 mL",
+      "extraction": "ultrasonication (160 W) for 1 hour",
+      "postExtraction": "filter, evaporate to dryness under reduced pressure using rotary evaporator",
+      "reconstitution": "dissolve residue in 1 mL ethyl acetate"
+    },
+    "standardSolutions": {
+      "tussilagone": {
+        "concentration": "2.0 mg/mL in ethyl acetate",
+        "preparation": "1.0 mg tussilagone reference standard in 0.5 mL ethyl acetate"
+      }
+    },
+    "applicationVolumes": {
+      "standardSolution": "2 μL",
+      "testSolution": "8 μL"
+    },
+    "developingDistance": "approximately 4 cm",
+    "visualization": "UV light at 254 nm",
+    "identificationCriteria": {
+      "positiveMarkers": ["Tussilagone"],
+      "identificationRequirement": "Sample must show spots or bands with characteristics (color and Rf value) corresponding to tussilagone reference standard"
+    }
+  },
+  "hplcFingerprint": {
+    "appendixReference": "Appendix II",
+    "chromatographicSystem": {
+      "detector": "PDA (Photodiode Array Detector)",
+      "detectionWavelength": "220 nm",
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "flowRate": "approximately 1.0 mL/min",
+      "injectionVolume": "10 μL"
+    },
+    "mobilePhase": {
+      "solventA": "0.1% Phosphoric acid (v/v)",
+      "solventB": "Acetonitrile (v/v)",
+      "gradientProgram": [
+        {
+          "timeRange": "0-20 min",
+          "solventA": "90% → 64%",
+          "solventB": "10% → 36%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "20-30 min",
+          "solventA": "64% → 10%",
+          "solventB": "36% → 90%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "30-60 min",
+          "solventA": "10% → 5%",
+          "solventB": "90% → 95%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "tussilagoneStdFP": {
+        "concentration": "30 mg/L",
+        "preparation": "0.6 mg tussilagone in 20 mL ethanol",
+        "purpose": "fingerprinting"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "0.5 g",
+      "solvent": "ethanol",
+      "solventVolume": "10 mL × 2 extractions",
+      "extraction": "ultrasonication (160 W) for 30 minutes",
+      "centrifugation": "approximately 5000 × g for 5 minutes",
+      "finalVolume": "25 mL",
+      "filtration": "0.45 μm regenerated cellulose (RC) membrane"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "injectionVolume": "10 μL",
+      "peakAreaRSD": "≤ 5.0% (tussilagone)",
+      "retentionTimeRSD": "≤ 2.0% (tussilagone)",
+      "theoreticalPlates": "≥ 250,000 (based on tussilagone)",
+      "resolution": "≥ 1.5 (between peak 4 and adjacent peak)"
+    },
+    "identificationCriteria": {
+      "retentionTimeTolerance": "≤ 2.0% difference between sample and standard"
+    }
+  },
+  "hplcAssay": {
+    "appendixReference": "Appendix III",
+    "chromatographicSystem": {
+      "detector": "DAD (Diode Array Detector)",
+      "detectionWavelength": "220 nm",
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "flowRate": "approximately 1.0 mL/min"
+    },
+    "mobilePhase": {
+      "solventA": "0.1% Phosphoric acid (v/v)",
+      "solventB": "Acetonitrile (v/v)",
+      "gradientProgram": [
+        {
+          "timeRange": "0-20 min",
+          "solventA": "90% → 64%",
+          "solventB": "10% → 36%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "20-30 min",
+          "solventA": "64% → 10%",
+          "solventB": "36% → 90%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "30-60 min",
+          "solventA": "10% → 5%",
+          "solventB": "90% → 95%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "stockSolution": {
+        "name": "Std-Stock",
+        "concentration": "600 mg/L",
+        "preparation": "6.0 mg tussilagone in 10 mL ethanol"
+      },
+      "workingSolutions": {
+        "name": "Std-AS",
+        "concentrations": ["0.6", "15", "30", "45", "60 mg/L"],
+        "description": "Series of tussilagone standard solutions diluted from stock with ethanol"
+      },
+      "injectionVolume": "10 μL"
+    },
+    "testSolution": {
+      "sampleAmount": "0.5 g",
+      "solvent": "ethanol",
+      "extractionVolume": "10 mL × 2 extractions",
+      "extraction": "ultrasonication (160 W) for 30 minutes",
+      "centrifugation": "approximately 5000 × g for 5 minutes",
+      "finalVolume": "25 mL",
+      "filtration": "0.45 μm regenerated cellulose (RC) membrane"
+    },
+    "systemSuitability": {
+      "standardSolution": "Std-AS (30 mg/L)",
+      "replicateInjections": "5 (minimum)",
+      "injectionVolume": "10 μL",
+      "peakAreaRSD": "≤ 5.0% (tussilagone)",
+      "retentionTimeRSD": "≤ 2.0% (tussilagone)",
+      "theoreticalPlates": "≥ 250,000 (based on tussilagone)",
+      "resolution": "≥ 1.5 (between tussilagone peak and adjacent peak)"
+    },
+    "calibration": {
+      "method": "5-point calibration curve",
+      "plot": "Peak area vs. concentration (mg/L)",
+      "identificationTolerance": "≤ 5.0% difference in retention times"
+    }
+  },
+  "rrtValues": [
+    {
+      "peakNumber": 1,
+      "compound": "Unknown",
+      "rrt": 0.52,
+      "acceptableRange": "± 0.03",
+      "referenceMarker": false,
+      "referenceTo": "Tussilagone"
+    },
+    {
+      "peakNumber": 2,
+      "compound": "Unknown",
+      "rrt": 0.55,
+      "acceptableRange": "± 0.03",
+      "referenceMarker": false,
+      "referenceTo": "Tussilagone"
+    },
+    {
+      "peakNumber": 3,
+      "compound": "Unknown",
+      "rrt": 0.57,
+      "acceptableRange": "± 0.03",
+      "referenceMarker": false,
+      "referenceTo": "Tussilagone"
+    },
+    {
+      "peakNumber": 4,
+      "compound": "Tussilagone",
+      "chineseName": "款冬酮",
+      "rrt": 1.00,
+      "acceptableRange": null,
+      "referenceMarker": true,
+      "referenceTo": "self"
+    },
+    {
+      "peakNumber": 5,
+      "compound": "Unknown",
+      "rrt": 1.08,
+      "acceptableRange": "± 0.03",
+      "referenceMarker": false,
+      "referenceTo": "Tussilagone"
+    }
+  ],
+  "appendices": {
+    "appendixI": {
+      "title": "Chromatography - Thin-Layer Chromatography (TLC)",
+      "description": "General procedures for TLC including plate types, application methods, developing chambers, Rf calculation, and visualization techniques"
+    },
+    "appendixII": {
+      "title": "Gas Chromatographic and HPLC/UHPLC Fingerprinting",
+      "description": "Methods for establishing chromatographic fingerprints using marker peaks and RRT values"
+    },
+    "appendixIII": {
+      "title": "Chromatography - HPLC/UHPLC",
+      "description": "General HPLC/UHPLC procedures including system suitability tests (theoretical plates, repeatability, resolution, tailing factor) and quantitative calculations"
+    }
+  },
+  "extractedAt": "2026-02-21"
+}

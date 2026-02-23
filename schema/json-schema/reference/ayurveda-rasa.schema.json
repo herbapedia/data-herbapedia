@@ -1,0 +1,215 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herbapedia.org/schema/json-schema/reference/ayurveda-rasa.schema.json",
+  "title": "Ayurveda Rasa",
+  "description": "Ayurvedic taste (रस - Rasa). One of the six tastes according to Ayurveda. Each taste has specific effects on the doshas, digestion, and body tissues. This is foundational to Ayurvedic pharmacology.",
+  "type": "object",
+  "allOf": [
+    { "$ref": "./reference-entity.schema.json" }
+  ],
+  "required": ["@id", "@type", "name"],
+  "properties": {
+    "@id": {
+      "description": "Unique identifier: ayurveda/rasa/{slug}.",
+      "type": "string",
+      "pattern": "^ayurveda/rasa/[a-z0-9-]+$",
+      "examples": [
+        "ayurveda/rasa/madhura",
+        "ayurveda/rasa/amla",
+        "ayurveda/rasa/lavana",
+        "ayurveda/rasa/katu",
+        "ayurveda/rasa/tikta",
+        "ayurveda/rasa/kashaya"
+      ]
+    },
+    "@type": {
+      "type": "array",
+      "items": { "type": "string" },
+      "contains": { "const": "ayurveda:Rasa" },
+      "examples": [["ayurveda:Rasa"]]
+    },
+    "name": {
+      "description": "Rasa name in Sanskrit and English.",
+      "$ref": "../core/language-map.schema.json",
+      "examples": [{ "sa": "मधुर", "en": "Sweet" }]
+    },
+    "sanskritName": {
+      "description": "Sanskrit name in Devanagari.",
+      "type": "string",
+      "examples": ["मधुर", "अम्ल", "लवण", "कटु", "तिक्त", "कषाय"]
+    },
+    "sanskritTransliteration": {
+      "description": "IAST transliteration.",
+      "type": "string",
+      "examples": ["madhura", "amla", "lavana", "katu", "tikta", "kaṣāya"]
+    },
+    "englishName": {
+      "description": "English translation.",
+      "type": "string",
+      "examples": ["Sweet", "Sour", "Salty", "Pungent", "Bitter", "Astringent"]
+    },
+    "symbol": {
+      "description": "Devanagari symbol.",
+      "type": "string",
+      "examples": ["म", "अ", "ल", "क", "त", "क"]
+    },
+    "elementComposition": {
+      "description": "Panchamahabhuta (five elements) composition.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "element": {
+            "type": "string",
+            "enum": ["prithvi", "apas", "tejas", "vayu", "akasha"],
+            "_documentation": {
+              "prithvi": "Earth - solidity",
+              "apas": "Water - cohesion",
+              "tejas": "Fire - transformation",
+              "vayu": "Air - movement",
+              "akasha": "Ether - space"
+            }
+          },
+          "proportion": {
+            "type": "string",
+            "enum": ["dominant", "secondary", "minor"]
+          }
+        }
+      },
+      "_documentation": {
+        "madhura": "Earth + Water dominant",
+        "amla": "Earth + Fire dominant",
+        "lavana": "Water + Fire dominant",
+        "katu": "Fire + Air dominant",
+        "tikta": "Air + Ether dominant",
+        "kashaya": "Earth + Air dominant"
+      }
+    },
+    "effectOnDoshas": {
+      "description": "How this rasa affects each dosha.",
+      "type": "object",
+      "properties": {
+        "vata": {
+          "type": "string",
+          "enum": ["increases", "decreases", "neutral"]
+        },
+        "pitta": {
+          "type": "string",
+          "enum": ["increases", "decreases", "neutral"]
+        },
+        "kapha": {
+          "type": "string",
+          "enum": ["increases", "decreases", "neutral"]
+        }
+      }
+    },
+    "effectOnDigestion": {
+      "description": "Effect on agni (digestive fire).",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "effectOnTissues": {
+      "description": "Effect on the seven dhatus (tissues).",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "generalActions": {
+      "description": "General therapeutic actions of this rasa.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "excessEffects": {
+      "description": "Effects of excess consumption.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "deficiencyEffects": {
+      "description": "Effects of deficiency.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "indications": {
+      "description": "Conditions where this rasa is beneficial.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "contraindications": {
+      "description": "Conditions where this rasa should be avoided.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "commonSubstances": {
+      "description": "Common substances with this rasa.",
+      "type": "array",
+      "items": { "type": "string" },
+      "examples": [["sugar", "honey", "rice"], ["lemon", "tamarind", "yogurt"]]
+    },
+    "tcmFlavorEquivalent": {
+      "description": "Approximate TCM flavor equivalent.",
+      "$ref": "../core/iri-reference.schema.json"
+    }
+  },
+  "additionalProperties": true,
+  "_documentation": {
+    "iriPattern": "ayurveda/rasa/{slug}",
+    "directory": "systems/ayurveda/reference/rasas.jsonld",
+    "sixRasas": {
+      "madhura": {
+        "sanskrit": "मधुर",
+        "english": "Sweet",
+        "elements": "Earth + Water",
+        "vata": "decreases",
+        "pitta": "decreases",
+        "kapha": "increases",
+        "actions": "Nourishes, builds tissues, soothes, satisfies",
+        "excess": "Obesity, diabetes, lethargy, kapha disorders"
+      },
+      "amla": {
+        "sanskrit": "अम्ल",
+        "english": "Sour",
+        "elements": "Earth + Fire",
+        "vata": "decreases",
+        "pitta": "increases",
+        "kapha": "increases",
+        "actions": "Stimulates digestion, moistens, energizes",
+        "excess": "Acidity, skin disorders, pitta disorders"
+      },
+      "lavana": {
+        "sanskrit": "लवण",
+        "english": "Salty",
+        "elements": "Water + Fire",
+        "vata": "decreases",
+        "pitta": "increases",
+        "kapha": "increases",
+        "actions": "Softens, lubricates, stimulates digestion",
+        "excess": "Edema, hypertension, skin issues"
+      },
+      "katu": {
+        "sanskrit": "कटु",
+        "english": "Pungent",
+        "elements": "Fire + Air",
+        "vata": "increases",
+        "pitta": "increases",
+        "kapha": "decreases",
+        "actions": "Stimulates, dries, clears passages, improves digestion",
+        "excess": "Burning, dehydration, dizziness"
+      },
+      "tikta": {
+        "sanskrit": "तिक्त",
+        "english": "Bitter",
+        "elements": "Air + Ether",
+        "vata": "increases",
+        "pitta": "decreases",
+        "kapha": "decreases",
+        "actions": "Cleanses, reduces fever, detoxifies, reduces fat",
+        "excess": "Weakness, dryness, vata disorders"
+      },
+      "kashaya": {
+        "sanskrit": "कषाय",
+        "english": "Astringent",
+        "elements": "Earth + Air",
+        "vata": "increases",
+        "pitta": "decreases",
+        "kapha": "decreases",
+        "actions": "Binds, absorbs, dries, heals wounds",
+        "excess": "Constipation, dryness, vata disorders"
+      }
+    }
+  }
+}

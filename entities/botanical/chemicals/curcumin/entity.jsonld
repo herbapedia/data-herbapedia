@@ -1,0 +1,65 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/chemical/curcumin",
+  "@type": [
+    "botany:ChemicalCompound",
+    "schema:BioChemEntity"
+  ],
+  "name": {
+    "en": "Curcumin",
+    "zh-Hant": "薑黃素",
+    "zh-Hans": "姜黄素"
+  },
+  "iupacName": "(1E,6E)-1,7-bis(4-hydroxy-3-methoxyphenyl)-1,6-heptadiene-3,5-dione",
+  "commonName": [
+    "Curcumin",
+    "Diferuloylmethane",
+    "Natural Yellow 3"
+  ],
+  "molecularFormula": "C21H20O6",
+  "molecularWeight": 368.38,
+  "casNumber": "458-37-7",
+  "pubchemCID": "969516",
+  "chebiID": "CHEBI:171622",
+  "inchi": "InChI=1S/C21H20O6/c1-26-17-9-3-13(4-10-17)5-7-15(23)21(27)16(24)8-6-14-11-18(25)20(28-2)12-19(14)22/h3-12,22,25H,1-2H3/b7-5+,8-6+",
+  "inchiKey": "LFLJHXIJSUQFPF-FQGREHNESA-N",
+  "smiles": "COc1ccc(/C=C/C(=O)CC(=O)/C=C/c2ccc(O)c(OC)c2)cc1O",
+  "compoundClass": "Diarylheptanoid; Curcuminoid",
+  "description": {
+    "en": "The primary bioactive curcuminoid in turmeric, responsible for its bright yellow color. A diarylheptanoid with potent anti-inflammatory, antioxidant, and chemopreventive properties. One of the most studied natural compounds.",
+    "zh-Hant": "薑黃中的主要生物活性薑黃素類化合物，負責其鮮豔的黃色。一種二芳基庚烷，具有強效的抗炎、抗氧化和化學預防特性。研究最多的天然化合物之一。"
+  },
+  "foundIn": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/turmeric"
+    }
+  ],
+  "pharmacology": [
+    "Anti-inflammatory (via NF-κB inhibition)",
+    "Antioxidant (scavenges free radicals)",
+    "Chemopreventive activity",
+    "Hepatoprotective effects",
+    "Neuroprotective effects",
+    "Antimicrobial activity"
+  ],
+  "bioavailability": {
+    "en": "Very poor oral bioavailability due to low absorption, rapid metabolism, and elimination. Enhanced by piperine (black pepper) or lipid formulations."
+  },
+  "safetyData": {
+    "ld50": "Oral, mouse: > 2 g/kg",
+    "toxicity": "Generally Recognized As Safe (GRAS) by FDA",
+    "warnings": [
+      "High doses may cause gastrointestinal upset",
+      "May interact with anticoagulants",
+      "Gallbladder contraction risk"
+    ]
+  },
+  "provenance": {
+    "created": "2024-01-15",
+    "modified": "2026-02-20T17:59:34.446Z",
+    "source": "PubChem, ChEBI, Scientific Literature",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  }
+}

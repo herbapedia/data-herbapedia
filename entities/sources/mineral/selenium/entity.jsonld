@@ -1,0 +1,28 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/sources/mineral/selenium",
+  "@type": [
+    "herbapedia:MineralSource",
+    "herbapedia:SourceMaterial"
+  ],
+  "sourceType": "mineral",
+  "name": {
+    "en": "Selenium",
+    "zh-Hant": "硒",
+    "zh-Hans": "硒"
+  },
+  "description": {
+    "en": "Selenium is an essential trace mineral with antioxidant properties. Natural sources include Brazil nuts, fish, seafood, and grains (content varies by soil composition).",
+    "zh-Hant": "硒是一種必需的微量元素，具有抗氧化特性。天然來源包括巴西堅果、魚類、海鮮和穀物（含量因土壤成分而異）。",
+    "zh-Hans": "硒是一种必需的微量元素，具有抗氧化特性。天然来源包括巴西坚果、鱼类、海鲜和谷物（含量因土壤成分而异）。"
+  },
+  "image": "media/images/selenium/selenium.jpg",
+  "provenance": {
+    "created": "2026-02-18T09:16:57.454Z",
+    "modified": "2026-02-21T09:59:00.000Z",
+    "migratedFrom": "entities/botanical/species/selenium/entity.jsonld",
+    "source": "vitaherbapedia.com",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "wikidataID": "Q737"
+}

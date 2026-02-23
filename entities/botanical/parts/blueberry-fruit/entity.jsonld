@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/blueberry-fruit",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Blueberry Fruit",
+    "zh-Hant": "美洲藍莓",
+    "zh-Hans": "美洲蓝莓"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/blueberry"
+  },
+  "partType": "fruit",
+  "description": {
+    "en": "The fruit of Vaccinium Cyanococcus, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.808Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

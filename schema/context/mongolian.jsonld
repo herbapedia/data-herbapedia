@@ -1,0 +1,394 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "https://www.herbapedia.org/",
+    "@vocab": "https://www.herbapedia.org/vocab/mongolian/",
+
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+
+    "schema": "https://schema.org/",
+    "dc": "http://purl.org/dc/terms/",
+    "wd": "http://www.wikidata.org/entity/",
+
+    "herbapedia": "https://www.herbapedia.org/vocab/core/",
+    "tcm": "https://www.herbapedia.org/vocab/tcm/",
+    "ayurveda": "https://www.herbapedia.org/vocab/ayurveda/",
+    "western": "https://www.herbapedia.org/vocab/western/",
+    "persian": "https://www.herbapedia.org/vocab/persian/",
+    "mongolian": "https://www.herbapedia.org/vocab/mongolian/",
+
+    "id": "@id",
+    "type": "@type",
+    "graph": "@graph",
+
+    // =========================================================================
+    // Mongolian Medicine Core Vocabulary
+    // =========================================================================
+
+    "MongolianHerb": {
+      "@id": "mongolian:Herb",
+      "@type": "@id"
+    },
+    "MongolianDrug": {
+      "@id": "mongolian:Drug",
+      "@type": "@id"
+    },
+    "MongolianProfile": {
+      "@id": "mongolian:Profile",
+      "@type": "@id"
+    },
+
+    // =========================================================================
+    // Mongolian Medicine Properties (Three Roots Theory)
+    // =========================================================================
+
+    /**
+     * Three Roots (Гурван үндэс)
+     * The fundamental diagnostic和治疗 framework:
+     * - Heyi (Хяь) - Wind/Liver
+     * - Xila (Шил) - Phlegm/Spleen
+     * - Badagan (Бядаган) - Bile/Heart
+     *
+     * Each herb has effects on one or more of these roots.
+     */
+    "affectsRoots": {
+      "@id": "mongolian:affectsRoots",
+      "@type": "@json"
+    },
+
+    /**
+     * Primary Root Affected
+     * The main therapeutic target of the herb
+     */
+    "primaryRoot": {
+      "@id": "mongolian:primaryRoot",
+      "@type": "xsd:string"
+    },
+
+    /**
+     * Secondary Root Affected
+     * Secondary therapeutic effect
+     */
+    "secondaryRoot": {
+      "@id": "mongolian:secondaryRoot",
+      "@type": "xsd:string"
+    },
+
+    /**
+     * Five Elements (Таван махбод)
+     * Wood, Fire, Earth, Metal, Water
+     * Each element corresponds to organs and functions
+     */
+    "hasElement": {
+      "@id": "mongolian:hasElement",
+      "@type": "@id"
+    },
+
+    /**
+     * Taste (Амт)
+     * Six tastes: Sweet, Sour, Salty, Bitter, Pungent, Astringent
+     */
+    "hasTaste": {
+      "@id": "mongolian:hasTaste",
+      "@type": "@id",
+      "@container": "@set"
+    },
+
+    /**
+     * Potency (Халуун/Сэруун)
+     * Thermal nature: Hot (warming) vs Cold (cooling)
+     */
+    "hasPotency": {
+      "@id": "mongolian:hasPotency",
+      "@type": "@id"
+    },
+
+    /**
+     * Specific Property (Онцгой шинж)
+     * Unique specific properties of Mongolian herbs
+     */
+    "hasSpecificProperty": {
+      "@id": "mongolian:hasSpecificProperty",
+      "@type": "@id",
+      "@container": "@set"
+    },
+
+    /**
+     * Locus (Эрхтэн)
+     * Target organ/system in Mongolian medicine
+     */
+    "affectsOrgan": {
+      "@id": "mongolian:affectsOrgan",
+      "@type": "@id",
+      "@container": "@set"
+    },
+
+    /**
+     * Energy Direction (Эрчим хүчний чиглэл)
+     * Direction of energy movement
+     */
+    "energyDirection": {
+      "@id": "mongolian:energyDirection",
+      "@type": "xsd:string"
+    },
+
+    /**
+     * Mongolian Action
+     * Traditional Mongolian therapeutic actions
+     */
+    "hasAction": {
+      "@id": "mongolian:hasAction",
+      "@type": "@id",
+      "@container": "@set"
+    },
+
+    /**
+     * Preparation Method (Бэлтгэл)
+     * Traditional Mongolian preparation methods
+     */
+    "preparationMethod": {
+      "@id": "mongolian:preparationMethod",
+      "@type": "xsd:string"
+    },
+
+    /**
+     * Dosage Form (Хэлбэр)
+     */
+    "dosageForm": {
+      "@id": "mongolian:dosageForm",
+      "@type": "xsd:string"
+    },
+
+    // =========================================================================
+    // Common Mongolian Properties
+    // =========================================================================
+
+    /**
+     * Mongolian Name
+     */
+    "mongolianName": {
+      "@id": "mongolian:mongolianName",
+      "@container": "@language"
+    },
+
+    /**
+     * Tibetan Name (if applicable)
+     */
+    "tibetanName": {
+      "@id": "mongolian:tibetanName",
+      "@container": "@language"
+    },
+
+    /**
+     * Buryat Name (if applicable)
+     */
+    "buryatName": {
+      "@id": "mongolian:buryatName",
+      "@container": "@language"
+    },
+
+    /**
+     * Classical Tibetan Source
+     * References to the Four Medical Tantras (Gyud-Zhi)
+     */
+    "classicalSource": {
+      "@id": "mongolian:classicalSource",
+      "@type": "xsd:string"
+    },
+
+    /**
+     * Gyud-Zhi Quote
+     * Direct quotes from the Four Medical Tantras
+     */
+    "gyudZhiQuote": {
+      "@id": "mongolian:gyudZhiQuote",
+      "@container": "@language"
+    },
+
+    /**
+     * Traditional Mongolian Usage
+     */
+    "mongolianTraditionalUsage": {
+      "@id": "mongolian:traditionalUsage",
+      "@container": "@language"
+    },
+
+    /**
+     * Mongolian Modern Research
+     */
+    "mongolianModernResearch": {
+      "@id": "mongolian:modernResearch",
+      "@container": "@language"
+    },
+
+    /**
+     * Mongolian Clinical Notes
+     */
+    "mongolianClinicalNotes": {
+      "@id": "mongolian:clinicalNotes",
+      "@container": "@language"
+    },
+
+    /**
+     * Mongolian Contraindications
+     */
+    "mongolianContraindications": {
+      "@id": "mongolian:contraindications",
+      "@container": "@language"
+    },
+
+    /**
+     * Mongolian Dosage
+     */
+    "mongolianDosage": {
+      "@id": "mongolian:dosage",
+      "@container": "@language"
+    },
+
+    // =========================================================================
+    // Reference Vocabulary Terms
+    // =========================================================================
+
+    /**
+     * Three Roots Value
+     */
+    "rootValue": {
+      "@id": "mongolian:rootValue",
+      "@type": "xsd:string",
+      "@enum": ["heyi", "xila", "badagan"]
+    },
+
+    /**
+     * Element Value (Five Elements)
+     */
+    "elementValue": {
+      "@id": "mongolian:elementValue",
+      "@type": "xsd:string",
+      "@enum": ["wood", "fire", "earth", "metal", "water"]
+    },
+
+    /**
+     * Taste Value
+     */
+    "tasteValue": {
+      "@id": "mongolian:tasteValue",
+      "@type": "xsd:string",
+      "@enum": ["sweet", "sour", "salty", "bitter", "pungent", "astringent"]
+    },
+
+    /**
+     * Potency Value
+     */
+    "potencyValue": {
+      "@id": "mongolian:potencyValue",
+      "@type": "xsd:string",
+      "@enum": ["hot", "warm", "neutral", "cool", "cold"]
+    },
+
+    /**
+     * Specific Property Value
+     */
+    "specificPropertyValue": {
+      "@id": "mongolian:specificPropertyValue",
+      "@type": "xsd:string"
+    },
+
+    /**
+     * Action Value
+     */
+    "actionValue": {
+      "@id": "mongolian:actionValue",
+      "@type": "xsd:string"
+    },
+
+    /**
+     * Root Effect Type
+     */
+    "rootEffectType": {
+      "@id": "mongolian:rootEffectType",
+      "@type": "xsd:string",
+      "@enum": ["pacifies", "aggravates", "harmonizes"]
+    },
+
+    // =========================================================================
+    // Common Properties from Core
+    // =========================================================================
+
+    "name": {
+      "@id": "schema:name",
+      "@container": "@language"
+    },
+    "description": {
+      "@id": "schema:description",
+      "@container": "@language"
+    },
+    "alternateName": {
+      "@id": "schema:alternateName",
+      "@container": "@set"
+    },
+    "image": {
+      "@id": "schema:image",
+      "@type": "@id"
+    },
+    "sameAs": {
+      "@id": "schema:sameAs",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "source": {
+      "@id": "dc:source",
+      "@type": "xsd:string"
+    },
+    "sourceUrl": {
+      "@id": "dc:source",
+      "@type": "xsd:anyURI"
+    },
+    "creator": {
+      "@id": "dc:creator",
+      "@type": "xsd:string"
+    },
+    "created": {
+      "@id": "dc:created",
+      "@type": "xsd:dateTime"
+    },
+    "modified": {
+      "@id": "dc:modified",
+      "@type": "xsd:dateTime"
+    },
+    "license": {
+      "@id": "dc:license",
+      "@type": "@id"
+    },
+
+    "prefLabel": {
+      "@id": "skos:prefLabel",
+      "@container": "@language"
+    },
+    "altLabel": {
+      "@id": "skos:altLabel",
+      "@container": "@set"
+    },
+    "definition": {
+      "@id": "skos:definition",
+      "@container": "@language"
+    },
+    "broader": {
+      "@id": "skos:broader",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "narrower": {
+      "@id": "skos:narrower",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "related": {
+      "@id": "skos:related",
+      "@type": "@id",
+      "@container": "@set"
+    }
+  }
+}

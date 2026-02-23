@@ -1,8 +1,8 @@
 {
-  "@context": "../../schema/context/ayurveda.jsonld",
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
   "@graph": [
     {
-      "@id": "virya/ushna",
+      "@id": "https://www.herbapedia.org/entity/virya/ushna",
       "@type": "ayurveda:Virya",
       "viryaValue": "heating",
       "prefLabel": {
@@ -19,7 +19,7 @@
       }
     },
     {
-      "@id": "virya/sheeta",
+      "@id": "https://www.herbapedia.org/entity/virya/sheeta",
       "@type": "ayurveda:Virya",
       "viryaValue": "cooling",
       "prefLabel": {

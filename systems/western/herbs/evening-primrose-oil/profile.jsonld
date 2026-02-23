@@ -1,11 +1,11 @@
 {
-  "@context": "../../schema/context/western.jsonld",
-  "@id": "western/evening-primrose-oil",
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/evening-primrose-oil",
   "@type": [
     "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
-    "@id": "plant/evening-primrose-oil"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/evening-primrose-oil"
   },
   "name": {
     "en": "Evening Primrose Oil",

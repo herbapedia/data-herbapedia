@@ -1,0 +1,37 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/calcium",
+  "@type": [
+    "herbapedia:MineralSource",
+    "schema:Thing"
+  ],
+  "name": {
+    "en": "Calcium",
+    "zh-Hant": "鈣",
+    "zh-Hans": "钙"
+  },
+  "scientificName": null,
+  "family": null,
+  "genus": null,
+  "description": {
+    "en": "Found in cheeses, wheat and soya flour, milk and milk products, soya milk and soya products.\n",
+    "zh-Hant": "鈣是一種人體必需的礦物質元素，參與骨骼代謝、神經傳導、酶活性調節等多種生理功能。適量攝入對維持機體正常代謝和生理功能具有重要意義。",
+    "zh-Hans": "鈣是一种人体必需的礦物质元素，參与骨骼代謝、神经传導、酶活性调节等多种生理功能。適量攝入對維持机体正常代謝和生理功能具有重要意義。"
+  },
+  "image": "media/images/calcium/main.jpg",
+  "provenance": {
+    "created": "2026-02-18T09:16:52.013Z",
+    "modified": "2026-02-21T01:46:20.747Z",
+    "migratedFrom": "entities/plants/calcium/entity.jsonld",
+    "source": "vitaherbapedia.com",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "classificationNote": "Reclassified as MineralSource"
+  },
+  "wikidataID": "Q706",
+  "sourceType": "mineral",
+  "hasWesternProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/western/profile/calcium"
+    }
+  ]
+}

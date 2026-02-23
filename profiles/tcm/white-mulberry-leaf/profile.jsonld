@@ -1,0 +1,60 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/tcm.jsonld",
+  "@id": "https://www.herbapedia.org/system/tcm/profile/white-mulberry-leaf",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "profiles": {
+    "@id": "https://www.herbapedia.org/entity/preparation/white-mulberry-leaf"
+  },
+  "name": {
+    "en": "White Mulberry Leaf",
+    "zh-Hant": "桑白皮",
+    "zh-Hans": "桑白皮"
+  },
+  "pinyin": "White Mulberry Leaf",
+  "chineseName": {
+    "zh-Hant": "桑白皮",
+    "zh-Hans": "桑白皮"
+  },
+  "derivedFromPlant": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/white-mulberry-leaf"
+  },
+  "hasCategory": {
+    "@id": "https://www.herbapedia.org/system/tcm/category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "https://www.herbapedia.org/system/tcm/nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/spleen"
+    }
+  ],
+  "tcmTraditionalUsage": {
+    "en": "Morus alba, also known as white mulberry leaf, is bitter, sweet and cold in nature and enters the lung meridian. It expels fire in the lungs to enhance smooth, easy breathing and stop coughs. It is also used for reducing oedema.\n",
+    "zh-Hant": "桑科植物桑是具有藥用價值的植物，其中根皮即中藥桑白皮，味甘而性寒，歸屬肺經，能瀉肺平喘、利水消腫，主治肺熱咳喘，亦用於浮腫等症，《本草綱目》中言：「肺中有水氣及肺火有餘者宜之。」\n",
+    "zh-Hans": "桑科植物桑是具有药用價值的植物，其中根皮即中药桑白皮，味甘而性寒，歸属肺经，能瀉肺平喘、利水消腫，主治肺热咳喘，亦用于浮腫等症，《本草綱目》中言：「肺中有水气及肺火有餘者宜之。」\n"
+  },
+  "tcmModernResearch": {
+    "en": "Sangbaipi shows diuretic, antibiotic and analgesic effects in studies. It also stimulated digestion and raised blood pressure in experiments on animals.\n",
+    "zh-Hant": "【桑白皮】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【桑白皮】Modern Research內容待翻譯补充。"
+  },
+  "tcmHistory": {
+    "en": "First appeared in Divine Husbandman's Classic of the Materia Medica.\n",
+    "zh-Hant": "【桑白皮】History內容待翻譯補充。",
+    "zh-Hans": "【桑白皮】History內容待翻譯补充。"
+  },
+  "provenance": {
+    "created": "2026-02-20T15:20:59.838Z",
+    "modified": "2026-02-20T15:20:59.838Z",
+    "migratedFrom": "systems/tcm/herbs/white-mulberry-leaf/profile.jsonld"
+  }
+}

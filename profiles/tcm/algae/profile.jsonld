@@ -1,0 +1,55 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/tcm.jsonld",
+  "@id": "https://www.herbapedia.org/system/tcm/profile/algae",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "profiles": {
+    "@id": "https://www.herbapedia.org/entity/preparation/algae"
+  },
+  "name": {
+    "en": "Algae",
+    "zh-Hant": "深海海藻",
+    "zh-Hans": "深海海藻"
+  },
+  "pinyin": "Algae",
+  "chineseName": {
+    "zh-Hant": "深海海藻",
+    "zh-Hans": "深海海藻"
+  },
+  "derivedFromPlant": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/algae"
+  },
+  "hasCategory": {
+    "@id": "https://www.herbapedia.org/system/tcm/category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "https://www.herbapedia.org/system/tcm/nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/spleen"
+    }
+  ],
+  "tcmTraditionalUsage": {
+    "en": "Derived from a type of seaweed that grows around the coasts of China and Japan, it has been valued for its medicinal properties for many centuries. Traditionally used for the pain associated with hernia disorder, it also clears heat and reduces the phlegm nodules, promotes urination and reduces oedema.\n",
+    "zh-Hant": "深海海藻傳統上用作治療與疝氣紊亂相關的疼痛。深海海藻亦有助清熱和減少 喉嚨分泌物，暢通小便和減濕氣。\n",
+    "zh-Hans": "深海海藻传统上用作治疗与疝气紊亂相关的疼痛。深海海藻亦有助清热和減少 喉嚨分泌物，暢通小便和減湿气。\n"
+  },
+  "tcmModernResearch": {
+    "en": "Alginates are found in seaweed and are rich in vital minerals and trace elements. They have a strong moisturising effect on the skin along with firming and stimulating properties, which help to detoxify the body and boost circulation. This has made alginates a useful ingredient in the beauty industry.\n",
+    "zh-Hant": "【深海海藻】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【深海海藻】Modern Research內容待翻譯补充。"
+  },
+  "provenance": {
+    "created": "2026-02-20T15:20:59.817Z",
+    "modified": "2026-02-20T15:20:59.818Z",
+    "migratedFrom": "systems/tcm/herbs/algae/profile.jsonld"
+  }
+}

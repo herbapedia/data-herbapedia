@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/tea-tree-oil",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/tea-tree-oil",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"

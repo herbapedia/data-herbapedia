@@ -1,0 +1,29 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/sources/chemical/paba",
+  "@type": [
+    "herbapedia:ChemicalSource",
+    "herbapedia:SourceMaterial"
+  ],
+  "sourceType": "chemical",
+  "name": {
+    "en": "PABA",
+    "zh-Hant": "胺基苯酸",
+    "zh-Hans": "胺基苯酸"
+  },
+  "chemicalName": "Para Amino Benzoic Acid",
+  "description": {
+    "en": "PABA is found naturally in liver, kidney, brewer's yeast, molasses, whole grains, mushrooms and spinach. It is also produced by intestinal bacteria.",
+    "zh-Hant": "胺基苯酸（學名：Para Amino Benzoic Acid）是一種具有藥用價值的天然產物。現代藥理學研究證實其含有多種生物活性成分，在傳統醫學和現代保健領域均有重要應用價值。",
+    "zh-Hans": "胺基苯酸（学名：Para Amino Benzoic Acid）是一种具有药用價值的天然產物。現代药理学研究证实其含有多种生物活性成分，在传统医学和現代保健領域均有重要应用價值。"
+  },
+  "image": "media/images/paba/paba.jpg",
+  "provenance": {
+    "created": "2026-02-18T09:17:20.477Z",
+    "modified": "2026-02-21T10:00:00.000Z",
+    "migratedFrom": "entities/botanical/species/paba/entity.jsonld",
+    "source": "vitaherbapedia.com",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "wikidataID": "Q200374"
+}

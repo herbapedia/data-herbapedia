@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/roucongrong-root",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Roucongrong Root",
+    "zh-Hant": "肉蓯蓉",
+    "zh-Hans": "肉苁蓉"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/roucongrong"
+  },
+  "partType": "root",
+  "description": {
+    "en": "The root of Cistanche deserticola, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.826Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/echinacea",
+  "@type": [
+    "herbapedia:WesternHerbalProfile"
+  ],
+  "profiles": {
+    "@id": "https://www.herbapedia.org/entity/preparation/echinacea"
+  },
+  "name": {
+    "en": "Echinacea",
+    "zh-Hant": "紫錐花",
+    "zh-Hans": "紫锥花"
+  },
+  "derivedFromPlant": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/echinacea"
+  },
+  "westernTraditionalUsage": {
+    "en": "Echinacea is a North American herb that is taken to reduce the severity and duration of colds and upper respiratory tract infections. Its pharmacological effects are immunomodulatory, immunostimulant and antimycotic, while it increases phagocytosis and serum leukocytes. In Chinese medicine it is classed as a bitter, acrid, cooling herb that affects the lung, liver and bladder meridians to clear heat, remove toxins and dispel wind.\n",
+    "zh-Hant": "紫錐花常用作減輕上呼吸道感染徵狀，能促進免疫調節活動，刺激免疫功能和抵抗有害微生物，促進吞噬作用和增加血清中的白血球。\n",
+    "zh-Hans": "紫锥花常用作减轻上呼吸道感染徵状，能促进免疫调节活动，刺激免疫功能和抵抗有害微生物，促进吞噬作用和增加血清中的白血球。\n"
+  },
+  "westernHistory": {
+    "en": "Echinacea was the medicinal plant most widely used by native Americans. Ethnobotanist M.R. Gilmore noted, \"Echinacea seems to have been used as a remedy for more ailments than any other plant.\" These ailments included toothache, enlarged glands (mumps), sore throat, snakebites, coughs, burns and as an analgesic. It first became popular in Europe in the 1930s.\n",
+    "zh-Hant": "紫錐花是美國土著最廣泛使用的藥用植物。Ethnobotanist M.R.Gilmore 提到：「紫錐花比其他植物更多用作即時治療疾病。」美國本土人使用紫錐花治理牙痛、擴大腮腺、咽喉不適、蛇咬傷、咳嗽、燒傷和痛症。\n",
+    "zh-Hans": "紫锥花是美国土著最广泛使用的药用植物。Ethnobotanist M.R.Gilmore 提到：「紫锥花比其他植物更多用作实时治疗疾病。」美国本土人使用紫锥花治理牙痛、扩大腮腺、咽喉不适、蛇咬伤、咳嗽、烧伤和痛症。\n"
+  },
+  "provenance": {
+    "created": "2026-02-20T15:22:03.238Z",
+    "modified": "2026-02-20T15:22:03.238Z",
+    "migratedFrom": "systems/western/herbs/echinacea/profile.jsonld"
+  }
+}

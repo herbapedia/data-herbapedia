@@ -1,0 +1,189 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herbapedia.org/schema/json-schema/profiles/tcm-profile.schema.json",
+  "title": "TCM Herb Profile",
+  "description": "Traditional Chinese Medicine interpretation of an HerbalPreparation. Contains TCM-specific properties like nature (四气), flavor (五味), meridian entry (归经), and therapeutic functions. This profile INTERPRETS a preparation through the TCM theoretical framework.",
+  "type": "object",
+  "allOf": [
+    { "$ref": "./profile-base.schema.json" }
+  ],
+  "required": ["@id", "@type", "name", "profiles", "pinyin", "hasCategory", "hasNature", "hasFlavor", "entersMeridian"],
+  "properties": {
+    "@id": {
+      "description": "Unique identifier: tcm/profile/{slug}. Slug is typically the pinyin name lowercased and hyphenated.",
+      "type": "string",
+      "pattern": "^tcm/profile/[a-z0-9-]+$",
+      "examples": [
+        "tcm/profile/sheng-jiang",
+        "tcm/profile/gan-jiang",
+        "tcm/profile/ren-shen",
+        "tcm/profile/huang-qi"
+      ]
+    },
+    "@type": {
+      "type": "array",
+      "items": { "type": "string" },
+      "contains": { "const": "tcm:HerbProfile" },
+      "examples": [["tcm:HerbProfile", "schema:DietarySupplement"]]
+    },
+    "profiles": {
+      "description": "CRITICAL: The HerbalPreparation that this profile interprets. This is the INVERSE of hasTCMProfile on HerbalPreparation.",
+      "$ref": "../core/iri-reference.schema.json",
+      "examples": [{ "@id": "preparation/fresh-ginger-rhizome" }]
+    },
+    "pinyin": {
+      "description": "Pinyin romanization of the Chinese name, with tone marks.",
+      "type": "string",
+      "examples": ["Shēng Jiāng", "Rén Shēn", "Huáng Qí"]
+    },
+    "pinyinToneless": {
+      "description": "Pinyin without tone marks (for search).",
+      "type": "string",
+      "examples": ["Sheng Jiang", "Ren Shen", "Huang Qi"]
+    },
+    "chineseName": {
+      "description": "Chinese characters for the herb name.",
+      "$ref": "../core/language-map.schema.json",
+      "examples": [{ "zh-Hant": "生薑", "zh-Hans": "生姜" }]
+    },
+    "hanzi": {
+      "description": "Simplified Chinese characters (shorthand).",
+      "type": "string",
+      "examples": ["生姜", "人参"]
+    },
+    "hasCategory": {
+      "description": "TCM herb category (e.g., Release Exterior, Tonify Qi).",
+      "$ref": "../core/iri-reference.schema.json",
+      "examples": [{ "@id": "tcm/category/release-exterior" }]
+    },
+    "hasNature": {
+      "description": "TCM thermal nature (四气): Hot, Warm, Neutral, Cool, Cold.",
+      "$ref": "../core/iri-reference.schema.json",
+      "examples": [{ "@id": "tcm/nature/warm" }]
+    },
+    "hasFlavor": {
+      "description": "TCM flavors (五味): Acrid, Sweet, Bitter, Sour, Salty, Bland, Astringent. Most herbs have 1-2 flavors.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" },
+      "minItems": 1,
+      "examples": [[{ "@id": "tcm/flavor/acrid" }, { "@id": "tcm/flavor/sweet" }]]
+    },
+    "entersMeridian": {
+      "description": "TCM meridians this herb enters (归经). Most herbs enter 1-3 meridians.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" },
+      "minItems": 1,
+      "examples": [
+        [{ "@id": "tcm/meridian/lung" }, { "@id": "tcm/meridian/spleen" }, { "@id": "tcm/meridian/stomach" }]
+      ]
+    },
+    "tcmFunctions": {
+      "description": "TCM therapeutic functions (功效) in both Chinese and English.",
+      "$ref": "../core/language-map.schema.json",
+      "examples": [{
+        "en": "Releases exterior, warms middle burner, resolves phlegm, stops vomiting",
+        "zh-Hant": "發汗解表，溫中止嘔，化痰止咳"
+      }]
+    },
+    "actions": {
+      "description": "Specific therapeutic actions (more detailed than functions).",
+      "type": "array",
+      "items": { "type": "string" },
+      "examples": [["Releases exterior cold", "Warms middle burner", "Stops vomiting"]]
+    },
+    "indications": {
+      "description": "Clinical indications - what patterns/symptoms this herb treats.",
+      "type": "array",
+      "items": { "type": "string" },
+      "examples": [["Common cold with wind-cold", "Nausea and vomiting", "Cough with phlegm"]]
+    },
+    "tcmHistory": {
+      "description": "Historical background in TCM.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "tcmTraditionalUsage": {
+      "description": "Traditional usage according to TCM theory.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "tcmModernResearch": {
+      "description": "Modern scientific research on this herb.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "tcmClassicalReference": {
+      "description": "References to classical TCM texts.",
+      "$ref": "../core/language-map.schema.json",
+      "examples": [{
+        "zh-Hant": "《神農本草經》：「生薑，味辛溫。主胸滿，咳逆上氣...」"
+      }]
+    },
+    "dosage": {
+      "description": "Typical dosage information.",
+      "$ref": "../core/language-map.schema.json",
+      "examples": [{
+        "en": "3-10g decocted",
+        "zh-Hant": "煎服3-10克"
+      }]
+    },
+    "contraindications": {
+      "description": "Contraindications according to TCM theory.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "tcmSafetyConsideration": {
+      "description": "Safety considerations from TCM perspective.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "combinesWith": {
+      "description": "Herbs commonly combined with this herb in formulas.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" },
+      "examples": [[{ "@id": "tcm/profile/bai-zhu" }, { "@id": "tcm/profile/fu-ling" }]]
+    },
+    "incompatibleWith": {
+      "description": "Herbs that are incompatible with this herb (十八反, 十九畏).",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" }
+    },
+    "antidoteTo": {
+      "description": "Substances this herb can counteract.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "cautionsInPregnancy": {
+      "description": "Pregnancy-specific cautions.",
+      "$ref": "../core/language-map.schema.json"
+    }
+  },
+  "additionalProperties": true,
+  "_documentation": {
+    "iriPattern": "tcm/profile/{slug}",
+    "directory": "systems/tcm/profiles/{slug}/profile.jsonld",
+    "keyRelationship": "profiles -> HerbalPreparation (inverse of HerbalPreparation.hasTCMProfile)",
+    "nomenclature": {
+      "pinyin": "Use lowercase with hyphens for slug, include tones in pinyin field",
+      "chineseName": "Always provide both zh-Hant and zh-Hans"
+    },
+    "examples": {
+      "shengJiang": {
+        "@context": "../../schema/context/tcm.jsonld",
+        "@id": "tcm/profile/sheng-jiang",
+        "@type": ["tcm:HerbProfile"],
+        "profiles": { "@id": "preparation/fresh-ginger-rhizome" },
+        "pinyin": "Shēng Jiāng",
+        "chineseName": { "zh-Hant": "生薑", "zh-Hans": "生姜" },
+        "hasCategory": { "@id": "tcm/category/release-exterior" },
+        "hasNature": { "@id": "tcm/nature/warm" },
+        "hasFlavor": [{ "@id": "tcm/flavor/acrid" }, { "@id": "tcm/flavor/sweet" }],
+        "entersMeridian": [
+          { "@id": "tcm/meridian/lung" },
+          { "@id": "tcm/meridian/spleen" },
+          { "@id": "tcm/meridian/stomach" }
+        ],
+        "tcmFunctions": {
+          "en": "Releases exterior, warms middle burner, resolves phlegm, stops vomiting",
+          "zh-Hant": "發汗解表，溫中止嘔，化痰止咳"
+        },
+        "dosage": { "en": "3-10g", "zh-Hant": "3-10克" }
+      }
+    }
+  }
+}

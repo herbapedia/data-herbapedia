@@ -1,0 +1,204 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/chemical/radix-gentianae",
+  "@type": ["herbapedia:ChemicalAnalysisData", "schema:Dataset"],
+  "dataType": "ChemicalAnalysis",
+  "sourceDocument": "CHEM____Radix_et_Rhizoma_Gentianae_V1.pdf",
+  "scientificName": "Gentiana scabra Bge. / Gentiana rigescens Franch.",
+  "chineseName": "龍膽",
+  "pinyinName": "Long Dan",
+  "identificationMethod": ["Physicochemical", "TLC", "HPLC-Fingerprint", "HPLC-Assay"],
+  "referenceCompounds": [
+    {
+      "name": "Gentiopicroside",
+      "alternateName": "Gentiopicrin",
+      "chineseName": "龍膽苦苷",
+      "formula": "C₁₆H₂₀O₉",
+      "purpose": ["Physicochemical identification", "TLC identification", "HPLC fingerprint marker", "Assay quantification"]
+    }
+  ],
+  "assayLimits": {
+    "gentiopicroside": {
+      "compound": "Gentiopicroside",
+      "formula": "C₁₆H₂₀O₉",
+      "description": "Quantification by HPLC using external standard method"
+    }
+  },
+  "physicochemicalIdentification": {
+    "method": "Precipitation reaction with Potassium Iodobismuthate TS",
+    "reagent": {
+      "name": "Potassium Iodobismuthate TS R₁",
+      "chineseName": "碘化鉍鉀試液 R₁",
+      "composition": {
+        "potassiumIodide": "3.8 g",
+        "basicBismuthNitrate": "0.85 g",
+        "aceticAcid14Percent": "35 mL"
+      }
+    },
+    "procedure": {
+      "sampleAmount": "3.0 g",
+      "solvent": "methanol",
+      "solventVolume": "10 mL",
+      "extraction": "ultrasonication at 240 W for 30 minutes",
+      "evaporation": "water bath to dryness",
+      "dissolution": "1 mL methanol",
+      "testVolume": "250 μL",
+      "aceticAcidAddition": "1 drop of 14% (v/v) acetic acid",
+      "reagentAddition": "2 drops of Potassium Iodobismuthate TS R₁",
+      "standingTime": "approximately 1 minute"
+    },
+    "positiveResult": "orange precipitate (橙色沉澱)"
+  },
+  "tlcMethod": {
+    "appendixReference": "Appendix I",
+    "stationaryPhase": "HPTLC silica gel F₂₅₄ plate (高效硅膠 F₂₅₄ 薄層板)",
+    "developingSolvent": {
+      "components": ["ethyl acetate", "methanol", "water"],
+      "ratio": "20:2:1 (v/v)"
+    },
+    "testSolution": {
+      "sampleAmount": "1.0 g",
+      "solvent": "methanol",
+      "solventVolume": "10 mL",
+      "extraction": "ultrasonication at 240 W for 45 minutes",
+      "concentration": "rotary evaporator under reduced pressure to approximately 1.5 mL",
+      "finalVolume": "2 mL volumetric flask, diluted with methanol to mark"
+    },
+    "standardSolutions": {
+      "compound": "Gentiopicroside",
+      "amount": "4.0 mg",
+      "solventVolume": "2 mL methanol"
+    },
+    "applicationVolumes": {
+      "standardSolution": "3 μL",
+      "testSolution": "2 μL"
+    },
+    "developingDistance": "7 cm (twice - repeat development)",
+    "visualization": "UV light at 254 nm",
+    "identificationCriteria": {
+      "positiveMarker": "Gentiopicroside (matching Rf value and color)"
+    }
+  },
+  "hplcFingerprint": {
+    "appendixReference": "Appendix II",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "3.9 × 150 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "UV",
+      "detectionWavelength": "230 nm",
+      "flowRate": "0.8 mL/min",
+      "injectionVolume": "20 μL"
+    },
+    "mobilePhase": {
+      "solventA": "0.4% (v/v) phosphoric acid aqueous solution",
+      "solventB": "Methanol",
+      "gradientProgram": [
+        {
+          "timeRange": "0-5 min",
+          "solventA": "95% → 94%",
+          "solventB": "5% → 6%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "5-40 min",
+          "solventA": "94% → 40%",
+          "solventB": "6% → 60%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "40-55 min",
+          "solventA": "40% → 0%",
+          "solventB": "60% → 100%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "55-60 min",
+          "solventA": "0%",
+          "solventB": "100%",
+          "elution": "isocratic"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "stockSolution": {
+        "name": "Std-Stock",
+        "concentration": "1000 mg/L",
+        "preparation": "5.0 mg gentiopicroside CRS in 5 mL methanol"
+      },
+      "fingerprintSolution": {
+        "name": "Std-FP",
+        "concentration": "200 mg/L",
+        "preparation": "2 mL Std-Stock diluted to 10 mL with 1:1 (v/v) 0.4% phosphoric acid and methanol"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "0.25 g",
+      "solvent": "1:1 (v/v) 0.4% phosphoric acid and methanol mixture",
+      "solventVolume": "25 mL",
+      "container": "50 mL centrifuge tube",
+      "extraction": "ultrasonication at 240 W for 45 minutes",
+      "centrifugation": "approximately 3000 × g for 10 minutes",
+      "filtration": "0.45 μm PTFE microporous membrane"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "peakAreaRSD": "≤ 2.0% (Gentiopicroside)",
+      "retentionTimeRSD": "≤ 3.0% (Gentiopicroside)",
+      "theoreticalPlates": "≥ 3000 (based on Gentiopicroside)",
+      "resolution": "≥ 1.5 (between peak 2 and peak 3)"
+    },
+    "identificationCriteria": {
+      "retentionTimeTolerance": "≤ 2.0% difference between sample and standard"
+    }
+  },
+  "rrtValues": [
+    {
+      "peakNumber": 1,
+      "compound": "Characteristic Peak 1",
+      "rrt": 0.90,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Gentiopicroside"
+    },
+    {
+      "peakNumber": 2,
+      "compound": "Characteristic Peak 2",
+      "rrt": 0.93,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Gentiopicroside"
+    },
+    {
+      "peakNumber": 3,
+      "compound": "Gentiopicroside",
+      "rrt": 1.00,
+      "acceptableRange": null,
+      "referenceMarker": true,
+      "referenceTo": "self"
+    }
+  ],
+  "sourceSpecies": [
+    {
+      "scientificName": "Gentiana scabra Bge.",
+      "chineseName": "龍膽"
+    },
+    {
+      "scientificName": "Gentiana rigescens Franch.",
+      "chineseName": "堅龍膽"
+    }
+  ],
+  "appendices": {
+    "appendixI": {
+      "title": "Chromatography – Thin-Layer Chromatography",
+      "description": "General procedures for TLC including plate types, application methods, developing chambers, and Rf calculation"
+    },
+    "appendixII": {
+      "title": "GC and HPLC/UHPLC Fingerprinting",
+      "description": "Methods for establishing chromatographic fingerprints using marker peaks and RRT values"
+    }
+  },
+  "extractedAt": "2026-02-20"
+}

@@ -1,0 +1,328 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/mongolian.jsonld",
+  "@id": "https://www.herbapedia.org/system/mongolian/profile/reference/roots",
+  "@type": [
+    "mongolian:ReferenceCollection",
+    "skos:Collection"
+  ],
+  "name": {
+    "en": "Mongolian Three Roots",
+    "mn": "Гурван үндэс"
+  },
+  "description": {
+    "en": "The Three Roots (Гурван үндэс - Gurvan Ündes) in Mongolian Traditional Medicine, derived from Tibetan medicine. They are the fundamental energies governing all physiological functions."
+  },
+  "members": [
+    {
+      "@id": "https://www.herbapedia.org/system/mongolian/profile/root/heyi",
+      "@type": [
+        "mongolian:Root"
+      ],
+      "name": {
+        "en": "Heyi (Wind)",
+        "mn": "хий",
+        "bo": "རླུང་"
+      },
+      "mongolianName": "хий",
+      "tibetanName": "རླུང་",
+      "tibetanWylie": "rlung",
+      "englishName": "Wind",
+      "elementComposition": [
+        {
+          "element": "space",
+          "proportion": "primary"
+        },
+        {
+          "element": "air",
+          "proportion": "primary"
+        }
+      ],
+      "primaryLocation": "Lower body, hips, lumbar region",
+      "primaryFunction": {
+        "en": "Governs all movement in the body: breathing, circulation, nerve impulses, physical movement, elimination"
+      },
+      "characteristics": [
+        "Rough",
+        "Light",
+        "Cold",
+        "Subtle",
+        "Hard",
+        "Mobile"
+      ],
+      "subtypes": [
+        {
+          "name": "Life-sustaining Wind",
+          "location": "Head",
+          "function": "Swallowing, breathing, spitting, belching"
+        },
+        {
+          "name": "Upward-moving Wind",
+          "location": "Chest",
+          "function": "Speech, physical strength, memory"
+        },
+        {
+          "name": "Pervasive Wind",
+          "location": "Heart",
+          "function": "Lifting, walking, stretching, contraction"
+        },
+        {
+          "name": "Fire-accompanying Wind",
+          "location": "Stomach/Intestines",
+          "function": "Digestion, metabolism"
+        },
+        {
+          "name": "Downward-clearing Wind",
+          "location": "Rectum/Bladder",
+          "function": "Elimination, urination, defecation, menstruation"
+        }
+      ],
+      "imbalanceSymptoms": [
+        "Anxiety",
+        "Insomnia",
+        "Tremors",
+        "Constipation",
+        "Joint pain",
+        "Dizziness",
+        "Irregular heartbeat"
+      ],
+      "deficiencySymptoms": [
+        "Lethargy",
+        "Slow movement",
+        "Depression",
+        "Weak digestion"
+      ],
+      "aggravatingFactors": [
+        "Cold wind",
+        "Bitter/astringent/light foods",
+        "Fasting",
+        "Excessive talking",
+        "Sexual excess",
+        "Stress"
+      ],
+      "pacifyingFactors": [
+        "Warm environment",
+        "Sweet/sour/salty foods",
+        "Heavy, oily foods",
+        "Rest",
+        "Oil massage"
+      ],
+      "associatedSeason": "Summer (especially cool evenings)",
+      "associatedTimeOfDay": "Dawn, late afternoon",
+      "associatedAge": "Old age",
+      "ayurvedaEquivalent": "vata"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/mongolian/profile/root/xila",
+      "@type": [
+        "mongolian:Root"
+      ],
+      "name": {
+        "en": "Xila (Bile)",
+        "mn": "шар",
+        "bo": "མཁྲིས་པ་"
+      },
+      "mongolianName": "шар",
+      "tibetanName": "མཁྲིས་པ་",
+      "tibetanWylie": "mkhris pa",
+      "englishName": "Bile",
+      "elementComposition": [
+        {
+          "element": "fire",
+          "proportion": "primary"
+        },
+        {
+          "element": "water",
+          "proportion": "secondary"
+        }
+      ],
+      "primaryLocation": "Liver, gallbladder, middle body",
+      "primaryFunction": {
+        "en": "Governs heat, digestion, metabolism, body temperature, skin color, intelligence, and courage"
+      },
+      "characteristics": [
+        "Oily",
+        "Sharp",
+        "Hot",
+        "Light",
+        "Foul-smelling",
+        "Purgative",
+        "Moist"
+      ],
+      "subtypes": [
+        {
+          "name": "Digestive Bile",
+          "location": "Between stomach and intestines",
+          "function": "Promotes digestion"
+        },
+        {
+          "name": "Color-transforming Bile",
+          "location": "Liver",
+          "function": "Transforms blood colors"
+        },
+        {
+          "name": "Accomplishing Bile",
+          "location": "Heart",
+          "function": "Mental functions, pride, intelligence"
+        },
+        {
+          "name": "Vision Bile",
+          "location": "Eyes",
+          "function": "Vision"
+        },
+        {
+          "name": "Complexion Bile",
+          "location": "Skin",
+          "function": "Skin color and appearance"
+        }
+      ],
+      "imbalanceSymptoms": [
+        "Fever",
+        "Inflammation",
+        "Heartburn",
+        "Jaundice",
+        "Skin rashes",
+        "Anger",
+        "Excessive hunger/thirst",
+        "Bitter taste"
+      ],
+      "deficiencySymptoms": [
+        "Cold body",
+        "Weak digestion",
+        "Pale skin",
+        "Mental dullness"
+      ],
+      "aggravatingFactors": [
+        "Hot climate",
+        "Pungent/sour/salty foods",
+        "Anger",
+        "Heavy physical work at noon",
+        "Alcohol"
+      ],
+      "pacifyingFactors": [
+        "Cool environment",
+        "Bitter/sweet/astringent foods",
+        "Cool foods",
+        "Calmness",
+        "Rest"
+      ],
+      "associatedSeason": "Autumn",
+      "associatedTimeOfDay": "Midday, midnight",
+      "associatedAge": "Middle age",
+      "ayurvedaEquivalent": "pitta"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/mongolian/profile/root/badagan",
+      "@type": [
+        "mongolian:Root"
+      ],
+      "name": {
+        "en": "Badagan (Phlegm)",
+        "mn": "бадган",
+        "bo": "བད་ཀན་"
+      },
+      "mongolianName": "бадган",
+      "tibetanName": "བད་ཀན་",
+      "tibetanWylie": "bad kan",
+      "englishName": "Phlegm",
+      "elementComposition": [
+        {
+          "element": "water",
+          "proportion": "primary"
+        },
+        {
+          "element": "earth",
+          "proportion": "primary"
+        }
+      ],
+      "primaryLocation": "Upper body, chest, throat, head",
+      "primaryFunction": {
+        "en": "Governs structure, stability, fluid balance, sleep, memory, and physical strength"
+      },
+      "characteristics": [
+        "Oily",
+        "Cool",
+        "Heavy",
+        "Blunt",
+        "Smooth",
+        "Firm",
+        "Sticky"
+      ],
+      "subtypes": [
+        {
+          "name": "Supporting Phlegm",
+          "location": "Chest",
+          "function": "Supports other phlegm types"
+        },
+        {
+          "name": "Decomposing Phlegm",
+          "location": "Upper stomach",
+          "function": "Decomposes food"
+        },
+        {
+          "name": "Taste-perceiving Phlegm",
+          "location": "Tongue",
+          "function": "Perceives taste"
+        },
+        {
+          "name": "Satisfying Phlegm",
+          "location": "Head",
+          "function": "Satisfaction, sleep"
+        },
+        {
+          "name": "Connecting Phlegm",
+          "location": "Joints",
+          "function": "Joint lubrication"
+        }
+      ],
+      "imbalanceSymptoms": [
+        "Lethargy",
+        "Heaviness",
+        "Congestion",
+        "Slow digestion",
+        "Excess sleep",
+        "Obesity",
+        "Edema",
+        "Depression"
+      ],
+      "deficiencySymptoms": [
+        "Insomnia",
+        "Weakness",
+        "Dry joints",
+        "Light headedness"
+      ],
+      "aggravatingFactors": [
+        "Cold/damp climate",
+        "Sweet/sour/salty/heavy foods",
+        "Overeating",
+        "Daytime sleep",
+        "Lack of exercise",
+        "Raw foods"
+      ],
+      "pacifyingFactors": [
+        "Warm/dry environment",
+        "Pungent/bitter/astringent foods",
+        "Light foods",
+        "Exercise",
+        "Fasting"
+      ],
+      "associatedSeason": "Spring, late winter",
+      "associatedTimeOfDay": "Morning, evening",
+      "associatedAge": "Childhood",
+      "ayurvedaEquivalent": "kapha"
+    }
+  ],
+  "_documentation": {
+    "classicalReference": "Four Tantras (རྒྱུད་བཞི་), Blue Beryl (བིལ་སྔོན་)",
+    "tibetanOrigin": "Derived from Tibetan Sowa Rigpa medicine",
+    "balance": "Health is maintained when the three roots are in balance",
+    "sevenConstitutions": {
+      "heyi": "Wind constitution",
+      "xila": "Bile constitution",
+      "badagan": "Phlegm constitution",
+      "heyi-xila": "Wind-Bile dual",
+      "heyi-badagan": "Wind-Phlegm dual",
+      "xila-badagan": "Bile-Phlegm dual",
+      "balanced": "Balanced constitution"
+    }
+  }
+}

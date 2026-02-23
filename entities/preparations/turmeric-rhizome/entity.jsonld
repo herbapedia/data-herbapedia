@@ -1,0 +1,101 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/preparation/turmeric-rhizome",
+  "@type": [
+    "herbal:HerbalPreparation",
+    "schema:DietarySupplement"
+  ],
+  "name": {
+    "en": "Turmeric Rhizome",
+    "zh-Hant": "薑黃",
+    "zh-Hans": "姜黄",
+    "hi": "हल्दी",
+    "sa": "हरिद्रा"
+  },
+  "derivedFrom": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/turmeric"
+    }
+  ],
+  "description": {
+    "en": "The dried rhizome of Curcuma longa, widely used as a spice (curry ingredient), natural coloring agent, and medicinal herb across multiple traditional medicine systems."
+  },
+  "preparationMethod": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/method/dried"
+  },
+  "preparationDetails": {
+    "en": "Rhizomes are boiled or steamed, then sun-dried. Fresh turmeric is also used but dried is more common in medicine."
+  },
+  "form": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/form/powder"
+  },
+  "appearance": {
+    "en": "Bright yellow-orange powder with characteristic earthy, slightly bitter aroma and warm, peppery taste"
+  },
+  "storageRequirements": {
+    "en": "Store in airtight container, protected from light and moisture"
+  },
+  "shelfLife": "2-3 years when properly stored",
+  "commonUsage": {
+    "culinary": {
+      "en": "Essential ingredient in curry powders, used in Indian, Middle Eastern, and Southeast Asian cuisine"
+    },
+    "cosmetic": {
+      "en": "Used in skin care preparations for its anti-inflammatory and brightening properties"
+    }
+  },
+  "safetyInfo": {
+    "allergens": [],
+    "pregnancySafety": {
+      "en": "Culinary amounts safe. Therapeutic doses should be used with caution, especially in late pregnancy."
+    },
+    "generalContraindications": {
+      "en": "Gallbladder disease, bile duct obstruction, bleeding disorders. High doses may cause gastrointestinal upset."
+    },
+    "drugInteractions": [
+      "anticoagulants",
+      "antiplatelet drugs",
+      "chemotherapy drugs"
+    ],
+    "warnings": [
+      {
+        "en": "May increase bleeding risk when combined with anticoagulants"
+      },
+      {
+        "en": "High doses may interfere with iron absorption"
+      }
+    ]
+  },
+  "hasTCMProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/profile/jiang-huang"
+    }
+  ],
+  "hasWesternProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/western/profile/turmeric"
+    }
+  ],
+  "hasAyurvedaProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/haridra"
+    }
+  ],
+  "relatedPreparations": [
+    {
+      "@id": "https://www.herbapedia.org/entity/preparation/fresh-turmeric"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/preparation/turmeric-extract"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/preparation/curcumin-supplement"
+    }
+  ],
+  "provenance": {
+    "created": "2024-01-15",
+    "modified": "2024-01-15",
+    "source": "Traditional medicine texts, pharmacological research"
+  },
+  "image": "media/images/turmeric-rhizome/turmeric-rhizome.jpg"
+}

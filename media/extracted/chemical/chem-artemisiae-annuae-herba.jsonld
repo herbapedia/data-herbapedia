@@ -1,0 +1,281 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/chemical/artemisiae-annuae-herba",
+  "@type": ["herbapedia:ChemicalAnalysisData", "schema:Dataset"],
+  "dataType": "ChemicalAnalysis",
+  "sourceDocument": "CHEM____Artemisiae_Annuae_Herba_V1.pdf",
+  "scientificName": "Artemisia annua",
+  "chineseName": "青蒿",
+  "pinyinName": "Qinghao",
+  "identificationMethod": ["Physicochemical", "TLC", "GC-Fingerprint", "LC-MS-MS-Assay"],
+  "referenceCompounds": [
+    {
+      "name": "Artemisinin",
+      "chineseName": "青蒿素",
+      "formula": "C₁₅H₂₂O₅",
+      "purpose": ["TLC identification", "GC fingerprint marker", "LC-MS/MS assay quantification"]
+    }
+  ],
+  "assayLimits": {
+    "artemisinin": {
+      "compound": "Artemisinin",
+      "formula": "C₁₅H₂₂O₅",
+      "minimumContent": "0.05%",
+      "basis": "dried substance"
+    }
+  },
+  "physicochemicalIdentification": {
+    "method": "Fluorescence reaction",
+    "procedure": {
+      "sampleAmount": "0.2 g",
+      "solvent": "70% ethanol",
+      "solventVolume": "2 mL",
+      "extraction": "ultrasonication for 60 minutes",
+      "testMethod": "spot supernatant onto filter paper",
+      "visualization": "UV light at 254 nm",
+      "positiveResult": "fluorescent blue spot"
+    }
+  },
+  "tlcMethod": {
+    "appendixReference": "Appendix I",
+    "artemisininIdentification": {
+      "stationaryPhase": "HPTLC silica gel F₂₅₄ plate",
+      "standardSolution": {
+        "compound": "Artemisinin",
+        "concentration": "0.5 mg in 1 mL methanol (1.0 mg in 2 mL methanol)"
+      },
+      "developingSolvent": {
+        "components": ["n-hexane", "ethyl acetate", "glacial acetic acid"],
+        "ratio": "80:20:1 (v/v/v)"
+      },
+      "sprayReagent": {
+        "composition": "Mix 25 mL 20% sulfuric acid into 25 mL ice-cold glacial acetic acid, add 2.5 mL 4-methoxybenzaldehyde (p-anisaldehyde), then add 50 mL 20% sulfuric acid",
+        "visualization": "Heat at 105°C for about 10 minutes, examine under visible light"
+      },
+      "testSolution": {
+        "sampleAmount": "5.0 g",
+        "solvent": "dichloromethane",
+        "solventVolume": "200 mL",
+        "extraction": "ultrasonication (220 W) for 30 minutes",
+        "evaporation": "rotary evaporator at reduced pressure",
+        "dissolution": "100 mL n-hexane",
+        "partitioning": "50% acetonitrile (3 × 50 mL extraction)",
+        "finalEvaporation": "rotary evaporator at reduced pressure",
+        "finalDissolution": "1 mL methanol"
+      },
+      "applicationVolume": {
+        "standard": "3 µL",
+        "test": "8 µL"
+      },
+      "developingDistance": "8 cm",
+      "identificationCriteria": {
+        "positiveMarkers": ["Artemisinin (matching color and Rf value)"]
+      }
+    }
+  },
+  "gcFingerprint": {
+    "appendixReference": "Appendix II",
+    "chromatographicSystem": {
+      "column": {
+        "type": "HP-5 capillary column",
+        "stationaryPhase": "5% diphenyl dimethyl polysiloxane",
+        "dimensions": "30 m × 0.32 mm",
+        "filmThickness": "0.25 µm"
+      },
+      "detector": "FID (Flame Ionization Detector)",
+      "inletTemperature": "150°C",
+      "detectorTemperature": "285°C",
+      "splitRatio": "40:1",
+      "injectionVolume": "2 µL",
+      "temperatureProgram": [
+        {
+          "timeRange": "0-25 min",
+          "temperature": "150°C → 175°C",
+          "rate": "1°C/min",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "25-35 min",
+          "temperature": "175°C",
+          "elution": "isocratic"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "artemisinin": {
+        "stockSolution": "500 mg/L (2.5 mg in 5 mL acetonitrile)",
+        "storage": "as per laboratory standards"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "2.0 g",
+      "solvent": "petroleum ether (60-80°C)",
+      "solventVolume": "50 mL",
+      "extraction": "ultrasonication (220 W) for 30 minutes",
+      "centrifugation": "5 minutes at 13,000 × g",
+      "evaporation": "rotary evaporator at reduced pressure",
+      "finalDissolution": "10 mL acetonitrile",
+      "filtration": "0.45 µm PTFE membrane"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "peakAreaRSD": "≤ 5.0% (artemisinin)",
+      "retentionTimeRSD": "≤ 2.0% (artemisinin)",
+      "theoreticalPlates": "≥ 100,000 (based on artemisinin)",
+      "resolution": "≥ 1.0 (between peak 6 and adjacent peak)"
+    },
+    "identificationCriteria": {
+      "retentionTimeTolerance": "≤ 2.0% difference between sample and standard"
+    }
+  },
+  "lcMsMsAssay": {
+    "appendixReference": "Appendix III",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "2.1 × 50 mm",
+        "particleSize": "1.8 µm"
+      },
+      "detector": "Triple Quadrupole Mass Spectrometer (MRM mode)",
+      "ionSource": "Electrospray Ionization (ESI)",
+      "flowRate": "0.35 mL/min"
+    },
+    "mobilePhase": {
+      "solventA": "0.1% formic acid in water (v/v)",
+      "solventB": "0.1% formic acid in acetonitrile (0.1:99.9, v/v)",
+      "gradientProgram": [
+        {
+          "timeRange": "0-6 min",
+          "solventA": "85% → 45%",
+          "solventB": "15% → 55%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "6-8 min",
+          "solventA": "45% → 5%",
+          "solventB": "55% → 95%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "8-13 min",
+          "solventA": "5%",
+          "solventB": "95%",
+          "elution": "isocratic"
+        },
+        {
+          "timeRange": "13-13.5 min",
+          "solventA": "5% → 85%",
+          "solventB": "95% → 15%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "13.5-16.5 min",
+          "solventA": "85%",
+          "solventB": "15%",
+          "elution": "isocratic (equilibration)"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "stockSolution": {
+        "concentration": "1000 µg/L",
+        "compound": "Artemisinin",
+        "preparation": "1.0 mg in 1000 mL methanol"
+      },
+      "workingSolutions": {
+        "concentrations": ["31.25", "62.5", "125", "250", "500 µg/L"],
+        "description": "Series of standard solutions diluted with methanol"
+      },
+      "injectionVolume": "5 µL (for calibration)"
+    },
+    "testSolution": {
+      "sampleAmount": "0.1 g",
+      "solvent": "petroleum ether (60-80°C)",
+      "solventVolume": "50 mL",
+      "extraction": "ultrasonication (220 W) for 30 minutes",
+      "centrifugation": "5 minutes at 3200 × g",
+      "repetition": "repeat extraction 3 times, combine filtrates",
+      "evaporation": "rotary evaporator at reduced pressure",
+      "reconstitution": "dissolve residue in methanol, dilute to 25 mL",
+      "finalDilution": "500 µL diluted to 5 mL with methanol (10-fold dilution)",
+      "filtration": "0.45 µm PTFE microporous membrane",
+      "injectionVolume": "5 µL"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "injectionVolume": "5 µL",
+      "resolution": "≥ 1.5 (between adjacent peaks)",
+      "tailingFactor": "as per monograph requirements"
+    },
+    "calibration": {
+      "method": "5-point calibration curve",
+      "plot": "Peak area vs. concentration (µg/L)",
+      "identificationTolerance": "≤ 5.0% difference in retention times"
+    }
+  },
+  "rrtValues": [
+    {
+      "peakNumber": 1,
+      "compound": "Unidentified",
+      "rrt": 0.24,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "artemisinin"
+    },
+    {
+      "peakNumber": 2,
+      "compound": "Unidentified",
+      "rrt": 0.37,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "artemisinin"
+    },
+    {
+      "peakNumber": 3,
+      "compound": "Unidentified",
+      "rrt": 0.48,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "artemisinin"
+    },
+    {
+      "peakNumber": 4,
+      "compound": "Unidentified",
+      "rrt": 0.55,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "artemisinin"
+    },
+    {
+      "peakNumber": 5,
+      "compound": "Unidentified",
+      "rrt": 0.69,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "artemisinin"
+    },
+    {
+      "peakNumber": 6,
+      "compound": "Artemisinin",
+      "rrt": 1.00,
+      "acceptableRange": null,
+      "referenceMarker": true,
+      "referenceTo": "self"
+    }
+  ],
+  "appendices": {
+    "appendixI": {
+      "title": "Chromatography - Thin-Layer Chromatography",
+      "description": "General procedures for TLC including plate types, application methods, developing chambers, Rf calculation and interpretation"
+    },
+    "appendixII": {
+      "title": "GC and HPLC/UHPLC Fingerprinting",
+      "description": "Methods for establishing chromatographic fingerprints using marker peaks, RRT values, and system suitability requirements"
+    },
+    "appendixIII": {
+      "title": "Liquid Chromatography-Mass Spectrometry (LC-MS)",
+      "description": "General LC-MS/MS procedures including ionization parameters, MRM mode operation, system suitability tests (resolution, tailing factor, theoretical plates, repeatability) and quantitative calculations"
+    }
+  },
+  "extractedAt": "2026-02-21"
+}

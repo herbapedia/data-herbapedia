@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/tree-peony-root",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Tree Peony Root",
+    "zh-Hant": "牡丹皮",
+    "zh-Hans": "牡丹皮"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/tree-peony"
+  },
+  "partType": "root",
+  "description": {
+    "en": "The root of Paeonia Suffruticosa, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.830Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

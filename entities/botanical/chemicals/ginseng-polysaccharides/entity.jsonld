@@ -1,0 +1,46 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/chemical/ginseng-polysaccharides",
+  "@type": [
+    "botany:ChemicalCompound",
+    "schema:BioChemEntity"
+  ],
+  "name": {
+    "en": "Ginseng Polysaccharides",
+    "zh-Hant": "人蔘多醣",
+    "zh-Hans": "人参多糖"
+  },
+  "description": {
+    "en": "Water-soluble polysaccharides from ginseng, composed of various monosaccharides including arabinose, galactose, glucose, rhamnose, and galacturonic acid. Exhibit immunomodulatory and antioxidant activities."
+  },
+  "molecularFormula": "Variable (high molecular weight polymer)",
+  "compoundClass": "Polysaccharide; Heteropolysaccharide",
+  "foundIn": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/ginseng"
+    }
+  ],
+  "pharmacology": [
+    "Immunomodulatory effects",
+    "Antioxidant activity",
+    "Hypoglycemic effects",
+    "Anti-tumor activity",
+    "Gastroprotective effects"
+  ],
+  "bioavailability": {
+    "en": "Not absorbed intact but interact with gut-associated lymphoid tissue (GALT)"
+  },
+  "safetyData": {
+    "warnings": [
+      "Generally recognized as safe"
+    ]
+  },
+  "provenance": {
+    "created": "2024-01-15",
+    "modified": "2026-02-20T17:59:34.447Z",
+    "source": "Scientific Literature",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  }
+}

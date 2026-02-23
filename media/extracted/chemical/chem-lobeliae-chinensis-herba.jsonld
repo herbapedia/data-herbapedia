@@ -1,0 +1,260 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/chemical/lobeliae-chinensis-herba",
+  "@type": ["herbapedia:ChemicalAnalysisData", "schema:Dataset"],
+  "dataType": "ChemicalAnalysis",
+  "sourceDocument": "CHEM_____Lobeliae_Chinensis_Herba_V1.pdf",
+  "scientificName": "Lobelia chinensis",
+  "chineseName": "半邊蓮",
+  "pinyinName": "Ban Bian Lian",
+  "identificationMethod": ["TLC", "HPLC-Fingerprint", "HPLC-Assay"],
+  "referenceCompounds": [
+    {
+      "name": "Diosmin",
+      "chineseName": "香葉木苷",
+      "synonyms": ["Diosmetin-7-O-glucoside", "Melilotoside"],
+      "purpose": ["TLC identification", "HPLC fingerprint marker", "HPLC assay quantification"]
+    },
+    {
+      "name": "Linarin",
+      "chineseName": "蒙花苷",
+      "synonyms": ["Buddleoside"],
+      "purpose": ["TLC identification", "HPLC fingerprint marker", "HPLC assay quantification"]
+    },
+    {
+      "name": "Diosmetin",
+      "chineseName": "香葉木素",
+      "purpose": ["HPLC assay quantification"]
+    }
+  ],
+  "tlcMethod": {
+    "appendixReference": "Appendix I",
+    "stationaryPhase": "HPTLC silica gel F254 plate",
+    "developingSolvent": {
+      "components": ["ethyl acetate", "acetone", "formic acid", "water"],
+      "ratio": "8:1:1:1 (v/v/v/v)"
+    },
+    "sprayReagent": {
+      "composition": "1 g aluminum trichloride in 100 mL ethanol",
+      "visualization": "Heat at 105C for approximately 3 minutes"
+    },
+    "testSolution": {
+      "sampleAmount": "1.0 g",
+      "solvent": "methanol",
+      "solventVolume": "5 mL",
+      "extraction": "ultrasonication (350 W) for 15 minutes",
+      "centrifugation": "approximately 6000 x g for 5 minutes",
+      "filtration": "0.45 micrometer nylon filter"
+    },
+    "standardSolutions": {
+      "diosmin": {
+        "preparation": "2.0 mg dissolved in 0.1 mL DMSO, then 0.02 mL diluted to 2 mL with methanol",
+        "applicationVolume": "3 microliters"
+      },
+      "linarin": {
+        "preparation": "8.0 mg dissolved in 0.1 mL DMSO, then 0.01 mL diluted to 2 mL with methanol",
+        "applicationVolume": "1 microliter"
+      }
+    },
+    "applicationVolumes": {
+      "testSolution": "5 microliters"
+    },
+    "developingDistance": "7.5 cm",
+    "chamberEquilibration": "15 minutes in twin trough chamber",
+    "visualization": "UV light at 366 nm",
+    "identificationCriteria": {
+      "positiveMarkers": ["Diosmin", "Linarin"],
+      "matchingRequirement": "Test solution must show spots matching the color and Rf values of the standard solutions"
+    }
+  },
+  "hplcFingerprint": {
+    "appendixReference": "Appendix II",
+    "chromatographicSystem": {
+      "column": {
+        "type": "C18 bonded silica gel",
+        "dimensions": "4.6 x 250 mm",
+        "particleSize": "5 micrometers"
+      },
+      "detector": "DAD (Diode Array Detector)",
+      "detectionWavelength": "267 nm",
+      "columnTemperature": "40C",
+      "flowRate": "1.0 mL/min",
+      "injectionVolume": "10 microliters"
+    },
+    "mobilePhase": {
+      "solventA": "0.2% formic acid in water (v/v)",
+      "solventB": "Acetonitrile",
+      "gradientProgram": [
+        {
+          "timeRange": "0-35 min",
+          "solventA": "83%",
+          "solventB": "17%",
+          "elution": "isocratic"
+        },
+        {
+          "timeRange": "35-60 min",
+          "solventA": "83% to 70%",
+          "solventB": "17% to 30%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "diosmin": {
+        "concentration": "80 mg/L",
+        "preparation": "8.0 mg in 10 mL DMSO, then 0.2 mL diluted to 2 mL with methanol"
+      },
+      "linarin": {
+        "concentration": "18 mg/L",
+        "preparation": "1.8 mg in 10 mL DMSO, then 0.2 mL diluted to 2 mL with methanol"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "1.0 g",
+      "solvent": "methanol",
+      "solventVolume": "5 mL",
+      "extraction": "ultrasonication (350 W) for 15 minutes",
+      "centrifugation": "approximately 6000 x g for 5 minutes",
+      "filtration": "0.45 micrometer nylon membrane filter"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "peakAreaRSD": "less than or equal to 5.0% for both Diosmin and Buddleoside",
+      "retentionTimeRSD": "less than or equal to 2.0% for both Diosmin and Buddleoside",
+      "theoreticalPlatesDiosmin": "greater than or equal to 10,000",
+      "theoreticalPlatesBuddleoside": "greater than or equal to 300,000",
+      "resolution": "greater than or equal to 1.5 between Peak 2 and Peak 4 and their adjacent peaks"
+    },
+    "identificationCriteria": {
+      "retentionTimeTolerance": "less than or equal to 2.0% difference between sample and standard"
+    }
+  },
+  "rrtValues": [
+    {
+      "peakNumber": 1,
+      "compound": "unidentified",
+      "rrt": 0.38,
+      "acceptableRange": "plus or minus 0.03",
+      "referenceMarker": false,
+      "referenceTo": "Linarin (Peak 4)"
+    },
+    {
+      "peakNumber": 2,
+      "compound": "Diosmetin-7-O-glucoside (Diosmin)",
+      "chineseName": "香葉木苷",
+      "rrt": 0.60,
+      "acceptableRange": "plus or minus 0.07",
+      "referenceMarker": false,
+      "referenceTo": "Linarin (Peak 4)"
+    },
+    {
+      "peakNumber": 3,
+      "compound": "unidentified",
+      "rrt": 0.71,
+      "acceptableRange": "plus or minus 0.04",
+      "referenceMarker": false,
+      "referenceTo": "Linarin (Peak 4)"
+    },
+    {
+      "peakNumber": 4,
+      "compound": "Linarin (Buddleoside)",
+      "chineseName": "蒙花苷",
+      "rrt": 1.00,
+      "acceptableRange": null,
+      "referenceMarker": true,
+      "referenceTo": "self"
+    }
+  ],
+  "hplcAssay": {
+    "appendixReference": "Appendix III",
+    "chromatographicSystem": {
+      "column": {
+        "type": "C18 bonded silica gel",
+        "dimensions": "4.6 x 250 mm",
+        "particleSize": "5 micrometers"
+      },
+      "detector": "DAD (Diode Array Detector)",
+      "detectionWavelength": "340 nm",
+      "columnTemperature": "30C",
+      "flowRate": "1.0 mL/min",
+      "injectionVolume": "10 microliters"
+    },
+    "mobilePhase": {
+      "solventA": "0.2% formic acid in water (v/v)",
+      "solventB": "Acetonitrile",
+      "gradientProgram": [
+        {
+          "timeRange": "0-15 min",
+          "solventA": "80%",
+          "solventB": "20%",
+          "elution": "isocratic"
+        },
+        {
+          "timeRange": "15-30 min",
+          "solventA": "80% to 70%",
+          "solventB": "20% to 30%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "30-34 min",
+          "solventA": "70%",
+          "solventB": "30%",
+          "elution": "isocratic"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "stockSolution": {
+        "compounds": ["Melilotoside (Diosmin)", "Diosmetin"],
+        "melilotosideConcentration": "540 mg/L (5.4 mg in 10 mL DMSO)",
+        "diosmetinConcentration": "520 mg/L (5.2 mg in 10 mL DMSO)"
+      },
+      "workingSolutions": {
+        "concentrations": {
+          "melilotoside": ["4", "8", "16", "32.5", "65 mg/L"],
+          "diosmetin": ["1", "2", "4", "8", "16 mg/L"]
+        },
+        "description": "Series of mixed standard solutions diluted with methanol"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "0.2 g",
+      "solvent": "DMSO",
+      "extractionVolume": "5 mL x 3 extractions",
+      "extraction": "ultrasonication (350 W) for 15 minutes",
+      "centrifugation": "approximately 6000 x g for 5 minutes",
+      "finalVolume": "25 mL (diluted with methanol)",
+      "filtration": "0.45 micrometer nylon membrane filter"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "standardConcentration": "16 mg/L Melilotoside, 4 mg/L Diosmetin",
+      "peakAreaRSD": "less than or equal to 5.0% for both compounds",
+      "retentionTimeRSD": "less than or equal to 2.0% for both compounds",
+      "theoreticalPlatesMelilotoside": "greater than or equal to 8,000",
+      "theoreticalPlatesDiosmetin": "greater than or equal to 100,000"
+    },
+    "calibration": {
+      "method": "5-point calibration curve",
+      "plot": "Peak area vs. concentration (mg/L)"
+    }
+  },
+  "assayLimits": {
+    "note": "No specific minimum content requirements specified in the document for Melilotoside or Diosmetin"
+  },
+  "appendices": {
+    "appendixI": {
+      "title": "Chromatography - Thin-Layer Chromatography",
+      "description": "General procedures for TLC including plate types, application methods, developing chambers, and Rf calculation"
+    },
+    "appendixII": {
+      "title": "GC and HPLC/UHPLC Fingerprinting",
+      "description": "Methods for establishing chromatographic fingerprints using marker peaks and RRT values. Reference fingerprint chromatogram established from at least 10 batches of representative samples examined in duplicate."
+    },
+    "appendixIII": {
+      "title": "Chromatography - HPLC/UHPLC",
+      "description": "General HPLC/UHPLC procedures including system suitability tests (theoretical plates, repeatability, resolution, tailing factor) and quantitative calculations using 5-point calibration curves"
+    }
+  },
+  "extractedAt": "2026-02-20"
+}

@@ -1,0 +1,47 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/preparation/sheng-jiang",
+  "@type": [
+    "herbal:HerbalPreparation",
+    "schema:DietarySupplement"
+  ],
+  "name": {
+    "en": "Fresh Ginger",
+    "zh-Hant": "生薑",
+    "zh-Hans": "生姜"
+  },
+  "derivedFrom": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/part/ginger-rhizome"
+    }
+  ],
+  "preparationMethod": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/method/dried"
+  },
+  "form": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/form/whole"
+  },
+  "hasTCMProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/profile/sheng-jiang"
+    }
+  ],
+  "safetyInfo": {
+    "generalContraindications": {
+      "en": "Contraindicated in Yin deficiency with heat signs, lung heat cough.",
+      "zh-Hant": "陰虛內熱、肺熱咳嗽者忌用。",
+      "zh-Hans": "阴虚內热、肺热咳嗽者忌用。"
+    }
+  },
+  "provenance": {
+    "created": "2026-02-20",
+    "source": "Generated from TCM profile",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "description": {
+    "en": "Herbal preparation derived from Fresh Ginger. Fresh Ginger (Sheng Jiang) is primarily used to:\n\n- Release exterior and disperse cold\n- Warm the middle and stop vomiting\n- Warm the lung and resolve phlegm\n- Detoxify fish, crab, and other toxins..."
+  },
+  "image": "media/images/sheng-jiang/sheng-jiang.jpg"
+}

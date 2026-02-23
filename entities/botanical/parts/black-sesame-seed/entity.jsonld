@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/black-sesame-seed",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Black Sesame Seed Seed",
+    "zh-Hant": "巨勝子",
+    "zh-Hans": "巨胜子"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/black-sesame-seed"
+  },
+  "partType": "seed",
+  "description": {
+    "en": "The seed of Sesami Nigram, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.808Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

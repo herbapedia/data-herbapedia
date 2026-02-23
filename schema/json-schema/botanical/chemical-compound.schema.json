@@ -1,0 +1,147 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herbapedia.org/schema/json-schema/botanical/chemical-compound.schema.json",
+  "title": "Chemical Compound",
+  "description": "A chemical compound found in plants. Includes identification data (IUPAC name, InChI, SMILES), database references (PubChem, ChEBI), and links to plants that contain this compound.",
+  "type": "object",
+  "allOf": [
+    { "$ref": "../core/entity.schema.json" }
+  ],
+  "required": ["@id", "@type", "name"],
+  "properties": {
+    "@id": {
+      "description": "Unique identifier: botanical/chemical/{slug}. Slug is typically the common name lowercased.",
+      "type": "string",
+      "pattern": "^botanical/chemical/[a-z0-9-]+$",
+      "examples": [
+        "botanical/chemical/gingerol",
+        "botanical/chemical/curcumin",
+        "botanical/chemical/ginsenoside-rb1"
+      ]
+    },
+    "@type": {
+      "type": "array",
+      "items": { "type": "string" },
+      "contains": { "const": "botany:ChemicalCompound" },
+      "examples": [["botany:ChemicalCompound", "schema:ChemicalSubstance"]]
+    },
+    "iupacName": {
+      "description": "IUPAC systematic name for the compound.",
+      "type": "string",
+      "examples": ["(S)-5-hydroxy-1-(4-hydroxy-3-methoxyphenyl)-3-decanone"]
+    },
+    "commonName": {
+      "description": "Common names for this compound.",
+      "type": "array",
+      "items": { "type": "string" },
+      "examples": [["Gingerol", "6-Gingerol"]]
+    },
+    "systematicName": {
+      "description": "Systematic chemical name.",
+      "type": "string"
+    },
+    "inchi": {
+      "description": "IUPAC International Chemical Identifier.",
+      "type": "string",
+      "examples": ["InChI=1S/C17H26O4/c1-3-4-5-6-7-8-13(20)10-14(19)11-15-9-12(18)2-14-16(15)17(19)21-15/h9,13-14,16,18,20H,3-8,10-11H2,1-2H3"]
+    },
+    "inchiKey": {
+      "description": "Hashed InChI key for compact identification.",
+      "type": "string",
+      "pattern": "^[A-Z]{14}-[A-Z]{10}-[A-Z]$",
+      "examples": ["NLDDIKRKFXFBIU-UHFFFAOYSA-N"]
+    },
+    "smiles": {
+      "description": "Simplified Molecular Input Line Entry System notation.",
+      "type": "string",
+      "examples": ["CCCCCC(C=O)CC(Cc1ccc(OC)c(O)c1)O"]
+    },
+    "molecularFormula": {
+      "description": "Molecular formula.",
+      "type": "string",
+      "examples": ["C17H26O4"]
+    },
+    "molecularWeight": {
+      "description": "Molecular weight in Daltons.",
+      "type": "number",
+      "examples": [294.39]
+    },
+    "casNumber": {
+      "description": "CAS Registry Number.",
+      "type": "string",
+      "pattern": "^\\d+-\\d+-\\d+$",
+      "examples": ["23513-14-6"]
+    },
+    "pubchemCID": {
+      "description": "PubChem Compound ID.",
+      "type": "string",
+      "examples": ["442793"]
+    },
+    "chebiID": {
+      "description": "ChEBI (Chemical Entities of Biological Interest) ID.",
+      "type": "string",
+      "examples": ["CHEBI:5291"]
+    },
+    "chemspiderID": {
+      "description": "ChemSpider ID.",
+      "type": "string"
+    },
+    "unii": {
+      "description": "Unique Ingredient Identifier (FDA).",
+      "type": "string"
+    },
+    "compoundClass": {
+      "description": "Chemical class this compound belongs to.",
+      "type": "string",
+      "examples": ["Phenolic compound", "Terpenoid", "Alkaloid", "Flavonoid", "Saponin"]
+    },
+    "isomers": {
+      "description": "Related isomeric forms.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" }
+    },
+    "derivatives": {
+      "description": "Chemical derivatives of this compound.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" }
+    },
+    "foundIn": {
+      "description": "Plants or plant parts that contain this compound.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" },
+      "examples": [
+        [{ "@id": "botanical/species/zingiber-officinale" }],
+        [{ "@id": "botanical/part/zingiber-officinale-rhizome" }]
+      ]
+    },
+    "pharmacology": {
+      "description": "Known pharmacological activities.",
+      "type": "array",
+      "items": { "type": "string" },
+      "examples": [["anti-inflammatory", "antioxidant", "analgesic"]]
+    },
+    "bioavailability": {
+      "description": "Bioavailability notes.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "safetyData": {
+      "description": "Safety and toxicity data.",
+      "type": "object",
+      "properties": {
+        "ld50": { "type": "string" },
+        "toxicity": { "type": "string" },
+        "warnings": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  },
+  "additionalProperties": true,
+  "_documentation": {
+    "iriPattern": "botanical/chemical/{slug}",
+    "directory": "entities/botanical/chemicals/{slug}/entity.jsonld",
+    "externalDatabases": {
+      "pubchem": "https://pubchem.ncbi.nlm.nih.gov/compound/{cid}",
+      "chebi": "http://purl.obolibrary.org/obo/{id}",
+      "chemspider": "http://www.chemspider.com/Chemical-Structure.{id}.html"
+    }
+  }
+}

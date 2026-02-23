@@ -1,0 +1,39 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/ginseng-berry",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Ginseng Berry",
+    "zh-Hant": "人蔘果",
+    "zh-Hans": "人参果",
+    "ko": "인삼열매"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/ginseng"
+  },
+  "partType": "berry",
+  "description": {
+    "en": "The bright red drupaceous berries of ginseng, containing 1-3 flattened seeds. Rich in ginsenosides and studied for potential health benefits."
+  },
+  "morphology": {
+    "en": "Bright red, globose drupe, 5-10 mm diameter. Contains 1-3 flattened, white seeds. Produced in umbel after flowering."
+  },
+  "constituents": [
+    {
+      "name": "Ginsenosides",
+      "percentage": "3-5%",
+      "notes": "Higher concentration of Re than root"
+    }
+  ],
+  "provenance": {
+    "created": "2024-01-15",
+    "modified": "2024-01-15",
+    "source": "Scientific Literature",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  }
+}

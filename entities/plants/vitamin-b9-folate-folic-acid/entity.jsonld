@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/vitamin-b9-folate-folic-acid",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/vitamin-b9-folate-folic-acid",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"

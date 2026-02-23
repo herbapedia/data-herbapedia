@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/great-burdock-root",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Great Burdock Root",
+    "zh-Hant": "牛蒡",
+    "zh-Hans": "牛蒡"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/great-burdock"
+  },
+  "partType": "root",
+  "description": {
+    "en": "The root of Arctium lappa, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.816Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

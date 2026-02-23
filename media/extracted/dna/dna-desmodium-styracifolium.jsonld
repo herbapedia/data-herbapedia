@@ -1,0 +1,87 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/dna/desmodium-styracifolium",
+  "@type": ["herbapedia:DNASequenceData", "schema:Dataset"],
+  "dataType": "DNASequence",
+  "sourceFile": "DNA______Desmodium_styracifolium_V1.pdf",
+  "sourceDocument": "GCMTI FS:2024-5",
+  "title": {
+    "en": "Fact sheet of reference DNA sequences of Desmodium styracifolium",
+    "zh-hk": "廣金錢草(Desmodium styracifolium)之參考 DNA 序列資料表"
+  },
+  "scientificName": {
+    "full": "Desmodium styracifolium",
+    "genus": "Desmodium",
+    "species": "styracifolium",
+    "author": null
+  },
+  "loci": [
+    {
+      "name": "ITS2",
+      "fullName": "Internal transcribed spacer 2",
+      "description": {
+        "en": "Internal transcribed spacer 2 (ITS2) of plant voucher specimen of Desmodium styracifolium and Chinese Materia Medica (CMM) Herba Desmodii Styracifolii",
+        "zh-hk": "植物憑證標本及中藥材廣金錢草標本的核糖體 DNA 第二內部轉錄間隔區(ITS2)序列"
+      },
+      "sequenceLength": 229,
+      "consensusSequence": "CACACCGTTAACCTCACGCAAAAGGTCTAACTAAACTGTCGGCCGACGCGGGATGTGTACGTTGACCTCCCGCGAGCTGTGACTCGTGGTTGGTTGAAATTCGAGTTCACGGTCGAGTGCGCCGTGATAAAATGGTGGACGGGCAAATGCTCGAGACCAATCACGCGCGATCCTGTCCGGTGTGACCCTTGGACCCCTGTGGCGTCTTCGGATGCTCTCGGCG",
+      "specimenCount": 22,
+      "specimens": [
+        "22RD99-1A", "22RD100-1A", "22RD101-1A",
+        "21RD70-1A", "21RD70-3A", "21RD70-4A", "21RD70-5A", "21RD70-6A", "21RD70-7B",
+        "21RD71-1A", "21RD71-2A", "21RD71-5A", "21RD71-6A",
+        "21RD72-1A", "21RD72-2A", "21RD72-5A", "21RD72-6B", "21RD72-8A", "21RD72-9A", "21RD72-10A"
+      ],
+      "notes": "Specimens 21RD70-4A, 21RD72-1A, and 21RD72-2A showed minor sequence variations (R at position 19, Y at position 175)"
+    },
+    {
+      "name": "psbA-trnH",
+      "fullName": "Chloroplast psbA-trnH intergenic spacer",
+      "description": {
+        "en": "Chloroplast psbA-trnH intergenic spacer (psbA-trnH) of plant voucher specimen of Desmodium styracifolium and Chinese Materia Medica (CMM) Herba Desmodii Styracifolii",
+        "zh-hk": "植物憑證標本及中藥材廣金錢草標本的葉綠體 psbA-trnH 基因間區(psbA-trnH)序列"
+      },
+      "sequenceLength": 457,
+      "consensusSequence": "ATAACTTCCCTCTAGATCTAGCTGCGATCGAAGCTCCATCTATAAATGGATAAAATTTTGAGTGTCAAGTATACGAGTTTTTGAAAGTAAAAGAGCAATATCAAGATTGTTGATATTGCTCTTTTACTTTTTTTAGTAGTTTACCTATTTTAAAATATTTATCCATACATTTTTTATTTTAGGATTCTAGAGTATTCTTTAATTTCTTATGTTGAATATTTTATCCATATATGTTGGATATATATATGGATGTCTCTCTCTTTTTTTCCTATCCTAGAAGAAAAGAATGATAATGAAAGGGTAGAAATCTAGGTATAGATCCCCCACCCTTACATAGTATACATAGTATAAGGGCGGATGTAGCCAAGTGGATCAAGGCAGT",
+      "specimenCount": 22,
+      "specimens": [
+        "22RD99-1A", "22RD100-1A", "22RD101-1A",
+        "21RD70-1A", "21RD70-3A", "21RD70-4A", "21RD70-5A", "21RD70-6A", "21RD70-7B",
+        "21RD71-1A", "21RD71-2A", "21RD71-5A", "21RD71-6A",
+        "21RD72-1A", "21RD72-2A", "21RD72-5A", "21RD72-6B", "21RD72-8A", "21RD72-9A", "21RD72-10A"
+      ],
+      "notes": "Specimens 21RD71-1A, 21RD71-2A, 21RD72-8A, 21RD72-9A, and 21RD72-10A showed additional tandem repeat (ATATGGATTATATGGAT) in poly-A/T region"
+    },
+    {
+      "name": "rbcL",
+      "fullName": "Partial chloroplast ribulose bisphosphate carboxylase large chain",
+      "description": {
+        "en": "Partial chloroplast ribulose bisphosphate carboxylase large chain (rbcL) of plant voucher specimen of Desmodium styracifolium and Chinese Materia Medica (CMM) Herba Desmodii Styracifolii",
+        "zh-hk": "植物憑證標本及中藥材廣金錢草標本的葉綠體二磷酸核酮糖羧化酶大鏈(rbcL)部分序列"
+      },
+      "sequenceLength": 552,
+      "consensusSequence": "AAGTGTTGGGTTCAAAGCTGGTGTTAAAGATTATAAATTGACTTATTATACTCCTGAGTATCAAACCAAAGATACTGATATCTTGGCAGCCTTCCGAGTAACTCCTCAACCGGGAGTTCCACCTGAAGAAGCAGGTGCTGCGGTAGCTGCGGAATCTTCTACTGGTACATGGACAACTGTGTGGACCGATGGGCTTACCAGTCTTGATCGTTACAAAGGACGATGCTACGGCCTCGAACCTGTTGCTGGAGAAGAAAATCAATATATTGCTTATGTAGCGTATCCCTTAGACCTTTTTGAAGAAGGTTCTGTTACTAACATGTTTACTTCCATTGTCGGTAATGTATTTGGGTTCAAGGCACTGCGCGCCCTACGTCTGGAGGATTTGCGAATCCCTAAGGCTTATATTAAAACTTTTGAAGGTCCACCTCATGGCATCCAAGTTGAGAGAGATAAATTGAACAAGTATGGCCGTCCTCTATTAGGATGTACTATTAAACCTAAATTGGGGTTATCCGCTAAGAATTACGGTAGAGCAGTTTACGAATGTCTT",
+      "specimenCount": 22,
+      "specimens": [
+        "22RD99-1A", "22RD100-1A", "22RD101-1A",
+        "21RD70-1A", "21RD70-3A", "21RD70-4A", "21RD70-5A", "21RD70-6A", "21RD70-7B",
+        "21RD71-1A", "21RD71-2A", "21RD71-5A", "21RD71-6A",
+        "21RD72-1A", "21RD72-2A", "21RD72-5A", "21RD72-6B", "21RD72-8A", "21RD72-9A", "21RD72-10A"
+      ]
+    }
+  ],
+  "specimen": {
+    "gcmtiCode": "GA0000711a00",
+    "type": "Chinese Materia Medica (CMM) Herba Desmodii Styracifolii",
+    "totalSpecimens": 22
+  },
+  "methodology": {
+    "format": "FASTA",
+    "sequencingTargets": ["ITS2", "psbA-trnH", "rbcL"],
+    "specimenTypes": ["Plant voucher specimen", "Chinese Materia Medica (CMM) Herba Desmodii Styracifolii"]
+  },
+  "extracted": {
+    "date": "2026-02-20",
+    "extractedBy": "automated extraction from PDF"
+  }
+}

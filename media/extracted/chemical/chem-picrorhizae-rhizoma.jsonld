@@ -1,0 +1,246 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/chemical/picrorhizae-rhizoma",
+  "@type": ["herbapedia:ChemicalAnalysisData", "schema:Dataset"],
+  "dataType": "ChemicalAnalysis",
+  "sourceDocument": "CHEM_____Picrorhizae_Rhizoma_V1.pdf",
+  "scientificName": "Picrorhiza scrophulariiflora Pennell",
+  "chineseName": "胡黃連",
+  "pinyinName": "Hu Huang Lian",
+  "identificationMethod": ["TLC", "HPLC-Fingerprint", "HPLC-Assay"],
+  "referenceCompounds": [
+    {
+      "name": "Picroside I",
+      "chineseName": "胡黃連苷 I",
+      "formula": "C₂₄H₂₈O₁₁",
+      "purpose": ["TLC identification", "HPLC fingerprint marker", "Assay quantification"]
+    },
+    {
+      "name": "Picroside II",
+      "chineseName": "胡黃連苷 II",
+      "formula": "C₂₃H₂₈O₁₃",
+      "purpose": ["TLC identification", "HPLC fingerprint marker", "Assay quantification"]
+    }
+  ],
+  "assayLimits": {
+    "totalPicrosides": {
+      "description": "Total content of Picroside I and Picroside II",
+      "minimumContent": "4.5%",
+      "basis": "dried substance"
+    }
+  },
+  "tlcMethod": {
+    "appendixReference": "Appendix I",
+    "stationaryPhase": "HPTLC silica gel F₂₅₄ plate",
+    "developingSolvent": {
+      "components": ["ethyl acetate", "ethanol", "glacial acetic acid"],
+      "ratio": "6:1:0.2 (v/v)"
+    },
+    "testSolution": {
+      "sampleAmount": "1.0 g",
+      "solvent": "ethanol",
+      "solventVolume": "10 mL",
+      "extraction": "ultrasonication (270 W) for 10 minutes"
+    },
+    "standardSolutions": {
+      "picrosideI": {
+        "concentration": "1.0 mg/mL in ethanol"
+      },
+      "picrosideII": {
+        "concentration": "1.0 mg/mL in ethanol"
+      }
+    },
+    "applicationVolumes": {
+      "picrosideIStandard": "1 μL",
+      "picrosideIIStandard": "1 μL",
+      "testSolution": "1 μL"
+    },
+    "developingDistance": "4 cm",
+    "chamberSaturation": "15 minutes in twin trough chamber",
+    "visualization": "UV light at 254 nm",
+    "identificationCriteria": {
+      "positiveMarkers": ["Picroside I", "Picroside II"],
+      "description": "Sample must give spots or bands with chromatographic characteristics, including colour and Rf values, corresponding to those of picroside I and picroside II"
+    }
+  },
+  "hplcFingerprint": {
+    "appendixReference": "Appendix II",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "DAD",
+      "detectionWavelength": "275 nm",
+      "flowRate": "1.0 mL/min",
+      "injectionVolume": "10 μL"
+    },
+    "mobilePhase": {
+      "solventA": "0.4% Phosphoric acid",
+      "solventB": "Acetonitrile",
+      "gradientProgram": [
+        {
+          "timeRange": "0-60 min",
+          "solventA": "90% → 70%",
+          "solventB": "10% → 30%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "picrosideIStdFP": {
+        "concentration": "200 mg/L",
+        "preparation": "2.0 mg in 10 mL water"
+      },
+      "picrosideIIStdFP": {
+        "concentration": "200 mg/L",
+        "preparation": "2.0 mg in 10 mL water"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "0.2 g",
+      "solvent": "water",
+      "solventVolume": "10 mL × 2 extractions",
+      "extraction": "ultrasonication (270 W) for 30 minutes",
+      "centrifugation": "5000 × g for 5 minutes",
+      "finalVolume": "25 mL",
+      "filtration": "0.45 μm RC filter"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "peakAreaRSD": "≤ 5.0% (Picroside I and Picroside II)",
+      "retentionTimeRSD": "≤ 2.0% (Picroside I and Picroside II)",
+      "theoreticalPlates": {
+        "picrosideI": "≥ 100000",
+        "picrosideII": "≥ 60000"
+      },
+      "resolution": "≥ 1.5 (between peak 3 and closest peak; between peak 4 and closest peak)"
+    },
+    "identificationCriteria": {
+      "retentionTimeTolerance": "≤ 2.0% difference between sample and standard"
+    }
+  },
+  "hplcAssay": {
+    "appendixReference": "Appendix III",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "DAD",
+      "detectionWavelength": "275 nm",
+      "flowRate": "1.0 mL/min"
+    },
+    "mobilePhase": {
+      "solventA": "0.4% Phosphoric acid",
+      "solventB": "Acetonitrile",
+      "gradientProgram": [
+        {
+          "timeRange": "0-60 min",
+          "solventA": "90% → 70%",
+          "solventB": "10% → 30%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "stockSolution": {
+        "name": "Std-Stock",
+        "picrosideIConcentration": "1000 mg/L",
+        "picrosideIIConcentration": "1000 mg/L",
+        "preparation": "5.0 mg picroside I CRS and 5.0 mg picroside II CRS in 5 mL water"
+      },
+      "workingSolutions": {
+        "name": "Std-AS",
+        "concentrations": ["2.5", "50", "200", "300", "400 mg/L"],
+        "description": "Series of mixed standard solutions"
+      },
+      "injectionVolume": "10 μL"
+    },
+    "testSolution": {
+      "sampleAmount": "0.2 g",
+      "solvent": "water",
+      "extractionVolume": "10 mL × 2 extractions",
+      "extraction": "ultrasonication (270 W) for 30 minutes",
+      "centrifugation": "5000 × g for 5 minutes",
+      "finalVolume": "25 mL",
+      "filtration": "0.45 μm RC filter",
+      "injectionVolume": "10 μL"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "injectionVolume": "10 μL",
+      "standardConcentration": "200 mg/L (Std-AS)",
+      "peakAreaRSD": "≤ 5.0% (Picroside I and Picroside II)",
+      "retentionTimeRSD": "≤ 2.0% (Picroside I and Picroside II)",
+      "theoreticalPlates": {
+        "picrosideI": "≥ 100000",
+        "picrosideII": "≥ 60000"
+      }
+    },
+    "calibration": {
+      "method": "5-point calibration curve",
+      "plot": "Peak area vs. concentration (mg/L)",
+      "identificationTolerance": "≤ 2.0% difference in retention times"
+    }
+  },
+  "rrtValues": [
+    {
+      "peakNumber": 1,
+      "compound": "Characteristic Peak",
+      "rrt": 0.41,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Peak 3 (Picroside II)"
+    },
+    {
+      "peakNumber": 2,
+      "compound": "Characteristic Peak",
+      "rrt": 0.57,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Peak 3 (Picroside II)"
+    },
+    {
+      "peakNumber": 3,
+      "compound": "Picroside II",
+      "rrt": 1.00,
+      "acceptableRange": null,
+      "referenceMarker": true,
+      "referenceTo": "self",
+      "notes": "Marker component"
+    },
+    {
+      "peakNumber": 4,
+      "compound": "Picroside I",
+      "rrt": 1.28,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Peak 3 (Picroside II)"
+    }
+  ],
+  "sourceMaterials": [
+    {
+      "name": "Picrorhiza scrophulariiflora Pennell",
+      "partUsed": "dried rhizome",
+      "chineseName": "胡黃連"
+    }
+  ],
+  "appendices": {
+    "appendixI": {
+      "title": "Chromatography – Thin-Layer Chromatography (TLC)",
+      "description": "General procedures for TLC including plate types, application methods, developing chambers, and Rf calculation"
+    },
+    "appendixII": {
+      "title": "GC and HPLC/UHPLC Fingerprinting",
+      "description": "Methods for establishing chromatographic fingerprints using marker peaks and RRT values"
+    },
+    "appendixIII": {
+      "title": "Chromatography – HPLC/UHPLC",
+      "description": "General HPLC/UHPLC procedures including system suitability tests (theoretical plates, repeatability, resolution, tailing factor) and quantitative calculations"
+    }
+  },
+  "extractedAt": "2026-02-21"
+}

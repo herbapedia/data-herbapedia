@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/bitter-orange",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/bitter-orange",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"

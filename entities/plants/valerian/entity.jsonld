@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/valerian",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/valerian",
   "@type": [
     "botany:Plant",
     "schema:Thing"
@@ -31,14 +31,16 @@
   "image": "media/images/valerian/valerian.jpg",
   "containsChemical": [
     {
-      "@id": "chemical/alkaloids"
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/alkaloids"
     },
     {
-      "@id": "chemical/essential-oils"
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/essential-oils"
     }
   ],
   "sameAs": [
-    "https://www.wikidata.org/wiki/Q158852"
+    {
+      "@id": "https://www.wikidata.org/wiki/Q158852"
+    }
   ],
   "gbifId": "2888748",
   "created": "2026-02-20T00:00:00.000Z",

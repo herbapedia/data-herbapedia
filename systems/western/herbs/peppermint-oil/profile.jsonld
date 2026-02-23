@@ -1,11 +1,11 @@
 {
-  "@context": "../../schema/context/western.jsonld",
-  "@id": "western/peppermint-oil",
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/peppermint-oil",
   "@type": [
     "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
-    "@id": "plant/peppermint-oil"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/peppermint-oil"
   },
   "name": {
     "en": "Peppermint oil",

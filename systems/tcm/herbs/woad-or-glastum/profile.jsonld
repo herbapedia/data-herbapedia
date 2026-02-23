@@ -1,12 +1,12 @@
 {
-  "@context": "../../schema/context/tcm.jsonld",
-  "@id": "tcm/woad-or-glastum",
+  "@context": "https://www.herbapedia.org/schema/context/tcm.jsonld",
+  "@id": "https://www.herbapedia.org/system/tcm/profile/woad-or-glastum",
   "@type": [
     "tcm:Herb",
     "schema:DietarySupplement"
   ],
   "derivedFromPlant": {
-    "@id": "plant/woad-or-glastum"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/woad-or-glastum"
   },
   "name": {
     "en": "Woad or Glastum",
@@ -19,19 +19,19 @@
     "zh-Hans": "大青叶"
   },
   "hasCategory": {
-    "@id": "category/tonify-qi"
+    "@id": "https://www.herbapedia.org/system/tcm/category/tonify-qi"
   },
   "hasNature": {
-    "@id": "nature/neutral"
+    "@id": "https://www.herbapedia.org/system/tcm/nature/neutral"
   },
   "hasFlavor": [
     {
-      "@id": "flavor/sweet"
+      "@id": "https://www.herbapedia.org/system/tcm/flavor/sweet"
     }
   ],
   "entersMeridian": [
     {
-      "@id": "meridian/spleen"
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/spleen"
     }
   ],
   "tcmHistory": {

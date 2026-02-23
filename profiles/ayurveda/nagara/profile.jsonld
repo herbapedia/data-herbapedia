@@ -1,0 +1,133 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/system/ayurveda/profile/nagara",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "profiles": {
+    "@id": "https://www.herbapedia.org/entity/preparation/dried-ginger-rhizome"
+  },
+  "name": {
+    "en": "Dried Ginger",
+    "sa": "नागर",
+    "hi": "सौंठ"
+  },
+  "sanskritName": "नागर",
+  "sanskritTransliteration": "Nāgara",
+  "hindiName": "सौंठ",
+  "derivedFromPlant": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/ginger"
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/rasa/pungent"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/guna/light"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/guna/dry"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/guna/sharp"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/system/ayurveda/profile/virya/heating"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/system/ayurveda/profile/vipaka/pungent"
+  },
+  "affectsDosha": {
+    "vata": {
+      "effect": "decreases"
+    },
+    "pitta": {
+      "effect": "increases",
+      "notes": "Increases in excess"
+    },
+    "kapha": {
+      "effect": "decreases"
+    }
+  },
+  "ayurvedaCategory": {
+    "@id": "https://www.herbapedia.org/system/ayurveda/profile/category/dipaniya"
+  },
+  "karma": [
+    "dipana (kindles digestive fire)",
+    "pachana (digests ama)",
+    "hrudya (cardiac tonic)",
+    "shulaghna (relieves pain)",
+    "amapachana (digests toxins)"
+  ],
+  "ayurvedaTraditionalUsage": {
+    "en": "Nagara (dried ginger) is considered one of the best herbs for kindling digestive fire (agni) and digesting toxins (ama). It is used in numerous classical formulations including Trikatu. Dried ginger is considered more heating than fresh ginger (ardraka).",
+    "sa": "अग्निदीपन, आमपाचन, शूलघ्न, हृद्य"
+  },
+  "ayurvedaModernResearch": {
+    "en": "Modern studies validate traditional uses, showing ginger's effectiveness for digestive complaints, inflammation, and nausea. The heating property (virya) is attributed to gingerols and shogaols which increase metabolism and circulation."
+  },
+  "classicalReferences": [
+    {
+      "text": "Charaka Samhita",
+      "reference": "Sutrasthana",
+      "quote": "नागरं कटुकं तीक्ष्णमुष्णं लघु भवेत्"
+    },
+    {
+      "text": "Bhavaprakasha Nighantu",
+      "reference": "Haritakyadi Varga",
+      "quote": "शुष्कमार्द्रकं नागरं स्याद्दीपनं पाचनं लघु"
+    }
+  ],
+  "indications": [
+    "Low digestive fire (mandagni)",
+    "Accumulated toxins (ama)",
+    "Abdominal pain and distension",
+    "Nausea and vomiting",
+    "Respiratory conditions with kapha",
+    "Joint pain and arthritis",
+    "Cold extremities"
+  ],
+  "contraindications": {
+    "en": "High pitta conditions, bleeding disorders, ulcers, hyperacidity, pregnancy (use with caution)"
+  },
+  "dosage": {
+    "en": "Powder: 500mg-2g, 2-3 times daily with warm water",
+    "decoction": "5-10g boiled in 200mL water",
+    "formulations": "Common in Trikatu, Panchakola, Dashamoola"
+  },
+  "anupana": [
+    "warm water",
+    "honey",
+    "buttermilk"
+  ],
+  "sevanaKala": "pratah",
+  "formulations": [
+    {
+      "name": "Trikatu",
+      "ingredients": [
+        "Ginger",
+        "Black Pepper",
+        "Long Pepper"
+      ],
+      "use": "Digestive and metabolic enhancement"
+    },
+    {
+      "name": "Saunthadi Churna",
+      "ingredients": [
+        "Ginger",
+        "Ajwain",
+        "Black Salt",
+        "Lemon Juice"
+      ],
+      "use": "Digestive, carminative"
+    }
+  ],
+  "provenance": {
+    "created": "2024-01-15",
+    "source": "Charaka Samhita, Sushruta Samhita, Bhavaprakasha Nighantu"
+  }
+}

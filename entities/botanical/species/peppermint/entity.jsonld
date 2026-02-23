@@ -1,0 +1,33 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/peppermint",
+  "@type": [
+    "herbapedia:BotanicalSource",
+    "botany:PlantSpecies",
+    "schema:Plant"
+  ],
+  "sourceType": "botanical",
+  "sourceSubType": "plant",
+  "scientificName": "Mentha × piperita",
+  "family": "Lamiaceae",
+  "name": {
+    "en": "Peppermint",
+    "zh-Hant": "胡椒薄荷",
+    "zh-Hans": "胡椒薄荷"
+  },
+  "description": {
+    "en": "A hybrid mint, a cross between watermint and spearmint."
+  },
+  "wikidataID": "Q128422",
+  "hasExtract": [
+    {
+      "@id": "https://www.herbapedia.org/entity/preparation/peppermint-oil"
+    }
+  ],
+  "provenance": {
+    "created": "2026-02-21",
+    "source": "Created as source plant for essential oil",
+    "purpose": "Enable proper linking of essential oil extracts"
+  },
+  "ncbiTaxonID": "66808"
+}

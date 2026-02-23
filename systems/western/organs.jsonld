@@ -1,8 +1,8 @@
 {
-  "@context": "../../schema/context/western.jsonld",
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
   "@graph": [
     {
-      "@id": "western/organ/liver",
+      "@id": "https://www.herbapedia.org/system/western/organ/liver",
       "@type": "western:OrganAffinity",
       "prefLabel": {
         "en": "Liver",
@@ -16,7 +16,7 @@
       }
     },
     {
-      "@id": "western/organ/kidney",
+      "@id": "https://www.herbapedia.org/system/western/organ/kidney",
       "@type": "western:OrganAffinity",
       "prefLabel": {
         "en": "Kidney",
@@ -30,7 +30,7 @@
       }
     },
     {
-      "@id": "western/organ/heart",
+      "@id": "https://www.herbapedia.org/system/western/organ/heart",
       "@type": "western:OrganAffinity",
       "prefLabel": {
         "en": "Heart",
@@ -44,7 +44,7 @@
       }
     },
     {
-      "@id": "western/organ/lung",
+      "@id": "https://www.herbapedia.org/system/western/organ/lung",
       "@type": "western:OrganAffinity",
       "prefLabel": {
         "en": "Lung",
@@ -58,7 +58,7 @@
       }
     },
     {
-      "@id": "western/organ/stomach",
+      "@id": "https://www.herbapedia.org/system/western/organ/stomach",
       "@type": "western:OrganAffinity",
       "prefLabel": {
         "en": "Stomach",
@@ -72,7 +72,7 @@
       }
     },
     {
-      "@id": "western/organ/intestine",
+      "@id": "https://www.herbapedia.org/system/western/organ/intestine",
       "@type": "western:OrganAffinity",
       "prefLabel": {
         "en": "Intestine",
@@ -86,7 +86,7 @@
       }
     },
     {
-      "@id": "western/organ/skin",
+      "@id": "https://www.herbapedia.org/system/western/organ/skin",
       "@type": "western:OrganAffinity",
       "prefLabel": {
         "en": "Skin",
@@ -100,7 +100,7 @@
       }
     },
     {
-      "@id": "western/organ/brain",
+      "@id": "https://www.herbapedia.org/system/western/organ/brain",
       "@type": "western:OrganAffinity",
       "prefLabel": {
         "en": "Brain",
@@ -114,7 +114,7 @@
       }
     },
     {
-      "@id": "western/organ/nervous-system",
+      "@id": "https://www.herbapedia.org/system/western/organ/nervous-system",
       "@type": "western:OrganAffinity",
       "prefLabel": {
         "en": "Nervous System",
@@ -128,7 +128,7 @@
       }
     },
     {
-      "@id": "western/organ/immune-system",
+      "@id": "https://www.herbapedia.org/system/western/organ/immune-system",
       "@type": "western:OrganAffinity",
       "prefLabel": {
         "en": "Immune System",
@@ -142,7 +142,7 @@
       }
     },
     {
-      "@id": "western/organ/reproductive",
+      "@id": "https://www.herbapedia.org/system/western/organ/reproductive",
       "@type": "western:OrganAffinity",
       "prefLabel": {
         "en": "Reproductive System",
@@ -156,7 +156,7 @@
       }
     },
     {
-      "@id": "western/organ/prostate",
+      "@id": "https://www.herbapedia.org/system/western/organ/prostate",
       "@type": "western:OrganAffinity",
       "prefLabel": {
         "en": "Prostate",
@@ -170,7 +170,7 @@
       }
     },
     {
-      "@id": "western/organ/urinary-tract",
+      "@id": "https://www.herbapedia.org/system/western/organ/urinary-tract",
       "@type": "western:OrganAffinity",
       "prefLabel": {
         "en": "Urinary Tract",
@@ -184,7 +184,7 @@
       }
     },
     {
-      "@id": "western/organ/bladder",
+      "@id": "https://www.herbapedia.org/system/western/organ/bladder",
       "@type": "western:OrganAffinity",
       "prefLabel": {
         "en": "Bladder",
@@ -198,7 +198,7 @@
       }
     },
     {
-      "@id": "western/organ/gallbladder",
+      "@id": "https://www.herbapedia.org/system/western/organ/gallbladder",
       "@type": "western:OrganAffinity",
       "prefLabel": {
         "en": "Gallbladder",
@@ -212,7 +212,7 @@
       }
     },
     {
-      "@id": "western/organ/pancreas",
+      "@id": "https://www.herbapedia.org/system/western/organ/pancreas",
       "@type": "western:OrganAffinity",
       "prefLabel": {
         "en": "Pancreas",
@@ -226,7 +226,7 @@
       }
     },
     {
-      "@id": "western/organ/spleen",
+      "@id": "https://www.herbapedia.org/system/western/organ/spleen",
       "@type": "western:OrganAffinity",
       "prefLabel": {
         "en": "Spleen",
@@ -240,7 +240,7 @@
       }
     },
     {
-      "@id": "western/organ/cardiovascular",
+      "@id": "https://www.herbapedia.org/system/western/organ/cardiovascular",
       "@type": "western:OrganAffinity",
       "prefLabel": {
         "en": "Cardiovascular System",
@@ -254,7 +254,7 @@
       }
     },
     {
-      "@id": "western/organ/endocrine",
+      "@id": "https://www.herbapedia.org/system/western/organ/endocrine",
       "@type": "western:OrganAffinity",
       "prefLabel": {
         "en": "Endocrine System",
@@ -268,7 +268,7 @@
       }
     },
     {
-      "@id": "western/organ/digestive",
+      "@id": "https://www.herbapedia.org/system/western/organ/digestive",
       "@type": "western:OrganAffinity",
       "prefLabel": {
         "en": "Digestive System",
@@ -282,7 +282,7 @@
       }
     },
     {
-      "@id": "western/organ/respiratory",
+      "@id": "https://www.herbapedia.org/system/western/organ/respiratory",
       "@type": "western:OrganAffinity",
       "prefLabel": {
         "en": "Respiratory System",
@@ -296,7 +296,7 @@
       }
     },
     {
-      "@id": "western/organ/musculoskeletal",
+      "@id": "https://www.herbapedia.org/system/western/organ/musculoskeletal",
       "@type": "western:OrganAffinity",
       "prefLabel": {
         "en": "Musculoskeletal System",
@@ -310,7 +310,7 @@
       }
     },
     {
-      "@id": "western/organ/eye",
+      "@id": "https://www.herbapedia.org/system/western/organ/eye",
       "@type": "western:OrganAffinity",
       "prefLabel": {
         "en": "Eye",
@@ -324,7 +324,7 @@
       }
     },
     {
-      "@id": "western/organ/thyroid",
+      "@id": "https://www.herbapedia.org/system/western/organ/thyroid",
       "@type": "western:OrganAffinity",
       "prefLabel": {
         "en": "Thyroid",
@@ -338,7 +338,7 @@
       }
     },
     {
-      "@id": "western/organ/throat",
+      "@id": "https://www.herbapedia.org/system/western/organ/throat",
       "@type": "western:OrganAffinity",
       "prefLabel": {
         "en": "Throat",

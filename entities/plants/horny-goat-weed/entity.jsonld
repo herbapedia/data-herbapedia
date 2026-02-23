@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/horny-goat-weed",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/horny-goat-weed",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"

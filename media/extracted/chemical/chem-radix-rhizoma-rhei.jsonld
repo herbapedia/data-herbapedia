@@ -1,0 +1,338 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/chemical/radix-rhizoma-rhei",
+  "@type": ["herbapedia:ChemicalAnalysisData", "schema:Dataset"],
+  "dataType": "ChemicalAnalysis",
+  "sourceDocument": "CHEM____Radix_et_Rhizoma_Rhei_V1.pdf",
+  "scientificName": "Rheum palmatum L., Rheum tanguticum Maxim. ex Balf., Rheum officinale Baill.",
+  "chineseName": "大黃",
+  "pinyinName": "Da Huang",
+  "identificationMethod": ["Physicochemical", "TLC", "HPLC-Fingerprint", "HPLC-Assay"],
+  "referenceCompounds": [
+    {
+      "name": "Aloe-emodin",
+      "chineseName": "蘆薈大黃素",
+      "formula": "C₁₅H₁₀O₅",
+      "purpose": ["TLC identification", "HPLC fingerprint marker", "Assay quantification"]
+    },
+    {
+      "name": "Chrysophanol",
+      "chineseName": "大黃酚",
+      "formula": "C₁₅H₁₀O₄",
+      "purpose": ["TLC identification", "HPLC fingerprint marker", "Assay quantification"]
+    },
+    {
+      "name": "Emodin",
+      "chineseName": "大黃素",
+      "formula": "C₁₅H₁₀O₅",
+      "purpose": ["TLC identification", "HPLC fingerprint marker (reference)", "Assay quantification"]
+    },
+    {
+      "name": "Rhein",
+      "chineseName": "大黃酸",
+      "formula": "C₁₅H₈O₆",
+      "purpose": ["TLC identification", "HPLC fingerprint marker", "Assay quantification"]
+    },
+    {
+      "name": "Physcion",
+      "chineseName": "大黃素甲醚",
+      "formula": "C₁₆H₁₂O₅",
+      "purpose": ["HPLC fingerprint marker", "Assay quantification"]
+    }
+  ],
+  "assayLimits": {
+    "totalAnthraquinones": {
+      "compounds": ["Aloe-emodin", "Chrysophanol", "Emodin", "Physcion", "Rhein"],
+      "formulas": ["C₁₅H₁₀O₅", "C₁₅H₁₀O₄", "C₁₅H₁₀O₅", "C₁₆H₁₂O₅", "C₁₅H₈O₆"],
+      "minimumContent": "1.5%",
+      "basis": "dried substance (combined total)"
+    }
+  },
+  "physicochemicalIdentification": {
+    "method": "Color reaction with sodium hydrogen carbonate",
+    "procedure": {
+      "sampleAmount": "0.1 g",
+      "solvent": "water",
+      "solventVolume": "50 mL",
+      "extraction1": {
+        "method": "water bath heating",
+        "duration": "30 min",
+        "filtration": "cool to room temperature, filter"
+      },
+      "acidification1": {
+        "reagent": "hydrochloric acid",
+        "volume": "2 drops",
+        "extraction": "twice with 20 mL diethyl ether each",
+        "discard": "ether layer"
+      },
+      "hydrolysis": {
+        "reagent": "hydrochloric acid",
+        "volume": "5 mL",
+        "method": "water bath heating",
+        "duration": "30 min"
+      },
+      "extraction2": {
+        "solvent": "diethyl ether",
+        "volume": "20 mL"
+      },
+      "testVolume": "2 mL ether extract",
+      "reagent": "10% (w/v) sodium hydrogen carbonate solution",
+      "reagentVolume": "0.5 mL",
+      "positiveResult": "reddish-purple or reddish-brown colouration in the lower layer"
+    }
+  },
+  "tlcMethod": {
+    "appendixReference": "Appendix I",
+    "stationaryPhase": "TLC silica gel F₂₅₄ plate",
+    "developingSolvent": {
+      "components": ["toluene", "ethyl acetate", "glacial acetic acid"],
+      "ratio": "15:5:0.3 (v/v)"
+    },
+    "sprayReagent": {
+      "composition": "10 g potassium hydroxide in 100 mL methanol",
+      "visualization": "visible light after spraying"
+    },
+    "testSolution": {
+      "sampleAmount": "0.1 g",
+      "solvent": "methanol",
+      "solventVolume": "20 mL",
+      "extraction": "stand for 1 hour with occasional shaking",
+      "filtration": "filter, take 5 mL filtrate",
+      "evaporation": "water bath at about 40°C",
+      "hydrolysis": {
+        "addition": "10 mL water + 1 mL hydrochloric acid",
+        "method": "water bath heating",
+        "duration": "30 min",
+        "cooling": "immediately cool"
+      },
+      "extraction": "twice with 20 mL diethyl ether each",
+      "evaporation2": "rotary evaporator at reduced pressure",
+      "finalSolvent": "dichloromethane",
+      "finalVolume": "1 mL"
+    },
+    "standardSolutions": {
+      "concentration": "1.0 mg/mL in methanol",
+      "compounds": ["Aloe-emodin", "Chrysophanol", "Emodin", "Rhein"]
+    },
+    "applicationVolumes": {
+      "standardSolutions": "4 uL each",
+      "testSolution": "6 uL"
+    },
+    "developingDistance": "8 cm",
+    "visualization": "visible light after spraying with spray reagent",
+    "identificationCriteria": {
+      "positiveMarkers": ["Aloe-emodin", "Chrysophanol", "Emodin", "Rhein"],
+      "criteria": "sample must give spots or bands with chromatographic characteristics (colour and Rf values) corresponding to the standards"
+    }
+  },
+  "hplcFingerprint": {
+    "appendixReference": "Appendix II",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 x 250 mm",
+        "particleSize": "5 um"
+      },
+      "detector": "UV",
+      "detectionWavelength": "254 nm",
+      "flowRate": "1.0 mL/min",
+      "injectionVolume": "20 uL"
+    },
+    "mobilePhase": {
+      "solventA": "0.1% Phosphoric acid",
+      "solventB": "Acetonitrile",
+      "gradientProgram": [
+        {
+          "timeRange": "0-35 min",
+          "solventA": "65% -> 20%",
+          "solventB": "35% -> 80%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "emodinStdFP": {
+        "concentration": "40 mg/L",
+        "preparation": "2.0 mg emodin CRS in 50 mL methanol",
+        "sonication": "220 W to dissolve"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "0.1 g",
+      "solvent": "methanol",
+      "solventVolume": "20 mL x 3 extractions",
+      "extraction": "sonication (220 W) for 15 min",
+      "centrifugation": "3200 x g for 10 min",
+      "evaporation": "rotary evaporator at reduced pressure",
+      "hydrolysis": {
+        "reagent": "3.4% (v/v) hydrochloric acid",
+        "volume": "33 mL",
+        "method": "reflux",
+        "duration": "45 min",
+        "cooling": "immediately cool"
+      },
+      "extraction2": "thrice with 60 mL diethyl ether each",
+      "evaporation2": "rotary evaporator at reduced pressure",
+      "finalSolvent": "methanol",
+      "finalVolume": "25 mL in volumetric flask",
+      "filtration": "0.45 um PTFE filter"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "injectionVolume": "20 uL",
+      "standardSolution": "Emodin Std-FP (40 mg/L)",
+      "peakAreaRSD": "<= 5.0% (Emodin)",
+      "retentionTimeRSD": "<= 5.0% (Emodin)",
+      "theoreticalPlates": ">= 15000 (based on Emodin)",
+      "resolution": ">= 1.5 (between peak 1 and peak 2)"
+    },
+    "identificationCriteria": {
+      "retentionTimeTolerance": "<= 5.0% difference between sample and standard"
+    }
+  },
+  "hplcAssay": {
+    "appendixReference": "Appendix III",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 x 250 mm",
+        "particleSize": "5 um"
+      },
+      "detector": "UV",
+      "detectionWavelength": "254 nm",
+      "flowRate": "1.0 mL/min"
+    },
+    "mobilePhase": {
+      "solventA": "0.1% Phosphoric acid",
+      "solventB": "Acetonitrile",
+      "gradientProgram": [
+        {
+          "timeRange": "0-35 min",
+          "solventA": "65% -> 20%",
+          "solventB": "35% -> 80%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "stockSolution": {
+        "name": "Std-Stock",
+        "concentration": "40 mg/L each",
+        "compounds": ["Aloe-emodin", "Chrysophanol", "Emodin", "Physcion", "Rhein"],
+        "preparation": "2.0 mg each CRS in 50 mL methanol",
+        "sonication": "220 W with warming"
+      },
+      "workingSolutions": {
+        "name": "Std-AS",
+        "concentrations": ["5", "7.5", "10", "20", "30 mg/L"],
+        "description": "Series of mixed standard solutions"
+      },
+      "injectionVolume": "20 uL (for calibration)"
+    },
+    "testSolution": {
+      "sampleAmount": "0.1 g",
+      "solvent": "methanol",
+      "extractionVolume": "20 mL x 3 extractions",
+      "extraction": "sonication (220 W) for 15 min",
+      "centrifugation": "3200 x g for 10 min",
+      "evaporation": "rotary evaporator at reduced pressure",
+      "hydrolysis": {
+        "reagent": "3.4% (v/v) hydrochloric acid",
+        "volume": "33 mL",
+        "method": "reflux",
+        "duration": "45 min",
+        "cooling": "immediately cool"
+      },
+      "extraction2": "thrice with 60 mL diethyl ether each",
+      "evaporation2": "rotary evaporator at reduced pressure",
+      "finalVolume": "25 mL in volumetric flask",
+      "filtration": "0.45 um PTFE filter",
+      "injectionVolume": "20 uL"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "injectionVolume": "20 uL",
+      "standardSolution": "Mixed Std-Stock (40 mg/L each)",
+      "peakAreaRSD": "<= 5.0% (all 5 compounds)",
+      "retentionTimeRSD": "<= 2.0% (all 5 compounds)",
+      "theoreticalPlates": ">= 15000 (based on all 5 compounds)",
+      "resolution": ">= 1.5 (between aloe-emodin and rhein peaks)"
+    },
+    "calibration": {
+      "method": "5-point calibration curve",
+      "plot": "Peak area vs. concentration (mg/L)",
+      "identificationTolerance": "<= 5.0% difference in retention times"
+    }
+  },
+  "rrtValues": [
+    {
+      "peakNumber": 1,
+      "compound": "Aloe-emodin",
+      "rrt": 0.65,
+      "acceptableRange": "+/-0.03",
+      "referenceMarker": false,
+      "referenceTo": "Emodin"
+    },
+    {
+      "peakNumber": 2,
+      "compound": "Rhein",
+      "rrt": 0.70,
+      "acceptableRange": "+/-0.03",
+      "referenceMarker": false,
+      "referenceTo": "Emodin"
+    },
+    {
+      "peakNumber": 3,
+      "compound": "Emodin",
+      "rrt": 1.00,
+      "acceptableRange": null,
+      "referenceMarker": true,
+      "referenceTo": "self"
+    },
+    {
+      "peakNumber": 4,
+      "compound": "Chrysophanol",
+      "rrt": 1.34,
+      "acceptableRange": "+/-0.03",
+      "referenceMarker": false,
+      "referenceTo": "Emodin"
+    },
+    {
+      "peakNumber": 5,
+      "compound": "Physcion",
+      "rrt": 1.49,
+      "acceptableRange": "+/-0.03",
+      "referenceMarker": false,
+      "referenceTo": "Emodin"
+    }
+  ],
+  "sourceSpecies": [
+    {
+      "scientificName": "Rheum palmatum L.",
+      "chineseName": "掌葉大黃"
+    },
+    {
+      "scientificName": "Rheum tanguticum Maxim. ex Balf.",
+      "chineseName": "唐古特大黃"
+    },
+    {
+      "scientificName": "Rheum officinale Baill.",
+      "chineseName": "藥用大黃"
+    }
+  ],
+  "appendices": {
+    "appendixI": {
+      "title": "Chromatography - Thin-Layer Chromatography (TLC)",
+      "description": "General procedures for TLC including plate types, application methods, developing chambers, and Rf calculation"
+    },
+    "appendixII": {
+      "title": "Gas Chromatographic and High-Performance/Ultra-High Performance Liquid Chromatographic Fingerprinting",
+      "description": "Methods for establishing chromatographic fingerprints using marker peaks and RRT values"
+    },
+    "appendixIII": {
+      "title": "Chromatography - High-Performance Liquid Chromatography (HPLC) / Ultra-High Performance Liquid Chromatography (UHPLC)",
+      "description": "General HPLC/UHPLC procedures including system suitability tests (theoretical plates, repeatability, resolution, tailing factor) and quantitative calculations"
+    }
+  },
+  "extractedAt": "2026-02-20"
+}

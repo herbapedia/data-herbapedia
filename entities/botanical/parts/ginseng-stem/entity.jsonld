@@ -1,0 +1,32 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/ginseng-stem",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Ginseng Stem",
+    "zh-Hant": "人蔘莖",
+    "zh-Hans": "人参茎",
+    "ko": "인삼줄기"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/ginseng"
+  },
+  "partType": "stem",
+  "description": {
+    "en": "The erect stem of ginseng, growing 30-70 cm tall. Typically unbranched with leaves arranged in a whorl at the top."
+  },
+  "morphology": {
+    "en": "Erect, unbranched, 30-70 cm tall. Green to purplish-green. Leaves arranged in whorl at apex."
+  },
+  "provenance": {
+    "created": "2024-01-15",
+    "modified": "2024-01-15",
+    "source": "Flora of China",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  }
+}

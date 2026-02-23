@@ -1,0 +1,317 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "https://www.herbapedia.org/system/tcm/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "schema": "https://schema.org/",
+    "tcm": "https://www.herbapedia.org/vocab/tcm/"
+  },
+  "@id": "https://www.herbapedia.org/system/tcm/actions",
+  "@type": ["skos:Collection"],
+  "rdfs:label": {
+    "en": "TCM Therapeutic Actions",
+    "zh-Hant": "中醫功效"
+  },
+  "rdfs:comment": "Controlled vocabulary for Traditional Chinese Medicine therapeutic actions (功效).",
+  "members": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/action/tonify-yuan-qi",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Tonify Yuan Qi",
+        "zh-Hant": "大補元氣",
+        "zh-Hans": "大补元气"
+      },
+      "skos:definition": {
+        "en": "Strongly tonifies the Original Qi, the foundation of all Qi in the body."
+      },
+      "skos:broader": {
+        "@id": "https://www.herbapedia.org/system/tcm/action/tonify-qi"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/action/tonify-spleen-qi",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Tonify Spleen Qi",
+        "zh-Hant": "補脾氣",
+        "zh-Hans": "补脾气"
+      },
+      "skos:definition": {
+        "en": "Strengthens the Spleen's Qi, improving digestion and energy production."
+      },
+      "skos:broader": {
+        "@id": "https://www.herbapedia.org/system/tcm/action/tonify-qi"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/action/tonify-lung-qi",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Tonify Lung Qi",
+        "zh-Hant": "補肺氣",
+        "zh-Hans": "补肺气"
+      },
+      "skos:definition": {
+        "en": "Strengthens the Lung's Qi, improving respiration and Wei Qi (defensive Qi)."
+      },
+      "skos:broader": {
+        "@id": "https://www.herbapedia.org/system/tcm/action/tonify-qi"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/action/tonify-qi",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Tonify Qi",
+        "zh-Hant": "補氣",
+        "zh-Hans": "补气"
+      },
+      "skos:definition": {
+        "en": "Supplements and boosts the body's vital energy (Qi)."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/action/generate-body-fluids",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Generate Body Fluids",
+        "zh-Hant": "生津",
+        "zh-Hans": "生津"
+      },
+      "skos:definition": {
+        "en": "Promotes the production of body fluids to treat dryness and thirst."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/action/calm-the-spirit",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Calm the Spirit (Shen)",
+        "zh-Hant": "安神",
+        "zh-Hans": "安神"
+      },
+      "skos:definition": {
+        "en": "Calms the Spirit (Shen), treating anxiety, insomnia, and palpitations."
+      },
+      "skos:altLabel": {
+        "en": "An Shen"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/action/release-exterior",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Release Exterior",
+        "zh-Hant": "解表",
+        "zh-Hans": "解表"
+      },
+      "skos:definition": {
+        "en": "Releases the exterior pattern, inducing sweating to expel exterior pathogens."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/action/warm-middle-burner",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Warm Middle Burner",
+        "zh-Hant": "溫中",
+        "zh-Hans": "温中"
+      },
+      "skos:definition": {
+        "en": "Warms the middle burner (Spleen and Stomach), dispelling cold and improving digestion."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/action/stop-vomiting",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Stop Vomiting",
+        "zh-Hant": "止嘔",
+        "zh-Hans": "止呕"
+      },
+      "skos:definition": {
+        "en": "Descends rebellious Stomach Qi to stop nausea and vomiting."
+      },
+      "skos:altLabel": {
+        "en": "Anti-emetic"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/action/resolve-phlegm",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Resolve Phlegm",
+        "zh-Hant": "化痰",
+        "zh-Hans": "化痰"
+      },
+      "skos:definition": {
+        "en": "Transforms and resolves phlegm accumulation."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/action/detoxify",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Detoxify",
+        "zh-Hant": "解毒",
+        "zh-Hans": "解毒"
+      },
+      "skos:definition": {
+        "en": "Clears toxicity and neutralizes poisons."
+      },
+      "skos:altLabel": {
+        "en": "Resolve Toxicity"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/action/tonify-blood",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Tonify Blood",
+        "zh-Hant": "補血",
+        "zh-Hans": "补血"
+      },
+      "skos:definition": {
+        "en": "Nourishes and supplements blood deficiency."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/action/tonify-yin",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Tonify Yin",
+        "zh-Hant": "滋陰",
+        "zh-Hans": "滋阴"
+      },
+      "skos:definition": {
+        "en": "Nourishes Yin to treat Yin deficiency patterns."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/action/tonify-yang",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Tonify Yang",
+        "zh-Hant": "補陽",
+        "zh-Hans": "补阳"
+      },
+      "skos:definition": {
+        "en": "Warms and tonifies Yang to treat Yang deficiency patterns."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/action/promote-blood-circulation",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Promote Blood Circulation",
+        "zh-Hant": "活血",
+        "zh-Hans": "活血"
+      },
+      "skos:definition": {
+        "en": "Invigorates blood circulation to remove stasis."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/action/clear-heat",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Clear Heat",
+        "zh-Hant": "清熱",
+        "zh-Hans": "清热"
+      },
+      "skos:definition": {
+        "en": "Clears heat from the body, treating fever and inflammation."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/action/dispel-wind",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Dispel Wind",
+        "zh-Hant": "祛風",
+        "zh-Hans": "祛风"
+      },
+      "skos:definition": {
+        "en": "Expels wind pathogen from the body."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/action/dispel-dampness",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Dispel Dampness",
+        "zh-Hant": "祛濕",
+        "zh-Hans": "祛湿"
+      },
+      "skos:definition": {
+        "en": "Drains and transforms dampness accumulation."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/action/promote-urination",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Promote Urination",
+        "zh-Hant": "利尿",
+        "zh-Hans": "利尿"
+      },
+      "skos:definition": {
+        "en": "Promotes urination to drain dampness."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/action/stop-pain",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Stop Pain",
+        "zh-Hant": "止痛",
+        "zh-Hans": "止痛"
+      },
+      "skos:definition": {
+        "en": "Relieves pain through various mechanisms."
+      },
+      "skos:altLabel": {
+        "en": "Analgesic"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/action/stop-bleeding",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Stop Bleeding",
+        "zh-Hant": "止血",
+        "zh-Hans": "止血"
+      },
+      "skos:definition": {
+        "en": "Controls bleeding through astringent or cooling actions."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/action/regulate-qi",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Regulate Qi",
+        "zh-Hant": "理氣",
+        "zh-Hans": "理气"
+      },
+      "skos:definition": {
+        "en": "Promotes Qi circulation and resolves stagnation."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/action/warm-interior",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Warm Interior",
+        "zh-Hant": "溫裡",
+        "zh-Hans": "温里"
+      },
+      "skos:definition": {
+        "en": "Warms the interior to dispel cold."
+      }
+    }
+  ]
+}

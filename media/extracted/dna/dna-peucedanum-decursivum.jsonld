@@ -1,0 +1,86 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/dna/peucedanum-decursivum",
+  "@type": ["herbapedia:DNASequenceData", "schema:Dataset"],
+  "dataType": "DNASequence",
+  "sourceFile": "DNA______Peucedanum_decursivum_V1.pdf",
+  "sourceDocument": "GCMTI FS:2024-7",
+  "title": {
+    "en": "Fact sheet of reference DNA sequences of Peucedanum decursivum",
+    "zh-hk": "紫花前胡(Peucedanum decursivum)之參考 DNA 序列資料表"
+  },
+  "scientificName": {
+    "full": "Peucedanum decursivum",
+    "genus": "Peucedanum",
+    "species": "decursivum",
+    "author": ""
+  },
+  "loci": [
+    {
+      "name": "ITS2",
+      "fullName": "Internal transcribed spacer 2",
+      "description": {
+        "en": "Internal transcribed spacer 2 (ITS2) of plant voucher specimen of Peucedanum decursivum and Chinese Materia Medica (CMM) Radix Peucedani Decursivi",
+        "zh-hk": "植物憑證標本及中藥材紫花前胡標本的核糖體DNA第二內部轉錄間隔區(ITS2)序列"
+      },
+      "sequenceLength": 230,
+      "consensusSequence": "CGCATCGTATTGCCTGCAGACCACTCACACCTGAGAAGTTGTGACGGTTTGGGGCGCAAATTGGCCTCCCGTACCTTGTCGTGCGGTTGGCGGAAAAACGAGTCTCCGGCGACGGATGTCGCGACATCGGTGGTTGTGAAAGACCCTCTTGTCTTGTCGCGCGAGTCCTCGTCATCTTAGCGAGCTCCAGGACCCATAGGCAGCACACACTCTGTGCGCTTCGACTG",
+      "specimenCount": 20,
+      "specimens": [
+        "22RD12-1A", "22RD13-1A", "22RD14-1A", "22RD8-1A", "22RD8-2A",
+        "22RD8-3B", "22RD8-5A", "22RD8-6A", "22RD9-1A", "22RD9-2A",
+        "22RD9-3A", "22RD9-6B", "22RD10-1A", "22RD10-2A", "22RD10-3A",
+        "22RD10-4B", "22RD10-6A", "22RD11-1A", "22RD11-4A", "22RD11-5B"
+      ]
+    },
+    {
+      "name": "psbA-trnH",
+      "fullName": "Chloroplast psbA-trnH intergenic spacer",
+      "description": {
+        "en": "Chloroplast psbA-trnH intergenic spacer (psbA-trnH) of plant voucher specimen of Peucedanum decursivum and Chinese Materia Medica (CMM) Radix Peucedani Decursivi",
+        "zh-hk": "植物憑證標本及中藥材紫花前胡標本的葉綠體psbA-trnH基因間區(psbA-trnH)序列"
+      },
+      "sequenceLength": 354,
+      "consensusSequence": "ATAACTTTCCTCTAGACCTAGCTGCTGTTGAAGCTCCATCTACAAATGGGTAAGACCGGGTTTTAGTATATACGAGTTTTTTGAAATAAAAAAAAAGCAATACCGCCCTCTTGTTCTATCAAGAGGGCGGTATTTCTTCTTTTTATATTTCAGACTGTTTTAGATAAACAAATATTTTTGAATGATCAAAAAGGAATCCTTTTTTTTCTTTAATAAATATAAATAATTAATAAATAAATAAAAGAAAATTGGCGGGGCGGATGTAGCCAAGTGGATCAAGGCAGT",
+      "specimenCount": 20,
+      "specimens": [
+        "22RD12-1A", "22RD13-1A", "22RD14-1A", "22RD8-1A", "22RD8-2A",
+        "22RD8-3B", "22RD8-5A", "22RD8-6A", "22RD9-1A", "22RD9-2A",
+        "22RD9-3A", "22RD9-6B", "22RD10-1A", "22RD10-2A", "22RD10-3A",
+        "22RD10-4B", "22RD10-6A", "22RD11-1A", "22RD11-4A", "22RD11-5B"
+      ],
+      "notes": "Some specimens showed minor sequence variations (ATAMCTTT vs ATAACTTT at start, T vs G in some positions)"
+    },
+    {
+      "name": "rbcL",
+      "fullName": "Partial chloroplast ribulose bisphosphate carboxylase large chain",
+      "description": {
+        "en": "Partial chloroplast ribulose bisphosphate carboxylase large chain (rbcL) of plant voucher specimen of Peucedanum decursivum and Chinese Materia Medica (CMM) Radix Peucedani Decursivi",
+        "zh-hk": "植物憑證標本及中藥材紫花前胡標本的葉綠體二磷酸核酮糖羧化酶大鏈(rbcL)部分序列"
+      },
+      "sequenceLength": 552,
+      "consensusSequence": "AGGTGTTGGATTCAAGGCTGGGGTTAAAGATTACAAATTGACTTATTATACTCCTGACTATGAAACCAAAGATACTGATATCTTGGCAGCATTCCGAGTAACTCCTCAACCTGGAGTTCCACCTGAAGAAGCGGGGGCCGCGGTAGCTGCCGAATCTTCTACTGGTACATGGACCACTGTGTGGACCGATGGACTTACCAGCCTTGATCGTTACAAAGGGCGCTGCTACGGAATCGAGCCCGTTGCTGGAGAAGAAAATCAATTTATCGCTTATGTAGCTTACCCATTAGACCTTTTTGAAGAAGGTTCTGTTACTAACATGTTTACTTCCATTGTAGGTAATGTATTTGGGTTCAAAGCCCTGCGCGCTCTACGTCTGGAAGATCTGCGAATCCCCGTTGCTTATGTTAAAACTTTCCAAGGACCGCCTCATGGCATCCAAGTTGAGAGAGATAAATTGAACAAGTACGGTCGTCCCCTGTTGGGATGTACTATTAAACCTAAATTGGGGTTATCCGCTAAAAACTACGGTAGAGCGGTTTATGAATGTCTC",
+      "specimenCount": 20,
+      "specimens": [
+        "22RD12-1A", "22RD13-1A", "22RD14-1A", "22RD8-1A", "22RD8-2A",
+        "22RD8-3B", "22RD8-5A", "22RD8-6A", "22RD9-1A", "22RD9-2A",
+        "22RD9-3A", "22RD9-6B", "22RD10-1A", "22RD10-2A", "22RD10-3A",
+        "22RD10-4B", "22RD10-6A", "22RD11-1A", "22RD11-4A", "22RD11-5B"
+      ]
+    }
+  ],
+  "specimen": {
+    "gcmtiCode": "GA0003595a00",
+    "type": "Chinese Materia Medica (CMM) Radix Peucedani Decursivi",
+    "totalSpecimens": 20
+  },
+  "methodology": {
+    "format": "FASTA",
+    "sequencingTargets": ["ITS2", "psbA-trnH", "rbcL"],
+    "specimenTypes": ["Plant voucher specimen", "Chinese Materia Medica (CMM) Radix Peucedani Decursivi"]
+  },
+  "extracted": {
+    "date": "2026-02-20",
+    "extractedBy": "automated extraction from PDF"
+  }
+}

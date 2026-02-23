@@ -1,11 +1,11 @@
 {
-  "@context": "../../schema/context/western.jsonld",
-  "@id": "western/vitamin-a",
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/vitamin-a",
   "@type": [
     "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
-    "@id": "plant/vitamin-a"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/vitamin-a"
   },
   "name": {
     "en": "Vitamin A",

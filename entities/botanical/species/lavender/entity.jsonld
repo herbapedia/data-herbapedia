@@ -1,0 +1,34 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/lavender",
+  "@type": [
+    "herbapedia:BotanicalSource",
+    "botany:PlantSpecies",
+    "schema:Plant"
+  ],
+  "sourceType": "botanical",
+  "sourceSubType": "plant",
+  "scientificName": "Lavandula angustifolia",
+  "family": "Lamiaceae",
+  "name": {
+    "en": "Lavender",
+    "zh-Hant": "薰衣草",
+    "zh-Hans": "薰衣草"
+  },
+  "description": {
+    "en": "A flowering plant in the mint family, known for its fragrant essential oil."
+  },
+  "wikidataID": "Q128077",
+  "hasExtract": [
+    {
+      "@id": "https://www.herbapedia.org/entity/preparation/lavender-oil"
+    }
+  ],
+  "provenance": {
+    "created": "2026-02-21",
+    "source": "Created as source plant for essential oil",
+    "purpose": "Enable proper linking of essential oil extracts"
+  },
+  "gbifID": "2924966",
+  "ncbiTaxonID": "95603"
+}

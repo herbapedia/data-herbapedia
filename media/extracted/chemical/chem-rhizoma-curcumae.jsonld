@@ -1,0 +1,341 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/chemical/rhizoma-curcumae",
+  "@type": ["herbapedia:ChemicalAnalysisData", "schema:Dataset"],
+  "dataType": "ChemicalAnalysis",
+  "sourceDocument": "CHEM____Rhizoma_Curcumae_V1.pdf",
+  "scientificName": "Curcuma phaeocaulis Val. / Curcuma kwangsiensis S. G. Lee et C. F. Liang / Curcuma wenyujin Y. H. Chen et C. Ling",
+  "chineseName": "莪术",
+  "pinyinName": "E Zhu",
+  "identificationMethod": ["Physicochemical", "TLC", "HPLC-Fingerprint", "HPLC-Assay"],
+  "referenceCompounds": [
+    {
+      "name": "Germacrone",
+      "chineseName": "吉马酮",
+      "formula": "C₁₅H₂₂O",
+      "purpose": ["TLC identification", "HPLC fingerprint marker", "Assay quantification"]
+    }
+  ],
+  "assayLimits": {
+    "germacrone": {
+      "compound": "Germacrone",
+      "formula": "C₁₅H₂₂O",
+      "minimumContent": "0.062%",
+      "basis": "dried substance"
+    },
+    "volatileOil": {
+      "minimumContent": "1.5%",
+      "basis": "v/w"
+    }
+  },
+  "physicochemicalIdentification": {
+    "method": "Color reaction with vanillin-sulfuric acid",
+    "procedure": {
+      "sampleAmount": "1.0 g",
+      "solvent": "ethyl acetate",
+      "solventVolume": "6 mL",
+      "extraction": "ultrasonication (240 W) for 20 minutes",
+      "testVolume": "0.5 mL filtrate",
+      "reagent": "vanillin-sulfuric acid solution (0.5%, w/v)",
+      "reagentVolume": "0.5 mL",
+      "positiveResult": "dark purple layer at the interface of the two solvent layers"
+    }
+  },
+  "tlcMethod": {
+    "appendixReference": "Appendix I",
+    "stationaryPhase": "HPTLC silica gel F₂₅₄ plate",
+    "developingSolvent": {
+      "components": ["petroleum ether (60-80°C)", "ethyl acetate"],
+      "ratio": "96:4 (v/v)"
+    },
+    "testSolution": {
+      "source": "volatile oil from Assay 4.2",
+      "sampleAmount": "20 μL",
+      "solvent": "ethyl acetate",
+      "solventVolume": "0.4 mL"
+    },
+    "standardSolutions": {
+      "concentration": "1.0 mg/mL in ethyl acetate",
+      "compounds": ["Germacrone"]
+    },
+    "applicationVolumes": {
+      "standardSolution": "2 μL",
+      "testSolution": "2 μL"
+    },
+    "developingDistance": "8 cm",
+    "visualization": "UV light at 254 nm",
+    "identificationCriteria": {
+      "positiveMarkers": ["Germacrone"],
+      "matchCriteria": "spot or band with chromatographic characteristics, including colour and Rf value, corresponding to that of germacrone"
+    },
+    "speciesTested": [
+      {
+        "name": "Curcuma phaeocaulis Val.",
+        "chineseName": "蓬莪术",
+        "result": "Germacrone positive"
+      },
+      {
+        "name": "Curcuma kwangsiensis S. G. Lee et C. F. Liang",
+        "chineseName": "广西莪术",
+        "result": "Germacrone positive"
+      },
+      {
+        "name": "Curcuma wenyujin Y. H. Chen et C. Ling",
+        "chineseName": "温郁金",
+        "result": "Germacrone positive"
+      }
+    ]
+  },
+  "hplcFingerprint": {
+    "appendixReference": "Appendix II",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "UV",
+      "detectionWavelength": "214 nm",
+      "columnTemperature": "ambient",
+      "flowRate": "1.0 mL/min",
+      "injectionVolume": "10 μL"
+    },
+    "mobilePhase": {
+      "solventA": "Water",
+      "solventB": "Acetonitrile",
+      "gradientProgram": [
+        {
+          "timeRange": "0-3 min",
+          "solventA": "55%",
+          "solventB": "45%",
+          "elution": "isocratic"
+        },
+        {
+          "timeRange": "3-30 min",
+          "solventA": "55% → 35%",
+          "solventB": "45% → 65%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "30-38 min",
+          "solventA": "35%",
+          "solventB": "65%",
+          "elution": "isocratic"
+        },
+        {
+          "timeRange": "38-45 min",
+          "solventA": "35% → 10%",
+          "solventB": "65% → 90%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "45-55 min",
+          "solventA": "10% → 0%",
+          "solventB": "90% → 100%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "55-60 min",
+          "solventA": "0%",
+          "solventB": "100%",
+          "elution": "isocratic"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "germacrone": {
+        "stockSolution": "1000 mg/L (2.0 mg in 2 mL methanol)",
+        "workingSolution": "100 mg/L (1:10 dilution)",
+        "storage": "as prepared"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "0.5 g",
+      "solvent": "methanol",
+      "solventVolume": "20 mL",
+      "extraction": "ultrasonication (240 W) for 30 minutes",
+      "centrifugation": "4000 × g for 5 minutes",
+      "filtration": "0.45 μm PTFE filter"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "peakAreaRSD": "≤ 5.0% (Germacrone)",
+      "retentionTimeRSD": "≤ 2.0% (Germacrone)",
+      "theoreticalPlates": "≥ 10,000 (based on Germacrone)",
+      "resolution": "≥ 1.5 (between peak 1 and peak 2)"
+    },
+    "identificationCriteria": {
+      "retentionTimeTolerance": "≤ 2.0% difference between sample and standard"
+    }
+  },
+  "hplcAssay": {
+    "appendixReference": "Appendix III",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "UV",
+      "detectionWavelength": "214 nm",
+      "columnTemperature": "ambient",
+      "flowRate": "1.0 mL/min"
+    },
+    "mobilePhase": {
+      "solventA": "Water",
+      "solventB": "Acetonitrile",
+      "gradientProgram": [
+        {
+          "timeRange": "0-3 min",
+          "solventA": "55%",
+          "solventB": "45%",
+          "elution": "isocratic"
+        },
+        {
+          "timeRange": "3-30 min",
+          "solventA": "55% → 35%",
+          "solventB": "45% → 65%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "30-38 min",
+          "solventA": "35%",
+          "solventB": "65%",
+          "elution": "isocratic"
+        },
+        {
+          "timeRange": "38-45 min",
+          "solventA": "35% → 10%",
+          "solventB": "65% → 90%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "45-55 min",
+          "solventA": "10% → 0%",
+          "solventB": "90% → 100%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "stockSolution": {
+        "concentration": "1000 mg/L",
+        "compounds": ["Germacrone"],
+        "preparation": "5.0 mg in 5 mL methanol"
+      },
+      "workingSolutions": {
+        "concentrations": ["10", "50", "100", "200", "300 mg/L"],
+        "description": "Series of standard solutions"
+      },
+      "injectionVolume": "10 μL (for calibration)"
+    },
+    "testSolution": {
+      "sampleAmount": "0.25 g",
+      "solvent": "methanol",
+      "extractionVolume": "20 mL × 3 extractions",
+      "extraction": "ultrasonication (240 W) for 30 minutes",
+      "evaporation": "rotary evaporator at reduced pressure",
+      "finalVolume": "10 mL",
+      "filtration": "0.45 μm PTFE filter",
+      "injectionVolume": "10 μL"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "injectionVolume": "10 μL",
+      "standardConcentration": "100 mg/L (Germacrone Std-AS)",
+      "peakAreaRSD": "≤ 5.0% (Germacrone)",
+      "retentionTimeRSD": "≤ 2.0% (Germacrone)",
+      "theoreticalPlates": "≥ 10,000 (based on Germacrone)",
+      "resolution": "≥ 1.5 (between germacrone peak and closest peak)"
+    },
+    "calibration": {
+      "method": "5-point calibration curve",
+      "plot": "Peak area vs. concentration (mg/L)",
+      "identificationTolerance": "≤ 2.0% difference in retention times"
+    }
+  },
+  "rrtValues": [
+    {
+      "peakNumber": 1,
+      "compound": "unidentified",
+      "rrt": 0.68,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Germacrone"
+    },
+    {
+      "peakNumber": 2,
+      "compound": "unidentified",
+      "rrt": 0.73,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Germacrone"
+    },
+    {
+      "peakNumber": 3,
+      "compound": "Germacrone",
+      "rrt": 1.00,
+      "acceptableRange": null,
+      "referenceMarker": true,
+      "referenceTo": "self"
+    },
+    {
+      "peakNumber": 4,
+      "compound": "unidentified",
+      "rrt": 1.32,
+      "acceptableRange": "±0.09",
+      "referenceMarker": false,
+      "referenceTo": "Germacrone"
+    }
+  ],
+  "volatileOilAssay": {
+    "appendixReference": "Appendix IV (Method A)",
+    "procedure": {
+      "sampleAmount": "30 g",
+      "solvent": "water",
+      "solventVolume": "500 mL",
+      "additives": "a few glass beads",
+      "apparatus": "1000-mL round-bottomed flask with volatile oil determiner and reflux condenser",
+      "heatingTime": "approximately 5 hours until oil volume no longer increases"
+    },
+    "limits": {
+      "minimumContent": "1.5% (v/w)"
+    }
+  },
+  "sourceSpecies": [
+    {
+      "scientificName": "Curcuma phaeocaulis Val.",
+      "chineseName": "蓬莪术",
+      "referenceFingerprint": "Figure 5(i)"
+    },
+    {
+      "scientificName": "Curcuma kwangsiensis S. G. Lee et C. F. Liang",
+      "chineseName": "广西莪术",
+      "referenceFingerprint": "Figure 5(ii)"
+    },
+    {
+      "scientificName": "Curcuma wenyujin Y. H. Chen et C. Ling",
+      "chineseName": "温郁金",
+      "referenceFingerprint": "Figure 5(iii)"
+    }
+  ],
+  "appendices": {
+    "appendixI": {
+      "title": "Chromatography – Thin-Layer Chromatography (TLC)",
+      "description": "General procedures for TLC including plate types, application methods, developing chambers, and Rf calculation"
+    },
+    "appendixII": {
+      "title": "Gas Chromatographic and HPLC/UHPLC Fingerprinting",
+      "description": "Methods for establishing chromatographic fingerprints using marker peaks and RRT values"
+    },
+    "appendixIII": {
+      "title": "Chromatography – HPLC/UHPLC",
+      "description": "General HPLC/UHPLC procedures including system suitability tests (theoretical plates, repeatability, resolution, tailing factor) and quantitative calculations"
+    },
+    "appendixIV": {
+      "title": "Determination of Volatile Oil",
+      "description": "Methods for determining volatile oil content in medicinal materials using distillation apparatus (Method A for oils with density < 1.0, Method B for oils with density > 1.0)"
+    }
+  },
+  "extractedAt": "2026-02-20"
+}

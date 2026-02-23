@@ -1,0 +1,88 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/dna/phellodendron-chinense",
+  "@type": ["herbapedia:DNASequenceData", "schema:Dataset"],
+  "dataType": "DNASequence",
+  "sourceFile": "DNA____Phellodendron_chinense_V1.pdf",
+  "sourceDocument": "GCMTI FS:2023-1",
+  "title": {
+    "en": "Fact sheet of reference DNA sequences of Phellodendron chinense",
+    "zh-hk": "黃皮樹(Phellodendron chinense)之參考 DNA 序列資料表"
+  },
+  "scientificName": {
+    "full": "Phellodendron chinense",
+    "genus": "Phellodendron",
+    "species": "chinense",
+    "author": ""
+  },
+  "loci": [
+    {
+      "name": "ITS2",
+      "fullName": "Internal transcribed spacer 2",
+      "description": {
+        "en": "Internal transcribed spacer 2 of nuclear ribosomal RNA (ITS2) sequence of plant voucher specimen of Phellodendron chinense and Chinese Materia Medica (CMM) Cortex Phellodendri Chinensis",
+        "zh-hk": "Phellodendron chinense植物憑證標本及中藥材川黃柏標本的核糖體DNA第二內部轉錄間隔區(ITS2)序列"
+      },
+      "sequenceLength": 231,
+      "consensusSequence": "CGCATCGCTGCCCCACCCCACCCCCGCCCCGGGGGCCTGGCGGTGCGGGCGGACAATGGCCTCCCGTGCGCTCCCCGCTCGCGGTTGGCCCAAATTCGAGTCCTCGGCGACCGGAGCCGCGGCGATCGGTGGTGAAAACAAGCCTCTCGAGCTCACGCCGCGAGCCCGTGTCTTCCTTTTCGGGACTCAGGGACCCTGACGCTCCGCGCGAGCGGCGCTCGCATCG",
+      "specimenCount": 20,
+      "specimens": [
+        "22RD18-1B", "22RD19-1B", "22RD20-1B", "22RD21-1B",
+        "21RD65-1A", "21RD65-5A", "21RD65-6B", "21RD65-7B",
+        "21RD66-2A", "21RD66-3B", "21RD66-4A", "21RD66-5B",
+        "21RD66-6A", "21RD66-7B", "21RD66-8B", "21RD66-9A",
+        "21RD66-11B", "21RD66-12B", "21RD66-14A", "21RD66-16B"
+      ]
+    },
+    {
+      "name": "psbA-trnH",
+      "fullName": "Chloroplast psbA-trnH intergenic spacer",
+      "description": {
+        "en": "Chloroplast psbA-trnH intergenic spacer (psbA-trnH) sequence of plant voucher specimen of Phellodendron chinense and Chinese Materia Medica (CMM) Cortex Phellodendri Chinensis",
+        "zh-hk": "Phellodendron chinense植物憑證標本及中藥材川黃柏標本的葉綠體psbA-trnH基因間區(psbA-trnH)序列"
+      },
+      "sequenceLength": 468,
+      "consensusSequence": "TCTACAAATGGATAAGATTTTGATCTTTGTGTAGACGAGTTTTTAAAAATAACGGATCAATACCGACCCCCCTTGCGGGGGGTCGGTATTAATCCGTTATTGAGTCGGTTTCTTTAGTAGTTTTTTATTTACATCTTTTTTTTTTTTATTTTAATTTGAAGTATTTTTATGCTTTTCGTTCTTTTCTTTGATTTAGTATCATATATTTGGTATGCGCTAATACTACTAAGAAAATTTTAATTTTCTTAATTTATTAATTAGATTCTAATTTTTGAATTTTTACAGTTAATTTAATAGAAAAGAAAAGAGAAAGGTTGTAGTTTTGTGCCCTTCGATCTTCATGGATTTTCATAAATAAGATAAGATAAAAAAATAATGATCAATGATTGAAATGGAGATTTTTGTAGTTCAAAATTTTGTAAATAGCAGAGGGGCGGA",
+      "specimenCount": 20,
+      "specimens": [
+        "22RD18-1B", "22RD19-1B", "22RD20-1B", "22RD21-1B",
+        "21RD65-1A", "21RD65-5A", "21RD65-6B", "21RD65-7B",
+        "21RD66-2A", "21RD66-3B", "21RD66-4A", "21RD66-5B",
+        "21RD66-6A", "21RD66-7B", "21RD66-8B", "21RD66-9A",
+        "21RD66-11B", "21RD66-12B", "21RD66-14A", "21RD66-16B"
+      ]
+    },
+    {
+      "name": "rbcL",
+      "fullName": "Partial chloroplast ribulose bisphosphate carboxylase large chain",
+      "description": {
+        "en": "Partial chloroplast ribulose bisphosphate carboxylase large chain (rbcL) sequence of plant voucher specimen of Phellodendron chinense and Chinese Materia Medica (CMM) Cortex Phellodendri Chinensis",
+        "zh-hk": "Phellodendron chinense植物憑證標本及中藥材川黃柏標本的葉綠體二磷酸核酮糖羧化酶大鏈(rbcL)部分序列"
+      },
+      "sequenceLength": 554,
+      "consensusSequence": "GAGTGTTGGATTCAAAGCCGGTGTTAAAGATTATAAATTGACTTATTATACTCCTGACTATGCAACCAAAGATACTGATATCTTGGCAGCATTCCGAGTAAGTCCTCAACCCGGAGTTCCACCCGAGGAAGCGGGGGCTGCGGTAGCTGCGGAATCTTCTACTGGTACATGGACAACTGTGTGGACCGATGGGCTTACCAGCCTTGATCGTTACAAAGGGCGATGCTACAACATTGAGCCCGTTGCTGGAGAAGAAAATCAATATATATGTTATGTAGCTTACCCGTTAGACCTTTTTGAAGAAGGTTCTGTTACTAACATGTTTACTTCCATTGTGGGTAATGTATTTGGTTTCAAAGCCCTGCGCGCTCTACGTCTAGAGGATCTACGAATCCCTACCGCGTATACTAAAACTTTCCAAGGCCCGCCTCACGGCATCCAAGTTGAGAGAGATAAATTGAATAAGTATGGACGTCCCCTGTTGGGATGTACTATTAAACCTAAATTGGGGTTATCCGCTAAGAATTACGGTAGGGCAGTTTATGAATGTCTA",
+      "specimenCount": 20,
+      "specimens": [
+        "22RD18-1B", "22RD19-1B", "22RD20-1B", "22RD21-1B",
+        "21RD65-1A", "21RD65-5A", "21RD65-6B", "21RD65-7B",
+        "21RD66-2A", "21RD66-3B", "21RD66-4A", "21RD66-5B",
+        "21RD66-6A", "21RD66-7B", "21RD66-8B", "21RD66-9A",
+        "21RD66-11B", "21RD66-12B", "21RD66-14A", "21RD66-16B"
+      ]
+    }
+  ],
+  "specimen": {
+    "gcmtiCode": "GA0003452a00",
+    "type": "Chinese Materia Medica (CMM) Cortex Phellodendri Chinensis",
+    "totalSpecimens": 20
+  },
+  "methodology": {
+    "format": "FASTA",
+    "sequencingTargets": ["ITS2", "psbA-trnH", "rbcL"],
+    "specimenTypes": ["Plant voucher specimen", "Chinese Materia Medica (CMM) Cortex Phellodendri Chinensis"]
+  },
+  "extracted": {
+    "date": "2026-02-20",
+    "extractedBy": "automated extraction from PDF"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/tcm.jsonld",
+  "@id": "https://www.herbapedia.org/system/tcm/profile/zhusun",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "profiles": {
+    "@id": "https://www.herbapedia.org/entity/preparation/zhusun"
+  },
+  "name": {
+    "en": "Zhusun",
+    "zh-Hant": "竹笙",
+    "zh-Hans": "竹笙"
+  },
+  "pinyin": "Zhusun",
+  "chineseName": {
+    "zh-Hant": "竹笙",
+    "zh-Hans": "竹笙"
+  },
+  "derivedFromPlant": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/zhusun"
+  },
+  "hasCategory": {
+    "@id": "https://www.herbapedia.org/system/tcm/category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "https://www.herbapedia.org/system/tcm/nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/spleen"
+    }
+  ],
+  "tcmTraditionalUsage": {
+    "en": "Zhusun is a precious edible fungi that is sweet and cold in nature. It is used to regulate the flow of chi, tonify the spleen and stimulate the appetite. It can also help stimulate peristalsis of the bowels and is a rich source of fibre, thus relieving constipation and removing accumulated toxins and waste products.\n",
+    "zh-Hant": "竹笙能調節人體的新陳代謝，有助穩定血壓，控制血脂，特別是腹壁脂肪過厚者，長期食用有減少腹壁脂肪貯積的作用。\n",
+    "zh-Hans": "竹笙能调节人体的新陳代謝，有助稳定血壓，控制血脂，特別是腹壁脂肪过厚者，长期食用有減少腹壁脂肪貯积的作用。\n"
+  },
+  "tcmHistory": {
+    "en": "First appeared in Grand Materia Medica.\n",
+    "zh-Hant": "【竹笙】History內容待翻譯補充。",
+    "zh-Hans": "【竹笙】History內容待翻譯补充。"
+  },
+  "provenance": {
+    "created": "2026-02-20T15:20:59.841Z",
+    "modified": "2026-02-20T15:20:59.841Z",
+    "migratedFrom": "systems/tcm/herbs/zhusun/profile.jsonld"
+  }
+}

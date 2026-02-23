@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/duhuo-root",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Duhuo Root",
+    "zh-Hant": "獨活",
+    "zh-Hans": "独活"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/duhuo"
+  },
+  "partType": "root",
+  "description": {
+    "en": "The root of Angelica pubescens, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.813Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

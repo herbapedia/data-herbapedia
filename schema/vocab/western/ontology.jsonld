@@ -1,0 +1,124 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "https://www.herbapedia.org/vocab/western/",
+
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "schema": "https://schema.org/",
+
+    "herbapedia": "https://www.herbapedia.org/vocab/core/",
+    "western": "https://www.herbapedia.org/vocab/western/"
+  },
+
+  "@graph": [
+    {
+      "@id": "https://www.herbapedia.org/vocab/western/",
+      "@type": "owl:Ontology",
+      "rdfs:label": {
+        "en": "Herbapedia Western Herbal Medicine Vocabulary"
+      },
+      "rdfs:comment": "Western herbal medicine vocabulary including herb types, actions, and organ affinities."
+    },
+
+    {
+      "@id": "western:Herb",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": ["herbapedia:MedicineSystemProfile", "schema:DietarySupplement"],
+      "rdfs:label": {
+        "en": "Western Herb",
+        "zh-Hant": "西草藥"
+      },
+      "rdfs:comment": "A Western herbal medicine profile with actions, organ affinities, and traditional uses."
+    },
+
+    {
+      "@id": "western:HerbalAction",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "skos:Concept",
+      "rdfs:label": {
+        "en": "Herbal Action",
+        "zh-Hant": "藥理作用"
+      },
+      "rdfs:comment": "Therapeutic actions: carminative, anti-inflammatory, adaptogen, etc."
+    },
+
+    {
+      "@id": "western:OrganAffinity",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "skos:Concept",
+      "rdfs:label": {
+        "en": "Organ Affinity",
+        "zh-Hant": "器官親和性"
+      },
+      "rdfs:comment": "Body systems or organs that an herb has affinity for: digestive, respiratory, nervous, etc."
+    },
+
+    {
+      "@id": "western:System",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "skos:Concept",
+      "rdfs:label": {
+        "en": "Body System",
+        "zh-Hant": "身體系統"
+      },
+      "rdfs:comment": "Body systems: digestive, respiratory, cardiovascular, nervous, etc."
+    },
+
+    {
+      "@id": "western:hasAction",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "western:Herb",
+      "rdfs:range": "western:HerbalAction",
+      "rdfs:label": {
+        "en": "has action",
+        "zh-Hant": "有作用"
+      }
+    },
+
+    {
+      "@id": "western:hasOrganAffinity",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "western:Herb",
+      "rdfs:range": "western:OrganAffinity",
+      "rdfs:label": {
+        "en": "has organ affinity",
+        "zh-Hant": "有器官親和性"
+      }
+    },
+
+    {
+      "@id": "western:derivedFromPlant",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "western:Herb",
+      "rdfs:range": "botany:PlantSpecies",
+      "rdfs:label": {
+        "en": "derived from plant",
+        "zh-Hant": "來自植物"
+      }
+    },
+
+    {
+      "@id": "western:westernTraditionalUsage",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "western:Herb",
+      "rdfs:range": "rdfs:Literal",
+      "rdfs:label": {
+        "en": "Western traditional usage",
+        "zh-Hant": "西方傳統用法"
+      }
+    },
+
+    {
+      "@id": "western:westernModernResearch",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "western:Herb",
+      "rdfs:range": "rdfs:Literal",
+      "rdfs:label": {
+        "en": "Western modern research",
+        "zh-Hant": "西方現代研究"
+      }
+    }
+  ]
+}

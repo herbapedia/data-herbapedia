@@ -1,0 +1,106 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/ginseng",
+  "@type": [
+    "botany:PlantSpecies",
+    "herbapedia:BotanicalSource",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Asian Ginseng",
+    "zh-Hant": "人蔘",
+    "zh-Hans": "人参",
+    "ko": "인삼",
+    "ja": "人参"
+  },
+  "scientificName": "Panax ginseng",
+  "scientificNameAuthorship": "C.A.Mey.",
+  "family": "Araliaceae",
+  "genus": "Panax",
+  "specificEpithet": "ginseng",
+  "taxonomicClassification": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Magnoliopsida",
+    "order": "Apiales",
+    "family": "Araliaceae",
+    "genus": "Panax"
+  },
+  "commonName": {
+    "en": "Asian Ginseng, Korean Ginseng, Chinese Ginseng",
+    "zh-Hant": "人蔘",
+    "zh-Hans": "人参",
+    "ko": "인삼",
+    "ja": "オタネニンジン"
+  },
+  "description": {
+    "en": "A perennial plant native to the mountains of East Asia, prized for its fleshy root which has been used in traditional medicine for thousands of years. The root typically resembles a human figure, which is reflected in its Chinese name (人蔘 - 'man root').",
+    "zh-Hant": "原產於東亞山區的多年生草本植物，其肉質根部在中醫藥中使用數千年。根形似人形，故名「人蔘」。"
+  },
+  "habitat": {
+    "en": "Cool, shady forests with well-drained, humus-rich soil. Native to Korea, northeastern China, and eastern Russia."
+  },
+  "origin": {
+    "en": "Northeast Asia - Korea, northeastern China (Manchuria), eastern Russia"
+  },
+  "geographicalDistribution": {
+    "en": "Primarily cultivated in Korea, China, and Japan. Wild populations are rare due to overharvesting."
+  },
+  "growthForm": "herb",
+  "lifecycle": "perennial",
+  "hasParts": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/part/ginseng-root"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/part/ginseng-leaf"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/part/ginseng-stem"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/part/ginseng-berry"
+    }
+  ],
+  "containsChemical": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/ginsenosides"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/ginseng-polysaccharides"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/panaxans"
+    }
+  ],
+  "hasChemicalProfile": {
+    "@id": "https://www.herbapedia.org/entity/botanical/chemical-profile/ginseng-root"
+  },
+  "hasDNABarcode": {
+    "@id": "https://www.herbapedia.org/entity/botanical/barcode/ginseng"
+  },
+  "gbifID": "3038555",
+  "powoID": "608259-2",
+  "wikidataID": "Q192163",
+  "conservationStatus": "VU",
+  "provenance": {
+    "created": "2024-01-15",
+    "modified": "2026-02-21T01:46:20.752Z",
+    "source": "GBIF, POWO, traditional medicine texts",
+    "classificationNote": "Reclassified as BotanicalSource"
+  },
+  "image": "media/images/panax-ginseng/main.jpg",
+  "sourceType": "botanical",
+  "sourceSubType": "plant",
+  "hasTCMProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/profile/ginseng"
+    }
+  ],
+  "sameAs": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/panax-ginseng"
+    }
+  ],
+  "ncbiTaxonID": "4054"
+}

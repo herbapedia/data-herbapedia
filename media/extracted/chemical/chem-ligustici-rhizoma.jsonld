@@ -1,0 +1,245 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/chemical/ligustici-rhizoma",
+  "@type": ["herbapedia:ChemicalAnalysisData", "schema:Dataset"],
+  "dataType": "ChemicalAnalysis",
+  "sourceDocument": "CHEM____Ligustici_Rhizoma_et_Radix_V1.pdf",
+  "scientificName": "Ligustici Rhizoma et Radix",
+  "chineseName": "藁本",
+  "pinyinName": "Gao Ben",
+  "identificationMethod": ["TLC", "HPLC-Fingerprint", "HPLC-Assay"],
+  "referenceCompounds": [
+    {
+      "name": "(E)-ferulic acid",
+      "chineseName": "(E)-阿魏酸",
+      "formula": "C₁₀H₁₀O₄",
+      "purpose": ["TLC identification", "HPLC fingerprint marker", "Assay quantification"]
+    }
+  ],
+  "assayLimits": {
+    "heavyMetals": {
+      "description": "Heavy metals (Appendix VI)",
+      "requirement": "Must comply with relevant regulations"
+    },
+    "pesticideResidues": {
+      "description": "Pesticide residues (Appendix VII)",
+      "requirement": "Must comply with relevant regulations"
+    },
+    "mycotoxins": {
+      "description": "Mycotoxins (Appendix VIII)",
+      "requirement": "Not more than 3.0%"
+    },
+    "foreignMatter": {
+      "description": "Foreign matter (Appendix IX)",
+      "requirement": "Must comply with relevant regulations"
+    },
+    "totalAsh": {
+      "description": "Total ash (Appendix X)",
+      "maximumContent": "6.5%"
+    },
+    "acidInsolubleAsh": {
+      "description": "Acid-insoluble ash",
+      "maximumContent": "2.5%"
+    },
+    "moisture": {
+      "description": "Moisture - Oven drying method (Appendix XI)",
+      "maximumContent": "11.0%"
+    },
+    "waterSolubleExtractive": {
+      "description": "Water-soluble extractive (cold maceration method)",
+      "minimumContent": "15.0%"
+    },
+    "ethanolSolubleExtractive": {
+      "description": "Ethanol-soluble extractive (cold maceration method)",
+      "minimumContent": "15.0%"
+    }
+  },
+  "tlcMethod": {
+    "appendixReference": "Appendix I",
+    "stationaryPhase": "TLC silica gel F₂₅₄ plate",
+    "developingSolvent": {
+      "components": ["cyclohexane", "ethyl acetate", "glacial acetic acid"],
+      "ratio": "6:3:0.4 (v/v)"
+    },
+    "testSolution": {
+      "sampleAmount": "1.0 g",
+      "solvent": "ethanol",
+      "solventVolume": "10 mL",
+      "extraction": "ultrasonication (270 W) for 30 minutes",
+      "evaporation": "rotary evaporator at reduced pressure",
+      "finalVolume": "1 mL ethanol"
+    },
+    "standardSolutions": {
+      "concentration": "1.0 mg/mL in ethanol",
+      "compounds": ["(E)-ferulic acid"]
+    },
+    "applicationVolumes": {
+      "standardSolution": "2 μL",
+      "testSolution": "1 μL"
+    },
+    "developingDistance": "6 cm",
+    "visualization": "UV light at 366 nm",
+    "identificationCriteria": {
+      "positiveMarkers": ["(E)-ferulic acid"],
+      "criteria": "Test solution chromatogram must show characteristic spots or bands with the same color and corresponding Rf value as (E)-ferulic acid"
+    },
+    "species": [
+      {
+        "name": "Ligusticum sinensis",
+        "chineseName": "藁本",
+        "description": "Dried rhizome and root"
+      },
+      {
+        "name": "Ligusticum jeholense",
+        "chineseName": "遼藁本",
+        "description": "Dried rhizome and root"
+      }
+    ]
+  },
+  "hplcFingerprint": {
+    "appendixReference": "Appendix II",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "Diode array detector (DAD)",
+      "detectionWavelength": "254 nm",
+      "flowRate": "1.0 mL/min",
+      "injectionVolume": "10 μL"
+    },
+    "mobilePhase": {
+      "solventA": "0.1% acetic acid",
+      "solventB": "Acetonitrile",
+      "gradientProgram": [
+        {
+          "timeRange": "0-60 min",
+          "solventA": "95% → 27.5%",
+          "solventB": "5% → 72.5%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "ferulicAcidStdFP": {
+        "concentration": "25 mg/L",
+        "preparation": "0.5 mg (E)-ferulic acid CRS dissolved in 20 mL ethanol"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "0.5 g",
+      "solvent": "ethanol",
+      "extractionVolume": "10 mL × 2 extractions",
+      "extraction": "ultrasonication (270 W) for 30 minutes",
+      "centrifugation": "5 minutes at approximately 5000 × g",
+      "finalVolume": "25 mL",
+      "filtration": "0.45-μm RC membrane filter"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "injectionVolume": "10 μL",
+      "peakAreaRSD": "≤ 5.0% ((E)-ferulic acid)",
+      "retentionTimeRSD": "≤ 2.0% ((E)-ferulic acid)",
+      "theoreticalPlates": "≥ 45,000 (based on (E)-ferulic acid)",
+      "resolution": "≥ 1.5 (between peak 1 and adjacent peak)"
+    },
+    "identificationCriteria": {
+      "retentionTimeTolerance": "≤ 2.0% difference between sample and standard",
+      "characteristicPeaks": 3
+    }
+  },
+  "hplcAssay": {
+    "appendixReference": "Appendix III",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "Diode array detector (DAD)",
+      "detectionWavelength": "320 nm",
+      "flowRate": "1.0 mL/min"
+    },
+    "mobilePhase": {
+      "solventA": "0.1% acetic acid",
+      "solventB": "Acetonitrile",
+      "gradientProgram": [
+        {
+          "timeRange": "0-60 min",
+          "solventA": "95% → 27.5%",
+          "solventB": "5% → 72.5%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "stockSolution": {
+        "name": "(E)-ferulic acid standard stock solution Std-Stock",
+        "concentration": "300 mg/L",
+        "preparation": "3.0 mg (E)-ferulic acid CRS dissolved in 10 mL ethanol"
+      },
+      "workingSolutions": {
+        "name": "(E)-ferulic acid standard solution Std-AS",
+        "concentrations": ["1.25", "5", "12.5", "25", "50 mg/L"],
+        "description": "Series of standard solutions prepared by diluting stock solution with ethanol"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "0.5 g",
+      "solvent": "ethanol",
+      "extractionVolume": "10 mL × 2 extractions",
+      "extraction": "ultrasonication (270 W) for 30 minutes",
+      "centrifugation": "5 minutes at approximately 5000 × g",
+      "finalVolume": "25 mL",
+      "filtration": "0.45-μm RC membrane filter"
+    },
+    "calibration": {
+      "method": "5-point calibration curve",
+      "plot": "Peak area vs. concentration (mg/L)",
+      "identificationTolerance": "≤ 5.0% difference in retention times"
+    }
+  },
+  "rrtValues": [
+    {
+      "peakNumber": 1,
+      "compound": "(E)-ferulic acid",
+      "rrt": 1.00,
+      "acceptableRange": null,
+      "referenceMarker": true,
+      "referenceTo": "self",
+      "notes": "Marker compound"
+    },
+    {
+      "peakNumber": 2,
+      "compound": "Unidentified peak 2",
+      "rrt": 1.92,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "(E)-ferulic acid"
+    },
+    {
+      "peakNumber": 3,
+      "compound": "Unidentified peak 3",
+      "rrt": 2.21,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "(E)-ferulic acid"
+    }
+  ],
+  "appendices": {
+    "appendixI": {
+      "title": "Chromatography – Thin-Layer Chromatography (TLC)",
+      "description": "General procedures for TLC including plate types, application methods, developing chambers, and Rf calculation"
+    },
+    "appendixII": {
+      "title": "Gas Chromatographic and High-Performance/Ultra-High Performance Liquid Chromatographic Fingerprinting",
+      "description": "Methods for establishing chromatographic fingerprints using marker peaks and RRT values"
+    },
+    "appendixIII": {
+      "title": "Chromatography – High-Performance Liquid Chromatography (HPLC) / Ultra-High Performance Liquid Chromatography (UHPLC)",
+      "description": "General HPLC/UHPLC procedures including system suitability tests (theoretical plates, repeatability, resolution, tailing factor) and quantitative calculations"
+    }
+  },
+  "extractedAt": "2026-02-20"
+}

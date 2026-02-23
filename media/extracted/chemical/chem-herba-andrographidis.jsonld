@@ -1,0 +1,283 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/chemical/herba-andrographidis",
+  "@type": ["herbapedia:ChemicalAnalysisData", "schema:Dataset"],
+  "dataType": "ChemicalAnalysis",
+  "sourceDocument": "CHEM_____Herba_Andrographidis_V1.pdf",
+  "scientificName": "Andrographis paniculata",
+  "chineseName": "穿心蓮",
+  "pinyinName": "Chuan Xin Lian",
+  "identificationMethod": ["TLC", "HPLC-Fingerprint", "HPLC-Assay"],
+  "referenceCompounds": [
+    {
+      "name": "Andrographolide",
+      "chineseName": "穿心蓮內酯",
+      "formula": "C₂₀H₃₀O₅",
+      "purpose": ["TLC identification", "HPLC fingerprint marker", "Assay quantification"]
+    },
+    {
+      "name": "Dehydroandrographolide",
+      "chineseName": "脫水穿心蓮內酯",
+      "formula": "C₂₀H₂₈O₄",
+      "purpose": ["TLC identification", "HPLC fingerprint marker", "Assay quantification"]
+    }
+  ],
+  "assayLimits": {
+    "totalAndrographolides": {
+      "compounds": ["Andrographolide", "Dehydroandrographolide"],
+      "formulas": ["C₂₀H₃₀O₅", "C₂₀H₂₈O₄"],
+      "minimumContent": "0.80%",
+      "basis": "dried substance (combined total)"
+    }
+  },
+  "tlcMethod": {
+    "appendixReference": "Appendix I",
+    "stationaryPhase": "HPTLC silica gel F₂₅₄ plate",
+    "developingSolvent": {
+      "components": ["Petroleum ether (60-80°C)", "ethyl acetate", "ethanol"],
+      "ratio": "4:2:1 (v/v)"
+    },
+    "testSolution": {
+      "sampleAmount": "1.0 g",
+      "solvent": "ethanol",
+      "solventVolume": "30 mL",
+      "extraction": "ultrasonication (240 W) for 20 minutes",
+      "evaporation": "rotary evaporator at reduced pressure",
+      "finalVolume": "2 mL in ethanol"
+    },
+    "standardSolutions": {
+      "andrographolide": {
+        "concentration": "1.0 mg/mL in ethanol",
+        "preparation": "1.0 mg andrographolide reference standard in 1 mL ethanol"
+      },
+      "dehydroandrographolide": {
+        "concentration": "0.5 mg/mL in ethanol",
+        "preparation": "0.5 mg dehydroandrographolide reference standard in 1 mL ethanol"
+      }
+    },
+    "applicationVolumes": {
+      "andrographolideStandard": "5 μL",
+      "dehydroandrographolideStandard": "6 μL",
+      "testSolution": "3 μL"
+    },
+    "chamberPreparation": {
+      "type": "twin-trough chamber",
+      "preSaturation": "15 minutes"
+    },
+    "developingDistance": "7.5 cm",
+    "visualization": "UV light at 254 nm",
+    "identificationCriteria": {
+      "method": "Compare Rf values and spot colors with reference standards",
+      "positiveMarkers": ["Andrographolide", "Dehydroandrographolide"]
+    }
+  },
+  "hplcFingerprint": {
+    "appendixReference": "Appendix II",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "Diode Array Detector (DAD)",
+      "detectionWavelength": "215 nm",
+      "flowRate": "1.0 mL/min",
+      "injectionVolume": "10 μL"
+    },
+    "mobilePhase": {
+      "solventA": "Water",
+      "solventB": "Acetonitrile",
+      "gradientProgram": [
+        {
+          "timeRange": "0-5 min",
+          "solventA": "78% → 75%",
+          "solventB": "22% → 25%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "5-30 min",
+          "solventA": "75% → 70%",
+          "solventB": "25% → 30%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "30-60 min",
+          "solventA": "70% → 55%",
+          "solventB": "30% → 45%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "andrographolide": {
+        "concentration": "60 mg/L",
+        "preparation": "3.0 mg in 50 mL methanol"
+      },
+      "dehydroandrographolide": {
+        "concentration": "30 mg/L",
+        "preparation": "1.5 mg in 50 mL methanol"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "0.2 g",
+      "solvent": "methanol",
+      "extractionVolume": "20 mL × 2 extractions",
+      "extraction": "ultrasonication (240 W) for 30 minutes",
+      "centrifugation": "3000 × g for 5 minutes",
+      "finalVolume": "50 mL",
+      "filtration": "0.45 μm PTFE filter"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "peakAreaRSD": "≤ 5.0% (both compounds)",
+      "retentionTimeRSD": "≤ 2.0% (both compounds)",
+      "theoreticalPlatesAndrographolide": "≥ 8,000",
+      "theoreticalPlatesDehydroandrographolide": "≥ 40,000",
+      "resolution": "≥ 1.0 (between peak 1 and adjacent peak; between peak 4 and adjacent peak)"
+    },
+    "identificationCriteria": {
+      "retentionTimeTolerance": "≤ 2.0% difference between sample and standard",
+      "characteristicPeaks": 4
+    }
+  },
+  "hplcAssay": {
+    "appendixReference": "Appendix III",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "Diode Array Detector (DAD)",
+      "detectionWavelengths": {
+        "andrographolide": "225 nm",
+        "dehydroandrographolide": "254 nm"
+      },
+      "flowRate": "1.0 mL/min",
+      "injectionVolume": "10 μL"
+    },
+    "mobilePhase": {
+      "solventA": "Water",
+      "solventB": "Acetonitrile",
+      "gradientProgram": [
+        {
+          "timeRange": "0-5 min",
+          "solventA": "78% → 75%",
+          "solventB": "22% → 25%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "5-30 min",
+          "solventA": "75% → 70%",
+          "solventB": "25% → 30%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "30-60 min",
+          "solventA": "70% → 55%",
+          "solventB": "30% → 45%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "stockSolution": {
+        "andrographolide": {
+          "concentration": "200 mg/L",
+          "preparation": "5.0 mg in 25 mL methanol"
+        },
+        "dehydroandrographolide": {
+          "concentration": "100 mg/L",
+          "preparation": "2.5 mg in 25 mL methanol"
+        }
+      },
+      "workingSolutions": {
+        "andrographolide": {
+          "concentrations": ["20", "40", "60", "100", "150 mg/L"]
+        },
+        "dehydroandrographolide": {
+          "concentrations": ["10", "20", "30", "50", "75 mg/L"]
+        }
+      },
+      "mixedStandardForSystemSuitability": {
+        "andrographolide": "60 mg/L",
+        "dehydroandrographolide": "30 mg/L"
+      },
+      "injectionVolume": "10 μL (for calibration)"
+    },
+    "testSolution": {
+      "sampleAmount": "0.2 g",
+      "solvent": "methanol",
+      "extractionVolume": "20 mL × 2 extractions",
+      "extraction": "ultrasonication (240 W) for 30 minutes",
+      "centrifugation": "3000 × g for 5 minutes",
+      "finalVolume": "50 mL",
+      "filtration": "0.45 μm PTFE filter",
+      "injectionVolume": "10 μL"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "injectionVolume": "10 μL",
+      "mixedStandardConcentration": "60 mg/L andrographolide, 30 mg/L dehydroandrographolide",
+      "peakAreaRSD": "≤ 5.0% (both compounds)",
+      "retentionTimeRSD": "≤ 2.0% (both compounds)",
+      "theoreticalPlatesAndrographolide": "≥ 8,000",
+      "theoreticalPlatesDehydroandrographolide": "≥ 40,000",
+      "resolution": "≥ 1.5 (between target peaks and nearest adjacent peaks)"
+    },
+    "calibration": {
+      "method": "5-point calibration curve",
+      "plot": "Peak area vs. concentration (mg/L)",
+      "identificationTolerance": "≤ 2.0% difference in retention times"
+    }
+  },
+  "rrtValues": [
+    {
+      "peakNumber": 1,
+      "compound": "Andrographolide",
+      "rrt": 1.00,
+      "acceptableRange": null,
+      "referenceMarker": true,
+      "referenceTo": "self"
+    },
+    {
+      "peakNumber": 2,
+      "compound": "Unidentified",
+      "rrt": 0.85,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Dehydroandrographolide (Peak 4)"
+    },
+    {
+      "peakNumber": 3,
+      "compound": "Unidentified",
+      "rrt": 0.97,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Dehydroandrographolide (Peak 4)"
+    },
+    {
+      "peakNumber": 4,
+      "compound": "Dehydroandrographolide",
+      "rrt": 1.00,
+      "acceptableRange": null,
+      "referenceMarker": true,
+      "referenceTo": "self"
+    }
+  ],
+  "appendices": {
+    "appendixI": {
+      "title": "Chromatography – Thin-Layer Chromatography",
+      "description": "General procedures for TLC including plate types, application methods, developing chambers, and Rf calculation"
+    },
+    "appendixII": {
+      "title": "GC and HPLC/UHPLC Fingerprinting",
+      "description": "Methods for establishing chromatographic fingerprints using marker peaks and RRT values"
+    },
+    "appendixIII": {
+      "title": "Chromatography – HPLC/UHPLC",
+      "description": "General HPLC/UHPLC procedures including system suitability tests (theoretical plates, repeatability, resolution, tailing factor) and quantitative calculations"
+    }
+  },
+  "extractedAt": "2026-02-20"
+}

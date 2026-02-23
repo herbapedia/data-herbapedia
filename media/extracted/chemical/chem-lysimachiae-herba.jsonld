@@ -1,0 +1,249 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/chemical/lysimachiae-herba",
+  "@type": ["herbapedia:ChemicalAnalysisData", "schema:Dataset"],
+  "dataType": "ChemicalAnalysis",
+  "sourceDocument": "CHEM_____Lysimachiae_Herba_V1.pdf",
+  "scientificName": "Lysimachiae Herba",
+  "chineseName": "金錢草",
+  "pinyinName": "Jin Qian Cao",
+  "identificationMethod": ["TLC", "HPLC-Fingerprint", "HPLC-Assay"],
+  "referenceCompounds": [
+    {
+      "name": "Kaempferol",
+      "chineseName": "山柰素",
+      "formula": "C₁₅H₁₀O₆",
+      "purpose": ["TLC identification", "HPLC fingerprint marker", "Assay quantification"]
+    },
+    {
+      "name": "Quercetin",
+      "chineseName": "槲皮素",
+      "formula": "C₁₅H₁₀O₇",
+      "purpose": ["HPLC fingerprint marker", "Assay quantification"]
+    }
+  ],
+  "assayLimits": {
+    "kaempferolPlusQuercetin": {
+      "compounds": ["Kaempferol", "Quercetin"],
+      "formulas": ["C₁₅H₁₀O₆", "C₁₅H₁₀O₇"],
+      "minimumContent": "0.10%",
+      "basis": "dried substance (combined total)"
+    }
+  },
+  "tlcMethod": {
+    "appendixReference": "Appendix I",
+    "stationaryPhase": "HPTLC silica gel F₂₅₄ plate",
+    "developingSolvent": {
+      "components": ["n-hexane", "ethyl acetate", "formic acid"],
+      "ratio": "10:6:1 (v/v)"
+    },
+    "sprayReagent": {
+      "composition": "1 g aluminium trichloride in 100 mL ethanol",
+      "visualization": "UV light at 366 nm after spraying"
+    },
+    "testSolution": {
+      "sampleAmount": "2.0 g",
+      "solvent": "ethanol (80%)",
+      "solventVolume": "50 mL",
+      "extraction": "ultrasonication (220 W) for 30 minutes",
+      "evaporation": "rotary evaporator at reduced pressure",
+      "finalVolume": "1 mL ethanol"
+    },
+    "standardSolutions": {
+      "concentration": "0.2 mg/mL (1.0 mg in 5 mL methanol)",
+      "compounds": ["Kaempferol"]
+    },
+    "applicationVolumes": {
+      "standardSolution": "1 μL",
+      "testSolution": "4 μL"
+    },
+    "developingDistance": "8 cm",
+    "visualization": "UV light at 366 nm",
+    "identificationCriteria": {
+      "positiveMarkers": ["Kaempferol"],
+      "criteria": "Sample must show spots or bands with color and Rf value corresponding to kaempferol"
+    }
+  },
+  "hplcFingerprint": {
+    "appendixReference": "Appendix II",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "DAD",
+      "detectionWavelength": "364 nm",
+      "flowRate": "1.0 mL/min",
+      "injectionVolume": "20 μL"
+    },
+    "mobilePhase": {
+      "solventA": "0.2% Phosphoric acid",
+      "solventB": "Methanol",
+      "gradientProgram": [
+        {
+          "timeRange": "0-15 min",
+          "solventA": "70% → 55%",
+          "solventB": "30% → 45%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "15-35 min",
+          "solventA": "55%",
+          "solventB": "45%",
+          "elution": "isocratic"
+        },
+        {
+          "timeRange": "35-60 min",
+          "solventA": "55% → 30%",
+          "solventB": "45% → 70%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "kaempferolStdFP": {
+        "concentration": "40 mg/L",
+        "preparation": "0.4 mg kaempferol CRS in 10 mL methanol"
+      },
+      "quercetinStdFP": {
+        "concentration": "40 mg/L",
+        "preparation": "0.4 mg quercetin CRS in 10 mL methanol"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "1.0 g",
+      "solvent": "methanol (80%)",
+      "solventVolume": "10 mL",
+      "extraction": "ultrasonication (220 W) for 30 minutes",
+      "centrifugation": "4000 × g for 5 minutes",
+      "filtration": "0.45 μm PTFE filter"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "peakAreaRSD": "≤ 5.0% (Kaempferol and Quercetin)",
+      "retentionTimeRSD": "≤ 2.0% (Kaempferol and Quercetin)",
+      "theoreticalPlates": "≥ 100,000 (Kaempferol), ≥ 50,000 (Quercetin)",
+      "resolution": "≥ 1.0 (peaks 3 and 4 with adjacent peaks)"
+    },
+    "identificationCriteria": {
+      "retentionTimeTolerance": "≤ 2.0% difference between sample and standard"
+    }
+  },
+  "hplcAssay": {
+    "appendixReference": "Appendix III",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "DAD",
+      "detectionWavelength": "364 nm",
+      "flowRate": "1.0 mL/min"
+    },
+    "mobilePhase": {
+      "solventA": "0.1% Phosphoric acid",
+      "solventB": "Methanol",
+      "gradientProgram": [
+        {
+          "timeRange": "0-25 min",
+          "solventA": "50% → 25%",
+          "solventB": "50% → 75%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "stockSolution": {
+        "concentration": "200 mg/L each",
+        "compounds": ["Kaempferol", "Quercetin"],
+        "preparation": "2.0 mg each CRS in 10 mL methanol",
+        "name": "Std-Stock"
+      },
+      "workingSolutions": {
+        "concentrations": ["0.5", "1", "2", "5", "10 mg/L"],
+        "description": "Series of mixed kaempferol and quercetin standard solutions (Std-AS)"
+      },
+      "injectionVolume": "10 μL (for calibration)"
+    },
+    "testSolution": {
+      "sampleAmount": "0.5 g",
+      "solvent": "methanol (80%)",
+      "extractionVolume": "50 mL + 30 mL × 2",
+      "extraction": "shake overnight (16 h), then ultrasonication (220 W) for 30 minutes",
+      "evaporation": "rotary evaporator at reduced pressure",
+      "hydrolysis": {
+        "reagent": "25 mL methanol (80%) + 5 mL hydrochloric acid",
+        "conditions": "reflux for 1.5 hours",
+        "cooling": "ice water bath immediately"
+      },
+      "finalVolume": "100 mL",
+      "filtration": "0.45 μm PTFE filter",
+      "injectionVolume": "10 μL"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "injectionVolume": "10 μL",
+      "standardConcentration": "2 mg/L each (Std-AS)",
+      "peakAreaRSD": "≤ 5.0% (Kaempferol and Quercetin)",
+      "retentionTimeRSD": "≤ 2.0% (Kaempferol and Quercetin)",
+      "theoreticalPlates": "≥ 30,000 (Kaempferol), ≥ 20,000 (Quercetin)",
+      "resolution": "≥ 1.5 (Kaempferol and Quercetin with adjacent peaks)"
+    },
+    "calibration": {
+      "method": "5-point calibration curve",
+      "plot": "Peak area vs. concentration (mg/L)",
+      "identificationTolerance": "≤ 5.0% difference in retention times"
+    }
+  },
+  "rrtValues": [
+    {
+      "peakNumber": 1,
+      "compound": "Unknown 1",
+      "rrt": 0.37,
+      "acceptableRange": "± 0.03",
+      "referenceMarker": false,
+      "referenceTo": "Kaempferol"
+    },
+    {
+      "peakNumber": 2,
+      "compound": "Unknown 2",
+      "rrt": 0.39,
+      "acceptableRange": "± 0.03",
+      "referenceMarker": false,
+      "referenceTo": "Kaempferol"
+    },
+    {
+      "peakNumber": 3,
+      "compound": "Quercetin",
+      "rrt": 0.85,
+      "acceptableRange": "± 0.03",
+      "referenceMarker": false,
+      "referenceTo": "Kaempferol"
+    },
+    {
+      "peakNumber": 4,
+      "compound": "Kaempferol",
+      "rrt": 1.00,
+      "acceptableRange": null,
+      "referenceMarker": true,
+      "referenceTo": "self"
+    }
+  ],
+  "appendices": {
+    "appendixI": {
+      "title": "Chromatography – Thin-Layer Chromatography (TLC)",
+      "description": "General procedures for TLC including plate types, application methods, developing chambers, and Rf calculation"
+    },
+    "appendixII": {
+      "title": "GC and HPLC/UHPLC Fingerprinting",
+      "description": "Methods for establishing chromatographic fingerprints using marker peaks and RRT values"
+    },
+    "appendixIII": {
+      "title": "Chromatography – HPLC/UHPLC",
+      "description": "General HPLC/UHPLC procedures including system suitability tests (theoretical plates, repeatability, resolution, tailing factor) and quantitative calculations"
+    }
+  },
+  "extractedAt": "2026-02-20"
+}

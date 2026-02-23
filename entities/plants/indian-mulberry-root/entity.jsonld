@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/indian-mulberry-root",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/indian-mulberry-root",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"

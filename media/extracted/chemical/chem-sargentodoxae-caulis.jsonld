@@ -1,0 +1,263 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/chemical/sargentodoxae-caulis",
+  "@type": ["herbapedia:ChemicalAnalysisData", "schema:Dataset"],
+  "dataType": "ChemicalAnalysis",
+  "sourceDocument": "CHEM_____Sargentodoxae_Caulis_V1.pdf",
+  "scientificName": "Sargentodoxa cuneata",
+  "chineseName": "大血藤",
+  "pinyinName": "Da Xue Teng",
+  "identificationMethod": ["TLC", "UHPLC-Fingerprint", "UHPLC-Assay"],
+  "referenceCompounds": [
+    {
+      "name": "Liriodendrin",
+      "chineseName": "鵝掌楸苷",
+      "formula": "C₃₄H₄₆O₁₈",
+      "purpose": ["TLC identification", "UHPLC fingerprint marker", "Assay quantification"]
+    },
+    {
+      "name": "Salidroside",
+      "chineseName": "紅景天苷",
+      "purpose": ["UHPLC fingerprint marker"]
+    }
+  ],
+  "assayLimits": {
+    "liriodendrin": {
+      "compound": "Liriodendrin",
+      "formula": "C₃₄H₄₆O₁₈",
+      "minimumContent": "0.068%",
+      "basis": "dried substance"
+    }
+  },
+  "tlcMethod": {
+    "appendixReference": "Appendix I",
+    "stationaryPhase": "HPTLC silica gel F₂₅₄ plate",
+    "developingSolvent": {
+      "components": ["ethyl acetate", "formic acid", "water"],
+      "ratio": "7:1.5:1 (v/v)"
+    },
+    "sprayReagent": {
+      "composition": "10 mL sulfuric acid in 90 mL ethanol with 1 g vanillin",
+      "visualization": "Heat at about 110°C for about 5 minutes"
+    },
+    "testSolution": {
+      "sampleAmount": "1.0 g",
+      "solvent": "water",
+      "solventVolume": "10 mL",
+      "extraction": "ultrasonication (270 W) for 30 minutes",
+      "evaporation": "rotary evaporator at reduced pressure",
+      "finalVolume": "1 mL water"
+    },
+    "standardSolutions": {
+      "liriodendrin": {
+        "concentration": "1.0 mg/mL in ethanol (70%)"
+      }
+    },
+    "applicationVolumes": {
+      "standardSolution": "2 μL",
+      "testSolution": "3 μL"
+    },
+    "developingDistance": "6 cm",
+    "visualization": "UV light at 366 nm",
+    "identificationCriteria": {
+      "positiveMarkers": ["Liriodendrin"],
+      "criteria": "Test sample should show spots or bands with the same colour and corresponding Rf value as liriodendrin standard"
+    }
+  },
+  "hplcFingerprint": {
+    "appendixReference": "Appendix II",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "2.1 × 50 mm",
+        "particleSize": "1.7 μm",
+        "poreSize": "130 Å",
+        "surfaceArea": "185 m²/g"
+      },
+      "detector": "DAD (Diode Array Detector)",
+      "detectionWavelength": "220 nm",
+      "flowRate": "0.2 mL/min",
+      "injectionVolume": "5 μL"
+    },
+    "mobilePhase": {
+      "solventA": "0.1% phosphoric acid",
+      "solventB": "Acetonitrile",
+      "gradientProgram": [
+        {
+          "timeRange": "0-5 min",
+          "solventA": "95%",
+          "solventB": "5%",
+          "elution": "isocratic"
+        },
+        {
+          "timeRange": "5-20 min",
+          "solventA": "95% → 85%",
+          "solventB": "5% → 15%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "20-30 min",
+          "solventA": "85% → 70%",
+          "solventB": "15% → 30%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "salidroside": {
+        "name": "Salidroside Std-FP",
+        "concentration": "15 mg/L",
+        "preparation": "1.5 mg in 100 mL water"
+      },
+      "liriodendrin": {
+        "name": "Liriodendrin Std-FP",
+        "concentration": "5 mg/L",
+        "preparation": "0.5 mg in 100 mL water"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "1.0 g",
+      "solvent": "water",
+      "solventVolume": "10 mL × 2 extractions",
+      "extraction": "ultrasonication (270 W) for 30 minutes",
+      "centrifugation": "5000 × g for 5 minutes",
+      "finalVolume": "25 mL",
+      "filtration": "0.2 μm nylon membrane filter"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "peakAreaRSD": "≤ 5.0% (Salidroside and Liriodendrin)",
+      "retentionTimeRSD": "≤ 2.0% (Salidroside and Liriodendrin)",
+      "theoreticalPlates": "≥ 8,000 (Salidroside), ≥ 100,000 (Liriodendrin)",
+      "resolution": "≥ 1.5 (Peak 3 and Peak 5 from adjacent peaks)"
+    },
+    "identificationCriteria": {
+      "retentionTimeTolerance": "≤ 2.0% difference between sample and standard"
+    }
+  },
+  "hplcAssay": {
+    "appendixReference": "Appendix III",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "2.1 × 50 mm",
+        "particleSize": "1.7 μm",
+        "poreSize": "130 Å",
+        "surfaceArea": "185 m²/g"
+      },
+      "detector": "DAD (Diode Array Detector)",
+      "detectionWavelength": "220 nm",
+      "flowRate": "0.2 mL/min"
+    },
+    "mobilePhase": {
+      "solventA": "0.1% phosphoric acid",
+      "solventB": "Acetonitrile",
+      "gradientProgram": [
+        {
+          "timeRange": "0-5 min",
+          "solventA": "95%",
+          "solventB": "5%",
+          "elution": "isocratic"
+        },
+        {
+          "timeRange": "5-20 min",
+          "solventA": "95% → 85%",
+          "solventB": "5% → 15%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "20-30 min",
+          "solventA": "85% → 70%",
+          "solventB": "15% → 30%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "liriodendrin": {
+        "name": "Liriodendrin Std-AS",
+        "concentrations": ["Series for 5-point calibration curve"],
+        "injectionVolume": "5 μL (for calibration)"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "1.0 g",
+      "solvent": "water",
+      "extractionVolume": "10 mL × 2 extractions",
+      "extraction": "ultrasonication (270 W) for 30 minutes",
+      "centrifugation": "5000 × g for 5 minutes",
+      "finalVolume": "25 mL",
+      "filtration": "0.2 μm nylon membrane filter",
+      "injectionVolume": "5 μL"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "peakAreaRSD": "≤ 5.0%",
+      "retentionTimeRSD": "≤ 2.0%"
+    },
+    "calibration": {
+      "method": "5-point calibration curve",
+      "plot": "Peak area vs. concentration (mg/L)",
+      "identificationTolerance": "≤ 5.0% difference in retention times"
+    }
+  },
+  "rrtValues": [
+    {
+      "peakNumber": 1,
+      "compound": "Unknown",
+      "rrt": 0.46,
+      "acceptableRange": "± 0.03",
+      "referenceMarker": false,
+      "referenceTo": "Salidroside"
+    },
+    {
+      "peakNumber": 2,
+      "compound": "Unknown",
+      "rrt": 0.57,
+      "acceptableRange": "± 0.03",
+      "referenceMarker": false,
+      "referenceTo": "Salidroside"
+    },
+    {
+      "peakNumber": 3,
+      "compound": "Salidroside",
+      "chineseName": "紅景天苷",
+      "rrt": 1.00,
+      "acceptableRange": null,
+      "referenceMarker": true,
+      "referenceTo": "self"
+    },
+    {
+      "peakNumber": 4,
+      "compound": "Unknown",
+      "rrt": 1.76,
+      "acceptableRange": "± 0.04",
+      "referenceMarker": false,
+      "referenceTo": "Salidroside"
+    },
+    {
+      "peakNumber": 5,
+      "compound": "Liriodendrin",
+      "chineseName": "鵝掌楸苷",
+      "rrt": 3.88,
+      "acceptableRange": "± 0.09",
+      "referenceMarker": false,
+      "referenceTo": "Salidroside"
+    }
+  ],
+  "appendices": {
+    "appendixI": {
+      "title": "Chromatography – Thin-Layer Chromatography (TLC)",
+      "description": "General procedures for TLC including plate types, application methods, developing chambers, Rf calculation, and interpretation of chromatograms"
+    },
+    "appendixII": {
+      "title": "Gas Chromatographic and High-Performance/Ultra-High Performance Liquid Chromatographic Fingerprinting",
+      "description": "Methods for establishing chromatographic fingerprints using marker peaks and RRT values, including requirements for reference fingerprint chromatograms based on at least 10 batches of representative samples"
+    },
+    "appendixIII": {
+      "title": "Chromatography – High-Performance Liquid Chromatography (HPLC) / Ultra-High Performance Liquid Chromatography (UHPLC)",
+      "description": "General HPLC/UHPLC procedures including system suitability tests (theoretical plates, repeatability, resolution, tailing factor) and quantitative calculations using 5-point calibration curves"
+    }
+  },
+  "extractedAt": "2026-02-20"
+}

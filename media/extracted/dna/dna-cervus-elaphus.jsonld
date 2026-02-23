@@ -1,0 +1,85 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/dna/cervus-elaphus",
+  "@type": ["herbapedia:DNASequenceData", "schema:Dataset"],
+  "dataType": "DNASequence",
+  "sourceFile": "DNA____Cervus_elaphus_V1.pdf",
+  "sourceDocument": "GCMTI FS:2020-5",
+  "title": {
+    "en": "Fact sheet of reference DNA sequences of Cervus elaphus",
+    "zh-hk": "馬鹿(Cervus elaphus)之參考 DNA 序列資料表"
+  },
+  "scientificName": {
+    "full": "Cervus elaphus",
+    "genus": "Cervus",
+    "species": "elaphus",
+    "author": ""
+  },
+  "loci": [
+    {
+      "name": "COI",
+      "fullName": "Partial mitochondrial cytochrome c oxidase subunit I",
+      "description": {
+        "en": "Partial mitochondrial cytochrome c oxidase subunit I (COI) of authenticated parts of Cervus elaphus and Cornu Cervi Pantotrichum (C. elaphus)",
+        "zh-hk": "Cervus elaphus 已鑒別部位標本及中藥材鹿茸(馬鹿)標本的線粒體基因組細胞色素 C 氧化酶亞基 I (COI)部份序列"
+      },
+      "sequenceLength": 658,
+      "consensusSequence": "TACTCTGTATCTATTATTTGGTGCCTGAGCAGGCATAGTAGGAACAGCCCTAAGCCTACTGATTCGTGCCGAACTGGGCCAACCTGGTACTCTGCTTGGAGACGACCAAATTTATAATGTTATCGTAACCGCACATGCATTCGTAATAATTTTCTTTATAGTTATACCAATTATAATTGGAGGATTTGGTAATTGACTAGTTCCCCTAATAATTGGTGCCCCAGACATAGCATTCCCTCGAATAAACAATATAAGCTTTTGACTCCTCCCTCCTTCTTTCTTACTACTTTTAGCATCATCTATAGTTGAAGCTGGCGCAGGAACAGGCTGAACTGTATACCCCCCTCTAGCTGGCAACTTAGCCCACGCAGGGGCTTCAGTAGACCTGACTATTTTTTCTTTACACTTGGCAGGTGTCTCCTCAATTCTAGGGGCCATTAACTTTATTACAACAATTATTAATATAAAACCCCCTGCCATATCACAATATCAAACCCCTCTATTTGTGTGATCCGTATTAGTCACTGCTGTACTACTACTTCTCTCACTCCCTGTACTAGCAGCCGGAATTACAATACTATTAACAGACCGAAACTTAAATACAACCTTTTTTGACCCAGCAGGAGGCGGAGATCCCATTCTATATCAACACTTGTTC",
+      "specimenCount": 24,
+      "specimens": [
+        "RD498-1A", "RD499-1A", "RD501-1B", "RD500-1A", "RD363-1B", "RD368-1B",
+        "RD370-1C", "RD361-1C", "RD107-B", "RD108-A", "RD109-E", "RD383-B",
+        "RD384-B", "RD385-B", "RD386-B", "RD387-B", "RD388-B", "RD390-C",
+        "RD391-C", "RD392-C"
+      ]
+    },
+    {
+      "name": "CYTB",
+      "fullName": "Partial mitochondrial cytochrome b",
+      "description": {
+        "en": "Partial mitochondrial cytochrome b (CYTB) of authenticated parts of Cervus elaphus and Cornu Cervi Pantotrichum (C. elaphus)",
+        "zh-hk": "Cervus elaphus 已鑒別部位標本及中藥材鹿茸(馬鹿)標本的線粒體基因組細胞色素 b (CYTB)部份序列"
+      },
+      "sequenceLength": 356,
+      "consensusSequence": "AGGAGCAACGGTCATTACCAACCTTCTCTCAGCAATTCCATACATTGGCACAAACCTAGTCGAATGGATCTGAGGAGGCTTTTCAGTAGATAAAGCAACCCTAACCCGATTTTTCGCTTTCCACTTTATTCTCCCATTTATCATCGCAGCACTCGCTATAGTACACTTACTCTTCCTTCACGAGACAGGATCCAATAACCCAACAGGAATTCCATCAGACGCAGACAAAATCCCCTTCCATCCTTACTATACCATTAAAGATATCTTAGGCATCTTACTTCTAGTACTCTTCCTAATATTACTAGTATTATTCGCACCAGACCTGCTTGGAGACCCAGACAACTATACCCCAGCAAATCCACTCAACACACCCCCTCACATTAAACCTGAATGATATTTCCTATTTGCATACGCAATCCTA",
+      "specimenCount": 24,
+      "specimens": [
+        "RD498-1A", "RD499-1A", "RD501-1B", "RD500-1A", "RD363-1B", "RD368-1B",
+        "RD370-1C", "RD361-1C", "RD107-B", "RD108-A", "RD109-E", "RD383-B",
+        "RD384-B", "RD385-B", "RD386-B", "RD387-B", "RD388-B", "RD390-C",
+        "RD391-C", "RD392-C"
+      ]
+    },
+    {
+      "name": "16SrRNA",
+      "fullName": "Partial mitochondrial 16S ribosomal RNA",
+      "description": {
+        "en": "Partial mitochondrial 16S ribosomal RNA (16SrRNA) of authenticated parts of Cervus elaphus and Cornu Cervi Pantotrichum (C. elaphus)",
+        "zh-hk": "Cervus elaphus 已鑒別部位標本及中藥材鹿茸(馬鹿)標本的線粒體基因組 16S 核糖體核糖核酸(16SrRNA)部份序列"
+      },
+      "sequenceLength": 404,
+      "consensusSequence": "TGTTCTCTAAATAGGGACTTGTATGAATGGCCACACGAGGGTTTTACTGTCTCTTACTTCCAATCAGTGAAATTGACCTTCCCGTGAAGAGGCGGGAATATATTAATAAGACGAGAAGACCCTATGGAGCTTTAACTACTTAGCCCAAAAGAAACAAATTTCATTGCTAAGGAAACAACAACACTCTTTATGGGCTAACAGCTTTGGTTGGGGTGACCTCGGAGAACAAGAAATCCTCCGAGCGATTTTAAAGACTAGACCTACAAGTCGAATCACACAATCGTTTATTGATCCAAAAAATTGATCAACGGAACAAGTTACCCTAGGGATAACAGCGCAATCCTATTCAAGAGTCCATATCGACAATAGGGTTTACGACCTCGATGTTGGATCAGGACATCCCGATGGTGCAACCGCTATCAAAGGTTCGTTTGTTCAACGATTAAAGT",
+      "specimenCount": 24,
+      "specimens": [
+        "RD498-1A", "RD499-1A", "RD501-1B", "RD500-1A", "RD363-1B", "RD368-1B",
+        "RD370-1C", "RD361-1C", "RD107-B", "RD108-A", "RD109-E", "RD383-B",
+        "RD384-B", "RD385-B", "RD386-B", "RD387-B", "RD388-B", "RD390-C",
+        "RD391-C", "RD392-C"
+      ]
+    }
+  ],
+  "specimen": {
+    "gcmtiCode": "GA0004201a00",
+    "type": "Cornu Cervi Pantotrichum (C. elaphus)",
+    "totalSpecimens": 24
+  },
+  "methodology": {
+    "format": "FASTA",
+    "sequencingTargets": ["COI", "CYTB", "16SrRNA"],
+    "specimenTypes": ["Authenticated parts of Cervus elaphus", "Cornu Cervi Pantotrichum (C. elaphus)"]
+  },
+  "extracted": {
+    "date": "2026-02-20",
+    "extractedBy": "automated extraction from PDF"
+  }
+}

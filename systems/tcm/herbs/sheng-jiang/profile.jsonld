@@ -1,14 +1,16 @@
 {
-  "@context": "../../schema/context/tcm.jsonld",
-  "@id": "tcm/sheng-jiang",
+  "@context": "https://www.herbapedia.org/schema/context/tcm.jsonld",
+  "@id": "https://www.herbapedia.org/system/tcm/profile/sheng-jiang",
   "@type": [
     "tcm:Herb",
     "schema:DietarySupplement"
   ],
   "derivedFromPlant": {
-    "@id": "plant/zingiber-officinale#rhizome"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/zingiber-officinale#rhizome"
   },
-  "processingMethod": "fresh",
+  "processingMethod": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/method/fresh"
+  },
   "name": {
     "en": "Fresh Ginger",
     "zh-Hant": "生薑",
@@ -20,40 +22,70 @@
     "zh-Hans": "生姜"
   },
   "hasCategory": {
-    "@id": "category/warm-acrid-release-exterior"
+    "@id": "https://www.herbapedia.org/system/tcm/category/release-exterior"
   },
   "hasNature": {
-    "@id": "nature/warm"
+    "@id": "https://www.herbapedia.org/system/tcm/nature/warm"
   },
   "hasFlavor": [
     {
-      "@id": "flavor/acrid"
+      "@id": "https://www.herbapedia.org/system/tcm/flavor/acrid"
     }
   ],
   "entersMeridian": [
     {
-      "@id": "meridian/lung"
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/lung"
     },
     {
-      "@id": "meridian/spleen"
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/spleen"
     },
     {
-      "@id": "meridian/stomach"
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/stomach"
     }
   ],
   "actions": [
-    "Release exterior",
-    "Warm middle burner",
-    "Stop vomiting",
-    "Resolve phlegm",
-    "Detoxify"
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/action/release-exterior"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/action/warm-middle-burner"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/action/stop-vomiting"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/action/resolve-phlegm"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/action/detoxify"
+    }
   ],
   "indications": [
-    "Exterior cold pattern",
-    "Common cold with chills",
-    "Nausea and vomiting",
-    "Cough with white phlegm",
-    "Fish and crab detoxification"
+    {
+      "en": "Exterior cold pattern",
+      "zh-Hant": "風寒表證",
+      "zh-Hans": "风寒表证"
+    },
+    {
+      "en": "Common cold with chills",
+      "zh-Hant": "風寒感冒",
+      "zh-Hans": "风寒感冒"
+    },
+    {
+      "en": "Nausea and vomiting",
+      "zh-Hant": "噁心嘔吐",
+      "zh-Hans": "恶心呕吐"
+    },
+    {
+      "en": "Cough with white phlegm",
+      "zh-Hant": "寒痰咳嗽",
+      "zh-Hans": "寒痰咳嗽"
+    },
+    {
+      "en": "Fish and crab detoxification",
+      "zh-Hant": "魚蟹中毒",
+      "zh-Hans": "鱼蟹中毒"
+    }
   ],
   "contraindications": {
     "en": "Contraindicated in Yin deficiency with heat signs, lung heat cough.",
@@ -89,14 +121,16 @@
   },
   "combinesWith": [
     {
-      "@id": "tcm/da-zao"
+      "@id": "https://www.herbapedia.org/system/tcm/profile/da-zao"
     },
     {
-      "@id": "tcm/bai-zhu"
+      "@id": "https://www.herbapedia.org/system/tcm/profile/bai-zhu"
     }
   ],
   "sameAs": [
-    "http://www.wikidata.org/entity/Q129639"
+    {
+      "@id": "http://www.wikidata.org/entity/Q129639"
+    }
   ],
   "source": "https://www.vitaherbapedia.com",
   "license": "https://creativecommons.org/licenses/by-sa/4.0/",

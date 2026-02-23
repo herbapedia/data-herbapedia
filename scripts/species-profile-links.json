@@ -1,0 +1,2949 @@
+[
+  {
+    "species": "algae",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "algae",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/algae",
+          "speciesSlug": "algae",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "aloe-vera",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "aloe-vera",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/aloe-vera",
+          "speciesSlug": "aloe-vera",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "amber",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "amber",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/amber",
+          "speciesSlug": "amber",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "american-ginseng",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "american-ginseng",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/american-ginseng",
+          "speciesSlug": "american-ginseng",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "argan-oil",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "argan-oil",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/argan-oil",
+          "speciesSlug": "argan-oil",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "asparagus-root",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "asparagus-root",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/asparagus-root",
+          "speciesSlug": "asparagus-root",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "baizhu",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "baizhu",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/baizhu",
+          "speciesSlug": "baizhu",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "baiziren",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "baiziren",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/baiziren",
+          "speciesSlug": "baiziren",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "balm-mint-oil",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "balm-mint-oil",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/balm-mint-oil",
+          "speciesSlug": "balm-mint-oil",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "barley",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "barley",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/barley",
+          "speciesSlug": "barley",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "beishashen",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "beishashen",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/beishashen",
+          "speciesSlug": "beishashen",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "bilberry",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "bilberry",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/bilberry",
+          "speciesSlug": "bilberry",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "birds-nest",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "birds-nest",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/birds-nest",
+          "speciesSlug": "birds-nest",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "bitter-orange",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "bitter-orange",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/bitter-orange",
+          "speciesSlug": "bitter-orange",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "black-sesame-seed",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "black-sesame-seed",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/black-sesame-seed",
+          "speciesSlug": "black-sesame-seed",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "blueberry",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "blueberry",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/blueberry",
+          "speciesSlug": "blueberry",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "borage-extract",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "borage-extract",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/borage-extract",
+          "speciesSlug": "borage-extract",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "buguzhi",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "buguzhi",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/buguzhi",
+          "speciesSlug": "buguzhi",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "calcium",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "calcium",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/calcium",
+          "speciesSlug": "calcium",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "cangzhu",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "cangzhu",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/cangzhu",
+          "speciesSlug": "cangzhu",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "capigen",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "capigen",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/capigen",
+          "speciesSlug": "capigen",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "cardamom",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "cardamom",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/cardamom",
+          "speciesSlug": "cardamom",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "ceramides",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "ceramides",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/ceramides",
+          "speciesSlug": "ceramides",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "chamomile",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "chamomile",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/chamomile",
+          "speciesSlug": "chamomile",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "changpu",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "changpu",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/changpu",
+          "speciesSlug": "changpu",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "chinese-angelica-or-dong-quai",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "chinese-angelica-or-dong-quai",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/chinese-angelica-or-dong-quai",
+          "speciesSlug": "chinese-angelica-or-dong-quai",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "chinese-bellflower",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "chinese-bellflower",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/chinese-bellflower",
+          "speciesSlug": "chinese-bellflower",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "chinese-mugwort-leaf",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "chinese-mugwort-leaf",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/chinese-mugwort-leaf",
+          "speciesSlug": "chinese-mugwort-leaf",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "chinese-rhubarb-root",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "chinese-rhubarb-root",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/chinese-rhubarb-root",
+          "speciesSlug": "chinese-rhubarb-root",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "chitosan",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "chitosan",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/chitosan",
+          "speciesSlug": "chitosan",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "choline",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "choline",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/choline",
+          "speciesSlug": "choline",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "chondroitin-sulfate",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "chondroitin-sulfate",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/chondroitin-sulfate",
+          "speciesSlug": "chondroitin-sulfate",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "chrysanthemum",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "chrysanthemum",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/chrysanthemum",
+          "speciesSlug": "chrysanthemum",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "chuanxinlian",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "chuanxinlian",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/chuanxinlian",
+          "speciesSlug": "chuanxinlian",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "chuanxiong",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "chuanxiong",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/chuanxiong",
+          "speciesSlug": "chuanxiong",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "clove-oil",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "clove-oil",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/clove-oil",
+          "speciesSlug": "clove-oil",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "copper",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "copper",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/copper",
+          "speciesSlug": "copper",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "cordyceps",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "cordyceps",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/cordyceps",
+          "speciesSlug": "cordyceps",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "corn-silk",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "corn-silk",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/corn-silk",
+          "speciesSlug": "corn-silk",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "cranberry",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "cranberry",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/cranberry",
+          "speciesSlug": "cranberry",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "cysteine-hci",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "cysteine-hci",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/cysteine-hci",
+          "speciesSlug": "cysteine-hci",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "dandelion",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "dandelion",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/dandelion",
+          "speciesSlug": "dandelion",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "dangshen",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "dangshen",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/dangshen",
+          "speciesSlug": "dangshen",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "danshen",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "danshen",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/danshen",
+          "speciesSlug": "danshen",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "deer-antler",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "deer-antler",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/deer-antler",
+          "speciesSlug": "deer-antler",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "deer-horn-gelatine",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "deer-horn-gelatine",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/deer-horn-gelatine",
+          "speciesSlug": "deer-horn-gelatine",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "dihuang",
+    "tcmCount": 2,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "dihuang",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/dihuang",
+          "speciesSlug": "dihuang",
+          "systemType": "tcm"
+        },
+        {
+          "profileSlug": "shoudihuang",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/shoudihuang",
+          "speciesSlug": "dihuang",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "dragon-bone",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "dragon-bone",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/dragon-bone",
+          "speciesSlug": "dragon-bone",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "duhuo",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "duhuo",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/duhuo",
+          "speciesSlug": "duhuo",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "duzhong",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "duzhong",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/duzhong",
+          "speciesSlug": "duzhong",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "echinacea",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "echinacea",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/echinacea",
+          "speciesSlug": "echinacea",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "epicutin-tt",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "epicutin-tt",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/epicutin-tt",
+          "speciesSlug": "epicutin-tt",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "eucalyptus-oil",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "eucalyptus-oil",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/eucalyptus-oil",
+          "speciesSlug": "eucalyptus-oil",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "evening-primrose-oil",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "evening-primrose-oil",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/evening-primrose-oil",
+          "speciesSlug": "evening-primrose-oil",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "evodia-fruit",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "evodia-fruit",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/evodia-fruit",
+          "speciesSlug": "evodia-fruit",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "factor-arl",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "factor-arl",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/factor-arl",
+          "speciesSlug": "factor-arl",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "fangfeng",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "fangfeng",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/fangfeng",
+          "speciesSlug": "fangfeng",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "fangji",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "fangji",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/fangji",
+          "speciesSlug": "fangji",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "fleece-flower",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "fleece-flower",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/fleece-flower",
+          "speciesSlug": "fleece-flower",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "fuling",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "fuling",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/fuling",
+          "speciesSlug": "fuling",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "garcinia-cambogia-fruit",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "garcinia-cambogia-fruit",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/garcinia-cambogia-fruit",
+          "speciesSlug": "garcinia-cambogia-fruit",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "garlic",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "garlic",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/garlic",
+          "speciesSlug": "garlic",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "ginger",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "ginger",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/ginger",
+          "speciesSlug": "ginger",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "ginkgo",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "ginkgo",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/ginkgo",
+          "speciesSlug": "ginkgo",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "ginseng",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "ginseng",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/ginseng",
+          "speciesSlug": "ginseng",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "glucosamine-sulfate",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "glucosamine-sulfate",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/glucosamine-sulfate",
+          "speciesSlug": "glucosamine-sulfate",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "glycerin",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "glycerin",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/glycerin",
+          "speciesSlug": "glycerin",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "glycine",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "glycine",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/glycine",
+          "speciesSlug": "glycine",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "gouqizi",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "gouqizi",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/gouqizi",
+          "speciesSlug": "gouqizi",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "grape-seed",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "grape-seed",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/grape-seed",
+          "speciesSlug": "grape-seed",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "great-burdock",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "great-burdock",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/great-burdock",
+          "speciesSlug": "great-burdock",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "green-tea",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "green-tea",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/green-tea",
+          "speciesSlug": "green-tea",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "guijia-or-guiban",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "guijia-or-guiban",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/guijia-or-guiban",
+          "speciesSlug": "guijia-or-guiban",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "hawthorn",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "hawthorn",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/hawthorn",
+          "speciesSlug": "hawthorn",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "hehuanhua",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "hehuanhua",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/hehuanhua",
+          "speciesSlug": "hehuanhua",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "honey",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "honey",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/honey",
+          "speciesSlug": "honey",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "horny-goat-weed",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "horny-goat-weed",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/horny-goat-weed",
+          "speciesSlug": "horny-goat-weed",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "hydration-factor-cte4",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "hydration-factor-cte4",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/hydration-factor-cte4",
+          "speciesSlug": "hydration-factor-cte4",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "indian-mulberry-root",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "indian-mulberry-root",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/indian-mulberry-root",
+          "speciesSlug": "indian-mulberry-root",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "indigowoad-root-banlangen",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "indigowoad-root-banlangen",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/indigowoad-root-banlangen",
+          "speciesSlug": "indigowoad-root-banlangen",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "inositol",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "inositol",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/inositol",
+          "speciesSlug": "inositol",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "iodine",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "iodine",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/iodine",
+          "speciesSlug": "iodine",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "iron",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "iron",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/iron",
+          "speciesSlug": "iron",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "jiaogulan",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "jiaogulan",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/jiaogulan",
+          "speciesSlug": "jiaogulan",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "jinyingzi",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "jinyingzi",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/jinyingzi",
+          "speciesSlug": "jinyingzi",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "jinyinhua",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "jinyinhua",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/jinyinhua",
+          "speciesSlug": "jinyinhua",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "jobs-tears",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "jobs-tears",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/jobs-tears",
+          "speciesSlug": "jobs-tears",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "jojoba-seed-oil",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "jojoba-seed-oil",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/jojoba-seed-oil",
+          "speciesSlug": "jojoba-seed-oil",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "konjac-jelly",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "konjac-jelly",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/konjac-jelly",
+          "speciesSlug": "konjac-jelly",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "kushen",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "kushen",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/kushen",
+          "speciesSlug": "kushen",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "lavender-oil",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "lavender-oil",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/lavender-oil",
+          "speciesSlug": "lavender-oil",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "lecithin",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "lecithin",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/lecithin",
+          "speciesSlug": "lecithin",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "lianqiao",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "lianqiao",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/lianqiao",
+          "speciesSlug": "lianqiao",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "lingzhi-reishi",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "lingzhi-reishi",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/lingzhi-reishi",
+          "speciesSlug": "lingzhi-reishi",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "lingzhi-spores",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "lingzhi-spores",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/lingzhi-spores",
+          "speciesSlug": "lingzhi-spores",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "linolenic-acid",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "linolenic-acid",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/linolenic-acid",
+          "speciesSlug": "linolenic-acid",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "liquorice-root",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "liquorice-root",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/liquorice-root",
+          "speciesSlug": "liquorice-root",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "lotus-leaf",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "lotus-leaf",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/lotus-leaf",
+          "speciesSlug": "lotus-leaf",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "lysine",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "lysine",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/lysine",
+          "speciesSlug": "lysine",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "magnesium",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "magnesium",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/magnesium",
+          "speciesSlug": "magnesium",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "maidong",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "maidong",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/maidong",
+          "speciesSlug": "maidong",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "manganese",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "manganese",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/manganese",
+          "speciesSlug": "manganese",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "melatonin",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "melatonin",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/melatonin",
+          "speciesSlug": "melatonin",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "methionine",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "methionine",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/methionine",
+          "speciesSlug": "methionine",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "milk-thistle",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "milk-thistle",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/milk-thistle",
+          "speciesSlug": "milk-thistle",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "milk-vetch",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "milk-vetch",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/milk-vetch",
+          "speciesSlug": "milk-vetch",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "mineral-oil",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "mineral-oil",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/mineral-oil",
+          "speciesSlug": "mineral-oil",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "mint",
+    "tcmCount": 1,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "mint",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/mint",
+          "speciesSlug": "mint",
+          "systemType": "tcm"
+        }
+      ],
+      "western": [
+        {
+          "profileSlug": "mint",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/mint",
+          "speciesSlug": "mint",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "mohanlian",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "mohanlian",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/mohanlian",
+          "speciesSlug": "mohanlian",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "mpc",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "mpc",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/mpc",
+          "speciesSlug": "mpc",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "muli",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "muli",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/muli",
+          "speciesSlug": "muli",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "niuxi",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "niuxi",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/niuxi",
+          "speciesSlug": "niuxi",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "nuzhenzi",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "nuzhenzi",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/nuzhenzi",
+          "speciesSlug": "nuzhenzi",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "omega-3",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "omega-3",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/omega-3",
+          "speciesSlug": "omega-3",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "omega-6",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "omega-6",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/omega-6",
+          "speciesSlug": "omega-6",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "omega-9",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "omega-9",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/omega-9",
+          "speciesSlug": "omega-9",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "orobanches",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "orobanches",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/orobanches",
+          "speciesSlug": "orobanches",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "paba",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "paba",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/paba",
+          "speciesSlug": "paba",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "panax-ginseng",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "ren-shen",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/ren-shen",
+          "speciesSlug": "panax-ginseng",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "patchouli",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "patchouli",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/patchouli",
+          "speciesSlug": "patchouli",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "peilan",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "peilan",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/peilan",
+          "speciesSlug": "peilan",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "peppermint-oil",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "peppermint-oil",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/peppermint-oil",
+          "speciesSlug": "peppermint-oil",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "petrolatum",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "petrolatum",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/petrolatum",
+          "speciesSlug": "petrolatum",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "phospholipids",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "phospholipids",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/phospholipids",
+          "speciesSlug": "phospholipids",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "potassium",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "potassium",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/potassium",
+          "speciesSlug": "potassium",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "quanshen",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "quanshen",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/quanshen",
+          "speciesSlug": "quanshen",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "rhodiola",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "rhodiola",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/rhodiola",
+          "speciesSlug": "rhodiola",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "rosemary-oil",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "rosemary-oil",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/rosemary-oil",
+          "speciesSlug": "rosemary-oil",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "roucongrong",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "roucongrong",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/roucongrong",
+          "speciesSlug": "roucongrong",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "royal-jelly",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "royal-jelly",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/royal-jelly",
+          "speciesSlug": "royal-jelly",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "sage-oil",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "sage-oil",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/sage-oil",
+          "speciesSlug": "sage-oil",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "saw-palmetto",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "saw-palmetto",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/saw-palmetto",
+          "speciesSlug": "saw-palmetto",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "selenium",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "selenium",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/selenium",
+          "speciesSlug": "selenium",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "shanzha",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "shanzha",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/shanzha",
+          "speciesSlug": "shanzha",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "shanzhuyu",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "shanzhuyu",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/shanzhuyu",
+          "speciesSlug": "shanzhuyu",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "shegan",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "shegan",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/shegan",
+          "speciesSlug": "shegan",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "shengma",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "shengma",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/shengma",
+          "speciesSlug": "shengma",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "shihu",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "shihu",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/shihu",
+          "speciesSlug": "shihu",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "shouwuteng",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "shouwuteng",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/shouwuteng",
+          "speciesSlug": "shouwuteng",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "soy",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "soy",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/soy",
+          "speciesSlug": "soy",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "squalene",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "squalene",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/squalene",
+          "speciesSlug": "squalene",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "st-johns-wort",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "st-johns-wort",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/st-johns-wort",
+          "speciesSlug": "st-johns-wort",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "suanzaoren",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "suanzaoren",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/suanzaoren",
+          "speciesSlug": "suanzaoren",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "suoyang",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "suoyang",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/suoyang",
+          "speciesSlug": "suoyang",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "tangerine-peel",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "tangerine-peel",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/tangerine-peel",
+          "speciesSlug": "tangerine-peel",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "taoren-or-peach-kernel",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "taoren-or-peach-kernel",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/taoren-or-peach-kernel",
+          "speciesSlug": "taoren-or-peach-kernel",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "tea-tree-oil",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "tea-tree-oil",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/tea-tree-oil",
+          "speciesSlug": "tea-tree-oil",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "thyme-oil",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "thyme-oil",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/thyme-oil",
+          "speciesSlug": "thyme-oil",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "tianma",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "tianma",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/tianma",
+          "speciesSlug": "tianma",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "tree-peony",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "tree-peony",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/tree-peony",
+          "speciesSlug": "tree-peony",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "turmeric",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "turmeric",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/turmeric",
+          "speciesSlug": "turmeric",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "tusizi",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "tusizi",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/tusizi",
+          "speciesSlug": "tusizi",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "valerian",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "valerian",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/valerian",
+          "speciesSlug": "valerian",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "vitamin-a",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "vitamin-a",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/vitamin-a",
+          "speciesSlug": "vitamin-a",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "vitamin-b1",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "vitamin-b1",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/vitamin-b1",
+          "speciesSlug": "vitamin-b1",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "vitamin-b12",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "vitamin-b12",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/vitamin-b12",
+          "speciesSlug": "vitamin-b12",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "vitamin-b2",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "vitamin-b2",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/vitamin-b2",
+          "speciesSlug": "vitamin-b2",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "vitamin-b3-niacin",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "vitamin-b3-niacin",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/vitamin-b3-niacin",
+          "speciesSlug": "vitamin-b3-niacin",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "vitamin-b5",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "vitamin-b5",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/vitamin-b5",
+          "speciesSlug": "vitamin-b5",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "vitamin-b6",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "vitamin-b6",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/vitamin-b6",
+          "speciesSlug": "vitamin-b6",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "vitamin-b7-biotin",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "vitamin-b7-biotin",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/vitamin-b7-biotin",
+          "speciesSlug": "vitamin-b7-biotin",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "vitamin-b9-folate-folic-acid",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "vitamin-b9-folate-folic-acid",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/vitamin-b9-folate-folic-acid",
+          "speciesSlug": "vitamin-b9-folate-folic-acid",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "vitamin-c",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "vitamin-c",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/vitamin-c",
+          "speciesSlug": "vitamin-c",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "vitamin-d-calciferol-cholecalciferol-ergocalciferol",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "vitamin-d-calciferol-cholecalciferol-ergocalciferol",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/vitamin-d-calciferol-cholecalciferol-ergocalciferol",
+          "speciesSlug": "vitamin-d-calciferol-cholecalciferol-ergocalciferol",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "vitamin-e",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "vitamin-e",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/vitamin-e",
+          "speciesSlug": "vitamin-e",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "vitamin-p-bioflavonoids",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "vitamin-p-bioflavonoids",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/vitamin-p-bioflavonoids",
+          "speciesSlug": "vitamin-p-bioflavonoids",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "wheat",
+    "tcmCount": 2,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "shenqu",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/shenqu",
+          "speciesSlug": "wheat",
+          "systemType": "tcm"
+        },
+        {
+          "profileSlug": "wheat",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/wheat",
+          "speciesSlug": "wheat",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "white-mulberry-leaf",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "white-mulberry-leaf",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/white-mulberry-leaf",
+          "speciesSlug": "white-mulberry-leaf",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "white-peony-root",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "white-peony-root",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/white-peony-root",
+          "speciesSlug": "white-peony-root",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "white-willow-bark",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "white-willow-bark",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/white-willow-bark",
+          "speciesSlug": "white-willow-bark",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "wild-yam",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "wild-yam",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/wild-yam",
+          "speciesSlug": "wild-yam",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "woad-or-glastum",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "woad-or-glastum",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/woad-or-glastum",
+          "speciesSlug": "woad-or-glastum",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "wuweizi",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "wuweizi",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/wuweizi",
+          "speciesSlug": "wuweizi",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "xinyihua",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "xinyihua",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/xinyihua",
+          "speciesSlug": "xinyihua",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "xiongcane",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "xiongcane",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/xiongcane",
+          "speciesSlug": "xiongcane",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "yuanzhi",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "yuanzhi",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/yuanzhi",
+          "speciesSlug": "yuanzhi",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "yunzhi",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "yunzhi",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/yunzhi",
+          "speciesSlug": "yunzhi",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "zexie",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "zexie",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/zexie",
+          "speciesSlug": "zexie",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "zhiko",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "zhiko",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/zhiko",
+          "speciesSlug": "zhiko",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "zhusun",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "zhusun",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/zhusun",
+          "speciesSlug": "zhusun",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "zinc",
+    "tcmCount": 0,
+    "westernCount": 1,
+    "profiles": {
+      "tcm": [],
+      "western": [
+        {
+          "profileSlug": "zinc",
+          "profileIRI": "https://www.herbapedia.org/system/western/profile/zinc",
+          "speciesSlug": "zinc",
+          "systemType": "western"
+        }
+      ]
+    }
+  },
+  {
+    "species": "zingiber-officinale",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "sheng-jiang",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/sheng-jiang",
+          "speciesSlug": "zingiber-officinale",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  },
+  {
+    "species": "zisuye",
+    "tcmCount": 1,
+    "westernCount": 0,
+    "profiles": {
+      "tcm": [
+        {
+          "profileSlug": "zisuye",
+          "profileIRI": "https://www.herbapedia.org/system/tcm/profile/zisuye",
+          "speciesSlug": "zisuye",
+          "systemType": "tcm"
+        }
+      ],
+      "western": []
+    }
+  }
+]

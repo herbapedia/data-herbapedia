@@ -1,11 +1,11 @@
 {
-  "@context": "../../schema/context/western.jsonld",
-  "@id": "western/clove-oil",
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/clove-oil",
   "@type": [
     "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
-    "@id": "plant/clove-oil"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/clove-oil"
   },
   "name": {
     "en": "Clove oil",

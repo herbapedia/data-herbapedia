@@ -1,0 +1,66 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/chemical/shogaol",
+  "@type": [
+    "botany:ChemicalCompound",
+    "schema:BioChemEntity"
+  ],
+  "name": {
+    "en": "[6]-Shogaol",
+    "zh-Hant": "薑烯酚",
+    "zh-Hans": "姜烯酚"
+  },
+  "iupacName": "1-(4-hydroxy-3-methoxyphenyl)dec-4-en-3-one",
+  "commonName": [
+    "6-Shogaol",
+    "[6]-Shogaol",
+    "Shogaol"
+  ],
+  "systematicName": "[6]-Shogaol; 1-(4-Hydroxy-3-methoxyphenyl)dec-4-en-3-one",
+  "molecularFormula": "C17H24O3",
+  "molecularWeight": 276.37,
+  "casNumber": "555-66-8",
+  "pubchemCID": "5281793",
+  "chebiID": "CHEBI:133111",
+  "inchi": "InChI=1S/C17H24O3/c1-3-4-5-6-7-13(19)8-9-14(20)15-10-11-16(21)17(12-15)22-2/h9-12,15,18H,3-8H2,1-2H3",
+  "inchiKey": "WOBHKVAHKUKJSR-UHFFFAOYSA-N",
+  "smiles": "CCCC=CC(=O)CCc1ccc(O)c(OC)c1",
+  "compoundClass": "Phenylpropanoid; Shogaol",
+  "description": {
+    "en": "The dehydration product of gingerol, formed when ginger is dried, heated, or stored. More pungent than gingerol due to its conjugated structure. Contributes significantly to the spiciness of dried ginger.",
+    "zh-Hant": "薑辣素脫水後的產物，在薑被乾燥、加熱或儲存時形成。由於其共軛結構，比薑辣素更辛辣。對乾薑的辣味貢獻顯著。"
+  },
+  "foundIn": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/ginger"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/zingiber-officinale"
+    }
+  ],
+  "pharmacology": [
+    "Anti-inflammatory (more potent than gingerol)",
+    "Antioxidant activity",
+    "Antiemetic effects",
+    "Neuroprotective effects",
+    "Anti-cancer potential"
+  ],
+  "bioavailability": {
+    "en": "More lipophilic than gingerol, potentially better absorption. Undergoes metabolism to diarylheptanoids."
+  },
+  "safetyData": {
+    "ld50": "Oral, rat: > 2.5 g/kg",
+    "toxicity": "Low toxicity at culinary doses",
+    "warnings": [
+      "High doses may cause gastrointestinal irritation"
+    ]
+  },
+  "provenance": {
+    "created": "2024-01-15",
+    "modified": "2026-02-20T17:59:34.448Z",
+    "source": "PubChem, ChEBI, Scientific Literature",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  }
+}

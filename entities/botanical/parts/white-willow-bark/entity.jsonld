@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/white-willow-bark",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "White Willow Bark Bark",
+    "zh-Hant": "白柳樹皮",
+    "zh-Hans": "白柳树皮"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/white-willow-bark"
+  },
+  "partType": "bark",
+  "description": {
+    "en": "The bark of Salix Alba, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.831Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

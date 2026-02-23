@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herbapedia.org/schema/json-schema/core/provenance.schema.json",
+  "title": "Provenance",
+  "description": "Data provenance and attribution information. Tracks the source, creation date, modification history, and licensing of entity data.",
+  "type": "object",
+  "properties": {
+    "source": {
+      "description": "Name or identifier of the primary data source.",
+      "type": "string",
+      "examples": ["vitaherbapedia.com", "TCMID", "manual entry"]
+    },
+    "sourceUrl": {
+      "description": "URL of the original data source.",
+      "type": "string",
+      "format": "uri",
+      "examples": ["https://www.vitaherbapedia.com/en/shop/chiherbs-en/ginseng/"]
+    },
+    "creator": {
+      "description": "Person or entity who created this data.",
+      "type": "string",
+      "examples": ["Herbapedia Team", "Dr. Jane Smith"]
+    },
+    "created": {
+      "description": "Timestamp when this entity was created (ISO 8601 format).",
+      "type": "string",
+      "format": "date-time",
+      "examples": ["2026-02-20T10:30:00.000Z"]
+    },
+    "modified": {
+      "description": "Timestamp when this entity was last modified (ISO 8601 format).",
+      "type": "string",
+      "format": "date-time",
+      "examples": ["2026-02-21T15:45:00.000Z"]
+    },
+    "license": {
+      "description": "License under which this data is provided. Should be a URI to the license.",
+      "type": "string",
+      "format": "uri",
+      "default": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "examples": [
+        "https://creativecommons.org/licenses/by-sa/4.0/",
+        "https://creativecommons.org/publicdomain/zero/1.0/"
+      ]
+    },
+    "version": {
+      "description": "Version of this entity data.",
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "examples": ["1.0.0", "2.1.0"]
+    },
+    "contributors": {
+      "description": "List of contributors who have modified this data.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "role": { "type": "string" },
+          "date": { "type": "string", "format": "date" }
+        }
+      }
+    },
+    "changes": {
+      "description": "Change log entries.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "date": { "type": "string", "format": "date-time" },
+          "description": { "type": "string" },
+          "contributor": { "type": "string" }
+        }
+      }
+    },
+    "confidence": {
+      "description": "Confidence level in the data accuracy (0-1 scale).",
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "examples": [0.95, 0.8]
+    },
+    "verified": {
+      "description": "Whether this data has been verified by an expert.",
+      "type": "boolean",
+      "default": false
+    },
+    "verifiedBy": {
+      "description": "Expert who verified this data.",
+      "type": "string"
+    },
+    "verifiedDate": {
+      "description": "Date of verification.",
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "additionalProperties": false,
+  "_documentation": {
+    "licenseOptions": [
+      {
+        "name": "CC BY-SA 4.0",
+        "uri": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "description": "Creative Commons Attribution-ShareAlike 4.0. Default license for Herbapedia content."
+      },
+      {
+        "name": "CC0 1.0",
+        "uri": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "description": "Public Domain Dedication. For content that should have no restrictions."
+      },
+      {
+        "name": "CC BY 4.0",
+        "uri": "https://creativecommons.org/licenses/by/4.0/",
+        "description": "Attribution only, no share-alike requirement."
+      }
+    ],
+    "usageNotes": [
+      "Always include 'source' to enable traceability",
+      "Update 'modified' timestamp whenever data changes",
+      "Use 'confidence' to indicate uncertainty in scraped or inferred data",
+      "Mark data as 'verified' after expert review"
+    ]
+  }
+}

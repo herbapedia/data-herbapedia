@@ -1,0 +1,35 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/preparation/curcumin-supplement",
+  "@type": [
+    "herbal:HerbalPreparation",
+    "schema:DietarySupplement"
+  ],
+  "name": {
+    "en": "Curcumin Supplement",
+    "zh-Hant": "薑黃素補充劑",
+    "zh-Hans": "姜黄素补充剂"
+  },
+  "derivedFrom": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/part/turmeric-rhizome"
+    }
+  ],
+  "preparationMethod": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/method/standardized"
+  },
+  "form": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/form/capsule"
+  },
+  "description": {
+    "en": "Isolated curcumin supplement, often combined with piperine for enhanced absorption."
+  },
+  "provenance": {
+    "created": "2026-02-21",
+    "source": "Herbapedia Team",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "image": "media/images/curcumin-supplement/curcumin-supplement.jpg"
+}

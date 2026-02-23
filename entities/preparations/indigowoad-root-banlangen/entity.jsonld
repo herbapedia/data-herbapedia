@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/preparation/indigowoad-root-banlangen",
+  "@type": [
+    "herbal:HerbalPreparation",
+    "schema:DietarySupplement"
+  ],
+  "name": {
+    "en": "Indigowoad Root (Banlangen)",
+    "zh-Hant": "板藍根",
+    "zh-Hans": "板蓝根"
+  },
+  "derivedFrom": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/indigowoad-root-banlangen"
+    }
+  ],
+  "preparationMethod": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/method/dried"
+  },
+  "form": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/form/whole"
+  },
+  "hasTCMProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/profile/indigowoad-root-banlangen"
+    }
+  ],
+  "safetyInfo": {},
+  "provenance": {
+    "created": "2026-02-20",
+    "source": "Generated from TCM profile",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "description": {
+    "en": "Herbal preparation derived from Indigowoad Root (Banlangen). Banlangen is made from the roots of the woad plant, which are harvested in northern China during the late autumn or early winter and dried. (Compare to Daqingye, which is made from the leaves of the s..."
+  },
+  "image": "media/images/indigowoad-root-banlangen/indigowoad-root-banlangen.jpg"
+}

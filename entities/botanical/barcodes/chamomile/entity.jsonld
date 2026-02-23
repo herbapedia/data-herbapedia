@@ -1,0 +1,51 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/botany.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/barcode/chamomile",
+  "@type": [
+    "botany:DNABarcode",
+    "schema:Dataset"
+  ],
+  "name": {
+    "en": "Chamomile DNA Barcode",
+    "zh-Hant": "洋甘菊DNA條碼",
+    "zh-Hans": "洋甘菊DNA条码"
+  },
+  "barcodes": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/chamomile"
+  },
+  "sequence": [
+    {
+      "region": "rbcL",
+      "sequence": "ATGTCACCACAAACAGAAACTAAAGCAAGTGTTGGATTATAAAGGTCAGTTCGATCTTTGAATAATTCATTATTTGATTTATTCAAATCCACGTCGACTTGTAGACAGATCTTTTATAAAATTGTAAAAAATCAATCTTAAGTTTTTTATTTGATCCTTTTTATTAATTCAGAATCTTTTGTATATCTATTCATGAGTTAAACTTTTTATTTGTATCAAAAATCACTATATATATATATATATATATAATACATATATATATATATATTTATTCCTTTTATTTATTTCTTATAATTCATTTTTTTTTTTTTTTAATATAGATATATATATATATTTTATTTTTTTATATTTTTTTTTAATATATATATATATATATATATATATATATATATATA",
+      "length": 555,
+      "genbankAccession": "KX279061"
+    },
+    {
+      "region": "matK",
+      "sequence": "TCTAGAGCAAGTCTTTGCCTTAAACTTGGTTTTTCTTATCAATTAAGAATCCTTTTATTTTCATTTTATTTGATGATTTTTCAAATATTATAAATCTTCAATTTTATATTTAATTTATCTTTTAATATTATTATCAATTTTTTTATTTATTTTTATTTTTATAAATAATTTGATACTTCTTTTATTAATACAACTTCAATATATATTTATTATATTTTATTTTATTTTTTTTCTATTATTAATAATTTATATAAATATTATTTCTTTAATATTTTAATTTTTTTTTTGAATTATTTTTTAATTTTTTTATATTTTAATATAATATTTAATATATTTATTTATTTTTTTTTAAATATTTTATATTTATTTTTTATATTTTTTTTATTTAATAATAATTTTATTTTTTTTTTTTTTAATATTAATATAATAATAA",
+      "length": 658,
+      "genbankAccession": "KX279062"
+    },
+    {
+      "region": "ITS2",
+      "sequence": "CGATCGATACGTTTGAATGCATTGATATTCGTCGTGATGATTCACGATGCTTTGCTGCGAGCTTCTCTCCGCTCATCGATGAAGAACGTAGCGAAATGCGATACTTGGTGTGAATTGCAGAATCCCGTGAACCATCGAGTCTTTGAACGCAAGTTGCGCCCGAAGCCTTTAGTTGAGGGTACTGATGTGAATCGTCTTTTATCAACACTATATAC",
+      "length": 227,
+      "genbankAccession": "AY722267"
+    }
+  ],
+  "adulterantDetection": {
+    "canDetect": [
+      "Chamaemelum nobile",
+      "Matricaria discoidea",
+      "Anthemis species"
+    ],
+    "description": {
+      "en": "DNA barcoding can distinguish German Chamomile from Roman Chamomile and other Asteraceae species"
+    }
+  },
+  "provenance": {
+    "created": "2026-02-21T00:00:00.000Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

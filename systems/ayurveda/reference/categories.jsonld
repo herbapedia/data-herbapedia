@@ -1,0 +1,178 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/system/ayurveda/profile/reference/categories",
+  "@type": [
+    "ayurveda:ReferenceCollection",
+    "skos:Collection"
+  ],
+  "name": {
+    "en": "Ayurveda Herb Categories",
+    "sa": "द्रव्यगण",
+    "zh-Hant": "阿育吠陀草藥類別"
+  },
+  "description": {
+    "en": "Classification categories for Ayurvedic herbs (dravyas) based on their therapeutic actions and effects on the body."
+  },
+  "members": [
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/category/dipaniya",
+      "@type": [
+        "ayurveda:Category"
+      ],
+      "name": {
+        "en": "Dipaniya",
+        "sa": "दीपनीय"
+      },
+      "description": {
+        "en": "Digestive stimulants that kindle agni (digestive fire)"
+      },
+      "effectOnDosha": {
+        "en": "Reduces Kapha, may increase Pitta"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/category/pachaniya",
+      "@type": [
+        "ayurveda:Category"
+      ],
+      "name": {
+        "en": "Pachaniya",
+        "sa": "पाचनीय"
+      },
+      "description": {
+        "en": "Digestives that help metabolize ama (toxins)"
+      },
+      "effectOnDosha": {
+        "en": "Balances all three doshas"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/category/sramsana",
+      "@type": [
+        "ayurveda:Category"
+      ],
+      "name": {
+        "en": "Sramsana",
+        "sa": "स्रंसन"
+      },
+      "description": {
+        "en": "Purgatives that eliminate excess pitta and kapha"
+      },
+      "effectOnDosha": {
+        "en": "Reduces Pitta and Kapha"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/category/bhedaniya",
+      "@type": [
+        "ayurveda:Category"
+      ],
+      "name": {
+        "en": "Bhedaniya",
+        "sa": "भेदनीय"
+      },
+      "description": {
+        "en": "Purgatives with strong breaking action"
+      },
+      "effectOnDosha": {
+        "en": "Strongly reduces Pitta and Kapha"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/category/anulomana",
+      "@type": [
+        "ayurveda:Category"
+      ],
+      "name": {
+        "en": "Anulomana",
+        "sa": "अनुलोमन"
+      },
+      "description": {
+        "en": "Herbs that promote downward movement of vata"
+      },
+      "effectOnDosha": {
+        "en": "Balances Vata"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/category/varnya",
+      "@type": [
+        "ayurveda:Category"
+      ],
+      "name": {
+        "en": "Varnya",
+        "sa": "वर्ण्य"
+      },
+      "description": {
+        "en": "Herbs that improve complexion and skin health"
+      },
+      "effectOnDosha": {
+        "en": "Pacifies all doshas, especially Pitta"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/category/rasayana",
+      "@type": [
+        "ayurveda:Category"
+      ],
+      "name": {
+        "en": "Rasayana",
+        "sa": "रसायन"
+      },
+      "description": {
+        "en": "Rejuvenatives that promote longevity and vitality"
+      },
+      "effectOnDosha": {
+        "en": "Balances all three doshas"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/category/medhya",
+      "@type": [
+        "ayurveda:Category"
+      ],
+      "name": {
+        "en": "Medhya",
+        "sa": "मेध्य"
+      },
+      "description": {
+        "en": "Nootropics that enhance intellect and memory"
+      },
+      "effectOnDosha": {
+        "en": "Balances all doshas, especially Vata"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/category/jivaniya",
+      "@type": [
+        "ayurveda:Category"
+      ],
+      "name": {
+        "en": "Jivaniya",
+        "sa": "जीवनीय"
+      },
+      "description": {
+        "en": "Vitalizers that promote life force"
+      },
+      "effectOnDosha": {
+        "en": "Increases all dhatus"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/category/vedanasthapana",
+      "@type": [
+        "ayurveda:Category"
+      ],
+      "name": {
+        "en": "Vedanasthapana",
+        "sa": "वेदनास्थापन"
+      },
+      "description": {
+        "en": "Analgesics that relieve pain"
+      },
+      "effectOnDosha": {
+        "en": "Balances Vata"
+      }
+    }
+  ]
+}

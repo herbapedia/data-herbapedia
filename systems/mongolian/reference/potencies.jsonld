@@ -1,0 +1,630 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/mongolian.jsonld",
+  "@id": "https://www.herbapedia.org/system/mongolian/profile/reference/potencies",
+  "@type": [
+    "mongolian:ReferenceCollection",
+    "skos:Collection"
+  ],
+  "name": {
+    "en": "Mongolian Seventeen Potencies",
+    "mn": "Арван долоон нанс"
+  },
+  "description": {
+    "en": "The Seventeen Potencies (Арван долоон нанс - Arvan Doloon Nans) in Mongolian Traditional Medicine. These are the post-digestive qualities that determine how a substance affects the body."
+  },
+  "members": [
+    {
+      "@id": "https://www.herbapedia.org/system/mongolian/profile/potency/heavy",
+      "@type": [
+        "mongolian:Potency"
+      ],
+      "name": {
+        "en": "Heavy",
+        "mn": "хүнд",
+        "bo": "ལྕི་"
+      },
+      "mongolianName": "хүнд",
+      "tibetanName": "ལྕི་",
+      "tibetanWylie": "lci",
+      "englishName": "Heavy",
+      "oppositePotency": {
+        "@id": "https://www.herbapedia.org/system/mongolian/profile/potency/light"
+      },
+      "pairNumber": 1,
+      "effectOnRoots": {
+        "heyi": "decreases",
+        "xila": "decreases",
+        "badagan": "increases"
+      },
+      "physiologicalEffect": {
+        "en": "Grounds, stabilizes, promotes sleep, nourishes tissues"
+      },
+      "indications": [
+        "vata disorders",
+        "insomnia",
+        "emaciation"
+      ],
+      "exampleSubstances": [
+        "ghee",
+        "meat",
+        "wheat"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/mongolian/profile/potency/light",
+      "@type": [
+        "mongolian:Potency"
+      ],
+      "name": {
+        "en": "Light",
+        "mn": "хөнгөн",
+        "bo": "ཡང་"
+      },
+      "mongolianName": "хөнгөн",
+      "tibetanName": "ཡང་",
+      "tibetanWylie": "yang",
+      "englishName": "Light",
+      "oppositePotency": {
+        "@id": "https://www.herbapedia.org/system/mongolian/profile/potency/heavy"
+      },
+      "pairNumber": 1,
+      "effectOnRoots": {
+        "heyi": "increases",
+        "xila": "increases",
+        "badagan": "decreases"
+      },
+      "physiologicalEffect": {
+        "en": "Lightens tissues, promotes digestion, reduces kapha"
+      },
+      "indications": [
+        "kapha disorders",
+        "obesity",
+        "sluggish digestion"
+      ],
+      "exampleSubstances": [
+        "barley",
+        "corn",
+        "honey"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/mongolian/profile/potency/oily",
+      "@type": [
+        "mongolian:Potency"
+      ],
+      "name": {
+        "en": "Oily",
+        "mn": "тослог",
+        "bo": "སྣུམ་"
+      },
+      "mongolianName": "тослог",
+      "tibetanName": "སྣུམ་",
+      "tibetanWylie": "snum",
+      "englishName": "Oily",
+      "oppositePotency": {
+        "@id": "https://www.herbapedia.org/system/mongolian/profile/potency/rough"
+      },
+      "pairNumber": 2,
+      "effectOnRoots": {
+        "heyi": "decreases",
+        "xila": "increases",
+        "badagan": "increases"
+      },
+      "physiologicalEffect": {
+        "en": "Lubricates, nourishes, promotes flexibility"
+      },
+      "indications": [
+        "dryness",
+        "vata disorders",
+        "constipation"
+      ],
+      "exampleSubstances": [
+        "ghee",
+        "sesame oil",
+        "nuts"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/mongolian/profile/potency/rough",
+      "@type": [
+        "mongolian:Potency"
+      ],
+      "name": {
+        "en": "Rough",
+        "mn": "хатуу",
+        "bo": "རྩུབ་"
+      },
+      "mongolianName": "хатуу",
+      "tibetanName": "རྩུབ་",
+      "tibetanWylie": "rtsub",
+      "englishName": "Rough",
+      "oppositePotency": {
+        "@id": "https://www.herbapedia.org/system/mongolian/profile/potency/oily"
+      },
+      "pairNumber": 2,
+      "effectOnRoots": {
+        "heyi": "increases",
+        "xila": "decreases",
+        "badagan": "decreases"
+      },
+      "physiologicalEffect": {
+        "en": "Dries, reduces excess, clears accumulation"
+      },
+      "indications": [
+        "kapha disorders",
+        "obesity",
+        "excess moisture"
+      ],
+      "exampleSubstances": [
+        "barley",
+        "legumes",
+        "dried foods"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/mongolian/profile/potency/cool",
+      "@type": [
+        "mongolian:Potency"
+      ],
+      "name": {
+        "en": "Cool",
+        "mn": "сэрүүн",
+        "bo": "བསིལ་"
+      },
+      "mongolianName": "сэрүүн",
+      "tibetanName": "བསིལ་",
+      "tibetanWylie": "bsil",
+      "englishName": "Cool",
+      "oppositePotency": {
+        "@id": "https://www.herbapedia.org/system/mongolian/profile/potency/hot"
+      },
+      "pairNumber": 3,
+      "effectOnRoots": {
+        "heyi": "increases",
+        "xila": "decreases",
+        "badagan": "increases"
+      },
+      "physiologicalEffect": {
+        "en": "Cools body, reduces fever, calms inflammation"
+      },
+      "indications": [
+        "fever",
+        "inflammation",
+        "pitta disorders"
+      ],
+      "exampleSubstances": [
+        "amalaki",
+        "coconut",
+        "sandalwood"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/mongolian/profile/potency/hot",
+      "@type": [
+        "mongolian:Potency"
+      ],
+      "name": {
+        "en": "Hot",
+        "mn": "халуун",
+        "bo": "ཚ་"
+      },
+      "mongolianName": "халуун",
+      "tibetanName": "ཚ་",
+      "tibetanWylie": "tsha",
+      "englishName": "Hot",
+      "oppositePotency": {
+        "@id": "https://www.herbapedia.org/system/mongolian/profile/potency/cool"
+      },
+      "pairNumber": 3,
+      "effectOnRoots": {
+        "heyi": "decreases",
+        "xila": "increases",
+        "badagan": "decreases"
+      },
+      "physiologicalEffect": {
+        "en": "Increases body heat, promotes digestion, reduces cold"
+      },
+      "indications": [
+        "cold conditions",
+        "kapha disorders",
+        "vata disorders"
+      ],
+      "exampleSubstances": [
+        "ginger",
+        "pepper",
+        "garlic"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/mongolian/profile/potency/dull",
+      "@type": [
+        "mongolian:Potency"
+      ],
+      "name": {
+        "en": "Dull/Blunt",
+        "mn": "маш",
+        "bo": "རྟུལ་"
+      },
+      "mongolianName": "маш",
+      "tibetanName": "རྟུལ་",
+      "tibetanWylie": "rtul",
+      "englishName": "Dull",
+      "oppositePotency": {
+        "@id": "https://www.herbapedia.org/system/mongolian/profile/potency/sharp"
+      },
+      "pairNumber": 4,
+      "effectOnRoots": {
+        "heyi": "decreases",
+        "xila": "decreases",
+        "badagan": "increases"
+      },
+      "physiologicalEffect": {
+        "en": "Slows, calms, reduces intensity"
+      },
+      "indications": [
+        "hyperactive conditions",
+        "pitta disorders"
+      ],
+      "exampleSubstances": [
+        "dairy",
+        "grains"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/mongolian/profile/potency/sharp",
+      "@type": [
+        "mongolian:Potency"
+      ],
+      "name": {
+        "en": "Sharp/Penetrating",
+        "mn": "ширүүн",
+        "bo": "རྣོ་"
+      },
+      "mongolianName": "ширүүн",
+      "tibetanName": "རྣོ་",
+      "tibetanWylie": "rno",
+      "englishName": "Sharp",
+      "oppositePotency": {
+        "@id": "https://www.herbapedia.org/system/mongolian/profile/potency/dull"
+      },
+      "pairNumber": 4,
+      "effectOnRoots": {
+        "heyi": "increases",
+        "xila": "increases",
+        "badagan": "decreases"
+      },
+      "physiologicalEffect": {
+        "en": "Penetrates, breaks down accumulations"
+      },
+      "indications": [
+        "tumors",
+        "accumulations",
+        "kapha disorders"
+      ],
+      "exampleSubstances": [
+        "pungent herbs",
+        "alkali"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/mongolian/profile/potency/stable",
+      "@type": [
+        "mongolian:Potency"
+      ],
+      "name": {
+        "en": "Stable",
+        "mn": "тогтвортой",
+        "bo": "བརྟན་"
+      },
+      "mongolianName": "тогтвортой",
+      "tibetanName": "བརྟན་",
+      "tibetanWylie": "brtan",
+      "englishName": "Stable",
+      "oppositePotency": {
+        "@id": "https://www.herbapedia.org/system/mongolian/profile/potency/mobile"
+      },
+      "pairNumber": 5,
+      "effectOnRoots": {
+        "heyi": "decreases",
+        "xila": "decreases",
+        "badagan": "increases"
+      },
+      "physiologicalEffect": {
+        "en": "Provides stability, grounding"
+      },
+      "indications": [
+        "vata disorders",
+        "restlessness"
+      ],
+      "exampleSubstances": [
+        "root vegetables",
+        "meat"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/mongolian/profile/potency/mobile",
+      "@type": [
+        "mongolian:Potency"
+      ],
+      "name": {
+        "en": "Mobile",
+        "mn": "хөдөлгөөнт",
+        "bo": "གཡོ་"
+      },
+      "mongolianName": "хөдөлгөөнт",
+      "tibetanName": "གཡོ་",
+      "tibetanWylie": "gyo",
+      "englishName": "Mobile",
+      "oppositePotency": {
+        "@id": "https://www.herbapedia.org/system/mongolian/profile/potency/stable"
+      },
+      "pairNumber": 5,
+      "effectOnRoots": {
+        "heyi": "increases",
+        "xila": "increases",
+        "badagan": "decreases"
+      },
+      "physiologicalEffect": {
+        "en": "Promotes movement, circulation"
+      },
+      "indications": [
+        "stagnation",
+        "kapha disorders"
+      ],
+      "exampleSubstances": [
+        "light foods",
+        "fermented foods"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/mongolian/profile/potency/soft",
+      "@type": [
+        "mongolian:Potency"
+      ],
+      "name": {
+        "en": "Soft/Smooth",
+        "mn": "зөөлөн",
+        "bo": "མཉེན་"
+      },
+      "mongolianName": "зөөлөн",
+      "tibetanName": "མཉེན་",
+      "tibetanWylie": "mnyen",
+      "englishName": "Soft",
+      "oppositePotency": {
+        "@id": "https://www.herbapedia.org/system/mongolian/profile/potency/hard"
+      },
+      "pairNumber": 6,
+      "effectOnRoots": {
+        "heyi": "decreases",
+        "xila": "decreases",
+        "badagan": "increases"
+      },
+      "physiologicalEffect": {
+        "en": "Soothes, promotes healing"
+      },
+      "indications": [
+        "roughness",
+        "vata disorders"
+      ],
+      "exampleSubstances": [
+        "ghee",
+        "milk",
+        "oats"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/mongolian/profile/potency/hard",
+      "@type": [
+        "mongolian:Potency"
+      ],
+      "name": {
+        "en": "Hard",
+        "mn": "хатуу",
+        "bo": "སྲ་"
+      },
+      "mongolianName": "хатуу",
+      "tibetanName": "སྲ་",
+      "tibetanWylie": "srang",
+      "englishName": "Hard",
+      "oppositePotency": {
+        "@id": "https://www.herbapedia.org/system/mongolian/profile/potency/soft"
+      },
+      "pairNumber": 6,
+      "effectOnRoots": {
+        "heyi": "increases",
+        "xila": "increases",
+        "badagan": "decreases"
+      },
+      "physiologicalEffect": {
+        "en": "Hardens, astringes"
+      },
+      "indications": [
+        "laxity",
+        "excess moisture"
+      ],
+      "exampleSubstances": [
+        "astringent herbs"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/mongolian/profile/potency/dry",
+      "@type": [
+        "mongolian:Potency"
+      ],
+      "name": {
+        "en": "Dry",
+        "mn": "хуурай",
+        "bo": "བསྐམ་"
+      },
+      "mongolianName": "хуурай",
+      "tibetanName": "བསྐམ་",
+      "tibetanWylie": "bskam",
+      "englishName": "Dry",
+      "oppositePotency": {
+        "@id": "https://www.herbapedia.org/system/mongolian/profile/potency/moist"
+      },
+      "pairNumber": 7,
+      "effectOnRoots": {
+        "heyi": "increases",
+        "xila": "increases",
+        "badagan": "decreases"
+      },
+      "physiologicalEffect": {
+        "en": "Dries moisture, reduces kapha"
+      },
+      "indications": [
+        "kapha disorders",
+        "edema",
+        "excess moisture"
+      ],
+      "exampleSubstances": [
+        "barley",
+        "legumes",
+        "bitter herbs"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/mongolian/profile/potency/moist",
+      "@type": [
+        "mongolian:Potency"
+      ],
+      "name": {
+        "en": "Moist",
+        "mn": "чийглэг",
+        "bo": "བརླན་"
+      },
+      "mongolianName": "чийглэг",
+      "tibetanName": "བརླན་",
+      "tibetanWylie": "brlan",
+      "englishName": "Moist",
+      "oppositePotency": {
+        "@id": "https://www.herbapedia.org/system/mongolian/profile/potency/dry"
+      },
+      "pairNumber": 7,
+      "effectOnRoots": {
+        "heyi": "decreases",
+        "xila": "decreases",
+        "badagan": "increases"
+      },
+      "physiologicalEffect": {
+        "en": "Moistens, lubricates"
+      },
+      "indications": [
+        "dryness",
+        "vata disorders"
+      ],
+      "exampleSubstances": [
+        "dairy",
+        "oils",
+        "sweet fruits"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/mongolian/profile/potency/clean",
+      "@type": [
+        "mongolian:Potency"
+      ],
+      "name": {
+        "en": "Clean/Clear",
+        "mn": "цэвэр",
+        "bo": "གཙང་"
+      },
+      "mongolianName": "цэвэр",
+      "tibetanName": "གཙང་",
+      "tibetanWylie": "gtsang",
+      "englishName": "Clean",
+      "oppositePotency": {
+        "@id": "https://www.herbapedia.org/system/mongolian/profile/potency/sticky"
+      },
+      "pairNumber": 8,
+      "effectOnRoots": {
+        "heyi": "increases",
+        "xila": "increases",
+        "badagan": "decreases"
+      },
+      "physiologicalEffect": {
+        "en": "Purifies, clears accumulation"
+      },
+      "indications": [
+        "accumulation",
+        "toxins"
+      ],
+      "exampleSubstances": [
+        "honey",
+        "sharp substances"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/mongolian/profile/potency/sticky",
+      "@type": [
+        "mongolian:Potency"
+      ],
+      "name": {
+        "en": "Sticky",
+        "mn": "наалдамхай",
+        "bo": "སྣུམ་ཆགས་"
+      },
+      "mongolianName": "наалдамхай",
+      "tibetanName": "སྣུམ་ཆགས་",
+      "tibetanWylie": "snum-chags",
+      "englishName": "Sticky",
+      "oppositePotency": {
+        "@id": "https://www.herbapedia.org/system/mongolian/profile/potency/clean"
+      },
+      "pairNumber": 8,
+      "effectOnRoots": {
+        "heyi": "decreases",
+        "xila": "decreases",
+        "badagan": "increases"
+      },
+      "physiologicalEffect": {
+        "en": "Binds, promotes healing"
+      },
+      "indications": [
+        "ulcers",
+        "wounds"
+      ],
+      "exampleSubstances": [
+        "resins",
+        "gums",
+        "mucilaginous herbs"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/mongolian/profile/potency/blunt",
+      "@type": [
+        "mongolian:Potency"
+      ],
+      "name": {
+        "en": "Blunt (Independent)",
+        "mn": "бүдүүн",
+        "bo": "ཐུམ་"
+      },
+      "mongolianName": "бүдүүн",
+      "tibetanName": "ཐུམ་",
+      "tibetanWylie": "thumb",
+      "englishName": "Blunt",
+      "pairNumber": 9,
+      "effectOnRoots": {
+        "heyi": "neutral",
+        "xila": "neutral",
+        "badagan": "neutral"
+      },
+      "physiologicalEffect": {
+        "en": "Neither increases nor decreases any root; neutral effect"
+      },
+      "indications": [
+        "neutral therapy"
+      ],
+      "exampleSubstances": [
+        "certain prepared medicines"
+      ],
+      "notes": "This potency does not have an opposite and is considered independent"
+    }
+  ],
+  "_documentation": {
+    "classicalReference": "Four Tantras (རྒྱུད་བཞི་), explanatory tantra",
+    "eightPairs": "Eight pairs of opposing potencies plus one independent (blunt)",
+    "clinicalApplication": "Potencies determine the post-digestive effect and are essential for treatment planning"
+  }
+}

@@ -1,12 +1,12 @@
 {
-  "@context": "../../schema/context/western.jsonld",
-  "@id": "western/mint",
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/mint",
   "@type": [
     "western:Herb",
     "schema:DietarySupplement"
   ],
   "derivedFromPlant": {
-    "@id": "plant/mint"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/mint"
   },
   "name": {
     "en": "Mint",
@@ -16,10 +16,10 @@
   "scientificName": "Mentha haplocalyx",
   "hasOrganAffinity": [
     {
-      "@id": "organ/respiratory"
+      "@id": "https://www.herbapedia.org/system/western/organ/respiratory"
     },
     {
-      "@id": "organ/liver"
+      "@id": "https://www.herbapedia.org/system/western/organ/liver"
     }
   ],
   "westernHistory": {

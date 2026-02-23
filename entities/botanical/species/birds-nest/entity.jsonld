@@ -1,0 +1,37 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/birds-nest",
+  "@type": [
+    "herbapedia:ZoologicalSource",
+    "schema:Thing"
+  ],
+  "name": {
+    "en": "Bird&#039;s Nest",
+    "zh-Hant": "燕窩",
+    "zh-Hans": "燕窩"
+  },
+  "scientificName": "Swiftlet's Nest",
+  "family": null,
+  "genus": null,
+  "description": {
+    "en": "Saliva nests of a few species of cave swiftlets of genera Collocalia, family Apodidae.\n",
+    "zh-Hant": "燕窩是一種珍貴的天然滋補品，富含蛋白質、氨基酸和多種微量元素。在中醫藥學中被視為滋陰潤燥、益氣補虛的上品，具有顯著的營養保健價值。",
+    "zh-Hans": "燕窩是一种珍貴的天然滋补品，富含蛋白质、氨基酸和多种微量元素。在中医药学中被視为滋阴润燥、益气补虚的上品，具有顯著的營养保健價值。"
+  },
+  "image": "media/images/swiftlets-nest/main.jpg",
+  "provenance": {
+    "created": "2026-02-18T09:14:54.474Z",
+    "modified": "2026-02-21T01:46:20.747Z",
+    "migratedFrom": "entities/plants/birds-nest/entity.jsonld",
+    "source": "vitaherbapedia.com",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "classificationNote": "Reclassified as ZoologicalSource"
+  },
+  "sourceType": "zoological",
+  "sourceSubType": "animal-part",
+  "hasTCMProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/profile/birds-nest"
+    }
+  ]
+}

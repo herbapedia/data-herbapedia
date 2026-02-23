@@ -1,0 +1,173 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herbapedia.org/schema/json-schema/reference/ayurveda-guna.schema.json",
+  "title": "Ayurveda Guna",
+  "description": "Ayurvedic quality/attribute (गुण - Guna). One of the 20 gunas (10 pairs of opposites) that describe the qualitative properties of substances. These qualities determine how a substance affects the body and doshas.",
+  "type": "object",
+  "allOf": [
+    { "$ref": "./reference-entity.schema.json" }
+  ],
+  "required": ["@id", "@type", "name"],
+  "properties": {
+    "@id": {
+      "description": "Unique identifier: ayurveda/guna/{slug}.",
+      "type": "string",
+      "pattern": "^ayurveda/guna/[a-z0-9-]+$",
+      "examples": [
+        "ayurveda/guna/guru",
+        "ayurveda/guna/laghu",
+        "ayurveda/guna/sheeta",
+        "ayurveda/guna/ushna",
+        "ayurveda/guna/snigdha",
+        "ayurveda/guna/ruksha",
+        "ayurveda/guna/manda",
+        "ayurveda/guna/tikshna",
+        "ayurveda/guna/sthira",
+        "ayurveda/guna/sara"
+      ]
+    },
+    "@type": {
+      "type": "array",
+      "items": { "type": "string" },
+      "contains": { "const": "ayurveda:Guna" },
+      "examples": [["ayurveda:Guna"]]
+    },
+    "name": {
+      "description": "Guna name in Sanskrit and English.",
+      "$ref": "../core/language-map.schema.json",
+      "examples": [{ "sa": "गुरु", "en": "Heavy" }]
+    },
+    "sanskritName": {
+      "description": "Sanskrit name in Devanagari.",
+      "type": "string",
+      "examples": ["गुरु", "लघु", "शीत", "उष्ण"]
+    },
+    "sanskritTransliteration": {
+      "description": "IAST transliteration.",
+      "type": "string",
+      "examples": ["guru", "laghu", "śīta", "uṣṇa"]
+    },
+    "englishName": {
+      "description": "English translation.",
+      "type": "string",
+      "examples": ["Heavy", "Light", "Cold", "Hot"]
+    },
+    "symbol": {
+      "description": "Devanagari symbol.",
+      "type": "string",
+      "examples": ["ग", "ल", "शी", "उ"]
+    },
+    "oppositeOf": {
+      "description": "The opposing guna.",
+      "$ref": "../core/iri-reference.schema.json"
+    },
+    "pairNumber": {
+      "description": "Which of the 10 pairs this guna belongs to.",
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 10
+    },
+    "pairName": {
+      "description": "Name of the guna pair.",
+      "$ref": "../core/language-map.schema.json",
+      "examples": [{ "sa": "गुरु-लघु", "en": "Heavy-Light" }]
+    },
+    "effectOnDoshas": {
+      "description": "How this guna affects each dosha.",
+      "type": "object",
+      "properties": {
+        "vata": {
+          "type": "string",
+          "enum": ["increases", "decreases", "neutral"]
+        },
+        "pitta": {
+          "type": "string",
+          "enum": ["increases", "decreases", "neutral"]
+        },
+        "kapha": {
+          "type": "string",
+          "enum": ["increases", "decreases", "neutral"]
+        }
+      }
+    },
+    "physiologicalEffect": {
+      "description": "Effect on body and physiology.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "psychologicalEffect": {
+      "description": "Effect on mind and emotions.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "indications": {
+      "description": "Conditions where this guna is beneficial.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "excessEffects": {
+      "description": "Effects of excess.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "exampleSubstances": {
+      "description": "Substances with this quality.",
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": true,
+  "_documentation": {
+    "iriPattern": "ayurveda/guna/{slug}",
+    "directory": "systems/ayurveda/reference/gunas.jsonld",
+    "tenGunaPairs": {
+      "1_guru_laghu": {
+        "pair": "Heavy-Light",
+        "sanskrit": "गुरु-लघु",
+        "effect": "Affects digestion, strength, tissue building"
+      },
+      "2_sheeta_ushna": {
+        "pair": "Cold-Hot",
+        "sanskrit": "शीत-उष्ण",
+        "effect": "Affects metabolism, digestion, doshas"
+      },
+      "3_snigdha_ruksha": {
+        "pair": "Oily/Dry",
+        "sanskrit": "स्निग्ध-रूक्ष",
+        "effect": "Affects tissues, elimination, skin"
+      },
+      "4_manda_tikshna": {
+        "pair": "Dull-Sharp",
+        "sanskrit": "मन्द-तीक्ष्ण",
+        "effect": "Affects penetration, action speed"
+      },
+      "5_sthira_sara": {
+        "pair": "Stable-Mobile",
+        "sanskrit": "स्थिर-सर",
+        "effect": "Affects movement, stability"
+      },
+      "6_mridu_kathina": {
+        "pair": "Soft-Hard",
+        "sanskrit": "मृदु-कठिन",
+        "effect": "Affects tissue texture, digestion"
+      },
+      "7_vishada_picchila": {
+        "pair": "Clear-Slimy",
+        "sanskrit": "विशद-पिच्छिल",
+        "effect": "Affects clarity, binding"
+      },
+      "8_shlakshna_khara": {
+        "pair": "Smooth-Rough",
+        "sanskrit": "श्लक्ष्ण-खर",
+        "effect": "Affects texture, absorption"
+      },
+      "9_sandra_drava": {
+        "pair": "Solid-Liquid",
+        "sanskrit": "सन्द्र-द्रव",
+        "effect": "Affects form, flow"
+      },
+      "10_sthula_sukshma": {
+        "pair": "Gross-Subtle",
+        "sanskrit": "स्थूल-सूक्ष्म",
+        "effect": "Affects penetration, depth of action"
+      }
+    }
+  }
+}

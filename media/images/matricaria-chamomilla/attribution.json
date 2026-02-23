@@ -1,0 +1,20 @@
+{
+  "fileName": "main.jpg",
+  "species": "Matricaria chamomilla",
+  "commonName": "Chamomile",
+  "source": {
+    "url": "https://commons.wikimedia.org/wiki/File:Wild_Chamomile_(Matricaria_maritima)_-_William_Catto_-_ABDAG016173.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Wild_Chamomile_%28Matricaria_maritima%29_-_William_Catto_-_ABDAG016173.jpg",
+    "platform": "Wikimedia Commons"
+  },
+  "attribution": {
+    "creator": "William Catto",
+    "license": "Public Domain Mark 1.0",
+    "spdxId": "CC-PDDC",
+    "spdxUrl": "https://spdx.org/licenses/CC-PDDC.html",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "title": "Wild Chamomile (Matricaria maritima) - William Catto - ABDAG016173"
+  },
+  "downloaded": "2026-02-23",
+  "notes": "Original depicts Matricaria maritima (similar to M. chamomilla)"
+}

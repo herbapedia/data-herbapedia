@@ -1,0 +1,115 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/ginger",
+  "@type": [
+    "botany:PlantSpecies",
+    "herbapedia:BotanicalSource",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Ginger",
+    "zh-Hant": "薑",
+    "zh-Hans": "姜",
+    "hi": "अदरक",
+    "sa": "नागर",
+    "fa": "زنجبیل",
+    "mn": "га"
+  },
+  "scientificName": "Zingiber officinale",
+  "scientificNameAuthorship": "Roscoe",
+  "family": "Zingiberaceae",
+  "genus": "Zingiber",
+  "specificEpithet": "officinale",
+  "taxonomicClassification": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Liliopsida",
+    "order": "Zingiberales",
+    "family": "Zingiberaceae",
+    "genus": "Zingiber"
+  },
+  "commonName": {
+    "en": "Ginger",
+    "zh-Hant": "薑",
+    "zh-Hans": "姜",
+    "hi": "अदरक",
+    "ja": "生姜",
+    "ko": "생강"
+  },
+  "description": {
+    "en": "A flowering plant whose rhizome (underground stem) is widely used as a spice and in traditional medicine. Native to Southeast Asia, it is now cultivated throughout the tropics and subtropics.",
+    "zh-Hant": "多年生草本植物，其根莖廣泛用作香料和中藥。原產於東南亞，現於熱帶和亞熱帶地區廣泛栽培。"
+  },
+  "habitat": {
+    "en": "Warm, humid tropical and subtropical regions. Thrives in well-drained, fertile soil with partial shade."
+  },
+  "origin": {
+    "en": "Southeast Asia, likely the Indo-Malayan region. Cultivated for over 5,000 years."
+  },
+  "geographicalDistribution": {
+    "en": "Widely cultivated in India, China, Nigeria, Indonesia, Bangladesh, Thailand, Philippines, Jamaica, and other tropical regions."
+  },
+  "growthForm": "herb",
+  "lifecycle": "perennial",
+  "hasParts": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/part/ginger-rhizome"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/part/ginger-stem"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/part/ginger-leaf"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/part/ginger-flower"
+    }
+  ],
+  "containsChemical": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/gingerol"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/shogaol"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/zingerone"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/zingiberene"
+    }
+  ],
+  "hasChemicalProfile": {
+    "@id": "https://www.herbapedia.org/entity/botanical/chemical-profile/ginger-rhizome"
+  },
+  "hasDNABarcode": {
+    "@id": "https://www.herbapedia.org/entity/botanical/barcode/ginger"
+  },
+  "gbifID": "2751590",
+  "powoID": "83921-2",
+  "wikidataID": "Q1097047",
+  "conservationStatus": "LC",
+  "provenance": {
+    "created": "2024-01-15",
+    "modified": "2026-02-21T01:46:20.751Z",
+    "source": "GBIF, POWO, traditional medicine texts",
+    "contributors": [
+      "Herbapedia Team"
+    ],
+    "classificationNote": "Reclassified as BotanicalSource"
+  },
+  "image": "media/images/zingiber-officinale/main.jpg",
+  "sourceType": "botanical",
+  "sourceSubType": "plant",
+  "hasWesternProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/western/profile/ginger"
+    }
+  ],
+  "sameAs": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/zingiber-officinale"
+    }
+  ],
+  "ncbiTaxonID": "97728"
+}

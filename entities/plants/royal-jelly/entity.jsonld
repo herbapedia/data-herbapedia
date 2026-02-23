@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/royal-jelly",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/royal-jelly",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"

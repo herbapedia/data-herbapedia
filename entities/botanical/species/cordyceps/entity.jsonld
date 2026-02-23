@@ -1,0 +1,54 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/cordyceps",
+  "@type": [
+    "herbapedia:BotanicalSource",
+    "mycology:FungalSpecies",
+    "schema:Thing"
+  ],
+  "name": {
+    "en": "Cordyceps",
+    "zh-Hant": "冬蟲夏草",
+    "zh-Hans": "冬蟲夏草"
+  },
+  "scientificName": "Cordyceps sinensis",
+  "family": null,
+  "genus": null,
+  "description": {
+    "en": "The stroma formed by Cordyceps sinensis (berk.) Sacc. parasitised on the larva of hepialus armoricanus Oberthru. Both the stroma and the dead larva are used medicinally.\n",
+    "zh-Hant": "冬蟲夏草（學名：Cordyceps sinensis）是一種具有藥用價值的天然產物。現代藥理學研究證實其含有多種生物活性成分，在傳統醫學和現代保健領域均有重要應用價值。",
+    "zh-Hans": "冬蟲夏草（学名：Cordyceps sinensis）是一种具有药用價值的天然產物。現代药理学研究证实其含有多种生物活性成分，在传统医学和現代保健領域均有重要应用價值。"
+  },
+  "image": "media/images/cordyceps-sinensis/main.jpg",
+  "gbifID": 2560562,
+  "containsChemical": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/polysaccharides"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/nucleosides"
+    }
+  ],
+  "provenance": {
+    "created": "2026-02-18T09:15:05.035Z",
+    "modified": "2026-02-21T01:46:20.749Z",
+    "migratedFrom": "entities/plants/cordyceps/entity.jsonld",
+    "source": "vitaherbapedia.com",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "classificationNote": "Reclassified as BotanicalSource"
+  },
+  "hasParts": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/part/cordyceps-whole-plant"
+    }
+  ],
+  "wikidataID": "Q312238",
+  "sourceType": "botanical",
+  "sourceSubType": "fungus",
+  "hasTCMProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/profile/cordyceps"
+    }
+  ],
+  "ncbiTaxonID": "60485"
+}

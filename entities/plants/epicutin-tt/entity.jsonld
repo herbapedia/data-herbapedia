@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/epicutin-tt",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/epicutin-tt",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"

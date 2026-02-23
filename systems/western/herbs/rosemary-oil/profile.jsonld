@@ -1,11 +1,11 @@
 {
-  "@context": "../../schema/context/western.jsonld",
-  "@id": "western/rosemary-oil",
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/rosemary-oil",
   "@type": [
     "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
-    "@id": "plant/rosemary-oil"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/rosemary-oil"
   },
   "name": {
     "en": "Rosemary oil",

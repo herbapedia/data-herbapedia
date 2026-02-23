@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/shegan-root",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Shegan Root",
+    "zh-Hant": "射干",
+    "zh-Hans": "射干"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/shegan"
+  },
+  "partType": "root",
+  "description": {
+    "en": "The root of Belamcanda chinensis, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.827Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

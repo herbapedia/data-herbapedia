@@ -1,0 +1,64 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/chemical/tannins",
+  "@type": [
+    "botany:ChemicalCompound",
+    "schema:BioChemEntity"
+  ],
+  "name": {
+    "en": "Tannins",
+    "zh-Hant": "單寧",
+    "zh-Hans": "单宁"
+  },
+  "commonName": [
+    "Tannins",
+    "Tannic acid",
+    "Plant polyphenols"
+  ],
+  "chebiID": "CHEBI:26848",
+  "compoundClass": "Polyphenols; Tannins",
+  "description": {
+    "en": "Water-soluble polyphenolic compounds with molecular weights ranging from 500 to over 3000 Daltons. Capable of precipitating proteins and alkaloids. Classified into hydrolyzable tannins (gallotannins, ellagitannins) and condensed tannins (proanthocyanidins)."
+  },
+  "pharmacology": [
+    "Astringent activity (protein precipitation)",
+    "Antioxidant effects",
+    "Antimicrobial activity",
+    "Anti-diarrheal effects",
+    "Wound healing promotion",
+    "Metal chelation"
+  ],
+  "bioavailability": {
+    "en": "Poorly absorbed; primarily exert local effects in the gastrointestinal tract. Metabolized by gut microbiota to smaller phenolic compounds."
+  },
+  "safetyData": {
+    "toxicity": "Generally safe in dietary amounts",
+    "warnings": [
+      "May interfere with mineral absorption (iron)",
+      "High intake may cause digestive upset",
+      "May reduce absorption of certain medications"
+    ]
+  },
+  "provenance": {
+    "created": "2024-01-15",
+    "modified": "2026-02-20T17:59:34.448Z",
+    "source": "Phytochemistry Literature",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "foundIn": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/dandelion"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/green-tea"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/hawthorn"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/st-johns-wort"
+    }
+  ]
+}

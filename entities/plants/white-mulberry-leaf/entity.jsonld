@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/white-mulberry-leaf",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/white-mulberry-leaf",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"

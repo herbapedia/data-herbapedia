@@ -1,0 +1,68 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/chemical/polysaccharides",
+  "@type": [
+    "botany:ChemicalCompound",
+    "schema:BioChemEntity"
+  ],
+  "name": {
+    "en": "Polysaccharides",
+    "zh-Hant": "多醣",
+    "zh-Hans": "多糖"
+  },
+  "commonName": [
+    "Polysaccharides",
+    "Glycans",
+    "Complex carbohydrates"
+  ],
+  "chebiID": "CHEBI:18154",
+  "compoundClass": "Carbohydrates; Polysaccharides",
+  "description": {
+    "en": "Long-chain carbohydrate molecules composed of multiple monosaccharide units linked by glycosidic bonds. In medicinal plants, polysaccharides often exhibit immunomodulatory, anti-tumor, and antioxidant activities. Key bioactive compounds in many traditional medicines."
+  },
+  "pharmacology": [
+    "Immunomodulation (macrophage activation, cytokine induction)",
+    "Anti-tumor activity",
+    "Antioxidant effects",
+    "Hypoglycemic activity",
+    "Gut microbiota modulation",
+    "Antiviral activity"
+  ],
+  "bioavailability": {
+    "en": "Generally poorly absorbed intact; exert effects primarily through gut-associated lymphoid tissue (GALT) and microbiota fermentation to short-chain fatty acids."
+  },
+  "safetyData": {
+    "toxicity": "Generally safe",
+    "warnings": [
+      "May cause gastrointestinal discomfort in sensitive individuals"
+    ]
+  },
+  "provenance": {
+    "created": "2024-01-15",
+    "modified": "2026-02-20T17:59:34.448Z",
+    "source": "Glycobiology Literature",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "foundIn": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/american-ginseng"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/cordyceps"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/dangshen"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/echinacea"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/lingzhi-reishi"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/panax-ginseng"
+    }
+  ]
+}

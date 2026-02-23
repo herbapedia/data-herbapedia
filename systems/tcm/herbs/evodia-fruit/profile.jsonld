@@ -1,12 +1,12 @@
 {
-  "@context": "../../schema/context/tcm.jsonld",
-  "@id": "tcm/evodia-fruit",
+  "@context": "https://www.herbapedia.org/schema/context/tcm.jsonld",
+  "@id": "https://www.herbapedia.org/system/tcm/profile/evodia-fruit",
   "@type": [
     "tcm:Herb",
     "schema:DietarySupplement"
   ],
   "derivedFromPlant": {
-    "@id": "plant/evodia-fruit"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/evodia-fruit"
   },
   "name": {
     "en": "Evodia Fruit",
@@ -19,19 +19,19 @@
     "zh-Hans": "吴茱萸"
   },
   "hasCategory": {
-    "@id": "category/tonify-qi"
+    "@id": "https://www.herbapedia.org/system/tcm/category/tonify-qi"
   },
   "hasNature": {
-    "@id": "nature/neutral"
+    "@id": "https://www.herbapedia.org/system/tcm/nature/neutral"
   },
   "hasFlavor": [
     {
-      "@id": "flavor/sweet"
+      "@id": "https://www.herbapedia.org/system/tcm/flavor/sweet"
     }
   ],
   "entersMeridian": [
     {
-      "@id": "meridian/spleen"
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/spleen"
     }
   ],
   "tcmHistory": {
@@ -46,7 +46,9 @@
   },
   "source": "vitaherbapedia.com",
   "sameAs": [
-    "https://www.wikidata.org/wiki/Q10919698"
+    {
+      "@id": "https://www.wikidata.org/wiki/Q10919698"
+    }
   ],
   "created": "2026-02-18T09:15:13.185Z",
   "license": "https://creativecommons.org/licenses/by-sa/4.0/"

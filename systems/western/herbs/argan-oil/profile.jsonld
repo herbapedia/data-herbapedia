@@ -1,11 +1,11 @@
 {
-  "@context": "../../schema/context/western.jsonld",
-  "@id": "western/argan-oil",
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/argan-oil",
   "@type": [
     "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
-    "@id": "plant/argan-oil"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/argan-oil"
   },
   "name": {
     "en": "Argan oil",

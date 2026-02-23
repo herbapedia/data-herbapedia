@@ -1,0 +1,175 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herbapedia.org/schema/json-schema/botanical/chemical-profile.schema.json",
+  "title": "Chemical Profile",
+  "description": "A chemical composition profile for a PlantSpecies or PlantPart. Contains quantitative and qualitative data about the chemical constituents, analysis methods, and source references. This is BOTANICAL DATA, not therapeutic claims.",
+  "type": "object",
+  "allOf": [
+    { "$ref": "../core/entity.schema.json" }
+  ],
+  "required": ["@id", "@type", "name", "profileOf", "hasComponent"],
+  "properties": {
+    "@id": {
+      "description": "Unique identifier: botanical/chemical-profile/{slug}.",
+      "type": "string",
+      "pattern": "^botanical/chemical-profile/[a-z0-9-]+$",
+      "examples": [
+        "botanical/chemical-profile/zingiber-officinale-rhizome",
+        "botanical/chemical-profile/panax-ginseng-root"
+      ]
+    },
+    "@type": {
+      "type": "array",
+      "items": { "type": "string" },
+      "contains": { "const": "botany:ChemicalProfile" },
+      "examples": [["botany:ChemicalProfile", "schema:Dataset"]]
+    },
+    "profileOf": {
+      "description": "The PlantSpecies or PlantPart this profile describes.",
+      "$ref": "../core/iri-reference.schema.json",
+      "examples": [
+        { "@id": "botanical/species/zingiber-officinale" },
+        { "@id": "botanical/part/zingiber-officinale-rhizome" }
+      ]
+    },
+    "hasComponent": {
+      "description": "Chemical components detected in this profile.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["compound"],
+        "properties": {
+          "compound": {
+            "description": "Reference to the ChemicalCompound.",
+            "$ref": "../core/iri-reference.schema.json"
+          },
+          "concentration": {
+            "description": "Concentration value.",
+            "type": "number"
+          },
+          "concentrationUnit": {
+            "description": "Unit of concentration.",
+            "type": "string",
+            "enum": ["%", "mg/g", "mg/kg", "ppm", "ppb", "μg/g", "μmol/g"],
+            "examples": ["%", "mg/g"]
+          },
+          "concentrationRange": {
+            "description": "Range of concentration if variable.",
+            "type": "object",
+            "properties": {
+              "min": { "type": "number" },
+              "max": { "type": "number" },
+              "unit": { "type": "string" }
+            }
+          },
+          "relativeAbundance": {
+            "description": "Relative abundance classification.",
+            "type": "string",
+            "enum": ["major", "minor", "trace"],
+            "_documentation": {
+              "major": "Typically >1% of dry weight",
+              "minor": "Typically 0.1-1% of dry weight",
+              "trace": "Typically <0.1% of dry weight"
+            }
+          },
+          "partOfPlant": {
+            "description": "Specific part analyzed (if different from profileOf).",
+            "type": "string",
+            "examples": ["rhizome", "root bark", "leaf"]
+          },
+          "extractionMethod": {
+            "description": "Method used for extraction.",
+            "type": "string",
+            "examples": ["hydroalcoholic", "essential oil distillation", "supercritical CO2"]
+          },
+          "detectionMethod": {
+            "description": "Analytical method used.",
+            "type": "string",
+            "examples": ["HPLC", "GC-MS", "LC-MS", "NMR", "UV-Vis"]
+          }
+        }
+      },
+      "minItems": 1
+    },
+    "analysisDate": {
+      "description": "Date of analysis.",
+      "type": "string",
+      "format": "date"
+    },
+    "analyticalMethod": {
+      "description": "Primary analytical method used.",
+      "type": "string",
+      "examples": ["HPLC", "GC-MS", "LC-MS", "NMR"]
+    },
+    "sampleOrigin": {
+      "description": "Geographic origin of the analyzed sample.",
+      "type": "string",
+      "examples": ["China, Sichuan Province", "India, Kerala"]
+    },
+    "samplePreparation": {
+      "description": "How the sample was prepared for analysis.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "qualityGrade": {
+      "description": "Quality grade of the sample (per pharmacopeia standards).",
+      "type": "string",
+      "examples": ["Ph.Eur.", "USP", "ChP"]
+    },
+    "referenceSpectrum": {
+      "description": "Reference to chromatogram or spectral data.",
+      "type": "string",
+      "format": "uri"
+    },
+    "totalVolatileOil": {
+      "description": "Total essential/volatile oil content.",
+      "type": "object",
+      "properties": {
+        "value": { "type": "number" },
+        "unit": { "type": "string", "examples": ["%", "mL/100g"] }
+      }
+    },
+    "totalPolyphenols": {
+      "description": "Total polyphenol content.",
+      "type": "object",
+      "properties": {
+        "value": { "type": "number" },
+        "unit": { "type": "string", "examples": ["mg GAE/g", "%"] }
+      }
+    },
+    "profileNotes": {
+      "description": "Additional notes about this profile.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "citations": {
+      "description": "Scientific citations for this data.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "doi": { "type": "string" },
+          "pmid": { "type": "string" },
+          "title": { "type": "string" },
+          "authors": { "type": "array", "items": { "type": "string" } },
+          "year": { "type": "integer" },
+          "journal": { "type": "string" }
+        }
+      }
+    }
+  },
+  "additionalProperties": true,
+  "_documentation": {
+    "iriPattern": "botanical/chemical-profile/{slug}",
+    "directory": "entities/botanical/profiles/{slug}/entity.jsonld",
+    "purpose": "Records FACTUAL chemical composition data, not therapeutic claims",
+    "usage": [
+      "Link from PlantSpecies or PlantPart via hasChemicalProfile",
+      "Each component links to ChemicalCompound entity",
+      "Store quantitative data with units",
+      "Document analytical methods for reproducibility"
+    ],
+    "keyDistinction": {
+      "this": "Chemical composition (what molecules are present)",
+      "notThis": "Pharmacological activity (what it does therapeutically) - belongs in system profiles"
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/cordyceps",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/cordyceps",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"
@@ -30,10 +30,10 @@
   "gbifId": 2560562,
   "containsChemical": [
     {
-      "@id": "chemical/polysaccharides"
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/polysaccharides"
     },
     {
-      "@id": "chemical/nucleosides"
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/nucleosides"
     }
   ],
   "modified": "2026-02-19T23:24:40.403Z"

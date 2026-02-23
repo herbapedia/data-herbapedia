@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/shanzhuyu",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/shanzhuyu",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"

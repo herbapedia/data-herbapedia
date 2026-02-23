@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herbapedia.org/schema/json-schema/reference/reference-entity.schema.json",
+  "title": "Reference Entity",
+  "description": "Abstract base class for all controlled vocabulary entities. Reference entities define the canonical terms used across medicine systems (TCM categories, natures, flavors, meridians; Western actions, organs; Ayurveda rasas, gunas, viryas, vipakas, doshas). These are NEVER interpretations - they are the standard vocabulary terms.",
+  "type": "object",
+  "required": ["@id", "@type", "name"],
+  "properties": {
+    "@id": {
+      "description": "Unique identifier following the pattern: {system}/{type}/{slug}.",
+      "type": "string",
+      "examples": [
+        "tcm/nature/warm",
+        "tcm/flavor/acrid",
+        "western/action/carminative",
+        "ayurveda/rasa/madhura"
+      ]
+    },
+    "@type": {
+      "description": "Type array must contain the specific reference type.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "name": {
+      "description": "Canonical name in multiple languages.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "description": {
+      "description": "Detailed description of this reference term.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "code": {
+      "description": "Short code or abbreviation.",
+      "type": "string",
+      "examples": ["H", "W", "C", "P"]
+    },
+    "symbol": {
+      "description": "Symbol or character representation.",
+      "type": "string",
+      "examples": ["热", "温", "辛", "甘"]
+    },
+    "aliases": {
+      "description": "Alternative names or synonyms.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "relatedTo": {
+      "description": "Related reference entities.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" }
+    },
+    "oppositeOf": {
+      "description": "Opposing or complementary reference entity.",
+      "$ref": "../core/iri-reference.schema.json"
+    },
+    "sameAs": {
+      "description": "External references to equivalent concepts.",
+      "type": "array",
+      "items": { "$ref": "../core/external-reference.schema.json" }
+    }
+  },
+  "additionalProperties": true,
+  "_documentation": {
+    "purpose": "Define controlled vocabularies for consistent terminology",
+    "directory": "systems/{system}/reference/{type}s.jsonld",
+    "principles": [
+      "Reference entities are VOCABULARY, not interpretations",
+      "A single preparation links TO reference entities",
+      "Reference entities do NOT link to preparations",
+      "Each medicine system has its own vocabulary set",
+      "Translations belong in the name/description LanguageMaps"
+    ],
+    "hierarchy": {
+      "ReferenceEntity (abstract)": [
+        "TCMReference → TCMCategory, TCMNature, TCMFlavor, TCMMeridian",
+        "WesternReference → WesternAction, WesternOrgan, WesternSystem",
+        "AyurvedaReference → AyurvedaRasa, AyurvedaGuna, AyurvedaVirya, AyurvedaVipaka, AyurvedaDosha, AyurvedaPrabhava"
+      ]
+    }
+  }
+}

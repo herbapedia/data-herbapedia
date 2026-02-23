@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/cranberry-fruit",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Cranberry Fruit",
+    "zh-Hant": "紅莓",
+    "zh-Hans": "红莓"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/cranberry"
+  },
+  "partType": "fruit",
+  "description": {
+    "en": "The fruit of Vaccinium macrocarpon, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.812Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

@@ -1,0 +1,49 @@
+# Pre-commit configuration for Herbapedia
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+
+repos:
+  # General file checks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: check-json
+        files: \.json(ld)?$
+      - id: check-yaml
+      - id: check-merge-conflict
+      - id: check-case-conflict
+      - id: trailing-whitespace
+        files: \.(md|json|jsonld|yaml|yml)$
+      - id: end-of-file-fixer
+        files: \.(md|json|jsonld|yaml|yml)$
+
+  # Validate JSON-LD files
+  - repo: local
+    hooks:
+      - id: validate-jsonld
+        name: Validate JSON-LD entities
+        entry: node scripts/validate.js --quick
+        language: system
+        types: [json]
+        files: ^entities/|profiles/|systems/
+        pass_filenames: false
+
+      - id: check-references
+        name: Check IRI references
+        entry: node scripts/validate.js --references
+        language: system
+        types: [json]
+        files: ^entities/|profiles/
+        pass_filenames: false
+
+# CI configuration
+ci:
+  autofix_commit_msg: |
+    [pre-commit.ci] auto fixes from pre-commit.com hooks
+    for more information, see https://pre-commit.ci
+  autofix_prs: true
+  autoupdate_branch: ''
+  autoupdate_commit_msg: '[pre-commit.ci] pre-commit autoupdate'
+  autoupdate_schedule: weekly
+  skip: []
+  submodules: false

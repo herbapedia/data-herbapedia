@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/white-peony-root",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/white-peony-root",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"

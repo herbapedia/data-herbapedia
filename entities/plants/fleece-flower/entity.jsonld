@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/fleece-flower",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/fleece-flower",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"

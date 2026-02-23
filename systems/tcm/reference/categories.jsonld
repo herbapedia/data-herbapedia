@@ -1,0 +1,656 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/tcm.jsonld",
+  "@id": "https://www.herbapedia.org/system/tcm/profile/reference/categories",
+  "@type": [
+    "tcm:ReferenceCollection",
+    "skos:Collection"
+  ],
+  "name": {
+    "en": "TCM Herb Categories",
+    "zh-Hant": "中藥分類",
+    "zh-Hans": "中药分类"
+  },
+  "description": {
+    "en": "Functional categories of Chinese herbs based on primary therapeutic action. Categories are organized by treatment principle.",
+    "zh-Hant": "根據主要治療作用劃分的中藥功能分類。"
+  },
+  "members": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/category/release-exterior",
+      "name": {
+        "en": "Release Exterior",
+        "zh-Hant": "解表藥",
+        "zh-Hans": "解表药"
+      },
+      "pinyin": "Jiě Biǎo Yào",
+      "categoryCode": "01",
+      "description": {
+        "en": "Releases the exterior, treats exterior patterns (wind-cold or wind-heat).",
+        "zh-Hant": "發散表邪，治療表證（風寒或風熱）。"
+      },
+      "indications": {
+        "en": "Common cold, flu, early stage exterior invasion"
+      },
+      "subcategories": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/category/acrid-warm-release"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/category/acrid-cool-release"
+        }
+      ],
+      "exampleHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/mahuang"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/guizhi"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/mint"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/chrysanthemum"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/category/clear-heat",
+      "name": {
+        "en": "Clear Heat",
+        "zh-Hant": "清熱藥",
+        "zh-Hans": "清热药"
+      },
+      "pinyin": "Qīng Rè Yào",
+      "categoryCode": "02",
+      "description": {
+        "en": "Clears heat and fire, treats heat patterns.",
+        "zh-Hant": "清熱瀉火，治療熱證。"
+      },
+      "indications": {
+        "en": "Fever, inflammation, heat patterns"
+      },
+      "subcategories": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/category/clear-heat-fire"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/category/clear-heat-damp"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/category/clear-heat-toxin"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/category/clear-heat-blood"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/category/clear-heat-deficiency"
+        }
+      ],
+      "exampleHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/shigao"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/huanglian"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/jinyinhua"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/dihuang"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/category/purgative",
+      "name": {
+        "en": "Purgative",
+        "zh-Hant": "瀉下藥",
+        "zh-Hans": "泻下药"
+      },
+      "pinyin": "Xiè Xià Yào",
+      "categoryCode": "03",
+      "description": {
+        "en": "Promotes bowel movement, treats constipation and accumulation.",
+        "zh-Hant": "通導大便，治療便秘和積滯。"
+      },
+      "indications": {
+        "en": "Constipation, accumulation, excess patterns"
+      },
+      "exampleHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/dahuang"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/mangxiao"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/huomaren"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/category/dispel-wind-damp",
+      "name": {
+        "en": "Dispel Wind-Damp",
+        "zh-Hant": "祛風濕藥",
+        "zh-Hans": "祛风湿药"
+      },
+      "pinyin": "Qū Fēng Shī Yào",
+      "categoryCode": "04",
+      "description": {
+        "en": "Dispels wind-damp, treats bi syndrome (painful obstruction).",
+        "zh-Hant": "祛風除濕，治療痹證。"
+      },
+      "indications": {
+        "en": "Arthritis, joint pain, bi syndrome"
+      },
+      "exampleHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/duhuo"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/qinjiao"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/sangjisheng"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/category/transform-damp",
+      "name": {
+        "en": "Transform Dampness",
+        "zh-Hant": "化濕藥",
+        "zh-Hans": "化湿药"
+      },
+      "pinyin": "Huà Shī Yào",
+      "categoryCode": "05",
+      "description": {
+        "en": "Transforms dampness, awakens the spleen.",
+        "zh-Hant": "芳香化濕，醒脾。"
+      },
+      "indications": {
+        "en": "Dampness obstructing spleen, digestive disorders"
+      },
+      "exampleHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/cangzhu"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/houpo"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/huoxiang"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/category/leach-damp",
+      "name": {
+        "en": "Leach Out Dampness",
+        "zh-Hant": "利水滲濕藥",
+        "zh-Hans": "利水渗湿药"
+      },
+      "pinyin": "Lì Shuǐ Shèn Shī Yào",
+      "categoryCode": "06",
+      "description": {
+        "en": "Promotes urination to leach out dampness.",
+        "zh-Hant": "利尿滲濕。"
+      },
+      "indications": {
+        "en": "Edema, damp-heat, urinary disorders"
+      },
+      "exampleHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/fuling"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/zexie"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/jobs-tears"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/cheqianzi"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/category/warm-interior",
+      "name": {
+        "en": "Warm Interior",
+        "zh-Hant": "溫裡藥",
+        "zh-Hans": "温里药"
+      },
+      "pinyin": "Wēn Lǐ Yào",
+      "categoryCode": "07",
+      "description": {
+        "en": "Warms the interior, expels cold.",
+        "zh-Hant": "溫裡散寒。"
+      },
+      "indications": {
+        "en": "Interior cold, yang deficiency"
+      },
+      "exampleHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/fuzi"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/ganjiang"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/rougui"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/wuzhuyu"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/category/regulate-qi",
+      "name": {
+        "en": "Regulate Qi",
+        "zh-Hant": "理氣藥",
+        "zh-Hans": "理气药"
+      },
+      "pinyin": "Lǐ Qì Yào",
+      "categoryCode": "08",
+      "description": {
+        "en": "Regulates qi circulation, treats qi stagnation.",
+        "zh-Hant": "疏理氣機，治療氣滯。"
+      },
+      "indications": {
+        "en": "Qi stagnation, distension, pain"
+      },
+      "exampleHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/tangerine-peel"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/xiangfu"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/muxiang"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/zhishi"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/category/resolve-food",
+      "name": {
+        "en": "Resolve Food Stagnation",
+        "zh-Hant": "消食藥",
+        "zh-Hans": "消食药"
+      },
+      "pinyin": "Xiāo Shí Yào",
+      "categoryCode": "09",
+      "description": {
+        "en": "Promotes digestion, resolves food stagnation.",
+        "zh-Hant": "消食導滯。"
+      },
+      "indications": {
+        "en": "Food stagnation, indigestion, bloating"
+      },
+      "exampleHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/shanzha"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/shenqu"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/maiya"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/jineijin"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/category/stop-bleeding",
+      "name": {
+        "en": "Stop Bleeding",
+        "zh-Hant": "止血藥",
+        "zh-Hans": "止血药"
+      },
+      "pinyin": "Zhǐ Xuè Yào",
+      "categoryCode": "11",
+      "description": {
+        "en": "Stops bleeding, treats various hemorrhages.",
+        "zh-Hant": "止血，治療各種出血。"
+      },
+      "indications": {
+        "en": "Bleeding, hemorrhage"
+      },
+      "exampleHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/sanqi"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/baiji"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/cebaiye"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/aiye"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/category/invigorate-blood",
+      "name": {
+        "en": "Invigorate Blood",
+        "zh-Hant": "活血化瘀藥",
+        "zh-Hans": "活血化瘀药"
+      },
+      "pinyin": "Huó Xuè Huà Yū Yào",
+      "categoryCode": "12",
+      "description": {
+        "en": "Invigorates blood, dispels stasis.",
+        "zh-Hant": "活血化瘀。"
+      },
+      "indications": {
+        "en": "Blood stasis, trauma, menstrual disorders"
+      },
+      "exampleHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/danshen"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/chuanxiong"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/honghua"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/taoren-or-peach-kernel"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/category/relieve-cough",
+      "name": {
+        "en": "Relieve Cough and Wheeze",
+        "zh-Hant": "止咳平喘藥",
+        "zh-Hans": "止咳平喘药"
+      },
+      "pinyin": "Zhǐ Ké Píng Chuǎn Yào",
+      "categoryCode": "13",
+      "description": {
+        "en": "Stops cough and calms wheezing.",
+        "zh-Hant": "止咳平喘。"
+      },
+      "indications": {
+        "en": "Cough, asthma, respiratory disorders"
+      },
+      "exampleHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/xingren"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/kuandonghua"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/ziwan"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/pipaye"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/category/tonify",
+      "name": {
+        "en": "Tonify",
+        "zh-Hant": "補虛藥",
+        "zh-Hans": "补虚药"
+      },
+      "pinyin": "Bǔ Xū Yào",
+      "categoryCode": "19",
+      "description": {
+        "en": "Tonifies deficiency, supplements qi, blood, yin, or yang.",
+        "zh-Hant": "補虛扶正，補益氣血陰陽。"
+      },
+      "indications": {
+        "en": "Deficiency patterns, weakness"
+      },
+      "subcategories": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/category/tonify-qi"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/category/tonify-blood"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/category/tonify-yin"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/category/tonify-yang"
+        }
+      ],
+      "exampleHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/ren-shen"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/dang-gui"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/shoudihuang"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/deer-antler"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/category/tonify-qi",
+      "name": {
+        "en": "Tonify Qi",
+        "zh-Hant": "補氣藥",
+        "zh-Hans": "补气药"
+      },
+      "pinyin": "Bǔ Qì Yào",
+      "categoryCode": "19.1",
+      "parentCategory": {
+        "@id": "https://www.herbapedia.org/system/tcm/category/tonify"
+      },
+      "description": {
+        "en": "Supplements qi deficiency."
+      },
+      "exampleHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/ren-shen"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/huangqi"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/baizhu"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/liquorice-root"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/category/tonify-blood",
+      "name": {
+        "en": "Tonify Blood",
+        "zh-Hant": "補血藥",
+        "zh-Hans": "补血药"
+      },
+      "pinyin": "Bǔ Xuè Yào",
+      "categoryCode": "19.2",
+      "parentCategory": {
+        "@id": "https://www.herbapedia.org/system/tcm/category/tonify"
+      },
+      "description": {
+        "en": "Nourishes blood deficiency."
+      },
+      "exampleHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/dang-gui"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/shoudihuang"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/bai-shao"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/e-jiao"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/category/tonify-yin",
+      "name": {
+        "en": "Tonify Yin",
+        "zh-Hant": "補陰藥",
+        "zh-Hans": "补阴药"
+      },
+      "pinyin": "Bǔ Yīn Yào",
+      "categoryCode": "19.3",
+      "parentCategory": {
+        "@id": "https://www.herbapedia.org/system/tcm/category/tonify"
+      },
+      "description": {
+        "en": "Nourishes yin deficiency."
+      },
+      "exampleHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/shashen"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/maidong"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/gouqizi"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/guijia-or-guiban"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/category/tonify-yang",
+      "name": {
+        "en": "Tonify Yang",
+        "zh-Hant": "補陽藥",
+        "zh-Hans": "补阳药"
+      },
+      "pinyin": "Bǔ Yáng Yào",
+      "categoryCode": "19.4",
+      "parentCategory": {
+        "@id": "https://www.herbapedia.org/system/tcm/category/tonify"
+      },
+      "description": {
+        "en": "Warms and tonifies yang deficiency."
+      },
+      "exampleHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/deer-antler"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/roucongrong"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/duzhong"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/buguzhi"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/category/calm-spirit",
+      "name": {
+        "en": "Calm Spirit",
+        "zh-Hant": "安神藥",
+        "zh-Hans": "安神药"
+      },
+      "pinyin": "Ān Shén Yào",
+      "categoryCode": "15",
+      "description": {
+        "en": "Calms the spirit (shen), treats insomnia and anxiety.",
+        "zh-Hant": "安神定志，治療失眠焦慮。"
+      },
+      "indications": {
+        "en": "Insomnia, anxiety, palpitations"
+      },
+      "exampleHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/suanzaoren"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/baiziren"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/muli"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/yuanzhi"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/category/astringe",
+      "name": {
+        "en": "Astringe and Consolidate",
+        "zh-Hant": "收澀藥",
+        "zh-Hans": "收涩药"
+      },
+      "pinyin": "Shōu Sè Yào",
+      "categoryCode": "20",
+      "description": {
+        "en": "Astringes and consolidates, prevents leakage of qi, fluids, or essence.",
+        "zh-Hant": "收斂固澀，防止氣津精外泄。"
+      },
+      "indications": {
+        "en": "Sweating, diarrhea, spermatorrhea, frequent urination"
+      },
+      "exampleHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/wuweizi"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/wumei"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/shanzhuyu"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/lianzi"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/category/warm-acrid-release-exterior",
+      "@type": [
+        "tcm:Category",
+        "tcm:CategoryAlias"
+      ],
+      "name": {
+        "en": "Warm-Acrid Release Exterior",
+        "zh-Hant": "辛溫解表",
+        "zh-Hans": "辛温解表"
+      },
+      "sameAs": {
+        "@id": "https://www.herbapedia.org/system/tcm/category/acrid-warm-release"
+      },
+      "description": {
+        "en": "Alias for acrid-warm-release category. Herbs that release the exterior with warm and acrid properties."
+      }
+    }
+  ],
+  "_documentation": {
+    "classificationSystem": "Based on 《中藥學》教材分類體系。",
+    "clinicalApplication": "分類是選藥的重要依據，同類藥物有相似功效。"
+  }
+}

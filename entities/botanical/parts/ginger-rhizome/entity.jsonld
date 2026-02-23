@@ -1,0 +1,78 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/ginger-rhizome",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Ginger Rhizome",
+    "zh-Hant": "薑",
+    "zh-Hans": "姜",
+    "sa": "नागर",
+    "hi": "अदरक"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/ginger"
+  },
+  "partType": "rhizome",
+  "description": {
+    "en": "The thick, fleshy, underground stem (rhizome) of the ginger plant. The most commonly used part in cooking and traditional medicine.",
+    "zh-Hant": "生薑的肥厚地下莖（根莖）。烹飪和傳統醫學中最常用的部分。"
+  },
+  "morphology": {
+    "en": "Irregular, branched rhizome with a pale yellow interior and brownish exterior. Covered with thin, papery scales. Contains numerous oil cells and fibers."
+  },
+  "harvestSeason": {
+    "en": "Harvested 8-10 months after planting when leaves begin to yellow. Young rhizomes are more tender and milder; mature rhizomes are stronger and more pungent."
+  },
+  "constituents": [
+    {
+      "name": "6-Gingerol",
+      "percentage": "0.3-3.0%",
+      "notes": "Main pungent constituent in fresh ginger"
+    },
+    {
+      "name": "6-Shogaol",
+      "percentage": "0.1-0.6%",
+      "notes": "Dehydration product of gingerol, more pungent"
+    },
+    {
+      "name": "Zingerone",
+      "percentage": "trace",
+      "notes": "Mild, sweet pungent principle"
+    },
+    {
+      "name": "Zingiberene",
+      "percentage": "20-30% of essential oil",
+      "notes": "Main sesquiterpene in ginger oil"
+    },
+    {
+      "name": "Essential Oil",
+      "percentage": "1.0-3.0%",
+      "notes": "Contains zingiberene, bisabolene, farnesene"
+    }
+  ],
+  "containsChemical": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/gingerol"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/shogaol"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/zingerone"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/zingiberene"
+    }
+  ],
+  "provenance": {
+    "created": "2024-01-15",
+    "modified": "2024-01-15",
+    "source": "Chinese Pharmacopoeia, Flora of China",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  }
+}

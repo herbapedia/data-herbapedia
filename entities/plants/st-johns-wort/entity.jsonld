@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/st-johns-wort",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/st-johns-wort",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"
@@ -30,10 +30,10 @@
   "gbifId": 3189486,
   "containsChemical": [
     {
-      "@id": "chemical/flavonoids"
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/flavonoids"
     },
     {
-      "@id": "chemical/tannins"
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/tannins"
     }
   ],
   "modified": "2026-02-19T23:24:40.402Z"

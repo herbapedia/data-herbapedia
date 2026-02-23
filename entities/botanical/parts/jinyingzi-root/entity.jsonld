@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/jinyingzi-root",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Jinyingzi Root",
+    "zh-Hant": "金櫻子",
+    "zh-Hans": "金樱子"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/jinyingzi"
+  },
+  "partType": "root",
+  "description": {
+    "en": "The root of Rosa laevigata, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.818Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

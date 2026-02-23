@@ -1,0 +1,268 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "https://www.herbapedia.org/vocab/herbal/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "schema": "https://schema.org/",
+    "herbapedia": "https://www.herbapedia.org/vocab/core/",
+    "herbal": "https://www.herbapedia.org/vocab/herbal/"
+  },
+  "@id": "https://www.herbapedia.org/vocab/herbal/methods",
+  "@type": ["skos:Collection"],
+  "rdfs:label": {
+    "en": "Herbal Preparation Methods"
+  },
+  "rdfs:comment": "Controlled vocabulary for methods of preparing herbal materials.",
+  "members": [
+    {
+      "@id": "https://www.herbapedia.org/vocab/herbal/method/fresh",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Fresh"
+      },
+      "skos:definition": {
+        "en": "Used without preservation, directly after harvest"
+      },
+      "skos:example": {
+        "en": "Fresh ginger, fresh turmeric root"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/vocab/herbal/method/dried",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Dried"
+      },
+      "skos:definition": {
+        "en": "Air-dried or heat-dried to remove moisture"
+      },
+      "skos:example": {
+        "en": "Dried ginseng root, dried chamomile flowers"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/vocab/herbal/method/steamed",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Steamed"
+      },
+      "skos:definition": {
+        "en": "Treated with steam to modify properties"
+      },
+      "skos:example": {
+        "en": "Steamed ginseng (red ginseng)"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/vocab/herbal/method/steamed-and-dried",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Steamed and Dried"
+      },
+      "skos:definition": {
+        "en": "Steamed then dried, common for TCM processing"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/vocab/herbal/method/roasted",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Roasted"
+      },
+      "skos:definition": {
+        "en": "Dry heat applied to enhance flavor or properties"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/vocab/herbal/method/fried",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Fried"
+      },
+      "skos:definition": {
+        "en": "Cooked in oil or dry-fried"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/vocab/herbal/method/stir-fried",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Stir-Fried"
+      },
+      "skos:definition": {
+        "en": "Quickly fried at high heat, common in TCM processing"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/vocab/herbal/method/carbonized",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Carbonized"
+      },
+      "skos:definition": {
+        "en": "Heated until charred, used for stopping bleeding"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/vocab/herbal/method/fermented",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Fermented"
+      },
+      "skos:definition": {
+        "en": "Processed through microbial fermentation"
+      },
+      "skos:example": {
+        "en": "Shenqu (fermented mass)"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/vocab/herbal/method/pickled",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Pickled"
+      },
+      "skos:definition": {
+        "en": "Preserved in brine or vinegar"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/vocab/herbal/method/extracted",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Extracted"
+      },
+      "skos:definition": {
+        "en": "Concentrated using solvent or water extraction"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/vocab/herbal/method/powdered",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Powdered"
+      },
+      "skos:definition": {
+        "en": "Ground into fine powder"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/vocab/herbal/method/ground",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Ground"
+      },
+      "skos:definition": {
+        "en": "Mechanically ground or crushed"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/vocab/herbal/method/decocted",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Decocted"
+      },
+      "skos:definition": {
+        "en": "Boiled for extended period to extract compounds"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/vocab/herbal/method/infused",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Infused"
+      },
+      "skos:definition": {
+        "en": "Steeped in liquid (water, oil, alcohol)"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/vocab/herbal/method/tinctured",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Tinctured"
+      },
+      "skos:definition": {
+        "en": "Extracted using alcohol or glycerin"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/vocab/herbal/method/distilled",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Distilled"
+      },
+      "skos:definition": {
+        "en": "Purified through distillation"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/vocab/herbal/method/cold-pressed",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Cold-Pressed"
+      },
+      "skos:definition": {
+        "en": "Pressed without heat to extract oils"
+      },
+      "skos:example": {
+        "en": "Cold-pressed essential oils, carrier oils"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/vocab/herbal/method/steam-distilled",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Steam-Distilled"
+      },
+      "skos:definition": {
+        "en": "Distilled using steam, common for essential oils"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/vocab/herbal/method/freeze-dried",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Freeze-Dried"
+      },
+      "skos:definition": {
+        "en": "Dried through sublimation under vacuum"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/vocab/herbal/method/spray-dried",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Spray-Dried"
+      },
+      "skos:definition": {
+        "en": "Liquid extract atomized and dried into powder"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/vocab/herbal/method/concentrated",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Concentrated"
+      },
+      "skos:definition": {
+        "en": "Reduced to increase potency"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/vocab/herbal/method/standardized",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Standardized"
+      },
+      "skos:definition": {
+        "en": "Processed to contain specific compound amounts"
+      },
+      "skos:example": {
+        "en": "Standardized to 24% ginkgo flavonoids"
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/zexie-root",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Zexie Root",
+    "zh-Hant": "澤瀉",
+    "zh-Hans": "泽泻"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/zexie"
+  },
+  "partType": "root",
+  "description": {
+    "en": "The root of Alisma plantago-aquatica, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.833Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/green-tea",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/green-tea",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"
@@ -24,13 +24,13 @@
   "license": "https://creativecommons.org/licenses/by-sa/4.0/",
   "containsChemical": [
     {
-      "@id": "chemical/catechins"
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/catechins"
     },
     {
-      "@id": "chemical/flavonoids"
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/flavonoids"
     },
     {
-      "@id": "chemical/tannins"
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/tannins"
     }
   ],
   "modified": "2026-02-19T23:24:40.399Z"

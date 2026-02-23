@@ -1,0 +1,108 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/chemical-profile/ginger-rhizome",
+  "@type": [
+    "botany:ChemicalProfile",
+    "schema:Dataset"
+  ],
+  "name": {
+    "en": "Ginger Rhizome Chemical Profile",
+    "zh-Hant": "生薑根莖化學成分"
+  },
+  "profileOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/part/ginger-rhizome"
+  },
+  "hasComponent": [
+    {
+      "compound": {
+        "@id": "https://www.herbapedia.org/entity/botanical/chemical/gingerol"
+      },
+      "relativeAbundance": "major",
+      "concentrationRange": {
+        "min": 0.3,
+        "max": 3,
+        "unit": "%"
+      },
+      "notes": "6-Gingerol is the main pungent compound in fresh ginger"
+    },
+    {
+      "compound": {
+        "@id": "https://www.herbapedia.org/entity/botanical/chemical/shogaol"
+      },
+      "relativeAbundance": "minor",
+      "concentrationRange": {
+        "min": 0.1,
+        "max": 0.6,
+        "unit": "%"
+      },
+      "notes": "Forms from gingerol during drying; more pungent"
+    },
+    {
+      "compound": {
+        "@id": "https://www.herbapedia.org/entity/botanical/chemical/zingerone"
+      },
+      "relativeAbundance": "trace",
+      "notes": "Mild, sweet pungent principle; forms on cooking"
+    },
+    {
+      "compound": {
+        "@id": "https://www.herbapedia.org/entity/botanical/chemical/zingiberene"
+      },
+      "relativeAbundance": "major",
+      "concentrationRange": {
+        "min": 20,
+        "max": 35,
+        "unit": "% of essential oil"
+      },
+      "notes": "Main sesquiterpene hydrocarbon"
+    },
+    {
+      "compound": {
+        "@id": "https://www.herbapedia.org/entity/botanical/chemical/essential-oils"
+      },
+      "concentrationRange": {
+        "min": 1,
+        "max": 3,
+        "unit": "%"
+      },
+      "detectionMethod": "GC-MS",
+      "notes": "Contains zingiberene, β-bisabolene, α-farnesene, β-sesquiphellandrene"
+    },
+    {
+      "compound": {
+        "@id": "https://www.herbapedia.org/entity/botanical/chemical/flavonoids"
+      },
+      "relativeAbundance": "minor",
+      "notes": "Includes quercetin, zingerone glycosides"
+    },
+    {
+      "compound": {
+        "@id": "https://www.herbapedia.org/entity/botanical/chemical/polysaccharides"
+      },
+      "relativeAbundance": "minor",
+      "notes": "Ginger polysaccharides with immunomodulatory activity"
+    }
+  ],
+  "totalVolatileOil": {
+    "value": 1.5,
+    "unit": "%"
+  },
+  "analyticalMethod": "HPLC, GC-MS",
+  "qualityGrade": "Ph.Eur., ChP",
+  "profileNotes": {
+    "en": "Chemical composition varies with cultivar, growing conditions, and post-harvest processing. Fresh ginger contains primarily gingerols; dried ginger has higher shogaol content due to dehydration."
+  },
+  "citations": [
+    {
+      "doi": "10.1016/j.foodres.2016.10.009",
+      "title": "A comprehensive review of ginger (Zingiber officinale) chemistry and pharmacology",
+      "year": 2017,
+      "journal": "Food Research International"
+    }
+  ],
+  "provenance": {
+    "created": "2026-02-21T00:00:00.000Z",
+    "source": "Chinese Pharmacopoeia, European Pharmacopoeia, scientific literature",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

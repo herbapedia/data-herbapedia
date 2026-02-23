@@ -1,11 +1,11 @@
 {
-  "@context": "../../schema/context/western.jsonld",
-  "@id": "western/glucosamine-sulfate",
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/glucosamine-sulfate",
   "@type": [
     "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
-    "@id": "plant/glucosamine-sulfate"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/glucosamine-sulfate"
   },
   "name": {
     "en": "Glucosamine Sulfate",

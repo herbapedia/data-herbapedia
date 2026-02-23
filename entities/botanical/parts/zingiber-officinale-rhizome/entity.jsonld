@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/zingiber-officinale-rhizome",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Ginger Rhizome",
+    "zh-Hant": "薑",
+    "zh-Hans": "姜"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/zingiber-officinale"
+  },
+  "partType": "rhizome",
+  "description": {
+    "en": "The rhizome of Zingiber officinale, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.834Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

@@ -1,11 +1,11 @@
 {
-  "@context": "../../schema/context/western.jsonld",
-  "@id": "western/saw-palmetto",
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/saw-palmetto",
   "@type": [
     "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
-    "@id": "plant/saw-palmetto"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/saw-palmetto"
   },
   "name": {
     "en": "Saw Palmetto",

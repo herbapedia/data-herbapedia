@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/suanzaoren",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/suanzaoren",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"

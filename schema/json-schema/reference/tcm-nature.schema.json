@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herbapedia.org/schema/json-schema/reference/tcm-nature.schema.json",
+  "title": "TCM Nature",
+  "description": "Traditional Chinese Medicine thermal nature (四气/四性 - Si Qi/Four Natures). Describes the heating or cooling effect of herbs on the body. Not temperature, but metabolic/energetic effect.",
+  "type": "object",
+  "allOf": [
+    { "$ref": "./reference-entity.schema.json" }
+  ],
+  "required": ["@id", "@type", "name"],
+  "properties": {
+    "@id": {
+      "description": "Unique identifier: tcm/nature/{slug}.",
+      "type": "string",
+      "pattern": "^tcm/nature/[a-z0-9-]+$",
+      "examples": [
+        "tcm/nature/hot",
+        "tcm/nature/warm",
+        "tcm/nature/neutral",
+        "tcm/nature/cool",
+        "tcm/nature/cold"
+      ]
+    },
+    "@type": {
+      "type": "array",
+      "items": { "type": "string" },
+      "contains": { "const": "tcm:Nature" },
+      "examples": [["tcm:Nature"]]
+    },
+    "name": {
+      "description": "Nature name in Chinese and English.",
+      "$ref": "../core/language-map.schema.json",
+      "examples": [{ "zh-Hant": "溫", "zh-Hans": "温", "en": "Warm" }]
+    },
+    "pinyin": {
+      "description": "Pinyin romanization.",
+      "type": "string",
+      "examples": ["wēn", "rè", "hán", "liáng", "píng"]
+    },
+    "symbol": {
+      "description": "Chinese character.",
+      "type": "string",
+      "examples": ["熱", "溫", "平", "涼", "寒"]
+    },
+    "code": {
+      "description": "Short code.",
+      "type": "string",
+      "enum": ["H", "W", "N", "C", "CD"],
+      "_documentation": {
+        "H": "Hot (大熱)",
+        "W": "Warm (溫)",
+        "N": "Neutral (平)",
+        "C": "Cool (涼)",
+        "CD": "Cold (寒)"
+      }
+    },
+    "degree": {
+      "description": "Relative degree on the thermal spectrum.",
+      "type": "integer",
+      "minimum": -2,
+      "maximum": 2,
+      "_documentation": {
+        "-2": "Cold (大寒/寒)",
+        "-1": "Cool (涼/微寒)",
+        "0": "Neutral (平)",
+        "1": "Warm (溫/微溫)",
+        "2": "Hot (熱/大熱)"
+      }
+    },
+    "effectOnBody": {
+      "description": "General effect on the body.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "indicatedFor": {
+      "description": "Types of conditions this nature treats.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "contraindicatedFor": {
+      "description": "Types of conditions this nature should be avoided.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "oppositeOf": {
+      "description": "The opposite nature on the thermal spectrum.",
+      "$ref": "../core/iri-reference.schema.json"
+    }
+  },
+  "additionalProperties": true,
+  "_documentation": {
+    "iriPattern": "tcm/nature/{slug}",
+    "directory": "systems/tcm/reference/natures.jsonld",
+    "fiveNatures": {
+      "hot": {
+        "chinese": "熱/大熱",
+        "effect": "Strongly warms, disperses cold",
+        "caution": "Can damage yin and fluids"
+      },
+      "warm": {
+        "chinese": "溫/微溫",
+        "effect": "Warms, strengthens yang",
+        "caution": "Use with caution in heat patterns"
+      },
+      "neutral": {
+        "chinese": "平",
+        "effect": "Neither warms nor cools",
+        "caution": "None specific"
+      },
+      "cool": {
+        "chinese": "涼/微寒",
+        "effect": "Clears heat, cools",
+        "caution": "Can damage yang and digestion"
+      },
+      "cold": {
+        "chinese": "寒/大寒",
+        "effect": "Strongly clears heat, cools",
+        "caution": "Can severely damage yang"
+      }
+    },
+    "clinicalApplication": "Match nature to pattern - warm/hot for cold patterns, cool/cold for heat patterns"
+  }
+}

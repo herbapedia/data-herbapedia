@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herbapedia.org/schema/json-schema/reference/mongolian-potency.schema.json",
+  "title": "Mongolian Potency",
+  "description": "Mongolian Traditional Medicine seventeen potencies (арван долoon нанс). Post-digestive effects and therapeutic qualities that determine how a substance acts on the body. These are more detailed than the six tastes.",
+  "type": "object",
+  "allOf": [
+    { "$ref": "./reference-entity.schema.json" }
+  ],
+  "required": ["@id", "@type", "name"],
+  "properties": {
+    "@id": {
+      "description": "Unique identifier: mongolian/potency/{slug}.",
+      "type": "string",
+      "pattern": "^mongolian/potency/[a-z0-9-]+$",
+      "examples": [
+        "mongolian/potency/heavy",
+        "mongolian/potency/oily",
+        "mongolian/potency/cool",
+        "mongolian/potency/dull",
+        "mongolian/potency/light",
+        "mongolian/potency/rough",
+        "mongolian/potency/hot",
+        "mongolian/potency/sharp"
+      ]
+    },
+    "@type": {
+      "type": "array",
+      "items": { "type": "string" },
+      "contains": { "const": "mongolian:Potency" },
+      "examples": [["mongolian:Potency"]]
+    },
+    "name": {
+      "description": "Potency name in Mongolian and English.",
+      "$ref": "../core/language-map.schema.json",
+      "examples": [{ "mn": "хүнд", "en": "Heavy" }]
+    },
+    "mongolianName": {
+      "description": "Mongolian name (Cyrillic).",
+      "type": "string",
+      "examples": ["хүнд", "тослог", "сэрүүн", "маш", "хөнгөн", "хатуу", "халуун", "ширүүн"]
+    },
+    "tibetanName": {
+      "description": "Tibetan name.",
+      "type": "string",
+      "examples": ["ལྕི་", "སྣུམ་", "བསིལ་", "རྟུལ་", "ཡང་", "རྩུབ་", "ཚ་", "རྣོ་"]
+    },
+    "tibetanWylie": {
+      "description": "Wylie transliteration.",
+      "type": "string",
+      "examples": ["lci", "snum", "bsil", "rtul", "yang", "rtsub", "tsha", "rno"]
+    },
+    "englishName": {
+      "description": "English translation.",
+      "type": "string"
+    },
+    "oppositePotency": {
+      "description": "The opposing potency.",
+      "$ref": "../core/iri-reference.schema.json"
+    },
+    "pairNumber": {
+      "description": "Which of the 8 opposing pairs (plus one independent).",
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 9
+    },
+    "effectOnRoots": {
+      "description": "How this potency affects the Three Roots.",
+      "type": "object",
+      "properties": {
+        "heyi": {
+          "type": "string",
+          "enum": ["increases", "decreases", "neutral"]
+        },
+        "xila": {
+          "type": "string",
+          "enum": ["increases", "decreases", "neutral"]
+        },
+        "badagan": {
+          "type": "string",
+          "enum": ["increases", "decreases", "neutral"]
+        }
+      }
+    },
+    "physiologicalEffect": {
+      "description": "Effect on body and physiology.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "indications": {
+      "description": "Conditions where this potency is beneficial.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "exampleSubstances": {
+      "description": "Substances with this potency.",
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": true,
+  "_documentation": {
+    "iriPattern": "mongolian/potency/{slug}",
+    "directory": "systems/mongolian/reference/potencies.jsonld",
+    "seventeenPotencies": {
+      "eight_pairs": {
+        "1_heavy_light": {
+          "heavy": "Lci (ལྕི་) - Increases Badagan, nourishes",
+          "light": "Yang (ཡང་) - Increases Heyi, reduces"
+        },
+        "2_oily_rough": {
+          "oily": "Snum (སྣུམ་) - Lubricates, increases Badagan/Xila",
+          "rough": "Rtsub (རྩུབ་) - Dries, increases Heyi"
+        },
+        "3_cool_hot": {
+          "cool": "Bsil (བསིལ་) - Decreases Xila, pacifies heat",
+          "hot": "Tsha (ཚ་) - Increases Xila, promotes digestion"
+        },
+        "4_dull_sharp": {
+          "dull": "Rtul (རྟུལ་) - Slows, calms",
+          "sharp": "Rno (རྣོ་) - Penetrates, increases Xila"
+        },
+        "5_stable_mobile": {
+          "stable": "Brtan (བརྟན་) - Grounds, increases Badagan",
+          "mobile": "Gyo (གཡོ་) - Moves, increases Heyi"
+        },
+        "6_soft_hard": {
+          "soft": "Mnyen (མཉེན་) - Soothes",
+          "hard": "Srang (སྲ་) - Hardens, astringes"
+        },
+        "7_dry_moist": {
+          "dry": "Bskam (བསྐམ་) - Dries, decreases Badagan",
+          "moist": "Brlan (བརླན་) - Moistens, increases Badagan"
+        },
+        "8_clean_sticky": {
+          "clean": "Gtsang (གཙང་) - Purifies",
+          "sticky": "Snum-chags (སྣུམ་ཆགས་) - Binds"
+        }
+      },
+      "one_independent": {
+        "blunt": "Thumb (ཐུམ་) - Neither increases nor decreases any root"
+      }
+    }
+  }
+}

@@ -1,0 +1,273 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/chemical/cyperi-rhizoma",
+  "@type": ["herbapedia:ChemicalAnalysisData", "schema:Dataset"],
+  "dataType": "ChemicalAnalysis",
+  "sourceDocument": "CHEM____Cyperi_Rhizoma_V1.pdf",
+  "scientificName": "Cyperus rotundus",
+  "chineseName": "香附",
+  "pinyinName": "Xiang Fu",
+  "identificationMethod": ["TLC", "GC-Fingerprint", "HPLC-Assay"],
+  "referenceCompounds": [
+    {
+      "name": "alpha-Cyperone",
+      "chineseName": "α-香附酮",
+      "formula": "C₁₅H₂₂O",
+      "purpose": ["TLC identification", "GC fingerprint marker", "HPLC assay quantification"]
+    },
+    {
+      "name": "Cyperene",
+      "chineseName": "香附子烯",
+      "purpose": ["GC fingerprint marker"]
+    },
+    {
+      "name": "Selinene",
+      "chineseName": "桉葉烯",
+      "purpose": ["GC fingerprint marker"]
+    }
+  ],
+  "assayLimits": {
+    "alphaCyperone": {
+      "compound": "alpha-Cyperone",
+      "formula": "C₁₅H₂₂O",
+      "minimumContent": "0.088%",
+      "basis": "dried substance"
+    }
+  },
+  "tlcMethod": {
+    "appendixReference": "Appendix I",
+    "stationaryPhase": "HPTLC silica gel F₂₅₄ plate",
+    "developingSolvent": {
+      "components": ["n-hexane", "ethyl acetate", "glacial acetic acid"],
+      "ratio": "9:1:0.1 (v/v)"
+    },
+    "sprayReagent": {
+      "composition": "1.5 g 2,4-dinitrophenylhydrazine in 20 mL 50% (v/v) sulfuric acid, diluted to 100 mL with water, filtered",
+      "visualization": "Visible light after drying until spots/bands visible (about 30 min)"
+    },
+    "testSolution": {
+      "sampleAmount": "3.0 g",
+      "solvent": "methanol",
+      "solventVolume": "20 mL",
+      "extraction": "ultrasonication (220 W) for 30 minutes"
+    },
+    "standardSolutions": {
+      "alphaCyperone": {
+        "concentration": "1.0 mg/mL in methanol",
+        "preparation": "1.0 mg in 1 mL methanol"
+      }
+    },
+    "applicationVolumes": {
+      "standardSolution": "3 µL",
+      "testSolution": "6 µL"
+    },
+    "developingDistance": "8 cm",
+    "visualization": "Visible light after spraying",
+    "identificationCriteria": {
+      "positiveMarkers": ["alpha-Cyperone"],
+      "identificationRequirement": "Sample must show spots or bands with characteristics (color and Rf value) corresponding to alpha-cyperone"
+    }
+  },
+  "gcFingerprint": {
+    "appendixReference": "Appendix II",
+    "chromatographicSystem": {
+      "detector": "FID (Flame Ionization Detector)",
+      "column": {
+        "type": "Capillary column (HP-5)",
+        "dimensions": "0.32 mm × 30 m",
+        "stationaryPhase": "(5%-phenyl)-methylpolysiloxane",
+        "filmThickness": "0.25 µm"
+      },
+      "injectionTemperature": "250°C",
+      "detectorTemperature": "250°C",
+      "splitRatio": "10:1",
+      "temperatureProgram": [
+        {
+          "timeRange": "0-40 min",
+          "temperature": "120°C → 160°C",
+          "rate": "1°C/min"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "alphaCyperoneStdFP": {
+        "concentration": "100 mg/L",
+        "preparation": "1.0 mg in 10 mL n-hexane",
+        "purpose": "fingerprinting"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "0.5 g",
+      "solvent": "n-hexane",
+      "solventVolume": "10 mL",
+      "extraction": "ultrasonication (220 W) for 30 minutes",
+      "finalVolume": "10 mL",
+      "filtration": "0.45 µm PTFE filter"
+    },
+    "injectionVolume": "2 µL",
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "peakAreaRSD": "≤ 5.0% (alpha-cyperone)",
+      "retentionTimeRSD": "≤ 2.0% (alpha-cyperone)",
+      "theoreticalPlates": "≥ 150,000 (based on alpha-cyperone)",
+      "resolution": "≥ 1.0 (between peak 5 and adjacent peak)"
+    },
+    "identificationCriteria": {
+      "retentionTimeTolerance": "≤ 2.0% difference between sample and standard"
+    }
+  },
+  "hplcAssay": {
+    "appendixReference": "Appendix III",
+    "chromatographicSystem": {
+      "detector": "DAD (Diode Array Detector)",
+      "detectionWavelength": "253 nm",
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 µm"
+      },
+      "flowRate": "1.0 mL/min",
+      "mobilePhase": {
+        "components": ["acetonitrile", "water"],
+        "ratio": "60:40 (v/v)",
+        "elution": "isocratic"
+      },
+      "runTime": "about 40 min"
+    },
+    "standardSolutions": {
+      "stockSolution": {
+        "name": "Std-Stock",
+        "concentration": "20 mg/L",
+        "preparation": "1.0 mg in 50 mL methanol"
+      },
+      "workingSolutions": {
+        "name": "Std-AS",
+        "concentrations": ["1", "2", "6", "10", "15 mg/L"],
+        "description": "Series of alpha-cyperone standard solutions diluted from stock with methanol"
+      },
+      "injectionVolume": "20 µL"
+    },
+    "testSolution": {
+      "sampleAmount": "0.5 g",
+      "solvent": "methanol",
+      "extractionVolume": "20 mL × 4 extractions",
+      "extraction": "ultrasonication (220 W) for 30 minutes",
+      "centrifugation": "4000 × g for 15 minutes",
+      "finalVolume": "100 mL",
+      "filtration": "0.45 µm PTFE filter"
+    },
+    "systemSuitability": {
+      "standardSolution": "Std-AS (6 mg/L)",
+      "replicateInjections": "5 (minimum)",
+      "injectionVolume": "20 µL",
+      "peakAreaRSD": "≤ 5.0% (alpha-cyperone)",
+      "retentionTimeRSD": "≤ 2.0% (alpha-cyperone)",
+      "theoreticalPlates": "≥ 9,000 (based on alpha-cyperone)",
+      "resolution": "≥ 1.5 (between alpha-cyperone peak and adjacent peak)"
+    },
+    "calibration": {
+      "method": "5-point calibration curve",
+      "plot": "Peak area vs. concentration (mg/L)",
+      "identificationTolerance": "≤ 5.0% difference in retention times"
+    }
+  },
+  "rrtValues": [
+    {
+      "peakNumber": 1,
+      "compound": "Cyperene",
+      "chineseName": "香附子烯",
+      "rrt": 0.36,
+      "acceptableRange": "± 0.03",
+      "referenceMarker": false,
+      "referenceTo": "alpha-Cyperone"
+    },
+    {
+      "peakNumber": 2,
+      "compound": "Selinene",
+      "chineseName": "桉葉烯",
+      "rrt": 0.48,
+      "acceptableRange": "± 0.03",
+      "referenceMarker": false,
+      "referenceTo": "alpha-Cyperone"
+    },
+    {
+      "peakNumber": 3,
+      "compound": "Unknown",
+      "rrt": 0.88,
+      "acceptableRange": "± 0.03",
+      "referenceMarker": false,
+      "referenceTo": "alpha-Cyperone"
+    },
+    {
+      "peakNumber": 4,
+      "compound": "Unknown",
+      "rrt": 0.95,
+      "acceptableRange": "± 0.03",
+      "referenceMarker": false,
+      "referenceTo": "alpha-Cyperone"
+    },
+    {
+      "peakNumber": 5,
+      "compound": "alpha-Cyperone",
+      "chineseName": "α-香附酮",
+      "rrt": 1.00,
+      "acceptableRange": null,
+      "referenceMarker": true,
+      "referenceTo": "self"
+    }
+  ],
+  "tests": {
+    "heavyMetals": {
+      "appendixReference": "Appendix V",
+      "requirement": "meet the requirements"
+    },
+    "pesticideResidues": {
+      "appendixReference": "Appendix VI",
+      "requirement": "meet the requirements"
+    },
+    "mycotoxins": {
+      "appendixReference": "Appendix VII",
+      "requirement": "meet the requirements"
+    },
+    "foreignMatter": {
+      "appendixReference": "Appendix VIII",
+      "requirement": "not more than 2.0%"
+    },
+    "ash": {
+      "appendixReference": "Appendix IX",
+      "totalAsh": "not more than 3.5%",
+      "acidInsolubleAsh": "not more than 1.0%"
+    },
+    "waterContent": {
+      "appendixReference": "Appendix X",
+      "method": "Toluene distillation method",
+      "requirement": "not more than 13.0%"
+    },
+    "extractives": {
+      "appendixReference": "Appendix XI",
+      "waterSoluble": {
+        "method": "Cold maceration method",
+        "requirement": "not less than 11.0%"
+      },
+      "alcoholSoluble": {
+        "method": "Hot extraction method",
+        "requirement": "not less than 13.0%"
+      }
+    }
+  },
+  "appendices": {
+    "appendixI": {
+      "title": "Chromatography - Thin-Layer Chromatography (TLC)",
+      "description": "General procedures for TLC including plate types, application methods, developing chambers, Rf calculation, and visualization techniques"
+    },
+    "appendixII": {
+      "title": "Gas Chromatographic and HPLC/UHPLC Fingerprinting",
+      "description": "Methods for establishing chromatographic fingerprints using marker peaks and RRT values"
+    },
+    "appendixIII": {
+      "title": "Chromatography - HPLC/UHPLC",
+      "description": "General HPLC/UHPLC procedures including system suitability tests (theoretical plates, repeatability, resolution, tailing factor) and quantitative calculations"
+    }
+  },
+  "extractedAt": "2026-02-20"
+}

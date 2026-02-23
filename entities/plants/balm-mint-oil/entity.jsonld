@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/balm-mint-oil",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/balm-mint-oil",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"

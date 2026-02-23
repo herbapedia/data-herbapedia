@@ -1,0 +1,317 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/mongolian.jsonld",
+  "@id": "https://www.herbapedia.org/system/mongolian/profile/reference/tastes",
+  "@type": [
+    "mongolian:ReferenceCollection",
+    "skos:Collection"
+  ],
+  "name": {
+    "en": "Mongolian Six Tastes",
+    "mn": "Зургаан амт"
+  },
+  "description": {
+    "en": "The Six Tastes (Зургаан амт - Zurgaan Amt) in Mongolian Traditional Medicine. Each taste has specific effects on the Three Roots and correspond to element combinations."
+  },
+  "members": [
+    {
+      "@id": "https://www.herbapedia.org/system/mongolian/profile/taste/sweet",
+      "@type": [
+        "mongolian:Taste"
+      ],
+      "name": {
+        "en": "Sweet",
+        "mn": "амттай",
+        "bo": "མངར་"
+      },
+      "mongolianName": "амттай",
+      "tibetanName": "མངར་",
+      "tibetanWylie": "mngar",
+      "englishName": "Sweet",
+      "elementComposition": [
+        {
+          "element": "earth",
+          "proportion": "primary"
+        },
+        {
+          "element": "water",
+          "proportion": "secondary"
+        }
+      ],
+      "effectOnRoots": {
+        "heyi": "decreases",
+        "xila": "decreases",
+        "badagan": "increases"
+      },
+      "therapeuticActions": [
+        "nourishes",
+        "builds tissues",
+        "promotes strength"
+      ],
+      "indications": [
+        "emaciation",
+        "weakness",
+        "vata disorders"
+      ],
+      "excessEffects": [
+        "obesity",
+        "diabetes",
+        "kapha disorders"
+      ],
+      "exampleSubstances": [
+        "sugar",
+        "honey",
+        "licorice",
+        "grains"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/mongolian/profile/taste/sour",
+      "@type": [
+        "mongolian:Taste"
+      ],
+      "name": {
+        "en": "Sour",
+        "mn": "хүчил",
+        "bo": "སྐྱུར་"
+      },
+      "mongolianName": "хүчил",
+      "tibetanName": "སྐྱུར་",
+      "tibetanWylie": "skyur",
+      "englishName": "Sour",
+      "elementComposition": [
+        {
+          "element": "fire",
+          "proportion": "primary"
+        },
+        {
+          "element": "earth",
+          "proportion": "secondary"
+        }
+      ],
+      "effectOnRoots": {
+        "heyi": "decreases",
+        "xila": "increases",
+        "badagan": "increases"
+      },
+      "therapeuticActions": [
+        "stimulates digestion",
+        "increases appetite"
+      ],
+      "indications": [
+        "low appetite",
+        "sluggish digestion"
+      ],
+      "excessEffects": [
+        "hyperacidity",
+        "skin diseases"
+      ],
+      "exampleSubstances": [
+        "lemon",
+        "tamarind",
+        "yogurt"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/mongolian/profile/taste/salty",
+      "@type": [
+        "mongolian:Taste"
+      ],
+      "name": {
+        "en": "Salty",
+        "mn": "давс",
+        "bo": "ལན་ཚྭ་"
+      },
+      "mongolianName": "давс",
+      "tibetanName": "ལན་ཚྭ་",
+      "tibetanWylie": "lan tshwa",
+      "englishName": "Salty",
+      "elementComposition": [
+        {
+          "element": "water",
+          "proportion": "primary"
+        },
+        {
+          "element": "fire",
+          "proportion": "secondary"
+        }
+      ],
+      "effectOnRoots": {
+        "heyi": "decreases",
+        "xila": "increases",
+        "badagan": "increases"
+      },
+      "therapeuticActions": [
+        "softens tissues",
+        "promotes digestion",
+        "laxative"
+      ],
+      "indications": [
+        "constipation",
+        "stiffness"
+      ],
+      "excessEffects": [
+        "hypertension",
+        "edema",
+        "skin diseases"
+      ],
+      "exampleSubstances": [
+        "rock salt",
+        "sea salt"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/mongolian/profile/taste/pungent",
+      "@type": [
+        "mongolian:Taste"
+      ],
+      "name": {
+        "en": "Pungent/Hot",
+        "mn": "халуун",
+        "bo": "ཚ་"
+      },
+      "mongolianName": "халуун",
+      "tibetanName": "ཚ་",
+      "tibetanWylie": "tsha",
+      "englishName": "Pungent",
+      "elementComposition": [
+        {
+          "element": "fire",
+          "proportion": "primary"
+        },
+        {
+          "element": "air",
+          "proportion": "secondary"
+        }
+      ],
+      "effectOnRoots": {
+        "heyi": "increases",
+        "xila": "increases",
+        "badagan": "decreases"
+      },
+      "therapeuticActions": [
+        "stimulates digestion",
+        "clears congestion",
+        "improves circulation"
+      ],
+      "indications": [
+        "kapha disorders",
+        "low digestion",
+        "congestion"
+      ],
+      "excessEffects": [
+        "burning",
+        "dizziness",
+        "pitta disorders"
+      ],
+      "exampleSubstances": [
+        "ginger",
+        "pepper",
+        "garlic"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/mongolian/profile/taste/bitter",
+      "@type": [
+        "mongolian:Taste"
+      ],
+      "name": {
+        "en": "Bitter",
+        "mn": "гашуун",
+        "bo": "ཁ་"
+      },
+      "mongolianName": "гашуун",
+      "tibetanName": "ཁ་",
+      "tibetanWylie": "kha",
+      "englishName": "Bitter",
+      "elementComposition": [
+        {
+          "element": "space",
+          "proportion": "primary"
+        },
+        {
+          "element": "air",
+          "proportion": "secondary"
+        }
+      ],
+      "effectOnRoots": {
+        "heyi": "increases",
+        "xila": "decreases",
+        "badagan": "decreases"
+      },
+      "therapeuticActions": [
+        "clears heat",
+        "reduces toxins",
+        "antiparasitic"
+      ],
+      "indications": [
+        "fever",
+        "toxins",
+        "skin diseases",
+        "pitta disorders"
+      ],
+      "excessEffects": [
+        "weakness",
+        "vata increase"
+      ],
+      "exampleSubstances": [
+        "neem",
+        "gentian",
+        "turmeric"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/mongolian/profile/taste/astringent",
+      "@type": [
+        "mongolian:Taste"
+      ],
+      "name": {
+        "en": "Astringent",
+        "mn": "авцармаг",
+        "bo": "བསྐ་"
+      },
+      "mongolianName": "авцармаг",
+      "tibetanName": "བསྐ་",
+      "tibetanWylie": "bska",
+      "englishName": "Astringent",
+      "elementComposition": [
+        {
+          "element": "earth",
+          "proportion": "primary"
+        },
+        {
+          "element": "air",
+          "proportion": "secondary"
+        }
+      ],
+      "effectOnRoots": {
+        "heyi": "increases",
+        "xila": "decreases",
+        "badagan": "decreases"
+      },
+      "therapeuticActions": [
+        "binds tissues",
+        "stops bleeding",
+        "dries moisture"
+      ],
+      "indications": [
+        "diarrhea",
+        "bleeding",
+        "excess moisture"
+      ],
+      "excessEffects": [
+        "constipation",
+        "vata increase"
+      ],
+      "exampleSubstances": [
+        "haritaki",
+        "arjuna",
+        "pomegranate"
+      ]
+    }
+  ],
+  "_documentation": {
+    "classicalReference": "Four Tantras (རྒྱུད་བཞི་), explanatory tantra",
+    "postDigestive": "After digestion, tastes transform: Sweet/Salty → Sweet; Sour → Sour; Pungent/Bitter/Astringent → Pungent",
+    "clinicalNote": "Taste is the first quality perceived; potency (nūs-po) is the post-digestive effect"
+  }
+}

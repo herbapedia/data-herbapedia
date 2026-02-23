@@ -1,0 +1,929 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/reference/actions",
+  "@type": [
+    "western:ReferenceCollection",
+    "skos:Collection"
+  ],
+  "name": {
+    "en": "Western Herbal Actions"
+  },
+  "description": {
+    "en": "Pharmacological and therapeutic actions of herbs in Western herbal medicine, based on biomedical science and traditional use."
+  },
+  "members": [
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/carminative",
+      "@type": [
+        "western:Action"
+      ],
+      "name": {
+        "en": "Carminative"
+      },
+      "description": {
+        "en": "Relieves flatulence and digestive discomfort by expelling gas from the stomach and intestines."
+      },
+      "physiologicalEffect": {
+        "en": "Relaxes smooth muscle of digestive tract, reduces gas formation"
+      },
+      "mechanism": {
+        "en": "Volatile oils stimulate peristalsis and relax intestinal spasms"
+      },
+      "bodySystem": [
+        "digestive"
+      ],
+      "evidenceLevel": "strong",
+      "clinicalIndications": [
+        "indigestion",
+        "bloating",
+        "flatulence",
+        "colic"
+      ],
+      "keyHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/ginger"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/peppermint"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/fennel"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/spasmolytic",
+      "@type": [
+        "western:Action"
+      ],
+      "name": {
+        "en": "Spasmolytic (Antispasmodic)"
+      },
+      "description": {
+        "en": "Relieves smooth muscle spasms, particularly in the digestive, respiratory, and urinary tracts."
+      },
+      "physiologicalEffect": {
+        "en": "Relaxes smooth muscle contractions, reduces cramping"
+      },
+      "mechanism": {
+        "en": "Various mechanisms including calcium channel blocking, anticholinergic effects"
+      },
+      "bodySystem": [
+        "digestive",
+        "respiratory",
+        "urinary"
+      ],
+      "evidenceLevel": "strong",
+      "clinicalIndications": [
+        "muscle cramps",
+        "asthma",
+        "irritable bowel syndrome",
+        "dysmenorrhea"
+      ],
+      "keyHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/valerian"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/cramp-bark"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/wild-yam"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/anti-inflammatory",
+      "@type": [
+        "western:Action"
+      ],
+      "name": {
+        "en": "Anti-inflammatory"
+      },
+      "description": {
+        "en": "Reduces inflammation and inflammatory processes in the body."
+      },
+      "physiologicalEffect": {
+        "en": "Inhibits pro-inflammatory mediators (COX, LOX, cytokines)"
+      },
+      "mechanism": {
+        "en": "Various: COX inhibition, NF-κB modulation, antioxidant activity"
+      },
+      "bodySystem": [
+        "immune",
+        "musculoskeletal",
+        "cardiovascular"
+      ],
+      "evidenceLevel": "strong",
+      "clinicalIndications": [
+        "arthritis",
+        "tendonitis",
+        "inflammatory bowel disease",
+        "dermatitis"
+      ],
+      "keyHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/turmeric"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/boswellia"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/ginger"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/antioxidant",
+      "@type": [
+        "western:Action"
+      ],
+      "name": {
+        "en": "Antioxidant"
+      },
+      "description": {
+        "en": "Neutralizes free radicals and protects cells from oxidative damage."
+      },
+      "physiologicalEffect": {
+        "en": "Scavenges reactive oxygen species, supports endogenous antioxidants"
+      },
+      "mechanism": {
+        "en": "Polyphenols, flavonoids, vitamins C and E, glutathione support"
+      },
+      "bodySystem": [
+        "cardiovascular",
+        "nervous",
+        "immune"
+      ],
+      "evidenceLevel": "strong",
+      "clinicalIndications": [
+        "cardiovascular disease prevention",
+        "cognitive decline",
+        "premature aging"
+      ],
+      "keyHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/green-tea"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/turmeric"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/grape-seed"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/hepatic",
+      "@type": [
+        "western:Action"
+      ],
+      "name": {
+        "en": "Hepatic"
+      },
+      "description": {
+        "en": "Supports liver function, protects hepatocytes, and promotes bile flow."
+      },
+      "physiologicalEffect": {
+        "en": "Enhances liver detoxification, promotes bile secretion, protects liver cells"
+      },
+      "mechanism": {
+        "en": "Upregulates detoxification enzymes, antioxidant protection, membrane stabilization"
+      },
+      "bodySystem": [
+        "digestive"
+      ],
+      "evidenceLevel": "moderate",
+      "clinicalIndications": [
+        "liver support",
+        "detoxification",
+        "hepatitis",
+        "fatty liver"
+      ],
+      "keyHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/milk-thistle"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/dandelion-root"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/turmeric"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/cholagogue",
+      "@type": [
+        "western:Action"
+      ],
+      "name": {
+        "en": "Cholagogue"
+      },
+      "description": {
+        "en": "Promotes the flow of bile from the gallbladder to the intestines."
+      },
+      "physiologicalEffect": {
+        "en": "Stimulates bile release, aids fat digestion"
+      },
+      "mechanism": {
+        "en": "Bitter principles stimulate release of cholecystokinin"
+      },
+      "bodySystem": [
+        "digestive"
+      ],
+      "evidenceLevel": "moderate",
+      "clinicalIndications": [
+        "gallbladder dysfunction",
+        "fat malabsorption",
+        "constipation"
+      ],
+      "keyHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/dandelion-root"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/gentian"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/artichoke"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/nervine",
+      "@type": [
+        "western:Action"
+      ],
+      "name": {
+        "en": "Nervine"
+      },
+      "description": {
+        "en": "Supports and nourishes the nervous system. Subcategories: nervine tonic, nervine relaxant, nervine stimulant."
+      },
+      "physiologicalEffect": {
+        "en": "Modulates neurotransmitter activity, supports neuronal health"
+      },
+      "bodySystem": [
+        "nervous"
+      ],
+      "evidenceLevel": "moderate",
+      "clinicalIndications": [
+        "anxiety",
+        "insomnia",
+        "depression",
+        "neuralgia",
+        "cognitive decline"
+      ],
+      "keyHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/lemon-balm"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/oatstraw"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/skullcap"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/anodyne",
+      "@type": [
+        "western:Action"
+      ],
+      "name": {
+        "en": "Anodyne (Analgesic)"
+      },
+      "description": {
+        "en": "Relieves pain without causing unconsciousness."
+      },
+      "physiologicalEffect": {
+        "en": "Reduces pain perception, blocks pain signals"
+      },
+      "mechanism": {
+        "en": "Various: opioid receptor interaction, anti-inflammatory, prostaglandin inhibition"
+      },
+      "bodySystem": [
+        "nervous",
+        "musculoskeletal"
+      ],
+      "evidenceLevel": "moderate",
+      "clinicalIndications": [
+        "pain",
+        "headache",
+        "neuralgia",
+        "arthritis"
+      ],
+      "keyHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/willow-bark"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/feverfew"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/corydalis"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/diuretic",
+      "@type": [
+        "western:Action"
+      ],
+      "name": {
+        "en": "Diuretic"
+      },
+      "description": {
+        "en": "Increases urine production and excretion."
+      },
+      "physiologicalEffect": {
+        "en": "Promotes renal excretion of water and electrolytes"
+      },
+      "mechanism": {
+        "en": "Various: osmotic effects, inhibition of renal transport, increased renal blood flow"
+      },
+      "bodySystem": [
+        "urinary",
+        "cardiovascular"
+      ],
+      "evidenceLevel": "strong",
+      "clinicalIndications": [
+        "edema",
+        "hypertension",
+        "urinary tract infections"
+      ],
+      "keyHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/dandelion-leaf"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/nettle"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/corn-silk"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/expectorant",
+      "@type": [
+        "western:Action"
+      ],
+      "name": {
+        "en": "Expectorant"
+      },
+      "description": {
+        "en": "Promotes the expulsion of mucus from the respiratory tract."
+      },
+      "physiologicalEffect": {
+        "en": "Increases bronchial secretions, reduces mucus viscosity"
+      },
+      "mechanism": {
+        "en": "Stimulates goblet cells, increases mucociliary clearance"
+      },
+      "bodySystem": [
+        "respiratory"
+      ],
+      "evidenceLevel": "moderate",
+      "clinicalIndications": [
+        "cough",
+        "bronchitis",
+        "common cold",
+        "asthma"
+      ],
+      "keyHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/licorice"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/thyme"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/mullein"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/immunomodulator",
+      "@type": [
+        "western:Action"
+      ],
+      "name": {
+        "en": "Immunomodulator"
+      },
+      "description": {
+        "en": "Modulates immune function - may enhance or suppress immune activity depending on context."
+      },
+      "physiologicalEffect": {
+        "en": "Regulates immune cell activity, cytokine production"
+      },
+      "mechanism": {
+        "en": "Polysaccharides, alkylamides, various immunologically active compounds"
+      },
+      "bodySystem": [
+        "immune"
+      ],
+      "evidenceLevel": "strong",
+      "clinicalIndications": [
+        "immune support",
+        "autoimmune conditions",
+        "cancer adjunct",
+        "frequent infections"
+      ],
+      "keyHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/echinacea"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/astragalus"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/reishi"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/antimicrobial",
+      "@type": [
+        "western:Action"
+      ],
+      "name": {
+        "en": "Antimicrobial"
+      },
+      "description": {
+        "en": "Inhibits or destroys bacteria, viruses, fungi, or parasites."
+      },
+      "physiologicalEffect": {
+        "en": "Disrupts microbial cell membranes, inhibits replication"
+      },
+      "mechanism": {
+        "en": "Various: membrane disruption, enzyme inhibition, interference with replication"
+      },
+      "bodySystem": [
+        "immune"
+      ],
+      "evidenceLevel": "strong",
+      "clinicalIndications": [
+        "infections",
+        "wound healing",
+        "topical antiseptic"
+      ],
+      "keyHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/garlic"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/oregano"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/tea-tree"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/adaptogen",
+      "@type": [
+        "western:Action"
+      ],
+      "name": {
+        "en": "Adaptogen"
+      },
+      "description": {
+        "en": "Helps the body adapt to stress, normalizes physiological functions, and increases resistance to stressors."
+      },
+      "physiologicalEffect": {
+        "en": "Modulates HPA axis, normalizes cortisol, improves stress resilience"
+      },
+      "mechanism": {
+        "en": "Various: impacts cortisol, neurotransmitters, cellular stress response"
+      },
+      "bodySystem": [
+        "endocrine",
+        "nervous",
+        "immune"
+      ],
+      "evidenceLevel": "moderate",
+      "clinicalIndications": [
+        "chronic stress",
+        "fatigue",
+        "adrenal dysfunction",
+        "immune support"
+      ],
+      "keyHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/ashwagandha"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/rhodiola"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/eleuthero"
+        }
+      ],
+      "contraindications": [
+        "May interact with psychiatric medications",
+        "Use caution in hypertension"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/emmenagogue",
+      "@type": [
+        "western:Action"
+      ],
+      "name": {
+        "en": "Emmenagogue"
+      },
+      "description": {
+        "en": "Stimulates menstrual flow and regulates the menstrual cycle."
+      },
+      "physiologicalEffect": {
+        "en": "Stimulates uterine contractions, regulates hormones"
+      },
+      "bodySystem": [
+        "reproductive"
+      ],
+      "evidenceLevel": "traditional",
+      "clinicalIndications": [
+        "amenorrhea",
+        "dysmenorrhea",
+        "menstrual irregularities"
+      ],
+      "keyHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/dong-quai"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/motherwort"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/ginger"
+        }
+      ],
+      "contraindications": [
+        "Pregnancy",
+        "Heavy menstrual bleeding"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/cardiotonic",
+      "@type": [
+        "western:Action"
+      ],
+      "name": {
+        "en": "Cardiotonic"
+      },
+      "description": {
+        "en": "Strengthens and tones the heart muscle, improves cardiac output."
+      },
+      "physiologicalEffect": {
+        "en": "Increases cardiac contractility, improves coronary blood flow"
+      },
+      "mechanism": {
+        "en": "Cardiac glycosides (some herbs), flavonoids, CoQ10 support"
+      },
+      "bodySystem": [
+        "cardiovascular"
+      ],
+      "evidenceLevel": "strong",
+      "clinicalIndications": [
+        "heart failure",
+        "arrhythmias",
+        "angina",
+        "cardiac weakness"
+      ],
+      "keyHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/hawthorn"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/motherwort"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/arnica"
+        }
+      ],
+      "contraindications": [
+        "Use under professional supervision",
+        "Drug interactions with cardiac medications"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/hypotensive",
+      "@type": [
+        "western:Action"
+      ],
+      "name": {
+        "en": "Hypotensive"
+      },
+      "description": {
+        "en": "Lowers blood pressure."
+      },
+      "physiologicalEffect": {
+        "en": "Vasodilation, diuretic effect, ACE inhibition"
+      },
+      "mechanism": {
+        "en": "Various: ACE inhibition, calcium channel blocking, vasodilation"
+      },
+      "bodySystem": [
+        "cardiovascular"
+      ],
+      "evidenceLevel": "moderate",
+      "clinicalIndications": [
+        "hypertension",
+        "cardiovascular disease prevention"
+      ],
+      "keyHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/hawthorn"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/garlic"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/olive-leaf"
+        }
+      ],
+      "contraindications": [
+        "Hypotension",
+        "Use with caution when on antihypertensive medications"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/demulcent",
+      "@type": [
+        "western:Action"
+      ],
+      "name": {
+        "en": "Demulcent"
+      },
+      "description": {
+        "en": "Soothes and protects mucous membranes by forming a protective film."
+      },
+      "physiologicalEffect": {
+        "en": "Coats and soothes irritated mucous membranes"
+      },
+      "mechanism": {
+        "en": "Mucilaginous polysaccharides form protective gel layer"
+      },
+      "bodySystem": [
+        "respiratory",
+        "digestive",
+        "urinary"
+      ],
+      "evidenceLevel": "moderate",
+      "clinicalIndications": [
+        "sore throat",
+        "cough",
+        "gastritis",
+        "urinary tract irritation"
+      ],
+      "keyHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/marshmallow"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/slippery-elm"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/licorice"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/vulnerary",
+      "@type": [
+        "western:Action"
+      ],
+      "name": {
+        "en": "Vulnerary"
+      },
+      "description": {
+        "en": "Promotes wound healing and tissue repair."
+      },
+      "physiologicalEffect": {
+        "en": "Accelerates epithelialization, reduces inflammation, prevents infection"
+      },
+      "mechanism": {
+        "en": "Various: antimicrobial, anti-inflammatory, cell proliferation stimulation"
+      },
+      "bodySystem": [
+        "integumentary"
+      ],
+      "evidenceLevel": "strong",
+      "clinicalIndications": [
+        "wounds",
+        "burns",
+        "ulcers",
+        "skin irritations"
+      ],
+      "keyHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/calendula"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/comfrey"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/st-johns-wort"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/sedative",
+      "@type": [
+        "western:Action"
+      ],
+      "name": {
+        "en": "Sedative"
+      },
+      "description": {
+        "en": "Calms the nervous system, reduces anxiety, and promotes sleep."
+      },
+      "physiologicalEffect": {
+        "en": "Depresses central nervous system activity, promotes relaxation"
+      },
+      "bodySystem": [
+        "nervous"
+      ],
+      "evidenceLevel": "strong",
+      "clinicalIndications": [
+        "insomnia",
+        "anxiety",
+        "restlessness",
+        "stress"
+      ],
+      "keyHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/valerian"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/chamomile"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/passionflower"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/antispasmodic",
+      "@type": [
+        "western:Action"
+      ],
+      "name": {
+        "en": "Antispasmodic"
+      },
+      "description": {
+        "en": "Relieves muscle spasms and cramping. Also known as spasmolytic."
+      },
+      "physiologicalEffect": {
+        "en": "Relaxes smooth and skeletal muscle contractions"
+      },
+      "bodySystem": [
+        "musculoskeletal",
+        "digestive",
+        "respiratory"
+      ],
+      "evidenceLevel": "strong",
+      "clinicalIndications": [
+        "muscle cramps",
+        "asthma",
+        "irritable bowel",
+        "menstrual cramps"
+      ],
+      "keyHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/valerian"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/chamomile"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/cramp-bark"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/anxiolytic",
+      "@type": [
+        "western:Action"
+      ],
+      "name": {
+        "en": "Anxiolytic"
+      },
+      "description": {
+        "en": "Reduces anxiety without excessive sedation."
+      },
+      "physiologicalEffect": {
+        "en": "Modulates GABA receptors, reduces stress hormone activity"
+      },
+      "bodySystem": [
+        "nervous"
+      ],
+      "evidenceLevel": "moderate",
+      "clinicalIndications": [
+        "generalized anxiety",
+        "social anxiety",
+        "panic disorder",
+        "stress"
+      ],
+      "keyHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/valerian"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/kava"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/passionflower"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/circulatory",
+      "@type": [
+        "western:Action"
+      ],
+      "name": {
+        "en": "Circulatory Stimulant"
+      },
+      "description": {
+        "en": "Improves blood circulation and peripheral blood flow."
+      },
+      "physiologicalEffect": {
+        "en": "Vasodilation, improved microcirculation, strengthened capillaries"
+      },
+      "bodySystem": [
+        "cardiovascular"
+      ],
+      "evidenceLevel": "moderate",
+      "clinicalIndications": [
+        "poor circulation",
+        "cold extremities",
+        "varicose veins",
+        "cognitive decline"
+      ],
+      "keyHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/ginkgo"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/hawthorn"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/ginger"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/diaphoretic",
+      "@type": [
+        "western:Action"
+      ],
+      "name": {
+        "en": "Diaphoretic"
+      },
+      "description": {
+        "en": "Promotes sweating and helps eliminate toxins through the skin. Also known as sudorific."
+      },
+      "physiologicalEffect": {
+        "en": "Increases perspiration, promotes toxin elimination, may have antipyretic effect"
+      },
+      "mechanism": {
+        "en": "Stimulates sweat glands, increases blood flow to skin, may act on thermoregulatory centers"
+      },
+      "bodySystem": [
+        "integumentary",
+        "immune"
+      ],
+      "evidenceLevel": "moderate",
+      "clinicalIndications": [
+        "fever",
+        "common cold",
+        "flu",
+        "detoxification"
+      ],
+      "keyHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/ginger"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/yarrow"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/elderflower"
+        }
+      ]
+    }
+  ],
+  "_documentation": {
+    "classificationSystem": "Based on Western herbal medicine pharmacology and traditional use categories.",
+    "evidenceLevels": {
+      "strong": "Supported by multiple clinical trials or strong traditional use",
+      "moderate": "Supported by some clinical evidence or strong traditional use",
+      "preliminary": "Limited clinical evidence, primarily traditional or preclinical",
+      "traditional": "Based primarily on traditional use"
+    }
+  }
+}

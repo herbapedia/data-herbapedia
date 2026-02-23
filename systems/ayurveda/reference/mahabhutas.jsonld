@@ -1,0 +1,75 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "https://www.herbapedia.org/system/ayurveda/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "schema": "https://schema.org/",
+    "ayurveda": "https://www.herbapedia.org/vocab/ayurveda/"
+  },
+  "@id": "https://www.herbapedia.org/system/ayurveda/mahabhutas",
+  "@type": ["skos:Collection"],
+  "rdfs:label": {
+    "en": "Ayurveda Mahabhuta (Five Elements)",
+    "sa": "महाभूत"
+  },
+  "rdfs:comment": "Controlled vocabulary for the five great elements (पञ्च महाभूत) in Ayurveda.",
+  "members": [
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/mahabhuta/prithvi",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Prithvi (Earth)",
+        "sa": "पृथ्वी"
+      },
+      "skos:definition": {
+        "en": "Earth element - solid, stable, heavy. Governs structure and solidity."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/mahabhuta/jala",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Jala (Water)",
+        "sa": "जल"
+      },
+      "skos:definition": {
+        "en": "Water element - liquid, cohesive, flowing. Governs moisture and流动性."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/mahabhuta/agni",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Agni (Fire)",
+        "sa": "अग्नि"
+      },
+      "skos:definition": {
+        "en": "Fire element - hot, transformative, energetic. Governs digestion and metabolism."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/mahabhuta/vayu",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Vayu (Air)",
+        "sa": "वायु"
+      },
+      "skos:definition": {
+        "en": "Air element - mobile, light, dry. Governs movement and circulation."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/mahabhuta/akasha",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Akasha (Ether/Space)",
+        "sa": "आकाश"
+      },
+      "skos:definition": {
+        "en": "Ether element - subtle, expansive, spacious. Governs spaces and consciousness."
+      }
+    }
+  ]
+}

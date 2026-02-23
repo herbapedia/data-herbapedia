@@ -1,8 +1,8 @@
 {
-  "@context": "../../schema/context/ayurveda.jsonld",
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
   "@graph": [
     {
-      "@id": "vipaka/madhura",
+      "@id": "https://www.herbapedia.org/entity/vipaka/madhura",
       "@type": "ayurveda:Vipaka",
       "vipakaValue": "sweet",
       "prefLabel": {
@@ -19,7 +19,7 @@
       }
     },
     {
-      "@id": "vipaka/amla",
+      "@id": "https://www.herbapedia.org/entity/vipaka/amla",
       "@type": "ayurveda:Vipaka",
       "vipakaValue": "sour",
       "prefLabel": {
@@ -36,7 +36,7 @@
       }
     },
     {
-      "@id": "vipaka/katu",
+      "@id": "https://www.herbapedia.org/entity/vipaka/katu",
       "@type": "ayurveda:Vipaka",
       "vipakaValue": "pungent",
       "prefLabel": {

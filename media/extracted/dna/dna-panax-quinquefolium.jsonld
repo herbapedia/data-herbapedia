@@ -1,0 +1,99 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/dna/panax-quinquefolium",
+  "@type": ["herbapedia:DNASequenceData", "schema:Dataset"],
+  "dataType": "DNASequence",
+  "sourceFile": "DNA_____Panax_quinquefolium_V1.pdf",
+  "sourceDocument": "GCMTI FS:2020-3",
+  "title": {
+    "en": "Fact sheet of reference DNA sequences of Panax quinquefolium",
+    "zh-hk": "西洋參(Panax quinquefolium)之參考 DNA 序列資料表"
+  },
+  "scientificName": {
+    "full": "Panax quinquefolium L.",
+    "genus": "Panax",
+    "species": "quinquefolium",
+    "author": "L."
+  },
+  "loci": [
+    {
+      "name": "ITS2",
+      "fullName": "Internal transcribed spacer 2",
+      "description": {
+        "en": "Internal transcribed spacer 2 (ITS2) of plant voucher specimen of Panax quinquefolium and Chinese Materia Medica (CMM) Radix Panacis Quinquefolii",
+        "zh-hk": "植物憑證標本及中藥材西洋參標本的核糖體 DNA 第二內部轉錄間隔區(ITS2)序列"
+      },
+      "sequenceLength": 230,
+      "consensusSequence": "CGCATCGCGTCGCCCCCCAACCCATCACTCCTTTGCGGGAGTCGAGGCGGAGGGGCGGATAATGGCCTCCCGTGTCTCACCGCGCGGTTGGCCCAAATGCGAGTCCTTGGCGATGGACGTCACGACAAGTGGTGGTTGTAAAAAGCCCTCTTCTCATGTCGTGCGGTGACCCGTCGCCAGCAAAAGCTCTCATGACCCTGTTGCGCCGTCCTCGACGTGCGCTCCGACCG",
+      "specimenCount": 37,
+      "specimens": [
+        "RD94-A", "RD95-A", "RD96-A", "RD97-A", "RD104-A", "RD105-A", "RD106-A",
+        "RD250-1A", "RD250-2A", "RD250-3A", "RD250-4A",
+        "RD251-1A", "RD251-2A", "RD251-3C", "RD251-4A",
+        "RD252-1A", "RD252-2A", "RD252-3A", "RD252-4A",
+        "RD253-1A", "RD253-2A", "RD253-3A", "RD253-4A",
+        "RD254-1A", "RD254-2A", "RD254-3A",
+        "RD257-2A", "RD257-3A", "RD257-4A", "RD257-5A",
+        "RD260-1A", "RD260-3A", "RD260-4A", "RD260-5A"
+      ],
+      "notes": "Specimens RD251-3C and RD260-4A showed minor sequence variation at position 12 (M instead of C)"
+    },
+    {
+      "name": "psbA-trnH",
+      "fullName": "Chloroplast psbA-trnH intergenic spacer",
+      "description": {
+        "en": "Chloroplast psbA-trnH intergenic spacer (psbA-trnH) sequence of plant voucher specimen of Panax quinquefolium L. and Chinese Materia Medica (CMM) Panacis Quinquefolii Radix",
+        "zh-hk": "植物憑證標本及中藥材西洋參標本的葉綠體 psbA-trnH 基因間區(psbA-trnH)序列"
+      },
+      "sequenceLength": 497,
+      "consensusSequence": "ATAACTTCCCTCTAGACCTAGCTGCTGTCGAAGCTCCATCTACAAATGGATAAGACCCGGTCTTAGTGTATACGAGTTTTTTTGAAATAAAAAGGAGCAATAACCTCTTTCTTGTTCTATCAAGAGGGCGGTATTGCTCCTTTTTTTATTTAGTAGTATTTGACTTACCTAGTTTCTTTAAATAAATTTAAAAAAACGTCGTTTTATTTTTATCGGTTGGCTCATGAGTGAGTATCATGCTTTCGTTCTGTATTAATCATTAATCTAGAATTTAGCTACTTCTTCCCAATCTTTATCTTTTGGGAAGTGTTTTTTAAAAAGAAAAGATAAAAATGTTGGACTTTTTACTTAGTTAATACTTAATATTTTTATCTCGAAAATAAGAAAGATAAGAAAGAAATAATGATGAATGGTAAAAATTTAATCTTTTGAAACGTAAGGAAAAGAATAGTAGGGGGGCGGATGTAGCCAAGTGGATCAAGGCAGT",
+      "specimenCount": 37,
+      "specimens": [
+        "RD94-A", "RD95-A", "RD96-A", "RD97-A", "RD104-A", "RD105-A", "RD106-A",
+        "RD250-1A", "RD250-2A", "RD250-3A", "RD250-4A",
+        "RD251-1A", "RD251-2A", "RD251-3C", "RD251-4A",
+        "RD252-1A", "RD252-2A", "RD252-3A", "RD252-4A",
+        "RD253-1A", "RD253-2A", "RD253-3A", "RD253-4A",
+        "RD254-1A", "RD254-2A", "RD254-3A",
+        "RD257-2A", "RD257-3A", "RD257-4A", "RD257-5A",
+        "RD260-1A", "RD260-3A", "RD260-4A", "RD260-5A"
+      ],
+      "notes": "Some specimens (RD95-A, RD96-A, RD97-A) showed variations at positions 447-452 with AAAAAA instead of GAAAAG pattern"
+    },
+    {
+      "name": "rbcL",
+      "fullName": "Partial chloroplast ribulose bisphosphate carboxylase large chain",
+      "description": {
+        "en": "Partial chloroplast ribulose bisphosphate carboxylase large chain (rbcL) sequence of plant voucher specimen of Panax quinquefolium L. and Chinese Materia Medica (CMM) Panacis Quinquefolii Radix",
+        "zh-hk": "植物憑證標本及中藥材西洋參標本的葉綠體二磷酸核酮糖羧化酶大鏈(rbcL)部分序列"
+      },
+      "sequenceLength": 553,
+      "consensusSequence": "AAGTGTTGGATTCAAAGCTGGTGTTAAAGATTACAAATTGACTTATTATACTCCTGACTATGACCCCAAAGATACTGATATCTTGGCAGCATTCCGAGTAACTCCTCAACCTGGAGTTCCAGCTGAAGAAGCAGGGGCCGCGGTAGCTGCCGAATCTTCTACTGGTACATGGACAACTGTGTGGACCGATGGACTTACTAGCCTTGATCGTTACAAAGGGCGATGCTACAAAATAGAGCCCGTTGCTGGAGAAGAAACTCAATTTATTGCTTATGTAGCTTACCCATTAGACCTTTTTGAAGAAGGTTCTGTTACTAACATGTTTACTTCCATTGTAGGTAATGTATTTGGGTTCAAAGCCCTGCGTGCTCTACGTCTGGAAGATCTGCGAATCCCTGTTGCTTATGTTAAAACTTTCCAAGGCCCGCCTCATGGCATCCAAGTTGAGAGAGATAAATTGAACAAGTATGGTCGTCCCCTGTTGGGATGTACTATTAAACCTAAATTGGGGTTATCTGCTAAAAACTACGGTAGAGCGGTTTATGAATGTCTC",
+      "specimenCount": 37,
+      "specimens": [
+        "RD94-A", "RD95-A", "RD96-A", "RD97-A", "RD104-A", "RD105-A", "RD106-A",
+        "RD250-1A", "RD250-2A", "RD250-3A", "RD250-4A",
+        "RD251-1A", "RD251-2A", "RD251-3C", "RD251-4A",
+        "RD252-1A", "RD252-2A", "RD252-3A", "RD252-4A",
+        "RD253-1A", "RD253-2A", "RD253-3A", "RD253-4A",
+        "RD254-1A", "RD254-2A", "RD254-3A",
+        "RD257-2A", "RD257-3A", "RD257-4A", "RD257-5A",
+        "RD260-1A", "RD260-3A", "RD260-4A", "RD260-5A"
+      ]
+    }
+  ],
+  "specimen": {
+    "gcmtiCode": "GA0000177a00",
+    "type": "Chinese Materia Medica (CMM) Panacis Quinquefolii Radix",
+    "totalSpecimens": 37
+  },
+  "methodology": {
+    "format": "FASTA",
+    "sequencingTargets": ["ITS2", "psbA-trnH", "rbcL"],
+    "specimenTypes": ["Plant voucher specimen", "Chinese Materia Medica (CMM) Panacis Quinquefolii Radix"]
+  },
+  "extracted": {
+    "date": "2026-02-20",
+    "extractedBy": "automated extraction from PDF"
+  }
+}

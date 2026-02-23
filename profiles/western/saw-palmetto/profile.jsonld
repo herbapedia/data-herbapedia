@@ -1,0 +1,33 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/saw-palmetto",
+  "@type": [
+    "herbapedia:WesternHerbalProfile"
+  ],
+  "profiles": {
+    "@id": "https://www.herbapedia.org/entity/preparation/saw-palmetto"
+  },
+  "name": {
+    "en": "Saw Palmetto",
+    "zh-Hant": "鋸櫚",
+    "zh-Hans": "锯榈"
+  },
+  "derivedFromPlant": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/saw-palmetto"
+  },
+  "westernTraditionalUsage": {
+    "en": "Saw Palmetto is an antiflammatory and anti-exudative. It is believed that Saw Palmetto extract lowers DHT levels in prostate tissue, a substance that causes enlargement of the prostate gland. As a result, Saw Palmetto increases the flow of urine, reduces painful urination and helps to prevent nocturia, the need to urinate frequently during the night.\n",
+    "zh-Hant": "鋸櫚能促進男士排水，減少排水時出現的痛楚，有助紓緩晚上如廁頻密等問題。服用鋸櫚不會引起西藥可能引起的副作用。鋸櫚有助降低在前列組織內 DHT的水平，紓緩前列變大症狀。\n",
+    "zh-Hans": "锯榈能促进男士排水，减少排水时出现的痛楚，有助纾缓晚上如厕频密等问题。服用锯榈不会引起西药可能引起的副作用。锯榈有助降低在前列组织内 DHT的水平，纾缓前列变大症状。\n"
+  },
+  "westernHistory": {
+    "en": "Saw palmetto berries were first used by Native Americans as a diuretic and sexual tonic, as well as for stomach ache and dysentery.\n",
+    "zh-Hant": "鋸櫚果首先被美國人使用作利尿劑和誘發性慾的補藥，以及紓緩胃痛和腹瀉。\n",
+    "zh-Hans": "锯榈果首先被美国人使用作利尿剂和诱发性慾的补药，以及纾缓胃痛和腹泻。\n"
+  },
+  "provenance": {
+    "created": "2026-02-20T15:22:03.248Z",
+    "modified": "2026-02-20T15:22:03.248Z",
+    "migratedFrom": "systems/western/herbs/saw-palmetto/profile.jsonld"
+  }
+}

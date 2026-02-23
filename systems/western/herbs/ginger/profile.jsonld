@@ -1,12 +1,12 @@
 {
-  "@context": "../../schema/context/western.jsonld",
-  "@id": "western/ginger",
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/ginger",
   "@type": [
     "western:Herb",
     "schema:DietarySupplement"
   ],
   "derivedFromPlant": {
-    "@id": "plant/ginger"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/ginger"
   },
   "name": {
     "en": "Ginger",
@@ -15,15 +15,29 @@
   },
   "scientificName": "Zingiber officinale",
   "hasAction": [
-    { "@id": "western/action/carminative" },
-    { "@id": "western/action/anti-inflammatory" },
-    { "@id": "western/action/diaphoretic" },
-    { "@id": "western/action/antispasmodic" }
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/carminative"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/anti-inflammatory"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/diaphoretic"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/antispasmodic"
+    }
   ],
   "hasOrganAffinity": [
-    { "@id": "western/organ/digestive" },
-    { "@id": "western/organ/stomach" },
-    { "@id": "western/organ/respiratory" }
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/digestive"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/stomach"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/respiratory"
+    }
   ],
   "westernHistory": {
     "en": "Ginger has been used in traditional medicine systems for over 5,000 years. It was one of the first spices exported from Asia to Europe. Ancient Greeks and Romans valued it for its medicinal properties.",

@@ -1,0 +1,55 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/chemical/silymarin",
+  "@type": [
+    "botany:ChemicalCompound",
+    "schema:BioChemEntity"
+  ],
+  "name": {
+    "en": "Silymarin",
+    "zh-Hant": "水飛薊素",
+    "zh-Hans": "水飞蓟素"
+  },
+  "chebiID": "CHEBI:9144",
+  "commonName": [
+    "Silymarin",
+    "Milk thistle extract",
+    "Silybin complex"
+  ],
+  "compoundClass": "Flavonolignans; Flavonoids",
+  "description": {
+    "en": "A mixture of flavonolignans extracted from the seeds of milk thistle (Silybum marianum). The main constituents are silybin A, silybin B, isosilybin A, isosilybin B, silychristin, and silydianin. One of the most extensively studied hepatoprotective agents."
+  },
+  "pharmacology": [
+    "Hepatoprotective activity (membrane stabilization)",
+    "Antioxidant effects (free radical scavenging)",
+    "Anti-inflammatory action",
+    "Antifibrotic effects in liver",
+    "Regeneration of hepatocytes",
+    "Antiviral activity against hepatitis viruses"
+  ],
+  "bioavailability": {
+    "en": "Poor oral bioavailability (~30%) due to extensive phase II metabolism; formulations with phosphatidylcholine improve absorption; peak plasma levels 1-2 hours post-ingestion."
+  },
+  "safetyData": {
+    "ld50": "Oral, mouse: > 20 g/kg (very low acute toxicity)",
+    "toxicity": "Excellent safety profile; no serious adverse effects reported",
+    "warnings": [
+      "May interact with cytochrome P450 substrates",
+      "Occasional mild gastrointestinal upset"
+    ]
+  },
+  "provenance": {
+    "created": "2024-01-15",
+    "modified": "2026-02-20T17:59:34.448Z",
+    "source": "Hepatology Literature, Phytochemistry Research",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "foundIn": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/milk-thistle"
+    }
+  ]
+}

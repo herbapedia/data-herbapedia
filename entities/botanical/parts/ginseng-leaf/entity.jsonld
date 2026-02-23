@@ -1,0 +1,39 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/ginseng-leaf",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Ginseng Leaf",
+    "zh-Hant": "人蔘葉",
+    "zh-Hans": "人参叶",
+    "ko": "인삼잎"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/ginseng"
+  },
+  "partType": "leaf",
+  "description": {
+    "en": "The palmately compound leaves of ginseng, typically with 5 leaflets arranged in a whorl. Also used medicinally in TCM."
+  },
+  "morphology": {
+    "en": "Palmately compound, usually 5 leaflets, serrated margins. Bright green, thin texture. Leaflets are ovate to lanceolate."
+  },
+  "constituents": [
+    {
+      "name": "Ginsenosides",
+      "percentage": "0.5-2%",
+      "notes": "Lower concentration than root, but different profile"
+    }
+  ],
+  "provenance": {
+    "created": "2024-01-15",
+    "modified": "2024-01-15",
+    "source": "Chinese Pharmacopoeia",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  }
+}

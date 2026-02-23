@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/wild-yam-root",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Wild Yam Root",
+    "zh-Hant": "野山芋",
+    "zh-Hans": "野山芋"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/wild-yam"
+  },
+  "partType": "root",
+  "description": {
+    "en": "The root of Dioscorea Villosa, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.831Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

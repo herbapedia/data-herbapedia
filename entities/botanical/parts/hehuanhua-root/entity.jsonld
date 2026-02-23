@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/hehuanhua-root",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Hehuanhua Root",
+    "zh-Hant": "合歡花",
+    "zh-Hans": "合欢花"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/hehuanhua"
+  },
+  "partType": "root",
+  "description": {
+    "en": "The root of Albizia julibrissin, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.817Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

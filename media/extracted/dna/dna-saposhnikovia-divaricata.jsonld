@@ -1,0 +1,85 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/dna/saposhnikovia-divaricata",
+  "@type": ["herbapedia:DNASequenceData", "schema:Dataset"],
+  "dataType": "DNASequence",
+  "sourceFile": "DNA____Saposhnikovia_divaricata_V1.pdf",
+  "sourceDocument": "GCMTI FS:2021-2",
+  "title": {
+    "en": "Fact sheet of reference DNA sequences of Saposhnikovia divaricata",
+    "zh-hk": "防風(Saposhnikovia divaricata)之參考 DNA 序列資料表"
+  },
+  "scientificName": {
+    "full": "Saposhnikovia divaricata (Turcz.) Schischk.",
+    "genus": "Saposhnikovia",
+    "species": "divaricata",
+    "author": "(Turcz.) Schischk."
+  },
+  "loci": [
+    {
+      "name": "ITS2",
+      "fullName": "Internal transcribed spacer 2",
+      "description": {
+        "en": "Internal transcribed spacer 2 (ITS2) of plant voucher specimen of Saposhnikovia divaricata and Chinese Materia Medica (CMM) Radix Saposhnikoviae",
+        "zh-hk": "植物憑證標本及中藥材防風標本的核糖體 DNA 第二內部轉錄間隔區(ITS2)序列"
+      },
+      "sequenceLength": 220,
+      "consensusSequence": "CGCATCGCGTCGCCCCCCAACCCATCGCCCCCTGCGGGAGTTGAGGCGGAGGGGCGGATAATGGCCTCCCGTGTCTCACCGCGCGGTTGGCCCAAATGCGAGTCCTTGGCGATGGACGTCACGACAAGTGGTGGTTGTAAAAAGCCCTCTTCTCATGTCGTGCGGTGACCCGTCGCCAGCAAAAGCTCTCATGACCCTGTTGCGCCGTCCTCGACGTGCGCTCCGACCG",
+      "specimenCount": 20,
+      "specimens": [
+        "RD616-10B", "RD616-11A", "RD616-12B", "RD616-13A", "RD616-14A",
+        "RD616-16A", "RD616-19A", "RD616-2A", "RD616-24A", "RD616-25B",
+        "RD616-26B", "RD616-28A", "RD616-3A", "RD616-30B", "RD616-8A",
+        "RD617-3D", "RD617-6D", "RD655-1C", "RD656-1D", "RD657-1D"
+      ]
+    },
+    {
+      "name": "psbA-trnH",
+      "fullName": "Chloroplast psbA-trnH intergenic spacer",
+      "description": {
+        "en": "Chloroplast psbA-trnH intergenic spacer (psbA-trnH) of plant voucher specimen of Saposhnikovia divaricata and Chinese Materia Medica (CMM) Radix Saposhnikoviae",
+        "zh-hk": "植物憑證標本及中藥材防風標本的葉綠體 psbA-trnH 基因間區(psbA-trnH)序列"
+      },
+      "sequenceLength": 176,
+      "consensusSequence": "ATAACTTTCCTCTAGACCTAGCTGCTGTTGAAGCTCCATCTACAAATGGGTAAGACCGGGTTTTAGTATATACGAGTTTTTTGAAATAAAAAAAGCAATACCGCCCCCTTGTTCTATCAAGAGGGCGGTATTTCTTCTTTTTATATTTCAGACTGTTTTAAATAAACAAATACTTTTGAATGATCAAAAAGGAATCCTTTTATTTATTTAATAAATAAATAAAAGAAAATTAGCGGGGCGGATGTAGCCAAGTGGATCAAGGCAGT",
+      "specimenCount": 20,
+      "specimens": [
+        "RD616-10B", "RD616-11A", "RD616-12B", "RD616-13A", "RD616-14A",
+        "RD616-16A", "RD616-19A", "RD616-2A", "RD616-24A", "RD616-25B",
+        "RD616-26B", "RD616-28A", "RD616-3A", "RD616-30B", "RD616-8A",
+        "RD617-3D", "RD617-6D", "RD655-1C", "RD656-1D", "RD657-1D"
+      ]
+    },
+    {
+      "name": "rbcL",
+      "fullName": "Partial chloroplast ribulose bisphosphate carboxylase large chain",
+      "description": {
+        "en": "Partial chloroplast ribulose bisphosphate carboxylase large chain (rbcL) of plant voucher specimen of Saposhnikovia divaricata and Chinese Materia Medica (CMM) Radix Saposhnikoviae",
+        "zh-hk": "植物憑證標本及中藥材防風標本的葉綠體二磷酸核酮糖羧化酶大鏈(rbcL)部分序列"
+      },
+      "sequenceLength": 554,
+      "consensusSequence": "AGGTGTTGGATTCAAAGCTGGGGTTAAAGATTACAAATTGACTTATTATACTCCTGACTATGAAACCAAAGATACTGATATCTTGGCAGCATTCCGAGTAACTCCTCAACCTGGAGTTCCACCCGAAGAAGCGGGGGCCGCGGTAGCTGCCGAATCTTCTACTGGTACATGGACCACTGTGTGGACCGATGGACTTACCAGCCTTGATCGTTACAAAGGGCGCTGCTACGGAATCGAGCCCGTTGCTGGAGAAGAAAATCAATATATCGCTTATGTAGCTTACCCATTAGACCTTTTTGAAGAAGGTTCTGTTACTAACATGTTTACTTCCATTGTAGGTAATGTATTTGGGTTCAAAGCCCTGCGCGCTCTACGTCTGGAAGATCTGCGAATCCCCGTTGCTTATGTTAAAACTTTCCAAGGACCGCCTCATGGCATCCAAGTTGAGAGAGATAAATTGAACAAGTACGGTCGTCCCCTGTTGGGATGTACTATTAAACCTAAATTGGGGTTATCCGCTAAAAACTACGGTAGAGCGGTTTATGAATGTCTC",
+      "specimenCount": 20,
+      "specimens": [
+        "RD616-10B", "RD616-11A", "RD616-12B", "RD616-13A", "RD616-14A",
+        "RD616-16A", "RD616-19A", "RD616-2A", "RD616-24A", "RD616-25B",
+        "RD616-26B", "RD616-28A", "RD616-3A", "RD616-30B", "RD616-8A",
+        "RD617-3D", "RD617-6D", "RD655-1C", "RD656-1D", "RD657-1D"
+      ]
+    }
+  ],
+  "specimen": {
+    "gcmtiCode": "GA0000173a00",
+    "type": "Chinese Materia Medica (CMM) Radix Saposhnikoviae",
+    "totalSpecimens": 20
+  },
+  "methodology": {
+    "format": "FASTA",
+    "sequencingTargets": ["ITS2", "psbA-trnH", "rbcL"],
+    "specimenTypes": ["Plant voucher specimen", "Chinese Materia Medica (CMM) Radix Saposhnikoviae"]
+  },
+  "extracted": {
+    "date": "2026-02-20",
+    "extractedBy": "automated extraction from PDF"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/fangfeng-root",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Fangfeng Root",
+    "zh-Hant": "防風",
+    "zh-Hans": "防风"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/fangfeng"
+  },
+  "partType": "root",
+  "description": {
+    "en": "The root of Saposhnikovia divaricata, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.814Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/botany.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/barcode/echinacea",
+  "@type": [
+    "botany:DNABarcode",
+    "schema:Dataset"
+  ],
+  "name": {
+    "en": "Echinacea DNA Barcode",
+    "zh-Hant": "紫錐花DNA條碼",
+    "zh-Hans": "紫锥花DNA条码"
+  },
+  "barcodes": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/echinacea"
+  },
+  "sequence": [
+    {
+      "region": "rbcL",
+      "sequence": "ATGTCACCACAAACAGAAACTAAAGCAAGTGCCTCGTAGCTTTGCTTGTTTTACGCACGGTCTTGATCTTACCAATCCTGATCCGATCCACGGAAGATCCGTTTTATGTAGAAAGTTACAAAATCACTTCTTTTGTATACCAAAAATCACTTGTATGCTTCTCAGCAATGTTTCAAAGTAATGCTTTTTAAATTGGATTATCTAAAACTTTTTAGAGAATAGTATATCCTATTCCTTATGCATTATTGATCCAATTCATTTTTCTTTTTATATTCATAAGAACTTTTATTCCTTATTTCTTCTATTTACCTATGATAGTAGTTATTTATATAAGAAACTATTTTAACTTTTACTCAATTCTTTTAATTCGAATCAATATATATATATATATATATATCTATATATATACCC",
+      "length": 555,
+      "genbankAccession": "KX686850"
+    },
+    {
+      "region": "matK",
+      "sequence": "TCTAGAGCAAGTCTTTGCCTTAAACTTGGTTTTTCTTATCAATTAAGAATCCTTTTATTTTCATTTTATTTGATGATTTTTCAAATATTATAAATCTTCAATTTTATATTTAATTTATCTTTTAATATTATTATCAATTTTTTTATTTATTTTTATTTTTATAAATAATTTGATACTTCTTTTATTAATACAACTTCAATATATATTTATTATATTTTATTTTATTTTTTTTCTATTATTAATAATTTATATAAATATTATTTCTTTAATATTTTAATTTTTTTTTTGAATTATTTTTTAATTTTTTTATATTTTAATATAATATTTAATATATTTATTTATTTTTTTTTAAATATTTTATATTTATTTTTTATATTTTTTTTATTTAATAATAATTTTATTTTTTTTTTTTTTAATATTAATATAATAATAA",
+      "length": 658,
+      "genbankAccession": "KX686851"
+    },
+    {
+      "region": "ITS2",
+      "sequence": "CGATCGATACGTTTGAATGCATTGATATTCGTCGTGATGATTCACGATGCTTTGCTGCGAGCTTCTCTCCGCTCATCGATGAAGAACGTAGCGAAATGCGATACTTGGTGTGAATTGCAGAATCCCGTGAACCATCGAGTCTTTGAACGCAAGTTGCGCCCGAAGCCTTTAGTTGAGGGTACTGATGTGAATCGTCTTTTATCAACACTATATAC",
+      "length": 227,
+      "genbankAccession": "KX686852"
+    }
+  ],
+  "adulterantDetection": {
+    "canDetect": [
+      "Parthenium integrifolium",
+      "Echinacea pallida"
+    ],
+    "description": {
+      "en": "DNA barcoding can distinguish Echinacea purpurea from common adulterants and related species"
+    }
+  },
+  "provenance": {
+    "created": "2026-02-21T00:00:00.000Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

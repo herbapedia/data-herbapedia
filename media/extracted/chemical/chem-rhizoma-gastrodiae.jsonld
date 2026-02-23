@@ -1,0 +1,323 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/chemical/rhizoma-gastrodiae",
+  "@type": ["herbapedia:ChemicalAnalysisData", "schema:Dataset"],
+  "dataType": "ChemicalAnalysis",
+  "sourceDocument": "CHEM____Rhizoma_Gastrodiae_V1.pdf",
+  "scientificName": "Gastrodia elata",
+  "chineseName": "天麻",
+  "pinyinName": "Tian Ma",
+  "identificationMethod": ["Physicochemical", "TLC", "HPLC-Fingerprint", "HPLC-Assay"],
+  "referenceCompounds": [
+    {
+      "name": "Gastrodin",
+      "chineseName": "天麻素",
+      "formula": "C13H18O7",
+      "purpose": ["TLC identification", "HPLC fingerprint marker", "Assay quantification"]
+    }
+  ],
+  "assayLimits": {
+    "gastrodin": {
+      "compound": "Gastrodin",
+      "formula": "C13H18O7",
+      "minimumContent": "0.41%",
+      "basis": "dried substance"
+    }
+  },
+  "tlcMethod": {
+    "appendixReference": "Appendix I",
+    "stationaryPhase": "High performance silica gel F254 plate",
+    "developingSolvent": {
+      "components": ["ethyl acetate", "ethanol", "water"],
+      "ratio": "45:10:1 (v/v)",
+      "preparation": "Freshly prepared before use"
+    },
+    "sprayReagent": {
+      "composition": "1 mL 50% (v/v) dilute sulfuric acid mixed with 10 mL 2% (w/v) p-hydroxybenzaldehyde ethanol solution",
+      "preparation": "Freshly prepared before use",
+      "visualization": "Heat at approximately 120°C until spots/bands visible (approximately 5 minutes)"
+    },
+    "testSolution": {
+      "sampleAmount": "1.0 g",
+      "solvent": "70% ethanol",
+      "solventVolume": "10 mL",
+      "extraction": "Ultrasonication for 60 minutes (560 W)",
+      "centrifugation": "Approximately 3000 × g for 5 minutes",
+      "evaporation": "Rotary evaporator at reduced pressure to dryness",
+      "finalVolume": "1 mL ethanol"
+    },
+    "standardSolutions": {
+      "concentration": "1.0 mg/mL in ethanol",
+      "compounds": ["Gastrodin"]
+    },
+    "applicationVolumes": {
+      "standardSolutions": "4 μL",
+      "testSolution": "4 μL"
+    },
+    "developingDistance": "Approximately 5 cm",
+    "visualization": "Visible light observation after heating",
+    "identificationCriteria": {
+      "positiveMarkers": ["Gastrodin"],
+      "RfValue": "Corresponding Rf value to gastrodin standard"
+    }
+  },
+  "hplcFingerprint": {
+    "appendixReference": "Appendix II",
+    "chromatographicSystem": {
+      "column": {
+        "type": "Octadecylsilane bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "Diode array detector (DAD)",
+      "detectionWavelength": "230 nm",
+      "columnTemperature": "Not specified (room temperature)",
+      "flowRate": "Approximately 0.8 mL/min"
+    },
+    "mobilePhase": {
+      "solventA": "0.05% trifluoroacetic acid in water (0.05:99.95, v/v)",
+      "solventB": "Acetonitrile",
+      "gradientProgram": [
+        {
+          "timeRange": "0-60 min",
+          "solventA": "70% → 0%",
+          "solventB": "30% → 100%",
+          "elution": "Linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "gastrodin": {
+        "stockSolution": "50 mg/L (1.0 mg in 20 mL methanol)",
+        "storage": "Not specified"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "0.2 g",
+      "solvent": "Methanol",
+      "solventVolume": "10 mL",
+      "extraction": "Ultrasonication for 30 minutes (560 W)",
+      "filtration": "0.45 μm RC membrane filter",
+      "injectionVolume": "10 μL"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "peakAreaRSD": "≤ 5.0% (Gastrodin)",
+      "retentionTimeRSD": "≤ 2.0% (Gastrodin)",
+      "theoreticalPlates": "≥ 20,000 (based on Gastrodin peak)",
+      "resolution": "≥ 1.5 (between Gastrodin peak and adjacent peak)"
+    },
+    "identificationCriteria": {
+      "retentionTimeTolerance": "≤ 2.0% difference between sample and standard"
+    }
+  },
+  "hplcAssay": {
+    "appendixReference": "Appendix IV (B)",
+    "chromatographicSystem": {
+      "column": {
+        "type": "Octadecylsilane bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "Diode array detector (DAD)",
+      "detectionWavelength": "220 nm",
+      "columnTemperature": "Not specified (room temperature)",
+      "flowRate": "Approximately 0.8 mL/min"
+    },
+    "mobilePhase": {
+      "solventA": "Water",
+      "solventB": "Acetonitrile",
+      "gradientProgram": [
+        {
+          "timeRange": "0-20 min",
+          "solventA": "80% → 0%",
+          "solventB": "20% → 100%",
+          "elution": "Linear gradient"
+        },
+        {
+          "timeRange": "20-30 min",
+          "solventA": "0%",
+          "solventB": "100%",
+          "elution": "Isocratic"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "stockSolution": {
+        "concentration": "1000 mg/L",
+        "compounds": ["Gastrodin"],
+        "preparation": "10.0 mg in 10 mL methanol",
+        "storage": "Not specified"
+      },
+      "workingSolutions": {
+        "concentrations": ["5", "50", "100", "150", "200 mg/L"],
+        "description": "Series of standard solutions prepared by diluting stock solution with methanol",
+        "injectionVolume": "10 μL"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "0.2 g",
+      "solvent": "50% ethanol",
+      "solventVolume": "10 mL",
+      "extraction": "Ultrasonication for 30 minutes (560 W)",
+      "centrifugation": "Approximately 3000 × g for 5 minutes",
+      "extractions": "2 additional extractions with 5 mL 50% ethanol each",
+      "finalVolume": "25 mL with 50% ethanol",
+      "filtration": "0.45 μm RC membrane filter",
+      "injectionVolume": "10 μL"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "injectionVolume": "10 μL",
+      "standardConcentration": "50 mg/L (Gastrodin Std-AS)",
+      "peakAreaRSD": "≤ 5.0% (Gastrodin)",
+      "retentionTimeRSD": "≤ 2.0% (Gastrodin)",
+      "theoreticalPlates": "≥ 25,000 (based on Gastrodin peak)",
+      "resolution": "≥ 1.5 (between Gastrodin peak and adjacent peak)"
+    },
+    "calibration": {
+      "method": "5-point calibration curve",
+      "plot": "Peak area vs. concentration (mg/L)",
+      "identificationTolerance": "≤ 5.0% difference in retention times"
+    }
+  },
+  "rrtValues": [
+    {
+      "peakNumber": 1,
+      "compound": "Gastrodin (indicator compound)",
+      "rrt": 1.00,
+      "acceptableRange": null,
+      "referenceMarker": true,
+      "referenceTo": "self"
+    },
+    {
+      "peakNumber": 2,
+      "compound": "Unknown peak 2",
+      "rrt": 1.31,
+      "acceptableRange": "± 0.06",
+      "referenceMarker": false,
+      "referenceTo": "Peak 1 (Gastrodin)"
+    },
+    {
+      "peakNumber": 3,
+      "compound": "Unknown peak 3",
+      "rrt": 1.71,
+      "acceptableRange": "± 0.09",
+      "referenceMarker": false,
+      "referenceTo": "Peak 1 (Gastrodin)"
+    },
+    {
+      "peakNumber": 4,
+      "compound": "Unknown peak 4",
+      "rrt": 1.28,
+      "acceptableRange": "± 0.03",
+      "referenceMarker": false,
+      "referenceTo": "Peak 3"
+    },
+    {
+      "peakNumber": 5,
+      "compound": "Unknown peak 5",
+      "rrt": 1.36,
+      "acceptableRange": "± 0.03",
+      "referenceMarker": false,
+      "referenceTo": "Peak 3"
+    },
+    {
+      "peakNumber": 6,
+      "compound": "Unknown peak 6",
+      "rrt": 1.50,
+      "acceptableRange": "± 0.04",
+      "referenceMarker": false,
+      "referenceTo": "Peak 3"
+    }
+  ],
+  "purityTests": {
+    "heavyMetals": {
+      "appendixReference": "Appendix V",
+      "requirement": "Must comply with relevant regulations"
+    },
+    "pesticideResidues": {
+      "appendixReference": "Appendix VI",
+      "requirement": "Must comply with relevant regulations"
+    },
+    "mycotoxins": {
+      "appendixReference": "Appendix VII",
+      "requirement": "Must comply with relevant regulations"
+    },
+    "impurities": {
+      "appendixReference": "Appendix VIII",
+      "maximumContent": "1.0%"
+    },
+    "ashContent": {
+      "totalAsh": {
+        "appendixReference": "Appendix IX",
+        "maximumContent": "3.0%"
+      },
+      "acidInsolubleAsh": {
+        "maximumContent": "0.5%"
+      }
+    },
+    "moisture": {
+      "appendixReference": "Appendix X",
+      "maximumContent": "14.0%"
+    },
+    "extractableContent": {
+      "appendixReference": "Appendix XI",
+      "waterSolubleExtract": {
+        "method": "Hot maceration",
+        "minimumContent": "20.0%"
+      },
+      "ethanolSolubleExtract": {
+        "method": "Cold maceration",
+        "minimumContent": "14.0%"
+      }
+    }
+  },
+  "appendices": {
+    "appendixI": {
+      "title": "Chromatography – Thin-Layer Chromatography",
+      "description": "General procedures for TLC including plate types, application methods, developing chambers, and Rf calculation"
+    },
+    "appendixII": {
+      "title": "GC and HPLC/UHPLC Fingerprinting",
+      "description": "Methods for establishing chromatographic fingerprints using marker peaks and RRT values"
+    },
+    "appendixIII": {
+      "title": "Chromatography – HPLC/UHPLC",
+      "description": "General HPLC/UHPLC procedures including system suitability tests (theoretical plates, repeatability, resolution, tailing factor) and quantitative calculations"
+    },
+    "appendixIV": {
+      "title": "Assay",
+      "description": "Quantitative determination methods for active constituents"
+    },
+    "appendixV": {
+      "title": "Heavy Metals",
+      "description": "Heavy metal limits for herbal materials"
+    },
+    "appendixVI": {
+      "title": "Pesticide Residues",
+      "description": "Pesticide residue limits and testing methods"
+    },
+    "appendixVII": {
+      "title": "Mycotoxins",
+      "description": "Mycotoxin limits including aflatoxins and ochratoxin A"
+    },
+    "appendixVIII": {
+      "title": "Impurities",
+      "description": "Foreign matter and impurity limits"
+    },
+    "appendixIX": {
+      "title": "Ash Values",
+      "description": "Total ash and acid-insoluble ash determination"
+    },
+    "appendixX": {
+      "title": "Moisture Content",
+      "description": "Methods for determining moisture content in herbal materials"
+    },
+    "appendixXI": {
+      "title": "Extractable Content",
+      "description": "Water-soluble and ethanol-soluble extract determination methods"
+    }
+  },
+  "extractedAt": "2026-02-20"
+}

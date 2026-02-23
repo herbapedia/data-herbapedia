@@ -1,0 +1,87 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/dna/acanthopanax-gracilistylus",
+  "@type": ["herbapedia:DNASequenceData", "schema:Dataset"],
+  "dataType": "DNASequence",
+  "sourceFile": "DNA_____Acanthopanax_gracilistylus_V1.pdf",
+  "sourceDocument": "GCMTI FS:2022-6",
+  "title": {
+    "en": "Fact sheet of reference DNA sequences of Acanthopanax gracilistylus",
+    "zh-hk": "細柱五加(Acanthopanax gracilistylus)之參考 DNA 序列資料表"
+  },
+  "scientificName": {
+    "full": "Acanthopanax gracilistylus",
+    "genus": "Acanthopanax",
+    "species": "gracilistylus",
+    "author": ""
+  },
+  "loci": [
+    {
+      "name": "ITS2",
+      "fullName": "Internal transcribed spacer 2",
+      "description": {
+        "en": "Internal transcribed spacer 2 (ITS2) of plant voucher specimen of Acanthopanax gracilistylus and Chinese Materia Medica (CMM) Cortex Acanthopanacis",
+        "zh-hk": "植物憑證標本及中藥材五加皮標本的核糖體DNA第二內部轉錄間隔區(ITS2)序列"
+      },
+      "sequenceLength": 230,
+      "consensusSequence": "CGCATCGCGTCGCCCCCCAACCATGCACTCTCTCACGGGAGTCATGACTGAGGGGCGGATACTGGCCTCCCGTGTC TCACCGCGCGGTTGGCCCAAATGTGAGTCCTTGGCGACGGGCGTCACGACAAGTGGTGGTTGTAAAAAGCCCTCTT CTCCTGTCGTGCGGTGGACCGTCGCCAGCAAAAGCTCATGTGACCCTGTTGTGCCGTCCTCGACGAGCACTCCGAC CG",
+      "specimenCount": 20,
+      "specimens": [
+        "RD658-1A", "RD659-1A", "RD660-1A", "RD662-1A",
+        "RD603-1A", "RD603-3A", "RD603-4A", "RD603-6A", "RD603-8A",
+        "RD605-1A", "RD605-2A", "RD605-3A", "RD605-4A", "RD605-6A", "RD605-8A",
+        "RD606-1A", "RD606-3A", "RD606-4A", "RD606-5A", "RD606-6A"
+      ],
+      "notes": "Some specimens showed minor sequence variations at positions with ambiguous bases (K, Y)"
+    },
+    {
+      "name": "psbA-trnH",
+      "fullName": "Chloroplast psbA-trnH intergenic spacer",
+      "description": {
+        "en": "Chloroplast psbA-trnH intergenic spacer (psbA-trnH) of plant voucher specimen of Acanthopanax gracilistylus and Chinese Materia Medica (CMM) Cortex Acanthopanacis",
+        "zh-hk": "植物憑證標本及中藥材五加皮標本的葉綠體psbA-trnH基因間區(psbA-trnH)序列"
+      },
+      "sequenceLength": 466,
+      "consensusSequence": "ATAACTTCCCTCTAGACCTAGCTGCTGTCGAAGCTCCATCTACAAATGGATAAGACCCGGTCTTAGTGTATACGAG TTTTTTTGAAATAAAAAGGAGCAATAACCTCTTTCTTGTTCTATCAAGAGGGCGGTATTGCTCCTTTTTTTATTTAG TAGTATTTGTACTTACCTAGTTTCTTTAAATTTATTTAAAGAAACGTCGTTTTATTTTTATTGGTTGGTTCATGAGTG AGTATCATGCTTTCGTTCTGTATTAATCATTAATCTAGAATTTAGCTACTTCTTCCCAATCTTTTGGGAAGTATTTTT TAAAAAGAAAAGATAAAAATGTTGGACTTTTTACTTAGTTAATACTTACTATTTTTATCTCGAAAATAAGAAAGAA ATAATGATGAATGGTAAAAGTTTAATCTTTTGAAACGTAAGGAAAAGAATAGTAGAGGGGCGGATGTAGCCAAGT GGATCAAGGCAGT",
+      "specimenCount": 20,
+      "specimens": [
+        "RD658-1A", "RD659-1A", "RD660-1A", "RD662-1A",
+        "RD603-1A", "RD603-3A", "RD603-4A", "RD603-6A", "RD603-8A",
+        "RD605-1A", "RD605-2A", "RD605-3A", "RD605-4A", "RD605-6A", "RD605-8A",
+        "RD606-1A", "RD606-3A", "RD606-4A", "RD606-5A", "RD606-6A"
+      ],
+      "notes": "Some specimens showed minor sequence variations at positions with ambiguous bases (R, M, Y, S, K)"
+    },
+    {
+      "name": "rbcL",
+      "fullName": "Partial chloroplast ribulose bisphosphate carboxylase large chain",
+      "description": {
+        "en": "Partial chloroplast ribulose bisphosphate carboxylase large chain (rbcL) of plant voucher specimen of Acanthopanax gracilistylus and Chinese Materia Medica (CMM) Cortex Acanthopanacis",
+        "zh-hk": "植物憑證標本及中藥材五加皮標本的葉綠體二磷酸核酮糖羧化酶大鏈(rbcL)部分序列"
+      },
+      "sequenceLength": 554,
+      "consensusSequence": "AAGTGTTGGATTCAAAGCTGGTGTTAAAGATTACAGATTGACTTATTATACTCCTGACTATGAAACCAAAGATACT GATATCTTGGCAGCATTCCGAGTAACTCCTCAACCTGGAGTTCCACCTGAAGAAGCAGGGGCCGCGGTAGCTGCC GAATCTTCTACTGGTACATGGACAACTGTGTGGACCGATGGACTTACCAGCCTTGATCGTTACAAAGGGCGATGCT ACGGAATCGAGCCCGTTGCTGGAGAAGAAAGTCAATTTATTGCTTATGTAGCTTACCCATTAGACCTTTTTGAAGA AGGTTCTGTTACTAACATGTTTACTTCCATTGTAGGTAATGTATTTGGGTTCAAAGCCCTGCGTGCTCTACGTCTGG AAGATCTGCGAATCCCTGTTGCTTATGTTAAAACTTTCCAAGGCCCGCCTCATGGCATCCAAGTTGAGAGAGATAA ATTGAACAAGTATGGTCGTCCCCTGTTGGGATGTACTATTAAACCTAAATTGGGGTTATCTGCTAAAAACTACGGT AGAGCGGTTTATGAATGTCTC",
+      "specimenCount": 20,
+      "specimens": [
+        "RD658-1A", "RD659-1A", "RD660-1A", "RD662-1A",
+        "RD603-1A", "RD603-3A", "RD603-4A", "RD603-6A", "RD603-8A",
+        "RD605-1A", "RD605-2A", "RD605-3A", "RD605-4A", "RD605-6A", "RD605-8A",
+        "RD606-1A", "RD606-3A", "RD606-4A", "RD606-5A", "RD606-6A"
+      ]
+    }
+  ],
+  "specimen": {
+    "gcmtiCode": "GA0000254a00",
+    "type": "Chinese Materia Medica (CMM) Cortex Acanthopanacis",
+    "totalSpecimens": 20
+  },
+  "methodology": {
+    "format": "FASTA",
+    "sequencingTargets": ["ITS2", "psbA-trnH", "rbcL"],
+    "specimenTypes": ["Plant voucher specimen", "Chinese Materia Medica (CMM) Cortex Acanthopanacis"]
+  },
+  "extracted": {
+    "date": "2026-02-20",
+    "extractedBy": "automated extraction from PDF"
+  }
+}

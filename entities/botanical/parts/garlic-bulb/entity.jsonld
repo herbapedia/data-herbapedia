@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/garlic-bulb",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Garlic Bulb",
+    "zh-Hant": "大蒜球莖",
+    "zh-Hans": "大蒜球茎"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/garlic"
+  },
+  "partType": "bulb",
+  "description": {
+    "en": "The bulb of Allium sativum, consisting of multiple cloves enclosed in a papery skin. This is the primary part used for medicinal and culinary purposes."
+  },
+  "provenance": {
+    "created": "2026-02-21T00:00:00.000Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

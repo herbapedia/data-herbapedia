@@ -1,0 +1,28 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/omega-6",
+  "@type": [
+    "herbapedia:WesternHerbalProfile"
+  ],
+  "profiles": {
+    "@id": "https://www.herbapedia.org/entity/preparation/omega-6"
+  },
+  "name": {
+    "en": "Omega 6",
+    "zh-Hant": "奧米加6",
+    "zh-Hans": "奥米加6"
+  },
+  "derivedFromPlant": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/omega-6"
+  },
+  "westernTraditionalUsage": {
+    "en": "Omega 6 is an essential unsaturated fatty acid, which means it cannot be made by our bodies and must be sourced from food. Most omega-6 fatty acids in the diet come from vegetable oils in the form of linoleic acid, which is converted to gamma-linolenic acid in the body and then further broken down to arachidonic acid. Clinical trials have shown that essential fatty acids protect against conditions including heart disease; cancer; autoimmune diseases including rheumatoid arthritis and multiple sclerosis; and skin diseases, including acne, atopic eczema and psoriasis. They may also protect against strokes.\n",
+    "zh-Hant": "",
+    "zh-Hans": ""
+  },
+  "provenance": {
+    "created": "2026-02-20T15:22:03.246Z",
+    "modified": "2026-02-20T15:22:03.246Z",
+    "migratedFrom": "systems/western/herbs/omega-6/profile.jsonld"
+  }
+}

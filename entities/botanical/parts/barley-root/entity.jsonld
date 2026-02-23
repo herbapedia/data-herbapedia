@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/barley-root",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Barley Root",
+    "zh-Hant": "炒麥芽",
+    "zh-Hans": "炒麦芽"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/barley"
+  },
+  "partType": "root",
+  "description": {
+    "en": "The root of Hordeum vulgare, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.807Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/orobanches",
+  "@type": [
+    "botany:PlantSpecies",
+    "herbapedia:BotanicalSource",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Orobanches",
+    "zh-Hant": "不老草",
+    "zh-Hans": "不老草"
+  },
+  "scientificName": "Orobanche coerulescens",
+  "family": null,
+  "genus": null,
+  "description": {
+    "en": "The stem of Dendrobium nobile Lindl., or several species in the same genus, family Orchidaceae.\n",
+    "zh-Hant": "不老草（學名：Orobanche coerulescens）是一種具有藥用價值的天然產物。現代藥理學研究證實其含有多種生物活性成分，在傳統醫學和現代保健領域均有重要應用價值。",
+    "zh-Hans": "不老草（学名：Orobanche coerulescens）是一种具有药用價值的天然產物。現代药理学研究证实其含有多种生物活性成分，在传统医学和現代保健領域均有重要应用價值。"
+  },
+  "image": "media/images/orobanche-coerulescens/main.jpg",
+  "gbifID": 8195627,
+  "provenance": {
+    "created": "2026-02-18T09:15:38.873Z",
+    "modified": "2026-02-21T01:46:20.757Z",
+    "migratedFrom": "entities/plants/orobanches/entity.jsonld",
+    "source": "vitaherbapedia.com",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "classificationNote": "Reclassified as BotanicalSource"
+  },
+  "hasParts": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/part/orobanches-root"
+    }
+  ],
+  "sourceType": "botanical",
+  "sourceSubType": "plant",
+  "hasTCMProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/profile/orobanches"
+    }
+  ],
+  "wikidataID": "Q15399196",
+  "ncbiTaxonID": "953942"
+}

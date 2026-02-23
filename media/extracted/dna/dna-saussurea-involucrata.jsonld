@@ -1,0 +1,87 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/dna/saussurea-involucrata",
+  "@type": ["herbapedia:DNASequenceData", "schema:Dataset"],
+  "dataType": "DNASequence",
+  "sourceFile": "DNA______Saussurea_involucrata_V1.pdf",
+  "sourceDocument": "GCMTI FS:2021-3",
+  "title": {
+    "en": "Fact sheet of reference DNA sequences of Saussurea involucrata",
+    "zh-hk": "天山雪蓮/雪蓮花(Saussurea involucrata)之參考 DNA 序列資料表"
+  },
+  "scientificName": {
+    "full": "Saussurea involucrata",
+    "genus": "Saussurea",
+    "species": "involucrata",
+    "author": ""
+  },
+  "loci": [
+    {
+      "name": "ITS2",
+      "fullName": "Internal transcribed spacer 2 of nuclear ribosomal RNA",
+      "description": {
+        "en": "Internal transcribed spacer 2 (ITS2) sequence of plant voucher specimen of Saussurea involucrata and Chinese Materia Medica (CMM) Herba Saussureae Involucratae",
+        "zh-hk": "Saussurea involucrata植物憑證標本及中藥材天山雪蓮/雪蓮花標本的核糖體DNA第二內部轉錄間隔區(ITS2)序列"
+      },
+      "sequenceLength": 224,
+      "consensusSequence": "CGCATCGCGTCGCCCCCAACCACGCCTCCCTCATGGGGATGTGTTTTGTTTGGGGCGGAGAATGGTCTCCCGTGCTCATGGTGCGGTTGGCCTAAAAAGGAGTCCCCTTCGACGGACGCACGGCTAGTGGTGGTTTTCAAGGCCTTCGTATCGAGCTGTGCATACGTGACGGAATCGCTCTCCAAAGACCCCAACGTGTCGTCTTGCGACGACGCTTCGACCG",
+      "specimenCount": 21,
+      "specimens": [
+        "RD675-1B", "RD676-1B", "RD677-1A", "RD678-1A",
+        "RD705-1B", "RD705-2B", "RD705-3A", "RD705-4A", "RD705-5A",
+        "RD706-1A", "RD706-2B", "RD706-3A", "RD706-4B", "RD706-5B",
+        "RD707-1B", "RD707-2A", "RD707-3B", "RD707-4A", "RD707-5A", "RD707-6A"
+      ],
+      "notes": "Some specimens (RD675-1B, RD706-2B, RD706-3A, RD706-4B, RD706-5B, RD707-4A, RD707-5A) showed Y at position 107 indicating C/T polymorphism"
+    },
+    {
+      "name": "psbA-trnH",
+      "fullName": "Chloroplast psbA-trnH intergenic spacer",
+      "description": {
+        "en": "Chloroplast psbA-trnH intergenic spacer (psbA-trnH) sequence of plant voucher specimen of Saussurea involucrata and Chinese Materia Medica (CMM) Herba Saussureae Involucratae",
+        "zh-hk": "Saussurea involucrata植物憑證標本及中藥材天山雪蓮/雪蓮花標本的葉綠體psbA-trnH基因間區(psbA-trnH)序列"
+      },
+      "sequenceLength": 452,
+      "consensusSequence": "ATAATTTCCCTCTAGACTTAGCTGCTATCGAAGCTCCATCTACAAATGGATAAGACTTTGGTCTGATTGTATAGGAGTTTTTGAACTAAAAAAGGAGCAATAGCTTCCCTCTTGTTTTATCAAGAGGGCGTTATTGCTCCTTTTTTTATTTAGTAGTATTTACCTTACATAGTTTCTTTAAAAATAACAAGGGGGTTTTATAGTTTGGTTCGATTAGCGTGTTTTATCTTTGTATTAATTTATATTATAGGTTTATATATCCTTTTCCCAATCGTTTATGAAGTTTTATTTCCAACTCAATTTCAATCTAAAATAGATAAAAATTATAATTTTGATTATTTATTGCTTTTATTTCAGAAATAAGAAATAAATTATATGCTTTTTTTTTATGTTAATGGAAAAATAAAATATAGTAGATAATACTAGATAATAGGGGCGGATGTAGCCAAGTGGATCAAGGCAGT",
+      "specimenCount": 21,
+      "specimens": [
+        "RD675-1B", "RD676-1B", "RD677-1A", "RD678-1A",
+        "RD705-1B", "RD705-2B", "RD705-3A", "RD705-4A", "RD705-5A",
+        "RD706-1A", "RD706-2B", "RD706-3A", "RD706-4B", "RD706-5B",
+        "RD707-1B", "RD707-2A", "RD707-3B", "RD707-4A", "RD707-5A", "RD707-6A"
+      ],
+      "notes": "Some specimens (RD705-3A, RD705-4A, RD706-1A, RD707-1B) showed K at the end indicating G/T polymorphism; RD706-1A showed Y at position 43"
+    },
+    {
+      "name": "rbcL",
+      "fullName": "Partial chloroplast ribulose bisphosphate carboxylase large chain",
+      "description": {
+        "en": "Partial chloroplast ribulose bisphosphate carboxylase large chain (rbcL) sequence of plant voucher specimen of Saussurea involucrata and Chinese Materia Medica (CMM) Herba Saussureae Involucratae",
+        "zh-hk": "Saussurea involucrata植物憑證標本及中藥材天山雪蓮/雪蓮花標本的葉綠體二磷酸核酮糖羧化酶大鏈(rbcL)部分序列"
+      },
+      "sequenceLength": 551,
+      "consensusSequence": "AAGTGTTGGATTCAAAGCTGGTGTTAAAGATTATAAATTGACTTATTATACTCCTGACTATAAAACCAAGGATACTGATATCTTGGCAGCATTTCGAGTAACTCCTCAACCTGGAGTTCCGCCTGAAGAAGCAGGGGCCGCAGTAGCTGCCGAATCTTCTACTGGTACATGGACAACTGTGTGGACCGATGGACTTACGAGCCTTGATCGTTACAAAGGGCGATGCTATGGAATCGAGCCTGTTCCTGGAGAAGAAAGTCAATTTATTGCTTATGTAGCTTACCCATTAGACCTTTTTGAAGAAGGTTCTGTTACTAACATGTTTACTTCCATTGTAGGTAATGTATTTGGGTTCAAAGCCCTGCGTGCTCTACGTCTGGAAGATTTGCGAATCCCTACTGCGTATGTTAAAACTTTCCAAGGTCCGCCTCACGGCATCCAAGTTGAGAGAGATAAATTGAACAAGTATGGTCGTCCCCTGTTGGGATGTACTATTAAACCTAAATTGGGGTTATCCGCTAAAAACTACGGTAGAGCTGTTTATGAATGTCTT",
+      "specimenCount": 21,
+      "specimens": [
+        "RD675-1B", "RD676-1B", "RD677-1A", "RD678-1A",
+        "RD705-1B", "RD705-2B", "RD705-3A", "RD705-4A", "RD705-5A",
+        "RD706-1A", "RD706-2B", "RD706-3A", "RD706-4B", "RD706-5B",
+        "RD707-1B", "RD707-2A", "RD707-3B", "RD707-4A", "RD707-5A", "RD707-6A"
+      ]
+    }
+  ],
+  "specimen": {
+    "gcmtiCode": "GA0004040a00",
+    "type": "Chinese Materia Medica (CMM) Herba Saussureae Involucratae",
+    "totalSpecimens": 21
+  },
+  "methodology": {
+    "format": "FASTA",
+    "sequencingTargets": ["ITS2", "psbA-trnH", "rbcL"],
+    "specimenTypes": ["Plant voucher specimen of Saussurea involucrata", "Chinese Materia Medica (CMM) Herba Saussureae Involucratae"]
+  },
+  "extracted": {
+    "date": "2026-02-20",
+    "extractedBy": "automated extraction from PDF"
+  }
+}

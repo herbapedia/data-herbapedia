@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/baiziren-root",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Baiziren Root",
+    "zh-Hant": "柏子仁",
+    "zh-Hans": "柏子仁"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/baiziren"
+  },
+  "partType": "root",
+  "description": {
+    "en": "The root of Platycladus Orientalis, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.807Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

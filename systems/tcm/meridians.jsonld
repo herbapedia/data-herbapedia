@@ -1,8 +1,8 @@
 {
-  "@context": "../schema/context/tcm.jsonld",
+  "@context": "https://www.herbapedia.org/schema/context/tcm.jsonld",
   "@graph": [
     {
-      "@id": "meridian/lung",
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/lung",
       "@type": "tcm:Meridian",
       "meridian": "lung",
       "prefLabel": {
@@ -20,7 +20,7 @@
       }
     },
     {
-      "@id": "meridian/large-intestine",
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/large-intestine",
       "@type": "tcm:Meridian",
       "meridian": "large-intestine",
       "prefLabel": {
@@ -35,7 +35,7 @@
       "yinYang": "yang"
     },
     {
-      "@id": "meridian/stomach",
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/stomach",
       "@type": "tcm:Meridian",
       "meridian": "stomach",
       "prefLabel": {
@@ -50,7 +50,7 @@
       "yinYang": "yang"
     },
     {
-      "@id": "meridian/spleen",
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/spleen",
       "@type": "tcm:Meridian",
       "meridian": "spleen",
       "prefLabel": {
@@ -65,7 +65,7 @@
       "yinYang": "yin"
     },
     {
-      "@id": "meridian/heart",
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/heart",
       "@type": "tcm:Meridian",
       "meridian": "heart",
       "prefLabel": {
@@ -80,7 +80,7 @@
       "yinYang": "yin"
     },
     {
-      "@id": "meridian/small-intestine",
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/small-intestine",
       "@type": "tcm:Meridian",
       "meridian": "small-intestine",
       "prefLabel": {
@@ -95,7 +95,7 @@
       "yinYang": "yang"
     },
     {
-      "@id": "meridian/bladder",
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/bladder",
       "@type": "tcm:Meridian",
       "meridian": "bladder",
       "prefLabel": {
@@ -110,7 +110,7 @@
       "yinYang": "yang"
     },
     {
-      "@id": "meridian/kidney",
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/kidney",
       "@type": "tcm:Meridian",
       "meridian": "kidney",
       "prefLabel": {
@@ -125,7 +125,7 @@
       "yinYang": "yin"
     },
     {
-      "@id": "meridian/pericardium",
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/pericardium",
       "@type": "tcm:Meridian",
       "meridian": "pericardium",
       "prefLabel": {
@@ -140,7 +140,7 @@
       "yinYang": "yin"
     },
     {
-      "@id": "meridian/triple-burner",
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/triple-burner",
       "@type": "tcm:Meridian",
       "meridian": "triple-burner",
       "prefLabel": {
@@ -155,7 +155,7 @@
       "yinYang": "yang"
     },
     {
-      "@id": "meridian/gallbladder",
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/gallbladder",
       "@type": "tcm:Meridian",
       "meridian": "gallbladder",
       "prefLabel": {
@@ -170,7 +170,7 @@
       "yinYang": "yang"
     },
     {
-      "@id": "meridian/liver",
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/liver",
       "@type": "tcm:Meridian",
       "meridian": "liver",
       "prefLabel": {

@@ -1,0 +1,423 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/chemical/lini-semen",
+  "@type": ["herbapedia:ChemicalAnalysisData", "schema:Dataset"],
+  "dataType": "ChemicalAnalysis",
+  "sourceDocument": "CHEM_____Lini_Semen_V1.pdf",
+  "scientificName": "Linum usitatissimum",
+  "chineseName": "亞麻子",
+  "pinyinName": "Ya Ma Zi",
+  "englishName": "Linseed / Flaxseed",
+  "identificationMethod": ["TLC", "HPLC-Fingerprint", "HPLC-Assay"],
+  "referenceCompounds": [
+    {
+      "name": "Linoleic acid",
+      "chineseName": "亞油酸",
+      "formula": "C₁₈H₃₂O₂",
+      "purpose": ["TLC identification", "HPLC fingerprint marker", "Assay quantification"]
+    },
+    {
+      "name": "α-Linolenic acid",
+      "chineseName": "α-亞麻酸",
+      "formula": "C₁₈H₃₀O₂",
+      "purpose": ["TLC identification", "HPLC fingerprint marker", "Assay quantification"]
+    },
+    {
+      "name": "Secoisolariciresinol 1,4-diglucoside",
+      "chineseName": "開環異落葉松樹脂酚 1,4-二葡萄糖苷",
+      "formula": "C₃₂H₄₆O₁₆",
+      "purpose": ["Assay quantification"]
+    }
+  ],
+  "assayLimits": {
+    "fattyAcids": {
+      "compounds": ["Linoleic acid", "α-Linolenic acid"],
+      "formulas": ["C₁₈H₃₂O₂", "C₁₈H₃₀O₂"],
+      "minimumContent": "0.56%",
+      "basis": "dried substance (combined total)"
+    },
+    "secoisolariciresinolDiglucoside": {
+      "compound": "Secoisolariciresinol 1,4-diglucoside",
+      "formula": "C₃₂H₄₆O₁₆",
+      "minimumContent": "0.81%",
+      "basis": "dried substance"
+    }
+  },
+  "tlcMethod": {
+    "appendixReference": "Appendix I",
+    "stationaryPhase": "HPTLC silica gel RP-18 F₂₅₄ plate",
+    "developingSolvent": {
+      "components": ["acetone", "glacial acetic acid", "dichloromethane"],
+      "ratio": "5:4:2 (v/v)"
+    },
+    "sprayReagent": {
+      "composition": "5 mL sulfuric acid in 95 mL ethanol",
+      "visualization": "Heat at approximately 105°C for 3-5 minutes, view under UV light at 366 nm"
+    },
+    "standardSolutions": {
+      "linoleicAcid": {
+        "concentration": "0.2 mg/mL in ethanol",
+        "volume": "3.5 μL"
+      },
+      "alphaLinolenicAcid": {
+        "concentration": "0.2 mg/mL in ethanol",
+        "volume": "2.5 μL"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "0.2 g",
+      "solvent": "n-hexane",
+      "solventVolume": "50 mL",
+      "extraction": "ultrasonication (300 W) in water bath at approximately 60°C for 1 hour",
+      "evaporation": "rotary evaporator under reduced pressure",
+      "redissolution": "5 mL isopropanol",
+      "filtration": "0.45-μm PTFE microporous membrane",
+      "volume": "6 μL"
+    },
+    "developingDistance": "8 cm",
+    "saturationTime": "15 minutes",
+    "visualization": "UV light at 366 nm",
+    "identificationCriteria": {
+      "positiveMarkers": ["Linoleic acid", "α-Linolenic acid"],
+      "description": "Sample chromatogram should exhibit characteristic spots or bands with corresponding color and Rf values to linoleic acid and α-linolenic acid"
+    }
+  },
+  "hplcFingerprint": {
+    "appendixReference": "Appendix II",
+    "chromatographicSystem": {
+      "column": {
+        "type": "Octyl-bonded silica gel (C8)",
+        "dimensions": "2.1 × 100 mm",
+        "particleSize": "3.5 μm"
+      },
+      "detector": "DAD (Diode Array Detector)",
+      "detectionWavelength": "210 nm",
+      "columnTemperature": "40°C",
+      "flowRate": "0.6 mL/min",
+      "injectionVolume": "10 μL"
+    },
+    "mobilePhase": {
+      "solventA": "Water",
+      "solventB": "Acetonitrile:Isopropanol (9:1, v/v)",
+      "gradientProgram": [
+        {
+          "timeRange": "0-5 min",
+          "solventA": "80% → 25%",
+          "solventB": "20% → 75%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "5-10 min",
+          "solventA": "25%",
+          "solventB": "75%",
+          "elution": "isocratic"
+        },
+        {
+          "timeRange": "10-18 min",
+          "solventA": "25% → 0%",
+          "solventB": "75% → 100%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "18-40 min",
+          "solventA": "0%",
+          "solventB": "100%",
+          "elution": "isocratic"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "linoleicAcid": {
+        "concentration": "30 mg/L (Std-FP)",
+        "preparation": "0.3 mg in 10 mL ethanol"
+      },
+      "alphaLinolenicAcid": {
+        "concentration": "40 mg/L (Std-FP)",
+        "preparation": "0.4 mg in 10 mL ethanol"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "0.2 g",
+      "solvent": "n-hexane",
+      "solventVolume": "50 mL × 3 extractions",
+      "extraction": "ultrasonication (300 W) in water bath at approximately 60°C for 1 hour",
+      "centrifugation": "4000 × g for 10 minutes",
+      "evaporation": "rotary evaporator under reduced pressure",
+      "redissolution": "isopropanol to 25 mL volumetric flask",
+      "filtration": "0.45-μm PTFE microporous membrane"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "peakAreaRSD": "≤ 5.0% (Linoleic acid and α-Linolenic acid)",
+      "retentionTimeRSD": "≤ 2.0% (Linoleic acid and α-Linolenic acid)",
+      "theoreticalPlates": "≥ 32,000 (based on Linoleic acid and α-Linolenic acid)",
+      "resolution": "≥ 1.5 (between peak 1, peak 2, and adjacent peaks)"
+    },
+    "identificationCriteria": {
+      "retentionTimeTolerance": "≤ 2.0% difference between sample and standard",
+      "characteristicPeaks": "6 characteristic peaks must be present within acceptable RRT ranges"
+    }
+  },
+  "rrtValues": [
+    {
+      "peakNumber": 1,
+      "compound": "α-Linolenic acid",
+      "rrt": 1.00,
+      "acceptableRange": null,
+      "referenceMarker": true,
+      "referenceTo": "self"
+    },
+    {
+      "peakNumber": 2,
+      "compound": "Linoleic acid",
+      "rrt": 1.11,
+      "acceptableRange": "± 0.03",
+      "referenceMarker": false,
+      "referenceTo": "α-Linolenic acid"
+    },
+    {
+      "peakNumber": 3,
+      "compound": null,
+      "rrt": 2.77,
+      "acceptableRange": "± 0.08",
+      "referenceMarker": false,
+      "referenceTo": "α-Linolenic acid"
+    },
+    {
+      "peakNumber": 4,
+      "compound": null,
+      "rrt": 2.87,
+      "acceptableRange": "± 0.08",
+      "referenceMarker": false,
+      "referenceTo": "α-Linolenic acid"
+    },
+    {
+      "peakNumber": 5,
+      "compound": null,
+      "rrt": 2.99,
+      "acceptableRange": "± 0.07",
+      "referenceMarker": false,
+      "referenceTo": "α-Linolenic acid"
+    },
+    {
+      "peakNumber": 6,
+      "compound": null,
+      "rrt": 3.16,
+      "acceptableRange": "± 0.07",
+      "referenceMarker": false,
+      "referenceTo": "α-Linolenic acid"
+    }
+  ],
+  "hplcAssay": {
+    "linoleicAcidAlphaLinolenicAcid": {
+      "appendixReference": "Appendix III",
+      "chromatographicSystem": {
+        "column": {
+          "type": "Octyl-bonded silica gel (C8)",
+          "dimensions": "2.1 × 100 mm",
+          "particleSize": "3.5 μm"
+        },
+        "detector": "DAD (Diode Array Detector)",
+        "detectionWavelength": "210 nm",
+        "columnTemperature": "40°C",
+        "flowRate": "0.6 mL/min"
+      },
+      "mobilePhase": {
+        "solventA": "Water",
+        "solventB": "Acetonitrile:Isopropanol (9:1, v/v)",
+        "gradientProgram": [
+          {
+            "timeRange": "0-5 min",
+            "solventA": "80% → 25%",
+            "solventB": "20% → 75%",
+            "elution": "linear gradient"
+          },
+          {
+            "timeRange": "5-10 min",
+            "solventA": "25%",
+            "solventB": "75%",
+            "elution": "isocratic"
+          },
+          {
+            "timeRange": "10-18 min",
+            "solventA": "25% → 0%",
+            "solventB": "75% → 100%",
+            "elution": "linear gradient"
+          },
+          {
+            "timeRange": "18-40 min",
+            "solventA": "0%",
+            "solventB": "100%",
+            "elution": "isocratic"
+          }
+        ]
+      },
+      "standardSolutions": {
+        "stockSolution": {
+          "concentration": "Linoleic acid 320 mg/L and α-Linolenic acid 400 mg/L",
+          "preparation": "1.6 mg Linoleic acid and 2.0 mg α-Linolenic acid in 5 mL ethanol"
+        },
+        "workingSolutions": {
+          "linoleicAcid": ["5", "10", "20", "40", "80 mg/L"],
+          "alphaLinolenicAcid": ["6.25", "12.5", "25", "50", "100 mg/L"],
+          "description": "Series of mixed standard solutions (Std-AS)"
+        },
+        "injectionVolume": "10 μL"
+      },
+      "testSolution": {
+        "sampleAmount": "0.2 g",
+        "solvent": "n-hexane",
+        "extractionVolume": "50 mL × 3 extractions",
+        "extraction": "ultrasonication (300 W) in water bath at approximately 60°C for 1 hour",
+        "centrifugation": "4000 × g for 10 minutes",
+        "evaporation": "rotary evaporator under reduced pressure",
+        "finalVolume": "25 mL isopropanol",
+        "filtration": "0.45-μm PTFE microporous membrane",
+        "injectionVolume": "10 μL"
+      },
+      "systemSuitability": {
+        "replicateInjections": "5 (minimum)",
+        "standardConcentration": "Linoleic acid 20 mg/L and α-Linolenic acid 25 mg/L (Std-AS)",
+        "peakAreaRSD": "≤ 5.0% (Linoleic acid and α-Linolenic acid)",
+        "retentionTimeRSD": "≤ 2.0% (Linoleic acid and α-Linolenic acid)",
+        "theoreticalPlates": "≥ 32,000 (based on Linoleic acid and α-Linolenic acid)",
+        "resolution": "≥ 1.5 (between Linoleic acid peak, α-Linolenic acid peak, and adjacent peaks)"
+      },
+      "calibration": {
+        "method": "5-point calibration curve",
+        "plot": "Peak area vs. concentration (mg/L)",
+        "identificationTolerance": "≤ 5.0% difference in retention times"
+      }
+    },
+    "secoisolariciresinolDiglucoside": {
+      "appendixReference": "Appendix III",
+      "chromatographicSystem": {
+        "column": {
+          "type": "ODS bonded silica gel (C18)",
+          "dimensions": "4.6 × 250 mm",
+          "particleSize": "5 μm"
+        },
+        "detector": "DAD (Diode Array Detector)",
+        "detectionWavelength": "280 nm",
+        "columnTemperature": "30°C",
+        "flowRate": "1.0 mL/min"
+      },
+      "mobilePhase": {
+        "solventA": "Water",
+        "solventB": "Acetonitrile",
+        "gradientProgram": [
+          {
+            "timeRange": "0-5 min",
+            "solventA": "85%",
+            "solventB": "15%",
+            "elution": "isocratic"
+          },
+          {
+            "timeRange": "5-15 min",
+            "solventA": "85% → 78%",
+            "solventB": "15% → 22%",
+            "elution": "linear gradient"
+          },
+          {
+            "timeRange": "15-20 min",
+            "solventA": "78% → 10%",
+            "solventB": "22% → 90%",
+            "elution": "linear gradient"
+          },
+          {
+            "timeRange": "20-25 min",
+            "solventA": "10%",
+            "solventB": "90%",
+            "elution": "isocratic"
+          }
+        ]
+      },
+      "standardSolutions": {
+        "stockSolution": {
+          "concentration": "720 mg/L",
+          "preparation": "3.6 mg in 5 mL 70% methanol"
+        },
+        "workingSolutions": {
+          "concentrations": ["4.5", "9", "18", "36", "72 mg/L"],
+          "description": "Series of standard solutions (Std-AS) in 70% methanol"
+        },
+        "injectionVolume": "10 μL"
+      },
+      "testSolution": {
+        "sampleAmount": "0.2 g",
+        "defatting": {
+          "solvent": "n-hexane",
+          "extractionVolume": "50 mL × 3 extractions",
+          "extraction": "ultrasonication (300 W) in water bath at approximately 60°C for 1 hour",
+          "centrifugation": "4000 × g for 10 minutes",
+          "filtrateUse": "for Linoleic acid and α-Linolenic acid assay"
+        },
+        "extraction": {
+          "residueDrying": "2 hours",
+          "solvent": "70% methanol containing 4% (w/v) sodium hydroxide",
+          "solventVolume": "20 mL × 2 extractions",
+          "extractionMethod": "ultrasonication (300 W) in water bath at approximately 60°C for 1 hour",
+          "centrifugation": "4000 × g for 10 minutes"
+        },
+        "neutralization": {
+          "reagent": "70% methanol containing 4.37% (w/v) hydrochloric acid",
+          "targetPH": "3"
+        },
+        "finalVolume": "100 mL with 70% methanol",
+        "filtration": "0.45-μm PTFE microporous membrane",
+        "injectionVolume": "10 μL"
+      },
+      "systemSuitability": {
+        "replicateInjections": "5 (minimum)",
+        "standardConcentration": "18 mg/L (Std-AS)",
+        "peakAreaRSD": "≤ 5.0%",
+        "retentionTimeRSD": "≤ 2.0%",
+        "theoreticalPlates": "≥ 25,000",
+        "resolution": "≥ 1.5 (between SDG peak and adjacent peaks)"
+      },
+      "calibration": {
+        "method": "5-point calibration curve",
+        "plot": "Peak area vs. concentration (mg/L)",
+        "identificationTolerance": "≤ 5.0% difference in retention times"
+      }
+    }
+  },
+  "appendices": {
+    "appendixI": {
+      "title": "Chromatography – Thin-Layer Chromatography",
+      "description": "General procedures for TLC including plate types, application methods, developing chambers, Rf calculation, and chromatogram interpretation"
+    },
+    "appendixII": {
+      "title": "GC and HPLC/UHPLC Fingerprinting",
+      "description": "Methods for establishing chromatographic fingerprints using marker peaks and RRT values. Requires at least 10 batches of representative samples examined in duplicate."
+    },
+    "appendixIII": {
+      "title": "Chromatography – HPLC/UHPLC",
+      "description": "General HPLC/UHPLC procedures including system suitability tests (theoretical plates, repeatability, resolution, tailing factor) and quantitative calculations"
+    }
+  },
+  "figures": {
+    "figure1": {
+      "title": "Chemical structures",
+      "contents": ["Linoleic acid (亞油酸)", "α-Linolenic acid (α-亞麻酸)", "Secoisolariciresinol 1,4-diglucoside (開環異落葉松樹脂酚 1,4-二葡萄糖苷)"]
+    },
+    "figure2": {
+      "title": "Reference HPTLC chromatogram of Linseed extract",
+      "description": "Viewed under UV light at 366 nm after derivatization",
+      "lanes": ["Lane 1: α-Linolenic acid standard", "Lane 2: Linoleic acid standard", "Lane 3: Test solution"]
+    },
+    "figure3": {
+      "title": "Reference HPLC fingerprint of Linseed extract",
+      "description": "6 characteristic peaks over 40 minutes run time"
+    },
+    "figure4": {
+      "title": "Reference chromatogram for Linoleic acid and α-Linolenic acid assay",
+      "description": "HPLC-DAD chromatogram at 210 nm"
+    },
+    "figure5": {
+      "title": "Reference chromatogram for Secoisolariciresinol 1,4-diglucoside assay",
+      "description": "HPLC-DAD chromatogram at 280 nm"
+    }
+  },
+  "extractedAt": "2026-02-21"
+}

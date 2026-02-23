@@ -1,0 +1,47 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/hawthorn",
+  "@type": [
+    "botany:PlantSpecies",
+    "herbapedia:BotanicalSource",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Hawthorn",
+    "zh-Hant": "山楂",
+    "zh-Hans": "山楂"
+  },
+  "scientificName": "Crataegus pinnatifida",
+  "image": "media/images/crataegus-pinnatifida/main.jpg",
+  "gbifID": "3013665",
+  "wikidataID": "Q157413",
+  "containsChemical": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/flavonoids"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/tannins"
+    }
+  ],
+  "provenance": {
+    "created": "2026-02-20T00:00:00.000Z",
+    "modified": "2026-02-21T01:46:20.753Z",
+    "migratedFrom": "entities/plants/hawthorn/entity.jsonld",
+    "source": "Herbapedia legacy data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "classificationNote": "Reclassified as BotanicalSource"
+  },
+  "hasParts": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/part/hawthorn-fruit"
+    }
+  ],
+  "sourceType": "botanical",
+  "sourceSubType": "plant",
+  "hasWesternProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/western/profile/hawthorn"
+    }
+  ],
+  "ncbiTaxonID": "93934"
+}

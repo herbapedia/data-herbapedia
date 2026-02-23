@@ -1,0 +1,46 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/preparation/ren-shen",
+  "@type": [
+    "herbal:HerbalPreparation",
+    "schema:DietarySupplement"
+  ],
+  "name": {
+    "en": "Ginseng",
+    "zh-Hant": "人蔘",
+    "zh-Hans": "人参"
+  },
+  "derivedFrom": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/ginseng"
+    }
+  ],
+  "preparationMethod": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/method/dried"
+  },
+  "form": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/form/whole"
+  },
+  "hasTCMProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/profile/ren-shen"
+    }
+  ],
+  "safetyInfo": {
+    "generalContraindications": {
+      "en": "Contraindicated in excess heat patterns, high fever, excess conditions. Avoid with veratrum (藜蘆). Use cautiously with radish (蘿蔔) which may reduce effects.",
+      "zh-Hant": "實熱證、濕熱證忌用。反藜蘆。服用人蔘時忌食蘿蔔。"
+    }
+  },
+  "provenance": {
+    "created": "2026-02-20",
+    "source": "Generated from TCM profile",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "description": {
+    "en": "Herbal preparation derived from Ginseng. The supreme qi tonic herb. Used for severe qi deficiency, prolapse, fatigue, loss of appetite, shortness of breath, spontaneous sweating, thirst, and heart palpitations. Famous for rescuing devastated..."
+  },
+  "image": "media/images/ren-shen/ren-shen.jpg"
+}

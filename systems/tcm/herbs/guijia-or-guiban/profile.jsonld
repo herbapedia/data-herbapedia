@@ -1,12 +1,12 @@
 {
-  "@context": "../../schema/context/tcm.jsonld",
-  "@id": "tcm/guijia-or-guiban",
+  "@context": "https://www.herbapedia.org/schema/context/tcm.jsonld",
+  "@id": "https://www.herbapedia.org/system/tcm/profile/guijia-or-guiban",
   "@type": [
     "tcm:Herb",
     "schema:DietarySupplement"
   ],
   "derivedFromPlant": {
-    "@id": "plant/guijia-or-guiban"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/guijia-or-guiban"
   },
   "name": {
     "en": "Guijia or Guiban",
@@ -19,19 +19,19 @@
     "zh-Hans": "龟板"
   },
   "hasCategory": {
-    "@id": "category/tonify-qi"
+    "@id": "https://www.herbapedia.org/system/tcm/category/tonify-yin"
   },
   "hasNature": {
-    "@id": "nature/neutral"
+    "@id": "https://www.herbapedia.org/system/tcm/nature/neutral"
   },
   "hasFlavor": [
     {
-      "@id": "flavor/sweet"
+      "@id": "https://www.herbapedia.org/system/tcm/flavor/sweet"
     }
   ],
   "entersMeridian": [
     {
-      "@id": "meridian/spleen"
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/spleen"
     }
   ],
   "tcmHistory": {
@@ -48,6 +48,8 @@
   "created": "2026-02-18T09:15:20.172Z",
   "license": "https://creativecommons.org/licenses/by-sa/4.0/",
   "sameAs": [
-    "https://www.wikidata.org/wiki/Q13486671"
+    {
+      "@id": "https://www.wikidata.org/wiki/Q13486671"
+    }
   ]
 }

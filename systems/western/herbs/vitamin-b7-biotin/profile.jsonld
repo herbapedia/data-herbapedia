@@ -1,11 +1,11 @@
 {
-  "@context": "../../schema/context/western.jsonld",
-  "@id": "western/vitamin-b7-biotin",
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/vitamin-b7-biotin",
   "@type": [
     "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
-    "@id": "plant/vitamin-b7-biotin"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/vitamin-b7-biotin"
   },
   "name": {
     "en": "Vitamin B7, Biotin",

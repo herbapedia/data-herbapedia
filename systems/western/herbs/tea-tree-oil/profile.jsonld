@@ -1,11 +1,11 @@
 {
-  "@context": "../../schema/context/western.jsonld",
-  "@id": "western/tea-tree-oil",
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/tea-tree-oil",
   "@type": [
     "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
-    "@id": "plant/tea-tree-oil"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/tea-tree-oil"
   },
   "name": {
     "en": "Tea Tree oil",

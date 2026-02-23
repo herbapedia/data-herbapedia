@@ -1,12 +1,12 @@
 {
-  "@context": "../../schema/context/western.jsonld",
-  "@id": "western/valerian",
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/valerian",
   "@type": [
     "western:Herb",
     "schema:DietarySupplement"
   ],
   "derivedFromPlant": {
-    "@id": "plant/valerian"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/valerian"
   },
   "name": {
     "en": "Valerian",
@@ -15,13 +15,23 @@
   },
   "scientificName": "Valeriana officinalis",
   "hasAction": [
-    { "@id": "western/action/sedative" },
-    { "@id": "western/action/anxiolytic" },
-    { "@id": "western/action/nervine" }
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/sedative"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/anxiolytic"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/nervine"
+    }
   ],
   "hasOrganAffinity": [
-    { "@id": "western/organ/nervous-system" },
-    { "@id": "western/organ/brain" }
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/nervous-system"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/brain"
+    }
   ],
   "westernHistory": {
     "en": "Valerian has been used as a medicinal herb since ancient Greek and Roman times. Hippocrates described its properties, and Galen prescribed it for insomnia. It was widely used in medieval Europe as a sleep aid and calmative.",

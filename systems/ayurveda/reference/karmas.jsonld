@@ -1,0 +1,207 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "https://www.herbapedia.org/system/ayurveda/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "schema": "https://schema.org/",
+    "ayurveda": "https://www.herbapedia.org/vocab/ayurveda/"
+  },
+  "@id": "https://www.herbapedia.org/system/ayurveda/karmas",
+  "@type": ["skos:Collection"],
+  "rdfs:label": {
+    "en": "Ayurveda Karma (Therapeutic Actions)",
+    "sa": "कर्म"
+  },
+  "rdfs:comment": "Controlled vocabulary for Ayurvedic therapeutic actions (कर्म).",
+  "members": [
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/karma/dipana",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Dipana",
+        "sa": "दीपन"
+      },
+      "skos:definition": {
+        "en": "Kindles digestive fire (Agni), promotes digestion."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/karma/pachana",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Pachana",
+        "sa": "पचन"
+      },
+      "skos:definition": {
+        "en": "Digests ama (toxins) without increasing digestive fire."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/karma/amapachana",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Amapachana",
+        "sa": "अमापचन"
+      },
+      "skos:definition": {
+        "en": "Digests toxins (ama) and removes them from the body."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/karma/deepana",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Deepana",
+        "sa": "दीपन"
+      },
+      "skos:definition": {
+        "en": "Kindles digestion, increases digestive power."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/karma/ruchukara",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Ruchikara",
+        "sa": "रुचिकर"
+      },
+      "skos:definition": {
+        "en": "Improves taste, enhances appetite."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/karma/hrudya",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Hrudya",
+        "sa": "हृद्य"
+      },
+      "skos:definition": {
+        "en": "Cardiac tonic, benefits the heart."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/karma/rasayana",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Rasayana",
+        "sa": "रसायन"
+      },
+      "skos:definition": {
+        "en": "Rejuvenative, promotes longevity and vitality."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/karma/vatahara",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Vatahara",
+        "sa": "वातहर"
+      },
+      "skos:definition": {
+        "en": "Reduces or pacifies Vata dosha."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/karma/pittahara",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Pittahara",
+        "sa": "पित्तहर"
+      },
+      "skos:definition": {
+        "en": "Reduces or pacifies Pitta dosha."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/karma/shleshmahara",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Shleshmahara",
+        "sa": "श्लेष्महर"
+      },
+      "skos:definition": {
+        "en": "Reduces or pacifies Kapha dosha."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/karma/kusthaghna",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Kusthaghna",
+        "sa": "कुष्ठघ्न"
+      },
+      "skos:definition": {
+        "en": "Treats skin diseases, anti-dermatitic."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/karma/varnya",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Varnya",
+        "sa": "वर्ण्य"
+      },
+      "skos:definition": {
+        "en": "Improves complexion, promotes healthy skin."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/karma/vranaropana",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Vranaropana",
+        "sa": "व्रणरोपण"
+      },
+      "skos:definition": {
+        "en": "Wound healing, promotes tissue regeneration."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/karma/shulaghna",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Shulaghna",
+        "sa": "शूलघ्न"
+      },
+      "skos:definition": {
+        "en": "Relieves pain, especially abdominal pain."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/karma/pramehaghna",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Pramehaghna",
+        "sa": "प्रमेहघ्न"
+      },
+      "skos:definition": {
+        "en": "Treats diabetes and urinary disorders."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/karma/pandughna",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Pandughna",
+        "sa": "पाण्डुघ्न"
+      },
+      "skos:definition": {
+        "en": "Treats anemia, purifies blood."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/karma/vriddhahara",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Vriddhahara",
+        "sa": "वृद्धिहर"
+      },
+      "skos:definition": {
+        "en": "Anti-aging, promotes vitality and longevity."
+      }
+    }
+  ]
+}

@@ -1,11 +1,11 @@
 {
-  "@context": "../../schema/context/western.jsonld",
-  "@id": "western/bitter-orange",
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/bitter-orange",
   "@type": [
     "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
-    "@id": "plant/bitter-orange"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/bitter-orange"
   },
   "name": {
     "en": "Bitter Orange",

@@ -1,0 +1,46 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/indian-mulberry-root",
+  "@type": [
+    "botany:PlantSpecies",
+    "herbapedia:BotanicalSource",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Indian Mulberry Root",
+    "zh-Hant": "巴戟天",
+    "zh-Hans": "巴戟天"
+  },
+  "scientificName": "Morinda officinalis",
+  "family": null,
+  "genus": null,
+  "description": {
+    "en": "The fleshy root of Morinda officinalis How, family Rubiaceae.\n",
+    "zh-Hant": "巴戟天（學名：Morinda officinalis）是一種具有藥用價值的漿果類植物。現代研究表明其富含花青素、類黃酮等抗氧化物質，具有保護心血管、改善視力等藥理活性。",
+    "zh-Hans": "巴戟天（学名：Morinda officinalis）是一种具有药用價值的浆果类植物。現代研究表明其富含花青素、类黃酮等抗氧化物质，具有保護心血管、改善視力等药理活性。"
+  },
+  "image": "media/images/morinda-officinalis/main.jpg",
+  "gbifID": 7356096,
+  "provenance": {
+    "created": "2026-02-18T09:15:23.347Z",
+    "modified": "2026-02-21T01:46:20.753Z",
+    "migratedFrom": "entities/plants/indian-mulberry-root/entity.jsonld",
+    "source": "vitaherbapedia.com",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "classificationNote": "Reclassified as BotanicalSource"
+  },
+  "hasParts": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/part/indian-mulberry-root"
+    }
+  ],
+  "sourceType": "botanical",
+  "sourceSubType": "plant",
+  "hasTCMProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/profile/indian-mulberry-root"
+    }
+  ],
+  "wikidataID": "Q15389403",
+  "ncbiTaxonID": "131958"
+}

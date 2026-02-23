@@ -1,0 +1,86 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/chemical/flavonoids",
+  "@type": [
+    "botany:ChemicalCompound",
+    "schema:BioChemEntity"
+  ],
+  "name": {
+    "en": "Flavonoids",
+    "zh-Hant": "類黃酮",
+    "zh-Hans": "类黄酮"
+  },
+  "commonName": [
+    "Flavonoids",
+    "Bioflavonoids",
+    "Polyphenolic compounds"
+  ],
+  "chebiID": "CHEBI:72544",
+  "compoundClass": "Polyphenols; Flavonoids",
+  "description": {
+    "en": "A diverse group of plant polyphenolic compounds with a characteristic C6-C3-C6 carbon skeleton. Responsible for vibrant colors in plants and possess significant antioxidant, anti-inflammatory, and immunomodulatory properties. One of the largest classes of plant secondary metabolites with over 6,000 known varieties."
+  },
+  "pharmacology": [
+    "Potent antioxidant activity (free radical scavenging)",
+    "Anti-inflammatory effects (COX-2 inhibition)",
+    "Cardiovascular protection",
+    "Neuroprotective properties",
+    "Antiviral and antibacterial activity",
+    "Estrogenic and anti-estrogenic effects"
+  ],
+  "bioavailability": {
+    "en": "Variable bioavailability depending on specific flavonoid type. Generally poorly absorbed, metabolized by gut microbiota. Enhanced by vitamin C co-consumption."
+  },
+  "safetyData": {
+    "toxicity": "Generally safe when consumed in dietary amounts",
+    "warnings": [
+      "High dose supplements may interact with certain medications"
+    ]
+  },
+  "provenance": {
+    "created": "2024-01-15",
+    "modified": "2026-02-20T17:59:34.447Z",
+    "source": "Phytochemistry Literature",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "foundIn": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/bilberry"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/blueberry"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/chamomile"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/dandelion"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/garlic"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/ginkgo"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/grape-seed"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/green-tea"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/hawthorn"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/milk-thistle"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/saw-palmetto"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/st-johns-wort"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/baiziren",
+  "@type": [
+    "botany:PlantSpecies",
+    "herbapedia:BotanicalSource",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Baiziren",
+    "zh-Hant": "柏子仁",
+    "zh-Hans": "柏子仁"
+  },
+  "scientificName": "Platycladus Orientalis",
+  "family": null,
+  "genus": null,
+  "description": {
+    "en": "The seed (without the spermoderm) of Biota orientalis (L.) Endl. Family Cupressaceae.\n",
+    "zh-Hant": "柏子仁（學名：Platycladus Orientalis）是一種具有藥用價值的天然產物。現代藥理學研究證實其含有多種生物活性成分，在傳統醫學和現代保健領域均有重要應用價值。",
+    "zh-Hans": "柏子仁（学名：Platycladus Orientalis）是一种具有药用價值的天然產物。現代药理学研究证实其含有多种生物活性成分，在传统医学和現代保健領域均有重要应用價值。"
+  },
+  "image": "media/images/platycladus-orientalis/main.jpg",
+  "provenance": {
+    "created": "2026-02-18T09:14:52.137Z",
+    "modified": "2026-02-21T01:46:20.746Z",
+    "migratedFrom": "entities/plants/baiziren/entity.jsonld",
+    "source": "vitaherbapedia.com",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "classificationNote": "Reclassified as BotanicalSource"
+  },
+  "hasParts": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/part/baiziren-root"
+    }
+  ],
+  "gbifID": "2684855",
+  "wikidataID": "Q33482",
+  "sourceType": "botanical",
+  "sourceSubType": "plant",
+  "hasTCMProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/profile/baiziren"
+    }
+  ],
+  "ncbiTaxonID": "3369"
+}

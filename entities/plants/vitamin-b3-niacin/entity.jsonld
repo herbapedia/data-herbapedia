@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/vitamin-b3-niacin",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/vitamin-b3-niacin",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"

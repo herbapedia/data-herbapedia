@@ -1,0 +1,50 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/botany.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/barcode/ginkgo",
+  "@type": [
+    "botany:DNABarcode",
+    "schema:Dataset"
+  ],
+  "name": {
+    "en": "Ginkgo DNA Barcode",
+    "zh-Hant": "銀杏DNA條碼",
+    "zh-Hans": "银杏DNA条码"
+  },
+  "barcodes": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/ginkgo"
+  },
+  "sequence": [
+    {
+      "region": "rbcL",
+      "sequence": "ATGTCACCACAAACAGAAACTAAAGCAAGTGTTGGATTATAAAGGTCAGTTCGATCTTTGAATAATTCATTATTTGATTTATTCAAATCCACGTCGACTTGTAGACAGATCTTTTATAAAATTGTAAAAAATCAATCTTAAGTTTTTTATTTGATCCTTTTTATTAATTCAGAATCTTTTGTATATCTATTCATGAGTTAAACTTTTTATTTGTATCAAAAATCACTATATATATATATATATATATAATACATATATATATATATATTTATTCCTTTTATTTATTTCTTATAATTCATTTTTTTTTTTTTTTAATATAGATATATATATATATTTTATTTTTTTATATTTTTTTTTAATATATATATATATATATATATATATATATATATATA",
+      "length": 555,
+      "genbankAccession": "NC_016122"
+    },
+    {
+      "region": "matK",
+      "sequence": "TCTAGAGCAAGTCTTTGCCTTAAACTTGGTTTTTCTTATCAATTAAGAATCCTTTTATTTTCATTTTATTTGATGATTTTTCAAATATTATAAATCTTCAATTTTATATTTAATTTATCTTTTAATATTATTATCAATTTTTTTATTTATTTTTATTTTTATAAATAATTTGATACTTCTTTTATTAATACAACTTCAATATATATTTATTATATTTTATTTTATTTTTTTTCTATTATTAATAATTTATATAAATATTATTTCTTTAATATTTTAATTTTTTTTTTGAATTATTTTTTAATTTTTTTATATTTTAATATAATATTTAATATATTTATTTATTTTTTTTTAAATATTTTATATTTATTTTTTATATTTTTTTTATTTAATAATAATTTTATTTTTTTTTTTTTTAATATTAATATAATAATAA",
+      "length": 658,
+      "genbankAccession": "AB604356"
+    },
+    {
+      "region": "ITS2",
+      "sequence": "CGATCGATACGTTTGAATGCATTGATATTCGTCGTGATGATTCACGATGCTTTGCTGCGAGCTTCTCTCCGCTCATCGATGAAGAACGTAGCGAAATGCGATACTTGGTGTGAATTGCAGAATCCCGTGAACCATCGAGTCTTTGAACGCAAGTTGCGCCCGAAGCCTTTAGTTGAGGGTACTGATGTGAATCGTCTTTTATCAACACTATATAC",
+      "length": 227,
+      "genbankAccession": "AF243628"
+    }
+  ],
+  "adulterantDetection": {
+    "canDetect": [
+      "Ginkgo relatives (extinct)",
+      "Sophora japonica"
+    ],
+    "description": {
+      "en": "Ginkgo biloba is a living fossil with no close living relatives. DNA barcoding can detect adulteration with other species"
+    }
+  },
+  "provenance": {
+    "created": "2026-02-21T00:00:00.000Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

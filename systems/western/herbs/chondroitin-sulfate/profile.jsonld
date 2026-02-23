@@ -1,11 +1,11 @@
 {
-  "@context": "../../schema/context/western.jsonld",
-  "@id": "western/chondroitin-sulfate",
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/chondroitin-sulfate",
   "@type": [
     "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
-    "@id": "plant/chondroitin-sulfate"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/chondroitin-sulfate"
   },
   "name": {
     "en": "Chondroitin Sulfate",

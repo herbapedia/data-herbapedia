@@ -1,0 +1,34 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/sources/zoological/chitosan",
+  "@type": [
+    "herbapedia:ZoologicalSource",
+    "herbapedia:SourceMaterial"
+  ],
+  "sourceType": "zoological",
+  "name": {
+    "en": "Chitosan",
+    "zh-Hant": "甲殼素",
+    "zh-Hans": "甲壳素"
+  },
+  "animalName": {
+    "en": "Crustaceans (crabs, shrimp)",
+    "zh-Hant": "甲殼類（螃蟹、蝦）",
+    "zh-Hans": "甲壳类（螃蟹、虾）"
+  },
+  "animalPart": "exoskeleton",
+  "description": {
+    "en": "Chitosan is produced by the deacetylation of chitin, which is the structural element in the exoskeleton of crustaceans such as crabs and shrimp.",
+    "zh-Hant": "甲殼素是由甲殼類（如螃蟹和蝦）外骨骼中的甲殼素脫乙酰化而成。",
+    "zh-Hans": "甲壳素是由甲壳类（如螃蟹和虾）外骨骼中的甲壳素脱乙酰化而成。"
+  },
+  "image": "media/images/chitosan/chitosan.jpg",
+  "provenance": {
+    "created": "2026-02-18T09:17:03.460Z",
+    "modified": "2026-02-21T09:47:00.000Z",
+    "migratedFrom": "entities/botanical/species/chitosan/entity.jsonld",
+    "source": "vitaherbapedia.com",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "wikidataID": "Q424362"
+}

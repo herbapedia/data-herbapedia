@@ -1,0 +1,93 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/preparation/ginseng-root",
+  "@type": [
+    "herbal:HerbalPreparation",
+    "schema:DietarySupplement"
+  ],
+  "name": {
+    "en": "Ginseng Root",
+    "zh-Hant": "人蔘",
+    "zh-Hans": "人参",
+    "ko": "인삼"
+  },
+  "derivedFrom": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/ginseng"
+    }
+  ],
+  "description": {
+    "en": "The dried root of Panax ginseng, one of the most valued herbs in East Asian traditional medicine. Used as a tonic, adaptogen, and restorative agent."
+  },
+  "preparationMethod": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/method/dried"
+  },
+  "preparationDetails": {
+    "en": "Fresh roots are carefully cleaned and dried. White ginseng is air-dried, while red ginseng is steamed before drying, which changes its chemical composition and properties."
+  },
+  "form": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/form/whole"
+  },
+  "appearance": {
+    "en": "Light yellow to tan colored root with characteristic human-like shape, bitter-sweet taste"
+  },
+  "storageRequirements": {
+    "en": "Store in cool, dry place away from moisture and direct sunlight"
+  },
+  "shelfLife": "3-5 years when properly stored",
+  "commonUsage": {
+    "culinary": {
+      "en": "Added to soups, teas, and tonic drinks"
+    }
+  },
+  "safetyInfo": {
+    "allergens": [],
+    "pregnancySafety": {
+      "en": "Not recommended during pregnancy due to potential hormonal effects"
+    },
+    "generalContraindications": {
+      "en": "Avoid in cases of excess heat, high blood pressure, acute infections. May cause overstimulation in some individuals."
+    },
+    "drugInteractions": [
+      "warfarin",
+      "MAO inhibitors",
+      "diabetes medications",
+      "stimulants"
+    ],
+    "warnings": [
+      {
+        "en": "May interact with blood thinning medications"
+      },
+      {
+        "en": "Can cause insomnia, nervousness, or headache in sensitive individuals"
+      }
+    ]
+  },
+  "hasTCMProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/profile/ren-shen"
+    }
+  ],
+  "hasWesternProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/western/profile/ginseng"
+    }
+  ],
+  "relatedPreparations": [
+    {
+      "@id": "https://www.herbapedia.org/entity/preparation/red-ginseng"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/preparation/ginseng-tea"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/preparation/ginseng-extract"
+    }
+  ],
+  "provenance": {
+    "created": "2024-01-15",
+    "modified": "2024-01-15",
+    "source": "Traditional medicine texts, pharmacological research"
+  },
+  "image": "media/images/ginseng-root/ginseng-root.jpg"
+}

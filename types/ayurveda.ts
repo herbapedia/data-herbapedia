@@ -2,9 +2,28 @@
  * Ayurvedic Medicine types for Herbapedia
  *
  * All content properties are AYURVEDA-SCOPED (ayurveda:traditionalUsage, not generic)
+ *
+ * @deprecated Use types from './profiles/ayurveda' instead
  */
 
-import type { JsonLdNode, LanguageMap, SystemProfileBase } from './core'
+import type { LanguageMap, IRIReference, Provenance } from './core'
+
+// Base type for JSON-LD nodes
+/** @deprecated */
+export interface JsonLdNode {
+  '@id': string
+  '@type': string | string[]
+  '@context'?: string | string[]
+}
+
+/** @deprecated Use MedicineSystemProfile from './profiles/base' instead */
+export interface SystemProfileBase extends JsonLdNode {
+  profiles?: IRIReference
+  traditionalUsage?: LanguageMap
+  modernResearch?: LanguageMap
+  provenance?: Provenance
+  source?: string
+}
 
 // Ayurvedic Doshas (三能量)
 export type DoshaType =

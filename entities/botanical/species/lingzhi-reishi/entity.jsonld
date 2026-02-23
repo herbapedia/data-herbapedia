@@ -1,0 +1,64 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/lingzhi-reishi",
+  "@type": [
+    "herbapedia:BotanicalSource",
+    "mycology:FungalSpecies",
+    "schema:Thing"
+  ],
+  "name": {
+    "en": "Lingzhi (Reishi)",
+    "zh-Hant": "靈芝、野生靈芝",
+    "zh-Hans": "灵芝、野生灵芝"
+  },
+  "scientificName": "Ganoderma lucidum",
+  "family": "Polyporaceae",
+  "genus": "Ganoderma",
+  "description": {
+    "en": "The fruiting body (sporophore) of Ganoderma lucidum, a polypore fungus used in traditional medicine. The fruiting body represents one life stage of the organism, which also includes spores and mycelium.",
+    "zh-Hant": "野生靈芝（學名：Ganoderma lucidum）是多孔菌科靈芝屬的真菌，其子實體具有藥用價值。子實體是靈芝的一個生命階段，還包括孢子和菌絲體。",
+    "zh-Hans": "野生灵芝（学名：Ganoderma lucidum）是多孔菌科灵芝属的真菌，其子实体具有药用价值。子实体是灵芝的一个生命阶段，还包括孢子和菌丝体。"
+  },
+  "image": "media/images/ganoderma-lucidum/main.jpg",
+  "gbifID": 2549730,
+  "wikidataID": "Q271098",
+  "containsChemical": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/polysaccharides"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/terpenes"
+    }
+  ],
+  "provenance": {
+    "created": "2026-02-18T09:15:29.840Z",
+    "modified": "2026-02-21T01:46:20.754Z",
+    "migratedFrom": "entities/plants/lingzhi-reishi/entity.jsonld",
+    "source": "vitaherbapedia.com",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "classificationNote": "Reclassified as BotanicalSource"
+  },
+  "hasParts": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/part/lingzhi-reishi-whole-plant"
+    }
+  ],
+  "hasLifeStage": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/lingzhi-spores"
+    }
+  ],
+  "produces": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/lingzhi-spores"
+    }
+  ],
+  "sourceType": "botanical",
+  "sourceSubType": "fungus",
+  "hasTCMProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/profile/lingzhi-reishi"
+    }
+  ],
+  "ncbiTaxonID": "60497"
+}

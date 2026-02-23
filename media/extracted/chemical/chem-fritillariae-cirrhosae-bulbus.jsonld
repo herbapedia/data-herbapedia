@@ -1,0 +1,169 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/chemical/fritillariae-cirrhosae-bulbus",
+  "@type": ["herbapedia:ChemicalAnalysisData", "schema:Dataset"],
+  "dataType": "ChemicalAnalysis",
+  "sourceDocument": "CHEM_____Fritillariae_Cirrhosae_Bulbus.pdf",
+  "scientificName": "Fritillaria cirrhosa D. Don / Fritillaria unibracteata Hsiao et K. C. Hsia",
+  "chineseName": "川貝母",
+  "pinyinName": "Chuan Bei Mu",
+  "identificationMethod": ["TLC", "PCR-RFLP", "UV-Vis-Colourimetry"],
+  "referenceCompounds": [
+    {
+      "name": "Peimisine",
+      "chineseName": "貝母辛",
+      "purpose": ["TLC identification", "Colourimetry quantification"]
+    }
+  ],
+  "tlcMethod": {
+    "appendixReference": "Appendix I",
+    "stationaryPhase": "TLC silica gel F254 plate",
+    "developingSolvent": {
+      "components": ["ethyl acetate", "methanol", "ammonium hydroxide solution (25%, v/v)", "water"],
+      "ratio": "18:2:1:0.1 (v/v)"
+    },
+    "sprayReagent": {
+      "composition": "1 g vanillin in 100 mL sulphuric acid",
+      "visualization": "UV light at 366 nm after spraying and drying"
+    },
+    "testSolution": {
+      "sampleAmount": "5.0 g",
+      "solvent": ["ammonium hydroxide solution (25%, v/v)", "dichloromethane"],
+      "solventVolumes": ["5 mL", "30 mL"],
+      "extraction": "ultrasonication (100 W) for 1 hour",
+      "evaporation": "rotary evaporator at reduced pressure",
+      "finalVolume": "1 mL methanol"
+    },
+    "standardSolutions": {
+      "compound": "Peimisine CRS",
+      "concentration": "0.5 mg/mL in methanol"
+    },
+    "applicationVolumes": {
+      "standardSolution": "2 uL",
+      "testSolution": "12 uL"
+    },
+    "developingDistance": "7 cm",
+    "chamberSaturation": "15 minutes in twin trough chamber",
+    "visualization": "UV light at 366 nm",
+    "identificationCriteria": {
+      "positiveMarkers": ["Peimisine"],
+      "criterion": "Sample must give spot or band with chromatographic characteristics, including colour and Rf value, corresponding to peimisine"
+    }
+  },
+  "pcrRflpMethod": {
+    "appendixReference": "Appendix II",
+    "method": "Polymerase Chain Reaction - Restriction Fragment Length Polymorphism (PCR-RFLP)",
+    "primerSequences": {
+      "ITS-P1": "5'-CGT AAC AAG GTT TCC GTA GGT GAA-3'",
+      "ITS-P3": "5'-GCT ACG TTC TTC ATC GAT-3'"
+    },
+    "dnaExtraction": {
+      "sampleAmount": "20 mg",
+      "method": "Plant DNA extraction kit"
+    },
+    "pcrConditions": {
+      "pcrSystem": "GeneAmp PCR System 9700 (AB Applied Biosystems) or equivalent",
+      "dnaTemplate": "10-50 ng",
+      "initialDenaturation": "95C, 4 min",
+      "cycles": 30,
+      "pcrProfile": {
+        "denaturation": "95C, 0.5 min",
+        "annealing": "58C, 0.5 min",
+        "extension": "72C, 0.5 min"
+      },
+      "finalExtension": "72C, 5 min"
+    },
+    "restrictionAnalysis": {
+      "enzyme": "Sma I (10 U/uL)",
+      "incubationTemperature": "37C",
+      "incubationTime": "1.5 h",
+      "totalVolume": "20 uL",
+      "reactionComponents": {
+        "pcrProduct": "6 uL",
+        "smaI": "0.5 uL (10 U/uL)",
+        "digestionBuffer10x": "2 uL",
+        "pcrGradeWater": "11.5 uL"
+      }
+    },
+    "electrophoresisConditions": {
+      "gel": "1.2% agarose gel with 0.001% SYBR Safe DNA gel stain",
+      "loadingVolume": "10 uL",
+      "dnaSizeMarker": "1 kb DNA ladder (10 uL)",
+      "detector": "UV transilluminator",
+      "runningVoltage": "80V",
+      "runningTime": "30 min"
+    },
+    "identificationCriteria": {
+      "pcrProduct": "0.3 kb band for Fritillaria cirrhosa and Fritillaria unibracteata",
+      "rflpProduct": "Two bands between ~0.1-0.2 kb after Sma I digestion",
+      "blankControl": "No bands should appear"
+    }
+  },
+  "uvVisColourimetryMethod": {
+    "appendixReference": "Appendix III",
+    "reagents": {
+      "sodiumHydroxideSolution02M": {
+        "preparation": "Dissolve 0.4 g sodium hydroxide in 50 mL water"
+      },
+      "bromocresolGreenSolution": {
+        "preparation": "Dissolve 0.05 g bromocresol green in 6 mL 0.2 M sodium hydroxide solution, transfer to 100-mL volumetric flask, add 1 g potassium dihydrogen phosphate, dilute to volume with water"
+      }
+    },
+    "standardSolutions": {
+      "stockSolution": {
+        "name": "Peimisine CRS stock solution (Std-Stock)",
+        "concentration": "500 mg/L",
+        "preparation": "Accurately weigh 5.0 mg peimisine CRS and dissolve in 10 mL dichloromethane"
+      },
+      "workingSolutions": {
+        "name": "Peimisine CRS working solution (Std-AS)",
+        "preparation": "Pipette appropriate volume of stock solution into 50-mL round-bottom flask, evaporate to dryness using rotary evaporator at reduced pressure, add 10 mL dichloromethane to dissolve residue",
+        "calibrationConcentrations": ["2.5", "5", "12.5", "25", "37.5 mg/L"]
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "2.0 g",
+      "alkalization": "3 mL ammonium hydroxide solution (25%, v/v), stand for 1 hour",
+      "extractionSolvent": "dichloromethane-methanol (4:1, v/v)",
+      "extractionVolume": "40 mL",
+      "extractionMethod": "Heat reflux for 2 hours",
+      "cooling": "Cool to room temperature",
+      "filtration": "Filter and transfer to 50-mL volumetric flask",
+      "washing": "Wash residue twice with 2 mL extraction solvent each time",
+      "finalDilution": "Dilute to 50 mL with extraction solvent",
+      "aliquotVolume": "8 mL",
+      "evaporation": "Rotary evaporator at reduced pressure",
+      "finalVolume": "10 mL dichloromethane"
+    },
+    "calibration": {
+      "method": "5-point calibration curve",
+      "plot": "Absorbance vs. concentration (mg/L)",
+      "concentrationFormula": "Concentration of analyte = (A - I) / m",
+      "contentFormula": "Content (%) = (C x V x D) / (10000 x W)",
+      "variables": {
+        "A": "Absorbance of analyte in test solution",
+        "I": "Y-intercept of 5-point calibration curve",
+        "m": "Slope of 5-point calibration curve",
+        "C": "Concentration of analyte in test solution (mg/L)",
+        "D": "Dilution factor",
+        "V": "Final make-up volume of test solution (mL)",
+        "W": "Weight of sample used (g)"
+      }
+    }
+  },
+  "appendices": {
+    "appendixI": {
+      "title": "Chromatography - Thin-Layer Chromatography (TLC)",
+      "description": "General procedures for TLC including plate types, application methods, developing chambers, Rf calculation and interpretation of chromatograms"
+    },
+    "appendixII": {
+      "title": "DNA Identification",
+      "description": "DNA analysis methods for CMM authentication including PCR-RFLP, apparatus requirements, PCR conditions, restriction analysis and electrophoresis detection"
+    },
+    "appendixIII": {
+      "title": "Ultraviolet Spectrophotometry and Colourimetry",
+      "description": "General procedures for UV-Vis spectrophotometry including instrument calibration, solvent requirements, determination methods (comparison with standard, absorption coefficient, colourimetry)"
+    }
+  },
+  "extractedAt": "2026-02-20"
+}

@@ -1,0 +1,131 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/ginger",
+  "@type": [
+    "western:Herb",
+    "schema:DietarySupplement"
+  ],
+  "profiles": {
+    "@id": "https://www.herbapedia.org/entity/preparation/dried-ginger-rhizome"
+  },
+  "name": {
+    "en": "Ginger",
+    "zh-Hant": "薑"
+  },
+  "derivedFromPlant": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/ginger"
+  },
+  "hasAction": [
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/carminative"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/anti-inflammatory"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/spasmolytic"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/antimicrobial"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/antioxidant"
+    }
+  ],
+  "hasOrganAffinity": [
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/stomach"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/intestines"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/joints"
+    }
+  ],
+  "primaryBodySystem": {
+    "@id": "https://www.herbapedia.org/system/western/profile/system/digestive"
+  },
+  "secondaryBodySystems": [
+    {
+      "@id": "https://www.herbapedia.org/system/western/profile/system/musculoskeletal"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/profile/system/immune"
+    }
+  ],
+  "westernTraditionalUsage": {
+    "en": "Ginger has been used for over 5,000 years in traditional medicine. In Western herbalism, it is primarily valued as a carminative for digestive complaints and as an anti-inflammatory for arthritis and musculoskeletal pain. Traditionally used for nausea, motion sickness, and cold extremities."
+  },
+  "westernModernResearch": {
+    "en": "Extensively researched for its antiemetic effects. Meta-analyses support its efficacy for pregnancy-induced nausea and chemotherapy-induced nausea. Anti-inflammatory effects attributed to gingerols and shogaols, which inhibit COX and LOX enzymes. Studies show potential benefits for osteoarthritis pain reduction comparable to ibuprofen in some trials."
+  },
+  "clinicalTrials": [
+    {
+      "condition": "Nausea and vomiting of pregnancy",
+      "result": "Significant reduction in nausea severity",
+      "reference": "Cochrane Review, 2024"
+    },
+    {
+      "condition": "Osteoarthritis of the knee",
+      "result": "Reduced pain and improved mobility",
+      "reference": "Journal of Alternative Medicine, 2023"
+    }
+  ],
+  "activeConstituents": [
+    {
+      "name": "Gingerols",
+      "concentration": "Approximately 1-3% in dried rhizome",
+      "activity": "Anti-inflammatory, antioxidant, antiemetic"
+    },
+    {
+      "name": "Shogaols",
+      "concentration": "Formed during drying (higher in dried vs fresh)",
+      "activity": "More potent anti-inflammatory than gingerols"
+    },
+    {
+      "name": "Zingerone",
+      "concentration": "Formed during cooking",
+      "activity": "Antioxidant, anti-diarrheal"
+    }
+  ],
+  "indications": [
+    "Nausea and vomiting",
+    "Motion sickness",
+    "Morning sickness",
+    "Indigestion and dyspepsia",
+    "Osteoarthritis",
+    "Rheumatoid arthritis",
+    "Cold extremities",
+    "Loss of appetite"
+  ],
+  "contraindications": {
+    "en": "Gallstones (stimulates bile flow), bleeding disorders, anticoagulant therapy. Use cautiously before surgery (may increase bleeding risk)."
+  },
+  "drugInteractions": [
+    {
+      "drug": "Warfarin and other anticoagulants",
+      "interaction": "May enhance anticoagulant effect",
+      "severity": "moderate"
+    },
+    {
+      "drug": "Antiplatelet drugs",
+      "interaction": "Additive antiplatelet effect",
+      "severity": "moderate"
+    }
+  ],
+  "dosage": {
+    "en": "Standard: 1-2g dried root daily. For nausea: 250mg 4 times daily. For arthritis: 2-4g daily in divided doses.",
+    "tea": "0.5-2g dried root steeped in 150mL boiling water, 2-4 times daily",
+    "tincture": "1.5-3mL of 1:5 tincture, 2-3 times daily",
+    "capsule": "250-500mg standardized extract, 2-4 times daily"
+  },
+  "evidenceLevel": "strong",
+  "safetyRating": {
+    "en": "Generally recognized as safe (GRAS) by FDA. Well-tolerated in recommended doses."
+  },
+  "provenance": {
+    "created": "2024-01-15",
+    "source": "WHO Monographs, German Commission E, Cochrane Reviews"
+  }
+}

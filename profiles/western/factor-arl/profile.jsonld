@@ -1,0 +1,28 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/factor-arl",
+  "@type": [
+    "herbapedia:WesternHerbalProfile"
+  ],
+  "profiles": {
+    "@id": "https://www.herbapedia.org/entity/formula/factor-arl"
+  },
+  "name": {
+    "en": "Factor ARL",
+    "zh-Hant": "ARL 抗皺因子",
+    "zh-Hans": "ARL 抗皱因子"
+  },
+  "derivedFromPlant": {
+    "@id": "https://www.herbapedia.org/entity/formula/factor-arl"
+  },
+  "westernTraditionalUsage": {
+    "en": "ARL is a unique micro-emulsion of five natural antioxidants that penetrates deep down into the lower skin levels, protecting cells and preventing wrinkles.\n",
+    "zh-Hant": "ARL 抗皺因子能於游離基滲入肌膚底層並且導致皺紋之前擊破游離基。\n",
+    "zh-Hans": "ARL 抗皱因子能於游离基渗入肌肤底层并且导致皱纹之前击破游离基。\n"
+  },
+  "provenance": {
+    "created": "2026-02-20T15:22:03.239Z",
+    "modified": "2026-02-20T15:22:03.239Z",
+    "migratedFrom": "systems/western/herbs/factor-arl/profile.jsonld"
+  }
+}

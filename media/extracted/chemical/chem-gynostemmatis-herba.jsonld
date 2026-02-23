@@ -1,0 +1,320 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/chemical/gynostemmatis-herba",
+  "@type": ["herbapedia:ChemicalAnalysisData", "schema:Dataset"],
+  "dataType": "ChemicalAnalysis",
+  "sourceDocument": "CHEM_____Gynostemmatis_Herba_V1.pdf",
+  "scientificName": "Gynostemma pentaphyllum",
+  "chineseName": "絞股藍",
+  "pinyinName": "Jiao Gu Lan",
+  "identificationMethod": ["TLC", "HPLC-Fingerprint", "HPLC-Assay"],
+  "referenceCompounds": [
+    {
+      "name": "Ombuoside",
+      "chineseName": "商陸苷",
+      "purpose": ["TLC identification", "HPLC fingerprint marker"]
+    },
+    {
+      "name": "Rutin",
+      "chineseName": "蘆丁",
+      "purpose": ["TLC identification", "HPLC fingerprint marker"]
+    },
+    {
+      "name": "Ombuin",
+      "chineseName": "商陸素",
+      "purpose": ["HPLC fingerprint marker"]
+    },
+    {
+      "name": "Quercetin",
+      "chineseName": "槲皮素",
+      "purpose": ["HPLC fingerprint marker"]
+    },
+    {
+      "name": "Panaxadiol",
+      "chineseName": "人參二醇",
+      "formula": "C₃₀H₅₂O₃",
+      "purpose": ["HPLC assay quantification"]
+    }
+  ],
+  "assayLimits": {
+    "panaxadiol": {
+      "compound": "Panaxadiol",
+      "formula": "C₃₀H₅₂O₃",
+      "minimumContent": "0.094%",
+      "basis": "dried substance"
+    }
+  },
+  "tlcMethod": {
+    "appendixReference": "Appendix I",
+    "stationaryPhase": "HPTLC silica gel F₂₅₄ plate",
+    "developingSolvent": {
+      "components": ["ethyl acetate", "formic acid", "water", "methanol"],
+      "ratio": "8:1:1:0.5 (v/v)"
+    },
+    "sprayReagent": {
+      "composition": "2.5 g aluminium trichloride in 100 mL ethanol",
+      "visualization": "Heat at about 85°C until spots or bands visible (about 5-10 min)"
+    },
+    "testSolution": {
+      "sampleAmount": "0.5 g",
+      "solvent": "80% methanol",
+      "solventVolume": "20 mL",
+      "extraction": "ultrasonication (140 W) for 1 hour",
+      "centrifugation": "1800 × g for 15 minutes"
+    },
+    "standardSolutions": {
+      "ombuoside": {
+        "concentration": "0.1 mg/mL in methanol",
+        "preparation": "Heat in water bath at 60°C to dissolve"
+      },
+      "rutin": {
+        "concentration": "0.5 mg/mL in methanol"
+      }
+    },
+    "applicationVolumes": {
+      "ombuosideStandard": "3 μL",
+      "rutinStandard": "2 μL",
+      "testSolution": "15 μL"
+    },
+    "developingDistance": "8 cm",
+    "visualization": "UV light at 366 nm",
+    "identificationCriteria": {
+      "positiveMarkers": ["Ombuoside", "Rutin"]
+    }
+  },
+  "hplcFingerprint": {
+    "appendixReference": "Appendix II",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "DAD",
+      "detectionWavelength": "370 nm",
+      "columnTemperature": "40°C",
+      "flowRate": "1.0 mL/min",
+      "injectionVolume": "10 μL"
+    },
+    "mobilePhase": {
+      "solventA": "0.1% Phosphoric acid",
+      "solventB": "Acetonitrile",
+      "gradientProgram": [
+        {
+          "timeRange": "0-15 min",
+          "solventA": "90% → 80%",
+          "solventB": "10% → 20%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "15-50 min",
+          "solventA": "80% → 30%",
+          "solventB": "20% → 70%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "50-60 min",
+          "solventA": "30% → 0%",
+          "solventB": "70% → 100%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "ombuin": {
+        "concentration": "30 mg/L",
+        "preparation": "0.3 mg in 10 mL methanol"
+      },
+      "ombuoside": {
+        "concentration": "35 mg/L",
+        "preparation": "0.35 mg in 10 mL methanol, heat at 60°C to dissolve"
+      },
+      "quercetin": {
+        "concentration": "50 mg/L",
+        "preparation": "0.5 mg in 10 mL methanol"
+      },
+      "rutin": {
+        "concentration": "120 mg/L",
+        "preparation": "1.2 mg in 10 mL methanol"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "0.5 g",
+      "solvent": "methanol",
+      "solventVolume": "20 mL",
+      "finalVolume": "25 mL",
+      "extraction": "ultrasonication (270 W) for 1 hour",
+      "centrifugation": "1800 × g for 10 minutes",
+      "filtration": "0.45 μm PTFE filter"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "peakAreaRSD": "≤ 5.0% (ombuin, ombuoside, quercetin, rutin)",
+      "retentionTimeRSD": "≤ 2.0% (ombuin, ombuoside, quercetin, rutin)",
+      "theoreticalPlates": "≥ 20,000 (ombuin, ombuoside, quercetin, rutin)",
+      "resolution": "≥ 1.0 (between peaks 1, 2, 3, 5 and their adjacent peaks)"
+    },
+    "identificationCriteria": {
+      "retentionTimeTolerance": "≤ 2.0% difference between sample and standard"
+    }
+  },
+  "hplcAssay": {
+    "appendixReference": "Appendix III",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 150 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "ELSD",
+      "detectorSettings": {
+        "driftTubeTemperature": "75°C",
+        "nebulizerGas": "N₂",
+        "gasFlow": "2.0 L/min"
+      },
+      "columnTemperature": "30°C",
+      "flowRate": "1.0 mL/min",
+      "runTime": "about 30 min"
+    },
+    "mobilePhase": {
+      "solventA": "Water",
+      "solventB": "Methanol",
+      "ratio": "12:88 (v/v)",
+      "elution": "isocratic"
+    },
+    "standardSolutions": {
+      "stockSolution": {
+        "name": "Panaxadiol Std-Stock",
+        "concentration": "1000 mg/L",
+        "preparation": "10.0 mg in 10 mL methanol"
+      },
+      "workingSolutions": {
+        "name": "Panaxadiol Std-AS",
+        "concentrations": ["16", "40", "80", "200", "500 mg/L"],
+        "description": "Series of standard solutions diluted from stock"
+      },
+      "injectionVolume": "20 μL"
+    },
+    "testSolution": {
+      "sampleAmount": "1.0 g",
+      "solvent": "methanol",
+      "extractionVolume": "15 mL × 3 extractions",
+      "washVolume": "5 mL × 3 washes",
+      "extraction": "ultrasonication (270 W) for 30 minutes",
+      "centrifugation": "1800 × g for 10 minutes",
+      "hydrolysis": {
+        "reagent": "29.5% (w/v) hydrochloric acid",
+        "volume": "20 mL",
+        "duration": "4 hours reflux"
+      },
+      "liquidLiquidExtraction": {
+        "solvent": "dichloromethane",
+        "volume": "30 mL × 3 extractions"
+      },
+      "evaporation": "rotary evaporator at reduced pressure",
+      "finalVolume": "10 mL",
+      "filtration": "0.45 μm PTFE filter",
+      "injectionVolume": "20 μL"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "injectionVolume": "20 μL",
+      "standardConcentration": "80 mg/L (Panaxadiol Std-AS)",
+      "peakAreaRSD": "≤ 5.0% (Panaxadiol)",
+      "retentionTimeRSD": "≤ 2.0% (Panaxadiol)",
+      "theoreticalPlates": "≥ 5,000 (Panaxadiol)",
+      "resolution": "≥ 1.5 (between Panaxadiol peak and adjacent peak)"
+    },
+    "calibration": {
+      "method": "5-point calibration curve",
+      "plot": "Natural logarithm of peak area vs. natural logarithm of concentration (mg/L)",
+      "formula": "Concentration = e^[Ln(A)-I]/m",
+      "identificationTolerance": "≤ 2.0% difference in retention times"
+    }
+  },
+  "rrtValues": [
+    {
+      "peakNumber": 1,
+      "compound": "Rutin",
+      "rrt": 0.48,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Ombuin"
+    },
+    {
+      "peakNumber": 2,
+      "compound": "Ombuoside",
+      "rrt": 0.66,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Ombuin"
+    },
+    {
+      "peakNumber": 3,
+      "compound": "Quercetin",
+      "rrt": 0.70,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Ombuin"
+    },
+    {
+      "peakNumber": 4,
+      "compound": "Unidentified",
+      "rrt": 0.87,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Ombuin"
+    },
+    {
+      "peakNumber": 5,
+      "compound": "Ombuin",
+      "rrt": 1.00,
+      "acceptableRange": null,
+      "referenceMarker": true,
+      "referenceTo": "self"
+    }
+  ],
+  "tests": {
+    "heavyMetals": {
+      "appendixReference": "Appendix V",
+      "requirement": "meet the requirements"
+    },
+    "pesticideResidues": {
+      "appendixReference": "Appendix VI",
+      "requirement": "meet the requirements"
+    },
+    "mycotoxins": {
+      "appendixReference": "Appendix VII",
+      "requirement": "meet the requirements"
+    },
+    "foreignMatter": {
+      "appendixReference": "Appendix VIII",
+      "limit": "not more than 1.0%"
+    },
+    "ash": {
+      "appendixReference": "Appendix IX",
+      "totalAsh": "not more than 10.0%",
+      "acidInsolubleAsh": "not more than 1.5%"
+    },
+    "waterContent": {
+      "appendixReference": "Appendix X",
+      "method": "Oven dried method",
+      "limit": "not more than 13.0%"
+    }
+  },
+  "appendices": {
+    "appendixI": {
+      "title": "Chromatography – Thin-Layer Chromatography (TLC)",
+      "description": "General procedures for TLC including plate types, application methods, developing chambers, and Rf calculation"
+    },
+    "appendixII": {
+      "title": "Gas Chromatographic and High-Performance/Ultra-High Performance Liquid Chromatographic Fingerprinting",
+      "description": "Methods for establishing chromatographic fingerprints using marker peaks and RRT values"
+    },
+    "appendixIII": {
+      "title": "Chromatography – High-Performance Liquid Chromatography (HPLC) / Ultra-High Performance Liquid Chromatography (UHPLC)",
+      "description": "General HPLC/UHPLC procedures including system suitability tests (theoretical plates, repeatability, resolution, tailing factor) and quantitative calculations"
+    }
+  },
+  "extractedAt": "2026-02-20"
+}

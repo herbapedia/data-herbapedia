@@ -1,0 +1,245 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/chemical/rubiae-radix",
+  "@type": ["herbapedia:ChemicalAnalysisData", "schema:Dataset"],
+  "dataType": "ChemicalAnalysis",
+  "sourceDocument": "CHEM____Rubiae_Radix_et_Rhizoma_V1.pdf",
+  "scientificName": "Rubia cordifolia",
+  "chineseName": "茜草",
+  "pinyinName": "Qian Cao",
+  "identificationMethod": ["TLC", "HPLC-Fingerprint", "HPLC-Assay"],
+  "referenceCompounds": [
+    {
+      "name": "Mollugin",
+      "chineseName": "大葉茜草素",
+      "formula": "C₁₇H₁₆O₄",
+      "purpose": ["TLC identification", "HPLC fingerprint marker", "Assay quantification"]
+    },
+    {
+      "name": "Purpurin",
+      "chineseName": "羥基茜草素",
+      "formula": "C₁₄H₈O₅",
+      "purpose": ["HPLC fingerprint marker", "Assay quantification"]
+    }
+  ],
+  "assayLimits": {
+    "mollugin": {
+      "compound": "Mollugin",
+      "formula": "C₁₇H₁₆O₄",
+      "minimumContent": "0.40%",
+      "basis": "dried substance"
+    },
+    "purpurin": {
+      "compound": "Purpurin",
+      "formula": "C₁₄H₈O₅",
+      "minimumContent": "0.42%",
+      "basis": "dried substance"
+    }
+  },
+  "tlcMethod": {
+    "appendixReference": "Appendix I",
+    "stationaryPhase": "HPTLC silica gel F₂₅₄ plate",
+    "developingSolvent": {
+      "components": ["cyclohexane", "ethyl acetate", "formic acid"],
+      "ratio": "10:1:0.1 (v/v)",
+      "preparation": "freshly prepared"
+    },
+    "testSolution": {
+      "sampleAmount": "0.5 g",
+      "solvent": "ethanol (95%)",
+      "solventVolume": "10 mL",
+      "extraction": "ultrasonication at 150 W for 10 minutes",
+      "container": "50-mL conical flask"
+    },
+    "standardSolutions": {
+      "concentration": "0.25 mg/mL in ethanol (95%)",
+      "compound": "Mollugin",
+      "preparation": "2.5 mg in 10 mL ethanol (95%)"
+    },
+    "applicationVolumes": {
+      "standardSolution": "1 μL",
+      "testSolution": "1 μL"
+    },
+    "developingDistance": "8 cm",
+    "developingChamber": {
+      "type": "twin trough chamber",
+      "equilibration": "15 minutes"
+    },
+    "visualization": "UV light at 366 nm",
+    "identificationCriteria": {
+      "positiveMarker": "Mollugin (matching color and Rf value)"
+    }
+  },
+  "hplcFingerprint": {
+    "appendixReference": "Appendix II",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "DAD",
+      "detectionWavelength": "250 nm",
+      "flowRate": "1.0 mL/min",
+      "injectionVolume": "10 μL"
+    },
+    "mobilePhase": {
+      "solventA": "0.2% Trifluoroacetic acid + 0.2% Triethylamine",
+      "solventB": "Acetonitrile",
+      "gradientProgram": [
+        {
+          "timeRange": "0-60 min",
+          "solventA": "80% → 0%",
+          "solventB": "20% → 100%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "mollugin": {
+        "stockSolution": "12 mg/L (0.12 mg in 10 mL 70% ethanol)",
+        "solvent": "70% ethanol"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "0.5 g",
+      "solvent": "70% ethanol",
+      "solventVolume": "100 mL",
+      "extraction": "ultrasonication at 150 W for 30 minutes",
+      "container": "250-mL conical flask",
+      "filtration": "0.45 μm PTFE membrane"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "peakAreaRSD": "≤ 5.0% (Mollugin)",
+      "retentionTimeRSD": "≤ 2.0% (Mollugin)",
+      "theoreticalPlates": "≥ 200,000 (based on Mollugin)",
+      "resolution": "≥ 1.5 (between peak number 4 and its neighboring peak)"
+    },
+    "identificationCriteria": {
+      "retentionTimeTolerance": "≤ 2.0% difference between sample and standard",
+      "characteristicPeaks": 4
+    }
+  },
+  "hplcAssay": {
+    "appendixReference": "Appendix III",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "DAD",
+      "detectionWavelength": "250 nm",
+      "flowRate": "1.0 mL/min"
+    },
+    "mobilePhase": {
+      "solventA": "Acetonitrile",
+      "solventB": "Methanol",
+      "solventC": "0.05% Phosphoric Acid",
+      "gradientProgram": [
+        {
+          "timeRange": "0-11 min",
+          "solventA": "45%",
+          "solventB": "25%",
+          "solventC": "30%",
+          "elution": "isocratic"
+        },
+        {
+          "timeRange": "11-30 min",
+          "solventA": "45% → 75%",
+          "solventB": "25% → 20%",
+          "solventC": "30% → 5%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "stockSolution": {
+        "concentration": "100 mg/L each",
+        "compounds": ["Mollugin", "Purpurin"],
+        "preparation": "1.0 mg each in 10 mL 70% ethanol",
+        "solvent": "70% ethanol"
+      },
+      "workingSolutions": {
+        "concentrations": ["1", "2", "8", "16", "30 mg/L"],
+        "description": "Series of mixed standard solutions of Mollugin and Purpurin"
+      },
+      "injectionVolume": "5 μL (for calibration)"
+    },
+    "testSolution": {
+      "sampleAmount": "0.1 g",
+      "solvent": "70% ethanol",
+      "solventVolume": "43 mL 70% ethanol + 2 mL 81.6% HCl",
+      "extraction": "reflux for 2 hours",
+      "neutralization": "2.25 mL triethylamine",
+      "centrifugation": "3000 × g for 10 minutes",
+      "finalVolume": "50 mL",
+      "container": "100-mL round-bottom flask",
+      "filtration": "0.45 μm RC membrane",
+      "injectionVolume": "5 μL"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "injectionVolume": "5 μL",
+      "peakAreaRSD": "≤ 5.0% (both Mollugin and Purpurin)",
+      "retentionTimeRSD": "≤ 2.0% (both Mollugin and Purpurin)",
+      "theoreticalPlates": "≥ 10,000 (Mollugin), ≥ 15,000 (Purpurin)",
+      "resolution": "≥ 1.5 (between analyte peaks and adjacent peaks)"
+    },
+    "calibration": {
+      "method": "5-point calibration curve",
+      "plot": "Peak area vs. concentration (mg/L)",
+      "identificationTolerance": "≤ 5.0% difference in retention times"
+    }
+  },
+  "rrtValues": [
+    {
+      "peakNumber": 1,
+      "compound": "Unknown",
+      "rrt": 0.15,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Mollugin"
+    },
+    {
+      "peakNumber": 2,
+      "compound": "Unknown",
+      "rrt": 0.19,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Mollugin"
+    },
+    {
+      "peakNumber": 3,
+      "compound": "Unknown",
+      "rrt": 0.39,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Mollugin"
+    },
+    {
+      "peakNumber": 4,
+      "compound": "Mollugin",
+      "rrt": 1.00,
+      "acceptableRange": null,
+      "referenceMarker": true,
+      "referenceTo": "self"
+    }
+  ],
+  "appendices": {
+    "appendixI": {
+      "title": "Chromatography - Thin-Layer Chromatography",
+      "description": "General procedures for TLC including plate types, application methods, developing chambers, and Rf calculation"
+    },
+    "appendixII": {
+      "title": "GC and HPLC/UHPLC Fingerprinting",
+      "description": "Methods for establishing chromatographic fingerprints using marker peaks and RRT values. Requires minimum 10 batches with duplicate analysis for reference fingerprint establishment."
+    },
+    "appendixIII": {
+      "title": "Chromatography - HPLC/UHPLC",
+      "description": "General HPLC/UHPLC procedures including system suitability tests (theoretical plates, repeatability, resolution, tailing factor) and quantitative calculations using 5-point calibration curve"
+    }
+  },
+  "extractedAt": "2026-02-21"
+}

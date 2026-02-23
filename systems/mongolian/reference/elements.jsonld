@@ -1,0 +1,188 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/mongolian.jsonld",
+  "@id": "https://www.herbapedia.org/system/mongolian/profile/reference/elements",
+  "@type": [
+    "mongolian:ReferenceCollection",
+    "skos:Collection"
+  ],
+  "name": {
+    "en": "Mongolian Five Elements",
+    "mn": "Таван махбод"
+  },
+  "description": {
+    "en": "The Five Elements (Таван махбод - Tavan Mahbod) in Mongolian Traditional Medicine, derived from Tibetan medicine and influenced by Chinese medicine."
+  },
+  "members": [
+    {
+      "@id": "https://www.herbapedia.org/system/mongolian/profile/element/wood",
+      "@type": [
+        "mongolian:Element"
+      ],
+      "name": {
+        "en": "Wood",
+        "mn": "мод",
+        "bo": "ཤིང་"
+      },
+      "mongolianName": "мод",
+      "tibetanName": "ཤིང་",
+      "tibetanWylie": "shing",
+      "associatedOrgan": {
+        "zang": "Liver",
+        "fu": "Gallbladder"
+      },
+      "associatedSeason": "spring",
+      "associatedColor": "green",
+      "climate": "windy",
+      "emotion": "anger",
+      "tissue": "muscles",
+      "senseOrgan": "eyes",
+      "generatesElement": {
+        "@id": "https://www.herbapedia.org/system/mongolian/profile/element/fire"
+      },
+      "controlsElement": {
+        "@id": "https://www.herbapedia.org/system/mongolian/profile/element/earth"
+      },
+      "description": {
+        "en": "Wood represents growth, expansion, and flexibility. Associated with the liver and gallbladder."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/mongolian/profile/element/fire",
+      "@type": [
+        "mongolian:Element"
+      ],
+      "name": {
+        "en": "Fire",
+        "mn": "гал",
+        "bo": "མེ་"
+      },
+      "mongolianName": "гал",
+      "tibetanName": "མེ་",
+      "tibetanWylie": "me",
+      "associatedOrgan": {
+        "zang": "Heart",
+        "fu": "Small Intestine"
+      },
+      "associatedSeason": "summer",
+      "associatedColor": "red",
+      "climate": "hot",
+      "emotion": "joy",
+      "tissue": "blood vessels",
+      "senseOrgan": "tongue",
+      "generatesElement": {
+        "@id": "https://www.herbapedia.org/system/mongolian/profile/element/earth"
+      },
+      "controlsElement": {
+        "@id": "https://www.herbapedia.org/system/mongolian/profile/element/metal"
+      },
+      "description": {
+        "en": "Fire represents transformation, warmth, and activity. Associated with the heart and small intestine."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/mongolian/profile/element/earth",
+      "@type": [
+        "mongolian:Element"
+      ],
+      "name": {
+        "en": "Earth",
+        "mn": "шороо",
+        "bo": "ས་"
+      },
+      "mongolianName": "шороо",
+      "tibetanName": "ས་",
+      "tibetanWylie": "sa",
+      "associatedOrgan": {
+        "zang": "Spleen",
+        "fu": "Stomach"
+      },
+      "associatedSeason": "late-summer",
+      "associatedColor": "yellow",
+      "climate": "damp",
+      "emotion": "worry",
+      "tissue": "flesh",
+      "senseOrgan": "mouth",
+      "generatesElement": {
+        "@id": "https://www.herbapedia.org/system/mongolian/profile/element/metal"
+      },
+      "controlsElement": {
+        "@id": "https://www.herbapedia.org/system/mongolian/profile/element/water"
+      },
+      "description": {
+        "en": "Earth represents stability, nourishment, and grounding. Associated with the spleen and stomach."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/mongolian/profile/element/metal",
+      "@type": [
+        "mongolian:Element"
+      ],
+      "name": {
+        "en": "Metal",
+        "mn": "төмөр",
+        "bo": "ལྕགས་"
+      },
+      "mongolianName": "төмөр",
+      "tibetanName": "ལྕགས་",
+      "tibetanWylie": "lcags",
+      "associatedOrgan": {
+        "zang": "Lung",
+        "fu": "Large Intestine"
+      },
+      "associatedSeason": "autumn",
+      "associatedColor": "white",
+      "climate": "dry",
+      "emotion": "grief",
+      "tissue": "skin",
+      "senseOrgan": "nose",
+      "generatesElement": {
+        "@id": "https://www.herbapedia.org/system/mongolian/profile/element/water"
+      },
+      "controlsElement": {
+        "@id": "https://www.herbapedia.org/system/mongolian/profile/element/wood"
+      },
+      "description": {
+        "en": "Metal represents structure, boundary, and purification. Associated with the lungs and large intestine."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/mongolian/profile/element/water",
+      "@type": [
+        "mongolian:Element"
+      ],
+      "name": {
+        "en": "Water",
+        "mn": "ус",
+        "bo": "ཆུ་"
+      },
+      "mongolianName": "ус",
+      "tibetanName": "ཆུ་",
+      "tibetanWylie": "chu",
+      "associatedOrgan": {
+        "zang": "Kidney",
+        "fu": "Bladder"
+      },
+      "associatedSeason": "winter",
+      "associatedColor": "black/blue",
+      "climate": "cold",
+      "emotion": "fear",
+      "tissue": "bones",
+      "senseOrgan": "ears",
+      "generatesElement": {
+        "@id": "https://www.herbapedia.org/system/mongolian/profile/element/wood"
+      },
+      "controlsElement": {
+        "@id": "https://www.herbapedia.org/system/mongolian/profile/element/fire"
+      },
+      "description": {
+        "en": "Water represents fluidity, adaptability, and will. Associated with the kidneys and bladder."
+      }
+    }
+  ],
+  "_documentation": {
+    "classicalReference": "Four Tantras (རྒྱུད་བཞི་)",
+    "generationCycle": "Wood → Fire → Earth → Metal → Water → Wood",
+    "controlCycle": "Wood controls Earth, Fire controls Metal, Earth controls Water, Metal controls Wood, Water controls Fire",
+    "tibetanElements": "Note: Tibetan medicine also recognizes Space (ནམ་མཁའ་ - Namkha) as a sixth element in some contexts"
+  }
+}

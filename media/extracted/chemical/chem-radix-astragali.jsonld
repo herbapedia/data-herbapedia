@@ -1,0 +1,285 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/chemical/radix-astragali",
+  "@type": ["herbapedia:ChemicalAnalysisData", "schema:Dataset"],
+  "dataType": "ChemicalAnalysis",
+  "sourceDocument": "CHEM____Radix_Astragali_V1.pdf",
+  "scientificName": "Astragalus membranaceus",
+  "chineseName": "黄芪",
+  "pinyinName": "Huang Qi",
+  "identificationMethod": ["Physicochemical", "TLC", "HPLC-Fingerprint", "HPLC-Assay"],
+  "referenceCompounds": [
+    {
+      "name": "Astragaloside II",
+      "chineseName": "黄芪皂苷 II",
+      "purpose": ["TLC identification"]
+    },
+    {
+      "name": "Astragaloside IV",
+      "chineseName": "黄芪皂苷 IV (黄芪甲苷)",
+      "formula": "C₄₁H₆₈O₁₄",
+      "purpose": ["TLC identification", "HPLC fingerprint marker", "Assay quantification"]
+    }
+  ],
+  "assayLimits": {
+    "astragalosideIV": {
+      "compound": "Astragaloside IV",
+      "formula": "C₄₁H₆₈O₁₄",
+      "minimumContent": "0.040%",
+      "basis": "dried substance"
+    }
+  },
+  "physicochemicalIdentification": {
+    "method": "Color reaction with sulfuric acid",
+    "procedure": {
+      "sampleAmount": "1.0 g",
+      "solvent": "dichloromethane",
+      "solventVolume": "10 mL",
+      "extraction": "ultrasonication for 30 minutes",
+      "testVolume": "0.5 mL filtrate",
+      "reagent": "sulfuric acid",
+      "reagentVolume": "0.5 mL",
+      "standingTime": "about 20 minutes",
+      "positiveResult": "reddish-brown or yellowish-brown ring at the interface of the two solvent layers"
+    }
+  },
+  "tlcMethod": {
+    "appendixReference": "Appendix I",
+    "stationaryPhase": "HPTLC silica gel F₂₅₄ plate",
+    "developingSolvent": {
+      "components": ["chloroform", "ethyl acetate", "methanol", "water"],
+      "ratio": "20:40:22:10 (v/v)",
+      "preparation": "Use the lower phase"
+    },
+    "sprayReagent": {
+      "composition": "1 mL dilute sulfuric acid (50%, v/v) and 10 mL p-hydroxybenzaldehyde in methanol (2%, w/v)",
+      "preparation": "Freshly prepare the reagent",
+      "visualization": "Heat at 80°C for about 10 minutes, examine in visible light"
+    },
+    "testSolution": {
+      "sampleAmount": "3.0 g",
+      "solvent": "methanol",
+      "solventVolume": "20 mL",
+      "extraction": "reflux for 30 minutes",
+      "cleanUpColumn": {
+        "type": "neutral alumina",
+        "particleSize": "150 μm",
+        "amount": "5 g",
+        "dimensions": "10 × 500 mm"
+      },
+      "elution": "100 mL of 40% methanol",
+      "postElution": "evaporate to dryness, dissolve in 30 mL water, extract twice with 20 mL 1-butanol each, wash twice with 20 mL water each, evaporate to dryness",
+      "finalVolume": "0.5 mL methanol"
+    },
+    "standardSolutions": {
+      "astragalosideII": {
+        "concentration": "1.0 mg/mL in methanol"
+      },
+      "astragalosideIV": {
+        "concentration": "1.0 mg/mL in methanol"
+      }
+    },
+    "applicationVolumes": {
+      "standardSolutions": "2 μL each",
+      "testSolution": "2 μL"
+    },
+    "developingDistance": "about 5 cm",
+    "identificationCriteria": {
+      "positiveMarkers": ["Astragaloside II", "Astragaloside IV"],
+      "description": "Sample must give spots or bands with chromatographic characteristics, including the colour and the Rf values, corresponding to those of astragaloside II and astragaloside IV"
+    }
+  },
+  "hplcFingerprint": {
+    "appendixReference": "Appendix II",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "ELSD (Evaporative Light Scattering Detector)",
+      "flowRate": "0.8 mL/min",
+      "injectionVolume": "20 μL"
+    },
+    "mobilePhase": {
+      "solventA": "Water",
+      "solventB": "Acetonitrile",
+      "gradientProgram": [
+        {
+          "timeRange": "0-10 min",
+          "solventA": "100%",
+          "solventB": "0%",
+          "elution": "isocratic"
+        },
+        {
+          "timeRange": "10-45 min",
+          "solventA": "100% → 40%",
+          "solventB": "0% → 60%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "45-60 min",
+          "solventA": "40%",
+          "solventB": "60%",
+          "elution": "isocratic"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "astragalosideIV": {
+        "stockSolution": "1000 mg/L (4.0 mg in 4 mL methanol)",
+        "workingSolution": "50 mg/L (0.25 mL stock diluted to 5 mL with methanol)"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "2.0 g",
+      "solvent": "methanol",
+      "solventVolume": "30 mL",
+      "extraction": "ultrasonication for 30 minutes",
+      "centrifugation": "about 3000 × g for 5 minutes",
+      "filtration": "0.45 μm PTFE filter",
+      "washSteps": "wash residue twice with 15 mL methanol each",
+      "postExtraction": "evaporate to dryness, dissolve in 10 mL 10% aqueous ammonia solution, stand 10 min with occasional shaking",
+      "liquidLiquidExtraction": "extract with water-saturated 1-butanol (15, 10, 10 mL)",
+      "finalVolume": "10 mL methanol"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "peakAreaRSD": "≤ 5.0% (Astragaloside IV)",
+      "retentionTimeRSD": "≤ 2.0% (Astragaloside IV)",
+      "theoreticalPlates": "≥ 200,000 (based on Astragaloside IV)",
+      "resolution": "≥ 1.5 (between peaks 3 and 4)"
+    },
+    "identificationCriteria": {
+      "retentionTimeTolerance": "≤ 2.0% difference between sample and standard"
+    }
+  },
+  "hplcAssay": {
+    "appendixReference": "Appendix III",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "ELSD (Evaporative Light Scattering Detector)",
+      "flowRate": "0.8 mL/min",
+      "mobilePhase": {
+        "components": ["acetonitrile", "water"],
+        "ratio": "4:6 (v/v)"
+      }
+    },
+    "standardSolutions": {
+      "stockSolution": {
+        "concentration": "500 mg/L",
+        "compound": "Astragaloside IV",
+        "preparation": "5.0 mg in 10 mL methanol"
+      },
+      "workingSolutions": {
+        "concentrations": ["20", "60", "80", "100", "400 mg/L"],
+        "description": "Series of astragaloside IV standard solutions"
+      },
+      "injectionVolume": "20 μL (for calibration)"
+    },
+    "testSolution": {
+      "sampleAmount": "2.0 g",
+      "solvent": "methanol",
+      "solventVolume": "30 mL",
+      "extraction": "ultrasonication for 30 minutes",
+      "centrifugation": "about 3000 × g for 5 minutes",
+      "filtration": "0.45 μm PTFE filter",
+      "washSteps": "wash residue twice with 15 mL methanol each",
+      "postExtraction": "evaporate to dryness, dissolve in 10 mL 10% aqueous ammonia solution, stand 10 min with occasional shaking",
+      "liquidLiquidExtraction": "extract with water-saturated 1-butanol (15, 10, 10 mL)",
+      "finalVolume": "10 mL methanol",
+      "injectionVolume": "20 μL"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "injectionVolume": "20 μL",
+      "standardConcentration": "100 mg/L (Astragaloside IV Std-AS)",
+      "peakAreaRSD": "≤ 5.0% (Astragaloside IV)",
+      "retentionTimeRSD": "≤ 2.0% (Astragaloside IV)",
+      "theoreticalPlates": "≥ 10,000 (based on Astragaloside IV)",
+      "resolution": "≥ 1.5 (between Astragaloside IV peak and closest peak)"
+    },
+    "calibration": {
+      "method": "5-point calibration curve (ELSD)",
+      "plot": "Natural logarithm of peak area vs. natural logarithm of concentration (mg/L)",
+      "identificationTolerance": "≤ 5.0% difference in retention times",
+      "concentrationFormula": "e^[(Ln(A) - I) / m]",
+      "where": {
+        "A": "peak area of Astragaloside IV in the test solution",
+        "I": "y-intercept of the 5-point calibration curve",
+        "m": "slope of the 5-point calibration curve"
+      }
+    }
+  },
+  "rrtValues": [
+    {
+      "peakNumber": 1,
+      "compound": "unidentified",
+      "rrt": 0.76,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Astragaloside IV"
+    },
+    {
+      "peakNumber": 2,
+      "compound": "unidentified",
+      "rrt": 0.87,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Astragaloside IV"
+    },
+    {
+      "peakNumber": 3,
+      "compound": "unidentified",
+      "rrt": 0.90,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Astragaloside IV"
+    },
+    {
+      "peakNumber": 4,
+      "compound": "unidentified",
+      "rrt": 0.91,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Astragaloside IV"
+    },
+    {
+      "peakNumber": 5,
+      "compound": "Astragaloside IV",
+      "rrt": 1.00,
+      "acceptableRange": null,
+      "referenceMarker": true,
+      "referenceTo": "self"
+    }
+  ],
+  "referenceFingerprintChromatograms": {
+    "figure1i": {
+      "title": "Reference fingerprint chromatogram of dried root of Astragalus membranaceus (Fisch.) Bge. extract",
+      "description": "Fingerprint for Astragalus membranaceus variety"
+    },
+    "figure1ii": {
+      "title": "Reference fingerprint chromatogram of dried root of Astragalus membranaceus (Fisch.) Bge. var. mongholicus (Bge.) Hsiao extract",
+      "description": "Fingerprint for Astragalus membranaceus var. mongholicus variety"
+    }
+  },
+  "appendices": {
+    "appendixI": {
+      "title": "Chromatography – Thin-Layer Chromatography (TLC)",
+      "description": "General procedures for TLC including plate types (silica gel G, F254, HPTLC, etc.), application methods, developing chambers, spray reagents, UV light sources, and Rf calculation"
+    },
+    "appendixII": {
+      "title": "Gas Chromatographic and High-Performance/Ultra-High Performance Liquid Chromatographic Fingerprinting",
+      "description": "Methods for establishing chromatographic fingerprints using marker peaks and RRT values. Includes guidelines for marker peak selection, RRT calculation, and acceptable range determination based on 10 batches tested in duplicate"
+    },
+    "appendixIII": {
+      "title": "Chromatography – High-Performance Liquid Chromatography (HPLC) / Ultra-High Performance Liquid Chromatography (UHPLC)",
+      "description": "General HPLC/UHPLC procedures including system suitability tests (theoretical plates, repeatability, resolution, tailing factor), quantitative calculations for both DAD and ELSD detectors, and calibration curve preparation"
+    }
+  },
+  "extractedAt": "2026-02-21"
+}

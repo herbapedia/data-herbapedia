@@ -1,11 +1,11 @@
 {
-  "@context": "../../schema/context/western.jsonld",
-  "@id": "western/balm-mint-oil",
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/balm-mint-oil",
   "@type": [
     "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
-    "@id": "plant/balm-mint-oil"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/balm-mint-oil"
   },
   "name": {
     "en": "Balm mint oil",

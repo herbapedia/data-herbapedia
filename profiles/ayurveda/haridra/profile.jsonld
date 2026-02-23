@@ -1,0 +1,152 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/system/ayurveda/profile/haridra",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "profiles": {
+    "@id": "https://www.herbapedia.org/entity/preparation/turmeric-rhizome"
+  },
+  "name": {
+    "en": "Turmeric",
+    "sa": "हरिद्रा",
+    "hi": "हल्दी"
+  },
+  "sanskritName": "हरिद्रा",
+  "sanskritTransliteration": "Haridrā",
+  "hindiName": "हल्दी",
+  "derivedFromPlant": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/turmeric"
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/rasa/bitter"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/rasa/astringent"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/rasa/pungent"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/guna/dry"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/guna/light"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/system/ayurveda/profile/virya/heating"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/system/ayurveda/profile/vipaka/pungent"
+  },
+  "affectsDosha": {
+    "vata": {
+      "effect": "decreases",
+      "notes": "Reduces when combined with oils"
+    },
+    "pitta": {
+      "effect": "decreases",
+      "notes": "Reduces due to bitter taste"
+    },
+    "kapha": {
+      "effect": "decreases"
+    }
+  },
+  "hasPrabhava": {
+    "@id": "https://www.herbapedia.org/system/ayurveda/profile/prabhava/varnya"
+  },
+  "ayurvedaCategory": {
+    "@id": "https://www.herbapedia.org/system/ayurveda/profile/category/varnya"
+  },
+  "karma": [
+    "varnya (improves complexion)",
+    "kusthaghna (treats skin diseases)",
+    "vranaropana (wound healing)",
+    "pandughna (treats anemia)",
+    "pramehaghna (treats diabetes)",
+    "rasayana (rejuvenative)",
+    "vriddhahara (anti-aging)"
+  ],
+  "ayurvedaTraditionalUsage": {
+    "en": "Haridra is one of the most versatile herbs in Ayurveda. It improves complexion (varnya), treats skin diseases, heals wounds, purifies blood, treats diabetes, and acts as a general rasayana (rejuvenative). Used both internally and externally. Considered tridoshic - balances all three doshas.",
+    "sa": "वर्ण्य, कुष्ठघ्न, व्रणरोपण, पाण्डुघ्न, प्रमेहघ्न, रसायन"
+  },
+  "ayurvedaModernResearch": {
+    "en": "Modern research validates most traditional uses. Curcumin demonstrates anti-inflammatory, antioxidant, hepatoprotective, neuroprotective, and anti-diabetic effects. Skin benefits confirmed through clinical studies."
+  },
+  "classicalReferences": [
+    {
+      "text": "Charaka Samhita",
+      "reference": "Sutrasthana",
+      "quote": "हरिद्रा कटुका तिक्ता रूक्षोष्णा कफपित्तनुत्"
+    },
+    {
+      "text": "Sushruta Samhita",
+      "reference": "Sutrasthana",
+      "quote": "वर्ण्या कुष्ठहरा च तु तिक्ता कषायोष्णा लघुः"
+    },
+    {
+      "text": "Bhavaprakasha Nighantu",
+      "reference": "Haritakyadi Varga",
+      "quote": "हरिद्रा कटुका तिक्ता रूक्षोष्णा कफपित्तनुत् । वर्ण्या कुष्ठव्रणमेहपाण्डुगद्दष्टाशयशोथनुत्"
+    }
+  ],
+  "indications": [
+    "Skin diseases (kushtha)",
+    "Wounds and ulcers",
+    "Diabetes (prameha)",
+    "Anemia (pandu)",
+    "Poor complexion",
+    "Inflammation",
+    "Liver disorders",
+    "Respiratory conditions"
+  ],
+  "contraindications": {
+    "en": "Pregnancy (in therapeutic doses), gallstones, bleeding disorders, high pitta with heat symptoms (use with cooling herbs)"
+  },
+  "dosage": {
+    "en": "Powder: 1-3g, 2-3 times daily",
+    "with_milk": "1/2 tsp with warm milk for rasayana effect",
+    "external": "Paste applied to skin for wounds, inflammation, skin conditions"
+  },
+  "anupana": [
+    "warm milk",
+    "honey",
+    "ghee",
+    "warm water"
+  ],
+  "sevanaKala": "bhaktad",
+  "formulations": [
+    {
+      "name": "Haridra Khanda",
+      "ingredients": [
+        "Turmeric",
+        "Ghee",
+        "Milk",
+        "Sugar",
+        "Various herbs"
+      ],
+      "use": "Allergies, skin diseases, urticaria"
+    },
+    {
+      "name": "Nishamalaki",
+      "ingredients": [
+        "Turmeric",
+        "Amalaki"
+      ],
+      "use": "Diabetes, antioxidant"
+    }
+  ],
+  "externalUse": {
+    "en": "Applied as paste (with water, milk, or honey) for: wounds, skin infections, acne, inflammation, joint pain, improved complexion. Turmeric oil used for joint and muscle pain."
+  },
+  "provenance": {
+    "created": "2024-01-15",
+    "source": "Charaka Samhita, Sushruta Samhita, Bhavaprakasha Nighantu"
+  }
+}

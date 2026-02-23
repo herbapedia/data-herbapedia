@@ -1,0 +1,31 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "https://www.herbapedia.org/vocab/phycology/",
+
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+
+    "herbapedia": "https://www.herbapedia.org/vocab/core/",
+    "phycology": "https://www.herbapedia.org/vocab/phycology/"
+  },
+
+  "@graph": [
+    {
+      "@id": "https://www.herbapedia.org/vocab/phycology/",
+      "@type": "owl:Ontology",
+      "rdfs:label": "Herbapedia Phycology Vocabulary"
+    },
+
+    {
+      "@id": "phycology:AlgalSpecies",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "herbapedia:BotanicalSource",
+      "rdfs:label": {
+        "en": "Algal Species",
+        "zh-Hant": "藻類物種"
+      },
+      "rdfs:comment": "An algal species (seaweed, microalgae, etc.) used in herbal medicine."
+    }
+  ]
+}

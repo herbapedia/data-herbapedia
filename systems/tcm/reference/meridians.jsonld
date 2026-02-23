@@ -1,0 +1,424 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/tcm.jsonld",
+  "@id": "https://www.herbapedia.org/system/tcm/profile/reference/meridians",
+  "@type": [
+    "tcm:ReferenceCollection",
+    "skos:Collection"
+  ],
+  "name": {
+    "en": "TCM Meridians",
+    "zh-Hant": "經脈",
+    "zh-Hans": "经脉"
+  },
+  "description": {
+    "en": "The twelve regular meridians (十二正經) and eight extraordinary meridians (奇經八脈) in Traditional Chinese Medicine. Herbs 'enter' specific meridians, directing their therapeutic action.",
+    "zh-Hant": "中醫十二正經與奇經八脈。藥物歸經，引導藥力到達相關臟腑。"
+  },
+  "members": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/lung",
+      "@type": [
+        "tcm:Meridian"
+      ],
+      "name": {
+        "en": "Lung Meridian",
+        "zh-Hant": "手太陰肺經",
+        "zh-Hans": "手太阴肺经"
+      },
+      "pinyin": "Shǒu Tàiyīn Fèi Jīng",
+      "symbol": "肺經",
+      "abbreviation": "LU",
+      "isRegularMeridian": true,
+      "organType": "zang",
+      "element": "metal",
+      "timeOfPeakFlow": "3-5am",
+      "pairedMeridian": {
+        "@id": "https://www.herbapedia.org/system/tcm/meridian/large-intestine"
+      },
+      "associatedOrgan": {
+        "en": "Lung",
+        "zh-Hant": "肺"
+      },
+      "numberOfPoints": 11,
+      "functions": {
+        "en": "Governs qi and respiration, regulates water passages"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/large-intestine",
+      "@type": [
+        "tcm:Meridian"
+      ],
+      "name": {
+        "en": "Large Intestine Meridian",
+        "zh-Hant": "手陽明大腸經",
+        "zh-Hans": "手阳明大肠经"
+      },
+      "pinyin": "Shǒu Yángmíng Dàcháng Jīng",
+      "symbol": "大腸經",
+      "abbreviation": "LI",
+      "isRegularMeridian": true,
+      "organType": "fu",
+      "element": "metal",
+      "timeOfPeakFlow": "5-7am",
+      "pairedMeridian": {
+        "@id": "https://www.herbapedia.org/system/tcm/meridian/lung"
+      },
+      "associatedOrgan": {
+        "en": "Large Intestine",
+        "zh-Hant": "大腸"
+      },
+      "numberOfPoints": 20,
+      "functions": {
+        "en": "Absorbs fluids, excretes waste"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/stomach",
+      "@type": [
+        "tcm:Meridian"
+      ],
+      "name": {
+        "en": "Stomach Meridian",
+        "zh-Hant": "足陽明胃經",
+        "zh-Hans": "足阳明胃经"
+      },
+      "pinyin": "Zú Yángmíng Wèi Jīng",
+      "symbol": "胃經",
+      "abbreviation": "ST",
+      "isRegularMeridian": true,
+      "organType": "fu",
+      "element": "earth",
+      "timeOfPeakFlow": "7-9am",
+      "pairedMeridian": {
+        "@id": "https://www.herbapedia.org/system/tcm/meridian/spleen"
+      },
+      "associatedOrgan": {
+        "en": "Stomach",
+        "zh-Hant": "胃"
+      },
+      "numberOfPoints": 45,
+      "functions": {
+        "en": "Receives and ripens food, descends qi"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/spleen",
+      "@type": [
+        "tcm:Meridian"
+      ],
+      "name": {
+        "en": "Spleen Meridian",
+        "zh-Hant": "足太陰脾經",
+        "zh-Hans": "足太阴脾经"
+      },
+      "pinyin": "Zú Tàiyīn Pí Jīng",
+      "symbol": "脾經",
+      "abbreviation": "SP",
+      "isRegularMeridian": true,
+      "organType": "zang",
+      "element": "earth",
+      "timeOfPeakFlow": "9-11am",
+      "pairedMeridian": {
+        "@id": "https://www.herbapedia.org/system/tcm/meridian/stomach"
+      },
+      "associatedOrgan": {
+        "en": "Spleen",
+        "zh-Hant": "脾"
+      },
+      "numberOfPoints": 21,
+      "functions": {
+        "en": "Governs transformation and transportation, keeps blood in vessels"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/heart",
+      "@type": [
+        "tcm:Meridian"
+      ],
+      "name": {
+        "en": "Heart Meridian",
+        "zh-Hant": "手少陰心經",
+        "zh-Hans": "手少阴心经"
+      },
+      "pinyin": "Shǒu Shàoyīn Xīn Jīng",
+      "symbol": "心經",
+      "abbreviation": "HT",
+      "isRegularMeridian": true,
+      "organType": "zang",
+      "element": "fire",
+      "timeOfPeakFlow": "11am-1pm",
+      "pairedMeridian": {
+        "@id": "https://www.herbapedia.org/system/tcm/meridian/small-intestine"
+      },
+      "associatedOrgan": {
+        "en": "Heart",
+        "zh-Hant": "心"
+      },
+      "numberOfPoints": 9,
+      "functions": {
+        "en": "Governs blood, houses the mind (shen)"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/small-intestine",
+      "@type": [
+        "tcm:Meridian"
+      ],
+      "name": {
+        "en": "Small Intestine Meridian",
+        "zh-Hant": "手太陽小腸經",
+        "zh-Hans": "手太阳小肠经"
+      },
+      "pinyin": "Shǒu Tàiyáng Xiǎocháng Jīng",
+      "symbol": "小腸經",
+      "abbreviation": "SI",
+      "isRegularMeridian": true,
+      "organType": "fu",
+      "element": "fire",
+      "timeOfPeakFlow": "1-3pm",
+      "pairedMeridian": {
+        "@id": "https://www.herbapedia.org/system/tcm/meridian/heart"
+      },
+      "associatedOrgan": {
+        "en": "Small Intestine",
+        "zh-Hant": "小腸"
+      },
+      "numberOfPoints": 19,
+      "functions": {
+        "en": "Separates clear from turbid, absorbs nutrients"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/bladder",
+      "@type": [
+        "tcm:Meridian"
+      ],
+      "name": {
+        "en": "Bladder Meridian",
+        "zh-Hant": "足太陽膀胱經",
+        "zh-Hans": "足太阳膀胱经"
+      },
+      "pinyin": "Zú Tàiyáng Pángguāng Jīng",
+      "symbol": "膀胱經",
+      "abbreviation": "BL",
+      "isRegularMeridian": true,
+      "organType": "fu",
+      "element": "water",
+      "timeOfPeakFlow": "3-5pm",
+      "pairedMeridian": {
+        "@id": "https://www.herbapedia.org/system/tcm/meridian/kidney"
+      },
+      "associatedOrgan": {
+        "en": "Bladder",
+        "zh-Hant": "膀胱"
+      },
+      "numberOfPoints": 67,
+      "functions": {
+        "en": "Stores and excretes urine, longest meridian with back-shu points"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/kidney",
+      "@type": [
+        "tcm:Meridian"
+      ],
+      "name": {
+        "en": "Kidney Meridian",
+        "zh-Hant": "足少陰腎經",
+        "zh-Hans": "足少阴肾经"
+      },
+      "pinyin": "Zú Shàoyīn Shèn Jīng",
+      "symbol": "腎經",
+      "abbreviation": "KI",
+      "isRegularMeridian": true,
+      "organType": "zang",
+      "element": "water",
+      "timeOfPeakFlow": "5-7pm",
+      "pairedMeridian": {
+        "@id": "https://www.herbapedia.org/system/tcm/meridian/bladder"
+      },
+      "associatedOrgan": {
+        "en": "Kidney",
+        "zh-Hant": "腎"
+      },
+      "numberOfPoints": 27,
+      "functions": {
+        "en": "Stores essence, governs reproduction and development"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/pericardium",
+      "@type": [
+        "tcm:Meridian"
+      ],
+      "name": {
+        "en": "Pericardium Meridian",
+        "zh-Hant": "手厥陰心包經",
+        "zh-Hans": "手厥阴心包经"
+      },
+      "pinyin": "Shǒu Juéyīn Xīnbāo Jīng",
+      "symbol": "心包經",
+      "abbreviation": "PC",
+      "isRegularMeridian": true,
+      "organType": "zang",
+      "element": "fire",
+      "timeOfPeakFlow": "7-9pm",
+      "pairedMeridian": {
+        "@id": "https://www.herbapedia.org/system/tcm/meridian/triple-burner"
+      },
+      "associatedOrgan": {
+        "en": "Pericardium",
+        "zh-Hant": "心包"
+      },
+      "numberOfPoints": 9,
+      "functions": {
+        "en": "Protects the heart, governs blood circulation"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/triple-burner",
+      "@type": [
+        "tcm:Meridian"
+      ],
+      "name": {
+        "en": "Triple Burner Meridian",
+        "zh-Hant": "手少陽三焦經",
+        "zh-Hans": "手少阳三焦经"
+      },
+      "pinyin": "Shǒu Shàoyáng Sānjiāo Jīng",
+      "symbol": "三焦經",
+      "abbreviation": "TB",
+      "isRegularMeridian": true,
+      "organType": "fu",
+      "element": "fire",
+      "timeOfPeakFlow": "9-11pm",
+      "pairedMeridian": {
+        "@id": "https://www.herbapedia.org/system/tcm/meridian/pericardium"
+      },
+      "associatedOrgan": {
+        "en": "Triple Burner",
+        "zh-Hant": "三焦"
+      },
+      "numberOfPoints": 23,
+      "functions": {
+        "en": "Regulates water passages, controls three body burners"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/gallbladder",
+      "@type": [
+        "tcm:Meridian"
+      ],
+      "name": {
+        "en": "Gallbladder Meridian",
+        "zh-Hant": "足少陽膽經",
+        "zh-Hans": "足少阳胆经"
+      },
+      "pinyin": "Zú Shàoyáng Dǎn Jīng",
+      "symbol": "膽經",
+      "abbreviation": "GB",
+      "isRegularMeridian": true,
+      "organType": "fu",
+      "element": "wood",
+      "timeOfPeakFlow": "11pm-1am",
+      "pairedMeridian": {
+        "@id": "https://www.herbapedia.org/system/tcm/meridian/liver"
+      },
+      "associatedOrgan": {
+        "en": "Gallbladder",
+        "zh-Hant": "膽"
+      },
+      "numberOfPoints": 44,
+      "functions": {
+        "en": "Stores and excretes bile, governs decision-making"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/liver",
+      "@type": [
+        "tcm:Meridian"
+      ],
+      "name": {
+        "en": "Liver Meridian",
+        "zh-Hant": "足厥陰肝經",
+        "zh-Hans": "足厥阴肝经"
+      },
+      "pinyin": "Zú Juéyīn Gān Jīng",
+      "symbol": "肝經",
+      "abbreviation": "LR",
+      "isRegularMeridian": true,
+      "organType": "zang",
+      "element": "wood",
+      "timeOfPeakFlow": "1-3am",
+      "pairedMeridian": {
+        "@id": "https://www.herbapedia.org/system/tcm/meridian/gallbladder"
+      },
+      "associatedOrgan": {
+        "en": "Liver",
+        "zh-Hant": "肝"
+      },
+      "numberOfPoints": 14,
+      "functions": {
+        "en": "Governs free flow of qi, stores blood, controls tendons"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/governor",
+      "@type": [
+        "tcm:Meridian"
+      ],
+      "name": {
+        "en": "Governor Vessel",
+        "zh-Hant": "督脈",
+        "zh-Hans": "督脉"
+      },
+      "pinyin": "Dū Mài",
+      "symbol": "督脈",
+      "abbreviation": "GV",
+      "isRegularMeridian": false,
+      "isExtraordinaryMeridian": true,
+      "organType": "extraordinary",
+      "element": "none",
+      "associatedOrgan": {
+        "en": "Spine/Brain",
+        "zh-Hant": "脊/腦"
+      },
+      "numberOfPoints": 28,
+      "functions": {
+        "en": "Governs all yang meridians, sea of yang"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/conception",
+      "@type": [
+        "tcm:Meridian"
+      ],
+      "name": {
+        "en": "Conception Vessel",
+        "zh-Hant": "任脈",
+        "zh-Hans": "任脉"
+      },
+      "pinyin": "Rèn Mài",
+      "symbol": "任脈",
+      "abbreviation": "CV",
+      "isRegularMeridian": false,
+      "isExtraordinaryMeridian": true,
+      "organType": "extraordinary",
+      "element": "none",
+      "associatedOrgan": {
+        "en": "Uterus/Abdomen",
+        "zh-Hant": "胞宮/腹部"
+      },
+      "numberOfPoints": 24,
+      "functions": {
+        "en": "Governs all yin meridians, sea of yin, controls reproduction"
+      }
+    }
+  ],
+  "_documentation": {
+    "classicalReference": "《黃帝內經·靈樞》詳細記載十二正經的循行路線。",
+    "clinicalApplication": "藥物歸經是選藥的重要依據，如治療肺病多用入肺經藥物。",
+    "combination": "表裡經配伍：肺與大腸相表裡，肝與膽相表裡等。"
+  }
+}

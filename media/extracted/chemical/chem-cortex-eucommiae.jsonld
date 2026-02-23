@@ -1,0 +1,234 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/chemical/cortex-eucommiae",
+  "@type": ["herbapedia:ChemicalAnalysisData", "schema:Dataset"],
+  "dataType": "ChemicalAnalysis",
+  "sourceDocument": "CHEM____Cortex_Eucommiae_V1.pdf",
+  "scientificName": "Eucommia ulmoides",
+  "chineseName": "杜仲",
+  "pinyinName": "Du Zhong",
+  "identificationMethod": ["TLC", "HPLC-Fingerprint", "HPLC-Assay"],
+  "referenceCompounds": [
+    {
+      "name": "Pinoresinol diglucoside",
+      "chineseName": "松脂醇二葡萄糖苷",
+      "formula": "C₃₂H₄₂O₁₆",
+      "purpose": ["TLC identification", "HPLC fingerprint marker", "Assay quantification"]
+    }
+  ],
+  "assayLimits": {
+    "pinoresinolDiglucoside": {
+      "compound": "Pinoresinol diglucoside",
+      "formula": "C₃₂H₄₂O₁₆",
+      "minimumContent": "0.10%",
+      "basis": "dried substance"
+    }
+  },
+  "tlcMethod": {
+    "appendixReference": "Appendix I",
+    "stationaryPhase": "HPTLC silica gel F₂₅₄ plate",
+    "developingSolvent": {
+      "components": ["dichloromethane", "methanol", "formic acid"],
+      "ratio": "3:1:0.1 (v/v)"
+    },
+    "sprayReagent": {
+      "composition": "20 mL sulfuric acid in 80 mL water",
+      "visualization": "Heat at approximately 120°C until spots or bands are clearly visible (about 15 minutes)"
+    },
+    "testSolution": {
+      "sampleAmount": "2.5 g",
+      "solvent": "methanol",
+      "solventVolume": "30 mL",
+      "extraction": "ultrasonication (560 W) for 30 minutes",
+      "procedure": "Filter, evaporate filtrate under reduced pressure using rotary evaporator, dissolve residue in 20 mL water, transfer to separatory funnel, extract with 50 mL dichloromethane (discard dichloromethane layer), extract aqueous layer with 50 mL n-butanol, evaporate n-butanol extract under reduced pressure, dissolve residue in 1 mL methanol"
+    },
+    "standardSolutions": {
+      "pinoresinolDiglucoside": {
+        "concentration": "1.0 mg/mL in methanol",
+        "preparation": "Dissolve 1.0 mg pinoresinol diglucoside reference standard in 1 mL methanol"
+      }
+    },
+    "applicationVolumes": {
+      "standardSolution": "5 µL",
+      "testSolution": "1 µL"
+    },
+    "developingDistance": "approximately 4 cm",
+    "visualization": "Visible light after spraying with reagent and heating",
+    "identificationCriteria": {
+      "positiveMarkers": ["Pinoresinol diglucoside"],
+      "criteria": "The test sample chromatogram should show characteristic spots or bands with the same color and corresponding Rf value as pinoresinol diglucoside"
+    }
+  },
+  "hplcFingerprint": {
+    "appendixReference": "Appendix II",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 µm"
+      },
+      "detector": "Diode array detector (DAD)",
+      "detectionWavelength": "210 nm",
+      "flowRate": "0.8 mL/min"
+    },
+    "mobilePhase": {
+      "solventA": "Water",
+      "solventB": "Acetonitrile",
+      "gradientProgram": [
+        {
+          "timeRange": "0-30 min",
+          "solventA": "90% → 80%",
+          "solventB": "10% → 20%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "30-60 min",
+          "solventA": "80% → 60%",
+          "solventB": "20% → 40%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "60-70 min",
+          "solventA": "60% → 0%",
+          "solventB": "40% → 100%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "pinoresinolDiglucoside": {
+        "solutionName": "Std-FP",
+        "concentration": "50 mg/L",
+        "preparation": "Dissolve 1.0 mg pinoresinol diglucoside reference standard in 20 mL methanol"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "0.4 g",
+      "solvent": "50% ethanol",
+      "solventVolume": "10 mL",
+      "extraction": "ultrasonication (560 W) for 30 minutes",
+      "filtration": "0.45 µm microporous membrane (RC)"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "peakAreaRSD": "≤ 5.0% (Pinoresinol diglucoside)",
+      "retentionTimeRSD": "≤ 2.0% (Pinoresinol diglucoside)",
+      "theoreticalPlates": "≥ 40,000 (based on Pinoresinol diglucoside)",
+      "resolution": "≥ 1.0 (between peak 1 and adjacent peak)"
+    },
+    "identificationCriteria": {
+      "retentionTimeTolerance": "≤ 2.0% difference between sample and standard"
+    }
+  },
+  "hplcAssay": {
+    "appendixReference": "Appendix III",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 µm"
+      },
+      "detector": "Diode array detector (DAD)",
+      "detectionWavelength": "228 nm",
+      "flowRate": "1.0 mL/min"
+    },
+    "mobilePhase": {
+      "solventA": "Water",
+      "solventB": "Acetonitrile",
+      "gradientProgram": [
+        {
+          "timeRange": "0-20 min",
+          "solventA": "90% → 80%",
+          "solventB": "10% → 20%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "stockSolution": {
+        "solutionName": "Std-Stock",
+        "concentration": "1000 mg/L",
+        "compound": "Pinoresinol diglucoside",
+        "preparation": "Accurately weigh 10.0 mg pinoresinol diglucoside reference standard and dissolve in 10 mL methanol"
+      },
+      "workingSolutions": {
+        "solutionName": "Std-AS",
+        "concentrations": ["1", "10", "50", "100", "200 mg/L"],
+        "description": "Series of reference solutions prepared by diluting stock solution with methanol"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "0.4 g",
+      "solvent": "50% ethanol",
+      "extractionVolume": "10 mL × 2 extractions",
+      "extraction": "ultrasonication (560 W) for 30 minutes",
+      "centrifugation": "5 minutes (approximately 5000 × g)",
+      "finalVolume": "25 mL",
+      "filtration": "0.45 µm microporous membrane (RC)",
+      "injectionVolume": "5 µL"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "standardConcentration": "50 mg/L (Std-AS)",
+      "injectionVolume": "5 µL",
+      "peakAreaRSD": "≤ 5.0% (Pinoresinol diglucoside)",
+      "retentionTimeRSD": "≤ 2.0% (Pinoresinol diglucoside)",
+      "theoreticalPlates": "≥ 50,000 (based on Pinoresinol diglucoside)",
+      "resolution": "≥ 1.5 (between pinoresinol diglucoside peak and adjacent peak)"
+    },
+    "calibration": {
+      "method": "5-point calibration curve",
+      "plot": "Peak area vs. concentration (mg/L)",
+      "identificationTolerance": "≤ 5.0% difference in retention times"
+    }
+  },
+  "rrtValues": [
+    {
+      "peakNumber": 1,
+      "compound": "Pinoresinol diglucoside",
+      "rrt": 1.00,
+      "acceptableRange": null,
+      "referenceMarker": true,
+      "referenceTo": "self"
+    },
+    {
+      "peakNumber": 2,
+      "compound": "Unidentified",
+      "rrt": 1.13,
+      "acceptableRange": "± 0.03",
+      "referenceMarker": false,
+      "referenceTo": "Pinoresinol diglucoside"
+    },
+    {
+      "peakNumber": 3,
+      "compound": "Unidentified",
+      "rrt": 1.59,
+      "acceptableRange": "± 0.03",
+      "referenceMarker": false,
+      "referenceTo": "Pinoresinol diglucoside"
+    },
+    {
+      "peakNumber": 4,
+      "compound": "Unidentified",
+      "rrt": 2.23,
+      "acceptableRange": "± 0.06",
+      "referenceMarker": false,
+      "referenceTo": "Pinoresinol diglucoside"
+    }
+  ],
+  "appendices": {
+    "appendixI": {
+      "title": "Chromatography – Thin-Layer Chromatography",
+      "description": "General procedures for TLC including plate types, application methods, developing chambers, Rf calculation, and visualization techniques"
+    },
+    "appendixII": {
+      "title": "GC and HPLC/UHPLC Fingerprinting",
+      "description": "Methods for establishing chromatographic fingerprints using marker peaks and RRT values. Requires at least 10 batches of representative samples tested in duplicate (20 sets of data)"
+    },
+    "appendixIII": {
+      "title": "Chromatography – HPLC/UHPLC",
+      "description": "General HPLC/UHPLC procedures including system suitability tests (theoretical plates, repeatability, resolution, tailing factor) and quantitative calculations"
+    }
+  },
+  "extractedAt": "2026-02-21"
+}

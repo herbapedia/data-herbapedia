@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/guijia-or-guiban-root",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Guijia or Guiban Root",
+    "zh-Hant": "龜板",
+    "zh-Hans": "龟板"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/guijia-or-guiban"
+  },
+  "partType": "root",
+  "description": {
+    "en": "The root of Carapace and plastrum of Chinemys reevesii, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.817Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

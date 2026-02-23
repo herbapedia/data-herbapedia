@@ -1,0 +1,267 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/chemical/radix-angelicae-sinensis",
+  "@type": ["herbapedia:ChemicalAnalysisData", "schema:Dataset"],
+  "dataType": "ChemicalAnalysis",
+  "sourceDocument": "CHEM____Radix_Angelicae_Sinensis_V1.1.pdf",
+  "scientificName": "Angelica sinensis",
+  "chineseName": "當歸",
+  "pinyinName": "Dang Gui",
+  "identificationMethod": ["Physicochemical", "TLC", "HPLC-Fingerprint", "HPLC-Assay"],
+  "referenceCompounds": [
+    {
+      "name": "Z-ligustilide",
+      "chineseName": "Z-藁本內酯",
+      "formula": "C₁₂H₁₄O₂",
+      "purpose": ["TLC identification", "HPLC fingerprint marker", "Assay quantification"]
+    },
+    {
+      "name": "Ferulic acid",
+      "chineseName": "阿魏酸",
+      "purpose": ["TLC identification", "HPLC fingerprint marker"]
+    }
+  ],
+  "assayLimits": {
+    "zLigustilide": {
+      "compound": "Z-ligustilide",
+      "formula": "C₁₂H₁₄O₂",
+      "minimumContent": "0.60%",
+      "basis": "dried substance"
+    }
+  },
+  "physicochemicalIdentification": {
+    "method": "Fluorescence reaction",
+    "procedure": {
+      "sampleAmount": "0.2 g",
+      "solvent": "70% ethanol",
+      "solventVolume": "2 mL",
+      "extraction": "ultrasonication for 60 minutes",
+      "testMethod": "spot supernatant onto filter paper",
+      "visualization": "UV light at 254 nm",
+      "positiveResult": "fluorescent blue spot"
+    }
+  },
+  "tlcMethod": {
+    "appendixReference": "Appendix I",
+    "lipidSolubleComponents": {
+      "stationaryPhase": "HPTLC silica gel F₂₅₄ plate",
+      "standardSolution": {
+        "compound": "Z-ligustilide",
+        "concentration": "1.0 mg in 1 mL methanol"
+      },
+      "developingSolvent": {
+        "components": ["hexane", "ethyl acetate"],
+        "ratio": "5:1 (v/v)"
+      },
+      "sprayReagent": {
+        "composition": "10 mL sulfuric acid in 90 mL ethanol",
+        "visualization": "Heat at 110°C for 10 minutes, UV light at 366 nm"
+      },
+      "testSolution": {
+        "sampleAmount": "1.0 g",
+        "solvent": "diethyl ether",
+        "solventVolume": "10 mL",
+        "extraction": "shake occasionally for 2 hours",
+        "centrifugation": "1200 × g for 10 minutes",
+        "evaporation": "water bath below 50°C",
+        "finalDissolution": "1 mL ethyl acetate"
+      },
+      "applicationVolume": "4 µL each",
+      "developingDistance": "8 cm",
+      "identificationCriteria": {
+        "positiveMarkers": ["Z-ligustilide (matching color and Rf value)"]
+      }
+    },
+    "waterSolubleComponents": {
+      "stationaryPhase": "HPTLC silica gel F₂₅₄ plate",
+      "standardSolution": {
+        "compound": "Ferulic acid",
+        "concentration": "0.5 mg in 1 mL methanol"
+      },
+      "developingSolvent": {
+        "components": ["chloroform", "ethyl acetate", "formic acid"],
+        "ratio": "10:5:0.5 (v/v)"
+      },
+      "sprayReagent": {
+        "composition": "10 mL sulfuric acid in 90 mL ethanol",
+        "visualization": "Heat at 110°C for 10 minutes, UV light at 366 nm"
+      },
+      "testSolution": {
+        "sampleAmount": "2.0 g",
+        "solvent": "methanol",
+        "solventVolume": "20 mL",
+        "extraction": "ultrasonication for 30 minutes",
+        "centrifugation": "1200 × g for 10 minutes",
+        "evaporation": "rotary evaporator at reduced pressure",
+        "defatting": "hexane extraction (2 × 20 mL, discard)",
+        "acidification": "adjust to pH 2 with 2M HCl",
+        "extraction2": "diethyl ether (3 × 10 mL)",
+        "finalDissolution": "0.5 mL ethyl acetate"
+      },
+      "applicationVolume": "4 µL each",
+      "developingDistance": "8.5 cm",
+      "identificationCriteria": {
+        "positiveMarkers": ["Ferulic acid (matching color and Rf value)"]
+      }
+    }
+  },
+  "hplcFingerprint": {
+    "appendixReference": "Appendix II",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 µm"
+      },
+      "detector": "UV",
+      "detectionWavelength": "280 nm",
+      "columnTemperature": "30°C",
+      "flowRate": "1.0 mL/min",
+      "injectionVolume": "10 µL"
+    },
+    "mobilePhase": {
+      "solventA": "Water - acetic acid (99:1, v/v)",
+      "solventB": "Acetonitrile",
+      "gradientProgram": [
+        {
+          "timeRange": "0-18 min",
+          "solventA": "81%",
+          "solventB": "19%",
+          "elution": "isocratic"
+        },
+        {
+          "timeRange": "18-60 min",
+          "solventA": "81% → 0%",
+          "solventB": "19% → 100%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "zLigustilide": {
+        "stockSolution": "400 mg/L (10.0 mg in 25 mL acetonitrile)",
+        "storage": "-10°C in the dark"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "0.5 g",
+      "solvent": "methanol - formic acid (95:5, v/v)",
+      "solventVolume": "25 mL",
+      "extraction": "ultrasonication for 100 minutes",
+      "centrifugation": "540 × g for 5 minutes",
+      "filtration": "0.2 µm PTFE filter"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "peakAreaRSD": "≤ 3.0% (Z-ligustilide)",
+      "retentionTimeRSD": "≤ 3.0% (Z-ligustilide)",
+      "theoreticalPlates": "≥ 300,000 (based on Z-ligustilide)",
+      "resolution": "≥ 2.0 (between Z-ligustilide and peak 3)"
+    },
+    "identificationCriteria": {
+      "retentionTimeTolerance": "≤ 3.0% difference between sample and standard"
+    }
+  },
+  "hplcAssay": {
+    "appendixReference": "Appendix III",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 150 mm",
+        "particleSize": "5 µm"
+      },
+      "detector": "UV",
+      "detectionWavelength": "350 nm",
+      "flowRate": "1.0 mL/min",
+      "mobilePhase": {
+        "components": ["acetonitrile", "water"],
+        "ratio": "6:4 (v/v)"
+      }
+    },
+    "standardSolutions": {
+      "stockSolution": {
+        "concentration": "1000 mg/L",
+        "compound": "Z-ligustilide",
+        "preparation": "25.0 mg in 25 mL acetonitrile",
+        "storage": "-10°C in the dark"
+      },
+      "workingSolutions": {
+        "concentrations": ["10", "150", "250", "350", "500 mg/L"],
+        "description": "Series of standard solutions"
+      },
+      "injectionVolume": "10 µL (for calibration)"
+    },
+    "testSolution": {
+      "sampleAmount": "0.5 g",
+      "solvent": "methanol",
+      "solventVolume": "25 mL",
+      "extraction": "ultrasonication for 100 minutes",
+      "centrifugation": "540 × g for 5 minutes",
+      "filtration": "0.2 µm PTFE filter",
+      "injectionVolume": "10 µL"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "injectionVolume": "10 µL",
+      "standardConcentration": "250 mg/L (Z-ligustilide Std-AS)",
+      "peakAreaRSD": "≤ 3.0% (Z-ligustilide)",
+      "retentionTimeRSD": "≤ 3.0% (Z-ligustilide)",
+      "theoreticalPlates": "≥ 5,000 (based on Z-ligustilide)",
+      "resolution": "≥ 1.5 (between Z-ligustilide and adjacent peak)"
+    },
+    "calibration": {
+      "method": "5-point calibration curve",
+      "plot": "Peak area vs. concentration (mg/L)",
+      "identificationTolerance": "≤ 5.0% difference in retention times"
+    }
+  },
+  "rrtValues": [
+    {
+      "peakNumber": 1,
+      "compound": "Ferulic acid",
+      "rrt": 0.32,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Z-ligustilide"
+    },
+    {
+      "peakNumber": 2,
+      "compound": "Unidentified",
+      "rrt": 0.86,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Z-ligustilide"
+    },
+    {
+      "peakNumber": 3,
+      "compound": "Unidentified",
+      "rrt": 0.97,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Z-ligustilide"
+    },
+    {
+      "peakNumber": 4,
+      "compound": "Z-ligustilide",
+      "rrt": 1.00,
+      "acceptableRange": null,
+      "referenceMarker": true,
+      "referenceTo": "self"
+    }
+  ],
+  "appendices": {
+    "appendixI": {
+      "title": "Chromatography - Thin-Layer Chromatography",
+      "description": "General procedures for TLC including plate types, application methods, developing chambers, and Rf calculation"
+    },
+    "appendixII": {
+      "title": "GC and HPLC/UHPLC Fingerprinting",
+      "description": "Methods for establishing chromatographic fingerprints using marker peaks and RRT values"
+    },
+    "appendixIII": {
+      "title": "Chromatography - HPLC/UHPLC",
+      "description": "General HPLC/UHPLC procedures including system suitability tests (theoretical plates, repeatability, resolution, tailing factor) and quantitative calculations"
+    }
+  },
+  "extractedAt": "2026-02-20"
+}

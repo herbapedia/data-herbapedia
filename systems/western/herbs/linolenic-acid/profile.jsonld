@@ -1,11 +1,11 @@
 {
-  "@context": "../../schema/context/western.jsonld",
-  "@id": "western/linolenic-acid",
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/linolenic-acid",
   "@type": [
     "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
-    "@id": "plant/linolenic-acid"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/linolenic-acid"
   },
   "name": {
     "en": "Linolenic Acid",

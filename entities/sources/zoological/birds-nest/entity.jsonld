@@ -1,0 +1,34 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/sources/zoological/birds-nest",
+  "@type": [
+    "herbapedia:ZoologicalSource",
+    "herbapedia:SourceMaterial"
+  ],
+  "sourceType": "zoological",
+  "name": {
+    "en": "Bird's Nest",
+    "zh-Hant": "燕窩",
+    "zh-Hans": "燕窝"
+  },
+  "animalName": {
+    "en": "Swiftlets (Collocalia spp.)",
+    "zh-Hant": "金絲燕",
+    "zh-Hans": "金丝燕"
+  },
+  "animalScientificName": "Collocalia spp.",
+  "animalPart": "saliva nest",
+  "description": {
+    "en": "Edible bird's nests are saliva nests of cave swiftlets of genera Collocalia, family Apodidae. They are prized in Chinese cuisine and traditional medicine for their nutritional properties.",
+    "zh-Hant": "燕窩是金絲燕科雨燕屬鳥類的唾液築成的巢。在中華料理和傳統醫學中被視為珍貴食材，具有滋陰潤燥、益氣補虛的功效。",
+    "zh-Hans": "燕窝是金丝燕科雨燕属鸟类的唾液筑成的巢。在中华料理和传统医学中被视为珍贵食材，具有滋阴润燥、益气补虚的功效。"
+  },
+  "image": "media/images/birds-nest/birds-nest.jpg",
+  "provenance": {
+    "created": "2026-02-18T09:14:54.474Z",
+    "modified": "2026-02-21T09:56:00.000Z",
+    "migratedFrom": "entities/botanical/species/birds-nest/entity.jsonld",
+    "source": "vitaherbapedia.com",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

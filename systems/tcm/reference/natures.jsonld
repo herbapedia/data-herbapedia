@@ -1,0 +1,226 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/tcm.jsonld",
+  "@id": "https://www.herbapedia.org/system/tcm/profile/reference/natures",
+  "@type": [
+    "tcm:ReferenceCollection",
+    "skos:Collection"
+  ],
+  "name": {
+    "en": "TCM Thermal Natures",
+    "zh-Hant": "四氣",
+    "zh-Hans": "四气"
+  },
+  "description": {
+    "en": "The four thermal natures (四氣/四性) in Traditional Chinese Medicine. Each herb has a thermal property that affects the body's temperature balance.",
+    "zh-Hant": "中藥的四氣（四性），指藥物對人體溫度平衡的影響。"
+  },
+  "members": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/nature/hot",
+      "@type": [
+        "tcm:Nature"
+      ],
+      "name": {
+        "en": "Hot",
+        "zh-Hant": "熱",
+        "zh-Hans": "热"
+      },
+      "pinyin": "Rè",
+      "code": "H",
+      "degree": 2,
+      "description": {
+        "en": "Strongly warms the body, disperses cold. Use for cold conditions.",
+        "zh-Hant": "大熱，溫裡散寒。用於寒證。"
+      },
+      "effectOnBody": {
+        "en": "Increases body heat, promotes circulation, dispels cold"
+      },
+      "indicatedFor": {
+        "en": "Cold patterns, yang deficiency, cold limbs"
+      },
+      "contraindicatedFor": {
+        "en": "Heat patterns, yin deficiency, fever"
+      },
+      "oppositeOf": {
+        "@id": "https://www.herbapedia.org/system/tcm/nature/cold"
+      },
+      "exampleHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/ganjiang"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/fuzi"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/rougui"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/nature/warm",
+      "@type": [
+        "tcm:Nature"
+      ],
+      "name": {
+        "en": "Warm",
+        "zh-Hant": "溫",
+        "zh-Hans": "温"
+      },
+      "pinyin": "Wēn",
+      "code": "W",
+      "degree": 1,
+      "description": {
+        "en": "Mildly warms the body, promotes circulation. Safer than hot herbs.",
+        "zh-Hant": "溫裡，促進循環。比熱藥溫和。"
+      },
+      "effectOnBody": {
+        "en": "Gently warms, supports yang, promotes qi circulation"
+      },
+      "indicatedFor": {
+        "en": "Mild cold patterns, qi stagnation from cold"
+      },
+      "contraindicatedFor": {
+        "en": "Heat patterns, excessive yang"
+      },
+      "oppositeOf": {
+        "@id": "https://www.herbapedia.org/system/tcm/nature/cool"
+      },
+      "exampleHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/sheng-jiang"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/guizhi"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/dang-gui"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/nature/neutral",
+      "@type": [
+        "tcm:Nature"
+      ],
+      "name": {
+        "en": "Neutral",
+        "zh-Hant": "平",
+        "zh-Hans": "平"
+      },
+      "pinyin": "Píng",
+      "code": "N",
+      "degree": 0,
+      "description": {
+        "en": "Neither warms nor cools. Suitable for most constitutions.",
+        "zh-Hant": "不寒不熱，性質平和。適合大多數體質。"
+      },
+      "effectOnBody": {
+        "en": "Balanced, neither heating nor cooling"
+      },
+      "indicatedFor": {
+        "en": "General use, all constitutions"
+      },
+      "contraindicatedFor": {
+        "en": "None specific"
+      },
+      "exampleHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/ren-shen"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/gan-cao"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/shan-yao"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/nature/cool",
+      "@type": [
+        "tcm:Nature"
+      ],
+      "name": {
+        "en": "Cool",
+        "zh-Hant": "涼",
+        "zh-Hans": "凉"
+      },
+      "pinyin": "Liáng",
+      "code": "C",
+      "degree": -1,
+      "description": {
+        "en": "Mildly cools the body, clears heat. Safer than cold herbs.",
+        "zh-Hant": "清熱涼血，性質較寒藥溫和。"
+      },
+      "effectOnBody": {
+        "en": "Gently cools, clears mild heat, nourishes yin"
+      },
+      "indicatedFor": {
+        "en": "Mild heat patterns, early stage fever"
+      },
+      "contraindicatedFor": {
+        "en": "Cold patterns, yang deficiency"
+      },
+      "oppositeOf": {
+        "@id": "https://www.herbapedia.org/system/tcm/nature/warm"
+      },
+      "exampleHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/chrysanthemum"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/bohe"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/chaihu"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/nature/cold",
+      "@type": [
+        "tcm:Nature"
+      ],
+      "name": {
+        "en": "Cold",
+        "zh-Hant": "寒",
+        "zh-Hans": "寒"
+      },
+      "pinyin": "Hán",
+      "code": "CD",
+      "degree": -2,
+      "description": {
+        "en": "Strongly cools the body, clears heat and toxins. Use carefully.",
+        "zh-Hant": "大寒，清熱解毒。需謹慎使用。"
+      },
+      "effectOnBody": {
+        "en": "Strongly cools, clears heat, purges fire, detoxifies"
+      },
+      "indicatedFor": {
+        "en": "Heat patterns, high fever, toxic heat"
+      },
+      "contraindicatedFor": {
+        "en": "Cold patterns, spleen/stomach deficiency"
+      },
+      "oppositeOf": {
+        "@id": "https://www.herbapedia.org/system/tcm/nature/hot"
+      },
+      "exampleHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/huanglian"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/huangqin"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/jinyinhua"
+        }
+      ]
+    }
+  ],
+  "_documentation": {
+    "classicalReference": "《神農本草經》最早記載藥物的四氣五味。",
+    "clinicalApplication": "寒者熱之，熱者寒之 - 用相反性質的藥物治療疾病。",
+    "combination": "藥物常配伍使用，以調和寒熱性質。"
+  }
+}

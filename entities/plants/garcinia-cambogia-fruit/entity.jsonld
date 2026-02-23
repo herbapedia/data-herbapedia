@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/garcinia-cambogia-fruit",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/garcinia-cambogia-fruit",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"

@@ -1,0 +1,54 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/blueberry",
+  "@type": [
+    "botany:PlantSpecies",
+    "herbapedia:BotanicalSource",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Blueberry",
+    "zh-Hant": "美洲藍莓",
+    "zh-Hans": "美洲蓝莓"
+  },
+  "scientificName": "Vaccinium Cyanococcus",
+  "family": null,
+  "genus": null,
+  "description": {
+    "en": "Blueberries are native to North America, eastern Asia and Northern Europe. The preparation is made from the ripe, dark purple fruit of Vaccinium Cyanococcus L.\n",
+    "zh-Hant": "美洲藍莓（學名：Vaccinium Cyanococcus）是一種具有藥用價值的漿果類植物。現代研究表明其富含花青素、類黃酮等抗氧化物質，具有保護心血管、改善視力等藥理活性。",
+    "zh-Hans": "美洲藍莓（学名：Vaccinium Cyanococcus）是一种具有药用價值的浆果类植物。現代研究表明其富含花青素、类黃酮等抗氧化物质，具有保護心血管、改善視力等药理活性。"
+  },
+  "image": "media/images/vaccinium-cyanococcus/main.jpg",
+  "containsChemical": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/anthocyanins"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/flavonoids"
+    }
+  ],
+  "provenance": {
+    "created": "2026-02-18T09:16:18.239Z",
+    "modified": "2026-02-21T01:46:20.747Z",
+    "migratedFrom": "entities/plants/blueberry/entity.jsonld",
+    "source": "vitaherbapedia.com",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "classificationNote": "Reclassified as BotanicalSource"
+  },
+  "hasParts": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/part/blueberry-fruit"
+    }
+  ],
+  "gbifID": "2882849",
+  "wikidataID": "Q468695",
+  "sourceType": "botanical",
+  "sourceSubType": "plant",
+  "hasWesternProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/western/profile/blueberry"
+    }
+  ],
+  "ncbiTaxonID": "254167"
+}

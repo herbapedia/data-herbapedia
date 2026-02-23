@@ -1,0 +1,57 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/chemical/alkaloids",
+  "@type": [
+    "botany:ChemicalCompound",
+    "schema:BioChemEntity"
+  ],
+  "name": {
+    "en": "Alkaloids",
+    "zh-Hant": "生物鹼",
+    "zh-Hans": "生物碱"
+  },
+  "commonName": [
+    "Alkaloids",
+    "Plant alkaloids"
+  ],
+  "chebiID": "CHEBI:22315",
+  "compoundClass": "Alkaloids; Nitrogen-containing compounds",
+  "description": {
+    "en": "A large class of nitrogenous organic compounds of plant origin with pronounced physiological action on humans and other animals. Over 12,000 alkaloids have been identified. Divided into true alkaloids (nitrogen in heterocyclic ring), protoalkaloids, and pseudoalkaloids."
+  },
+  "pharmacology": [
+    "CNS stimulation or depression",
+    "Analgesic effects",
+    "Antispasmodic activity",
+    "Antimalarial properties",
+    "Anticancer activity (certain types)",
+    "Cardiovascular effects"
+  ],
+  "bioavailability": {
+    "en": "Generally well absorbed orally; extensive first-pass metabolism for many alkaloids. Crosses blood-brain barrier readily due to lipophilicity."
+  },
+  "safetyData": {
+    "toxicity": "Variable; many alkaloids are toxic at relatively low doses",
+    "warnings": [
+      "Many alkaloids require medical supervision",
+      "Potential for drug interactions",
+      "Some are controlled substances"
+    ]
+  },
+  "provenance": {
+    "created": "2024-01-15",
+    "modified": "2026-02-20T17:59:34.445Z",
+    "source": "Alkaloid Chemistry Literature",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "foundIn": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/echinacea"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/valerian"
+    }
+  ]
+}

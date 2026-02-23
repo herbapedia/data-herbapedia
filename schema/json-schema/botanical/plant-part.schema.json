@@ -1,0 +1,148 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herbapedia.org/schema/json-schema/botanical/plant-part.schema.json",
+  "title": "Plant Part",
+  "description": "A specific part of a specific plant species. Examples: Ginger rhizome, Ginseng root, Peppermint leaf. Each plant part is a distinct entity that can be used to create HerbalPreparations.",
+  "type": "object",
+  "allOf": [
+    { "$ref": "../core/entity.schema.json" }
+  ],
+  "required": ["@id", "@type", "name", "partOf", "partType"],
+  "properties": {
+    "@id": {
+      "description": "Unique identifier: botanical/part/{species-slug}-{part-type}. Combines the species slug with the part type.",
+      "type": "string",
+      "pattern": "^botanical/part/[a-z0-9-]+$",
+      "examples": [
+        "botanical/part/zingiber-officinale-rhizome",
+        "botanical/part/panax-ginseng-root",
+        "botanical/part/mentha-piperita-leaf"
+      ]
+    },
+    "@type": {
+      "type": "array",
+      "items": { "type": "string" },
+      "contains": { "const": "botany:PlantPart" },
+      "examples": [["botany:PlantPart"]]
+    },
+    "partOf": {
+      "description": "Reference to the parent PlantSpecies entity.",
+      "$ref": "../core/iri-reference.schema.json",
+      "examples": [{ "@id": "botanical/species/zingiber-officinale" }]
+    },
+    "partType": {
+      "description": "The type of plant part using controlled vocabulary.",
+      "type": "string",
+      "enum": [
+        "root",
+        "rhizome",
+        "tuber",
+        "bulb",
+        "corm",
+        "stem",
+        "bark",
+        "branch",
+        "twig",
+        "leaf",
+        "needle",
+        "flower",
+        "flower-bud",
+        "fruit",
+        "fruit-peel",
+        "seed",
+        "kernel",
+        "nut",
+        "berry",
+        "pod",
+        "resin",
+        "gum",
+        "sap",
+        "latex",
+        "oil-gland",
+        "trichome",
+        "spore",
+        "whole-plant",
+        "aerial-part",
+        "underground-part"
+      ],
+      "examples": ["rhizome", "root", "leaf", "flower", "seed", "bark"]
+    },
+    "harvestSeason": {
+      "description": "Optimal time to harvest this plant part.",
+      "$ref": "../core/language-map.schema.json",
+      "examples": [{ "en": "Late autumn after leaves have died back" }]
+    },
+    "preparationNotes": {
+      "description": "Notes on how to prepare this part after harvest.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "morphology": {
+      "description": "Physical description of this plant part.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "hasChemicalProfile": {
+      "description": "Chemical composition specific to this part (may differ from whole plant).",
+      "$ref": "../core/iri-reference.schema.json"
+    },
+    "containsChemical": {
+      "description": "Chemical compounds found specifically in this part.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" },
+      "examples": [
+        [{ "@id": "botanical/chemical/gingerol" }, { "@id": "botanical/chemical/zingerone" }]
+      ]
+    },
+    "constituents": {
+      "description": "Major constituent groups with approximate percentages.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "percentage": { "type": "string" },
+          "notes": { "type": "string" }
+        }
+      },
+      "examples": [
+        [{ "name": "Essential oil", "percentage": "1-3%" }, { "name": "Oleoresin", "percentage": "4-7%" }]
+      ]
+    }
+  },
+  "additionalProperties": true,
+  "_documentation": {
+    "iriPattern": "botanical/part/{species-slug}-{part-type}",
+    "directory": "entities/botanical/parts/{slug}/entity.jsonld",
+    "relationshipToPlantSpecies": "Many-to-One: Each PlantPart belongs to exactly one PlantSpecies, but a PlantSpecies can have many parts",
+    "usageInHerbalPreparation": "A HerbalPreparation references one or more PlantParts (or whole PlantSpecies) as its botanical source",
+    "partTypes": {
+      "underground": ["root", "rhizome", "tuber", "bulb", "corm"],
+      "aerial": ["stem", "bark", "branch", "twig", "leaf", "needle", "flower", "fruit", "seed"],
+      "exudates": ["resin", "gum", "sap", "latex"],
+      "aggregate": ["whole-plant", "aerial-part", "underground-part"]
+    },
+    "examples": {
+      "gingerRhizome": {
+        "@context": "../../schema/context/botanical.jsonld",
+        "@id": "botanical/part/zingiber-officinale-rhizome",
+        "@type": ["botany:PlantPart"],
+        "partOf": { "@id": "botanical/species/zingiber-officinale" },
+        "partType": "rhizome",
+        "name": { "en": "Ginger Rhizome", "zh-Hant": "薑根莖" },
+        "description": { "en": "The underground stem (rhizome) of Zingiber officinale..." },
+        "harvestSeason": { "en": "9-10 months after planting when leaves yellow" },
+        "containsChemical": [
+          { "@id": "botanical/chemical/gingerol" },
+          { "@id": "botanical/chemical/shogaol" }
+        ]
+      },
+      "ginsengRoot": {
+        "@id": "botanical/part/panax-ginseng-root",
+        "@type": ["botany:PlantPart"],
+        "partOf": { "@id": "botanical/species/panax-ginseng" },
+        "partType": "root",
+        "name": { "en": "Ginseng Root", "zh-Hant": "人蔘根" },
+        "harvestSeason": { "en": "4-6 years growth, harvested in autumn" }
+      }
+    }
+  }
+}

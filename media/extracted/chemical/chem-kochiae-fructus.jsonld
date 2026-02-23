@@ -1,0 +1,198 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/chemical/kochiae-fructus",
+  "@type": ["herbapedia:ChemicalAnalysisData", "schema:Dataset"],
+  "dataType": "ChemicalAnalysis",
+  "sourceDocument": "CHEM_____Kochiae_Fructus_V1.pdf",
+  "scientificName": "Kochia scoparia",
+  "chineseName": "地膚子",
+  "pinyinName": "Di Fu Zi",
+  "identificationMethod": ["TLC", "HPLC-Fingerprint", "HPLC-Assay"],
+  "referenceCompounds": [
+    {
+      "name": "Kochioside Ic",
+      "chineseName": "地膚子皂苷 Ic",
+      "purpose": ["TLC identification", "HPLC fingerprint marker", "Assay quantification"]
+    }
+  ],
+  "assayLimits": {
+    "kochiosideIc": {
+      "compound": "Kochioside Ic",
+      "chineseName": "地膚子皂苷 Ic"
+    }
+  },
+  "tlcMethod": {
+    "appendixReference": "Appendix I",
+    "stationaryPhase": "HPTLC silica gel F254 plate",
+    "developingSolvent": {
+      "components": ["water", "n-butanol", "glacial acetic acid"],
+      "ratio": "12:7:1 (v/v)",
+      "preparation": "Shake and use upper layer"
+    },
+    "sprayReagent": {
+      "composition": "25 mL 20% (v/v) sulfuric acid added to 25 mL ice-cold glacial acetic acid, add 2.5 mL 4-methoxybenzaldehyde, then add 50 mL 20% (v/v) sulfuric acid",
+      "visualization": "Heat at about 105C until spots or bands are clearly visible (about 8 minutes)"
+    },
+    "testSolution": {
+      "sampleAmount": "1.0 g",
+      "solvent": "methanol",
+      "solventVolume": "10 mL",
+      "extraction": "ultrasonication (220 W) for 30 minutes"
+    },
+    "standardSolutions": {
+      "concentration": "0.5 mg/mL in methanol (1.0 mg in 2 mL)",
+      "compounds": ["Kochioside Ic"]
+    },
+    "applicationVolumes": {
+      "standardSolutions": "5 uL",
+      "testSolution": "3 uL"
+    },
+    "developingDistance": "8 cm",
+    "visualization": "visible light",
+    "identificationCriteria": {
+      "positiveMarkers": ["Kochioside Ic"],
+      "criteria": "Test sample should show a spot or band with the same color and Rf value corresponding to Kochioside Ic reference standard"
+    }
+  },
+  "hplcFingerprint": {
+    "appendixReference": "Appendix II",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 x 250 mm",
+        "particleSize": "5 um"
+      },
+      "detector": "DAD (Diode Array Detector)",
+      "detectionWavelength": "215 nm",
+      "flowRate": "1.0 mL/min",
+      "injectionVolume": "20 uL",
+      "runTime": "approximately 60 minutes"
+    },
+    "mobilePhase": {
+      "components": ["methanol", "water", "glacial acetic acid"],
+      "ratio": "85:15:0.2 (v/v)"
+    },
+    "standardSolutions": {
+      "kochiosideIc": {
+        "stockSolution": "500 mg/L (1.0 mg in 2 mL methanol)",
+        "name": "Std-FP"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "0.5 g",
+      "solvent": "ethanol",
+      "solventVolume": "10 mL",
+      "extraction": "ultrasonication (220 W) for 30 minutes",
+      "filtration": "0.45 um PTFE filter"
+    },
+    "systemSuitability": {
+      "retentionTimeTolerance": "not more than 2.0% difference between sample and standard",
+      "resolution": "not less than 1.5 (between peak 2 and adjacent peaks)"
+    },
+    "identificationCriteria": {
+      "characteristicPeaks": 4,
+      "criteria": "Test sample chromatogram should have 4 characteristic peaks consistent with the relative retention time range of the reference fingerprint chromatogram"
+    }
+  },
+  "hplcAssay": {
+    "appendixReference": "Appendix III",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 x 250 mm",
+        "particleSize": "5 um"
+      },
+      "detector": "DAD (Diode Array Detector)",
+      "detectionWavelength": "210 nm",
+      "flowRate": "1.0 mL/min",
+      "runTime": "approximately 30 minutes"
+    },
+    "mobilePhase": {
+      "components": ["methanol", "water", "glacial acetic acid"],
+      "ratio": "80:20:0.2 (v/v)"
+    },
+    "standardSolutions": {
+      "stockSolution": {
+        "name": "Std-Stock",
+        "concentration": "1000 mg/L",
+        "preparation": "2.0 mg in 2 mL methanol"
+      },
+      "workingSolutions": {
+        "name": "Std-AS",
+        "concentrations": ["50", "100", "300", "500", "1000 mg/L"],
+        "description": "Series of Kochioside Ic standard solutions diluted with methanol"
+      },
+      "injectionVolume": "20 uL"
+    },
+    "testSolution": {
+      "sampleAmount": "0.1 g",
+      "solvent": "methanol",
+      "extractionVolume": "20 mL x 3 extractions",
+      "washVolume": "5 mL x 3 washes",
+      "extraction": "ultrasonication (220 W) for 30 minutes, stand for 15 minutes",
+      "evaporation": "rotary evaporator at reduced pressure",
+      "finalVolume": "10 mL",
+      "filtration": "0.45 um PTFE filter"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "standardConcentration": "300 mg/L (Std-AS)",
+      "injectionVolume": "20 uL",
+      "peakAreaRSD": "not more than 5.0% (Kochioside Ic)",
+      "retentionTimeRSD": "not more than 2.0% (Kochioside Ic)",
+      "theoreticalPlates": "not less than 5000 (based on Kochioside Ic)",
+      "resolution": "not less than 1.5 (between Kochioside Ic peak and adjacent peaks)"
+    }
+  },
+  "rrtValues": [
+    {
+      "peakNumber": 1,
+      "compound": "Unknown",
+      "rrt": 0.85,
+      "acceptableRange": "+/- 0.03",
+      "referenceMarker": false,
+      "referenceTo": "Kochioside Ic"
+    },
+    {
+      "peakNumber": 2,
+      "compound": "Kochioside Ic",
+      "chineseName": "地膚子皂苷 Ic",
+      "rrt": 1.00,
+      "acceptableRange": null,
+      "referenceMarker": true,
+      "referenceTo": "self",
+      "markerComponent": true
+    },
+    {
+      "peakNumber": 3,
+      "compound": "Unknown",
+      "rrt": 2.42,
+      "acceptableRange": "+/- 0.03",
+      "referenceMarker": false,
+      "referenceTo": "Kochioside Ic"
+    },
+    {
+      "peakNumber": 4,
+      "compound": "Unknown",
+      "rrt": 3.44,
+      "acceptableRange": "+/- 0.03",
+      "referenceMarker": false,
+      "referenceTo": "Kochioside Ic"
+    }
+  ],
+  "appendices": {
+    "appendixI": {
+      "title": "Chromatography - Thin-Layer Chromatography",
+      "description": "General procedures for TLC including plate types, application methods, developing chambers, and Rf calculation"
+    },
+    "appendixII": {
+      "title": "GC and HPLC/UHPLC Fingerprinting",
+      "description": "Methods for establishing chromatographic fingerprints using marker peaks and RRT values"
+    },
+    "appendixIII": {
+      "title": "Chromatography - HPLC/UHPLC",
+      "description": "General HPLC/UHPLC procedures including system suitability tests (theoretical plates, repeatability, resolution, tailing factor) and quantitative calculations"
+    }
+  },
+  "extractedAt": "2026-02-20"
+}

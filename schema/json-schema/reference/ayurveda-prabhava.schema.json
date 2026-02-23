@@ -1,0 +1,148 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herbapedia.org/schema/json-schema/reference/ayurveda-prabhava.schema.json",
+  "$title": "Ayurveda Prabhava",
+  "description": "Ayurvedic special effect (प्रभाव - Prabhava). The unique, specific, or idiosyncratic action of a substance that cannot be explained by rasa, virya, vipaka, or guna alone. Prabhava represents the 'special power' or distinctive therapeutic effect.",
+  "type": "object",
+  "allOf": [
+    { "$ref": "./reference-entity.schema.json" }
+  ],
+  "required": ["@id", "@type", "name"],
+  "properties": {
+    "@id": {
+      "description": "Unique identifier: ayurveda/prabhava/{slug}.",
+      "type": "string",
+      "pattern": "^ayurveda/prabhava/[a-z0-9-]+$",
+      "examples": [
+        "ayurveda/prabhava/rasayana",
+        "ayurveda/prabhava/vajikarana",
+        "ayurveda/prabhava/medhya",
+        "ayurveda/prabhava/hridaya",
+        "ayurveda/prabhava/balya",
+        "ayurveda/prabhava/jivaniya"
+      ]
+    },
+    "@type": {
+      "type": "array",
+      "items": { "type": "string" },
+      "contains": { "const": "ayurveda:Prabhava" },
+      "examples": [["ayurveda:Prabhava"]]
+    },
+    "name": {
+      "description": "Prabhava name in Sanskrit and English.",
+      "$ref": "../core/language-map.schema.json",
+      "examples": [{ "sa": "रसायन", "en": "Rejuvenative" }]
+    },
+    "sanskritName": {
+      "description": "Sanskrit name in Devanagari.",
+      "type": "string",
+      "examples": ["रसायन", "वाजीकरण", "मेध्य"]
+    },
+    "sanskritTransliteration": {
+      "description": "IAST transliteration.",
+      "type": "string",
+      "examples": ["rasāyana", "vājīkaraṇa", "medhya"]
+    },
+    "englishName": {
+      "description": "English translation.",
+      "type": "string",
+      "examples": ["Rejuvenative", "Aphrodisiac", "Intellect-promoting"]
+    },
+    "definition": {
+      "description": "Definition of this prabhava.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "mechanism": {
+      "description": "Known or theoretical mechanism (often not explainable by rasa/virya).",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "category": {
+      "description": "Category of prabhava effect.",
+      "type": "string",
+      "enum": [
+        "rasayana",
+        "vajikarana",
+        "medhya",
+        "balya",
+        "jivaniya",
+        "hridaya",
+        "varnya",
+        "kanthya",
+        "chakshushya",
+        "sanjna-sthapana",
+        "stanya",
+        "sukra",
+        "sonita",
+        "keshya",
+        "vranaropana",
+        "vishaghna"
+      ],
+      "_documentation": {
+        "rasayana": "Rejuvenative - promotes longevity, immunity, vitality",
+        "vajikarana": "Aphrodisiac - promotes reproductive health",
+        "medhya": "Intellect-promoting - enhances brain function",
+        "balya": "Strength-promoting",
+        "jivaniya": "Vitalizing - promotes life force",
+        "hridaya": "Cardiac tonic - supports heart",
+        "varnya": "Complexion-enhancing",
+        "kanthya": "Throat/beneficial for voice",
+        "chakshushya": "Beneficial for eyes",
+        "sanjna-sthapana": "Restores consciousness",
+        "stanya": "Galactagogue - promotes lactation",
+        "sukra": "Semen-promoting",
+        "sonita": "Blood-promoting",
+        "keshya": "Hair-promoting",
+        "vranaropana": "Wound-healing",
+        "vishaghna": "Antitoxic - removes poisons"
+      }
+    },
+    "indications": {
+      "description": "Conditions where this prabhava is beneficial.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "exampleSubstances": {
+      "description": "Substances known for this prabhava.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" }
+    },
+    "classicalReferences": {
+      "description": "References to classical texts.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": { "type": "string" },
+          "reference": { "type": "string" },
+          "quote": { "type": "string" }
+        }
+      }
+    }
+  },
+  "additionalProperties": true,
+  "_documentation": {
+    "iriPattern": "ayurveda/prabhava/{slug}",
+    "directory": "systems/ayurveda/reference/prabhavas.jsonld",
+    "concept": "Prabhava represents actions that transcend the predictable effects of rasa, virya, vipaka. For example, ghee is sweet (madhura) and cooling (sheeta), yet it improves digestion (agni deepana) - this is its prabhava.",
+    "commonPrabhavas": {
+      "rasayana": {
+        "sanskrit": "रसायन",
+        "english": "Rejuvenative",
+        "description": "Promotes longevity, immunity, youthfulness",
+        "examples": ["Amalaki", "Ashwagandha", "Chyavanprash"]
+      },
+      "vajikarana": {
+        "sanskrit": "वाजीकरण",
+        "english": "Aphrodisiac",
+        "description": "Enhances sexual vitality and reproductive health",
+        "examples": ["Shilajit", "Ashwagandha", "Kapikacchu"]
+      },
+      "medhya": {
+        "sanskrit": "मेध्य",
+        "english": "Nootropic/Intellect-promoting",
+        "description": "Enhances memory, intellect, concentration",
+        "examples": ["Brahmi", "Shankhapushpi", "Jatamamsi"]
+      }
+    }
+  }
+}

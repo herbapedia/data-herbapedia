@@ -1,0 +1,94 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/chemical-profile/turmeric-rhizome",
+  "@type": [
+    "botany:ChemicalProfile",
+    "schema:Dataset"
+  ],
+  "name": {
+    "en": "Turmeric Rhizome Chemical Profile",
+    "zh-Hant": "薑黃根莖化學成分"
+  },
+  "profileOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/part/turmeric-rhizome"
+  },
+  "hasComponent": [
+    {
+      "compound": {
+        "@id": "https://www.herbapedia.org/entity/botanical/chemical/curcumin"
+      },
+      "relativeAbundance": "major",
+      "concentrationRange": {
+        "min": 2,
+        "max": 5,
+        "unit": "%"
+      },
+      "detectionMethod": "HPLC",
+      "notes": "Main curcuminoid; provides yellow color and most therapeutic effects"
+    },
+    {
+      "compound": {
+        "@id": "https://www.herbapedia.org/entity/botanical/chemical/turmerone"
+      },
+      "relativeAbundance": "major",
+      "concentrationRange": {
+        "min": 15,
+        "max": 40,
+        "unit": "% of essential oil"
+      },
+      "notes": "Main volatile compound in turmeric oil; includes α-turmerone, β-turmerone, ar-turmerone"
+    },
+    {
+      "compound": {
+        "@id": "https://www.herbapedia.org/entity/botanical/chemical/essential-oils"
+      },
+      "concentrationRange": {
+        "min": 2.5,
+        "max": 6,
+        "unit": "%"
+      },
+      "detectionMethod": "GC-MS",
+      "notes": "Contains turmerones, zingiberene, α-phellandrene, cineole"
+    },
+    {
+      "compound": {
+        "@id": "https://www.herbapedia.org/entity/botanical/chemical/flavonoids"
+      },
+      "relativeAbundance": "minor",
+      "notes": "Various flavonoids including quercetin"
+    },
+    {
+      "compound": {
+        "@id": "https://www.herbapedia.org/entity/botanical/chemical/polysaccharides"
+      },
+      "relativeAbundance": "minor",
+      "notes": "Turmeric polysaccharides with immunomodulatory activity"
+    }
+  ],
+  "totalVolatileOil": {
+    "value": 4,
+    "unit": "%"
+  },
+  "totalPolyphenols": {
+    "value": 3.5,
+    "unit": "% curcuminoids"
+  },
+  "analyticalMethod": "HPLC, GC-MS, UV-Vis",
+  "qualityGrade": "Ph.Eur., USP, ChP",
+  "profileNotes": {
+    "en": "Commercial turmeric typically contains 2-5% curcuminoids (curcumin, demethoxycurcumin, bisdemethoxycurcumin). Curcumin content varies with cultivar (Alleppey, Madras, etc.) and growing conditions."
+  },
+  "citations": [
+    {
+      "doi": "10.1016/j.jff.2016.09.002",
+      "title": "Comprehensive review on curcumin and its therapeutic potential",
+      "year": 2017,
+      "journal": "Journal of Functional Foods"
+    }
+  ],
+  "provenance": {
+    "created": "2026-02-21T00:00:00.000Z",
+    "source": "Chinese Pharmacopoeia, European Pharmacopoeia, scientific literature",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

@@ -1,0 +1,265 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/chemical/rhizoma-notopterygii",
+  "@type": ["herbapedia:ChemicalAnalysisData", "schema:Dataset"],
+  "dataType": "ChemicalAnalysis",
+  "sourceDocument": "CHEM____Rhizoma_et_Radix_Notopterygii_V1.pdf",
+  "scientificName": "Notopterygium incisum",
+  "chineseName": "羌活",
+  "pinyinName": "Qiang Huo",
+  "identificationMethod": ["Physicochemical", "TLC", "HPLC-Fingerprint", "HPLC-Assay"],
+  "referenceCompounds": [
+    {
+      "name": "Isoimperatorin",
+      "chineseName": "異歐前胡素",
+      "formula": "C16H14O4",
+      "purpose": ["TLC identification", "HPLC fingerprint marker", "Assay quantification"]
+    },
+    {
+      "name": "Notopterol",
+      "chineseName": "羌活醇",
+      "purpose": ["TLC identification", "HPLC fingerprint marker"]
+    }
+  ],
+  "assayLimits": {
+    "isoimperatorin": {
+      "compound": "Isoimperatorin",
+      "formula": "C16H14O4",
+      "minimumContent": "0.21%",
+      "basis": "dried substance"
+    }
+  },
+  "physicochemicalIdentification": {
+    "method": "Color reaction with hydroxylamine hydrochloride and ferric chloride",
+    "procedure": {
+      "sampleAmount": "0.5 g",
+      "solvent": "diethyl ether",
+      "solventVolume": "5 mL",
+      "extraction": "sonication (490 W) for 60 minutes",
+      "testVolume": "2 mL supernatant",
+      "reagent1": "hydroxylamine hydrochloride (7%, v/v)",
+      "reagent1Volume": "3 drops",
+      "phAdjustment1": "adjust pH to about 9 with sodium hydroxide (10%, w/v)",
+      "heating": "water bath for 1 minute",
+      "cooling": "cool to room temperature",
+      "phAdjustment2": "adjust pH to about 3 with hydrochloric acid (6.2%, v/v)",
+      "reagent2": "ferric chloride solution (1%, w/v)",
+      "reagent2Volume": "1 drop",
+      "positiveResult": "red coloration in the lower layer"
+    }
+  },
+  "tlcMethod": {
+    "appendixReference": "Appendix I",
+    "stationaryPhase": "HPTLC silica gel F254 plate",
+    "developingSolvent": {
+      "components": ["toluene", "ethyl acetate"],
+      "ratio": "4:1 (v/v)",
+      "preparation": "freshly prepared"
+    },
+    "testSolution": {
+      "sampleAmount": "1.0 g",
+      "solvent": "methanol",
+      "solventVolume": "10 mL",
+      "extraction": "sonication (490 W) for 30 minutes",
+      "centrifugation": "about 1800 × g for 10 minutes",
+      "filtration": "filter through appropriate filter"
+    },
+    "standardSolutions": {
+      "concentration": "1.0 mg/mL in methanol",
+      "compounds": ["Isoimperatorin", "Notopterol"]
+    },
+    "applicationVolumes": {
+      "standardSolutions": "1 μL each",
+      "testSolution": "1 μL"
+    },
+    "developingDistance": "about 8 cm",
+    "visualization": "UV light at 366 nm",
+    "identificationCriteria": {
+      "positiveMarkers": ["Isoimperatorin", "Notopterol"]
+    }
+  },
+  "hplcFingerprint": {
+    "appendixReference": "Appendix II",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "UV",
+      "detectionWavelength": "255 nm",
+      "flowRate": "0.8 mL/min",
+      "injectionVolume": "10 μL"
+    },
+    "mobilePhase": {
+      "solventA": "Water",
+      "solventB": "Acetonitrile",
+      "gradientProgram": [
+        {
+          "timeRange": "0-5 min",
+          "solventA": "60%",
+          "solventB": "40%",
+          "elution": "isocratic"
+        },
+        {
+          "timeRange": "5-45 min",
+          "solventA": "60% → 30%",
+          "solventB": "40% → 70%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "45-50 min",
+          "solventA": "30% → 0%",
+          "solventB": "70% → 100%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "isoimperatorin": {
+        "concentration": "100 mg/L (Std-FP)",
+        "preparation": "1.0 mg in 10 mL methanol"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "0.2 g",
+      "solvent": "methanol",
+      "solventVolume": "20 mL",
+      "extraction": "sonication (490 W) for 60 minutes",
+      "centrifugation": "about 1800 × g for 5 minutes",
+      "filtration": "0.45 μm RC filter"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "peakAreaRSD": "≤ 3.0% (Isoimperatorin)",
+      "retentionTimeRSD": "≤ 2.0% (Isoimperatorin)",
+      "theoreticalPlates": "≥ 50,000 (based on Isoimperatorin)",
+      "resolution": "≥ 1.5 (between peak 3 and peak 4)"
+    },
+    "identificationCriteria": {
+      "retentionTimeTolerance": "≤ 2.0% difference between sample and standard"
+    }
+  },
+  "hplcAssay": {
+    "appendixReference": "Appendix III",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "UV",
+      "detectionWavelength": "255 nm",
+      "flowRate": "1.0 mL/min",
+      "injectionVolume": "10 μL"
+    },
+    "mobilePhase": {
+      "solventA": "Water",
+      "solventB": "Acetonitrile",
+      "gradientProgram": [
+        {
+          "timeRange": "0-30 min",
+          "solventA": "50% → 30%",
+          "solventB": "50% → 70%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "stockSolution": {
+        "concentration": "1000 mg/L",
+        "compound": "Isoimperatorin",
+        "preparation": "10.0 mg in 10 mL methanol",
+        "storage": "store protected from light"
+      },
+      "workingSolutions": {
+        "concentrations": ["5", "20", "60", "100", "200 mg/L"],
+        "description": "Series of mixed standard solutions for assay (Std-AS)"
+      },
+      "injectionVolume": "10 μL (for calibration)"
+    },
+    "testSolution": {
+      "sampleAmount": "0.2 g",
+      "solvent": "methanol",
+      "solventVolume": "20 mL",
+      "extraction": "sonication (490 W) for 60 minutes",
+      "weighing": "weigh before and after extraction, compensate weight loss with methanol",
+      "centrifugation": "about 1800 × g for 5 minutes",
+      "filtration": "0.45 μm RC filter",
+      "injectionVolume": "10 μL"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "standardConcentration": "60 mg/L (Isoimperatorin Std-AS)",
+      "peakAreaRSD": "≤ 3.0% (Isoimperatorin)",
+      "retentionTimeRSD": "≤ 2.0% (Isoimperatorin)",
+      "theoreticalPlates": "≥ 30,000 (based on Isoimperatorin)",
+      "resolution": "≥ 1.5 (between Isoimperatorin peak and adjacent peak)"
+    },
+    "calibration": {
+      "method": "5-point calibration curve",
+      "plot": "Peak area vs. concentration (mg/L)",
+      "identificationTolerance": "≤ 2.0% difference in retention times"
+    }
+  },
+  "rrtValues": [
+    {
+      "peakNumber": 1,
+      "compound": "Bergapten",
+      "chineseName": "佛手柑內酯",
+      "rrt": 0.50,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Isoimperatorin"
+    },
+    {
+      "peakNumber": 2,
+      "compound": "Peak 2",
+      "rrt": 0.57,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Isoimperatorin"
+    },
+    {
+      "peakNumber": 3,
+      "compound": "Notopterol",
+      "chineseName": "羌活醇",
+      "rrt": 0.81,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Isoimperatorin"
+    },
+    {
+      "peakNumber": 4,
+      "compound": "Peak 4",
+      "rrt": 0.84,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Isoimperatorin"
+    },
+    {
+      "peakNumber": 5,
+      "compound": "Isoimperatorin",
+      "chineseName": "異歐前胡素",
+      "rrt": 1.00,
+      "acceptableRange": null,
+      "referenceMarker": true,
+      "referenceTo": "self"
+    }
+  ],
+  "appendices": {
+    "appendixI": {
+      "title": "Chromatography – Thin-Layer Chromatography",
+      "description": "General procedures for TLC including plate types, application methods, developing chambers, and Rf calculation"
+    },
+    "appendixII": {
+      "title": "GC and HPLC/UHPLC Fingerprinting",
+      "description": "Methods for establishing chromatographic fingerprints using marker peaks and RRT values"
+    },
+    "appendixIII": {
+      "title": "Chromatography – HPLC/UHPLC",
+      "description": "General HPLC/UHPLC procedures including system suitability tests (theoretical plates, repeatability, resolution, tailing factor) and quantitative calculations"
+    }
+  },
+  "extractedAt": "2026-02-20"
+}

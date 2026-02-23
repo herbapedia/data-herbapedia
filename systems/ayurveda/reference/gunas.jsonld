@@ -1,0 +1,646 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/system/ayurveda/profile/reference/gunas",
+  "@type": [
+    "ayurveda:ReferenceCollection",
+    "skos:Collection"
+  ],
+  "name": {
+    "en": "Ayurveda Twenty Gunas",
+    "sa": "विंशतिगुण"
+  },
+  "description": {
+    "en": "The twenty qualities (गुण - Guna) in Ayurveda, organized in ten opposing pairs. These qualities describe the attributes of substances and their effects on the body."
+  },
+  "members": [
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/guna/heavy",
+      "@type": [
+        "ayurveda:Guna"
+      ],
+      "name": {
+        "en": "Heavy",
+        "sa": "गुरु"
+      },
+      "sanskritName": "गुरु",
+      "sanskritTransliteration": "Guru",
+      "englishName": "Heavy",
+      "pairNumber": 1,
+      "pairName": {
+        "en": "Heavy-Light"
+      },
+      "oppositeOf": {
+        "@id": "https://www.herbapedia.org/system/ayurveda/profile/guna/light"
+      },
+      "effectOnDoshas": {
+        "vata": "decreases",
+        "pitta": "decreases",
+        "kapha": "increases"
+      },
+      "physiologicalEffect": {
+        "en": "Grounds, stabilizes, nourishes, promotes sleep"
+      },
+      "psychologicalEffect": {
+        "en": "Calms the mind, promotes stability, can cause lethargy in excess"
+      },
+      "indications": [
+        "vata disorders",
+        "insomnia",
+        "emaciation",
+        "lightness"
+      ],
+      "excessEffects": {
+        "en": "Lethargy, heaviness, dullness, kapha increase"
+      },
+      "exampleSubstances": [
+        "ghee",
+        "meat",
+        "wheat",
+        "dairy"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/guna/light",
+      "@type": [
+        "ayurveda:Guna"
+      ],
+      "name": {
+        "en": "Light",
+        "sa": "लघु"
+      },
+      "sanskritName": "लघु",
+      "sanskritTransliteration": "Laghu",
+      "englishName": "Light",
+      "pairNumber": 1,
+      "pairName": {
+        "en": "Heavy-Light"
+      },
+      "oppositeOf": {
+        "@id": "https://www.herbapedia.org/system/ayurveda/profile/guna/heavy"
+      },
+      "effectOnDoshas": {
+        "vata": "increases",
+        "pitta": "increases",
+        "kapha": "decreases"
+      },
+      "physiologicalEffect": {
+        "en": "Lightens tissues, promotes digestion, reduces kapha"
+      },
+      "psychologicalEffect": {
+        "en": "Promotes clarity, can cause anxiety in excess"
+      },
+      "indications": [
+        "kapha disorders",
+        "obesity",
+        "sluggish digestion"
+      ],
+      "excessEffects": {
+        "en": "Weakness, dizziness, vata increase"
+      },
+      "exampleSubstances": [
+        "barley",
+        "corn",
+        "honey",
+        "mung beans"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/guna/oily",
+      "@type": [
+        "ayurveda:Guna"
+      ],
+      "name": {
+        "en": "Oily/Unctuous",
+        "sa": "स्निग्ध"
+      },
+      "sanskritName": "स्निग्ध",
+      "sanskritTransliteration": "Snigdha",
+      "englishName": "Oily",
+      "pairNumber": 2,
+      "pairName": {
+        "en": "Oily-Dry"
+      },
+      "oppositeOf": {
+        "@id": "https://www.herbapedia.org/system/ayurveda/profile/guna/dry"
+      },
+      "effectOnDoshas": {
+        "vata": "decreases",
+        "pitta": "decreases",
+        "kapha": "increases"
+      },
+      "physiologicalEffect": {
+        "en": "Lubricates, nourishes, promotes flexibility"
+      },
+      "psychologicalEffect": {
+        "en": "Promotes love, compassion"
+      },
+      "indications": [
+        "dry skin",
+        "constipation",
+        "vata disorders",
+        "stiff joints"
+      ],
+      "excessEffects": {
+        "en": "Oiliness, excess kapha, sluggish digestion"
+      },
+      "exampleSubstances": [
+        "ghee",
+        "oils",
+        "nuts",
+        "dairy"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/guna/dry",
+      "@type": [
+        "ayurveda:Guna"
+      ],
+      "name": {
+        "en": "Dry",
+        "sa": "रूक्ष"
+      },
+      "sanskritName": "रूक्ष",
+      "sanskritTransliteration": "Rūkṣa",
+      "englishName": "Dry",
+      "pairNumber": 2,
+      "pairName": {
+        "en": "Oily-Dry"
+      },
+      "oppositeOf": {
+        "@id": "https://www.herbapedia.org/system/ayurveda/profile/guna/oily"
+      },
+      "effectOnDoshas": {
+        "vata": "increases",
+        "pitta": "increases",
+        "kapha": "decreases"
+      },
+      "physiologicalEffect": {
+        "en": "Dries excess moisture, absorbs, reduces kapha"
+      },
+      "psychologicalEffect": {
+        "en": "Can cause nervousness, anxiety in excess"
+      },
+      "indications": [
+        "kapha disorders",
+        "excess moisture",
+        "obesity"
+      ],
+      "excessEffects": {
+        "en": "Dry skin, constipation, vata increase"
+      },
+      "exampleSubstances": [
+        "barley",
+        "corn",
+        "legumes",
+        "dried fruits"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/guna/hot",
+      "@type": [
+        "ayurveda:Guna"
+      ],
+      "name": {
+        "en": "Hot",
+        "sa": "उष्ण"
+      },
+      "sanskritName": "उष्ण",
+      "sanskritTransliteration": "Uṣṇa",
+      "englishName": "Hot",
+      "pairNumber": 3,
+      "pairName": {
+        "en": "Hot-Cold"
+      },
+      "oppositeOf": {
+        "@id": "https://www.herbapedia.org/system/ayurveda/profile/guna/cold"
+      },
+      "effectOnDoshas": {
+        "vata": "decreases",
+        "pitta": "increases",
+        "kapha": "decreases"
+      },
+      "physiologicalEffect": {
+        "en": "Increases metabolism, promotes digestion, reduces cold"
+      },
+      "psychologicalEffect": {
+        "en": "Promotes intensity, passion, can cause anger in excess"
+      },
+      "indications": [
+        "cold conditions",
+        "kapha disorders",
+        "vata disorders",
+        "low agni"
+      ],
+      "excessEffects": {
+        "en": "Burning, inflammation, bleeding, pitta increase"
+      },
+      "exampleSubstances": [
+        "ginger",
+        "pepper",
+        "chilies",
+        "garlic"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/guna/cold",
+      "@type": [
+        "ayurveda:Guna"
+      ],
+      "name": {
+        "en": "Cold",
+        "sa": "शीत"
+      },
+      "sanskritName": "शीत",
+      "sanskritTransliteration": "Śīta",
+      "englishName": "Cold",
+      "pairNumber": 3,
+      "pairName": {
+        "en": "Hot-Cold"
+      },
+      "oppositeOf": {
+        "@id": "https://www.herbapedia.org/system/ayurveda/profile/guna/hot"
+      },
+      "effectOnDoshas": {
+        "vata": "increases",
+        "pitta": "decreases",
+        "kapha": "increases"
+      },
+      "physiologicalEffect": {
+        "en": "Cools, reduces fever, soothes inflammation"
+      },
+      "psychologicalEffect": {
+        "en": "Calms, can cause lethargy in excess"
+      },
+      "indications": [
+        "pitta disorders",
+        "fever",
+        "inflammation",
+        "burning"
+      ],
+      "excessEffects": {
+        "en": "Cold, stiffness, vata/kapha increase"
+      },
+      "exampleSubstances": [
+        "coconut",
+        "mint",
+        "coriander",
+        "aloe vera"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/guna/slow",
+      "@type": [
+        "ayurveda:Guna"
+      ],
+      "name": {
+        "en": "Slow/Dull",
+        "sa": "मन्द"
+      },
+      "sanskritName": "मन्द",
+      "sanskritTransliteration": "Manda",
+      "englishName": "Slow",
+      "pairNumber": 4,
+      "pairName": {
+        "en": "Slow-Sharp"
+      },
+      "oppositeOf": {
+        "@id": "https://www.herbapedia.org/system/ayurveda/profile/guna/sharp"
+      },
+      "effectOnDoshas": {
+        "vata": "decreases",
+        "pitta": "decreases",
+        "kapha": "increases"
+      },
+      "physiologicalEffect": {
+        "en": "Slows processes, calms, reduces intensity"
+      },
+      "indications": [
+        "hyperactive conditions",
+        "pitta disorders",
+        "vata disorders"
+      ],
+      "exampleSubstances": [
+        "dairy",
+        "grains",
+        "root vegetables"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/guna/sharp",
+      "@type": [
+        "ayurveda:Guna"
+      ],
+      "name": {
+        "en": "Sharp/Penetrating",
+        "sa": "तीक्ष्ण"
+      },
+      "sanskritName": "तीक्ष्ण",
+      "sanskritTransliteration": "Tīkṣṇa",
+      "englishName": "Sharp",
+      "pairNumber": 4,
+      "pairName": {
+        "en": "Slow-Sharp"
+      },
+      "oppositeOf": {
+        "@id": "https://www.herbapedia.org/system/ayurveda/profile/guna/slow"
+      },
+      "effectOnDoshas": {
+        "vata": "increases",
+        "pitta": "increases",
+        "kapha": "decreases"
+      },
+      "physiologicalEffect": {
+        "en": "Penetrates, breaks down, increases digestion"
+      },
+      "indications": [
+        "kapha disorders",
+        "tumors",
+        "accumulations"
+      ],
+      "exampleSubstances": [
+        "alcohol",
+        "pungent herbs",
+        "acidic foods"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/guna/smooth",
+      "@type": [
+        "ayurveda:Guna"
+      ],
+      "name": {
+        "en": "Smooth/Soft",
+        "sa": "श्लक्ष्ण"
+      },
+      "sanskritName": "श्लक्ष्ण",
+      "sanskritTransliteration": "Ślakṣṇa",
+      "englishName": "Smooth",
+      "pairNumber": 5,
+      "pairName": {
+        "en": "Smooth-Rough"
+      },
+      "oppositeOf": {
+        "@id": "https://www.herbapedia.org/system/ayurveda/profile/guna/rough"
+      },
+      "effectOnDoshas": {
+        "vata": "decreases",
+        "pitta": "decreases",
+        "kapha": "increases"
+      },
+      "physiologicalEffect": {
+        "en": "Soothes, heals, promotes tissue integrity"
+      },
+      "exampleSubstances": [
+        "ghee",
+        "milk",
+        "oatmeal"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/guna/rough",
+      "@type": [
+        "ayurveda:Guna"
+      ],
+      "name": {
+        "en": "Rough",
+        "sa": "खर"
+      },
+      "sanskritName": "खर",
+      "sanskritTransliteration": "Khara",
+      "englishName": "Rough",
+      "pairNumber": 5,
+      "pairName": {
+        "en": "Smooth-Rough"
+      },
+      "oppositeOf": {
+        "@id": "https://www.herbapedia.org/system/ayurveda/profile/guna/smooth"
+      },
+      "effectOnDoshas": {
+        "vata": "increases",
+        "pitta": "increases",
+        "kapha": "decreases"
+      },
+      "physiologicalEffect": {
+        "en": "Scratches, abrades, reduces excess tissue"
+      },
+      "exampleSubstances": [
+        "whole grains",
+        "legumes",
+        "dried foods"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/guna/liquid",
+      "@type": [
+        "ayurveda:Guna"
+      ],
+      "name": {
+        "en": "Liquid/Fluid",
+        "sa": "द्रव"
+      },
+      "sanskritName": "द्रव",
+      "sanskritTransliteration": "Drava",
+      "englishName": "Liquid",
+      "pairNumber": 6,
+      "pairName": {
+        "en": "Liquid-Dense"
+      },
+      "oppositeOf": {
+        "@id": "https://www.herbapedia.org/system/ayurveda/profile/guna/dense"
+      },
+      "effectOnDoshas": {
+        "vata": "decreases",
+        "pitta": "increases",
+        "kapha": "increases"
+      },
+      "physiologicalEffect": {
+        "en": "Dissolves, lubricates, promotes elimination"
+      },
+      "exampleSubstances": [
+        "water",
+        "juices",
+        "soups"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/guna/dense",
+      "@type": [
+        "ayurveda:Guna"
+      ],
+      "name": {
+        "en": "Dense/Hard",
+        "sa": "सन्द्र"
+      },
+      "sanskritName": "सन्द्र",
+      "sanskritTransliteration": "Sandra",
+      "englishName": "Dense",
+      "pairNumber": 6,
+      "pairName": {
+        "en": "Liquid-Dense"
+      },
+      "oppositeOf": {
+        "@id": "https://www.herbapedia.org/system/ayurveda/profile/guna/liquid"
+      },
+      "effectOnDoshas": {
+        "vata": "decreases",
+        "pitta": "decreases",
+        "kapha": "increases"
+      },
+      "physiologicalEffect": {
+        "en": "Solidifies, provides structure"
+      },
+      "exampleSubstances": [
+        "cheese",
+        "nuts",
+        "meat"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/guna/static",
+      "@type": [
+        "ayurveda:Guna"
+      ],
+      "name": {
+        "en": "Static/Immobile",
+        "sa": "स्थिर"
+      },
+      "sanskritName": "स्थिर",
+      "sanskritTransliteration": "Sthira",
+      "englishName": "Static",
+      "pairNumber": 7,
+      "pairName": {
+        "en": "Static-Mobile"
+      },
+      "oppositeOf": {
+        "@id": "https://www.herbapedia.org/system/ayurveda/profile/guna/mobile"
+      },
+      "effectOnDoshas": {
+        "vata": "decreases",
+        "pitta": "decreases",
+        "kapha": "increases"
+      },
+      "physiologicalEffect": {
+        "en": "Provides stability, grounding"
+      },
+      "exampleSubstances": [
+        "root vegetables",
+        "meat",
+        "dairy"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/guna/mobile",
+      "@type": [
+        "ayurveda:Guna"
+      ],
+      "name": {
+        "en": "Mobile",
+        "sa": "चल"
+      },
+      "sanskritName": "चल",
+      "sanskritTransliteration": "Cala",
+      "englishName": "Mobile",
+      "pairNumber": 7,
+      "pairName": {
+        "en": "Static-Mobile"
+      },
+      "oppositeOf": {
+        "@id": "https://www.herbapedia.org/system/ayurveda/profile/guna/static"
+      },
+      "effectOnDoshas": {
+        "vata": "increases",
+        "pitta": "increases",
+        "kapha": "decreases"
+      },
+      "physiologicalEffect": {
+        "en": "Promotes movement, circulation, elimination"
+      },
+      "exampleSubstances": [
+        "gas-forming foods",
+        "light foods",
+        "alcohol"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/guna/cloudy",
+      "@type": [
+        "ayurveda:Guna"
+      ],
+      "name": {
+        "en": "Cloudy/Viscous",
+        "sa": "पिच्छिल"
+      },
+      "sanskritName": "पिच्छिल",
+      "sanskritTransliteration": "Picchila",
+      "englishName": "Cloudy",
+      "pairNumber": 8,
+      "pairName": {
+        "en": "Cloudy-Clear"
+      },
+      "oppositeOf": {
+        "@id": "https://www.herbapedia.org/system/ayurveda/profile/guna/clear"
+      },
+      "effectOnDoshas": {
+        "vata": "decreases",
+        "pitta": "decreases",
+        "kapha": "increases"
+      },
+      "physiologicalEffect": {
+        "en": "Binds, lubricates, promotes healing"
+      },
+      "exampleSubstances": [
+        "okra",
+        "aloe",
+        "flaxseed"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/guna/clear",
+      "@type": [
+        "ayurveda:Guna"
+      ],
+      "name": {
+        "en": "Clear/Pure",
+        "sa": "विशद"
+      },
+      "sanskritName": "विशद",
+      "sanskritTransliteration": "Viśada",
+      "englishName": "Clear",
+      "pairNumber": 8,
+      "pairName": {
+        "en": "Cloudy-Clear"
+      },
+      "oppositeOf": {
+        "@id": "https://www.herbapedia.org/system/ayurveda/profile/guna/cloudy"
+      },
+      "effectOnDoshas": {
+        "vata": "increases",
+        "pitta": "increases",
+        "kapha": "decreases"
+      },
+      "physiologicalEffect": {
+        "en": "Clarifies, cleanses, reduces accumulation"
+      },
+      "exampleSubstances": [
+        "honey",
+        "alcohol",
+        "pungent herbs"
+      ]
+    }
+  ],
+  "_documentation": {
+    "classicalReference": "Charaka Samhita, Sutrasthana, Chapter 1",
+    "tenPairs": [
+      "Heavy-Light (Guru-Laghu)",
+      "Oily-Dry (Snigdha-Rūkṣa)",
+      "Hot-Cold (Uṣṇa-Śīta)",
+      "Slow-Sharp (Manda-Tīkṣṇa)",
+      "Smooth-Rough (Ślakṣṇa-Khara)",
+      "Liquid-Dense (Drava-Sandra)",
+      "Static-Mobile (Sthira-Cala)",
+      "Cloudy-Clear (Picchila-Viśada)",
+      "Soft-Hard (Mṛdu-Kaṭhina)",
+      "Subtle-Gross (Sūkṣma-Sthūla)"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/panax-ginseng-root",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Ginseng Root",
+    "zh-Hant": "人蔘",
+    "zh-Hans": "人参"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/panax-ginseng"
+  },
+  "partType": "root",
+  "description": {
+    "en": "The root of Panax ginseng, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.825Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

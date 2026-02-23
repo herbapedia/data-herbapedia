@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herbapedia.org/schema/json-schema/reference/ayurveda-vipaka.schema.json",
+  "title": "Ayurveda Vipaka",
+  "description": "Ayurvedic post-digestive effect (विपाक - Vipaka). The taste that emerges after digestion is complete. All six rasas transform into one of three vipakas: Madhura (sweet), Amla (sour), or Katu (pungent). Vipaka determines the long-term tissue effects.",
+  "type": "object",
+  "allOf": [
+    { "$ref": "./reference-entity.schema.json" }
+  ],
+  "required": ["@id", "@type", "name"],
+  "properties": {
+    "@id": {
+      "description": "Unique identifier: ayurveda/vipaka/{slug}.",
+      "type": "string",
+      "pattern": "^ayurveda/vipaka/[a-z0-9-]+$",
+      "examples": [
+        "ayurveda/vipaka/madhura",
+        "ayurveda/vipaka/amla",
+        "ayurveda/vipaka/katu"
+      ]
+    },
+    "@type": {
+      "type": "array",
+      "items": { "type": "string" },
+      "contains": { "const": "ayurveda:Vipaka" },
+      "examples": [["ayurveda:Vipaka"]]
+    },
+    "name": {
+      "description": "Vipaka name in Sanskrit and English.",
+      "$ref": "../core/language-map.schema.json",
+      "examples": [{ "sa": "मधुर", "en": "Sweet" }]
+    },
+    "sanskritName": {
+      "description": "Sanskrit name in Devanagari.",
+      "type": "string",
+      "examples": ["मधुर", "अम्ल", "कटु"]
+    },
+    "sanskritTransliteration": {
+      "description": "IAST transliteration.",
+      "type": "string",
+      "examples": ["madhura", "amla", "kaṭu"]
+    },
+    "englishName": {
+      "description": "English translation.",
+      "type": "string",
+      "examples": ["Sweet", "Sour", "Pungent"]
+    },
+    "rasaTransformation": {
+      "description": "Which rasas transform into this vipaka.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" },
+      "_documentation": {
+        "madhura_vipaka": "Madhura, Lavana rasas → Madhura vipaka",
+        "amla_vipaka": "Amla rasa → Amla vipaka",
+        "katu_vipaka": "Katu, Tikta, Kashaya rasas → Katu vipaka"
+      }
+    },
+    "effectOnDoshas": {
+      "description": "How this vipaka affects each dosha.",
+      "type": "object",
+      "properties": {
+        "vata": {
+          "type": "string",
+          "enum": ["increases", "decreases", "neutral"]
+        },
+        "pitta": {
+          "type": "string",
+          "enum": ["increases", "decreases", "neutral"]
+        },
+        "kapha": {
+          "type": "string",
+          "enum": ["increases", "decreases", "neutral"]
+        }
+      }
+    },
+    "effectOnTissues": {
+      "description": "Effect on the seven dhatus (tissues).",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "effectOnExcretion": {
+      "description": "Effect on malas (waste products).",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "longTermEffects": {
+      "description": "Long-term effects on the body.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "indications": {
+      "description": "Conditions where this vipaka is beneficial.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "contraindications": {
+      "description": "Conditions where this vipaka should be avoided.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "exampleSubstances": {
+      "description": "Substances with this vipaka.",
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": true,
+  "_documentation": {
+    "iriPattern": "ayurveda/vipaka/{slug}",
+    "directory": "systems/ayurveda/reference/vipakas.jsonld",
+    "threeVipakas": {
+      "madhura": {
+        "sanskrit": "मधुर",
+        "english": "Sweet",
+        "from_rasas": ["madhura", "lavana"],
+        "vata": "decreases",
+        "pitta": "decreases",
+        "kapha": "increases",
+        "tissue_effect": "Builds tissues, nourishes body",
+        "excretion_effect": "Can cause constipation",
+        "examples": ["Rice", "Wheat", "Milk", "Ghee", "Sugar"]
+      },
+      "amla": {
+        "sanskrit": "अम्ल",
+        "english": "Sour",
+        "from_rasas": ["amla"],
+        "vata": "decreases",
+        "pitta": "increases",
+        "kapha": "increases",
+        "tissue_effect": "Can increase blood, affect eyes",
+        "excretion_effect": "Promotes elimination",
+        "examples": ["Yogurt", "Fermented foods", "Sour fruits"]
+      },
+      "katu": {
+        "sanskrit": "कटु",
+        "english": "Pungent",
+        "from_rasas": ["katu", "tikta", "kashaya"],
+        "vata": "increases",
+        "pitta": "variable",
+        "kapha": "decreases",
+        "tissue_effect": "Reduces tissues, dries",
+        "excretion_effect": "Promotes elimination",
+        "examples": ["Ginger", "Pepper", "Bitter herbs"]
+      }
+    }
+  }
+}

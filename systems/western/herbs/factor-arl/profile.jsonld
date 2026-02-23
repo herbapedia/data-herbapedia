@@ -1,11 +1,11 @@
 {
-  "@context": "../../schema/context/western.jsonld",
-  "@id": "western/factor-arl",
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/factor-arl",
   "@type": [
     "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
-    "@id": "plant/factor-arl"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/factor-arl"
   },
   "name": {
     "en": "Factor ARL",

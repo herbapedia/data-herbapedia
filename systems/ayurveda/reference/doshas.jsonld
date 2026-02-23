@@ -1,0 +1,354 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/system/ayurveda/profile/reference/doshas",
+  "@type": [
+    "ayurveda:ReferenceCollection",
+    "skos:Collection"
+  ],
+  "name": {
+    "en": "Ayurveda Three Doshas",
+    "sa": "त्रिदोष"
+  },
+  "description": {
+    "en": "The three doshas (त्रिदोष - Tri Dosha) are the fundamental bio-energies in Ayurveda: Vata, Pitta, and Kapha. They govern all physiological and psychological functions."
+  },
+  "members": [
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/dosha/vata",
+      "@type": [
+        "ayurveda:Dosha"
+      ],
+      "name": {
+        "en": "Vata",
+        "sa": "वात"
+      },
+      "sanskritName": "वात",
+      "sanskritTransliteration": "Vāta",
+      "englishName": "Wind/Air",
+      "primaryElement": [
+        {
+          "element": "akasha",
+          "proportion": "primary"
+        },
+        {
+          "element": "vayu",
+          "proportion": "primary"
+        }
+      ],
+      "primaryFunction": {
+        "en": "Governs all movement in the body: breath, circulation, nerve impulses, elimination"
+      },
+      "primarySeat": "Colon (Pakvashaya)",
+      "governs": [
+        "breathing",
+        "circulation",
+        "nerve impulses",
+        "movement",
+        "speech",
+        "elimination",
+        "creativity"
+      ],
+      "psychologicalAttributes": [
+        "creativity",
+        "flexibility",
+        "quick thinking",
+        "enthusiasm",
+        "anxiety",
+        "fear",
+        "racing thoughts"
+      ],
+      "physicalAttributes": [
+        "light frame",
+        "dry skin",
+        "cold hands/feet",
+        "variable digestion",
+        "quick movements"
+      ],
+      "imbalanceSigns": [
+        "anxiety",
+        "insomnia",
+        "constipation",
+        "dry skin",
+        "joint pain",
+        "tremors",
+        "bloating"
+      ],
+      "deficiencySigns": [
+        "lethargy",
+        "loss of movement",
+        "depression",
+        "slow thinking"
+      ],
+      "balancingRasas": [
+        {
+          "@id": "https://www.herbapedia.org/system/ayurveda/profile/rasa/sweet"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/ayurveda/profile/rasa/sour"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/ayurveda/profile/rasa/salty"
+        }
+      ],
+      "aggravatingRasas": [
+        {
+          "@id": "https://www.herbapedia.org/system/ayurveda/profile/rasa/pungent"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/ayurveda/profile/rasa/bitter"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/ayurveda/profile/rasa/astringent"
+        }
+      ],
+      "balancingGunas": [
+        "heavy",
+        "oily",
+        "warm",
+        "stable"
+      ],
+      "aggravatingGunas": [
+        "light",
+        "dry",
+        "cold",
+        "mobile",
+        "rough"
+      ],
+      "associatedSeasons": [
+        "fall",
+        "early winter"
+      ],
+      "associatedTimeOfDay": [
+        "2-6am",
+        "2-6pm"
+      ],
+      "associatedLifeStage": "old age (after 60)"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/dosha/pitta",
+      "@type": [
+        "ayurveda:Dosha"
+      ],
+      "name": {
+        "en": "Pitta",
+        "sa": "पित्त"
+      },
+      "sanskritName": "पित्त",
+      "sanskritTransliteration": "Pitta",
+      "englishName": "Fire/Bile",
+      "primaryElement": [
+        {
+          "element": "tejas",
+          "proportion": "primary"
+        },
+        {
+          "element": "apas",
+          "proportion": "secondary"
+        }
+      ],
+      "primaryFunction": {
+        "en": "Governs transformation: digestion, metabolism, body temperature, intelligence"
+      },
+      "primarySeat": "Small Intestine",
+      "governs": [
+        "digestion",
+        "metabolism",
+        "body temperature",
+        "vision",
+        "skin color",
+        "intelligence",
+        "courage"
+      ],
+      "psychologicalAttributes": [
+        "intelligence",
+        "sharp thinking",
+        "determination",
+        "leadership",
+        "anger",
+        "irritability",
+        "judgment"
+      ],
+      "physicalAttributes": [
+        "medium frame",
+        "warm body",
+        "sharp features",
+        "strong digestion",
+        "bright eyes"
+      ],
+      "imbalanceSigns": [
+        "inflammation",
+        "heartburn",
+        "skin rashes",
+        "anger",
+        "ulcers",
+        "excessive hunger",
+        "bleeding"
+      ],
+      "deficiencySigns": [
+        "weak digestion",
+        "cold",
+        "pale skin",
+        "lack of motivation"
+      ],
+      "balancingRasas": [
+        {
+          "@id": "https://www.herbapedia.org/system/ayurveda/profile/rasa/sweet"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/ayurveda/profile/rasa/bitter"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/ayurveda/profile/rasa/astringent"
+        }
+      ],
+      "aggravatingRasas": [
+        {
+          "@id": "https://www.herbapedia.org/system/ayurveda/profile/rasa/sour"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/ayurveda/profile/rasa/salty"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/ayurveda/profile/rasa/pungent"
+        }
+      ],
+      "balancingGunas": [
+        "cool",
+        "heavy",
+        "dry"
+      ],
+      "aggravatingGunas": [
+        "hot",
+        "sharp",
+        "light",
+        "oily"
+      ],
+      "associatedSeasons": [
+        "summer"
+      ],
+      "associatedTimeOfDay": [
+        "10am-2pm",
+        "10pm-2am"
+      ],
+      "associatedLifeStage": "adulthood (20-60)"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/dosha/kapha",
+      "@type": [
+        "ayurveda:Dosha"
+      ],
+      "name": {
+        "en": "Kapha",
+        "sa": "कफ"
+      },
+      "sanskritName": "कफ",
+      "sanskritTransliteration": "Kapha",
+      "englishName": "Water/Phlegm",
+      "primaryElement": [
+        {
+          "element": "apas",
+          "proportion": "primary"
+        },
+        {
+          "element": "prithvi",
+          "proportion": "primary"
+        }
+      ],
+      "primaryFunction": {
+        "en": "Governs structure, stability, lubrication, and growth"
+      },
+      "primarySeat": "Stomach (Amashaya)",
+      "governs": [
+        "body structure",
+        "stability",
+        "lubrication",
+        "growth",
+        "immune function",
+        "memory",
+        "patience"
+      ],
+      "psychologicalAttributes": [
+        "calmness",
+        "stability",
+        "patience",
+        "love",
+        "compassion",
+        "lethargy",
+        "attachment",
+        "greed"
+      ],
+      "physicalAttributes": [
+        "large frame",
+        "smooth skin",
+        "thick hair",
+        "slow digestion",
+        "strong immunity"
+      ],
+      "imbalanceSigns": [
+        "weight gain",
+        "congestion",
+        "lethargy",
+        "slow digestion",
+        "swelling",
+        "diabetes",
+        "depression"
+      ],
+      "deficiencySigns": [
+        "weakness",
+        "dizziness",
+        "dryness",
+        "insomnia",
+        "heart palpitations"
+      ],
+      "balancingRasas": [
+        {
+          "@id": "https://www.herbapedia.org/system/ayurveda/profile/rasa/pungent"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/ayurveda/profile/rasa/bitter"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/ayurveda/profile/rasa/astringent"
+        }
+      ],
+      "aggravatingRasas": [
+        {
+          "@id": "https://www.herbapedia.org/system/ayurveda/profile/rasa/sweet"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/ayurveda/profile/rasa/sour"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/ayurveda/profile/rasa/salty"
+        }
+      ],
+      "balancingGunas": [
+        "light",
+        "dry",
+        "warm",
+        "sharp"
+      ],
+      "aggravatingGunas": [
+        "heavy",
+        "cold",
+        "oily",
+        "stable",
+        "slow"
+      ],
+      "associatedSeasons": [
+        "late winter",
+        "spring"
+      ],
+      "associatedTimeOfDay": [
+        "6-10am",
+        "6-10pm"
+      ],
+      "associatedLifeStage": "childhood (0-20)"
+    }
+  ],
+  "_documentation": {
+    "classicalReference": "Charaka Samhita, Sutrasthana, Chapter 12",
+    "principle": "Like increases like, opposites balance",
+    "balance": "Health is the balanced state of all three doshas"
+  }
+}

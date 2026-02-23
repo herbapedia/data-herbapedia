@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/preparation/deer-horn-gelatine",
+  "@type": [
+    "herbal:HerbalPreparation",
+    "schema:DietarySupplement"
+  ],
+  "name": {
+    "en": "Deer horn gelatine",
+    "zh-Hant": "鹿角膠",
+    "zh-Hans": "鹿角胶"
+  },
+  "derivedFrom": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/deer-horn-gelatine"
+    }
+  ],
+  "preparationMethod": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/method/dried"
+  },
+  "form": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/form/whole"
+  },
+  "hasTCMProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/profile/deer-horn-gelatine"
+    }
+  ],
+  "safetyInfo": {},
+  "provenance": {
+    "created": "2026-02-20",
+    "source": "Generated from TCM profile",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "description": {
+    "en": "Herbal preparation derived from Deer horn gelatine. Deer horn gelatine is sweet, salty and warm in nature. This preparation is used for warming the kidneys, replenishing the liver and nourishing the vital essence and blood. It is most suitable for peop..."
+  },
+  "image": "media/images/deer-horn-gelatine/deer-horn-gelatine.jpg"
+}

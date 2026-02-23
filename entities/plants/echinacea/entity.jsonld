@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/echinacea",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/echinacea",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"
@@ -30,10 +30,10 @@
   "gbifId": 3150935,
   "containsChemical": [
     {
-      "@id": "chemical/alkaloids"
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/alkaloids"
     },
     {
-      "@id": "chemical/polysaccharides"
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/polysaccharides"
     }
   ],
   "modified": "2026-02-19T23:24:40.402Z"

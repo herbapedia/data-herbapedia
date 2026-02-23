@@ -1,0 +1,188 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herbapedia.org/schema/json-schema/reference/ayurveda-dosha.schema.json",
+  "title": "Ayurveda Dosha",
+  "description": "Ayurvedic constitutional principle (दोष - Dosha). The three fundamental bio-energies that govern physiological and psychological functions: Vata (movement), Pitta (transformation), Kapha (structure). Understanding dosha effects is central to Ayurvedic therapy.",
+  "type": "object",
+  "allOf": [
+    { "$ref": "./reference-entity.schema.json" }
+  ],
+  "required": ["@id", "@type", "name"],
+  "properties": {
+    "@id": {
+      "description": "Unique identifier: ayurveda/dosha/{slug}.",
+      "type": "string",
+      "pattern": "^ayurveda/dosha/[a-z0-9-]+$",
+      "examples": [
+        "ayurveda/dosha/vata",
+        "ayurveda/dosha/pitta",
+        "ayurveda/dosha/kapha"
+      ]
+    },
+    "@type": {
+      "type": "array",
+      "items": { "type": "string" },
+      "contains": { "const": "ayurveda:Dosha" },
+      "examples": [["ayurveda:Dosha"]]
+    },
+    "name": {
+      "description": "Dosha name in Sanskrit and English.",
+      "$ref": "../core/language-map.schema.json",
+      "examples": [{ "sa": "वात", "en": "Vata" }]
+    },
+    "sanskritName": {
+      "description": "Sanskrit name in Devanagari.",
+      "type": "string",
+      "examples": ["वात", "पित्त", "कफ"]
+    },
+    "sanskritTransliteration": {
+      "description": "IAST transliteration.",
+      "type": "string",
+      "examples": ["vāta", "pitta", "kapha"]
+    },
+    "englishName": {
+      "description": "English translation.",
+      "type": "string",
+      "examples": ["Vata", "Pitta", "Kapha"]
+    },
+    "symbol": {
+      "description": "Devanagari symbol.",
+      "type": "string",
+      "examples": ["वा", "पि", "क"]
+    },
+    "primaryElement": {
+      "description": "Primary mahabhuta (element) composition.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "element": {
+            "type": "string",
+            "enum": ["akasha", "vayu", "tejas", "apas", "prithvi"]
+          },
+          "proportion": {
+            "type": "string",
+            "enum": ["primary", "secondary"]
+          }
+        }
+      },
+      "_documentation": {
+        "vata": "Akasha + Vayu (Ether + Air)",
+        "pitta": "Tejas + Apas (Fire + Water)",
+        "kapha": "Prithvi + Apas (Earth + Water)"
+      }
+    },
+    "primaryFunction": {
+      "description": "Primary physiological function.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "primarySeat": {
+      "description": "Primary location in the body.",
+      "type": "string",
+      "examples": ["Colon", "Small intestine", "Stomach/Chest"]
+    },
+    "governs": {
+      "description": "What this dosha governs.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "psychologicalAttributes": {
+      "description": "Psychological characteristics.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "physicalAttributes": {
+      "description": "Physical characteristics when balanced.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "imbalanceSigns": {
+      "description": "Signs of dosha imbalance (vriddhi).",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "deficiencySigns": {
+      "description": "Signs of dosha deficiency (kshaya).",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "balancingRasas": {
+      "description": "Rasas that balance this dosha.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" }
+    },
+    "aggravatingRasas": {
+      "description": "Rasas that aggravate this dosha.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" }
+    },
+    "balancingGunas": {
+      "description": "Gunas that balance this dosha.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" }
+    },
+    "aggravatingGunas": {
+      "description": "Gunas that aggravate this dosha.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" }
+    },
+    "associatedSeasons": {
+      "description": "Seasons when this dosha accumulates/aggravates.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "associatedTimeOfDay": {
+      "description": "Time of day when this dosha is dominant.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "associatedLifeStage": {
+      "description": "Life stage associated with this dosha.",
+      "type": "string",
+      "examples": ["Old age", "Middle age", "Childhood"]
+    }
+  },
+  "additionalProperties": true,
+  "_documentation": {
+    "iriPattern": "ayurveda/dosha/{slug}",
+    "directory": "systems/ayurveda/reference/doshas.jsonld",
+    "threeDoshas": {
+      "vata": {
+        "sanskrit": "वात",
+        "elements": "Ether + Air",
+        "principle": "Movement",
+        "seat": "Colon, pelvic cavity",
+        "governs": ["Breathing", "Circulation", "Elimination", "Movement", "Speech", "Creativity", "Nervous system"],
+        "psychological": ["Quick thinking", "Creative", "Adaptable", "Fearful when imbalanced"],
+        "physical": ["Light", "Dry", "Cold", "Rough", "Irregular"],
+        "seasons": ["Late fall", "Winter"],
+        "time_of_day": ["2-6am", "2-6pm"],
+        "life_stage": "Old age (60+)"
+      },
+      "pitta": {
+        "sanskrit": "पित्त",
+        "elements": "Fire + Water",
+        "principle": "Transformation",
+        "seat": "Small intestine, stomach, liver",
+        "governs": ["Digestion", "Metabolism", "Body temperature", "Intelligence", "Vision", "Skin color"],
+        "psychological": ["Sharp intellect", "Determined", "Competitive", "Angry when imbalanced"],
+        "physical": ["Hot", "Oily", "Sharp", "Light", "Liquid"],
+        "seasons": ["Summer"],
+        "time_of_day": ["10am-2pm", "10pm-2am"],
+        "life_stage": "Middle age (20-60)"
+      },
+      "kapha": {
+        "sanskrit": "कफ",
+        "elements": "Water + Earth",
+        "principle": "Structure",
+        "seat": "Chest, throat, head",
+        "governs": ["Structure", "Lubrication", "Stability", "Growth", "Immunity", "Memory"],
+        "psychological": ["Calm", "Loving", "Patient", "Attached when imbalanced"],
+        "physical": ["Heavy", "Cold", "Oily", "Slow", "Smooth"],
+        "seasons": ["Late winter", "Spring"],
+        "time_of_day": ["6-10am", "6-10pm"],
+        "life_stage": "Childhood (0-20)"
+      }
+    }
+  }
+}

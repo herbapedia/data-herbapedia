@@ -3,7 +3,7 @@
     "@version": 1.1,
     "@import": "./core.jsonld",
 
-    "ayurveda": "https://herbapedia.org/vocab/ayurveda/",
+    "ayurveda": "https://www.herbapedia.org/vocab/ayurveda/",
 
     "Dravya": {
       "@id": "ayurveda:Dravya",

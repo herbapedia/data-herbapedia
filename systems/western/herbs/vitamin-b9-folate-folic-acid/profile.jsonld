@@ -1,11 +1,11 @@
 {
-  "@context": "../../schema/context/western.jsonld",
-  "@id": "western/vitamin-b9-folate-folic-acid",
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/vitamin-b9-folate-folic-acid",
   "@type": [
     "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
-    "@id": "plant/vitamin-b9-folate-folic-acid"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/vitamin-b9-folate-folic-acid"
   },
   "name": {
     "en": "Vitamin B9, Folate, Folic Acid",

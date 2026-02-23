@@ -1,0 +1,276 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "https://www.herbapedia.org/vocab/core/",
+
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "herbapedia": "https://www.herbapedia.org/vocab/core/",
+    "botany": "https://www.herbapedia.org/vocab/botany/",
+    "herbal": "https://www.herbapedia.org/vocab/herbal/"
+  },
+
+  "@graph": [
+
+    // ========================================================================
+    // ROOT CLASSES
+    // ========================================================================
+
+    {
+      "@id": "herbapedia:Entity",
+      "@type": "owl:Class",
+      "rdfs:label": {
+        "en": "Entity",
+        "zh-Hant": "實體"
+      },
+      "rdfs:comment": "The root class for all Herbapedia entities."
+    },
+
+    {
+      "@id": "herbapedia:SourceMaterial",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "herbapedia:Entity",
+      "rdfs:label": {
+        "en": "Source Material",
+        "zh-Hant": "來源物質"
+      },
+      "rdfs:comment": "Abstract base class for all source materials used in herbal medicine, including plants, animals, minerals, and chemicals."
+    },
+
+    // ========================================================================
+    // SOURCE MATERIAL SUBTYPES
+    // ========================================================================
+
+    {
+      "@id": "herbapedia:BotanicalSource",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "herbapedia:SourceMaterial",
+      "rdfs:label": {
+        "en": "Botanical Source",
+        "zh-Hant": "植物來源"
+      },
+      "rdfs:comment": "Source materials derived from plants, fungi, or algae."
+    },
+
+    {
+      "@id": "herbapedia:ZoologicalSource",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "herbapedia:SourceMaterial",
+      "rdfs:label": {
+        "en": "Zoological Source",
+        "zh-Hant": "動物來源"
+      },
+      "rdfs:comment": "Source materials derived from animal products (antler, shell, nest, etc.)."
+    },
+
+    {
+      "@id": "herbapedia:MineralSource",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "herbapedia:SourceMaterial",
+      "rdfs:label": {
+        "en": "Mineral Source",
+        "zh-Hant": "礦物來源"
+      },
+      "rdfs:comment": "Source materials derived from minerals (calcium, iron, zinc, etc.)."
+    },
+
+    {
+      "@id": "herbapedia:ChemicalSource",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "herbapedia:SourceMaterial",
+      "rdfs:label": {
+        "en": "Chemical Source",
+        "zh-Hant": "化學來源"
+      },
+      "rdfs:comment": "Source materials that are isolated or synthesized chemical compounds (vitamins, amino acids, etc.)."
+    },
+
+    {
+      "@id": "herbapedia:Formula",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "schema:Product",
+      "rdfs:label": {
+        "en": "Formula",
+        "zh-Hant": "配方"
+      },
+      "rdfs:comment": "Proprietary blends or standardized preparations containing multiple ingredients."
+    },
+
+    // ========================================================================
+    // BOTANY CLASSES
+    // ========================================================================
+
+    {
+      "@id": "botany:PlantSpecies",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "herbapedia:BotanicalSource",
+      "rdfs:label": {
+        "en": "Plant Species",
+        "zh-Hant": "植物物種"
+      },
+      "rdfs:comment": "A plant species entity containing botanical facts (taxonomy, distribution, morphology)."
+    },
+
+    {
+      "@id": "botany:FungalSpecies",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "herbapedia:BotanicalSource",
+      "rdfs:label": {
+        "en": "Fungal Species",
+        "zh-Hant": "真菌物種"
+      },
+      "rdfs:comment": "A fungal species (mushrooms, etc.) used in herbal medicine."
+    },
+
+    {
+      "@id": "phycology:AlgalSpecies",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "herbapedia:BotanicalSource",
+      "rdfs:label": {
+        "en": "Algal Species",
+        "zh-Hant": "藻類物種"
+      },
+      "rdfs:comment": "An algal species used in herbal medicine."
+    },
+
+    {
+      "@id": "herbapedia:PlantPart",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "herbapedia:BotanicalSource",
+      "rdfs:label": {
+        "en": "Plant Part",
+        "zh-Hant": "植物部位"
+      },
+      "rdfs:comment": "A specific part of a specific plant (root, leaf, stem, etc.)."
+    },
+
+    {
+      "@id": "herbapedia:ChemicalCompound",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "herbapedia:Entity",
+      "rdfs:label": {
+        "en": "Chemical Compound",
+        "zh-Hant": "化學化合物"
+      },
+      "rdfs:comment": "A molecular entity (flavonoid, alkaloid, polysaccharide, etc.)."
+    },
+
+    // ========================================================================
+    // HERBAL PREPARATION
+    // ========================================================================
+
+    {
+      "@id": "herbal:HerbalPreparation",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": ["schema:Product", "schema:DietarySupplement"],
+      "rdfs:label": {
+        "en": "Herbal Preparation",
+        "zh-Hant": "草藥製劑"
+      },
+      "rdfs:comment": "The central pivot entity - a substance prepared from botanical sources for therapeutic or culinary use."
+    },
+
+    // ========================================================================
+    // CORE PROPERTIES
+    // ========================================================================
+
+    {
+      "@id": "herbapedia:hasPart",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "herbapedia:BotanicalSource",
+      "rdfs:range": "herbapedia:PlantPart",
+      "rdfs:label": {
+        "en": "has part"
+      },
+      "rdfs:comment": "Links a botanical source to its parts."
+    },
+
+    {
+      "@id": "herbapedia:partOf",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": "herbapedia:hasPart",
+      "rdfs:label": {
+        "en": "is part of"
+      }
+    },
+
+    {
+      "@id": "herbapedia:containsChemical",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "herbapedia:BotanicalSource",
+      "rdfs:range": "herbapedia:ChemicalCompound",
+      "rdfs:label": {
+        "en": "contains chemical"
+      },
+      "rdfs:comment": "Links a botanical source to chemicals it contains."
+    },
+
+    {
+      "@id": "herbapedia:foundIn",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": "herbapedia:containsChemical",
+      "rdfs:label": {
+        "en": "found in"
+      }
+    },
+
+    {
+      "@id": "herbal:derivedFrom",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "herbal:HerbalPreparation",
+      "rdfs:range": "herbapedia:SourceMaterial",
+      "rdfs:label": {
+        "en": "derived from"
+      },
+      "rdfs:comment": "Links a preparation to its source material(s)."
+    },
+
+    {
+      "@id": "herbapedia:hasExtract",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "herbapedia:SourceMaterial",
+      "rdfs:range": "herbal:HerbalPreparation",
+      "rdfs:label": {
+        "en": "has extract"
+      },
+      "rdfs:comment": "Links a source material to its extracts (oils, tinctures, etc.)."
+    },
+
+    {
+      "@id": "herbapedia:isExtractOf",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": "herbapedia:hasExtract",
+      "rdfs:label": {
+        "en": "is extract of"
+      }
+    },
+
+    {
+      "@id": "herbapedia:hasLifeStage",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "herbapedia:BotanicalSource",
+      "rdfs:range": "herbapedia:BotanicalSource",
+      "rdfs:label": {
+        "en": "has life stage"
+      },
+      "rdfs:comment": "Links a species to its life stages (spores, mycelium, fruiting body, etc.)."
+    },
+
+    {
+      "@id": "herbapedia:isProcessedFrom",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "herbal:HerbalPreparation",
+      "rdfs:range": "herbal:HerbalPreparation",
+      "rdfs:label": {
+        "en": "is processed from"
+      },
+      "rdfs:comment": "Links a processed preparation to its raw material."
+    }
+
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/beishashen",
+  "@type": [
+    "botany:PlantSpecies",
+    "herbapedia:BotanicalSource",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Beishashen",
+    "zh-Hant": "北沙參",
+    "zh-Hans": "北沙参"
+  },
+  "scientificName": "Glehnia littoralis",
+  "family": null,
+  "genus": null,
+  "description": {
+    "en": "The root of Glehnia littoralis F. Schmidt ex Miq., family Ubelliferae.\n",
+    "zh-Hant": "北沙參（學名：Glehnia littoralis）是一種具有藥用價值的天然產物。現代藥理學研究證實其含有多種生物活性成分，在傳統醫學和現代保健領域均有重要應用價值。",
+    "zh-Hans": "北沙參（学名：Glehnia littoralis）是一种具有药用價值的天然產物。現代药理学研究证实其含有多种生物活性成分，在传统医学和現代保健領域均有重要应用價值。"
+  },
+  "image": "media/images/glehnia-littoralis/main.jpg",
+  "gbifID": 8404220,
+  "provenance": {
+    "created": "2026-02-18T09:14:53.694Z",
+    "modified": "2026-02-21T01:46:20.746Z",
+    "migratedFrom": "entities/plants/beishashen/entity.jsonld",
+    "source": "vitaherbapedia.com",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "classificationNote": "Reclassified as BotanicalSource"
+  },
+  "hasParts": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/part/beishashen-root"
+    }
+  ],
+  "wikidataID": "Q15548072",
+  "sourceType": "botanical",
+  "sourceSubType": "plant",
+  "hasTCMProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/profile/beishashen"
+    }
+  ],
+  "ncbiTaxonID": "2754404"
+}

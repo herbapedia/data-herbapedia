@@ -1,0 +1,31 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "https://www.herbapedia.org/vocab/mycology/",
+
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+
+    "herbapedia": "https://www.herbapedia.org/vocab/core/",
+    "mycology": "https://www.herbapedia.org/vocab/mycology/"
+  },
+
+  "@graph": [
+    {
+      "@id": "https://www.herbapedia.org/vocab/mycology/",
+      "@type": "owl:Ontology",
+      "rdfs:label": "Herbapedia Mycology Vocabulary"
+    },
+
+    {
+      "@id": "mycology:FungalSpecies",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "herbapedia:BotanicalSource",
+      "rdfs:label": {
+        "en": "Fungal Species",
+        "zh-Hant": "真菌物種"
+      },
+      "rdfs:comment": "A fungal species (mushroom, yeast, etc.) used in herbal medicine."
+    }
+  ]
+}

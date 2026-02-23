@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/garcinia-cambogia-fruit",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Garcinia Cambogia Fruit Fruit",
+    "zh-Hant": "藤黃果",
+    "zh-Hans": "藤黄果"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/garcinia-cambogia-fruit"
+  },
+  "partType": "fruit",
+  "description": {
+    "en": "The fruit of Garcinia Cambogia, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.815Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

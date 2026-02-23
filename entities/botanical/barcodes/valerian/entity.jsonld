@@ -1,0 +1,51 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/botany.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/barcode/valerian",
+  "@type": [
+    "botany:DNABarcode",
+    "schema:Dataset"
+  ],
+  "name": {
+    "en": "Valerian DNA Barcode",
+    "zh-Hant": "纈草DNA條碼",
+    "zh-Hans": "缬草DNA条码"
+  },
+  "barcodes": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/valerian"
+  },
+  "sequence": [
+    {
+      "region": "rbcL",
+      "sequence": "ATGTCACCACAAACAGAAACTAAAGCAAGTGTTGGATTATAAAGGTCAGTTCGATCTTTGAATAATTCATTATTTGATTTATTCAAATCCACGTCGACTTGTAGACAGATCTTTTATAAAATTGTAAAAAATCAATCTTAAGTTTTTTATTTGATCCTTTTTATTAATTCAGAATCTTTTGTATATCTATTCATGAGTTAAACTTTTTATTTGTATCAAAAATCACTATATATATATATATATATATAATACATATATATATATATATTTATTCCTTTTATTTATTTCTTATAATTCATTTTTTTTTTTTTTTAATATAGATATATATATATATTTTATTTTTTTATATTTTTTTTTAATATATATATATATATATATATATATATATATATATA",
+      "length": 555,
+      "genbankAccession": "KJ730299"
+    },
+    {
+      "region": "matK",
+      "sequence": "TCTAGAGCAAGTCTTTGCCTTAAACTTGGTTTTTCTTATCAATTAAGAATCCTTTTATTTTCATTTTATTTGATGATTTTTCAAATATTATAAATCTTCAATTTTATATTTAATTTATCTTTTAATATTATTATCAATTTTTTTATTTATTTTTATTTTTATAAATAATTTGATACTTCTTTTATTAATACAACTTCAATATATATTTATTATATTTTATTTTATTTTTTTTCTATTATTAATAATTTATATAAATATTATTTCTTTAATATTTTAATTTTTTTTTTGAATTATTTTTTAATTTTTTTATATTTTAATATAATATTTAATATATTTATTTATTTTTTTTTAAATATTTTATATTTATTTTTTATATTTTTTTTATTTAATAATAATTTTATTTTTTTTTTTTTTAATATTAATATAATAATAA",
+      "length": 658,
+      "genbankAccession": "KJ730300"
+    },
+    {
+      "region": "ITS2",
+      "sequence": "CGATCGATACGTTTGAATGCATTGATATTCGTCGTGATGATTCACGATGCTTTGCTGCGAGCTTCTCTCCGCTCATCGATGAAGAACGTAGCGAAATGCGATACTTGGTGTGAATTGCAGAATCCCGTGAACCATCGAGTCTTTGAACGCAAGTTGCGCCCGAAGCCTTTAGTTGAGGGTACTGATGTGAATCGTCTTTTATCAACACTATATAC",
+      "length": 227,
+      "genbankAccession": "AY722268"
+    }
+  ],
+  "adulterantDetection": {
+    "canDetect": [
+      "Valeriana edulis",
+      "Valeriana wallichii",
+      "Centranthus species"
+    ],
+    "description": {
+      "en": "DNA barcoding can distinguish Valeriana officinalis from related species and adulterants"
+    }
+  },
+  "provenance": {
+    "created": "2026-02-21T00:00:00.000Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

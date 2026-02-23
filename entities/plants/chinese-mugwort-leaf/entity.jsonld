@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/chinese-mugwort-leaf",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/chinese-mugwort-leaf",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"

@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herbapedia.org/schema/json-schema/reference/tcm-category.schema.json",
+  "title": "TCM Category",
+  "description": "Traditional Chinese Medicine herb category (中药分类). Herbs are classified by their primary therapeutic functions, not by botany. Examples: 解表药 (Release Exterior), 清热药 (Clear Heat), 补虚药 (Tonify Deficiency).",
+  "type": "object",
+  "allOf": [
+    { "$ref": "./reference-entity.schema.json" }
+  ],
+  "required": ["@id", "@type", "name"],
+  "properties": {
+    "@id": {
+      "description": "Unique identifier: tcm/category/{slug}.",
+      "type": "string",
+      "pattern": "^tcm/category/[a-z0-9-]+$",
+      "examples": [
+        "tcm/category/release-exterior",
+        "tcm/category/clear-heat",
+        "tcm/category/tonify-qi"
+      ]
+    },
+    "@type": {
+      "type": "array",
+      "items": { "type": "string" },
+      "contains": { "const": "tcm:Category" },
+      "examples": [["tcm:Category"]]
+    },
+    "name": {
+      "description": "Category name in Chinese and English.",
+      "$ref": "../core/language-map.schema.json",
+      "examples": [{ "zh-Hant": "解表藥", "zh-Hans": "解表药", "en": "Herbs that Release the Exterior" }]
+    },
+    "pinyin": {
+      "description": "Pinyin romanization.",
+      "type": "string",
+      "examples": ["Jiě Biǎo Yào", "Qīng Rè Yào"]
+    },
+    "hanyuPinlu": {
+      "description": "Pinyin with tone numbers.",
+      "type": "string",
+      "examples": ["jie3 biao3 yao4", "qing1 re4 yao4"]
+    },
+    "categoryCode": {
+      "description": "Numeric category code per standard TCM textbooks.",
+      "type": "string",
+      "examples": ["01", "02", "03"]
+    },
+    "subcategories": {
+      "description": "Sub-categories within this category.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" }
+    },
+    "parentCategory": {
+      "description": "Parent category if this is a subcategory.",
+      "$ref": "../core/iri-reference.schema.json"
+    },
+    "indications": {
+      "description": "Primary indications for herbs in this category.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "usageNotes": {
+      "description": "Important usage considerations.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "contraindications": {
+      "description": "General contraindications for this category.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "exampleHerbs": {
+      "description": "Representative herbs in this category.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" }
+    }
+  },
+  "additionalProperties": true,
+  "_documentation": {
+    "iriPattern": "tcm/category/{slug}",
+    "directory": "systems/tcm/reference/categories.jsonld",
+    "standardCategories": {
+      "release_exterior": "解表藥 - For exterior patterns (colds, flu)",
+      "clear_heat": "清熱藥 - For heat patterns (fever, infection)",
+      "purge_downward": "瀉下藥 - For constipation, accumulation",
+      "dispel_wind_damp": "祛風濕藥 - For arthritis, joint pain",
+      "transform_damp": "化濕藥 - For dampness in digestion",
+      "drain_dampness": "利水滲濕藥 - For edema, urinary issues",
+      "warm_interior": "溫裡藥 - For cold patterns",
+      "regulate_qi": "理氣藥 - For qi stagnation",
+      "digest_food": "消食藥 - For food stagnation",
+      "stop_bleeding": "止血藥 - For various bleeding",
+      "invigorate_blood": "活血化瘀藥 - For blood stasis",
+      "relieve_cough_wheeze": "止咳平喘藥 - For cough, asthma",
+      "calm_spirit": "安神藥 - For spirit disorders",
+      "calm_liver": "平肝息風藥 - For liver wind",
+      "open_orifices": "開竅藥 - For consciousness disorders",
+      "tonify_deficiency": "補虛藥 - For deficiency patterns",
+      "astringe": "收澀藥 - For leakage disorders",
+      "expel_parasites": "驅蟲藥 - For parasites",
+      "external_use": "外用藥 - For topical application"
+    }
+  }
+}

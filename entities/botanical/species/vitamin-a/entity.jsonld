@@ -1,0 +1,38 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/vitamin-a",
+  "@type": [
+    "herbapedia:ChemicalSource",
+    "schema:Thing"
+  ],
+  "name": {
+    "en": "Vitamin A",
+    "zh-Hant": "維他命A  又名胡蘿蔔素",
+    "zh-Hans": "维他命A  又名胡萝蔔素"
+  },
+  "scientificName": "Beta-carotene, Retinol",
+  "family": null,
+  "genus": null,
+  "description": {
+    "en": "Found in foods including liver, carrots, dark-green leafy vegetables, yellow fruits and vegetables such as pumpkin and peaches, some seafoods including salmon and crab, dairy products and eggs.\n",
+    "zh-Hant": "維他命A  又名胡蘿蔔素是一種重要的營養素，參與人體多種生理代謝過程。作為必需營養素，對維持機體正常功能具有重要作用。臨床研究表明適量補充有助於維持身體健康。",
+    "zh-Hans": "維他命A  又名胡蘿蔔素是一种重要的營养素，參与人体多种生理代謝过程。作为必需營养素，對維持机体正常功能具有重要作用。臨床研究表明適量补充有助于維持身体健康。"
+  },
+  "image": "media/images/beta-carotene-retinol/main.jpg",
+  "provenance": {
+    "created": "2026-02-18T09:16:40.715Z",
+    "modified": "2026-02-21T01:46:20.760Z",
+    "migratedFrom": "entities/plants/vitamin-a/entity.jsonld",
+    "source": "vitaherbapedia.com",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "classificationNote": "Reclassified as ChemicalSource"
+  },
+  "wikidataID": "Q174221",
+  "sourceType": "chemical",
+  "sourceSubType": "nutrient",
+  "hasWesternProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/western/profile/vitamin-a"
+    }
+  ]
+}

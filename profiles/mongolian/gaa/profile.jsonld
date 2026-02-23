@@ -1,0 +1,118 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/mongolian.jsonld",
+  "@id": "https://www.herbapedia.org/system/mongolian/profile/gaa",
+  "@type": [
+    "mongolian:Drug",
+    "schema:DietarySupplement"
+  ],
+  "profiles": {
+    "@id": "https://www.herbapedia.org/entity/preparation/dried-ginger-rhizome"
+  },
+  "name": {
+    "en": "Ginger",
+    "mn": "га",
+    "bo": "སྐྱུ་རུ་"
+  },
+  "mongolianName": "га",
+  "tibetanName": "སྐྱུ་རུ་",
+  "tibetanWylie": "skyur ru",
+  "derivedFromPlant": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/ginger"
+  },
+  "hasElement": [
+    {
+      "@id": "https://www.herbapedia.org/system/mongolian/profile/element/fire"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/mongolian/profile/element/earth"
+    }
+  ],
+  "affectsRoots": {
+    "heyi": {
+      "effect": "decreases"
+    },
+    "xila": {
+      "effect": "increases"
+    },
+    "badagan": {
+      "effect": "decreases"
+    }
+  },
+  "hasTaste": [
+    {
+      "@id": "https://www.herbapedia.org/system/mongolian/profile/taste/pungent"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/mongolian/profile/taste/sweet"
+    }
+  ],
+  "hasPotency": [
+    {
+      "@id": "https://www.herbapedia.org/system/mongolian/profile/potency/hot"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/mongolian/profile/potency/light"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/mongolian/profile/potency/rough"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/mongolian/profile/potency/sharp"
+    }
+  ],
+  "therapeuticClass": "Digestive, warming",
+  "mongolianFunctions": {
+    "en": "Increases digestive heat, reduces phlegm and wind disorders, promotes appetite, aids digestion of heavy foods",
+    "mn": "хоолны шингэцийг сайжруулна, бадганыг багасгана, хийг тогтворжуулна"
+  },
+  "indications": [
+    "Cold digestive disorders",
+    "Loss of appetite",
+    "Phlegm accumulation",
+    "Wind disorders",
+    "Cold extremities",
+    "Abdominal distension",
+    "Nausea"
+  ],
+  "contraIndications": {
+    "en": "Bile disorders, fever, inflammation, bleeding conditions"
+  },
+  "dosage": {
+    "en": "Powder: 0.5-1g, 2-3 times daily",
+    "decoction": "3-5g boiled in water"
+  },
+  "preparationMethod": [
+    "decoction",
+    "powder",
+    "pill"
+  ],
+  "classicalReferences": [
+    {
+      "text": "Four Tantras (རྒྱུད་བཞི་)",
+      "reference": "Explanatory Tantra",
+      "quote": "Increases digestive heat, dispels cold, beneficial for phlegm and wind"
+    },
+    {
+      "text": "Blue Beryl (བིལ་སྔོན་)",
+      "reference": "",
+      "quote": "Hot potency, pungent taste, reduces badagan and heyi"
+    }
+  ],
+  "modernResearch": {
+    "en": "Modern studies confirm thermogenic, digestive, and anti-inflammatory properties. The hot potency and pungent taste align with its traditional use for cold conditions."
+  },
+  "nomadicUsage": {
+    "en": "Used by Mongolian nomads to aid digestion of heavy meat and dairy-based diet, provide warmth in harsh cold climate, and preserve food during long winters"
+  },
+  "formulations": [
+    {
+      "name": "Trikatu (གསུམ་སྦྱོར་)",
+      "description": "Ginger, Black Pepper, Long Pepper - for digestive enhancement",
+      "use": "Low digestive heat, phlegm disorders"
+    }
+  ],
+  "provenance": {
+    "created": "2024-01-15",
+    "source": "Four Tantras, Blue Beryl"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/dna/lysimachia-christinae",
+  "@type": ["herbapedia:DNASequenceData", "schema:Dataset"],
+  "dataType": "DNASequence",
+  "sourceFile": "DNA_____Lysimachia_christinae_V1.pdf",
+  "sourceDocument": "GCMTI FS:2023-3",
+  "title": {
+    "en": "Fact sheet of reference DNA sequences of Lysimachia christinae",
+    "zh-hk": "過路黃(Lysimachia christinae)之參考 DNA 序列資料表"
+  },
+  "scientificName": {
+    "full": "Lysimachia christinae",
+    "genus": "Lysimachia",
+    "species": "christinae",
+    "author": ""
+  },
+  "loci": [
+    {
+      "name": "ITS2",
+      "fullName": "Internal transcribed spacer 2",
+      "description": {
+        "en": "Internal transcribed spacer 2 (ITS2) of plant voucher specimen of Lysimachia christinae and Chinese Materia Medica (CMM) Herba Lysimachiae",
+        "zh-hk": "植物憑證標本及中藥材金錢草標本的核糖體 DNA 第二內部轉錄間隔區(ITS2)序列"
+      },
+      "sequenceLength": 231,
+      "consensusSequence": "CACAATGCGTCGCTCCCCAACCACCCCTATGGGTGATGTGTGGGGGCGGATGTTGGCTCCCCGTGCGCACTCGTGTGCGGTCAGCCTAAAAGCGAGAACCGACGACAGCCGTCGCGGCAATTGGTGGTTGTAAAAAACCGATTCATTATGTCGTGTGCGCCTCGTCTCAATCGGTGACTCTCAGACCCTGAAGCTCCATTTACTTGGTGCCTCGATCG",
+      "specimenCount": 20,
+      "specimens": [
+        "22RD49-1A",
+        "21RD73-1A", "21RD73-2A", "21RD73-3A", "21RD73-4B", "21RD73-5A",
+        "21RD73-6A", "21RD73-7A", "21RD73-11A", "21RD73-12A", "21RD73-13A",
+        "21RD73-14A", "21RD73-15A", "21RD73-16A", "21RD73-18A", "21RD73-19A",
+        "21RD73-20A", "21RD73-21A", "21RD73-22A", "21RD73-23A"
+      ],
+      "notes": "Some specimens (21RD73-1A, 21RD73-6A, 21RD73-11A, 21RD73-12A, 21RD73-16A, 21RD73-18A, 21RD73-20A, 21RD73-23A) showed minor sequence variation at position 5 (Y instead of T)"
+    },
+    {
+      "name": "psbA-trnH",
+      "fullName": "Chloroplast psbA-trnH intergenic spacer",
+      "description": {
+        "en": "Chloroplast psbA-trnH intergenic spacer (psbA-trnH) of plant voucher specimen of Lysimachia christinae and Chinese Materia Medica (CMM) Herba Lysimachiae",
+        "zh-hk": "植物憑證標本及中藥材金錢草標本的葉綠體 psbA-trnH 基因間區(psbA-trnH)序列"
+      },
+      "sequenceLength": 474,
+      "consensusSequence": "ATAACTTCCCTCTAGACCTAGCTGCGATTGAAGCTCCATCTATAAATGGATAAGACTTTGGTCTTGGTGTATATGAGTTTTTGAAAGTAAGGGGAGCAATAACAAAACTCTTGTTCTATCAAGAGGGCGTTATTGCTCCTTTTCTTTTTTTGTTTTTAGTTCAGTTCAGAGTAGTCTTTTATTTATCTATACTTTTTTCGTTCTAAGAATCTTTATTCTTATGGGAAAAAAGAAAAGTGGGCTATGTGTTAGTTCATGATTGAGTATTGCCTTTTTATTCTGTATTAATTTGAAATTTATATTATATGTTCTTTTATTTGTTCAATTTTTTTCTATTGAAATAAAAAACTTTTTTATTAAATCTTAAATATTTCTTAAGATATGAAATAAATAATGATGGCTGGTTGAAATAGAATCTTTCTGTTTTATCTCTTTTGTAAATTAAAGTAGTGGAGTAAGGGGGCGGATGTAGCCAAGTGGATTAAGGCAGT",
+      "specimenCount": 20,
+      "specimens": [
+        "22RD49-1A",
+        "21RD73-1A", "21RD73-2A", "21RD73-3A", "21RD73-4B", "21RD73-5A",
+        "21RD73-6A", "21RD73-7A", "21RD73-11A", "21RD73-12A", "21RD73-13A",
+        "21RD73-14A", "21RD73-15A", "21RD73-16A", "21RD73-18A", "21RD73-19A",
+        "21RD73-20A", "21RD73-21A", "21RD73-22A", "21RD73-23A"
+      ]
+    },
+    {
+      "name": "rbcL",
+      "fullName": "Partial chloroplast ribulose bisphosphate carboxylase large chain",
+      "description": {
+        "en": "Partial chloroplast ribulose bisphosphate carboxylase large chain (rbcL) of plant voucher specimen of Lysimachia christinae and Chinese Materia Medica (CMM) Herba Lysimachiae",
+        "zh-hk": "植物憑證標本及中藥材金錢草標本的葉綠體二磷酸核酮糖羧化酶大鏈(rbcL)部分序列"
+      },
+      "sequenceLength": 554,
+      "consensusSequence": "AGGTACTGGATTCAAAGCTGGTGTTAAAGATTACAAATTGAATTATTATACTCCTGAGTATGCAACCAAGGATACTGATATCTTGGCAGCATTCCGAGTAACTCCTCAACCAGGAGTTCCGCCCGAAGAAGCAGGGGCCGCAGTAGCTGCCGAATCTTCTACTGGTACATGGACAACCGTGTGGACCGATGGACTTACTAGCCTTGATCGTTACAAAGGGCGATGCTACAACATCGAGCCTGTTGCTGGAGAAGAAAATCAATATATTTGTTATGTAGCTTATCCTTTAGACCTTTTTGAAGAAGGTTCTGTTACTAACATGTTGACTTCTATTGTTGGTAATGTATTTGGGTTCAAAGCCCTGCGCGCTCTACGTCTGGAAGATCTTCGAATCCCGCCTGCGTATGTTAAAACTTTCCAAGGACCGCCTCATGGTATCCAAGTTGAAAGAGATAAATTGAATAAATATGGTCGTCCACTGTTGGGATGTACTATTAAACCTAAATTGGGGTTATCCGCTAAAAACTACGGTAGGGCTGTTTATGAATGTCTT",
+      "specimenCount": 20,
+      "specimens": [
+        "22RD49-1A",
+        "21RD73-1A", "21RD73-2A", "21RD73-3A", "21RD73-4B", "21RD73-5A",
+        "21RD73-6A", "21RD73-7A", "21RD73-11A", "21RD73-12A", "21RD73-13A",
+        "21RD73-14A", "21RD73-15A", "21RD73-16A", "21RD73-18A", "21RD73-19A",
+        "21RD73-20A", "21RD73-21A", "21RD73-22A", "21RD73-23A"
+      ]
+    }
+  ],
+  "specimen": {
+    "gcmtiCode": "GA0000716a00",
+    "type": "Chinese Materia Medica (CMM) Herba Lysimachiae",
+    "totalSpecimens": 20
+  },
+  "methodology": {
+    "format": "FASTA",
+    "sequencingTargets": ["ITS2", "psbA-trnH", "rbcL"],
+    "specimenTypes": ["Plant voucher specimen", "Chinese Materia Medica (CMM) Herba Lysimachiae"]
+  },
+  "extracted": {
+    "date": "2026-02-20",
+    "extractedBy": "automated extraction from PDF"
+  }
+}

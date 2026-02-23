@@ -1,0 +1,51 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/botany.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/barcode/milk-thistle",
+  "@type": [
+    "botany:DNABarcode",
+    "schema:Dataset"
+  ],
+  "name": {
+    "en": "Milk Thistle DNA Barcode",
+    "zh-Hant": "乳薊DNA條碼",
+    "zh-Hans": "乳蓟DNA条码"
+  },
+  "barcodes": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/milk-thistle"
+  },
+  "sequence": [
+    {
+      "region": "rbcL",
+      "sequence": "ATGTCACCACAAACAGAAACTAAAGCAAGTGTTGGATTATAAAGGTCAGTTCGATCTTTGAATAATTCATTATTTGATTTATTCAAATCCACGTCGACTTGTAGACAGATCTTTTATAAAATTGTAAAAAATCAATCTTAAGTTTTTTATTTGATCCTTTTTATTAATTCAGAATCTTTTGTATATCTATTCATGAGTTAAACTTTTTATTTGTATCAAAAATCACTATATATATATATATATATATAATACATATATATATATATATTTATTCCTTTTATTTATTTCTTATAATTCATTTTTTTTTTTTTTTAATATAGATATATATATATATTTTATTTTTTTATATTTTTTTTTAATATATATATATATATATATATATATATATATATATA",
+      "length": 555,
+      "genbankAccession": "KX686853"
+    },
+    {
+      "region": "matK",
+      "sequence": "TCTAGAGCAAGTCTTTGCCTTAAACTTGGTTTTTCTTATCAATTAAGAATCCTTTTATTTTCATTTTATTTGATGATTTTTCAAATATTATAAATCTTCAATTTTATATTTAATTTATCTTTTAATATTATTATCAATTTTTTTATTTATTTTTATTTTTATAAATAATTTGATACTTCTTTTATTAATACAACTTCAATATATATTTATTATATTTTATTTTATTTTTTTTCTATTATTAATAATTTATATAAATATTATTTCTTTAATATTTTAATTTTTTTTTTGAATTATTTTTTAATTTTTTTATATTTTAATATAATATTTAATATATTTATTTATTTTTTTTTAAATATTTTATATTTATTTTTTATATTTTTTTTATTTAATAATAATTTTATTTTTTTTTTTTTTAATATTAATATAATAATAA",
+      "length": 658,
+      "genbankAccession": "KX686854"
+    },
+    {
+      "region": "ITS2",
+      "sequence": "CGATCGATACGTTTGAATGCATTGATATTCGTCGTGATGATTCACGATGCTTTGCTGCGAGCTTCTCTCCGCTCATCGATGAAGAACGTAGCGAAATGCGATACTTGGTGTGAATTGCAGAATCCCGTGAACCATCGAGTCTTTGAACGCAAGTTGCGCCCGAAGCCTTTAGTTGAGGGTACTGATGTGAATCGTCTTTTATCAACACTATATAC",
+      "length": 227,
+      "genbankAccession": "AY722269"
+    }
+  ],
+  "adulterantDetection": {
+    "canDetect": [
+      "Silybum eburneum",
+      "Carduus species",
+      "Cirsium species"
+    ],
+    "description": {
+      "en": "DNA barcoding can distinguish Silybum marianum from related thistle species"
+    }
+  },
+  "provenance": {
+    "created": "2026-02-21T00:00:00.000Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

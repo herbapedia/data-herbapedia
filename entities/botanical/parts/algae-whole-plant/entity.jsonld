@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/algae-whole-plant",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Algae Whole Plant",
+    "zh-Hant": "深海海藻",
+    "zh-Hans": "深海海藻"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/algae"
+  },
+  "partType": "whole-plant",
+  "description": {
+    "en": "The whole-plant of Sargassum fusiforme, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.804Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

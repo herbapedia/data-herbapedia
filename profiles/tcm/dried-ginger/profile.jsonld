@@ -1,0 +1,105 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/tcm.jsonld",
+  "@id": "https://www.herbapedia.org/system/tcm/profile/dried-ginger",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "profiles": {
+    "@id": "https://www.herbapedia.org/entity/preparation/dried-ginger-rhizome"
+  },
+  "name": {
+    "en": "Dried Ginger",
+    "zh-Hant": "乾薑",
+    "zh-Hans": "干姜"
+  },
+  "pinyin": "Gān Jiāng",
+  "hanyuPinlu": "gan1 jiang1",
+  "derivedFromPlant": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/ginger"
+  },
+  "hasCategory": {
+    "@id": "https://www.herbapedia.org/system/tcm/category/warm-interior"
+  },
+  "hasNature": {
+    "@id": "https://www.herbapedia.org/system/tcm/nature/hot"
+  },
+  "hasFlavor": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/flavor/pungent"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/spleen"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/stomach"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/heart"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/lung"
+    }
+  ],
+  "tcmFunctions": {
+    "en": "Warms the middle and dispels cold, restores devastated yang, warms the lungs and resolves phlegm dampness. Stronger warming effect than fresh ginger.",
+    "zh-Hant": "溫中散寒，回陽通脈，溫肺化飲。溫熱之力較生薑為強。"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Used for cold patterns affecting the spleen and stomach (abdominal pain, cold limbs, diarrhea), yang collapse with cold limbs and weak pulse, and cold phlegm in the lungs with wheezing.",
+    "zh-Hant": "用於脾胃寒證（腹痛、肢冷、洩瀉），亡陽證（四肢厥逆、脈微欲絕），寒飲喘咳。"
+  },
+  "tcmModernResearch": {
+    "en": "Research shows gingerols and shogaols have anti-inflammatory, antioxidant, and antiemetic effects. Dried ginger has higher concentrations of shogaols compared to fresh ginger, which may explain its stronger warming properties."
+  },
+  "indications": [
+    "Spleen/stomach cold",
+    "Abdominal pain and cold",
+    "Vomiting and diarrhea",
+    "Yang collapse",
+    "Cold phlegm wheezing"
+  ],
+  "contraindications": {
+    "en": "Contraindicated in yin deficiency with heat signs, bleeding disorders, and pregnancy (use with caution).",
+    "zh-Hant": "陰虛內熱、血熱妄行者忌用，孕婦慎用。"
+  },
+  "dosage": {
+    "en": "3-10g decocted. For rescue from yang collapse, up to 30g may be used.",
+    "zh-Hant": "煎服，3-10克。回陽救逆可用至30克。"
+  },
+  "incompatibilities": {
+    "en": "None specifically noted in classical texts"
+  },
+  "dosageEffect": {
+    "small": {
+      "effect": "Gentle warming, promotes digestion"
+    },
+    "medium": {
+      "effect": "Clear warming, dispels cold"
+    },
+    "large": {
+      "effect": "Strong warming, rescues yang"
+    }
+  },
+  "comparisonNotes": {
+    "en": "Compared to fresh ginger (生薑): Dried ginger is hotter and more drying, better for internal cold and yang collapse. Fresh ginger is cooler and promotes sweating, better for exterior cold patterns."
+  },
+  "classicalReferences": [
+    {
+      "text": "神農本草經",
+      "reference": "上品",
+      "quote": "味辛溫。主胸滿咳逆上氣，溫中，止血，出汗，逐風濕痹，腸澼下利。"
+    },
+    {
+      "text": "本草綱目",
+      "reference": "菜部",
+      "quote": "乾薑生用，能助陽退熱，溫中散寒。"
+    }
+  ],
+  "provenance": {
+    "created": "2024-01-15",
+    "source": "神農本草經, 本草綱目, 中藥學教材"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/preparation/red-ginseng",
+  "@type": [
+    "herbal:HerbalPreparation",
+    "schema:DietarySupplement"
+  ],
+  "name": {
+    "en": "Red Ginseng",
+    "zh-Hant": "紅蔘",
+    "zh-Hans": "红参"
+  },
+  "derivedFrom": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/part/ginseng-root"
+    }
+  ],
+  "preparationMethod": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/method/steamed"
+  },
+  "form": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/form/whole"
+  },
+  "description": {
+    "en": "Steamed and dried ginseng root. Traditional processing method that enhances certain bioactive compounds."
+  },
+  "provenance": {
+    "created": "2026-02-21",
+    "source": "Herbapedia Team",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "image": "media/images/red-ginseng/red-ginseng.jpg"
+}

@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/turmeric",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/turmeric",
   "@type": [
     "botany:Plant",
     "schema:Thing"
@@ -31,14 +31,16 @@
   "image": "media/images/turmeric/turmeric.jpg",
   "containsChemical": [
     {
-      "@id": "chemical/curcumin"
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/curcumin"
     },
     {
-      "@id": "chemical/flavonoids"
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/flavonoids"
     }
   ],
   "sameAs": [
-    "https://www.wikidata.org/wiki/Q183755"
+    {
+      "@id": "https://www.wikidata.org/wiki/Q183755"
+    }
   ],
   "gbifId": "2757202",
   "created": "2026-02-20T00:00:00.000Z",

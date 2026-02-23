@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/green-tea-leaf",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Green Tea Leaf",
+    "zh-Hant": "綠茶",
+    "zh-Hans": "绿茶"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/green-tea"
+  },
+  "partType": "leaf",
+  "description": {
+    "en": "The leaf of Camellia Sinensis, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.816Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

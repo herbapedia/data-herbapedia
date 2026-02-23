@@ -1,11 +1,11 @@
 {
-  "@context": "../../schema/context/western.jsonld",
-  "@id": "western/st-johns-wort",
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/st-johns-wort",
   "@type": [
     "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
-    "@id": "plant/st-johns-wort"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/st-johns-wort"
   },
   "name": {
     "en": "St. John&#039;s Wort",

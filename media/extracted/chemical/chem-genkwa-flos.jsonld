@@ -1,0 +1,305 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/chemical/genkwa-flos",
+  "@type": ["herbapedia:ChemicalAnalysisData", "schema:Dataset"],
+  "dataType": "ChemicalAnalysis",
+  "sourceDocument": "CHEM____Genkwa_Flos_V1.pdf",
+  "scientificName": "Daphne genkwa Sieb. et Zucc.",
+  "chineseName": "芫花",
+  "pinyinName": "Yuan Hua",
+  "identificationMethod": ["TLC", "HPLC-Fingerprint", "HPLC-Assay"],
+  "referenceCompounds": [
+    {
+      "name": "Genkwanin",
+      "chineseName": "芫花素",
+      "formula": "C₁₆H₁₂O₅",
+      "purpose": ["TLC identification", "HPLC fingerprint marker", "HPLC assay quantification"]
+    }
+  ],
+  "assayLimits": {
+    "genkwanin": {
+      "compound": "Genkwanin",
+      "formula": "C₁₆H₁₂O₅",
+      "description": "Quantification by HPLC using external standard method"
+    }
+  },
+  "tlcMethod": {
+    "appendixReference": "Appendix I",
+    "stationaryPhase": "HPTLC silica gel F₂₅₄ plate",
+    "developingSolvent": {
+      "components": ["petroleum ether (60-80°C)", "ethyl acetate", "formic acid"],
+      "ratio": "3:2:0.1 (v/v/v)"
+    },
+    "testSolution": {
+      "sampleAmount": "1.0 g",
+      "solvent": "ethanol",
+      "solventVolume": "20 mL",
+      "extraction": "ultrasonication at 270 W for 10 minutes",
+      "evaporation": "rotary evaporator under reduced pressure to dryness",
+      "finalVolume": "1 mL ethanol"
+    },
+    "standardSolutions": {
+      "genkwanin": {
+        "concentration": "2.0 mg/mL in ethanol",
+        "preparation": "1.0 mg genkwanin reference standard in 0.5 mL ethanol"
+      }
+    },
+    "applicationVolumes": {
+      "standardSolution": "2 µL",
+      "testSolution": "3 µL"
+    },
+    "developingDistance": "approximately 5 cm",
+    "visualization": "UV light at 254 nm",
+    "identificationCriteria": {
+      "positiveMarkers": ["Genkwanin"],
+      "identificationRequirement": "Sample must show spots or bands with characteristics (color and Rf value) corresponding to genkwanin"
+    }
+  },
+  "hplcFingerprint": {
+    "appendixReference": "Appendix II",
+    "chromatographicSystem": {
+      "detector": "DAD (Diode Array Detector)",
+      "detectionWavelength": "340 nm",
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 µm"
+      },
+      "flowRate": "1.0 mL/min",
+      "injectionVolume": "10 µL",
+      "runTime": "60 min",
+      "mobilePhase": {
+        "solventA": "0.5% acetic acid (v/v)",
+        "solventB": "acetonitrile",
+        "gradientProgram": [
+          {
+            "timeRange": "0-60 min",
+            "solventA": "95% → 15%",
+            "solventB": "5% → 85%",
+            "elution": "linear gradient"
+          }
+        ]
+      }
+    },
+    "standardSolutions": {
+      "fingerprintSolution": {
+        "name": "Std-FP",
+        "concentration": "48 mg/L",
+        "preparation": "1.2 mg genkwanin reference substance in 25 mL methanol"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "0.5 g",
+      "solvent": "methanol",
+      "initialSolventVolume": "10 mL",
+      "container": "50 mL centrifuge tube",
+      "extraction": "ultrasonication at 270 W for 30 minutes",
+      "centrifugation": "approximately 5000 × g for 5 minutes",
+      "repeatExtraction": "once",
+      "finalVolume": "25 mL volumetric flask with methanol",
+      "filtration": "0.45 µm RC (regenerated cellulose) microporous membrane"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "peakAreaRSD": "≤ 5.0% (Genkwanin)",
+      "retentionTimeRSD": "≤ 2.0% (Genkwanin)",
+      "theoreticalPlates": "≥ 300,000 (based on Genkwanin)",
+      "resolution": "≥ 1.5 (between peak 8 and adjacent peak)"
+    },
+    "identificationCriteria": {
+      "retentionTimeTolerance": "≤ 2.0% difference between sample and standard"
+    }
+  },
+  "hplcAssay": {
+    "appendixReference": "Appendix III",
+    "chromatographicSystem": {
+      "detector": "DAD (Diode Array Detector)",
+      "detectionWavelength": "340 nm",
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 µm"
+      },
+      "flowRate": "1.0 mL/min",
+      "injectionVolume": "10 µL",
+      "runTime": "60 min",
+      "mobilePhase": {
+        "solventA": "0.5% acetic acid (v/v)",
+        "solventB": "acetonitrile",
+        "gradientProgram": [
+          {
+            "timeRange": "0-60 min",
+            "solventA": "95% → 15%",
+            "solventB": "5% → 85%",
+            "elution": "linear gradient"
+          }
+        ]
+      }
+    },
+    "standardSolutions": {
+      "stockSolution": {
+        "name": "Std-Stock",
+        "concentration": "240 mg/L",
+        "preparation": "2.4 mg genkwanin reference standard in 10 mL methanol"
+      },
+      "workingSolutions": {
+        "name": "Std-AS",
+        "concentrations": ["3", "12", "24", "48", "72 mg/L"],
+        "description": "Series of genkwanin standard solutions diluted from stock with methanol"
+      },
+      "injectionVolume": "10 µL"
+    },
+    "testSolution": {
+      "sampleAmount": "0.5 g",
+      "solvent": "methanol",
+      "extractionVolume": "10 mL × 2 extractions",
+      "extraction": "ultrasonication at 270 W for 30 minutes",
+      "centrifugation": "approximately 5000 × g for 5 minutes",
+      "finalVolume": "25 mL volumetric flask",
+      "filtration": "0.45 µm RC (regenerated cellulose) microporous membrane"
+    },
+    "systemSuitability": {
+      "standardSolution": "Std-AS (48 mg/L)",
+      "replicateInjections": "5 (minimum)",
+      "injectionVolume": "10 µL",
+      "peakAreaRSD": "≤ 5.0% (Genkwanin)",
+      "retentionTimeRSD": "≤ 2.0% (Genkwanin)",
+      "theoreticalPlates": "≥ 300,000 (based on Genkwanin)",
+      "resolution": "≥ 1.5 (between Genkwanin peak and adjacent peak)"
+    },
+    "calibration": {
+      "method": "5-point calibration curve",
+      "plot": "Peak area vs. concentration (mg/L)",
+      "identificationTolerance": "≤ 2.0% difference in retention times"
+    }
+  },
+  "rrtValues": [
+    {
+      "peakNumber": 1,
+      "compound": "Characteristic Peak 1",
+      "rrt": 0.50,
+      "acceptableRange": "± 0.03",
+      "referenceMarker": false,
+      "referenceTo": "Genkwanin"
+    },
+    {
+      "peakNumber": 2,
+      "compound": "Characteristic Peak 2",
+      "rrt": 0.51,
+      "acceptableRange": "± 0.03",
+      "referenceMarker": false,
+      "referenceTo": "Genkwanin"
+    },
+    {
+      "peakNumber": 3,
+      "compound": "Characteristic Peak 3",
+      "rrt": 0.53,
+      "acceptableRange": "± 0.03",
+      "referenceMarker": false,
+      "referenceTo": "Genkwanin"
+    },
+    {
+      "peakNumber": 4,
+      "compound": "Characteristic Peak 4",
+      "rrt": 0.54,
+      "acceptableRange": "± 0.03",
+      "referenceMarker": false,
+      "referenceTo": "Genkwanin"
+    },
+    {
+      "peakNumber": 5,
+      "compound": "Characteristic Peak 5",
+      "rrt": 0.57,
+      "acceptableRange": "± 0.03",
+      "referenceMarker": false,
+      "referenceTo": "Genkwanin"
+    },
+    {
+      "peakNumber": 6,
+      "compound": "Characteristic Peak 6",
+      "rrt": 0.77,
+      "acceptableRange": "± 0.03",
+      "referenceMarker": false,
+      "referenceTo": "Genkwanin"
+    },
+    {
+      "peakNumber": 7,
+      "compound": "Characteristic Peak 7",
+      "rrt": 0.89,
+      "acceptableRange": "± 0.03",
+      "referenceMarker": false,
+      "referenceTo": "Genkwanin"
+    },
+    {
+      "peakNumber": 8,
+      "compound": "Genkwanin",
+      "chineseName": "芫花素",
+      "rrt": 1.00,
+      "acceptableRange": null,
+      "referenceMarker": true,
+      "referenceTo": "self"
+    }
+  ],
+  "tests": {
+    "heavyMetals": {
+      "appendixReference": "Appendix V",
+      "requirements": {
+        "lead": "not more than 5.0 ppm",
+        "arsenic": "not more than 2.0 ppm",
+        "cadmium": "not more than 1.0 ppm",
+        "mercury": "not more than 0.2 ppm"
+      }
+    },
+    "pesticideResidues": {
+      "appendixReference": "Appendix VI",
+      "requirements": {
+        "totalBHC": "not more than 0.2 ppm",
+        "totalDDT": "not more than 0.2 ppm",
+        "PCNB": "not more than 0.1 ppm"
+      }
+    },
+    "mycotoxins": {
+      "appendixReference": "Appendix VII",
+      "requirements": {
+        "totalAflatoxins": "not more than 10 ppb (B1+B2+G1+G2)",
+        "aflatoxinB1": "not more than 5 ppb"
+      }
+    },
+    "foreignMatter": {
+      "appendixReference": "Appendix VIII",
+      "requirement": "not more than 2.0%"
+    },
+    "ash": {
+      "appendixReference": "Appendix IX",
+      "totalAsh": "not more than 8.0%",
+      "acidInsolubleAsh": "not more than 1.0%"
+    },
+    "waterContent": {
+      "appendixReference": "Appendix X",
+      "method": "Toluene distillation method",
+      "requirement": "not more than 13.0%"
+    },
+    "extractives": {
+      "appendixReference": "Appendix XI",
+      "ethanolSoluble": {
+        "method": "Hot extraction method",
+        "requirement": "not less than 12.0%"
+      }
+    }
+  },
+  "appendices": {
+    "appendixI": {
+      "title": "Chromatography - Thin-Layer Chromatography (TLC)",
+      "description": "General procedures for TLC including plate types, application methods, developing chambers, Rf calculation, and visualization techniques"
+    },
+    "appendixII": {
+      "title": "Gas Chromatographic and HPLC/UHPLC Fingerprinting",
+      "description": "Methods for establishing chromatographic fingerprints using marker peaks and RRT values"
+    },
+    "appendixIII": {
+      "title": "Chromatography - HPLC/UHPLC",
+      "description": "General HPLC/UHPLC procedures including system suitability tests (theoretical plates, repeatability, resolution, tailing factor) and quantitative calculations"
+    }
+  },
+  "extractedAt": "2026-02-21"
+}

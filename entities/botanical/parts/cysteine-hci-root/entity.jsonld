@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/cysteine-hci-root",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Cysteine (HCI) Root",
+    "zh-Hant": "L-半胱氨酸",
+    "zh-Hans": "L-半胱氨酸"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/cysteine-hci"
+  },
+  "partType": "root",
+  "description": {
+    "en": "The root of L-Cysteine, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.812Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/selenium",
+  "@type": [
+    "herbapedia:MineralSource",
+    "schema:Thing"
+  ],
+  "name": {
+    "en": "Selenium",
+    "zh-Hant": "硒",
+    "zh-Hans": "硒"
+  },
+  "scientificName": null,
+  "family": null,
+  "genus": null,
+  "description": {
+    "en": "Selenium is found naturally in brazil nuts, butter, flour, fish, lobsters and smelt. However, the selenium content of plant and animal foodstuffs is affected by the selenium content of the soil and animal feed, respectively.\n",
+    "zh-Hant": "硒是一種人體必需的礦物質元素，參與骨骼代謝、神經傳導、酶活性調節等多種生理功能。適量攝入對維持機體正常代謝和生理功能具有重要意義。",
+    "zh-Hans": "硒是一种人体必需的礦物质元素，參与骨骼代謝、神经传導、酶活性调节等多种生理功能。適量攝入對維持机体正常代謝和生理功能具有重要意義。"
+  },
+  "image": "media/images/selenium/main.jpg",
+  "provenance": {
+    "created": "2026-02-18T09:16:57.454Z",
+    "modified": "2026-02-21T01:46:20.758Z",
+    "migratedFrom": "entities/plants/selenium/entity.jsonld",
+    "source": "vitaherbapedia.com",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "classificationNote": "Reclassified as MineralSource"
+  },
+  "wikidataID": "Q737",
+  "sourceType": "mineral",
+  "hasWesternProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/western/profile/selenium"
+    }
+  ]
+}

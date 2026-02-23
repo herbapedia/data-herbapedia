@@ -1,0 +1,93 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/tcm.jsonld",
+  "@id": "https://www.herbapedia.org/system/tcm/profile/jiang-huang",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "profiles": {
+    "@id": "https://www.herbapedia.org/entity/preparation/turmeric-rhizome"
+  },
+  "name": {
+    "en": "Turmeric",
+    "zh-Hant": "薑黃",
+    "zh-Hans": "姜黄"
+  },
+  "pinyin": "Jiāng Huáng",
+  "hanyuPinlu": "jiang1 huang2",
+  "derivedFromPlant": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/turmeric"
+  },
+  "hasCategory": {
+    "@id": "https://www.herbapedia.org/system/tcm/category/invigorate-blood"
+  },
+  "hasNature": {
+    "@id": "https://www.herbapedia.org/system/tcm/nature/warm"
+  },
+  "hasFlavor": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/flavor/pungent"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/flavor/bitter"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/spleen"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/liver"
+    }
+  ],
+  "tcmFunctions": {
+    "en": "Invigorates blood circulation, promotes the movement of qi, unblocks channels and alleviates pain. Clears heat from deficiency.",
+    "zh-Hant": "活血行氣，通經止痛。清虛熱。"
+  },
+  "tcmTraditionalUsage": {
+    "en": "Used for blood stasis patterns with pain, irregular menstruation, dysmenorrhea, amenorrhea, chest and abdominal pain, traumatic injuries, and wind-damp painful obstruction. Also used for jaundice and heat from deficiency.",
+    "zh-Hant": "用於血瘀氣滯之痛證，月經不調，痛經，閉經，胸腹脅痛，跌打損傷，風濕痹痛。亦治黃疸及虛熱。"
+  },
+  "tcmModernResearch": {
+    "en": "Extensively researched for anti-inflammatory, antioxidant, hepatoprotective, and anticancer properties. Curcumin has demonstrated COX-2 inhibition and NF-κB modulation, supporting traditional uses for pain and inflammation."
+  },
+  "indications": [
+    "Blood stasis with pain",
+    "Irregular menstruation",
+    "Dysmenorrhea",
+    "Traumatic injuries",
+    "Wind-damp arthritis",
+    "Jaundice",
+    "Chest and abdominal pain"
+  ],
+  "contraindications": {
+    "en": "Contraindicated in pregnancy (promotes blood circulation), and in cases of bleeding without stasis.",
+    "zh-Hant": "孕婦忌用。無瘀血者慎用。"
+  },
+  "dosage": {
+    "en": "3-10g decocted. Best taken with meals to enhance absorption.",
+    "zh-Hant": "煎服，3-10克。"
+  },
+  "incompatibilities": {
+    "en": "None specifically noted"
+  },
+  "comparisonNotes": {
+    "en": "Compared to Yu Jin (鬱金): Jiang Huang is more warming and better for blood stasis with cold patterns. Yu Jin is cooling and better for blood stasis with heat."
+  },
+  "classicalReferences": [
+    {
+      "text": "唐本草",
+      "reference": "",
+      "quote": "主心腹結積，疰忤，下氣，破血，除風熱，消癰腫。"
+    },
+    {
+      "text": "日華子諸家本草",
+      "reference": "",
+      "quote": "治癥瘕血塊，癰腫，通月經，治跌扑瘀血，消腫毒。"
+    }
+  ],
+  "provenance": {
+    "created": "2024-01-15",
+    "source": "唐本草, 日華子諸家本草, 中藥學教材"
+  }
+}

@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/ginger",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/ginger",
   "@type": [
     "botany:Plant",
     "schema:Thing"
@@ -28,17 +28,19 @@
     "zh-Hant": "多年生草本植物，高1米。葉狹窄，披針形，長15-30厘米。花淡黃色帶紫色邊緣，密集成穗狀。根莖呈結狀和分枝狀，皮褐色，肉黃色。",
     "zh-Hans": "多年生草本植物，高1米。叶狭窄，披针形，长15-30厘米。花淡黄色带紫色边缘，密集成穗状。根茎呈结状和分枝状，皮褐色，肉黄色。"
   },
-  "image": "media/images/ginger/ginger.jpg",
+  "image": "media/images/zingiber-officinale/zingiber-officinale.jpg",
   "containsChemical": [
     {
-      "@id": "chemical/gingerol"
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/gingerol"
     },
     {
-      "@id": "chemical/essential-oils"
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/essential-oils"
     }
   ],
   "sameAs": [
-    "https://www.wikidata.org/wiki/Q159964"
+    {
+      "@id": "https://www.wikidata.org/wiki/Q159964"
+    }
   ],
   "gbifId": "2755267",
   "created": "2026-02-20T00:00:00.000Z",

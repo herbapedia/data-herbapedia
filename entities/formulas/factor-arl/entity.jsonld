@@ -1,0 +1,30 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/formula/factor-arl",
+  "@type": [
+    "herbapedia:Formula",
+    "schema:DietarySupplement"
+  ],
+  "name": {
+    "en": "Factor ARL",
+    "zh-Hant": "ARL 抗皺因子",
+    "zh-Hans": "ARL 抗皱因子"
+  },
+  "scientificName": null,
+  "family": null,
+  "genus": null,
+  "description": {
+    "en": "Anti-wrinkle functional ingredient used in cosmetic formulations."
+  },
+  "image": "media/images/factor-arl/factor-arl.jpg",
+  "provenance": {
+    "created": "2026-02-18T09:17:07.391Z",
+    "modified": "2026-02-21T01:46:20.751Z",
+    "migratedFrom": "entities/plants/factor-arl/entity.jsonld",
+    "source": "vitaherbapedia.com",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "classificationNote": "Reclassified as Formula"
+  },
+  "sourceType": "formula",
+  "sourceSubType": "proprietary"
+}

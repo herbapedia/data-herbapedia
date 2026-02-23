@@ -1,0 +1,201 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herbapedia.org/schema/json-schema/reference/mongolian-root.schema.json",
+  "title": "Mongolian Three Roots",
+  "description": "Mongolian Traditional Medicine Three Roots ( гурван үндэс). The three fundamental energies that govern physiology: Heyi (Wind), Xila (Bile), and Badagan (Phlegm). Corresponds to Ayurvedic tridosha but with Mongolian characteristics.",
+  "type": "object",
+  "allOf": [
+    { "$ref": "./reference-entity.schema.json" }
+  ],
+  "required": ["@id", "@type", "name"],
+  "properties": {
+    "@id": {
+      "description": "Unique identifier: mongolian/root/{slug}.",
+      "type": "string",
+      "pattern": "^mongolian/root/[a-z0-9-]+$",
+      "examples": [
+        "mongolian/root/heyi",
+        "mongolian/root/xila",
+        "mongolian/root/badagan"
+      ]
+    },
+    "@type": {
+      "type": "array",
+      "items": { "type": "string" },
+      "contains": { "const": "mongolian:Root" },
+      "examples": [["mongolian:Root"]]
+    },
+    "name": {
+      "description": "Root name in Mongolian and English.",
+      "$ref": "../core/language-map.schema.json",
+      "examples": [{ "mn": "хий", "en": "Heyi (Wind)" }]
+    },
+    "mongolianName": {
+      "description": "Mongolian name (Cyrillic).",
+      "type": "string",
+      "examples": ["хий", "шар", "бадган"]
+    },
+    "tibetanName": {
+      "description": "Tibetan name.",
+      "type": "string",
+      "examples": ["རླུང་", "མཁྲིས་པ་", "བད་ཀན་"]
+    },
+    "tibetanWylie": {
+      "description": "Wylie transliteration.",
+      "type": "string",
+      "examples": ["rlung", "mkhris pa", "bad kan"]
+    },
+    "englishName": {
+      "description": "English translation.",
+      "type": "string",
+      "examples": ["Wind", "Bile", "Phlegm"]
+    },
+    "elementComposition": {
+      "description": "Element composition of this root.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "element": {
+            "type": "string",
+            "enum": ["space", "air", "fire", "water", "earth"]
+          },
+          "proportion": {
+            "type": "string",
+            "enum": ["primary", "secondary"]
+          }
+        }
+      },
+      "_documentation": {
+        "heyi": "Space + Air",
+        "xila": "Fire + Water",
+        "badagan": "Water + Earth"
+      }
+    },
+    "primaryLocation": {
+      "description": "Primary location in the body.",
+      "type": "string",
+      "examples": ["Pelvis/Hip", "Liver/Gallbladder", "Chest/Throat"]
+    },
+    "primaryFunction": {
+      "description": "Primary physiological function.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "characteristics": {
+      "description": "Physical and mental characteristics.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "subtypes": {
+      "description": "Sub-types of this root.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "location": { "type": "string" },
+          "function": { "type": "string" }
+        }
+      },
+      "_documentation": {
+        "heyi_subtypes": "5 types: Life-supporting, Upward-moving, Pervasive, Fire-accompanying, Downward-clearing",
+        "xila_subtypes": "5 types: Digestive, Color-transforming, Accomplishing, Sight-giving, Complexion-clearing",
+        "badagan_subtypes": "5 types: Supportive, Decomposing, Experiencing, Satiating, Connecting"
+      }
+    },
+    "imbalanceSymptoms": {
+      "description": "Symptoms of excess (increase).",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "deficiencySymptoms": {
+      "description": "Symptoms of deficiency (decrease).",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "aggravatingFactors": {
+      "description": "Factors that increase this root.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "pacifyingFactors": {
+      "description": "Factors that decrease/balance this root.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "associatedSeason": {
+      "description": "Season when this root naturally increases.",
+      "type": "string"
+    },
+    "associatedTimeOfDay": {
+      "description": "Time of day when this root is dominant.",
+      "type": "string"
+    },
+    "associatedAge": {
+      "description": "Life stage associated with this root.",
+      "type": "string",
+      "examples": ["old age", "middle age", "childhood"]
+    },
+    "associatedTastes": {
+      "description": "Tastes that affect this root.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "taste": { "type": "string" },
+          "effect": { "type": "string", "enum": ["increases", "decreases", "balances"] }
+        }
+      }
+    },
+    "ayurvedaEquivalent": {
+      "description": "Corresponding Ayurvedic dosha.",
+      "type": "string",
+      "enum": ["vata", "pitta", "kapha"],
+      "_documentation": {
+        "heyi": "Corresponds to Vata",
+        "xila": "Corresponds to Pitta",
+        "badagan": "Corresponds to Kapha"
+      }
+    }
+  },
+  "additionalProperties": true,
+  "_documentation": {
+    "iriPattern": "mongolian/root/{slug}",
+    "directory": "systems/mongolian/reference/roots.jsonld",
+    "threeRoots": {
+      "heyi": {
+        "mongolian": "хий",
+        "tibetan": "རླུང་ (rlung)",
+        "elements": "Space + Air",
+        "location": "Pelvis, hip region, lower back",
+        "function": "Movement, breathing, circulation, nerve impulses",
+        "characteristics": ["Light", "Mobile", "Cold", "Rough", "Subtle"],
+        "season": "Early summer, monsoon",
+        "age": "Old age",
+        "ayurveda": "Vata"
+      },
+      "xila": {
+        "mongolian": "шар",
+        "tibetan": "མཁྲིས་པ་ (mkhris pa)",
+        "elements": "Fire + Water",
+        "location": "Liver, gallbladder, mid-body",
+        "function": "Digestion, metabolism, body temperature, complexion",
+        "characteristics": ["Hot", "Sharp", "Oily", "Light", "Malodorous"],
+        "season": "Autumn",
+        "age": "Middle age",
+        "ayurveda": "Pitta"
+      },
+      "badagan": {
+        "mongolian": "бадган",
+        "tibetan": "བད་ཀན་ (bad kan)",
+        "elements": "Water + Earth",
+        "location": "Chest, throat, head, upper body",
+        "function": "Structure, stability, immunity, lubrication",
+        "characteristics": ["Heavy", "Cold", "Oily", "Slow", "Smooth", "Stable"],
+        "season": "Spring",
+        "age": "Childhood",
+        "ayurveda": "Kapha"
+      }
+    }
+  }
+}

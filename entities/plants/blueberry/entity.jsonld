@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/blueberry",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/blueberry",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"
@@ -24,10 +24,10 @@
   "license": "https://creativecommons.org/licenses/by-sa/4.0/",
   "containsChemical": [
     {
-      "@id": "chemical/anthocyanins"
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/anthocyanins"
     },
     {
-      "@id": "chemical/flavonoids"
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/flavonoids"
     }
   ],
   "modified": "2026-02-19T23:24:40.400Z"

@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/omega-9-root",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Omega 9 Root",
+    "zh-Hant": "奧米加9",
+    "zh-Hans": "奥米加9"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/omega-9"
+  },
+  "partType": "root",
+  "description": {
+    "en": "The root of Oleic acid, Erucic acid / ω-9 fatty acids, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.824Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

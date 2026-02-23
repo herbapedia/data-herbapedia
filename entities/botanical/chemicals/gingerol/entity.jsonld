@@ -1,0 +1,67 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/chemical/gingerol",
+  "@type": [
+    "botany:ChemicalCompound",
+    "schema:BioChemEntity"
+  ],
+  "name": {
+    "en": "[6]-Gingerol",
+    "zh-Hant": "薑辣素",
+    "zh-Hans": "姜辣素"
+  },
+  "iupacName": "5-hydroxy-1-(4-hydroxy-3-methoxyphenyl)decan-3-one",
+  "commonName": [
+    "6-Gingerol",
+    "[6]-Gingerol",
+    "Gingerol"
+  ],
+  "systematicName": "[6]-Gingerol; 5-Hydroxy-1-(4-hydroxy-3-methoxyphenyl)decan-3-one",
+  "molecularFormula": "C17H26O4",
+  "molecularWeight": 294.39,
+  "casNumber": "23513-14-6",
+  "pubchemCID": "5281794",
+  "chebiID": "CHEBI:33286",
+  "inchi": "InChI=1S/C17H26O4/c1-3-5-7-15(18)17(20)13-9-11(2)8-10-12(19)14(4)16(21)22-5/h9-10,15,17,19H,3-8H2,1-2H3",
+  "inchiKey": "WOBHKVAHKUKJSR-UHFFFAOYSA-N",
+  "smiles": "CCCC(=O)CC(O)CCc1ccc(O)c(OC)c1",
+  "compoundClass": "Phenylpropanoid; Gingerol",
+  "description": {
+    "en": "The major pungent constituent of fresh ginger (Zingiber officinale). It is responsible for the characteristic hot sensation of ginger. Upon drying or heating, gingerol converts to shogaol, which is more pungent.",
+    "zh-Hant": "生薑中的主要辛辣成分。負責生薑特有的辛辣感。乾燥或加熱時，薑辣素會轉化為薑烯酚，辛辣味更強。"
+  },
+  "foundIn": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/ginger"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/zingiber-officinale"
+    }
+  ],
+  "pharmacology": [
+    "Anti-inflammatory via COX-2 inhibition",
+    "Antioxidant activity",
+    "Antiemetic effects",
+    "Gastroprotective effects",
+    "Analgesic properties"
+  ],
+  "bioavailability": {
+    "en": "Absorbed rapidly, undergoes extensive first-pass metabolism. Metabolized to gingerol sulfate and glucuronide conjugates."
+  },
+  "safetyData": {
+    "ld50": "Oral, rat: > 5 g/kg",
+    "toxicity": "Generally Recognized As Safe (GRAS) by FDA",
+    "warnings": [
+      "High doses may cause heartburn",
+      "May increase bleeding risk with anticoagulants"
+    ]
+  },
+  "provenance": {
+    "created": "2024-01-15",
+    "modified": "2026-02-20T17:59:34.447Z",
+    "source": "PubChem, ChEBI, Scientific Literature",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  }
+}

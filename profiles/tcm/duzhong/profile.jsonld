@@ -1,0 +1,55 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/tcm.jsonld",
+  "@id": "https://www.herbapedia.org/system/tcm/profile/duzhong",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "profiles": {
+    "@id": "https://www.herbapedia.org/entity/preparation/duzhong"
+  },
+  "name": {
+    "en": "Duzhong",
+    "zh-Hant": "杜仲",
+    "zh-Hans": "杜仲"
+  },
+  "pinyin": "Duzhong",
+  "chineseName": {
+    "zh-Hant": "杜仲",
+    "zh-Hans": "杜仲"
+  },
+  "derivedFromPlant": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/duzhong"
+  },
+  "hasCategory": {
+    "@id": "https://www.herbapedia.org/system/tcm/category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "https://www.herbapedia.org/system/tcm/nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/spleen"
+    }
+  ],
+  "tcmTraditionalUsage": {
+    "en": "Sweet and warm in nature, duzhong tonifies the liver and kidneys, strengthens the sinews and bones and lowers blood pressure. It is also prescribed to prevent miscarriage in cases where the foetus is restless, or the woman is suffering from bleeding. A more recent use of this herb, which is made from the bark of the Eucommia tree, is to treat dizziness caused by hypertension.\n",
+    "zh-Hant": "杜仲是著名的溫補藥材，味甘而藥性溫，歸入肝、腎經，能補肝腎、強筋骨、安胎，傳統用於治療肝腎不足而致的腰膝酸痛、四肢無力、尿頻、性功能下降、胎動不安等。近年發現杜仲有助穩定血壓，常用於有血壓問題而又肝腎不足的情況。\n",
+    "zh-Hans": "杜仲是著名的溫补药材，味甘而药性溫，歸入肝、肾经，能补肝肾、强筋骨、安胎，传统用于治疗肝肾不足而致的腰膝酸痛、四肢無力、尿頻、性功能下降、胎动不安等。近年發現杜仲有助稳定血壓，常用于有血壓問題而又肝肾不足的情況。\n"
+  },
+  "tcmHistory": {
+    "en": "First appeared in Divine Husbandman's Classic of the Materia Medica, classified as upper class.\n",
+    "zh-Hant": "始載於《神農本草經》，列為上品\n",
+    "zh-Hans": "始载于《神農本草经》，列为上品\n"
+  },
+  "provenance": {
+    "created": "2026-02-20T15:20:59.826Z",
+    "modified": "2026-02-20T15:20:59.826Z",
+    "migratedFrom": "systems/tcm/herbs/duzhong/profile.jsonld"
+  }
+}

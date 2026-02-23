@@ -1,0 +1,34 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/thyme",
+  "@type": [
+    "herbapedia:BotanicalSource",
+    "botany:PlantSpecies",
+    "schema:Plant"
+  ],
+  "sourceType": "botanical",
+  "sourceSubType": "plant",
+  "scientificName": "Thymus vulgaris",
+  "family": "Lamiaceae",
+  "name": {
+    "en": "Thyme",
+    "zh-Hant": "百里香",
+    "zh-Hans": "百里香"
+  },
+  "description": {
+    "en": "A low-growing herbaceous plant with small aromatic leaves."
+  },
+  "wikidataID": "Q128457",
+  "hasExtract": [
+    {
+      "@id": "https://www.herbapedia.org/entity/preparation/thyme-oil"
+    }
+  ],
+  "provenance": {
+    "created": "2026-02-21",
+    "source": "Created as source plant for essential oil",
+    "purpose": "Enable proper linking of essential oil extracts"
+  },
+  "gbifID": "5342116",
+  "ncbiTaxonID": "49995"
+}

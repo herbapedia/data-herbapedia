@@ -1,0 +1,60 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/tcm.jsonld",
+  "@id": "https://www.herbapedia.org/system/tcm/profile/suanzaoren",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "profiles": {
+    "@id": "https://www.herbapedia.org/entity/preparation/suanzaoren"
+  },
+  "name": {
+    "en": "Suanzaoren",
+    "zh-Hant": "酸棗仁",
+    "zh-Hans": "酸枣仁"
+  },
+  "pinyin": "Suanzaoren",
+  "chineseName": {
+    "zh-Hant": "酸棗仁",
+    "zh-Hans": "酸枣仁"
+  },
+  "derivedFromPlant": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/suanzaoren"
+  },
+  "hasCategory": {
+    "@id": "https://www.herbapedia.org/system/tcm/category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "https://www.herbapedia.org/system/tcm/nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/spleen"
+    }
+  ],
+  "tcmTraditionalUsage": {
+    "en": "Made from the seeds of the sour date, suanzaoren is a sweet, neutral herb that affects the heart and liver meridians. It is a calming remedy that nourishes the heart yin, soothes the spirit and prevents abnormal sweating. It can be prescribed for patients suffering from sleeping problems, fatigue, poor appetite, forgetfulness and irritability.\n",
+    "zh-Hant": "酸棗仁為鼠李科落葉灌木或小喬木植物酸棗的成熟種子，味甘、酸，藥性平，能養心益肝、安神、斂汗，主治陰血不足、虛煩失眠、多夢、心悸怔忡、健忘、自汗盜汗等，近年常用於更年期綜合症引起的失眠、多汗等。\n",
+    "zh-Hans": "酸棗仁为鼠李科落叶灌木或小喬木植物酸棗的成熟种子，味甘、酸，药性平，能养心益肝、安神、斂汗，主治阴血不足、虚煩失眠、多夢、心悸怔忡、健忘、自汗盜汗等，近年常用于更年期綜合症引起的失眠、多汗等。\n"
+  },
+  "tcmModernResearch": {
+    "en": "The herb contains flavonoids (swertisins, zivulgarin, spinosin, etc.) which have shown sedative effects on animals in experiments.\n",
+    "zh-Hant": "【酸棗仁】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【酸棗仁】Modern Research內容待翻譯补充。"
+  },
+  "tcmHistory": {
+    "en": "First appeared in Divine Husbandman's Classic of the Materia Medica, classified as upper class.\n",
+    "zh-Hant": "始載於《神農本草經》，列為上品\n",
+    "zh-Hans": "始载于《神農本草经》，列为上品\n"
+  },
+  "provenance": {
+    "created": "2026-02-20T15:20:59.837Z",
+    "modified": "2026-02-20T15:20:59.837Z",
+    "migratedFrom": "systems/tcm/herbs/suanzaoren/profile.jsonld"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/rosemary",
+  "@type": [
+    "herbapedia:BotanicalSource",
+    "botany:PlantSpecies",
+    "schema:Plant"
+  ],
+  "sourceType": "botanical",
+  "sourceSubType": "plant",
+  "scientificName": "Salvia rosmarinus",
+  "family": "Lamiaceae",
+  "name": {
+    "en": "Rosemary",
+    "zh-Hant": "迷迭香",
+    "zh-Hans": "迷迭香"
+  },
+  "description": {
+    "en": "An evergreen shrub with fragrant, needle-like leaves."
+  },
+  "wikidataID": "Q128550",
+  "hasExtract": [
+    {
+      "@id": "https://www.herbapedia.org/entity/preparation/rosemary-oil"
+    }
+  ],
+  "provenance": {
+    "created": "2026-02-21",
+    "source": "Created as source plant for essential oil",
+    "purpose": "Enable proper linking of essential oil extracts"
+  },
+  "gbifID": "2928786",
+  "ncbiTaxonID": "39367"
+}

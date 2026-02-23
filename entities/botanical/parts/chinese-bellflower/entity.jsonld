@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/chinese-bellflower",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Chinese Bellflower Flower",
+    "zh-Hant": "桔梗",
+    "zh-Hans": "桔梗"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/chinese-bellflower"
+  },
+  "partType": "flower",
+  "description": {
+    "en": "The flower of Platycodon grandiflorum, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.810Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/glycerin",
+  "@type": [
+    "herbapedia:WesternHerbalProfile"
+  ],
+  "profiles": {
+    "@id": "https://www.herbapedia.org/entity/preparation/glycerin"
+  },
+  "name": {
+    "en": "Glycerin",
+    "zh-Hant": "甘油",
+    "zh-Hans": "甘油"
+  },
+  "derivedFromPlant": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/glycerin"
+  },
+  "westernTraditionalUsage": {
+    "en": "Glycerin is a sweet tasting, colourless viscous liquid. It functions as a kind of emollient that fills in the spaces between the cells in the skin, helping replace lipids and thus smoothing, moisturising and lubricating rough complexions. It is tolerated by sensitive skins and can be used to make glycerol soap, which is especially suitable for dry or easily irritated skin.\n",
+    "zh-Hant": "",
+    "zh-Hans": ""
+  },
+  "provenance": {
+    "created": "2026-02-20T15:22:03.241Z",
+    "modified": "2026-02-20T15:22:03.241Z",
+    "migratedFrom": "systems/western/herbs/glycerin/profile.jsonld"
+  }
+}

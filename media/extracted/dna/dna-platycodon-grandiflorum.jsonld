@@ -1,0 +1,88 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/dna/platycodon-grandiflorum",
+  "@type": ["herbapedia:DNASequenceData", "schema:Dataset"],
+  "dataType": "DNASequence",
+  "sourceFile": "DNA____Platycodon_grandiflorum_V1.pdf",
+  "sourceDocument": "GCMTI FS:2021-1",
+  "title": {
+    "en": "Fact sheet of reference DNA sequences of Platycodon grandiflorum",
+    "zh-hk": "桔梗(Platycodon grandiflorum)之參考 DNA 序列資料"
+  },
+  "scientificName": {
+    "full": "Platycodon grandiflorum",
+    "genus": "Platycodon",
+    "species": "grandiflorum",
+    "author": ""
+  },
+  "loci": [
+    {
+      "name": "ITS2",
+      "fullName": "Internal transcribed spacer 2",
+      "description": {
+        "en": "Internal transcribed spacer 2 (ITS2) of plant voucher specimen of Platycodon grandiflorum and Chinese Materia Medica (CMM) Radix Platycodi",
+        "zh-hk": "Platycodon grandiflorum 植物憑證標本及中藥材桔梗標本的核糖體 DNA 第二內部轉錄間隔區(ITS2)序列"
+      },
+      "sequenceLength": 224,
+      "consensusSequence": "CGCATCGCGTCGCCCCCCCAAACAAACAAACAAACAAACCAAACGTTTGTCGGTTGTTCAGGGGGAGCGGATACTGGCCTCCCGTGCCTCGCGGCGCGGCTGGCTCAAAACGGAGTCCCCCGCGAAGGACGCACGGCAAGTGGTGGTTGATAACAAGGCCCTCGCGTCCCGTCGTGCGCAAGTCCTGAGCGATGGTGCAGGCTCTCGTGACCCTGACGCGTCTCCGTTCGTCCACAGCGACGAGCGACGGCGCTCCGACCG",
+      "specimenCount": 20,
+      "specimens": [
+        "RD558-D", "RD559-C", "RD560-C", "RD585-C", "RD586-C",
+        "RD487-1B", "RD487-2A", "RD488-1A", "RD489-1A", "RD489-2A",
+        "RD489-3B", "RD489-4B", "RD489-5A", "RD489-7A", "RD489-8B",
+        "RD489-10A", "RD489-11B", "RD489-12B", "RD489-13B", "RD489-14A",
+        "RD489-16A", "RD489-17B"
+      ]
+    },
+    {
+      "name": "psbA-trnH",
+      "fullName": "Chloroplast psbA-trnH intergenic spacer",
+      "description": {
+        "en": "Chloroplast psbA-trnH intergenic spacer (psbA-trnH) of plant voucher specimen of Platycodon grandiflorum and Chinese Materia Medica (CMM) Radix Platycodi",
+        "zh-hk": "Platycodon grandiflorum 植物憑證標本及中藥材桔梗標本的葉綠體 psbA-trnH 基因間區(psbA-trnH)序列"
+      },
+      "sequenceLength": 430,
+      "consensusSequence": "GAAGCCCCGGCTAAAAATGGCTAAGATCGTGGTCTGAATGTATATGAGTTTTTGAAGCAAAAGGAGCAATAACCCCTTTCTTGTTCTATCAAGAGGGCGTTATTGGTCTCCCCGGCCCCCCCTTATTTTCTTTTAGTGAGTAATATTTCACTTCTACGGAAAAGGGATTTTGGGGGGTTGGTTTGAGTATCGTGCTTTACTTTCATATTTATTTCTGTATTTTTTTTTGTTTTTTTTTTTGAATCTATAATATTTGAATTTATATATTTATACCCTCTTCTCAATTTCTTGTGAAGTTATTATTTTCAATGTACAATAACCGAAAGTTTGAATAGAATTTTATGTTTATTATATGGAAAACATACTAGAGGGGCGGATGTAGCCAAGTGGACAAGGCAGT",
+      "specimenCount": 20,
+      "specimens": [
+        "RD558-D", "RD559-C", "RD560-C", "RD585-C", "RD586-C",
+        "RD487-1B", "RD487-2A", "RD488-1A", "RD489-1A", "RD489-2A",
+        "RD489-3B", "RD489-4B", "RD489-5A", "RD489-7A", "RD489-8B",
+        "RD489-10A", "RD489-11B", "RD489-12B", "RD489-13B", "RD489-14A",
+        "RD489-16A", "RD489-17B"
+      ]
+    },
+    {
+      "name": "rbcL",
+      "fullName": "Partial chloroplast ribulose bisphosphate carboxylase large chain",
+      "description": {
+        "en": "Partial chloroplast ribulose bisphosphate carboxylase large chain (rbcL) of plant voucher specimen of Platycodon grandiflorum and Chinese Materia Medica (CMM) Radix Platycodi",
+        "zh-hk": "Platycodon grandiflorum 植物憑證標本及中藥材桔梗標本的葉綠體二磷酸核酮糖羧化酶大鏈(rbcL)部分序列"
+      },
+      "sequenceLength": 554,
+      "consensusSequence": "AAATGTTGGATTCAAGGCTGGTGTTAAAGATTATAAATTAACTTATTATACTCCTGACTATGAAACCAAAGATACTGATATTTTGGCAGCATTCCGCGTAACTCCTCAACCCGGAGTTCCCCCCGAAGAAGCCGGGGCCGCAGTAGCTGCCGAATCTTCTACTGGTACGTGGACAACTGTGTGGACTGATGGACTTACGAGCCTTGATCGTTACAAAGGGCGATGCTATCACATCGAACCCGTTGCCGGAGAGGAAAATCAATATATTGCTTATGTAGCTTACCCATTAGACCTTTTTGAAGAAGGTTCTGTTACTAACATGTTTACTTCCATTGTGGGTAATGTGTTTGGATTTAAAGCACTGCGTGCTCTACGTCTGGAAGATTTGCGAATTCCGACTGCGTATGTGAAAACTTTCCAAGGCCCGCCTCATGGCATCCAAGTTGAAAGAGATAAATTGAACAAGTATGGTCGTCCCCTGTTGGGATGTACGATTAAACCCAAATTGGGGTTATCCGCTAAAAACTACGGTAGAGCAGTTTATGAATGTCTT",
+      "specimenCount": 20,
+      "specimens": [
+        "RD558-D", "RD559-C", "RD560-C", "RD585-C", "RD586-C",
+        "RD487-1B", "RD487-2A", "RD488-1A", "RD489-1A", "RD489-2A",
+        "RD489-3B", "RD489-4B", "RD489-5A", "RD489-7A", "RD489-8B",
+        "RD489-10A", "RD489-11B", "RD489-12B", "RD489-13B", "RD489-14A",
+        "RD489-16A", "RD489-17B"
+      ]
+    }
+  ],
+  "specimen": {
+    "gcmtiCode": "GA0000396a00",
+    "type": "Chinese Materia Medica (CMM) Radix Platycodi",
+    "totalSpecimens": 20
+  },
+  "methodology": {
+    "format": "FASTA",
+    "sequencingTargets": ["ITS2", "psbA-trnH", "rbcL"],
+    "specimenTypes": ["Plant voucher specimen", "Chinese Materia Medica (CMM) Radix Platycodi"]
+  },
+  "extracted": {
+    "date": "2026-02-20",
+    "extractedBy": "automated extraction from PDF"
+  }
+}

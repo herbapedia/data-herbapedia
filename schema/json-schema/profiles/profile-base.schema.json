@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herbapedia.org/schema/json-schema/profiles/profile-base.schema.json",
+  "title": "Medicine System Profile (Base)",
+  "description": "Abstract base class for all medicine system profiles. Each profile provides a system-specific interpretation of an HerbalPreparation. A single preparation can have profiles from multiple systems (TCM, Western, Ayurveda).",
+  "type": "object",
+  "abstract": true,
+  "allOf": [
+    { "$ref": "../core/entity.schema.json" }
+  ],
+  "required": ["@id", "@type", "name", "profiles"],
+  "properties": {
+    "@id": {
+      "description": "Unique identifier pattern depends on system: tcm/profile/{slug}, western/profile/{slug}, ayurveda/profile/{slug}",
+      "type": "string"
+    },
+    "profiles": {
+      "description": "The HerbalPreparation that this profile interprets. This is the KEY relationship connecting therapeutic interpretation to botanical substance.",
+      "$ref": "../core/iri-reference.schema.json"
+    },
+    "indications": {
+      "description": "What this preparation is used for in this system.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "contraindications": {
+      "description": "When NOT to use this preparation.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "dosage": {
+      "description": "Typical dosage information.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "safetyConsiderations": {
+      "description": "Safety notes specific to this system's perspective.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "traditionalUsage": {
+      "description": "Traditional usage in this system.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "modernResearch": {
+      "description": "Modern scientific research relevant to this system's use.",
+      "$ref": "../core/language-map.schema.json"
+    }
+  },
+  "_documentation": {
+    "designPattern": "Strategy Pattern - Different systems provide different interpretations of the same HerbalPreparation",
+    "keyInsight": "Profiles are NOT mutually exclusive - a single preparation can have multiple profiles",
+    "relationshipModel": "Profile --profiles--> HerbalPreparation (N:1)",
+    "exampleMultipleProfiles": {
+      "preparation": "preparation/fresh-ginger-rhizome",
+      "profiles": [
+        "tcm/profile/sheng-jiang (TCM interpretation: warm, acrid, releases exterior)",
+        "western/profile/fresh-ginger (Western interpretation: anti-emetic, carminative)",
+        "ayurveda/profile/nagara (Ayurveda interpretation: pungent, heating, reduces kapha)"
+      ]
+    }
+  }
+}

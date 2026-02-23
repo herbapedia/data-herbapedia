@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/ginseng",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/ginseng",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"
@@ -24,13 +24,13 @@
   "license": "https://creativecommons.org/licenses/by-sa/4.0/",
   "containsChemical": [
     {
-      "@id": "chemical/ginsenosides"
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/ginsenosides"
     },
     {
-      "@id": "chemical/polysaccharides"
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/polysaccharides"
     },
     {
-      "@id": "chemical/saponins"
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/saponins"
     }
   ],
   "modified": "2026-02-19T23:24:40.396Z"

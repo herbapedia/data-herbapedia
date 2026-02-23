@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/tusizi-root",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Tusizi Root",
+    "zh-Hant": "菟絲子",
+    "zh-Hans": "菟丝子"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/tusizi"
+  },
+  "partType": "root",
+  "description": {
+    "en": "The root of Cuscuta chinensis, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.830Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

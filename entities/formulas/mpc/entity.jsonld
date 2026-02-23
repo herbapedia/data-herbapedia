@@ -1,0 +1,30 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/formula/mpc",
+  "@type": [
+    "herbapedia:Formula",
+    "schema:DietarySupplement"
+  ],
+  "name": {
+    "en": "MPC",
+    "zh-Hant": "乳絡肽合物",
+    "zh-Hans": "乳络肽合物"
+  },
+  "scientificName": "Milk Peptide Complex",
+  "family": null,
+  "genus": null,
+  "description": {
+    "en": "Milk peptide complex used in cosmetic formulations."
+  },
+  "image": "media/images/mpc/mpc.jpg",
+  "provenance": {
+    "created": "2026-02-18T09:17:17.306Z",
+    "modified": "2026-02-21T01:46:20.756Z",
+    "migratedFrom": "entities/plants/mpc/entity.jsonld",
+    "source": "vitaherbapedia.com",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "classificationNote": "Reclassified as Formula"
+  },
+  "sourceType": "formula",
+  "sourceSubType": "proprietary"
+}

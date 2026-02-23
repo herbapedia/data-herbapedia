@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/grape-seed",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Grape Seed Seed",
+    "zh-Hant": "葡萄核",
+    "zh-Hans": "葡萄核"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/grape-seed"
+  },
+  "partType": "seed",
+  "description": {
+    "en": "The seed of Vitis vinifera, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.816Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

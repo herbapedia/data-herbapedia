@@ -1,0 +1,1843 @@
+[
+  {
+    "species": "algae",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/algae"
+        }
+      ]
+    }
+  },
+  {
+    "species": "aloe-vera",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/aloe-vera"
+        }
+      ]
+    }
+  },
+  {
+    "species": "amber",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/amber"
+        }
+      ]
+    }
+  },
+  {
+    "species": "american-ginseng",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/american-ginseng"
+        }
+      ]
+    }
+  },
+  {
+    "species": "argan-oil",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/argan-oil"
+        }
+      ]
+    }
+  },
+  {
+    "species": "asparagus-root",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/asparagus-root"
+        }
+      ]
+    }
+  },
+  {
+    "species": "baizhu",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/baizhu"
+        }
+      ]
+    }
+  },
+  {
+    "species": "baiziren",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/baiziren"
+        }
+      ]
+    }
+  },
+  {
+    "species": "balm-mint-oil",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/balm-mint-oil"
+        }
+      ]
+    }
+  },
+  {
+    "species": "barley",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/barley"
+        }
+      ]
+    }
+  },
+  {
+    "species": "beishashen",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/beishashen"
+        }
+      ]
+    }
+  },
+  {
+    "species": "bilberry",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/bilberry"
+        }
+      ]
+    }
+  },
+  {
+    "species": "birds-nest",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/birds-nest"
+        }
+      ]
+    }
+  },
+  {
+    "species": "bitter-orange",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/bitter-orange"
+        }
+      ]
+    }
+  },
+  {
+    "species": "black-sesame-seed",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/black-sesame-seed"
+        }
+      ]
+    }
+  },
+  {
+    "species": "blueberry",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/blueberry"
+        }
+      ]
+    }
+  },
+  {
+    "species": "borage-extract",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/borage-extract"
+        }
+      ]
+    }
+  },
+  {
+    "species": "buguzhi",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/buguzhi"
+        }
+      ]
+    }
+  },
+  {
+    "species": "calcium",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/calcium"
+        }
+      ]
+    }
+  },
+  {
+    "species": "cangzhu",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/cangzhu"
+        }
+      ]
+    }
+  },
+  {
+    "species": "capigen",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/capigen"
+        }
+      ]
+    }
+  },
+  {
+    "species": "cardamom",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/cardamom"
+        }
+      ]
+    }
+  },
+  {
+    "species": "ceramides",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/ceramides"
+        }
+      ]
+    }
+  },
+  {
+    "species": "chamomile",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/chamomile"
+        }
+      ]
+    }
+  },
+  {
+    "species": "changpu",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/changpu"
+        }
+      ]
+    }
+  },
+  {
+    "species": "chinese-angelica-or-dong-quai",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/chinese-angelica-or-dong-quai"
+        }
+      ]
+    }
+  },
+  {
+    "species": "chinese-bellflower",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/chinese-bellflower"
+        }
+      ]
+    }
+  },
+  {
+    "species": "chinese-mugwort-leaf",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/chinese-mugwort-leaf"
+        }
+      ]
+    }
+  },
+  {
+    "species": "chinese-rhubarb-root",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/chinese-rhubarb-root"
+        }
+      ]
+    }
+  },
+  {
+    "species": "chitosan",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/chitosan"
+        }
+      ]
+    }
+  },
+  {
+    "species": "choline",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/choline"
+        }
+      ]
+    }
+  },
+  {
+    "species": "chondroitin-sulfate",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/chondroitin-sulfate"
+        }
+      ]
+    }
+  },
+  {
+    "species": "chrysanthemum",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/chrysanthemum"
+        }
+      ]
+    }
+  },
+  {
+    "species": "chuanxinlian",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/chuanxinlian"
+        }
+      ]
+    }
+  },
+  {
+    "species": "chuanxiong",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/chuanxiong"
+        }
+      ]
+    }
+  },
+  {
+    "species": "clove-oil",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/clove-oil"
+        }
+      ]
+    }
+  },
+  {
+    "species": "copper",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/copper"
+        }
+      ]
+    }
+  },
+  {
+    "species": "cordyceps",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/cordyceps"
+        }
+      ]
+    }
+  },
+  {
+    "species": "corn-silk",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/corn-silk"
+        }
+      ]
+    }
+  },
+  {
+    "species": "cranberry",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/cranberry"
+        }
+      ]
+    }
+  },
+  {
+    "species": "cysteine-hci",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/cysteine-hci"
+        }
+      ]
+    }
+  },
+  {
+    "species": "dandelion",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/dandelion"
+        }
+      ]
+    }
+  },
+  {
+    "species": "dangshen",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/dangshen"
+        }
+      ]
+    }
+  },
+  {
+    "species": "danshen",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/danshen"
+        }
+      ]
+    }
+  },
+  {
+    "species": "deer-antler",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/deer-antler"
+        }
+      ]
+    }
+  },
+  {
+    "species": "deer-horn-gelatine",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/deer-horn-gelatine"
+        }
+      ]
+    }
+  },
+  {
+    "species": "dihuang",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/dihuang"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/shoudihuang"
+        }
+      ]
+    }
+  },
+  {
+    "species": "dragon-bone",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/dragon-bone"
+        }
+      ]
+    }
+  },
+  {
+    "species": "duhuo",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/duhuo"
+        }
+      ]
+    }
+  },
+  {
+    "species": "duzhong",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/duzhong"
+        }
+      ]
+    }
+  },
+  {
+    "species": "echinacea",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/echinacea"
+        }
+      ]
+    }
+  },
+  {
+    "species": "epicutin-tt",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/epicutin-tt"
+        }
+      ]
+    }
+  },
+  {
+    "species": "eucalyptus-oil",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/eucalyptus-oil"
+        }
+      ]
+    }
+  },
+  {
+    "species": "evening-primrose-oil",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/evening-primrose-oil"
+        }
+      ]
+    }
+  },
+  {
+    "species": "evodia-fruit",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/evodia-fruit"
+        }
+      ]
+    }
+  },
+  {
+    "species": "factor-arl",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/factor-arl"
+        }
+      ]
+    }
+  },
+  {
+    "species": "fangfeng",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/fangfeng"
+        }
+      ]
+    }
+  },
+  {
+    "species": "fangji",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/fangji"
+        }
+      ]
+    }
+  },
+  {
+    "species": "fleece-flower",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/fleece-flower"
+        }
+      ]
+    }
+  },
+  {
+    "species": "fuling",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/fuling"
+        }
+      ]
+    }
+  },
+  {
+    "species": "garcinia-cambogia-fruit",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/garcinia-cambogia-fruit"
+        }
+      ]
+    }
+  },
+  {
+    "species": "garlic",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/garlic"
+        }
+      ]
+    }
+  },
+  {
+    "species": "ginger",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/ginger"
+        }
+      ]
+    }
+  },
+  {
+    "species": "ginkgo",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/ginkgo"
+        }
+      ]
+    }
+  },
+  {
+    "species": "ginseng",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/ginseng"
+        }
+      ]
+    }
+  },
+  {
+    "species": "glucosamine-sulfate",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/glucosamine-sulfate"
+        }
+      ]
+    }
+  },
+  {
+    "species": "glycerin",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/glycerin"
+        }
+      ]
+    }
+  },
+  {
+    "species": "glycine",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/glycine"
+        }
+      ]
+    }
+  },
+  {
+    "species": "gouqizi",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/gouqizi"
+        }
+      ]
+    }
+  },
+  {
+    "species": "grape-seed",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/grape-seed"
+        }
+      ]
+    }
+  },
+  {
+    "species": "great-burdock",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/great-burdock"
+        }
+      ]
+    }
+  },
+  {
+    "species": "green-tea",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/green-tea"
+        }
+      ]
+    }
+  },
+  {
+    "species": "guijia-or-guiban",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/guijia-or-guiban"
+        }
+      ]
+    }
+  },
+  {
+    "species": "hawthorn",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/hawthorn"
+        }
+      ]
+    }
+  },
+  {
+    "species": "hehuanhua",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/hehuanhua"
+        }
+      ]
+    }
+  },
+  {
+    "species": "honey",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/honey"
+        }
+      ]
+    }
+  },
+  {
+    "species": "horny-goat-weed",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/horny-goat-weed"
+        }
+      ]
+    }
+  },
+  {
+    "species": "hydration-factor-cte4",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/hydration-factor-cte4"
+        }
+      ]
+    }
+  },
+  {
+    "species": "indian-mulberry-root",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/indian-mulberry-root"
+        }
+      ]
+    }
+  },
+  {
+    "species": "indigowoad-root-banlangen",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/indigowoad-root-banlangen"
+        }
+      ]
+    }
+  },
+  {
+    "species": "inositol",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/inositol"
+        }
+      ]
+    }
+  },
+  {
+    "species": "iodine",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/iodine"
+        }
+      ]
+    }
+  },
+  {
+    "species": "iron",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/iron"
+        }
+      ]
+    }
+  },
+  {
+    "species": "jiaogulan",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/jiaogulan"
+        }
+      ]
+    }
+  },
+  {
+    "species": "jinyingzi",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/jinyingzi"
+        }
+      ]
+    }
+  },
+  {
+    "species": "jinyinhua",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/jinyinhua"
+        }
+      ]
+    }
+  },
+  {
+    "species": "jobs-tears",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/jobs-tears"
+        }
+      ]
+    }
+  },
+  {
+    "species": "jojoba-seed-oil",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/jojoba-seed-oil"
+        }
+      ]
+    }
+  },
+  {
+    "species": "konjac-jelly",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/konjac-jelly"
+        }
+      ]
+    }
+  },
+  {
+    "species": "kushen",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/kushen"
+        }
+      ]
+    }
+  },
+  {
+    "species": "lavender-oil",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/lavender-oil"
+        }
+      ]
+    }
+  },
+  {
+    "species": "lecithin",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/lecithin"
+        }
+      ]
+    }
+  },
+  {
+    "species": "lianqiao",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/lianqiao"
+        }
+      ]
+    }
+  },
+  {
+    "species": "lingzhi-reishi",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/lingzhi-reishi"
+        }
+      ]
+    }
+  },
+  {
+    "species": "lingzhi-spores",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/lingzhi-spores"
+        }
+      ]
+    }
+  },
+  {
+    "species": "linolenic-acid",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/linolenic-acid"
+        }
+      ]
+    }
+  },
+  {
+    "species": "liquorice-root",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/liquorice-root"
+        }
+      ]
+    }
+  },
+  {
+    "species": "lotus-leaf",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/lotus-leaf"
+        }
+      ]
+    }
+  },
+  {
+    "species": "lysine",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/lysine"
+        }
+      ]
+    }
+  },
+  {
+    "species": "magnesium",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/magnesium"
+        }
+      ]
+    }
+  },
+  {
+    "species": "maidong",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/maidong"
+        }
+      ]
+    }
+  },
+  {
+    "species": "manganese",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/manganese"
+        }
+      ]
+    }
+  },
+  {
+    "species": "melatonin",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/melatonin"
+        }
+      ]
+    }
+  },
+  {
+    "species": "methionine",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/methionine"
+        }
+      ]
+    }
+  },
+  {
+    "species": "milk-thistle",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/milk-thistle"
+        }
+      ]
+    }
+  },
+  {
+    "species": "milk-vetch",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/milk-vetch"
+        }
+      ]
+    }
+  },
+  {
+    "species": "mineral-oil",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/mineral-oil"
+        }
+      ]
+    }
+  },
+  {
+    "species": "mint",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/mint"
+        }
+      ],
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/mint"
+        }
+      ]
+    }
+  },
+  {
+    "species": "mohanlian",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/mohanlian"
+        }
+      ]
+    }
+  },
+  {
+    "species": "mpc",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/mpc"
+        }
+      ]
+    }
+  },
+  {
+    "species": "muli",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/muli"
+        }
+      ]
+    }
+  },
+  {
+    "species": "niuxi",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/niuxi"
+        }
+      ]
+    }
+  },
+  {
+    "species": "nuzhenzi",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/nuzhenzi"
+        }
+      ]
+    }
+  },
+  {
+    "species": "omega-3",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/omega-3"
+        }
+      ]
+    }
+  },
+  {
+    "species": "omega-6",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/omega-6"
+        }
+      ]
+    }
+  },
+  {
+    "species": "omega-9",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/omega-9"
+        }
+      ]
+    }
+  },
+  {
+    "species": "orobanches",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/orobanches"
+        }
+      ]
+    }
+  },
+  {
+    "species": "paba",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/paba"
+        }
+      ]
+    }
+  },
+  {
+    "species": "panax-ginseng",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/ren-shen"
+        }
+      ]
+    }
+  },
+  {
+    "species": "patchouli",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/patchouli"
+        }
+      ]
+    }
+  },
+  {
+    "species": "peilan",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/peilan"
+        }
+      ]
+    }
+  },
+  {
+    "species": "peppermint-oil",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/peppermint-oil"
+        }
+      ]
+    }
+  },
+  {
+    "species": "petrolatum",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/petrolatum"
+        }
+      ]
+    }
+  },
+  {
+    "species": "phospholipids",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/phospholipids"
+        }
+      ]
+    }
+  },
+  {
+    "species": "potassium",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/potassium"
+        }
+      ]
+    }
+  },
+  {
+    "species": "quanshen",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/quanshen"
+        }
+      ]
+    }
+  },
+  {
+    "species": "rhodiola",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/rhodiola"
+        }
+      ]
+    }
+  },
+  {
+    "species": "rosemary-oil",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/rosemary-oil"
+        }
+      ]
+    }
+  },
+  {
+    "species": "roucongrong",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/roucongrong"
+        }
+      ]
+    }
+  },
+  {
+    "species": "royal-jelly",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/royal-jelly"
+        }
+      ]
+    }
+  },
+  {
+    "species": "sage-oil",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/sage-oil"
+        }
+      ]
+    }
+  },
+  {
+    "species": "saw-palmetto",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/saw-palmetto"
+        }
+      ]
+    }
+  },
+  {
+    "species": "selenium",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/selenium"
+        }
+      ]
+    }
+  },
+  {
+    "species": "shanzha",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/shanzha"
+        }
+      ]
+    }
+  },
+  {
+    "species": "shanzhuyu",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/shanzhuyu"
+        }
+      ]
+    }
+  },
+  {
+    "species": "shegan",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/shegan"
+        }
+      ]
+    }
+  },
+  {
+    "species": "shengma",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/shengma"
+        }
+      ]
+    }
+  },
+  {
+    "species": "shihu",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/shihu"
+        }
+      ]
+    }
+  },
+  {
+    "species": "shouwuteng",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/shouwuteng"
+        }
+      ]
+    }
+  },
+  {
+    "species": "soy",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/soy"
+        }
+      ]
+    }
+  },
+  {
+    "species": "squalene",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/squalene"
+        }
+      ]
+    }
+  },
+  {
+    "species": "st-johns-wort",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/st-johns-wort"
+        }
+      ]
+    }
+  },
+  {
+    "species": "suanzaoren",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/suanzaoren"
+        }
+      ]
+    }
+  },
+  {
+    "species": "suoyang",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/suoyang"
+        }
+      ]
+    }
+  },
+  {
+    "species": "tangerine-peel",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/tangerine-peel"
+        }
+      ]
+    }
+  },
+  {
+    "species": "taoren-or-peach-kernel",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/taoren-or-peach-kernel"
+        }
+      ]
+    }
+  },
+  {
+    "species": "tea-tree-oil",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/tea-tree-oil"
+        }
+      ]
+    }
+  },
+  {
+    "species": "thyme-oil",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/thyme-oil"
+        }
+      ]
+    }
+  },
+  {
+    "species": "tianma",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/tianma"
+        }
+      ]
+    }
+  },
+  {
+    "species": "tree-peony",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/tree-peony"
+        }
+      ]
+    }
+  },
+  {
+    "species": "turmeric",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/turmeric"
+        }
+      ]
+    }
+  },
+  {
+    "species": "tusizi",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/tusizi"
+        }
+      ]
+    }
+  },
+  {
+    "species": "valerian",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/valerian"
+        }
+      ]
+    }
+  },
+  {
+    "species": "vitamin-a",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/vitamin-a"
+        }
+      ]
+    }
+  },
+  {
+    "species": "vitamin-b1",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/vitamin-b1"
+        }
+      ]
+    }
+  },
+  {
+    "species": "vitamin-b12",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/vitamin-b12"
+        }
+      ]
+    }
+  },
+  {
+    "species": "vitamin-b2",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/vitamin-b2"
+        }
+      ]
+    }
+  },
+  {
+    "species": "vitamin-b3-niacin",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/vitamin-b3-niacin"
+        }
+      ]
+    }
+  },
+  {
+    "species": "vitamin-b5",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/vitamin-b5"
+        }
+      ]
+    }
+  },
+  {
+    "species": "vitamin-b6",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/vitamin-b6"
+        }
+      ]
+    }
+  },
+  {
+    "species": "vitamin-b7-biotin",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/vitamin-b7-biotin"
+        }
+      ]
+    }
+  },
+  {
+    "species": "vitamin-b9-folate-folic-acid",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/vitamin-b9-folate-folic-acid"
+        }
+      ]
+    }
+  },
+  {
+    "species": "vitamin-c",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/vitamin-c"
+        }
+      ]
+    }
+  },
+  {
+    "species": "vitamin-d-calciferol-cholecalciferol-ergocalciferol",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/vitamin-d-calciferol-cholecalciferol-ergocalciferol"
+        }
+      ]
+    }
+  },
+  {
+    "species": "vitamin-e",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/vitamin-e"
+        }
+      ]
+    }
+  },
+  {
+    "species": "vitamin-p-bioflavonoids",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/vitamin-p-bioflavonoids"
+        }
+      ]
+    }
+  },
+  {
+    "species": "wheat",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/shenqu"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/wheat"
+        }
+      ]
+    }
+  },
+  {
+    "species": "white-mulberry-leaf",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/white-mulberry-leaf"
+        }
+      ]
+    }
+  },
+  {
+    "species": "white-peony-root",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/white-peony-root"
+        }
+      ]
+    }
+  },
+  {
+    "species": "white-willow-bark",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/white-willow-bark"
+        }
+      ]
+    }
+  },
+  {
+    "species": "wild-yam",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/wild-yam"
+        }
+      ]
+    }
+  },
+  {
+    "species": "woad-or-glastum",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/woad-or-glastum"
+        }
+      ]
+    }
+  },
+  {
+    "species": "wuweizi",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/wuweizi"
+        }
+      ]
+    }
+  },
+  {
+    "species": "xinyihua",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/xinyihua"
+        }
+      ]
+    }
+  },
+  {
+    "species": "xiongcane",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/xiongcane"
+        }
+      ]
+    }
+  },
+  {
+    "species": "yuanzhi",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/yuanzhi"
+        }
+      ]
+    }
+  },
+  {
+    "species": "yunzhi",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/yunzhi"
+        }
+      ]
+    }
+  },
+  {
+    "species": "zexie",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/zexie"
+        }
+      ]
+    }
+  },
+  {
+    "species": "zhiko",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/zhiko"
+        }
+      ]
+    }
+  },
+  {
+    "species": "zhusun",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/zhusun"
+        }
+      ]
+    }
+  },
+  {
+    "species": "zinc",
+    "properties": {
+      "hasWesternProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/profile/zinc"
+        }
+      ]
+    }
+  },
+  {
+    "species": "zingiber-officinale",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/sheng-jiang"
+        }
+      ]
+    }
+  },
+  {
+    "species": "zisuye",
+    "properties": {
+      "hasTCMProfile": [
+        {
+          "@id": "https://www.herbapedia.org/system/tcm/profile/zisuye"
+        }
+      ]
+    }
+  }
+]

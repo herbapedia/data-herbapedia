@@ -1,0 +1,113 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/preparation/dried-ginger-rhizome",
+  "@type": [
+    "herbal:HerbalPreparation",
+    "schema:DietarySupplement"
+  ],
+  "name": {
+    "en": "Dried Ginger Rhizome",
+    "zh-Hant": "乾薑",
+    "zh-Hans": "干姜",
+    "hi": "सौंठ",
+    "sa": "नागर",
+    "fa": "زنجبیل خشک",
+    "mn": "хатаасан га"
+  },
+  "derivedFrom": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/ginger"
+    }
+  ],
+  "description": {
+    "en": "The dried rhizome of Zingiber officinale, used across multiple traditional medicine systems for its warming, digestive, and anti-inflammatory properties."
+  },
+  "preparationMethod": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/method/dried"
+  },
+  "preparationDetails": {
+    "en": "Rhizomes are harvested, washed, and sun-dried or kiln-dried until moisture content is reduced to approximately 10%."
+  },
+  "form": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/form/sliced"
+  },
+  "appearance": {
+    "en": "Pale yellow to light brown, fibrous texture, characteristic aromatic odor and pungent taste"
+  },
+  "storageRequirements": {
+    "en": "Store in a cool, dry place in airtight containers, protected from light and moisture"
+  },
+  "shelfLife": "2-3 years when properly stored",
+  "commonUsage": {
+    "culinary": {
+      "en": "Used as spice in cooking, baking, and beverages"
+    },
+    "aromatherapy": {
+      "en": "Ginger essential oil used in aromatherapy for nausea and warming"
+    }
+  },
+  "safetyInfo": {
+    "allergens": [],
+    "pregnancySafety": {
+      "en": "Generally considered safe in culinary amounts. Therapeutic doses should be used with caution during pregnancy."
+    },
+    "generalContraindications": {
+      "en": "Avoid in cases of excess heat, bleeding disorders, or gallstones. May interact with anticoagulants."
+    },
+    "drugInteractions": [
+      "warfarin",
+      "aspirin",
+      "other anticoagulants"
+    ],
+    "warnings": [
+      {
+        "en": "May increase bleeding risk when combined with anticoagulant medications"
+      },
+      {
+        "en": "High doses may cause heartburn or gastrointestinal upset"
+      }
+    ]
+  },
+  "hasTCMProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/profile/dried-ginger"
+    }
+  ],
+  "hasWesternProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/western/profile/ginger"
+    }
+  ],
+  "hasAyurvedaProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/nagara"
+    }
+  ],
+  "hasPersianProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/persian/profile/zanjabil"
+    }
+  ],
+  "hasMongolianProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/mongolian/profile/gaa"
+    }
+  ],
+  "relatedPreparations": [
+    {
+      "@id": "https://www.herbapedia.org/entity/preparation/fresh-ginger-rhizome"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/preparation/ginger-tea"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/preparation/ginger-tincture"
+    }
+  ],
+  "provenance": {
+    "created": "2024-01-15",
+    "modified": "2024-01-15",
+    "source": "Multiple traditional medicine texts"
+  },
+  "image": "media/images/dried-ginger-rhizome/dried-ginger-rhizome.jpg"
+}

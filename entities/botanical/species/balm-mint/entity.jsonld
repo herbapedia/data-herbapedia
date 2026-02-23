@@ -1,0 +1,34 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/balm-mint",
+  "@type": [
+    "herbapedia:BotanicalSource",
+    "botany:PlantSpecies",
+    "schema:Plant"
+  ],
+  "sourceType": "botanical",
+  "sourceSubType": "plant",
+  "scientificName": "Melissa officinalis",
+  "family": "Lamiaceae",
+  "name": {
+    "en": "Lemon Balm",
+    "zh-Hant": "香蜂草",
+    "zh-Hans": "香蜂草"
+  },
+  "description": {
+    "en": "A perennial herb in the mint family with a lemon scent."
+  },
+  "wikidataID": "Q131122",
+  "hasExtract": [
+    {
+      "@id": "https://www.herbapedia.org/entity/preparation/balm-mint-oil"
+    }
+  ],
+  "provenance": {
+    "created": "2026-02-21",
+    "source": "Created as source plant for essential oil",
+    "purpose": "Enable proper linking of essential oil extracts"
+  },
+  "gbifID": "5341390",
+  "ncbiTaxonID": "240184"
+}

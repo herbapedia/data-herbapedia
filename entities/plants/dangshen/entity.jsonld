@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/dangshen",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/dangshen",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"
@@ -30,10 +30,10 @@
   "gbifId": 5412957,
   "containsChemical": [
     {
-      "@id": "chemical/polysaccharides"
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/polysaccharides"
     },
     {
-      "@id": "chemical/saponins"
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/saponins"
     }
   ],
   "modified": "2026-02-19T23:24:40.403Z"

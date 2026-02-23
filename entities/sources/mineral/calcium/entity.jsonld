@@ -1,0 +1,28 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/sources/mineral/calcium",
+  "@type": [
+    "herbapedia:MineralSource",
+    "herbapedia:SourceMaterial"
+  ],
+  "sourceType": "mineral",
+  "name": {
+    "en": "Calcium",
+    "zh-Hant": "鈣",
+    "zh-Hans": "钙"
+  },
+  "description": {
+    "en": "Calcium is an essential mineral for bone health, nerve function, and muscle contraction. Dietary sources include dairy products, leafy greens, and fortified foods.",
+    "zh-Hant": "鈣是人體必需的礦物質，對骨骼健康、神經傳導和肌肉收縮至關重要。膳食來源包括乳製品、深綠色蔬菜和強化食品。",
+    "zh-Hans": "钙是人体必需的矿物质，对骨骼健康、神经传导和肌肉收缩至关重要。膳食来源包括乳制品、深绿色蔬菜和强化食品。"
+  },
+  "image": "media/images/calcium/calcium.jpg",
+  "provenance": {
+    "created": "2026-02-18T09:16:52.013Z",
+    "modified": "2026-02-21T09:58:00.000Z",
+    "migratedFrom": "entities/botanical/species/calcium/entity.jsonld",
+    "source": "vitaherbapedia.com",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "wikidataID": "Q706"
+}

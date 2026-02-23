@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/hawthorn",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/hawthorn",
   "@type": [
     "botany:Plant",
     "schema:Thing"
@@ -31,14 +31,16 @@
   "image": "media/images/hawthorn/hawthorn.jpg",
   "containsChemical": [
     {
-      "@id": "chemical/flavonoids"
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/flavonoids"
     },
     {
-      "@id": "chemical/tannins"
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/tannins"
     }
   ],
   "sameAs": [
-    "https://www.wikidata.org/wiki/Q157413"
+    {
+      "@id": "https://www.wikidata.org/wiki/Q157413"
+    }
   ],
   "gbifId": "3013665",
   "created": "2026-02-20T00:00:00.000Z",

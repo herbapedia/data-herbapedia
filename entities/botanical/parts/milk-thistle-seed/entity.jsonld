@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/milk-thistle-seed",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Milk Thistle Seed",
+    "zh-Hant": "乳薊籽",
+    "zh-Hans": "乳蓟籽"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/milk-thistle"
+  },
+  "partType": "seed",
+  "description": {
+    "en": "The dried fruits (achenes) of Silybum marianum, containing the bioactive compound silymarin. This is the primary part used for medicinal purposes."
+  },
+  "provenance": {
+    "created": "2026-02-21T00:00:00.000Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

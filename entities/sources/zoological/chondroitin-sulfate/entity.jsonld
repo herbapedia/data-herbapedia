@@ -1,0 +1,34 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/sources/zoological/chondroitin-sulfate",
+  "@type": [
+    "herbapedia:ZoologicalSource",
+    "herbapedia:SourceMaterial"
+  ],
+  "sourceType": "zoological",
+  "name": {
+    "en": "Chondroitin Sulfate",
+    "zh-Hant": "軟骨素",
+    "zh-Hans": "软骨素"
+  },
+  "animalName": {
+    "en": "Bovine, Pork, Shark, Whale",
+    "zh-Hant": "牛、豬、鯊魚、鯨魚",
+    "zh-Hans": "牛、猪、鲨鱼、鲸鱼"
+  },
+  "animalPart": "cartilage",
+  "description": {
+    "en": "Chondroitin sulfate is extracted from cartilaginous tissues of various animals including bovine trachea, pork byproducts (ears and snout), shark cartilage, and whale septum cartilage.",
+    "zh-Hant": "軟骨素提取自多種動物的軟骨組織，包括牛氣管、豬副產品（耳朵和鼻子）、鯊魚軟骨和鯨魚鼻中隔軟骨。",
+    "zh-Hans": "软骨素提取自多种动物的软骨组织，包括牛气管、猪副产品（耳朵和鼻子）、鲨鱼软骨和鲸鱼鼻中隔软骨。"
+  },
+  "image": "media/images/chondroitin-sulfate/chondroitin-sulfate.jpg",
+  "provenance": {
+    "created": "2026-02-18T09:17:05.001Z",
+    "modified": "2026-02-21T09:55:00.000Z",
+    "migratedFrom": "entities/botanical/species/chondroitin-sulfate/entity.jsonld",
+    "source": "vitaherbapedia.com",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "wikidataID": "Q425017"
+}

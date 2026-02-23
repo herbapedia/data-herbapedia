@@ -1,0 +1,47 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/preparation/shoudihuang",
+  "@type": [
+    "herbal:HerbalPreparation",
+    "schema:DietarySupplement"
+  ],
+  "name": {
+    "en": "Shoudihuang",
+    "zh-Hant": "熟地 又名熟地黃",
+    "zh-Hans": "熟地 又名熟地黄"
+  },
+  "derivedFrom": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/dihuang"
+    }
+  ],
+  "preparationMethod": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/method/steamed-and-dried"
+  },
+  "form": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/form/whole"
+  },
+  "hasTCMProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/profile/shoudihuang"
+    }
+  ],
+  "safetyInfo": {},
+  "provenance": {
+    "created": "2026-02-20",
+    "source": "Generated from TCM profile",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "description": {
+    "en": "Herbal preparation derived from Shoudihuang. A sweet, warming herb for the kidney and liver meridians with invigorating and rejuvenating effects. It is used for nourishing the blood, tonifying the liver and kidney yin, replenishing jing (kidney ..."
+  },
+  "image": "media/images/shoudihuang/shoudihuang.jpg",
+  "isProcessedFrom": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/dihuang"
+  },
+  "preparationDetails": {
+    "en": "Processed by repeated steaming and drying of fresh rehmannia root"
+  }
+}

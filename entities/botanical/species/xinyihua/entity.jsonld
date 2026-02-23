@@ -1,0 +1,46 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/xinyihua",
+  "@type": [
+    "botany:PlantSpecies",
+    "herbapedia:BotanicalSource",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Xinyihua",
+    "zh-Hant": "辛夷花 又名辛夷",
+    "zh-Hans": "辛夷花 又名辛夷"
+  },
+  "scientificName": "Magnolia denudata",
+  "family": null,
+  "genus": null,
+  "description": {
+    "en": "The flowerbud of Magnolia denudata Desr., or one of several species under the same genus, family Magnoliaceae.\n",
+    "zh-Hant": "辛夷花 又名辛夷（學名：Magnolia denudata）是一種具有藥用價值的天然產物。現代藥理學研究證實其含有多種生物活性成分，在傳統醫學和現代保健領域均有重要應用價值。",
+    "zh-Hans": "辛夷花 又名辛夷（学名：Magnolia denudata）是一种具有药用價值的天然產物。現代药理学研究证实其含有多种生物活性成分，在传统医学和現代保健領域均有重要应用價值。"
+  },
+  "image": "media/images/magnolia-denudata/main.jpg",
+  "gbifID": 3153582,
+  "provenance": {
+    "created": "2026-02-18T09:16:02.192Z",
+    "modified": "2026-02-21T01:46:20.761Z",
+    "migratedFrom": "entities/plants/xinyihua/entity.jsonld",
+    "source": "vitaherbapedia.com",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "classificationNote": "Reclassified as BotanicalSource"
+  },
+  "hasParts": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/part/xinyihua-root"
+    }
+  ],
+  "sourceType": "botanical",
+  "sourceSubType": "plant",
+  "hasTCMProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/profile/xinyihua"
+    }
+  ],
+  "wikidataID": "Q156809",
+  "ncbiTaxonID": "33992"
+}

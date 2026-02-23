@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/tangerine-peel-root",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Tangerine peel Root",
+    "zh-Hant": "陳皮",
+    "zh-Hans": "陈皮"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/tangerine-peel"
+  },
+  "partType": "root",
+  "description": {
+    "en": "The root of Citrus reticulata, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.829Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

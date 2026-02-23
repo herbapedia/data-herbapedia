@@ -1,0 +1,57 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/chemical/terpenes",
+  "@type": [
+    "botany:ChemicalCompound",
+    "schema:BioChemEntity"
+  ],
+  "name": {
+    "en": "Terpenes",
+    "zh-Hant": "萜烯",
+    "zh-Hans": "萜烯"
+  },
+  "commonName": [
+    "Terpenes",
+    "Terpenoids",
+    "Isoprenoids"
+  ],
+  "chebiID": "CHEBI:35186",
+  "compoundClass": "Terpenes; Isoprenoids",
+  "description": {
+    "en": "A large and diverse class of naturally occurring organic compounds derived from the five-carbon isoprene unit. Include monoterpenes, sesquiterpenes, diterpenes, triterpenes, and tetraterpenes. Form the basis for many essential oils and have diverse biological activities."
+  },
+  "pharmacology": [
+    "Anti-inflammatory activity",
+    "Antimicrobial effects",
+    "Anticancer properties",
+    "Neuroprotective effects",
+    "Hepatoprotective activity",
+    "Sedative and anxiolytic properties"
+  ],
+  "bioavailability": {
+    "en": "Lipophilic; well absorbed through skin and mucous membranes; volatiles absorbed via respiratory tract."
+  },
+  "safetyData": {
+    "toxicity": "Generally low toxicity at therapeutic doses",
+    "warnings": [
+      "Some terpenes may cause skin irritation",
+      "Essential oil concentrates require dilution"
+    ]
+  },
+  "provenance": {
+    "created": "2024-01-15",
+    "modified": "2026-02-20T17:59:34.449Z",
+    "source": "Terpene Chemistry Literature",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "foundIn": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/ginkgo"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/lingzhi-reishi"
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herbapedia.org/schema/json-schema/botanical/dna-barcode.schema.json",
+  "title": "DNA Barcode",
+  "description": "DNA barcode sequences for species identification. Contains standard barcode region sequences (rbcL, matK, ITS, trnL-F, etc.), GenBank/BOLD references, and quality metrics. Used for authentication and adulteration detection.",
+  "type": "object",
+  "allOf": [
+    { "$ref": "../core/entity.schema.json" }
+  ],
+  "required": ["@id", "@type", "name", "barcodes", "sequence"],
+  "properties": {
+    "@id": {
+      "description": "Unique identifier: botanical/barcode/{slug}.",
+      "type": "string",
+      "pattern": "^botanical/barcode/[a-z0-9-]+$",
+      "examples": [
+        "botanical/barcode/zingiber-officinale",
+        "botanical/barcode/panax-ginseng"
+      ]
+    },
+    "@type": {
+      "type": "array",
+      "items": { "type": "string" },
+      "contains": { "const": "botany:DNABarcode" },
+      "examples": [["botany:DNABarcode", "schema:Dataset"]]
+    },
+    "barcodes": {
+      "description": "The PlantSpecies this barcode identifies.",
+      "$ref": "../core/iri-reference.schema.json",
+      "examples": [{ "@id": "botanical/species/zingiber-officinale" }]
+    },
+    "sequence": {
+      "description": "DNA barcode sequence data by region.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["region", "sequence"],
+        "properties": {
+          "region": {
+            "description": "The DNA barcode region.",
+            "type": "string",
+            "enum": ["rbcL", "matK", "ITS", "ITS2", "trnL-F", "trnH-psbA", "psbA-trnH", "COI", "nad5"],
+            "_documentation": {
+              "rbcL": "Ribulose-1,5-bisphosphate carboxylase/oxygenase large subunit - plant standard barcode",
+              "matK": "Maturase K - plant standard barcode, higher resolution than rbcL",
+              "ITS": "Internal Transcribed Spacer (ITS1 + 5.8S + ITS2) - high discrimination",
+              "ITS2": "Internal Transcribed Spacer 2 - commonly used for medicinal plants",
+              "trnL-F": "tRNA-Leu to tRNA-Phe intergenic spacer",
+              "trnH-psbA": "trnH-psbA intergenic spacer - high variability",
+              "COI": "Cytochrome c oxidase subunit I - animal barcode (not plants)"
+            }
+          },
+          "sequence": {
+            "description": "The nucleotide sequence (5' to 3').",
+            "type": "string",
+            "pattern": "^[ATCGNatcgn\\s]+$",
+            "examples": ["ATGTCACCACAAACAGAGACTAAAGCAAGT"]
+          },
+          "length": {
+            "description": "Sequence length in base pairs.",
+            "type": "integer"
+          },
+          "gcContent": {
+            "description": "GC content percentage.",
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+          },
+          "genbankAccession": {
+            "description": "GenBank/NCBI accession number.",
+            "type": "string",
+            "pattern": "^[A-Z]{1,2}_?\\d+(\\.\\d+)?$",
+            "examples": ["MN872614", "MK937738"]
+          },
+          "boldID": {
+            "description": "BOLD Systems process ID.",
+            "type": "string",
+            "examples": ["GBMIN10803-20"]
+          },
+          "sequenceQuality": {
+            "description": "Quality assessment of the sequence.",
+            "type": "string",
+            "enum": ["high", "medium", "low", "unverified"]
+          },
+          "primerForward": {
+            "description": "Forward primer used for amplification.",
+            "type": "string",
+            "examples": ["ATGTCACCACAAACAGAAAC"]
+          },
+          "primerReverse": {
+            "description": "Reverse primer used for amplification.",
+            "type": "string",
+            "examples": ["TCGCATGTACCTGCAGTAGC"]
+          },
+          "amplificationSuccess": {
+            "description": "Whether amplification was successful.",
+            "type": "boolean"
+          },
+          "notes": {
+            "description": "Notes about this specific sequence.",
+            "type": "string"
+          }
+        }
+      },
+      "minItems": 1
+    },
+    "voucheredSpecimen": {
+      "description": "Reference to vouchered herbarium specimen.",
+      "type": "object",
+      "properties": {
+        "herbarium": { "type": "string", "examples": ["K", "US", "PE", "MO"] },
+        "accessionNumber": { "type": "string" },
+        "collector": { "type": "string" },
+        "collectionNumber": { "type": "string" },
+        "collectionDate": { "type": "string", "format": "date" },
+        "collectionLocation": { "type": "string" }
+      }
+    },
+    "identificationConfidence": {
+      "description": "Confidence level of species identification via barcode.",
+      "type": "object",
+      "properties": {
+        "level": {
+          "type": "string",
+          "enum": ["species", "genus", "family", "order"]
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Percentage confidence"
+        },
+        "method": {
+          "type": "string",
+          "enum": ["BLAST", "BOLD ID Engine", "phylogenetic", "distance-based"],
+          "description": "Method used for identification"
+        },
+        "closestMatch": {
+          "type": "string",
+          "description": "Closest matching species in database"
+        },
+        "percentIdentity": {
+          "type": "number",
+          "description": "Percent identity to closest match"
+        }
+      }
+    },
+    "adulterantDetection": {
+      "description": "Information about detecting adulterants/substitutes.",
+      "type": "object",
+      "properties": {
+        "canDetect": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Common adulterants this barcode can distinguish",
+          "examples": [["Panax quinquefolius", "Panax notoginseng"]]
+        },
+        "diagnosticSites": {
+          "type": "string",
+          "description": "Nucleotide positions that distinguish from adulterants"
+        }
+      }
+    },
+    "laboratory": {
+      "description": "Laboratory where sequencing was performed.",
+      "type": "string"
+    },
+    "sequencingDate": {
+      "description": "Date of sequencing.",
+      "type": "string",
+      "format": "date"
+    },
+    "citations": {
+      "description": "Scientific citations for this barcode data.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "doi": { "type": "string" },
+          "pmid": { "type": "string" },
+          "title": { "type": "string" },
+          "year": { "type": "integer" }
+        }
+      }
+    }
+  },
+  "additionalProperties": true,
+  "_documentation": {
+    "iriPattern": "botanical/barcode/{slug}",
+    "directory": "entities/botanical/barcodes/{slug}/entity.jsonld",
+    "purpose": "Species authentication and adulteration detection",
+    "standardBarcodes": {
+      "plants": ["rbcL + matK (CBOL Plant Barcode)", "ITS2 (China Plant BOLI)"],
+      "animals": ["COI (Animal Barcode)"],
+      "fungi": ["ITS (Fungal Barcode)"]
+    },
+    "usage": [
+      "Link from PlantSpecies via hasDNABarcode",
+      "Include multiple barcode regions for better discrimination",
+      "Reference GenBank/BOLD for sequence verification",
+      "Document adulterants that can be distinguished"
+    ],
+    "qualityControl": [
+      "Use vouchered specimens when possible",
+      "Include primer sequences for reproducibility",
+      "Document amplification success rate",
+      "Compare against reference databases (BOLD, GenBank)"
+    ]
+  }
+}

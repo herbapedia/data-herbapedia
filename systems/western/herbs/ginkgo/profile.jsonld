@@ -1,11 +1,11 @@
 {
-  "@context": "../../schema/context/western.jsonld",
-  "@id": "western/ginkgo",
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/ginkgo",
   "@type": [
     "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
-    "@id": "plant/ginkgo"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/ginkgo"
   },
   "name": {
     "en": "Ginkgo",

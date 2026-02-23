@@ -1,0 +1,28 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/hydration-factor-cte4",
+  "@type": [
+    "herbapedia:WesternHerbalProfile"
+  ],
+  "profiles": {
+    "@id": "https://www.herbapedia.org/entity/formula/hydration-factor-cte4"
+  },
+  "name": {
+    "en": "Hydration Factor CTE4",
+    "zh-Hant": "獨特保濕因子CTE4",
+    "zh-Hans": "独特保湿因子CTE4"
+  },
+  "derivedFromPlant": {
+    "@id": "https://www.herbapedia.org/entity/formula/hydration-factor-cte4"
+  },
+  "westernTraditionalUsage": {
+    "en": "Moisturises and rehydrates skin and maintains the correct osmotic balance of water and lipids to keep complexions looking young and fresh.\n",
+    "zh-Hant": "",
+    "zh-Hans": ""
+  },
+  "provenance": {
+    "created": "2026-02-20T15:22:03.242Z",
+    "modified": "2026-02-20T15:22:03.242Z",
+    "migratedFrom": "systems/western/herbs/hydration-factor-cte4/profile.jsonld"
+  }
+}

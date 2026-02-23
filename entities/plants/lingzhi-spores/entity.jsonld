@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/lingzhi-spores",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/lingzhi-spores",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"

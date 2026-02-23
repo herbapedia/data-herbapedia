@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/konjac-jelly-root",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Konjac jelly Root",
+    "zh-Hant": "蒟蒻",
+    "zh-Hans": "蒟蒻"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/konjac-jelly"
+  },
+  "partType": "root",
+  "description": {
+    "en": "The root of Amorphophallus konjac, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.819Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

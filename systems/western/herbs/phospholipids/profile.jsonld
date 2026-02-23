@@ -1,11 +1,11 @@
 {
-  "@context": "../../schema/context/western.jsonld",
-  "@id": "western/phospholipids",
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/phospholipids",
   "@type": [
     "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
-    "@id": "plant/phospholipids"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/phospholipids"
   },
   "name": {
     "en": "Phospholipids",

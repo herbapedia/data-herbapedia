@@ -1,0 +1,34 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/ginger-flower",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Ginger Flower",
+    "zh-Hant": "薑花",
+    "zh-Hans": "姜花"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/ginger"
+  },
+  "partType": "flower",
+  "description": {
+    "en": "The inflorescence of the ginger plant, a cone-like spike (spadix) surrounded by showy bracts."
+  },
+  "morphology": {
+    "en": "Inflorescence 5-7 cm long, ovate to oblong. Bracts green with pale margins, becoming reddish with age. Flowers small, yellowish with purple lip."
+  },
+  "floweringSeason": {
+    "en": "Flowers rarely in cultivation; typically only in wild plants or specific growing conditions."
+  },
+  "provenance": {
+    "created": "2024-01-15",
+    "modified": "2024-01-15",
+    "source": "Flora of China",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  }
+}

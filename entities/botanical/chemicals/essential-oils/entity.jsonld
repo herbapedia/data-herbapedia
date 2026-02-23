@@ -1,0 +1,65 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/chemical/essential-oils",
+  "@type": [
+    "botany:ChemicalCompound",
+    "schema:BioChemEntity"
+  ],
+  "name": {
+    "en": "Essential Oils",
+    "zh-Hant": "精油",
+    "zh-Hans": "精油"
+  },
+  "commonName": [
+    "Essential oils",
+    "Volatile oils",
+    "Ethereal oils",
+    "Aetheroleum"
+  ],
+  "chebiID": "CHEBI:83630",
+  "compoundClass": "Terpenoids; Phenylpropanoids; Mixed compounds",
+  "description": {
+    "en": "Complex mixtures of volatile organic compounds extracted from plants, primarily terpenes, terpenoids, and aromatic compounds. Responsible for the distinctive fragrances of aromatic plants. Widely used in aromatherapy, traditional medicine, and as antimicrobial agents."
+  },
+  "pharmacology": [
+    "Antimicrobial activity (antibacterial, antifungal, antiviral)",
+    "Anti-inflammatory effects",
+    "Antispasmodic properties",
+    "Carminative effects",
+    "Sedative and anxiolytic activity",
+    "Expectorant action"
+  ],
+  "bioavailability": {
+    "en": "Highly lipophilic; rapidly absorbed through skin, mucous membranes, and respiratory tract. Can cross blood-brain barrier."
+  },
+  "safetyData": {
+    "warnings": [
+      "Can cause skin irritation or sensitization",
+      "Internal use requires caution",
+      "May interact with medications",
+      "Keep away from children and pets"
+    ]
+  },
+  "provenance": {
+    "created": "2024-01-15",
+    "modified": "2026-02-20T17:59:34.447Z",
+    "source": "Essential Oil Research Literature",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "foundIn": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/chamomile"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/garlic"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/saw-palmetto"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/valerian"
+    }
+  ]
+}

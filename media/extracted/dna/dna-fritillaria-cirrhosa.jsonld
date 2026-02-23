@@ -1,0 +1,91 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/dna/fritillaria-cirrhosa",
+  "@type": ["herbapedia:DNASequenceData", "schema:Dataset"],
+  "dataType": "DNASequence",
+  "sourceFile": "DNA_____Fritillaria_cirrhosa.pdf",
+  "sourceDocument": "GCMTI FS:2021-5",
+  "title": {
+    "en": "Fact sheet of reference DNA sequences of Fritillaria cirrhosa",
+    "zh-hk": "川貝母(Fritillaria cirrhosa)之參考 DNA 序列資料表"
+  },
+  "scientificName": {
+    "full": "Fritillaria cirrhosa",
+    "genus": "Fritillaria",
+    "species": "cirrhosa",
+    "author": ""
+  },
+  "loci": [
+    {
+      "name": "ITS2",
+      "fullName": "Internal transcribed spacer 2 of nuclear ribosomal RNA",
+      "description": {
+        "en": "Internal transcribed spacer 2 of nuclear ribosomal RNA (ITS2) sequence of plant voucher specimen of Fritillaria cirrhosa and dried leaf of F. cirrhosa",
+        "zh-hk": "Fritillaria cirrhosa植物憑證標本及乾葉片的核糖體DNA第二內部轉錄間隔區(ITS2)序列"
+      },
+      "sequenceLength": 230,
+      "consensusSequence": "CGCCTTGTTTCGCTCCGTGCCCAATGACCCTTCGGGTGCGGTCACGGATGCGGAGATTGGCCCCCCGTGCCTCGTGTGCGGCGGGCTTAAGCGCGGGCTGTCGGCGTCGGGATGGGCACGACGAGTGGTGGACGGAGCACCAGCAGGATGTTGTGGCCCCCYGTCGCCTTAAGGGGCTCAAGAGACCCGGAMCGGGCGAGCCGTGCTCCGTACGAGGAGGGCGTGCCGTCTCGCAATG",
+      "specimenCount": 20,
+      "specimens": [
+        "RD510-1C", "RD510-2C", "RD510-3A", "RD510-4A", "RD510-5A",
+        "RD511-1D", "RD511-2C", "RD511-3A", "RD511-4A", "RD511-6B",
+        "RD512-1C", "RD512-2C", "RD512-8A", "RD512-9A",
+        "RD536-2A", "RD536-3A",
+        "RD537-1A", "RD537-2A",
+        "RD538-1A", "RD538-2A"
+      ]
+    },
+    {
+      "name": "psbA-trnH",
+      "fullName": "Chloroplast psbA-trnH intergenic spacer",
+      "description": {
+        "en": "Chloroplast psbA-trnH intergenic spacer (psbA-trnH) sequence of plant voucher specimen of Fritillaria cirrhosa and dried leaf of F. cirrhosa",
+        "zh-hk": "Fritillaria cirrhosa植物憑證標本及乾葉片的葉綠體psbA-trnH基因間區(psbA-trnH)序列"
+      },
+      "sequenceLength": 296,
+      "consensusSequence": "ACAATTTCCCTCTAGACCTAGCTGCTATTGAAGTTCCATCTACAAATGGATAAGACTTACATTCTGTCTTAGTGTATACGAATCCTTGATGGAGCTATATCTTTGTATCTTGCTAAAGATATTGCTCCATCAAGGATTTTTTTTTATTGAACGTGTCACAGGGGATTACTCCTTTATTACATTACATTTTTAAAATTGGCATTCTATGCCCAATATATCGATCTAAGTATGAAGGTAAGAATAAATACAATAATGATGAATGGAAAAATAAAAAAGCTAAAATCCTTTAGCTAGATAAGGGGCGGATGTAGCCAAGTGGATCAAGGCAGT",
+      "specimenCount": 20,
+      "specimens": [
+        "RD510-1C", "RD510-2C", "RD510-3A", "RD510-4A", "RD510-5A",
+        "RD511-1D", "RD511-2C", "RD511-3A", "RD511-4A", "RD511-6B",
+        "RD512-1C", "RD512-2C", "RD512-8A", "RD512-9A",
+        "RD536-2A", "RD536-3A",
+        "RD537-1A", "RD537-2A",
+        "RD538-1A", "RD538-2A"
+      ]
+    },
+    {
+      "name": "rbcL",
+      "fullName": "Partial chloroplast ribulose bisphosphate carboxylase large chain",
+      "description": {
+        "en": "Partial chloroplast ribulose bisphosphate carboxylase large chain (rbcL) sequence of plant voucher specimen of Fritillaria cirrhosa and dried leaf of F. cirrhosa",
+        "zh-hk": "Fritillaria cirrhosa植物憑證標本及乾葉片的葉綠體二磷酸核酮糖羧化酶大鏈(rbcL)部分序列"
+      },
+      "sequenceLength": 554,
+      "consensusSequence": "AAGTGCTGGATTCAAAGCTGGTGTTAAAGATTACAAATTGACTTATTATACTCCTGACTATGAAACCAAAGATACTGATATTTTGGCAGCATTCCGAGTAACTCCTCAACCCGGAGTTCCACCCGAAGAGGCAGGGGCAGCGGTAGCCGCCGAATCTTCCACTGGTACATGGACAACTGTGTGGACTGATGGACTTACCAGTCTTGATCGTTACAAAGGGCGATGCTACCACATCGAGAGCGTTGTTGGGGAAGAAAATCAATATATTGCTTATGTAGCTTATCCTTTAGACCTTTTTGAAGAAGGTTCTGTTACTAACATGTTCACTTCCATTGTGGGTAATGTATTTGGTTTCAAAGCCCTACGAGCTCTACGTCTGGAGGATCTGCGAATTCCTACTTCTTATTCCAAAACTTTTCAAGGCCCGCCTCATGGTATCCAAGTTGAAAGGGATAAATTGAACAAGTATGGTCGTCCCCTATTAGGATGTACCATTAAACCAAAATTAGGATTATCTGCAAAGAACTATGGTAGAGCAGTTTATGAATGTCTG",
+      "specimenCount": 20,
+      "specimens": [
+        "RD510-1C", "RD510-2C", "RD510-3A", "RD510-4A", "RD510-5A",
+        "RD511-1D", "RD511-2C", "RD511-3A", "RD511-4A", "RD511-6B",
+        "RD512-1C", "RD512-2C", "RD512-8A", "RD512-9A",
+        "RD536-2A", "RD536-3A",
+        "RD537-1A", "RD537-2A",
+        "RD538-1A", "RD538-2A"
+      ]
+    }
+  ],
+  "specimen": {
+    "gcmtiCode": "GA0000560a00",
+    "type": "Plant voucher specimen and dried leaf of Fritillaria cirrhosa",
+    "totalSpecimens": 20
+  },
+  "methodology": {
+    "format": "FASTA",
+    "sequencingTargets": ["ITS2", "psbA-trnH", "rbcL"],
+    "specimenTypes": ["Plant voucher specimen of Fritillaria cirrhosa", "Dried leaf of F. cirrhosa"]
+  },
+  "extracted": {
+    "date": "2026-02-20",
+    "extractedBy": "automated extraction from PDF"
+  }
+}

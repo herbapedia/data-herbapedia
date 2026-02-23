@@ -1,0 +1,34 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/clove",
+  "@type": [
+    "herbapedia:BotanicalSource",
+    "botany:PlantSpecies",
+    "schema:Plant"
+  ],
+  "sourceType": "botanical",
+  "sourceSubType": "plant",
+  "scientificName": "Syzygium aromaticum",
+  "family": "Myrtaceae",
+  "name": {
+    "en": "Clove Tree",
+    "zh-Hant": "丁香樹",
+    "zh-Hans": "丁香树"
+  },
+  "description": {
+    "en": "An evergreen tree whose flower buds are used as a spice."
+  },
+  "wikidataID": "Q213382",
+  "hasExtract": [
+    {
+      "@id": "https://www.herbapedia.org/entity/preparation/clove-oil"
+    }
+  ],
+  "provenance": {
+    "created": "2026-02-21",
+    "source": "Created as source plant for essential oil",
+    "purpose": "Enable proper linking of essential oil extracts"
+  },
+  "gbifID": "5398519",
+  "ncbiTaxonID": "57723"
+}

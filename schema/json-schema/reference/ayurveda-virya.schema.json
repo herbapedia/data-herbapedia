@@ -1,0 +1,141 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herbapedia.org/schema/json-schema/reference/ayurveda-virya.schema.json",
+  "title": "Ayurveda Virya",
+  "description": "Ayurvedic potency/energy (वीर्य - Virya). The heating or cooling energetic effect of a substance. Only two main viryas: Ushna (heating) and Sheeta (cooling). This is one of the most important factors in Ayurvedic pharmacology.",
+  "type": "object",
+  "allOf": [
+    { "$ref": "./reference-entity.schema.json" }
+  ],
+  "required": ["@id", "@type", "name"],
+  "properties": {
+    "@id": {
+      "description": "Unique identifier: ayurveda/virya/{slug}.",
+      "type": "string",
+      "pattern": "^ayurveda/virya/[a-z0-9-]+$",
+      "examples": [
+        "ayurveda/virya/ushna",
+        "ayurveda/virya/sheeta"
+      ]
+    },
+    "@type": {
+      "type": "array",
+      "items": { "type": "string" },
+      "contains": { "const": "ayurveda:Virya" },
+      "examples": [["ayurveda:Virya"]]
+    },
+    "name": {
+      "description": "Virya name in Sanskrit and English.",
+      "$ref": "../core/language-map.schema.json",
+      "examples": [{ "sa": "उष्ण", "en": "Heating" }, { "sa": "शीत", "en": "Cooling" }]
+    },
+    "sanskritName": {
+      "description": "Sanskrit name in Devanagari.",
+      "type": "string",
+      "examples": ["उष्ण", "शीत"]
+    },
+    "sanskritTransliteration": {
+      "description": "IAST transliteration.",
+      "type": "string",
+      "examples": ["uṣṇa", "śīta"]
+    },
+    "englishName": {
+      "description": "English translation.",
+      "type": "string",
+      "examples": ["Heating", "Cooling"]
+    },
+    "symbol": {
+      "description": "Devanagari symbol.",
+      "type": "string",
+      "examples": ["उ", "शी"]
+    },
+    "code": {
+      "description": "Short code.",
+      "type": "string",
+      "enum": ["H", "C"],
+      "_documentation": {
+        "H": "Heating (Ushna)",
+        "C": "Cooling (Sheeta)"
+      }
+    },
+    "oppositeOf": {
+      "description": "The opposing virya.",
+      "$ref": "../core/iri-reference.schema.json"
+    },
+    "effectOnDoshas": {
+      "description": "How this virya affects each dosha.",
+      "type": "object",
+      "properties": {
+        "vata": {
+          "type": "string",
+          "enum": ["increases", "decreases", "variable"]
+        },
+        "pitta": {
+          "type": "string",
+          "enum": ["increases", "decreases", "variable"]
+        },
+        "kapha": {
+          "type": "string",
+          "enum": ["increases", "decreases", "variable"]
+        }
+      }
+    },
+    "effectOnAgni": {
+      "description": "Effect on digestive fire (agni).",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "physiologicalEffect": {
+      "description": "General physiological effect.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "indications": {
+      "description": "Conditions where this virya is beneficial.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "contraindications": {
+      "description": "Conditions where this virya should be avoided.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "exampleSubstances": {
+      "description": "Substances with this virya.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "tcmNatureEquivalent": {
+      "description": "Approximate TCM nature equivalent.",
+      "$ref": "../core/iri-reference.schema.json"
+    }
+  },
+  "additionalProperties": true,
+  "_documentation": {
+    "iriPattern": "ayurveda/virya/{slug}",
+    "directory": "systems/ayurveda/reference/viryas.jsonld",
+    "twoViryas": {
+      "ushna": {
+        "sanskrit": "उष्ण",
+        "english": "Heating",
+        "pitta": "increases",
+        "vata": "decreases (usually)",
+        "kapha": "decreases",
+        "effect": "Increases metabolism, digestion, circulation",
+        "indications": ["Cold conditions", "Kapha disorders", "Vata disorders", "Poor digestion"],
+        "cautions": ["Pitta disorders", "Inflammation", "Fever", "Bleeding disorders"],
+        "examples": ["Ginger", "Black pepper", "Pippali", "Garlic"]
+      },
+      "sheeta": {
+        "sanskrit": "शीत",
+        "english": "Cooling",
+        "pitta": "decreases",
+        "vata": "increases (can)",
+        "kapha": "increases (can)",
+        "effect": "Reduces heat, inflammation, soothes",
+        "indications": ["Heat conditions", "Pitta disorders", "Inflammation", "Fever"],
+        "cautions": ["Cold conditions", "Kapha disorders", "Weak digestion"],
+        "examples": ["Aloe vera", "Coriander", "Fennel", "Rose"]
+      }
+    },
+    "clinicalImportance": "Virya is the most powerful factor in determining a substance's effect. Similar to TCM nature but more binary (hot/cold rather than hot/warm/neutral/cool/cold)."
+  }
+}

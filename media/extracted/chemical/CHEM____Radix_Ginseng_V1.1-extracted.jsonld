@@ -1,0 +1,324 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/chemical/radix-ginseng",
+  "@type": ["herbapedia:ChemicalAnalysisData", "schema:Dataset"],
+  "dataType": "ChemicalAnalysis",
+  "sourceDocument": "CHEM____Radix_Ginseng_V1.1.pdf",
+  "scientificName": "Panax ginseng",
+  "chineseName": "人參",
+  "pinyinName": "Ren Shen",
+  "identificationMethod": ["Physicochemical", "TLC", "HPLC-Fingerprint", "HPLC-Assay"],
+  "referenceCompounds": [
+    {
+      "name": "Ginsenoside Rb₁",
+      "chineseName": "人參皂苷 Rb₁",
+      "formula": "C₅₄H₉₂O₂₃",
+      "purpose": ["TLC identification", "HPLC fingerprint marker", "Assay quantification"]
+    },
+    {
+      "name": "Ginsenoside Re",
+      "chineseName": "人參皂苷 Re",
+      "formula": "C₄₈H₈₂O₁₈",
+      "purpose": ["HPLC fingerprint marker", "Assay quantification"]
+    },
+    {
+      "name": "Ginsenoside Rg₁",
+      "chineseName": "人參皂苷 Rg₁",
+      "formula": "C₄₂H₇₂O₁₄",
+      "purpose": ["TLC identification", "HPLC fingerprint marker", "Assay quantification"]
+    },
+    {
+      "name": "Ginsenoside Rc",
+      "chineseName": "人參皂苷 Rc",
+      "purpose": ["TLC identification", "HPLC fingerprint marker"]
+    },
+    {
+      "name": "Ginsenoside Rf",
+      "chineseName": "人參皂苷 Rf",
+      "purpose": ["TLC identification", "HPLC fingerprint marker"]
+    },
+    {
+      "name": "Ginsenoside Rb₂",
+      "chineseName": "人參皂苷 Rb₂",
+      "purpose": ["HPLC fingerprint marker"]
+    },
+    {
+      "name": "Ginsenoside Rd",
+      "chineseName": "人參皂苷 Rd",
+      "purpose": ["HPLC fingerprint marker"]
+    },
+    {
+      "name": "Pseudoginsenoside F₁₁",
+      "chineseName": "擬人參皂苷 F₁₁",
+      "purpose": ["TLC negative identification marker"]
+    }
+  ],
+  "assayLimits": {
+    "ginsenosideRb1": {
+      "compound": "Ginsenoside Rb₁",
+      "formula": "C₅₄H₉₂O₂₃",
+      "minimumContent": "0.20%",
+      "basis": "dried substance"
+    },
+    "ginsenosideRePlusRg1": {
+      "compounds": ["Ginsenoside Re", "Ginsenoside Rg₁"],
+      "formulas": ["C₄₈H₈₂O₁₈", "C₄₂H₇₂O₁₄"],
+      "minimumContent": "0.19%",
+      "basis": "dried substance (combined total)"
+    }
+  },
+  "physicochemicalIdentification": {
+    "method": "Color reaction with sulfuric acid",
+    "procedure": {
+      "sampleAmount": "2.0 g",
+      "solvent": "dichloromethane",
+      "solventVolume": "6 mL",
+      "extraction": "ultrasonication for 30 minutes",
+      "testVolume": "1 mL filtrate",
+      "reagent": "sulfuric acid",
+      "reagentVolume": "1 mL",
+      "positiveResult": "red or brown ring at the interface of the two solvent layers"
+    }
+  },
+  "tlcMethod": {
+    "appendixReference": "Appendix I",
+    "stationaryPhase": "HPTLC silica gel F₂₅₄ plate",
+    "developingSolvent": {
+      "components": ["chloroform", "methanol", "water"],
+      "ratio": "13:7:2 (v/v)",
+      "preparation": "Refrigerate below 6°C for at least 10 hours, use lower layer"
+    },
+    "sprayReagent": {
+      "composition": "10 mL sulfuric acid in 90 mL ethanol",
+      "visualization": "Heat above 95°C until spots/bands visible"
+    },
+    "testSolution": {
+      "sampleAmount": "0.2 g",
+      "solvent": "methanol",
+      "solventVolume": "5 mL",
+      "extraction": "ultrasonication for 30 minutes",
+      "centrifugation": "1200 × g for 10 minutes"
+    },
+    "standardSolutions": {
+      "concentration": "0.5 mg/mL in methanol",
+      "compounds": ["Ginsenoside Rb₁", "Ginsenoside Rc", "Ginsenoside Rf", "Ginsenoside Rg₁", "Pseudoginsenoside F₁₁"]
+    },
+    "applicationVolumes": {
+      "standardSolutions": "1 μL each",
+      "testSolution": "3 μL"
+    },
+    "developingDistance": "8 cm",
+    "visualization": "UV light at 366 nm",
+    "identificationCriteria": {
+      "positiveMarkers": ["Ginsenoside Rb₁", "Ginsenoside Rc", "Ginsenoside Rf", "Ginsenoside Rg₁"],
+      "negativeMarker": "Pseudoginsenoside F₁₁ (must NOT be present)"
+    }
+  },
+  "hplcFingerprint": {
+    "appendixReference": "Appendix II",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "UV",
+      "detectionWavelength": "203 nm",
+      "columnTemperature": "25°C",
+      "flowRate": "1.6 mL/min",
+      "injectionVolume": "20 μL"
+    },
+    "mobilePhase": {
+      "solventA": "Water",
+      "solventB": "Acetonitrile",
+      "gradientProgram": [
+        {
+          "timeRange": "0-20 min",
+          "solventA": "80%",
+          "solventB": "20%",
+          "elution": "isocratic"
+        },
+        {
+          "timeRange": "20-60 min",
+          "solventA": "80% → 58%",
+          "solventB": "20% → 42%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "ginsenosideRb1": {
+        "stockSolution": "500 mg/L (2.5 mg in 5 mL methanol)",
+        "workingSolution": "100 mg/L (1:5 dilution)",
+        "storage": "-10°C in the dark"
+      },
+      "ginsenosideRg1": {
+        "stockSolution": "500 mg/L (2.5 mg in 5 mL methanol)",
+        "workingSolution": "100 mg/L (1:5 dilution)",
+        "storage": "-10°C in the dark"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "1.0 g",
+      "solvent": "methanol",
+      "solventVolume": "10 mL",
+      "extraction": "ultrasonication for 30 minutes",
+      "centrifugation": "540 × g for 5 minutes",
+      "filtration": "0.2 μm PTFE filter"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "peakAreaRSD": "≤ 3.0% (Ginsenoside Rb₁)",
+      "retentionTimeRSD": "≤ 2.0% (Ginsenoside Rb₁)",
+      "theoreticalPlates": "≥ 150,000 (based on Ginsenoside Rb₁)",
+      "resolution": "≥ 1.0 (between Ginsenoside Rg₁ and Re peaks)"
+    },
+    "identificationCriteria": {
+      "retentionTimeTolerance": "≤ 3.0% difference between sample and standard"
+    }
+  },
+  "hplcAssay": {
+    "appendixReference": "Appendix III",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "UV",
+      "detectionWavelength": "203 nm",
+      "columnTemperature": "25°C",
+      "flowRate": "1.6 mL/min"
+    },
+    "mobilePhase": {
+      "solventA": "Water",
+      "solventB": "Acetonitrile",
+      "gradientProgram": [
+        {
+          "timeRange": "0-20 min",
+          "solventA": "80%",
+          "solventB": "20%",
+          "elution": "isocratic"
+        },
+        {
+          "timeRange": "20-60 min",
+          "solventA": "80% → 58%",
+          "solventB": "20% → 42%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "stockSolution": {
+        "concentration": "1000 mg/L each",
+        "compounds": ["Ginsenoside Rb₁", "Ginsenoside Re", "Ginsenoside Rg₁"],
+        "preparation": "10.0 mg each in 10 mL methanol",
+        "storage": "-10°C in the dark"
+      },
+      "workingSolutions": {
+        "concentrations": ["25", "50", "100", "200", "400 mg/L"],
+        "description": "Series of mixed standard solutions"
+      },
+      "injectionVolume": "5 μL (for calibration)"
+    },
+    "testSolution": {
+      "sampleAmount": "0.5 g",
+      "solvent": "methanol",
+      "extractionVolume": "10 mL × 3 extractions",
+      "washVolume": "5 mL × 3 washes",
+      "extraction": "ultrasonication for 30 minutes",
+      "centrifugation": "540 × g for 5 minutes",
+      "evaporation": "rotary evaporator at reduced pressure",
+      "finalVolume": "10 mL",
+      "filtration": "0.2 μm PTFE filter",
+      "injectionVolume": "10 μL"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "injectionVolume": "10 μL",
+      "standardConcentration": "100 mg/L (Ginsenoside Rb₁ Std-AS)",
+      "peakAreaRSD": "≤ 3.0% (Ginsenoside Rb₁)",
+      "retentionTimeRSD": "≤ 2.0% (Ginsenoside Rb₁)",
+      "theoreticalPlates": "≥ 150,000 (based on Ginsenoside Rb₁)",
+      "resolution": "≥ 1.0 (between Ginsenoside Rg₁ and Re peaks)"
+    },
+    "calibration": {
+      "method": "5-point calibration curve",
+      "plot": "Peak area vs. concentration (mg/L)",
+      "identificationTolerance": "≤ 5.0% difference in retention times"
+    }
+  },
+  "rrtValues": [
+    {
+      "peakNumber": 1,
+      "compound": "Ginsenoside Rg₁",
+      "rrt": 1.00,
+      "acceptableRange": null,
+      "referenceMarker": true,
+      "referenceTo": "self"
+    },
+    {
+      "peakNumber": 2,
+      "compound": "Ginsenoside Re",
+      "rrt": 1.06,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Ginsenoside Rg₁"
+    },
+    {
+      "peakNumber": 3,
+      "compound": "Ginsenoside Rf",
+      "rrt": 0.89,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Ginsenoside Rb₁"
+    },
+    {
+      "peakNumber": 4,
+      "compound": "Ginsenoside Rb₁",
+      "rrt": 1.00,
+      "acceptableRange": null,
+      "referenceMarker": true,
+      "referenceTo": "self"
+    },
+    {
+      "peakNumber": 5,
+      "compound": "Ginsenoside Rc",
+      "rrt": 1.03,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Ginsenoside Rb₁"
+    },
+    {
+      "peakNumber": 6,
+      "compound": "Ginsenoside Rb₂",
+      "rrt": 1.06,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Ginsenoside Rb₁"
+    },
+    {
+      "peakNumber": 7,
+      "compound": "Ginsenoside Rd",
+      "rrt": 1.13,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Ginsenoside Rb₁"
+    }
+  ],
+  "appendices": {
+    "appendixI": {
+      "title": "Chromatography – Thin-Layer Chromatography",
+      "description": "General procedures for TLC including plate types, application methods, developing chambers, and Rf calculation"
+    },
+    "appendixII": {
+      "title": "GC and HPLC/UHPLC Fingerprinting",
+      "description": "Methods for establishing chromatographic fingerprints using marker peaks and RRT values"
+    },
+    "appendixIII": {
+      "title": "Chromatography – HPLC/UHPLC",
+      "description": "General HPLC/UHPLC procedures including system suitability tests (theoretical plates, repeatability, resolution, tailing factor) and quantitative calculations"
+    }
+  },
+  "extractedAt": "2026-02-20"
+}

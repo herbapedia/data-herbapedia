@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/ginkgo-root",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Ginkgo Root",
+    "zh-Hant": "銀杏葉",
+    "zh-Hans": "银杏叶"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/ginkgo"
+  },
+  "partType": "root",
+  "description": {
+    "en": "The root of Ginkgo biloba, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.815Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

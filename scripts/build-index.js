@@ -3,11 +3,10 @@
 /**
  * Herbapedia Data Index Builder
  *
- * Generates index files for efficient data loading by the herbapedia site.
- * Creates:
- * - index.json: Main index with all plants and their categories
- * - tcm-index.json: TCM herb profiles with quick lookup
- * - categories.json: Category definitions and counts
+ * Generates index files for the architecture with:
+ * - All 5 medicine systems (TCM, Western, Ayurveda, Persian, Mongolian)
+ * - Entity structure (entities/botanical/*, entities/preparations, profiles/*)
+ * - Cross-reference indexes for efficient lookups
  *
  * Usage:
  *   node scripts/build-index.js
@@ -21,29 +20,10 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 const ROOT = join(__dirname, '..')
 
-// Category mapping from TCM profiles to site categories
-const TCM_CATEGORY_MAP = {
-  'tonify-qi': 'chinese-herbs',
-  'tonify-blood': 'chinese-herbs',
-  'tonify-yin': 'chinese-herbs',
-  'tonify-yang': 'chinese-herbs',
-  'clear-heat': 'chinese-herbs',
-  'drain-damp': 'chinese-herbs',
-  'transform-phlegm': 'chinese-herbs',
-  'regulate-qi': 'chinese-herbs',
-  'invigorate-blood': 'chinese-herbs',
-  'calm-spirit': 'chinese-herbs',
-  'aromatize': 'chinese-herbs',
-  'tonify-qi-and-yin': 'chinese-herbs',
-  'digestion': 'chinese-herbs',
-  'external': 'chinese-herbs',
-  'reduce-swelling': 'chinese-herbs',
-  'stop-bleeding': 'chinese-herbs',
-}
+// ============================================================================
+// Utility Functions
+// ============================================================================
 
-/**
- * Find all JSON-LD files in a directory
- */
 function findJsonLdFiles(dir, files = []) {
   if (!existsSync(dir)) return files
 
@@ -60,282 +40,346 @@ function findJsonLdFiles(dir, files = []) {
   return files
 }
 
-/**
- * Parse a JSON-LD file and extract key data
- */
 function parseJsonLdFile(filePath) {
   try {
     const content = readFileSync(filePath, 'utf-8')
-    const data = JSON.parse(content)
-    return data
+    return JSON.parse(content)
   } catch (error) {
     console.error(`Error parsing ${filePath}: ${error.message}`)
     return null
   }
 }
 
-/**
- * Get the slug from a file path
- */
 function getSlugFromPath(filePath, baseDir) {
   const relativePath = relative(baseDir, filePath)
   const parts = relativePath.split('/')
-  // For plants: entities/plants/{slug}/entity.jsonld
-  // For TCM: systems/tcm/herbs/{slug}/profile.jsonld
   return parts[parts.length - 2]
 }
 
-/**
- * Determine category from TCM profile
- */
-function getCategoryFromTcmProfile(tcmData) {
-  const categoryRef = tcmData.hasCategory
-  if (categoryRef && typeof categoryRef === 'object' && categoryRef['@id']) {
-    const categoryId = categoryRef['@id'].replace('category/', '')
-    return TCM_CATEGORY_MAP[categoryId] || 'chinese-herbs'
-  }
-  return 'chinese-herbs'
+function extractIriSlug(iriRef) {
+  if (!iriRef) return null
+  if (typeof iriRef === 'string') return iriRef.split('/').pop()
+  if (iriRef['@id']) return iriRef['@id'].split('/').pop()
+  return null
 }
 
-/**
- * Build the main plant index
- */
-function buildPlantIndex() {
-  const plantsDir = join(ROOT, 'entities', 'plants')
-  const plantFiles = findJsonLdFiles(plantsDir)
+function extractIris(value) {
+  if (!value) return []
+  if (Array.isArray(value)) {
+    return value.map(v => extractIriSlug(v)).filter(Boolean)
+  }
+  const slug = extractIriSlug(value)
+  return slug ? [slug] : []
+}
 
-  const plants = []
+// ============================================================================
+// Entity Loaders
+// ============================================================================
 
-  for (const filePath of plantFiles) {
-    if (filePath.endsWith('/entity.jsonld')) {
-      const data = parseJsonLdFile(filePath)
-      if (!data) continue
+function loadBotanicalSpecies() {
+  const dir = join(ROOT, 'entities/botanical/species')
+  const files = findJsonLdFiles(dir)
+  const species = []
+  const index = {
+    byScientificName: {},
+    byGBIF: {},
+    byWikidata: {},
+  }
 
-      const slug = getSlugFromPath(filePath, plantsDir)
+  for (const file of files) {
+    if (!file.endsWith('/entity.jsonld')) continue
+    const data = parseJsonLdFile(file)
+    if (!data) continue
 
-      // Extract localized name
-      const name = data.name || {}
-      const enName = name.en || name['zh-Hant'] || name['zh-Hans'] || slug
+    const slug = getSlugFromPath(file, dir)
+    species.push({ slug, data })
 
-      // Extract common names
-      const commonName = data.commonName || {}
-
-      plants.push({
-        slug,
-        type: 'plant',
-        name: name,
-        commonName: commonName,
-        scientificName: data.scientificName || null,
-        family: data.family || null,
-        image: data.image || null
-      })
+    // Index by scientific name
+    if (data.scientificName) {
+      index.byScientificName[data.scientificName.toLowerCase()] = slug
     }
-  }
 
-  return plants
-}
+    // Index by GBIF ID
+    if (data.gbifID) {
+      index.byGBIF[data.gbifID] = slug
+    }
 
-/**
- * Build TCM profiles index
- */
-function buildTcmIndex() {
-  const tcmDir = join(ROOT, 'systems', 'tcm', 'herbs')
-  const tcmFiles = findJsonLdFiles(tcmDir)
-
-  const tcmHerbs = []
-
-  for (const filePath of tcmFiles) {
-    if (filePath.endsWith('/profile.jsonld')) {
-      const data = parseJsonLdFile(filePath)
-      if (!data) continue
-
-      const slug = getSlugFromPath(filePath, tcmDir)
-      const category = getCategoryFromTcmProfile(data)
-
-      // Extract derived plant
-      let plantSlug = null
-      if (data.derivedFromPlant && typeof data.derivedFromPlant === 'object') {
-        const plantRef = data.derivedFromPlant['@id']
-        if (plantRef) {
-          plantSlug = plantRef.replace('plant/', '').replace('#root', '')
+    // Index by Wikidata
+    if (data.sameAs) {
+      const sameAs = Array.isArray(data.sameAs) ? data.sameAs : [data.sameAs]
+      for (const ref of sameAs) {
+        if (ref['@id'] && ref['@id'].includes('wikidata.org')) {
+          index.byWikidata[ref['@id']] = slug
         }
       }
-
-      // Extract localized name
-      const name = data.name || {}
-
-      tcmHerbs.push({
-        slug,
-        tcmSlug: slug,
-        type: 'tcm-herb',
-        category,
-        plantSlug,
-        name,
-        pinyin: data.pinyin || null,
-        chineseName: data.chineseName || null,
-        hasCategory: data.hasCategory,
-        hasNature: data.hasNature,
-        hasFlavor: data.hasFlavor,
-        entersMeridian: data.entersMeridian
-      })
     }
   }
 
-  return tcmHerbs
+  return { species, index }
 }
 
-/**
- * Merge plant and TCM data for display
- */
-function buildMergedIndex(plants, tcmHerbs) {
-  const plantMap = new Map()
-  for (const plant of plants) {
-    plantMap.set(plant.slug, plant)
-  }
-
-  const merged = []
-  const categoryCounts = {
-    'chinese-herbs': 0,
-    'western-herbs': 0,
-    'vitamins': 0,
-    'minerals': 0,
-    'nutrients': 0
-  }
-
-  for (const tcm of tcmHerbs) {
-    const plant = plantMap.get(tcm.plantSlug)
-
-    const herbEntry = {
-      slug: tcm.plantSlug,
-      tcmSlug: tcm.slug,
-      category: tcm.category,
-      type: 'herb',
-      name: plant?.name || tcm.name,
-      commonName: plant?.commonName || {},
-      scientificName: plant?.scientificName || null,
-      family: plant?.family || null,
-      pinyin: tcm.pinyin,
-      chineseName: tcm.chineseName,
-      hasNature: tcm.hasNature,
-      hasFlavor: tcm.hasFlavor,
-      entersMeridian: tcm.entersMeridian,
-      image: plant?.image || null
-    }
-
-    merged.push(herbEntry)
-
-    if (categoryCounts[tcm.category] !== undefined) {
-      categoryCounts[tcm.category]++
-    }
-  }
-
-  // Add plants without TCM profiles (western herbs, vitamins, minerals, etc.)
-  const tcmPlantSlugs = new Set(tcmHerbs.map(t => t.plantSlug))
-  for (const plant of plants) {
-    if (!tcmPlantSlugs.has(plant.slug)) {
-      // Determine category from slug patterns
-      let category = 'western-herbs'
-      if (plant.slug.includes('vitamin-')) {
-        category = 'vitamins'
-      } else if (['calcium', 'copper', 'iodine', 'iron', 'magnesium', 'manganese', 'potassium', 'selenium', 'zinc'].includes(plant.slug)) {
-        category = 'minerals'
-      } else if (['choline', 'chondroitin', 'glucosamine', 'inositol', 'lecithin', 'lysine', 'melatonin', 'methionine'].some(n => plant.slug.includes(n))) {
-        category = 'nutrients'
-      }
-
-      merged.push({
-        slug: plant.slug,
-        category,
-        type: 'plant',
-        name: plant.name,
-        commonName: plant.commonName,
-        scientificName: plant.scientificName,
-        family: plant.family,
-        image: plant.image
-      })
-
-      categoryCounts[category]++
-    }
-  }
-
-  return { merged, categoryCounts }
-}
-
-/**
- * Main function
- */
-function build() {
-  console.log('Building Herbapedia data index...\n')
-
-  // Build indexes
-  console.log('  - Parsing plant entities...')
-  const plants = buildPlantIndex()
-  console.log(`    Found ${plants.length} plant entities`)
-
-  console.log('  - Parsing TCM profiles...')
-  const tcmHerbs = buildTcmIndex()
-  console.log(`    Found ${tcmHerbs.length} TCM herb profiles`)
-
-  console.log('  - Merging data...')
-  const { merged, categoryCounts } = buildMergedIndex(plants, tcmHerbs)
-  console.log(`    Merged ${merged.length} herbs across categories`)
-
-  // Create output index
+function loadPreparations() {
+  const dir = join(ROOT, 'entities/preparations')
+  const files = findJsonLdFiles(dir)
+  const preparations = []
   const index = {
-    version: '1.0',
-    generated: new Date().toISOString(),
-    counts: {
-      plants: plants.length,
-      tcmHerbs: tcmHerbs.length,
-      total: merged.length,
-      categories: categoryCounts
-    },
-    categories: Object.entries(categoryCounts).map(([slug, count]) => ({
-      slug,
-      count
-    })),
-    herbs: merged
+    byPlant: {},
+    profilesByPreparation: {},
   }
 
-  // Create categories index with localized labels
-  const categoriesIndex = {
-    version: '1.0',
-    generated: new Date().toISOString(),
-    categories: [
-      {
-        slug: 'chinese-herbs',
-        title: { en: 'Chinese Herbs', 'zh-Hant': '中藥', 'zh-Hans': '中药' },
-        description: { en: 'Traditional Chinese Medicine herbs', 'zh-Hant': '傳統中藥材', 'zh-Hans': '传统中药材' },
-        count: categoryCounts['chinese-herbs']
-      },
-      {
-        slug: 'western-herbs',
-        title: { en: 'Western Herbs', 'zh-Hant': '西方草本', 'zh-Hans': '西方草本' },
-        description: { en: 'Western herbal medicine herbs', 'zh-Hant': '西方草本醫學', 'zh-Hans': '西方草本医学' },
-        count: categoryCounts['western-herbs']
-      },
-      {
-        slug: 'vitamins',
-        title: { en: 'Vitamins', 'zh-Hant': '維生素', 'zh-Hans': '维生素' },
-        description: { en: 'Essential vitamins for health', 'zh-Hant': '健康必需維生素', 'zh-Hans': '健康必需维生素' },
-        count: categoryCounts['vitamins']
-      },
-      {
-        slug: 'minerals',
-        title: { en: 'Minerals', 'zh-Hant': '礦物質', 'zh-Hans': '矿物质' },
-        description: { en: 'Essential minerals for health', 'zh-Hant': '健康必需礦物質', 'zh-Hans': '健康必需矿物质' },
-        count: categoryCounts['minerals']
-      },
-      {
-        slug: 'nutrients',
-        title: { en: 'Nutrients', 'zh-Hant': '營養素', 'zh-Hans': '营养素' },
-        description: { en: 'Essential nutrients and supplements', 'zh-Hant': '必需營養素', 'zh-Hans': '必需营养素' },
-        count: categoryCounts['nutrients']
+  for (const file of files) {
+    if (!file.endsWith('/entity.jsonld')) continue
+    const data = parseJsonLdFile(file)
+    if (!data) continue
+
+    const slug = getSlugFromPath(file, dir)
+    preparations.push({ slug, data })
+
+    // Index by source plant
+    const sourcePlant = extractIriSlug(data.derivedFrom?.[0])
+    if (sourcePlant) {
+      if (!index.byPlant[sourcePlant]) {
+        index.byPlant[sourcePlant] = []
       }
-    ]
+      index.byPlant[sourcePlant].push(slug)
+    }
+
+    // Index profiles
+    const profiles = {}
+    if (data.hasTCMProfile?.length) profiles.tcm = extractIriSlug(data.hasTCMProfile[0])
+    if (data.hasWesternProfile?.length) profiles.western = extractIriSlug(data.hasWesternProfile[0])
+    if (data.hasAyurvedaProfile?.length) profiles.ayurveda = extractIriSlug(data.hasAyurvedaProfile[0])
+    if (data.hasPersianProfile?.length) profiles.persian = extractIriSlug(data.hasPersianProfile[0])
+    if (data.hasMongolianProfile?.length) profiles.mongolian = extractIriSlug(data.hasMongolianProfile[0])
+
+    if (Object.keys(profiles).length > 0) {
+      index.profilesByPreparation[slug] = profiles
+    }
   }
 
-  // Ensure output directory exists
+  return { preparations, index }
+}
+
+function loadProfiles(systemName) {
+  const dir = join(ROOT, 'profiles', systemName)
+  const files = findJsonLdFiles(dir)
+  const profiles = []
+  const index = {}
+
+  for (const file of files) {
+    if (!file.endsWith('/profile.jsonld')) continue
+    const data = parseJsonLdFile(file)
+    if (!data) continue
+
+    const slug = getSlugFromPath(file, dir)
+    profiles.push({ slug, data })
+
+    // Build system-specific indexes
+    if (systemName === 'tcm') {
+      // TCM: Index by nature, flavor, meridian, category
+      extractIris(data.hasNature).forEach(n => {
+        if (!index[`nature:${n}`]) index[`nature:${n}`] = []
+        index[`nature:${n}`].push(slug)
+      })
+      extractIris(data.hasCategory).forEach(c => {
+        if (!index[`category:${c}`]) index[`category:${c}`] = []
+        index[`category:${c}`].push(slug)
+      })
+      extractIris(data.hasFlavor).forEach(f => {
+        if (!index[`flavor:${f}`]) index[`flavor:${f}`] = []
+        index[`flavor:${f}`].push(slug)
+      })
+      extractIris(data.entersMeridian).forEach(m => {
+        if (!index[`meridian:${m}`]) index[`meridian:${m}`] = []
+        index[`meridian:${m}`].push(slug)
+      })
+    }
+
+    if (systemName === 'western') {
+      // Western: Index by action, organ
+      extractIris(data.hasAction).forEach(a => {
+        if (!index[`action:${a}`]) index[`action:${a}`] = []
+        index[`action:${a}`].push(slug)
+      })
+      extractIris(data.hasOrganAffinity).forEach(o => {
+        if (!index[`organ:${o}`]) index[`organ:${o}`] = []
+        index[`organ:${o}`].push(slug)
+      })
+    }
+
+    if (systemName === 'ayurveda') {
+      // Ayurveda: Index by dosha, rasa
+      extractIris(data.hasRasa).forEach(r => {
+        if (!index[`rasa:${r}`]) index[`rasa:${r}`] = []
+        index[`rasa:${r}`].push(slug)
+      })
+      if (data.affectsDosha) {
+        Object.keys(data.affectsDosha).forEach(d => {
+          if (!index[`dosha:${d}`]) index[`dosha:${d}`] = []
+          index[`dosha:${d}`].push(slug)
+        })
+      }
+    }
+
+    if (systemName === 'persian') {
+      // Persian: Index by temperament
+      extractIris(data.hasTemperament).forEach(t => {
+        if (!index[`temperament:${t}`]) index[`temperament:${t}`] = []
+        index[`temperament:${t}`].push(slug)
+      })
+    }
+
+    if (systemName === 'mongolian') {
+      // Mongolian: Index by roots affected
+      if (data.affectsRoots) {
+        Object.keys(data.affectsRoots).forEach(r => {
+          if (!index[`root:${r}`]) index[`root:${r}`] = []
+          index[`root:${r}`].push(slug)
+        })
+      }
+    }
+  }
+
+  return { profiles, index }
+}
+
+// ============================================================================
+// Main Build Function
+// ============================================================================
+
+function build() {
+  console.log('Building Herbapedia Data Index...\n')
+
+  const counts = {
+    plantSpecies: 0,
+    plantParts: 0,
+    preparations: 0,
+    tcmProfiles: 0,
+    westernProfiles: 0,
+    ayurvedaProfiles: 0,
+    persianProfiles: 0,
+    mongolianProfiles: 0,
+    chemicals: 0,
+    chemicalProfiles: 0,
+    dnaBarcodes: 0,
+  }
+
+  const indexes = {
+    plantsByScientificName: {},
+    plantsByGBIF: {},
+    plantsByWikidata: {},
+    preparationsByPlant: {},
+    profilesByPreparation: {},
+    tcmByNature: {},
+    tcmByCategory: {},
+    tcmByMeridian: {},
+    tcmByFlavor: {},
+    westernByAction: {},
+    westernByOrgan: {},
+    westernBySystem: {},
+    ayurvedaByDosha: {},
+    ayurvedaByRasa: {},
+    persianByTemperament: {},
+    mongolianByRoot: {},
+    mongolianByElement: {},
+    chemicalsByPlant: {},
+  }
+
+  // Load botanical species
+  console.log('  Loading botanical species...')
+  const { species, index: speciesIndex } = loadBotanicalSpecies()
+  counts.plantSpecies = species.length
+  indexes.plantsByScientificName = speciesIndex.byScientificName
+  indexes.plantsByGBIF = speciesIndex.byGBIF
+  indexes.plantsByWikidata = speciesIndex.byWikidata
+  console.log(`    Found ${species.length} plant species`)
+
+  // Load preparations
+  console.log('  Loading preparations...')
+  const { preparations, index: prepIndex } = loadPreparations()
+  counts.preparations = preparations.length
+  indexes.preparationsByPlant = prepIndex.byPlant
+  indexes.profilesByPreparation = prepIndex.profilesByPreparation
+  console.log(`    Found ${preparations.length} preparations`)
+
+  // Load TCM profiles
+  console.log('  Loading TCM profiles...')
+  const { profiles: tcmProfiles, index: tcmIndex } = loadProfiles('tcm')
+  counts.tcmProfiles = tcmProfiles.length
+  // Transform index format
+  for (const [key, slugs] of Object.entries(tcmIndex)) {
+    const [type, value] = key.split(':')
+    if (type === 'nature') indexes.tcmByNature[value] = slugs
+    if (type === 'category') indexes.tcmByCategory[value] = slugs
+    if (type === 'flavor') indexes.tcmByFlavor[value] = slugs
+    if (type === 'meridian') indexes.tcmByMeridian[value] = slugs
+  }
+  console.log(`    Found ${tcmProfiles.length} TCM profiles`)
+
+  // Load Western profiles
+  console.log('  Loading Western profiles...')
+  const { profiles: westernProfiles, index: westernIndex } = loadProfiles('western')
+  counts.westernProfiles = westernProfiles.length
+  for (const [key, slugs] of Object.entries(westernIndex)) {
+    const [type, value] = key.split(':')
+    if (type === 'action') indexes.westernByAction[value] = slugs
+    if (type === 'organ') indexes.westernByOrgan[value] = slugs
+  }
+  console.log(`    Found ${westernProfiles.length} Western profiles`)
+
+  // Load Ayurveda profiles
+  console.log('  Loading Ayurveda profiles...')
+  const { profiles: ayurvedaProfiles, index: ayurvedaIndex } = loadProfiles('ayurveda')
+  counts.ayurvedaProfiles = ayurvedaProfiles.length
+  for (const [key, slugs] of Object.entries(ayurvedaIndex)) {
+    const [type, value] = key.split(':')
+    if (type === 'rasa') indexes.ayurvedaByRasa[value] = slugs
+    if (type === 'dosha') indexes.ayurvedaByDosha[value] = slugs
+  }
+  console.log(`    Found ${ayurvedaProfiles.length} Ayurveda profiles`)
+
+  // Load Persian profiles
+  console.log('  Loading Persian profiles...')
+  const { profiles: persianProfiles, index: persianIndex } = loadProfiles('persian')
+  counts.persianProfiles = persianProfiles.length
+  for (const [key, slugs] of Object.entries(persianIndex)) {
+    const [type, value] = key.split(':')
+    if (type === 'temperament') indexes.persianByTemperament[value] = slugs
+  }
+  console.log(`    Found ${persianProfiles.length} Persian profiles`)
+
+  // Load Mongolian profiles
+  console.log('  Loading Mongolian profiles...')
+  const { profiles: mongolianProfiles, index: mongolianIndex } = loadProfiles('mongolian')
+  counts.mongolianProfiles = mongolianProfiles.length
+  for (const [key, slugs] of Object.entries(mongolianIndex)) {
+    const [type, value] = key.split(':')
+    if (type === 'root') indexes.mongolianByRoot[value] = slugs
+  }
+  console.log(`    Found ${mongolianProfiles.length} Mongolian profiles`)
+
+  // Also check old directories for data that may exist there
+  const oldPlantsDir = join(ROOT, 'entities/plants')
+  if (existsSync(oldPlantsDir)) {
+    const oldPlantFiles = findJsonLdFiles(oldPlantsDir).filter(f => f.endsWith('/entity.jsonld'))
+    console.log(`  Found ${oldPlantFiles.length} plant entities in old location (entities/plants/)`)
+  }
+
+  const oldTcmDir = join(ROOT, 'systems/tcm/herbs')
+  if (existsSync(oldTcmDir)) {
+    const oldTcmFiles = findJsonLdFiles(oldTcmDir).filter(f => f.endsWith('/profile.jsonld'))
+    console.log(`  Found ${oldTcmFiles.length} TCM profiles in old location (systems/tcm/herbs/)`)
+  }
+
+  // Build master index
+  const masterIndex = {
+    version: '1.0.0',
+    generated: new Date().toISOString(),
+    counts,
+    indexes,
+  }
+
+  // Ensure output directory
   const outputDir = join(ROOT, 'dist')
   if (!existsSync(outputDir)) {
     mkdirSync(outputDir, { recursive: true })
@@ -343,19 +387,69 @@ function build() {
 
   // Write index files
   console.log('\n  Writing index files...')
-  writeFileSync(join(outputDir, 'index.json'), JSON.stringify(index, null, 2))
-  writeFileSync(join(outputDir, 'categories.json'), JSON.stringify(categoriesIndex, null, 2))
-  writeFileSync(join(outputDir, 'plants.json'), JSON.stringify(plants, null, 2))
-  writeFileSync(join(outputDir, 'tcm-herbs.json'), JSON.stringify(tcmHerbs, null, 2))
 
-  console.log('  - dist/index.json')
-  console.log('  - dist/categories.json')
-  console.log('  - dist/plants.json')
-  console.log('  - dist/tcm-herbs.json')
+  writeFileSync(join(outputDir, 'index.json'), JSON.stringify(masterIndex, null, 2))
+  console.log('    dist/index.json')
 
+  // Write system-specific indexes
+  writeFileSync(join(outputDir, 'botanical-index.json'), JSON.stringify({
+    version: '2.0.0',
+    generated: new Date().toISOString(),
+    counts: {
+      species: counts.plantSpecies,
+      parts: counts.plantParts,
+      chemicals: counts.chemicals,
+    },
+    indexes: {
+      byScientificName: indexes.plantsByScientificName,
+      byGBIF: indexes.plantsByGBIF,
+      byWikidata: indexes.plantsByWikidata,
+    },
+    species: species.map(({ slug, data }) => ({
+      '@id': `botanical/species/${slug}`,
+      slug,
+      scientificName: data.scientificName,
+      name: data.name,
+      family: data.family,
+    })),
+  }, null, 2))
+  console.log('    dist/botanical-index.json')
+
+  writeFileSync(join(outputDir, 'preparations-index.json'), JSON.stringify({
+    version: '2.0.0',
+    generated: new Date().toISOString(),
+    counts: { preparations: counts.preparations },
+    indexes: {
+      byPlant: indexes.preparationsByPlant,
+      profilesByPreparation: indexes.profilesByPreparation,
+    },
+    preparations: preparations.map(({ slug, data }) => ({
+      '@id': `preparation/${slug}`,
+      slug,
+      name: data.name,
+      derivedFrom: extractIriSlug(data.derivedFrom?.[0]),
+    })),
+  }, null, 2))
+  console.log('    dist/preparations-index.json')
+
+  // Write cross-reference index
+  writeFileSync(join(outputDir, 'cross-references.json'), JSON.stringify({
+    version: '2.0.0',
+    generated: new Date().toISOString(),
+    indexes,
+  }, null, 2))
+  console.log('    dist/cross-references.json')
+
+  // Summary
   console.log('\n✅ Index build complete!')
-  console.log(`   Total herbs: ${merged.length}`)
-  console.log(`   Categories: ${Object.entries(categoryCounts).map(([k, v]) => `${k}: ${v}`).join(', ')}`)
+  console.log('\n  Entity Counts:')
+  console.log(`    Plant Species: ${counts.plantSpecies}`)
+  console.log(`    Preparations: ${counts.preparations}`)
+  console.log(`    TCM Profiles: ${counts.tcmProfiles}`)
+  console.log(`    Western Profiles: ${counts.westernProfiles}`)
+  console.log(`    Ayurveda Profiles: ${counts.ayurvedaProfiles}`)
+  console.log(`    Persian Profiles: ${counts.persianProfiles}`)
+  console.log(`    Mongolian Profiles: ${counts.mongolianProfiles}`)
 }
 
 build()

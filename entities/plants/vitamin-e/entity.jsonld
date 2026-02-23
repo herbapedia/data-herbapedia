@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/vitamin-e",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/vitamin-e",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"

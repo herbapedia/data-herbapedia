@@ -1,0 +1,56 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/chemical/turmerone",
+  "@type": [
+    "botany:ChemicalCompound",
+    "schema:BioChemEntity"
+  ],
+  "name": {
+    "en": "Ar-Turmerone",
+    "zh-Hant": "芳香薑黃酮",
+    "zh-Hans": "芳香姜黄酮"
+  },
+  "chebiID": "CHEBI:195295",
+  "commonName": [
+    "Ar-Turmerone",
+    "Aromatic Turmerone",
+    "Turmerone"
+  ],
+  "molecularFormula": "C15H20O",
+  "molecularWeight": 216.32,
+  "casNumber": "532-65-0",
+  "pubchemCID": "5363078",
+  "inchi": "InChI=1S/C15H20O/c1-11(2)9-15(16)10-13(4)14-7-5-12(3)6-8-14/h5-9,13H,10H2,1-4H3",
+  "inchiKey": "NAAJVHHFAXWBOK-UHFFFAOYSA-N",
+  "compoundClass": "Sesquiterpenoid; Ketone",
+  "description": {
+    "en": "A major component of turmeric essential oil, contributing to the characteristic aroma. Exists in multiple isomeric forms (α, β, ar-). Has demonstrated neuroprotective and anti-inflammatory activities."
+  },
+  "foundIn": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/turmeric"
+    }
+  ],
+  "pharmacology": [
+    "Neuroprotective effects (promotes neural stem cell proliferation)",
+    "Anti-inflammatory activity",
+    "Antioxidant properties",
+    "Antimicrobial activity"
+  ],
+  "bioavailability": {
+    "en": "Lipophilic, absorbed through skin and mucous membranes"
+  },
+  "safetyData": {
+    "warnings": [
+      "May cause skin sensitization in some individuals"
+    ]
+  },
+  "provenance": {
+    "created": "2024-01-15",
+    "modified": "2026-02-20T17:59:34.449Z",
+    "source": "PubChem, Essential Oil Literature",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  }
+}

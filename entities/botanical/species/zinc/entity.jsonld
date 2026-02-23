@@ -1,0 +1,37 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/zinc",
+  "@type": [
+    "herbapedia:MineralSource",
+    "schema:Thing"
+  ],
+  "name": {
+    "en": "Zinc",
+    "zh-Hant": "鋅",
+    "zh-Hans": "锌"
+  },
+  "scientificName": null,
+  "family": null,
+  "genus": null,
+  "description": {
+    "en": "Food sources include beef, liver, oysters, spices and wheat bran.\n",
+    "zh-Hant": "鋅是一種人體必需的礦物質元素，參與骨骼代謝、神經傳導、酶活性調節等多種生理功能。適量攝入對維持機體正常代謝和生理功能具有重要意義。",
+    "zh-Hans": "鋅是一种人体必需的礦物质元素，參与骨骼代謝、神经传導、酶活性调节等多种生理功能。適量攝入對維持机体正常代謝和生理功能具有重要意義。"
+  },
+  "image": "media/images/zinc/main.jpg",
+  "provenance": {
+    "created": "2026-02-18T09:16:58.276Z",
+    "modified": "2026-02-21T01:46:20.762Z",
+    "migratedFrom": "entities/plants/zinc/entity.jsonld",
+    "source": "vitaherbapedia.com",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "classificationNote": "Reclassified as MineralSource"
+  },
+  "wikidataID": "Q758",
+  "sourceType": "mineral",
+  "hasWesternProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/western/profile/zinc"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/vitamin-b1",
+  "@type": [
+    "herbapedia:WesternHerbalProfile"
+  ],
+  "profiles": {
+    "@id": "https://www.herbapedia.org/entity/preparation/vitamin-b1"
+  },
+  "name": {
+    "en": "Vitamin B1",
+    "zh-Hant": "維他命 B1 又名硫安素",
+    "zh-Hans": "维他命 B1 又名硫安素"
+  },
+  "derivedFromPlant": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/vitamin-b1"
+  },
+  "westernTraditionalUsage": {
+    "en": "Thiamin, a B-group vitamin, was the first of the B vitamins to be identified. It is necessary for the maintenance of a normal appetite; for converting carbohydrates into energy; for muscle tone; and for a healthy brain and nervous system. The B vitamins also help to maintain healthy hair.\n",
+    "zh-Hant": "維他命 B1 又名硫安素，是世上第一隻獲識別的維他命B。硫安素能促進食慾，將碳水化合物轉換成能量，避免肌肉無力、全身倦怠、疲勞，以及維持健康腦部和神經系統。\n",
+    "zh-Hans": "维他命 B1 又名硫安素，是世上第一只获识别的维他命B。硫安素能促进食慾，将碳水化合物转换成能量，避免肌肉无力、全身倦怠、疲劳，以及维持健康脑部和神经系统。\n"
+  },
+  "provenance": {
+    "created": "2026-02-20T15:22:03.250Z",
+    "modified": "2026-02-20T15:22:03.250Z",
+    "migratedFrom": "systems/western/herbs/vitamin-b1/profile.jsonld"
+  }
+}

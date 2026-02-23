@@ -1,0 +1,28 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/garcinia-cambogia-fruit",
+  "@type": [
+    "herbapedia:WesternHerbalProfile"
+  ],
+  "profiles": {
+    "@id": "https://www.herbapedia.org/entity/preparation/garcinia-cambogia-fruit"
+  },
+  "name": {
+    "en": "Garcinia Cambogia Fruit",
+    "zh-Hant": "藤黃果",
+    "zh-Hans": "藤黄果"
+  },
+  "derivedFromPlant": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/garcinia-cambogia-fruit"
+  },
+  "westernTraditionalUsage": {
+    "en": "Garcinia Cambogia is a pumpkin-like fruit that contains the active ingredient hydroxycitric acid (HCA), which is used as a weight-loss aid. HCA can inhibit an enzyme in cells, citrate lyase, which is needed for the conversion of carbohydrates into fat, thus suppressing the synthesis of fat and aiding in weight control.\n",
+    "zh-Hant": "藤黃果的果實很像南瓜，藤黃果內的活躍物質羥基檸檬酸(Hydroxycitric Acid-HCA)，能幫助瘦身減重。HCA 能壓制細胞內酵素 citrate lyase，阻止碳水化合物轉換成為脂肪，從而抑制脂肪的合成。\n",
+    "zh-Hans": "藤黄果的果实很像南瓜，藤黄果内的活跃物质羟基柠檬酸(Hydroxycitric Acid-HCA)，能帮助减肥减重。HCA 能压制细胞内酵素 citrate lyase，阻止碳水化合物转换成为脂肪，从而抑制脂肪的合成。\n"
+  },
+  "provenance": {
+    "created": "2026-02-20T15:22:03.240Z",
+    "modified": "2026-02-20T15:22:03.240Z",
+    "migratedFrom": "systems/western/herbs/garcinia-cambogia-fruit/profile.jsonld"
+  }
+}

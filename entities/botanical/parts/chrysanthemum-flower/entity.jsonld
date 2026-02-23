@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/chrysanthemum-flower",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Chrysanthemum Flower",
+    "zh-Hant": "菊花 又名杭菊",
+    "zh-Hans": "菊花 又名杭菊"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/chrysanthemum"
+  },
+  "partType": "flower",
+  "description": {
+    "en": "The flower of Chrysanthemum morifolium, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.811Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

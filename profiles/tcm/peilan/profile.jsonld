@@ -1,0 +1,60 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/tcm.jsonld",
+  "@id": "https://www.herbapedia.org/system/tcm/profile/peilan",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "profiles": {
+    "@id": "https://www.herbapedia.org/entity/preparation/peilan"
+  },
+  "name": {
+    "en": "Peilan",
+    "zh-Hant": "佩蘭葉 又名佩蘭",
+    "zh-Hans": "佩兰叶 又名佩兰"
+  },
+  "pinyin": "Peilan",
+  "chineseName": {
+    "zh-Hant": "佩蘭葉 又名佩蘭",
+    "zh-Hans": "佩兰叶 又名佩兰"
+  },
+  "derivedFromPlant": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/peilan"
+  },
+  "hasCategory": {
+    "@id": "https://www.herbapedia.org/system/tcm/category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "https://www.herbapedia.org/system/tcm/nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/spleen"
+    }
+  ],
+  "tcmTraditionalUsage": {
+    "en": "Peilan is a type of orchid with neutral, bitter properties that aromatically transforms dampness and expels summer heat. It enters the spleen and stomach meridians, and is useful for patients suffering from bad breath, thick saliva or a lasting sweet, greasy taste in the mouth as a result of damp-heat in the spleen caused by eating too much fatty food.\n",
+    "zh-Hant": "佩蘭藥味辛，藥性平和，歸脾、胃、肺經，具化濕、解暑的功效，常用於濕滯中焦引發的不適，例如口中甜膩、口臭、多涎等，常與藿香、荷葉等同用。\n",
+    "zh-Hans": "佩蘭药味辛，药性平和，歸脾、胃、肺经，具化湿、解暑的功效，常用于湿滯中焦引發的不適，例如口中甜膩、口臭、多涎等，常与藿香、荷叶等同用。\n"
+  },
+  "tcmModernResearch": {
+    "en": "The decoction of peilan has antibiotic effect against certain microorganisms.\n",
+    "zh-Hant": "【佩蘭葉 又名佩蘭】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【佩蘭叶 又名佩蘭】Modern Research內容待翻譯补充。"
+  },
+  "tcmHistory": {
+    "en": "First appeared in Divine Husbandman's Classic of the Materia Medica.\n",
+    "zh-Hant": "【佩蘭葉 又名佩蘭】History內容待翻譯補充。",
+    "zh-Hans": "【佩蘭叶 又名佩蘭】History內容待翻譯补充。"
+  },
+  "provenance": {
+    "created": "2026-02-20T15:20:59.834Z",
+    "modified": "2026-02-20T15:20:59.834Z",
+    "migratedFrom": "systems/tcm/herbs/peilan/profile.jsonld"
+  }
+}

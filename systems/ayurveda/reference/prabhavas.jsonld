@@ -1,0 +1,204 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/system/ayurveda/profile/reference/prabhavas",
+  "@type": [
+    "ayurveda:ReferenceCollection",
+    "skos:Collection"
+  ],
+  "name": {
+    "en": "Ayurveda Prabhavas (Special Effects)",
+    "sa": "प्रभाव"
+  },
+  "description": {
+    "en": "Prabhava refers to the unique, unexplainable special effects of herbs that cannot be predicted from their rasa, virya, vipaka, or guna. These are empirically observed therapeutic actions specific to certain herbs."
+  },
+  "members": [
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/prabhava/varnya",
+      "@type": [
+        "ayurveda:Prabhava"
+      ],
+      "name": {
+        "en": "Varnya",
+        "sa": "वर्ण्य"
+      },
+      "description": {
+        "en": "Promotes complexion and skin luster. Special effect of herbs like Turmeric."
+      },
+      "exampleHerbs": [
+        "Haridra (Turmeric)",
+        "Chandana (Sandalwood)",
+        "Kumari (Aloe)"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/prabhava/hridya",
+      "@type": [
+        "ayurveda:Prabhava"
+      ],
+      "name": {
+        "en": "Hridya",
+        "sa": "हृदय"
+      },
+      "description": {
+        "en": "Cardiac tonic effect; strengthens the heart."
+      },
+      "exampleHerbs": [
+        "Arjuna",
+        "Amalaki",
+        "Brahmi"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/prabhava/bhedaniya",
+      "@type": [
+        "ayurveda:Prabhava"
+      ],
+      "name": {
+        "en": "Bhedaniya",
+        "sa": "भेदनीय"
+      },
+      "description": {
+        "en": "Breaks down accumulations; strong purgative action."
+      },
+      "exampleHerbs": [
+        "Haritaki",
+        "Bibhitaki",
+        "Trivrit"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/prabhava/rasayana",
+      "@type": [
+        "ayurveda:Prabhava"
+      ],
+      "name": {
+        "en": "Rasayana",
+        "sa": "रसायन"
+      },
+      "description": {
+        "en": "Rejuvenative effect; promotes longevity and cellular regeneration."
+      },
+      "exampleHerbs": [
+        "Amalaki",
+        "Ashwagandha",
+        "Guduchi",
+        "Haritaki"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/prabhava/medhya",
+      "@type": [
+        "ayurveda:Prabhava"
+      ],
+      "name": {
+        "en": "Medhya",
+        "sa": "मेध्य"
+      },
+      "description": {
+        "en": "Nootropic effect; enhances cognitive function and memory."
+      },
+      "exampleHerbs": [
+        "Brahmi",
+        "Shankhapushpi",
+        "Jatamamsi",
+        "Ashwagandha"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/prabhava/vishagna",
+      "@type": [
+        "ayurveda:Prabhava"
+      ],
+      "name": {
+        "en": "Vishagna",
+        "sa": "विषघ्न"
+      },
+      "description": {
+        "en": "Antitoxic; removes poisons and toxins from the body."
+      },
+      "exampleHerbs": [
+        "Neem",
+        "Guduchi",
+        "Haridra",
+        "Tulsi"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/prabhava/keshya",
+      "@type": [
+        "ayurveda:Prabhava"
+      ],
+      "name": {
+        "en": "Keshya",
+        "sa": "केश्य"
+      },
+      "description": {
+        "en": "Promotes hair growth and prevents premature graying."
+      },
+      "exampleHerbs": [
+        "Bhringaraj",
+        "Amalaki",
+        "Brahmi",
+        "Neelibhringadi"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/prabhava/chakshushya",
+      "@type": [
+        "ayurveda:Prabhava"
+      ],
+      "name": {
+        "en": "Chakshushya",
+        "sa": "चक्षुष्य"
+      },
+      "description": {
+        "en": "Beneficial for eyes; improves vision and treats eye disorders."
+      },
+      "exampleHerbs": [
+        "Amalaki",
+        "Haritaki",
+        "Bibhitaki",
+        "Triphala"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/prabhava/stanyajanana",
+      "@type": [
+        "ayurveda:Prabhava"
+      ],
+      "name": {
+        "en": "Stanyajanana",
+        "sa": "स्तन्यजनन"
+      },
+      "description": {
+        "en": "Galactagogue; promotes breast milk production."
+      },
+      "exampleHerbs": [
+        "Shatavari",
+        "Vidari",
+        "Kapikacchu",
+        "Yashtimadhu"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/prabhava/ anulomana",
+      "@type": [
+        "ayurveda:Prabhava"
+      ],
+      "name": {
+        "en": "Anulomana",
+        "sa": "अनुलोमन"
+      },
+      "description": {
+        "en": "Promotes downward movement; normalizes vata flow."
+      },
+      "exampleHerbs": [
+        "Haritaki",
+        "Pippali",
+        "Ginger",
+        "Hing"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/botany.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/chemical-profile/garlic-bulb",
+  "@type": [
+    "botany:ChemicalProfile",
+    "schema:Dataset"
+  ],
+  "name": {
+    "en": "Garlic Bulb Chemical Profile",
+    "zh-Hant": "大蒜球莖化學成分譜",
+    "zh-Hans": "大蒜球茎化学成分谱"
+  },
+  "profileOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/part/garlic-bulb"
+  },
+  "hasComponent": [
+    {
+      "compound": {
+        "@id": "https://www.herbapedia.org/entity/botanical/chemical/essential-oils"
+      },
+      "relativeAbundance": "major",
+      "concentrationRange": {
+        "min": 0.5,
+        "max": 2.5,
+        "unit": "%"
+      },
+      "detectionMethod": "GC-MS"
+    },
+    {
+      "compound": {
+        "@id": "https://www.herbapedia.org/entity/botanical/chemical/flavonoids"
+      },
+      "relativeAbundance": "moderate",
+      "concentrationRange": {
+        "min": 0.1,
+        "max": 0.8,
+        "unit": "%"
+      },
+      "detectionMethod": "HPLC"
+    }
+  ],
+  "analyticalMethod": "GC-MS, HPLC",
+  "description": {
+    "en": "Chemical composition profile of Garlic bulb, containing key bioactive sulfur compounds including allicin, alliin, and flavonoids."
+  },
+  "provenance": {
+    "created": "2026-02-21T00:00:00.000Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

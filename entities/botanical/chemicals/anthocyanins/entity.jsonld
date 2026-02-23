@@ -1,0 +1,59 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/chemical/anthocyanins",
+  "@type": [
+    "botany:ChemicalCompound",
+    "schema:BioChemEntity"
+  ],
+  "name": {
+    "en": "Anthocyanins",
+    "zh-Hant": "花青素",
+    "zh-Hans": "花青素"
+  },
+  "commonName": [
+    "Anthocyanins",
+    "Anthocyans",
+    "E 163 (food additive)"
+  ],
+  "chebiID": "CHEBI:131862",
+  "compoundClass": "Flavonoids; Anthocyanins; Glycosides",
+  "description": {
+    "en": "Water-soluble vacuolar pigments responsible for the red, purple, and blue colors in many fruits, vegetables, and flowers. Glycosides of anthocyanidins. One of the most important groups of water-soluble pigments in the plant kingdom with over 600 identified compounds."
+  },
+  "pharmacology": [
+    "Potent antioxidant activity",
+    "Anti-inflammatory effects",
+    "Cardiovascular protection (vasodilation, reduced platelet aggregation)",
+    "Neuroprotective properties",
+    "Vision improvement (reduced eye fatigue)",
+    "Anti-obesity effects"
+  ],
+  "bioavailability": {
+    "en": "Relatively low bioavailability (less than 2%); absorption varies by anthocyanin type and food matrix. Metabolized by gut microbiota and liver."
+  },
+  "safetyData": {
+    "toxicity": "Generally safe; no known toxicity",
+    "warnings": [
+      "May interact with blood thinners at high doses"
+    ]
+  },
+  "provenance": {
+    "created": "2024-01-15",
+    "modified": "2026-02-20T17:59:34.446Z",
+    "source": "Food Chemistry Literature",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "foundIn": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/bilberry"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/blueberry"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/grape-seed"
+    }
+  ]
+}

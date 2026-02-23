@@ -1,0 +1,536 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/reference/systems",
+  "@type": [
+    "western:ReferenceCollection",
+    "skos:Collection"
+  ],
+  "name": {
+    "en": "Western Body Systems"
+  },
+  "description": {
+    "en": "Major physiological systems of the human body as understood by biomedical science. Used for categorizing herbs by their primary system affinity."
+  },
+  "members": [
+    {
+      "@id": "https://www.herbapedia.org/system/western/profile/system/digestive",
+      "@type": [
+        "western:System"
+      ],
+      "name": {
+        "en": "Digestive System"
+      },
+      "description": {
+        "en": "The digestive system breaks down food into nutrients, absorbs them into the bloodstream, and eliminates waste. Includes mouth, esophagus, stomach, intestines, liver, gallbladder, and pancreas."
+      },
+      "components": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/stomach"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/small-intestine"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/large-intestine"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/liver"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/gallbladder"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/pancreas"
+        }
+      ],
+      "functions": [
+        "digestion",
+        "absorption",
+        "elimination",
+        "detoxification"
+      ],
+      "associatedActions": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/carminative"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/cholagogue"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/hepatic"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/spasmolytic"
+        }
+      ],
+      "commonConditions": [
+        "indigestion",
+        "gastritis",
+        "IBS",
+        "constipation",
+        "liver disease"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/profile/system/nervous",
+      "@type": [
+        "western:System"
+      ],
+      "name": {
+        "en": "Nervous System"
+      },
+      "description": {
+        "en": "The nervous system controls all body functions through electrical signals. Includes brain, spinal cord, peripheral nerves, and sensory organs."
+      },
+      "components": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/brain"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/spinal-cord"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/peripheral-nerves"
+        }
+      ],
+      "functions": [
+        "cognition",
+        "sensation",
+        "movement",
+        "autonomic regulation",
+        "mood"
+      ],
+      "associatedActions": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/nervine"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/anodyne"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/adaptogen"
+        }
+      ],
+      "commonConditions": [
+        "anxiety",
+        "depression",
+        "insomnia",
+        "neuropathy",
+        "headache"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/profile/system/respiratory",
+      "@type": [
+        "western:System"
+      ],
+      "name": {
+        "en": "Respiratory System"
+      },
+      "description": {
+        "en": "The respiratory system facilitates gas exchange between the body and environment. Includes nose, pharynx, larynx, trachea, bronchi, and lungs."
+      },
+      "components": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/lungs"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/bronchi"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/trachea"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/nasal-passages"
+        }
+      ],
+      "functions": [
+        "gas exchange",
+        "immune defense",
+        "pH regulation"
+      ],
+      "associatedActions": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/expectorant"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/demulcent"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/antimicrobial"
+        }
+      ],
+      "commonConditions": [
+        "asthma",
+        "bronchitis",
+        "common cold",
+        "cough",
+        "sinusitis"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/profile/system/cardiovascular",
+      "@type": [
+        "western:System"
+      ],
+      "name": {
+        "en": "Cardiovascular System"
+      },
+      "description": {
+        "en": "The cardiovascular system circulates blood throughout the body. Includes heart, blood vessels, and blood."
+      },
+      "components": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/heart"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/arteries"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/veins"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/capillaries"
+        }
+      ],
+      "functions": [
+        "circulation",
+        "oxygen transport",
+        "nutrient delivery",
+        "waste removal"
+      ],
+      "associatedActions": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/cardiotonic"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/hypotensive"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/antioxidant"
+        }
+      ],
+      "commonConditions": [
+        "hypertension",
+        "heart disease",
+        "atherosclerosis",
+        "varicose veins"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/profile/system/immune",
+      "@type": [
+        "western:System"
+      ],
+      "name": {
+        "en": "Immune System"
+      },
+      "description": {
+        "en": "The immune system defends the body against pathogens and foreign substances. Includes white blood cells, lymph nodes, spleen, and thymus."
+      },
+      "components": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/lymph-nodes"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/spleen"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/thymus"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/white-blood-cells"
+        }
+      ],
+      "functions": [
+        "immune defense",
+        "inflammation",
+        "allergy response",
+        "cancer surveillance"
+      ],
+      "associatedActions": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/immunomodulator"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/antimicrobial"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/anti-inflammatory"
+        }
+      ],
+      "commonConditions": [
+        "infections",
+        "autoimmune disease",
+        "allergies",
+        "cancer"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/profile/system/endocrine",
+      "@type": [
+        "western:System"
+      ],
+      "name": {
+        "en": "Endocrine System"
+      },
+      "description": {
+        "en": "The endocrine system produces and regulates hormones. Includes pituitary, thyroid, adrenals, pancreas, and gonads."
+      },
+      "components": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/pituitary"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/thyroid"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/adrenals"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/pancreas"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/gonads"
+        }
+      ],
+      "functions": [
+        "hormone production",
+        "metabolism",
+        "growth",
+        "reproduction",
+        "stress response"
+      ],
+      "associatedActions": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/adaptogen"
+        }
+      ],
+      "commonConditions": [
+        "diabetes",
+        "thyroid disorders",
+        "adrenal fatigue",
+        "hormonal imbalances"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/profile/system/urinary",
+      "@type": [
+        "western:System"
+      ],
+      "name": {
+        "en": "Urinary System"
+      },
+      "description": {
+        "en": "The urinary system filters blood and eliminates waste through urine. Includes kidneys, ureters, bladder, and urethra."
+      },
+      "components": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/kidneys"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/ureters"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/bladder"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/urethra"
+        }
+      ],
+      "functions": [
+        "filtration",
+        "waste elimination",
+        "fluid balance",
+        "blood pressure regulation"
+      ],
+      "associatedActions": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/diuretic"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/demulcent"
+        }
+      ],
+      "commonConditions": [
+        "UTI",
+        "kidney stones",
+        "bladder infections",
+        "edema"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/profile/system/reproductive",
+      "@type": [
+        "western:System"
+      ],
+      "name": {
+        "en": "Reproductive System"
+      },
+      "description": {
+        "en": "The reproductive system is responsible for reproduction and sexual function. Different in males and females."
+      },
+      "components": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/gonads"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/uterus"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/prostate"
+        }
+      ],
+      "functions": [
+        "reproduction",
+        "hormone production",
+        "sexual function"
+      ],
+      "associatedActions": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/emmenagogue"
+        }
+      ],
+      "commonConditions": [
+        "menstrual disorders",
+        "infertility",
+        "menopause symptoms",
+        "prostate issues"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/profile/system/integumentary",
+      "@type": [
+        "western:System"
+      ],
+      "name": {
+        "en": "Integumentary System"
+      },
+      "description": {
+        "en": "The integumentary system is the body's outer covering. Includes skin, hair, nails, and associated glands."
+      },
+      "components": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/skin"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/hair"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/nails"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/sweat-glands"
+        }
+      ],
+      "functions": [
+        "protection",
+        "temperature regulation",
+        "sensation",
+        "vitamin D synthesis"
+      ],
+      "associatedActions": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/vulnerary"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/anti-inflammatory"
+        }
+      ],
+      "commonConditions": [
+        "eczema",
+        "psoriasis",
+        "wounds",
+        "burns",
+        "acne"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/profile/system/musculoskeletal",
+      "@type": [
+        "western:System"
+      ],
+      "name": {
+        "en": "Musculoskeletal System"
+      },
+      "description": {
+        "en": "The musculoskeletal system provides structure and enables movement. Includes bones, joints, muscles, tendons, and ligaments."
+      },
+      "components": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/bones"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/joints"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/muscles"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/tendons"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/ligaments"
+        }
+      ],
+      "functions": [
+        "support",
+        "movement",
+        "protection",
+        "calcium storage"
+      ],
+      "associatedActions": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/anti-inflammatory"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/anodyne"
+        }
+      ],
+      "commonConditions": [
+        "arthritis",
+        "muscle pain",
+        "osteoporosis",
+        "tendonitis"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/profile/system/lymphatic",
+      "@type": [
+        "western:System"
+      ],
+      "name": {
+        "en": "Lymphatic System"
+      },
+      "description": {
+        "en": "The lymphatic system returns interstitial fluid to blood and supports immune function. Includes lymph vessels, nodes, and lymph fluid."
+      },
+      "components": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/lymph-vessels"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/lymph-nodes"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/organ/lymph-fluid"
+        }
+      ],
+      "functions": [
+        "fluid balance",
+        "immune defense",
+        "fat absorption"
+      ],
+      "associatedActions": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/immunomodulator"
+        }
+      ],
+      "commonConditions": [
+        "lymphedema",
+        "lymphadenopathy",
+        "immune dysfunction"
+      ]
+    }
+  ]
+}

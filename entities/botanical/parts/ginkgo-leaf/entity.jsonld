@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/ginkgo-leaf",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Ginkgo Leaf",
+    "zh-Hant": "銀杏葉",
+    "zh-Hans": "银杏叶"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/ginkgo"
+  },
+  "partType": "leaf",
+  "description": {
+    "en": "The fan-shaped leaves of Ginkgo biloba, harvested in autumn. This is the primary part used for medicinal extracts containing flavonoids and terpenoids."
+  },
+  "provenance": {
+    "created": "2026-02-21T00:00:00.000Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/sources/zoological/deer-horn-gelatine",
+  "@type": [
+    "herbapedia:ZoologicalSource",
+    "herbapedia:SourceMaterial"
+  ],
+  "sourceType": "zoological",
+  "name": {
+    "en": "Deer horn gelatine",
+    "zh-Hant": "鹿角膠",
+    "zh-Hans": "鹿角胶"
+  },
+  "animalName": {
+    "en": "Sika Deer (Cervus nippon)",
+    "zh-Hant": "梅花鹿",
+    "zh-Hans": "梅花鹿"
+  },
+  "animalScientificName": "Cervus nippon Temminck",
+  "animalPart": "horn gelatine",
+  "description": {
+    "en": "Gelatinous masses, stewed and concentrated from the horn of the male beast of Cervus nippon Temminck or C. elaphus L., family Verridae.",
+    "zh-Hant": "鹿角膠（學名：Colla Cornus Cervi）是一種具有藥用價值的天然產物。現代藥理學研究證實其含有多種生物活性成分，在傳統醫學和現代保健領域均有重要應用價值。",
+    "zh-Hans": "鹿角胶（学名：Colla Cornus Cervi）是一种具有药用價值的天然產物。現代药理学研究证实其含有多种生物活性成分，在传统医学和現代保健領域均有重要应用價值。"
+  },
+  "image": "media/images/deer-horn-gelatine/deer-horn-gelatine.jpg",
+  "provenance": {
+    "created": "2026-02-18T09:15:09.216Z",
+    "modified": "2026-02-21T10:00:00.000Z",
+    "migratedFrom": "entities/botanical/species/deer-horn-gelatine/entity.jsonld",
+    "source": "vitaherbapedia.com",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

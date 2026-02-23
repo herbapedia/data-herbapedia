@@ -1,0 +1,65 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/turmeric-rhizome",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Turmeric Rhizome",
+    "zh-Hant": "薑黃根莖",
+    "zh-Hans": "姜黄根茎",
+    "sa": "हरिद्रा",
+    "hi": "हल्दी"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/turmeric"
+  },
+  "partType": "rhizome",
+  "description": {
+    "en": "The fleshy, cylindrical rhizome of turmeric, bright orange-yellow internally. The primary source of the spice turmeric and the main medicinal part. Also called 'Golden Root' for its characteristic color.",
+    "zh-Hant": "薑黃的肉質圓柱形根莖，內部呈鮮豔的橙黃色。香料薑黃的主要來源，也是主要的藥用部分。因其特有的顏色而被稱為「金根」。"
+  },
+  "morphology": {
+    "en": "Fleshy, cylindrical or ovoid rhizome, 2-5 cm diameter. Bright orange-yellow internally, brownish externally. Contains finger-like branches and tubers."
+  },
+  "harvestSeason": {
+    "en": "Harvested 7-9 months after planting when leaves begin to dry. Central rhizomes (bulbs) and lateral branches (fingers) both used."
+  },
+  "constituents": [
+    {
+      "name": "Curcumin",
+      "percentage": "2-5%",
+      "notes": "Main bioactive compound, gives yellow color"
+    },
+    {
+      "name": "Essential Oil",
+      "percentage": "3-7%",
+      "notes": "Contains turmerone, zingiberene"
+    },
+    {
+      "name": "Dietary Fiber",
+      "percentage": "4-7%",
+      "notes": "Starch and fiber content"
+    }
+  ],
+  "containsChemical": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/curcumin"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/turmerone"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/zingiberene"
+    }
+  ],
+  "provenance": {
+    "created": "2024-01-15",
+    "modified": "2024-01-15",
+    "source": "Indian Pharmacopoeia, Chinese Pharmacopoeia",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  }
+}

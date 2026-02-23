@@ -1,8 +1,9 @@
 {
-  "@context": "../../../schema/context/core.jsonld",
-  "@id": "botanical/species/panax-ginseng",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/panax-ginseng",
   "@type": [
     "botany:PlantSpecies",
+    "herbapedia:BotanicalSource",
     "schema:Plant"
   ],
   "name": {
@@ -32,25 +33,41 @@
   "geographicalDistribution": {
     "en": "Native to mountainous regions of Korea, Northeast China (Manchuria), and far eastern Russia. Cultivated extensively in Korea, China, and Japan."
   },
-  "image": "media/images/panax-ginseng/panax-ginseng.jpg",
+  "image": "media/images/panax-ginseng/main.jpg",
   "gbifID": "3036592",
   "wikidataID": "Q192163",
   "containsChemical": [
     {
-      "@id": "botanical/chemical/ginsenosides"
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/ginsenosides"
     },
     {
-      "@id": "botanical/chemical/polysaccharides"
-    },
-    {
-      "@id": "botanical/chemical/ginsenoses"
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/polysaccharides"
     }
   ],
   "provenance": {
     "created": "2026-02-19T00:00:00Z",
-    "modified": "2026-02-20T15:18:31.912Z",
+    "modified": "2026-02-21T01:46:20.757Z",
     "migratedFrom": "entities/plants/panax-ginseng/entity.jsonld",
     "source": "https://www.vitaherbapedia.com/ginseng",
-    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
-  }
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "classificationNote": "Reclassified as BotanicalSource"
+  },
+  "hasParts": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/part/panax-ginseng-root"
+    }
+  ],
+  "sameAs": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/ginseng"
+    }
+  ],
+  "sourceType": "botanical",
+  "sourceSubType": "plant",
+  "hasTCMProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/profile/ren-shen"
+    }
+  ],
+  "ncbiTaxonID": "4054"
 }

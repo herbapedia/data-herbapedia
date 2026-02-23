@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/preparation/horny-goat-weed",
+  "@type": [
+    "herbal:HerbalPreparation",
+    "schema:DietarySupplement"
+  ],
+  "name": {
+    "en": "Horny Goat Weed",
+    "zh-Hant": "淫羊藿",
+    "zh-Hans": "淫羊藿"
+  },
+  "derivedFrom": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/horny-goat-weed"
+    }
+  ],
+  "preparationMethod": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/method/dried"
+  },
+  "form": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/form/whole"
+  },
+  "hasTCMProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/profile/horny-goat-weed"
+    }
+  ],
+  "safetyInfo": {},
+  "provenance": {
+    "created": "2026-02-20",
+    "source": "Generated from TCM profile",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "description": {
+    "en": "Herbal preparation derived from Horny Goat Weed. Acrid, sweet and warm in nature, Yinyanghuo enters the kidney and liver meridians. It is used to tonify the kidneys and fortifiy the yang, increase libido and expel wind-damp-cold. It can treat sympto..."
+  },
+  "image": "media/images/horny-goat-weed/horny-goat-weed.jpg"
+}

@@ -1,0 +1,52 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/chemical/nucleosides",
+  "@type": [
+    "botany:ChemicalCompound",
+    "schema:BioChemEntity"
+  ],
+  "name": {
+    "en": "Nucleosides",
+    "zh-Hant": "核苷",
+    "zh-Hans": "核苷"
+  },
+  "commonName": [
+    "Nucleosides",
+    "Nucleoside compounds"
+  ],
+  "chebiID": "CHEBI:33838",
+  "compoundClass": "Nucleosides; Nucleobase derivatives",
+  "description": {
+    "en": "Glycosylamines consisting of a nitrogenous base bound to a ribose or deoxyribose sugar. In medicinal fungi like Cordyceps, bioactive nucleosides such as cordycepin and adenosine exhibit various pharmacological activities."
+  },
+  "pharmacology": [
+    "Energy metabolism support (ATP production)",
+    "Immunomodulatory effects",
+    "Anti-inflammatory activity",
+    "Antiviral properties",
+    "Neuroprotective effects",
+    "Cardiovascular support"
+  ],
+  "bioavailability": {
+    "en": "Well absorbed orally; metabolized to nucleotides and nucleic acids; some nucleosides cross blood-brain barrier."
+  },
+  "safetyData": {
+    "toxicity": "Generally safe; natural components of nucleic acids",
+    "warnings": [
+      "May affect uric acid levels in susceptible individuals"
+    ]
+  },
+  "provenance": {
+    "created": "2024-01-15",
+    "modified": "2026-02-20T17:59:34.448Z",
+    "source": "Nucleobase Chemistry Literature",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "foundIn": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/cordyceps"
+    }
+  ]
+}

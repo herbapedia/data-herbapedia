@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/preparation/taoren-or-peach-kernel",
+  "@type": [
+    "herbal:HerbalPreparation",
+    "schema:DietarySupplement"
+  ],
+  "name": {
+    "en": "Taoren or peach kernel",
+    "zh-Hant": "桃仁",
+    "zh-Hans": "桃仁"
+  },
+  "derivedFrom": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/taoren-or-peach-kernel"
+    }
+  ],
+  "preparationMethod": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/method/dried"
+  },
+  "form": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/form/whole"
+  },
+  "hasTCMProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/profile/taoren-or-peach-kernel"
+    }
+  ],
+  "safetyInfo": {},
+  "provenance": {
+    "created": "2026-02-20",
+    "source": "Generated from TCM profile",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "description": {
+    "en": "Herbal preparation derived from Taoren or peach kernel. Semen Persicae, a Chinese remedy derived from the kernels of ripe peaches, has been traditionally used to resolve problems associated with blood stasis including menstrual disorders, abdominal pain, t..."
+  },
+  "image": "media/images/taoren-or-peach-kernel/taoren-or-peach-kernel.jpg"
+}

@@ -1,0 +1,94 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/dna/fritillaria-unibracteata",
+  "@type": ["herbapedia:DNASequenceData", "schema:Dataset"],
+  "dataType": "DNASequence",
+  "sourceFile": "DNA_____Fritillaria_unibracteata.pdf",
+  "sourceDocument": "GCMTI FS:2021-6",
+  "title": {
+    "en": "Fact sheet of reference DNA sequences of Fritillaria unibracteata",
+    "zh-hk": "暗紫貝母(Fritillaria unibracteata)之參考 DNA 序列資料表"
+  },
+  "scientificName": {
+    "full": "Fritillaria unibracteata",
+    "genus": "Fritillaria",
+    "species": "unibracteata",
+    "author": ""
+  },
+  "loci": [
+    {
+      "name": "ITS2",
+      "fullName": "Internal transcribed spacer 2",
+      "description": {
+        "en": "Internal transcribed spacer 2 (ITS2) of nuclear ribosomal RNA sequence of plant voucher specimen of Fritillaria unibracteata and dried leaf of F. unibracteata",
+        "zh-hk": "Fritillaria unibracteata植物憑證標本及乾葉片的核糖體DNA第二內部轉錄間隔區(ITS2)序列"
+      },
+      "sequenceLength": 230,
+      "consensusSequence": "CGCCTTGTTTCGCTCCGTGCCCAATGACCCTTCGGGTGCGGTCACGGATGCGGAGATTGGCCCCCCGTGCCTCGTGTGCGGCGGGCTTAAGCGCGGGCTGTCGGCGTCGGGATGGGCACGACGAGTGGTGGACGGAGCACCAGCAGGATGTTGTGGCCCCCYGTCGCCTTAAGGGGCTCAAGAGACCCGGAACGGGCGAKCCGTGCTCCGTACGAGGAGGGCGTGYCGTCTCGCAATG",
+      "specimenCount": 21,
+      "specimens": [
+        "RD506-1B", "RD506-2B", "RD506-3A", "RD506-4B", "RD506-5A",
+        "RD507-10A", "RD507-1B", "RD507-2A", "RD507-8B",
+        "RD508-1A", "RD508-2B", "RD508-3B", "RD508-4B", "RD508-5A",
+        "RD532-10D", "RD532-5B",
+        "RD533-1A", "RD533-2A",
+        "RD534-1A", "RD534-2B"
+      ],
+      "notes": "Some specimens show minor variations at positions 183 (M/K) and 217 (Y/C)"
+    },
+    {
+      "name": "psbA-trnH",
+      "fullName": "Chloroplast psbA-trnH intergenic spacer",
+      "description": {
+        "en": "Chloroplast psbA-trnH intergenic spacer (psbA-trnH) sequence of plant voucher specimen of Fritillaria unibracteata and dried leaf of F. unibracteata",
+        "zh-hk": "Fritillaria unibracteata植物憑證標本及乾葉片的葉綠體psbA-trnH基因間區(psbA-trnH)序列"
+      },
+      "sequenceLength": 313,
+      "consensusSequence": "ACAATTTCCCTCTAGACCTAGCTGCTATTGAAGTTCCATCTACAAATGGATAAGACTTAAATTCTGTCTTAGTGTATACGAATCCTTGATGGAGCAATATCTTTGTATCTTGCTAAAGATATTGCTCCATCAAGGATTTTTTTTTATTGAACGTGTCACAGGGGATTACTCCTTTATTACATTACATTTTTAAAATTGGCATTCTATGCCCAATATATCGATCTAAGTATGAAGGTAAGAATAAATACAATAATGATGAATGGAAAAATAAAAAAGCTAAAATCCTTTAGCTAGATAAGGGGCGGATGTAGCCAAGTGGATCAAGGCAGT",
+      "specimenCount": 21,
+      "specimens": [
+        "RD506-1B", "RD506-2B", "RD506-3A", "RD506-4B", "RD506-5A",
+        "RD507-10A", "RD507-1B", "RD507-2A", "RD507-8B",
+        "RD508-1A", "RD508-2B", "RD508-3B", "RD508-4B", "RD508-5A",
+        "RD532-10D", "RD532-5B",
+        "RD533-1A", "RD533-2A",
+        "RD534-1A", "RD534-2B"
+      ],
+      "notes": "Specimen RD507-2A shows minor variation at position 61 (C instead of T)"
+    },
+    {
+      "name": "rbcL",
+      "fullName": "Partial chloroplast ribulose bisphosphate carboxylase large chain",
+      "description": {
+        "en": "Partial chloroplast ribulose bisphosphate carboxylase large chain (rbcL) sequence of plant voucher specimen of Fritillaria unibracteata and dried leaf of F. unibracteata",
+        "zh-hk": "Fritillaria unibracteata植物憑證標本及乾葉片的葉綠體二磷酸核酮糖羧化酶大鏈(rbcL)部分序列"
+      },
+      "sequenceLength": 557,
+      "consensusSequence": "AAGTGTTGGATTCAAAGCTGGTGTTAAAGATTACAAATTGACTTATTATACTCCTGACTATGAAACCAAAGATACTGATATTTTGGCAGCATTCCGAGTAACTCCTCAACCCGGAGTTCCACCCGAAGAGGCAGGGGCAGCGGTAGCCGCCGAATCTTCCACTGGTACATGGACAACTGTGTGGACTGATGGACTTACCAGTCTTGATCGTTACAAAGGGCGATGCTACCACATCGAGAGCGTTGTTGGGGAAGAAAATCAATATATTGCTTATGTAGCTTATCCTTTAGACCTTTTTGAAGAAGGTTCTGTTACTAACATGTTCACTTCCATTGTGGGTAATGTATTTGGTTTCAAAGCCCTACGAGCTCTACGTCTGGAGGATCTGCGAATTCCTACTTCTTATTCCAAAACTTTTCAAGGCCCGCCTCATGGTATCCAAGTTGAAAGGGATAAATTGAACAAGTATGGTCGTCCCCTATTAGGATGTACCATTAAACCAAAATTAGGATTATCTGCAAAGAACTATGGTAGAGCAGTTTATGAATGTCTG",
+      "specimenCount": 21,
+      "specimens": [
+        "RD506-1B", "RD506-2B", "RD506-3A", "RD506-4B", "RD506-5A",
+        "RD507-10A", "RD507-1B", "RD507-2A", "RD507-8B",
+        "RD508-1A", "RD508-2B", "RD508-3B", "RD508-4B", "RD508-5A",
+        "RD532-10D", "RD532-5B",
+        "RD533-1A", "RD533-2A",
+        "RD534-1A", "RD534-2B"
+      ],
+      "notes": "Specimen RD507-2A shows minor variation at position 511 (C instead of T)"
+    }
+  ],
+  "specimen": {
+    "gcmtiCode": "GA0000557a00",
+    "type": "Plant voucher specimen and dried leaf of Fritillaria unibracteata",
+    "totalSpecimens": 21
+  },
+  "methodology": {
+    "format": "FASTA",
+    "sequencingTargets": ["ITS2", "psbA-trnH", "rbcL"],
+    "specimenTypes": ["Plant voucher specimen", "Dried leaf of F. unibracteata"]
+  },
+  "extracted": {
+    "date": "2026-02-20",
+    "extractedBy": "automated extraction from PDF"
+  }
+}

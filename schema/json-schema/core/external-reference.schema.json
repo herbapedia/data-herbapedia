@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herbapedia.org/schema/json-schema/core/external-reference.schema.json",
+  "title": "External Reference",
+  "description": "A reference to an equivalent entity in an external authority database. Used to link Herbapedia entities to Wikidata, GBIF, POWO, and other authoritative sources for data enrichment and verification.",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["@id"],
+      "properties": {
+        "@id": {
+          "description": "Full URI to the external entity.",
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    {
+      "type": "string",
+      "format": "uri",
+      "description": "Full URI as a string (shorthand form)"
+    }
+  ],
+  "examples": [
+    { "@id": "http://www.wikidata.org/entity/Q1097047" },
+    "http://www.wikidata.org/entity/Q1097047",
+    { "@id": "https://www.gbif.org/species/2751589" }
+  ],
+  "_documentation": {
+    "supportedAuthorities": [
+      {
+        "name": "Wikidata",
+        "prefix": "wd",
+        "uriPattern": "http://www.wikidata.org/entity/Q{id}",
+        "description": "General knowledge base. Preferred for most entities.",
+        "example": "http://www.wikidata.org/entity/Q1097047",
+        "access": "https://www.wikidata.org/wiki/Q1097047"
+      },
+      {
+        "name": "GBIF",
+        "prefix": "gbif",
+        "uriPattern": "https://www.gbif.org/species/{id}",
+        "description": "Global Biodiversity Information Facility. Primary source for botanical species data, distribution, and taxonomy.",
+        "example": "https://www.gbif.org/species/2751589",
+        "property": "gbifID"
+      },
+      {
+        "name": "POWO",
+        "prefix": "powo",
+        "uriPattern": "https://powo.science.kew.org/taxon/{id}",
+        "description": "Plants of the World Online (Kew). Authoritative for plant nomenclature and taxonomy.",
+        "example": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:299416-2"
+      },
+      {
+        "name": "NCBI Taxonomy",
+        "prefix": "ncbi",
+        "uriPattern": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id={id}",
+        "description": "NCBI Taxonomy database. Useful for genetic and molecular data.",
+        "example": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=94138"
+      },
+      {
+        "name": "Wikipedia",
+        "prefix": "wikipedia",
+        "uriPattern": "https://en.wikipedia.org/wiki/{title}",
+        "description": "Wikipedia articles. Use for general reference, not as primary authority.",
+        "example": "https://en.wikipedia.org/wiki/Ginger"
+      },
+      {
+        "name": "TCMID",
+        "prefix": "tcmid",
+        "uriPattern": "http://www.megabionet.org/tcmid/{id}",
+        "description": "Traditional Chinese Medicine Information Database.",
+        "example": "http://www.megabionet.org/tcmid/herb/123"
+      },
+      {
+        "name": "TCM Database@Taiwan",
+        "prefix": "tcmdb",
+        "uriPattern": "http://tcm.cmu.edu.tw/{id}",
+        "description": "TCM Database Taiwan for molecular docking and drug discovery."
+      },
+      {
+        "name": "PubChem",
+        "prefix": "pubchem",
+        "uriPattern": "https://pubchem.ncbi.nlm.nih.gov/compound/{cid}",
+        "description": "PubChem compound database for chemical entities.",
+        "example": "https://pubchem.ncbi.nlm.nih.gov/compound/442793"
+      },
+      {
+        "name": "ChEBI",
+        "prefix": "chebi",
+        "uriPattern": "http://purl.obolibrary.org/obo/CHEBI:{id}",
+        "description": "Chemical Entities of Biological Interest ontology.",
+        "example": "http://purl.obolibrary.org/obo/CHEBI:5291"
+      }
+    ],
+    "usageNotes": [
+      "Wikidata is the preferred external reference for most entities",
+      "GBIF is essential for plant species (also store gbifID as separate property)",
+      "POWO is preferred for taxonomic verification",
+      "Always verify the external ID before adding a reference",
+      "Multiple external references are encouraged for cross-validation"
+    ]
+  }
+}

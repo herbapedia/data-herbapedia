@@ -1,0 +1,33 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/tea-tree",
+  "@type": [
+    "herbapedia:BotanicalSource",
+    "botany:PlantSpecies",
+    "schema:Plant"
+  ],
+  "sourceType": "botanical",
+  "sourceSubType": "plant",
+  "scientificName": "Melaleuca alternifolia",
+  "family": "Myrtaceae",
+  "name": {
+    "en": "Tea Tree",
+    "zh-Hant": "茶樹",
+    "zh-Hans": "茶树"
+  },
+  "description": {
+    "en": "A small tree native to Australia, source of tea tree oil."
+  },
+  "wikidataID": "Q1540966",
+  "hasExtract": [
+    {
+      "@id": "https://www.herbapedia.org/entity/preparation/tea-tree-oil"
+    }
+  ],
+  "provenance": {
+    "created": "2026-02-21",
+    "source": "Created as source plant for essential oil",
+    "purpose": "Enable proper linking of essential oil extracts"
+  },
+  "gbifID": "5416009"
+}

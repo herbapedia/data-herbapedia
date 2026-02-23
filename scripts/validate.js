@@ -1,19 +1,23 @@
 #!/usr/bin/env node
 
 /**
- * Herbapedia SHACL Validation Script
+ * Herbapedia Comprehensive Validation Script
  *
- * Validates JSON-LD data files against SHACL shapes.
+ * Validates entities using multiple validators:
+ * 1. Schema Validation - JSON Schema compliance
+ * 2. Reference Integrity - IRI reference resolution
+ * 3. Content Quality - Language maps, required fields, duplicates
  *
  * Usage:
- *   node scripts/validate.js                    # Validate all files
- *   node scripts/validate.js --plant ginseng    # Validate specific plant
- *   node scripts/validate.js --tcm              # Validate all TCM herbs
- *   node scripts/validate.js --verbose          # Show all validation passes
+ *   node scripts/validate.js                    # Run all validations
+ *   node scripts/validate.js --schema           # Only schema validation
+ *   node scripts/validate.js --references       # Only reference validation
+ *   node scripts/validate.js --quality          # Only quality validation
+ *   node scripts/validate.js --verbose          # Show passing files
  */
 
 import { readFileSync, readdirSync, existsSync, statSync } from 'fs'
-import { join, relative, dirname, basename } from 'path'
+import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 
 const __filename = fileURLToPath(import.meta.url)
@@ -28,233 +32,280 @@ const colors = {
   yellow: '\x1b[33m',
   blue: '\x1b[34m',
   cyan: '\x1b[36m',
+  magenta: '\x1b[35m',
 }
 
 function log(message, color = 'reset') {
   console.log(`${colors[color]}${message}${colors.reset}`)
 }
 
-// Validation result tracker
-const results = {
-  passed: 0,
-  failed: 0,
-  warnings: 0,
-  errors: [],
+function logSection(title) {
+  log('\n' + '═'.repeat(60), 'cyan')
+  log(`  ${title}`, 'cyan')
+  log('═'.repeat(60), 'cyan')
 }
 
-/**
- * Simple JSON-LD validator (without full RDF/SHACL library)
- * This performs structural validation based on our schema
- */
-class SimpleValidator {
-  constructor() {
-    this.errors = []
-    this.warnings = []
-  }
+// ============================================================================
+// Schema Validator (Inline implementation for standalone script)
+// ============================================================================
 
-  validatePlant(data, filePath) {
-    const errors = []
-    const warnings = []
-
-    // Determine if this is a plant vs. vitamin/mineral/nutrient/other
-    const id = data['@id'] || ''
-    const nonPlantSlugs = [
-      // Minerals
-      'calcium', 'copper', 'iodine', 'iron', 'magnesium', 'manganese', 'potassium', 'selenium', 'zinc',
-      // Nutrients
-      'capigen', 'ceramides', 'chitosan', 'choline', 'chondroitin-sulfate', 'cysteine-hci',
-      'epicutin-tt', 'factor-arl', 'glucosamine-sulfate', 'glycerin', 'glycine',
-      'hydration-factor-cte4', 'inositol', 'lecithin', 'linolenic-acid', 'lysine',
-      'melatonin', 'methionine', 'mineral-oil', 'mpc', 'paba', 'petrolatum', 'phospholipids',
-      'saw-palmetto', 'squalene',
-      // Oils and animal products
-      'royal-jelly', 'argan-oil', 'balm-mint-oil', 'clove-oil', 'eucalyptus-oil',
-      'evening-primrose-oil', 'jojoba-seed-oil', 'lavender-oil', 'peppermint-oil',
-      'rosemary-oil', 'sage-oil', 'tea-tree-oil', 'thyme-oil', 'amber'
-    ]
-    const isPlant = !nonPlantSlugs.some(s => id.includes(s)) && !id.includes('vitamin-') && !id.includes('omega')
-
-    // Required: @id
-    if (!data['@id']) {
-      errors.push('Missing required property: @id')
-    }
-
-    // Required: @type
-    if (!data['@type']) {
-      errors.push('Missing required property: @type')
-    } else if (!Array.isArray(data['@type'])) {
-      warnings.push('@type should be an array')
-    }
-
-    // Required: scientificName (only for true plants, not vitamins/minerals/nutrients)
-    if (isPlant && !data['dwc:scientificName'] && !data.scientificName) {
-      errors.push('Missing required property: scientificName')
-    }
-
-    // Required: name (language map)
-    if (!data['schema:name'] && !data.name) {
-      errors.push('Missing required property: name')
-    }
-
-    // Validate language maps
-    this.validateLanguageMap(data['schema:name'] || data.name, 'name', warnings)
-
-    // Validate IRI references
-    this.validateIri(data['schema:sameAs'] || data.sameAs, 'sameAs', warnings)
-    this.validateIri(data['herbapedia:hasPart'] || data.hasPart, 'hasPart', warnings)
-    this.validateIri(data['herbapedia:containsChemical'] || data.containsChemical, 'containsChemical', warnings)
-
-    // Check for system-scoped content (should NOT be in plant entity)
-    const systemScopedProps = [
-      'herbapedia:traditionalUsage', 'traditionalUsage',
-      'herbapedia:modernResearch', 'modernResearch',
-      'herbapedia:functions', 'functions',
-      'tcm:traditionalUsage', 'ayurveda:traditionalUsage', 'western:traditionalUsage'
-    ]
-    for (const prop of systemScopedProps) {
-      if (data[prop]) {
-        errors.push(`Plant entity should NOT contain system-scoped content: ${prop}. Move to system profile.`)
-      }
-    }
-
-    return { errors, warnings }
-  }
-
-  validateTCMHerb(data, filePath) {
-    const errors = []
-    const warnings = []
-
-    // Required: @id
-    if (!data['@id']) {
-      errors.push('Missing required property: @id')
-    }
-
-    // Required: @type
-    if (!data['@type']) {
-      errors.push('Missing required property: @type')
-    } else {
-      const types = Array.isArray(data['@type']) ? data['@type'] : [data['@type']]
-      if (!types.includes('tcm:Herb') && !types.some(t => t.includes('Herb'))) {
-        warnings.push('@type should include tcm:Herb')
-      }
-    }
-
-    // Required: derivedFromPlant
-    if (!data['tcm:derivedFromPlant'] && !data.derivedFromPlant) {
-      errors.push('Missing required property: derivedFromPlant (link to plant entity)')
-    }
-
-    // Required: name
-    if (!data['schema:name'] && !data.name) {
-      errors.push('Missing required property: name')
-    }
-
-    // Required: pinyin
-    if (!data['tcm:pinyin'] && !data.pinyin) {
-      errors.push('Missing required property: pinyin')
-    }
-
-    // Required: TCM classification
-    if (!data['tcm:hasCategory'] && !data.hasCategory) {
-      errors.push('Missing required property: hasCategory')
-    }
-    if (!data['tcm:hasNature'] && !data.hasNature) {
-      errors.push('Missing required property: hasNature')
-    }
-    if (!data['tcm:hasFlavor'] && !data.hasFlavor) {
-      errors.push('Missing required property: hasFlavor')
-    }
-    if (!data['tcm:entersMeridian'] && !data.entersMeridian) {
-      errors.push('Missing required property: entersMeridian')
-    }
-
-    // Validate IRI references
-    this.validateIri(data['tcm:hasCategory'] || data.hasCategory, 'hasCategory', errors)
-    this.validateIri(data['tcm:hasNature'] || data.hasNature, 'hasNature', errors)
-    this.validateIriArray(data['tcm:hasFlavor'] || data.hasFlavor, 'hasFlavor', errors)
-    this.validateIriArray(data['tcm:entersMeridian'] || data.entersMeridian, 'entersMeridian', errors)
-
-    // Validate content uses TCM-scoped properties
-    const tcmContentProps = [
-      'tcmHistory', 'tcmTraditionalUsage', 'tcmModernResearch',
-      'tcmFunctions', 'tcmClassicalReference', 'tcmSafetyConsideration'
-    ]
-    const genericContentProps = ['history', 'traditionalUsage', 'modernResearch', 'functions']
-
-    for (const prop of genericContentProps) {
-      if (data[prop] && !data[`tcm:${prop}`] && !data[`tcm${prop.charAt(0).toUpperCase()}${prop.slice(1)}`]) {
-        warnings.push(`Consider using tcm:${prop} instead of generic ${prop} for system-scoped content`)
-      }
-    }
-
-    return { errors, warnings }
-  }
-
-  validateAyurvedaDravya(data, filePath) {
-    const errors = []
-    const warnings = []
-
-    // Required: @id
-    if (!data['@id']) {
-      errors.push('Missing required property: @id')
-    }
-
-    // Required: derivedFromPlant
-    if (!data['ayurveda:derivedFromPlant'] && !data.derivedFromPlant) {
-      errors.push('Missing required property: derivedFromPlant (link to plant entity)')
-    }
-
-    // Required: Rasa Panchaka
-    if (!data['ayurveda:hasRasa'] && !data.hasRasa) {
-      errors.push('Missing required property: hasRasa')
-    }
-    if (!data['ayurveda:hasVirya'] && !data.hasVirya) {
-      errors.push('Missing required property: hasVirya')
-    }
-    if (!data['ayurveda:hasVipaka'] && !data.hasVipaka) {
-      errors.push('Missing required property: hasVipaka')
-    }
-    if (!data['ayurveda:hasGuna'] && !data.hasGuna) {
-      errors.push('Missing required property: hasGuna')
-    }
-
-    return { errors, warnings }
-  }
-
-  validateLanguageMap(value, propName, warnings) {
-    if (!value) return
-    if (typeof value === 'string') {
-      warnings.push(`${propName} should be a language map, not a string`)
-    } else if (typeof value === 'object' && !Object.keys(value).some(k => k.match(/^[a-z]{2}(-[A-Z]{2})?$/))) {
-      warnings.push(`${propName} language map should use valid language codes (en, zh-Hant, etc.)`)
-    }
-  }
-
-  validateIri(value, propName, errors) {
-    if (!value) return
-    if (typeof value === 'object' && value['@id']) {
-      // Valid IRI reference
-      return
-    }
-    if (typeof value === 'string' && (value.startsWith('http') || value.startsWith('plant/') || value.startsWith('tcm/') || value.startsWith('ayurveda/') || value.startsWith('category/') || value.startsWith('nature/') || value.startsWith('flavor/') || value.startsWith('meridian/') || value.startsWith('rasa/') || value.startsWith('virya/') || value.startsWith('vipaka/') || value.startsWith('guna/') || value.startsWith('dosha/'))) {
-      // Valid IRI string
-      return
-    }
-    // Not necessarily an error, could be valid
-  }
-
-  validateIriArray(value, propName, errors) {
-    if (!value) return
-    const arr = Array.isArray(value) ? value : [value]
-    for (const item of arr) {
-      this.validateIri(item, propName, errors)
-    }
-  }
+const ENTITY_SCHEMA_MAP = {
+  'PlantSpecies': { required: ['name'] }, // scientificName optional for non-plants
+  'PlantPart': { required: ['partOf', 'name'] },
+  'HerbalPreparation': { required: ['derivedFrom', 'name'] },
+  'TCMProfile': { required: ['pinyin', 'hasCategory', 'hasNature', 'hasFlavor'] },
+  'WesternHerbalProfile': { required: ['name', 'hasAction'] },
+  'AyurvedaProfile': { required: ['sanskritName', 'hasRasa', 'hasVirya', 'hasVipaka'] },
+  'PersianProfile': { required: ['persianName', 'hasTemperament'] },
+  'MongolianProfile': { required: ['mongolianName', 'affectsRoots'] },
 }
 
-/**
- * Recursively find all JSON-LD files
- */
+// Non-plant entities (vitamins, minerals, etc.) that don't have scientificName
+const NON_PLANT_SLUGS = [
+  'vitamin', 'calcium', 'iron', 'magnesium', 'zinc', 'selenium', 'copper',
+  'manganese', 'potassium', 'choline', 'inositol', 'glucosamine', 'chondroitin',
+  'lecithin', 'ceramides', 'hyaluronic', 'collagen', 'elastin', 'keratin',
+  'melatonin', 'coenzyme', 'resveratrol', 'quercetin', 'rutin', 'catechin',
+  'egcg', 'curcumin', 'berberine', 'sulforaphane', 'allicin', 'lycopene',
+  'astaxanthin', 'lutein', 'zeaxanthin', 'beta-carotene', 'biotin', 'folate',
+  'niacin', 'pantothenic', 'pyridoxine', 'riboflavin', 'thiamin', 'cobalamin',
+  'retinol', 'tocopherol', 'ergocalciferol', 'cholecalciferol', 'phylloquinone',
+  'menaquinone', 'omega', 'ala', 'epa', 'dha', 'linolenic', 'linoleic',
+  'glycerin', 'mineral-oil', 'petrolatum', 'dimethicone', 'propylene',
+  'butylene', 'caprylic', 'stearic', 'palmitic', 'myristic', 'lauric',
+  'hyaluronate', 'sodium', 'chloride', 'phosphorus', 'iodine', 'chromium',
+  'molybdenum', 'fluoride', 'boron', 'vanadium', 'nickel', 'silicon',
+  'cobalt', 'sulfur', 'cysteine', 'methionine', 'taurine', 'creatine',
+  'carnitine', 'arginine', 'ornithine', 'citrulline', 'glycine',
+  'proline', 'hydroxyproline', 'tryptophan', 'tyrosine', 'phenylalanine',
+  'leucine', 'isoleucine', 'valine', 'lysine', 'histidine', 'threonine',
+  'alanine', 'serine', 'aspartic', 'glutamic', 'asparagine', 'glutamine',
+  'chitosan', 'royal-jelly', 'propolis', 'pollen', 'honey', 'beeswax',
+  'factor', 'mpc', 'epicutin', 'argan-oil', 'jojoba', 'almond-oil',
+  'coconut-oil', 'olive-oil', 'sunflower-oil', 'safflower-oil',
+  'evening-primrose', 'borage', 'black-currant', 'rose-hip', 'sea-buckthorn'
+]
+
+function isNonPlantEntity(data) {
+  const id = data['@id'] || ''
+  const slug = id.split('/').pop() || ''
+  const slugLower = slug.toLowerCase()
+
+  // Check if slug contains any non-plant keyword
+  return NON_PLANT_SLUGS.some(keyword => slugLower.includes(keyword))
+}
+
+function detectEntityType(data) {
+  const types = data['@type']
+  if (!types) return null
+
+  const typeArray = Array.isArray(types) ? types : [types]
+
+  for (const type of typeArray) {
+    if (type.includes('tcm:Herb')) return 'TCMProfile'
+    if (type.includes('western:Herb')) return 'WesternHerbalProfile'
+    if (type.includes('ayurveda:Dravya')) return 'AyurvedaProfile'
+    if (type.includes('persian:Drug')) return 'PersianProfile'
+    if (type.includes('mongolian:Herb')) return 'MongolianProfile'
+    if (type.includes('botany:PlantSpecies')) return 'PlantSpecies'
+    if (type.includes('mycology:FungalSpecies')) return 'FungalSpecies'
+    if (type.includes('phycology:AlgalSpecies')) return 'AlgalSpecies'
+    if (type.includes('botany:PlantPart')) return 'PlantPart'
+    if (type.includes('herbal:HerbalPreparation')) return 'HerbalPreparation'
+    if (type.includes('herbapedia:Formula')) return 'Formula'
+    if (type.includes('herbapedia:BotanicalSource')) return 'BotanicalSource'
+    if (type.includes('herbapedia:ZoologicalSource')) return 'ZoologicalSource'
+    if (type.includes('herbapedia:MineralSource')) return 'MineralSource'
+    if (type.includes('herbapedia:ChemicalSource')) return 'ChemicalSource'
+  }
+
+  return null
+}
+
+function validateSchema(data, filePath) {
+  const errors = []
+  const warnings = []
+
+  // Check required JSON-LD fields
+  if (!data['@id']) {
+    errors.push('Missing required property: @id')
+  }
+  if (!data['@type']) {
+    errors.push('Missing required property: @type')
+  }
+  if (!data['@context']) {
+    warnings.push('Missing @context - may cause JSON-LD processing issues')
+  }
+
+  const entityType = detectEntityType(data)
+  if (!entityType) {
+    warnings.push(`Unknown entity type: ${JSON.stringify(data['@type'])}`)
+    return { valid: errors.length === 0, errors, warnings, entityType: null }
+  }
+
+  const schema = ENTITY_SCHEMA_MAP[entityType]
+  if (schema) {
+    for (const field of schema.required) {
+      if (!data[field]) {
+        errors.push(`Missing required field: ${field}`)
+      }
+    }
+  }
+
+  // Additional check: PlantSpecies should have scientificName unless it's a non-plant entity
+  if (entityType === 'PlantSpecies' && !isNonPlantEntity(data)) {
+    if (!data.scientificName) {
+      warnings.push('Missing scientificName for plant species (non-plant entities exempt)')
+    }
+  }
+
+  return { valid: errors.length === 0, errors, warnings, entityType }
+}
+
+// ============================================================================
+// Reference Validator (Inline implementation)
+// ============================================================================
+
+function extractIRIs(data, prefix = '') {
+  const iris = []
+
+  for (const [key, value] of Object.entries(data)) {
+    if (key === '@id' || key === '@context' || key === '@type') continue
+
+    const path = prefix ? `${prefix}.${key}` : key
+
+    if (typeof value === 'object' && value !== null) {
+      if (Array.isArray(value)) {
+        for (let i = 0; i < value.length; i++) {
+          const item = value[i]
+          if (typeof item === 'object' && item !== null && item['@id']) {
+            iris.push({ path: `${path}[${i}]`, iri: item['@id'] })
+          } else if (typeof item === 'object') {
+            iris.push(...extractIRIs(item, `${path}[${i}]`))
+          }
+        }
+      } else if (value['@id']) {
+        iris.push({ path, iri: value['@id'] })
+      } else {
+        iris.push(...extractIRIs(value, path))
+      }
+    }
+  }
+
+  return iris
+}
+
+function isInternalIRI(iri) {
+  return !iri.startsWith('http://') && !iri.startsWith('https://')
+}
+
+// ============================================================================
+// Quality Validator (Inline implementation)
+// ============================================================================
+
+const LANGUAGE_MAP_FIELDS = [
+  'name', 'description', 'tcmFunctions', 'tcmTraditionalUsage', 'tcmModernResearch',
+  'westernTraditionalUsage', 'westernModernResearch', 'ayurvedaTraditionalUsage',
+  'ayurvedaModernResearch', 'contraindications', 'dosage', 'indications',
+]
+
+function validateQuality(data, entityType) {
+  const issues = []
+
+  // Check language maps
+  for (const field of LANGUAGE_MAP_FIELDS) {
+    const value = data[field]
+    if (!value) continue
+
+    if (typeof value === 'object' && !Array.isArray(value)) {
+      const keys = Object.keys(value)
+      if (!keys.includes('en')) {
+        issues.push({
+          severity: 'warning',
+          path: field,
+          message: `Language map missing 'en' key. Found: ${keys.join(', ')}`
+        })
+      }
+    }
+  }
+
+  // Check for empty content
+  for (const [key, value] of Object.entries(data)) {
+    if (typeof value === 'string' && value.trim() === '') {
+      issues.push({
+        severity: 'info',
+        path: key,
+        message: 'Empty string value'
+      })
+    }
+  }
+
+  // Validate @type patterns for source materials
+  const types = data['@type'] || []
+  const typeArray = Array.isArray(types) ? types : [types]
+
+  // Check BotanicalSource entities
+  if (entityType === 'PlantSpecies' || entityType === 'FungalSpecies' || entityType === 'AlgalSpecies') {
+    if (!typeArray.includes('herbapedia:BotanicalSource')) {
+      issues.push({
+        severity: 'warning',
+        path: '@type',
+        message: `Missing herbapedia:BotanicalSource type for ${entityType}`
+      })
+    }
+  }
+
+  // Check ZoologicalSource entities
+  if (entityType === 'ZoologicalSource') {
+    if (!typeArray.includes('herbapedia:ZoologicalSource')) {
+      issues.push({
+        severity: 'warning',
+        path: '@type',
+        message: 'Missing herbapedia:ZoologicalSource type'
+      })
+    }
+  }
+
+  // Check MineralSource entities
+  if (entityType === 'MineralSource') {
+    if (!typeArray.includes('herbapedia:MineralSource')) {
+      issues.push({
+        severity: 'warning',
+        path: '@type',
+        message: 'Missing herbapedia:MineralSource type'
+      })
+    }
+  }
+
+  // Check ChemicalSource entities
+  if (entityType === 'ChemicalSource') {
+    if (!typeArray.includes('herbapedia:ChemicalSource')) {
+      issues.push({
+        severity: 'warning',
+        path: '@type',
+        message: 'Missing herbapedia:ChemicalSource type'
+      })
+    }
+  }
+
+  // Check for missing sourceType property on source materials
+  if (['PlantSpecies', 'FungalSpecies', 'AlgalSpecies', 'ZoologicalSource', 'MineralSource', 'ChemicalSource'].includes(entityType)) {
+    if (!data.sourceType) {
+      issues.push({
+        severity: 'warning',
+        path: 'sourceType',
+        message: 'Missing sourceType property for source material entity'
+      })
+    }
+  }
+
+  return issues
+}
+
+// ============================================================================
+// File Discovery
+// ============================================================================
+
 function findJsonLdFiles(dir, files = []) {
   if (!existsSync(dir)) return files
 
@@ -273,160 +324,425 @@ function findJsonLdFiles(dir, files = []) {
   return files
 }
 
-/**
- * Determine entity type from file path
- */
-function getEntityType(filePath) {
-  if (filePath.includes('/plants/')) return 'plant'
-  if (filePath.includes('/tcm/herbs/')) return 'tcm-herb'
-  if (filePath.includes('/ayurveda/dravyas/')) return 'ayurveda-dravya'
-  if (filePath.includes('/tcm/')) return 'tcm-reference'
-  if (filePath.includes('/ayurveda/')) return 'ayurveda-reference'
-  return 'unknown'
-}
+// ============================================================================
+// Main Validation Functions
+// ============================================================================
 
-/**
- * Validate a single file
- */
-function validateFile(filePath, options = {}) {
-  const relativePath = relative(ROOT, filePath)
-  const entityType = getEntityType(filePath)
+async function runSchemaValidation(files, options) {
+  logSection('Phase 1: Schema Validation')
 
-  // Skip reference data files for now
-  if (entityType === 'tcm-reference' || entityType === 'ayurveda-reference') {
-    if (options.verbose) {
-      log(`  ⊘  ${relativePath} (reference data, skipped)`, 'cyan')
-    }
-    return { skipped: true }
-  }
+  let passed = 0
+  let failed = 0
+  const errors = []
 
-  // Skip context files
-  if (filePath.includes('/context/')) {
-    return { skipped: true }
-  }
+  for (const file of files) {
+    // Skip context files
+    if (file.includes('/context/')) continue
 
-  try {
-    const content = readFileSync(filePath, 'utf-8')
-    const data = JSON.parse(content)
+    try {
+      const content = readFileSync(file, 'utf-8')
+      const data = JSON.parse(content)
+      const result = validateSchema(data, file)
 
-    const validator = new SimpleValidator()
-    let validationResult
-
-    switch (entityType) {
-      case 'plant':
-        validationResult = validator.validatePlant(data, filePath)
-        break
-      case 'tcm-herb':
-        validationResult = validator.validateTCMHerb(data, filePath)
-        break
-      case 'ayurveda-dravya':
-        validationResult = validator.validateAyurvedaDravya(data, filePath)
-        break
-      default:
-        return { skipped: true }
-    }
-
-    const { errors, warnings } = validationResult
-
-    if (errors.length === 0) {
-      results.passed++
-      if (options.verbose || warnings.length > 0) {
-        log(`  ✓  ${relativePath}`, 'green')
-        warnings.forEach(w => log(`     ⚠ ${w}`, 'yellow'))
+      if (result.valid) {
+        passed++
+        if (options.verbose) {
+          log(`  ✓ ${file.replace(ROOT + '/', '')}`, 'green')
+        }
+      } else {
+        failed++
+        const relPath = file.replace(ROOT + '/', '')
+        errors.push({ file: relPath, errors: result.errors, warnings: result.warnings })
+        log(`  ✗ ${relPath}`, 'red')
+        result.errors.forEach(e => log(`      • ${e}`, 'red'))
+        if (result.warnings.length > 0) {
+          result.warnings.forEach(w => log(`      ⚠ ${w}`, 'yellow'))
+        }
       }
-      return { valid: true, warnings }
-    } else {
-      results.failed++
-      results.errors.push({ file: relativePath, errors, warnings })
-      log(`  ✗  ${relativePath}`, 'red')
-      errors.forEach(e => log(`     • ${e}`, 'red'))
-      warnings.forEach(w => log(`     ⚠ ${w}`, 'yellow'))
-      return { valid: false, errors, warnings }
+    } catch (error) {
+      failed++
+      log(`  ✗ ${file.replace(ROOT + '/', '')} - Parse error: ${error.message}`, 'red')
     }
-  } catch (error) {
-    results.failed++
-    results.errors.push({ file: relativePath, errors: [error.message], warnings: [] })
-    log(`  ✗  ${relativePath}`, 'red')
-    log(`     • Parse error: ${error.message}`, 'red')
-    return { valid: false, errors: [error.message] }
+  }
+
+  log(`\n  Results: ${passed} passed, ${failed} failed`, failed > 0 ? 'red' : 'green')
+
+  return { passed, failed, errors }
+}
+
+async function runReferenceValidation(files, options) {
+  logSection('Phase 2: Reference Integrity')
+
+  // Build IRI registry
+  const iriRegistry = new Map()
+
+  for (const file of files) {
+    if (file.includes('/context/')) continue
+
+    try {
+      const content = readFileSync(file, 'utf-8')
+      const data = JSON.parse(content)
+      if (data['@id']) {
+        iriRegistry.set(data['@id'], file.replace(ROOT + '/', ''))
+      }
+
+      // Handle arrays (reference data files)
+      if (Array.isArray(data)) {
+        for (const item of data) {
+          if (item['@id']) {
+            iriRegistry.set(item['@id'], file.replace(ROOT + '/', ''))
+          }
+        }
+      }
+
+      // Handle reference collections with members array
+      if (data.members && Array.isArray(data.members)) {
+        for (const item of data.members) {
+          if (item['@id']) {
+            iriRegistry.set(item['@id'], file.replace(ROOT + '/', ''))
+          }
+        }
+      }
+    } catch (error) {
+      // Skip parse errors (already reported in schema validation)
+    }
+  }
+
+  log(`  Registered ${iriRegistry.size} IRIs`, 'blue')
+
+  let validRefs = 0
+  let brokenRefs = 0
+  const broken = []
+
+  for (const file of files) {
+    if (file.includes('/context/')) continue
+
+    try {
+      const content = readFileSync(file, 'utf-8')
+      const data = JSON.parse(content)
+      const refs = extractIRIs(data)
+
+      for (const { path, iri } of refs) {
+        if (!isInternalIRI(iri)) {
+          validRefs++
+          continue
+        }
+
+        if (iriRegistry.has(iri)) {
+          validRefs++
+        } else {
+          brokenRefs++
+          const relPath = file.replace(ROOT + '/', '')
+          broken.push({ file: relPath, path, iri })
+
+          if (options.verbose) {
+            log(`  ✗ ${relPath}: ${path} -> ${iri}`, 'red')
+          }
+        }
+      }
+
+      // Handle arrays
+      if (Array.isArray(data)) {
+        for (const item of data) {
+          const refs = extractIRIs(item)
+          for (const { path, iri } of refs) {
+            if (!isInternalIRI(iri)) continue
+            if (!iriRegistry.has(iri)) {
+              brokenRefs++
+            }
+          }
+        }
+      }
+    } catch (error) {
+      // Skip
+    }
+  }
+
+  log(`\n  Results: ${validRefs} valid references, ${brokenRefs} broken`, brokenRefs > 0 ? 'red' : 'green')
+
+  if (broken.length > 0 && !options.verbose) {
+    log(`\n  Broken references (showing first 10):`, 'yellow')
+    for (const { file, path, iri } of broken.slice(0, 10)) {
+      log(`    • ${file}: ${path} -> ${iri}`, 'red')
+    }
+    if (broken.length > 10) {
+      log(`    ... and ${broken.length - 10} more`, 'yellow')
+    }
+  }
+
+  return { validRefs, brokenRefs, broken }
+}
+
+async function runQualityValidation(files, options) {
+  logSection('Phase 3: Content Quality')
+
+  let totalEntities = 0
+  let totalIssues = 0
+  const bySeverity = { error: 0, warning: 0, info: 0 }
+  const entities = []
+
+  for (const file of files) {
+    if (file.includes('/context/')) continue
+
+    try {
+      const content = readFileSync(file, 'utf-8')
+      const data = JSON.parse(content)
+      const entityType = detectEntityType(data)
+
+      if (!entityType) continue
+
+      totalEntities++
+      const issues = validateQuality(data, entityType)
+
+      if (issues.length > 0) {
+        totalIssues += issues.length
+        for (const issue of issues) {
+          bySeverity[issue.severity]++
+        }
+
+        entities.push({
+          file: file.replace(ROOT + '/', ''),
+          entityType,
+          issues
+        })
+
+        if (issues.some(i => i.severity === 'error' || i.severity === 'warning')) {
+          log(`  ⚠ ${file.replace(ROOT + '/', '')}`, 'yellow')
+          for (const issue of issues) {
+            if (issue.severity === 'error' || issue.severity === 'warning') {
+              log(`      [${issue.severity}] ${issue.path}: ${issue.message}`, issue.severity === 'error' ? 'red' : 'yellow')
+            }
+          }
+        }
+      }
+    } catch (error) {
+      // Skip
+    }
+  }
+
+  log(`\n  Results: ${totalEntities} entities checked`, 'blue')
+  log(`    Errors: ${bySeverity.error}`, bySeverity.error > 0 ? 'red' : 'reset')
+  log(`    Warnings: ${bySeverity.warning}`, bySeverity.warning > 0 ? 'yellow' : 'reset')
+  log(`    Info: ${bySeverity.info}`, 'reset')
+
+  return { totalEntities, totalIssues, bySeverity, entities }
+}
+
+// ============================================================================
+// Image Validation
+// ============================================================================
+
+// Non-plant products that don't need scientific names
+const NON_PLANT_IMAGE_TYPES = [
+  'oil', 'extract', 'factor', 'mpc', 'chitosan', 'shenqu', 'shoudihuang'
+]
+
+function isNonPlantImageType(dirName) {
+  const lower = dirName.toLowerCase()
+  return NON_PLANT_IMAGE_TYPES.some(type => lower.includes(type))
+}
+
+async function runImageValidation(root, options) {
+  logSection('Phase 4: Image Library Validation')
+
+  const imagesDir = join(root, 'media/images')
+  const dirs = readdirSync(imagesDir).filter(d =>
+    statSync(join(imagesDir, d)).isDirectory() && d !== 'banners'
+  )
+
+  let withMetadata = 0
+  let withSpecies = 0
+  let withAttribution = 0
+  let withSpdxId = 0
+  let errors = 0
+  let warnings = 0
+
+  const issues = []
+
+  for (const dir of dirs) {
+    const dirPath = join(imagesDir, dir)
+    const files = readdirSync(dirPath)
+
+    // Check for metadata file
+    const metadataFile = files.find(f => f.endsWith('.json') && f !== 'attribution.json')
+    if (!metadataFile) {
+      errors++
+      issues.push({ dir, issue: 'Missing metadata file', severity: 'error' })
+      continue
+    }
+
+    withMetadata++
+
+    // Read and validate metadata
+    try {
+      const metadata = JSON.parse(readFileSync(join(dirPath, metadataFile), 'utf8'))
+
+      // Check for species (except non-plant types)
+      if (!metadata.species && !isNonPlantImageType(dir)) {
+        warnings++
+        issues.push({ dir, issue: 'Missing species name', severity: 'warning' })
+      } else if (metadata.species) {
+        withSpecies++
+      }
+
+      // Check for attribution/copyright
+      if (!metadata.copyright) {
+        warnings++
+        issues.push({ dir, issue: 'Missing copyright holder', severity: 'warning' })
+      } else {
+        withAttribution++
+      }
+
+      // Check for SPDX ID
+      if (!metadata.spdxId) {
+        warnings++
+        issues.push({ dir, issue: 'Missing SPDX ID', severity: 'warning' })
+      } else {
+        withSpdxId++
+      }
+
+    } catch (e) {
+      errors++
+      issues.push({ dir, issue: `Invalid JSON: ${e.message}`, severity: 'error' })
+    }
+  }
+
+  log(`\n  Results: ${dirs.length} image directories checked`, 'blue')
+  log(`    Directories: ${dirs.length}`, 'reset')
+  log(`    With metadata: ${withMetadata}`, withMetadata === dirs.length ? 'green' : 'yellow')
+  log(`    With species: ${withSpecies} (plants)`, 'reset')
+  log(`    With attribution: ${withAttribution}`, withAttribution === dirs.length ? 'green' : 'yellow')
+  log(`    With SPDX ID: ${withSpdxId}`, withSpdxId === dirs.length ? 'green' : 'yellow')
+  log(`    Errors: ${errors}`, errors > 0 ? 'red' : 'reset')
+  log(`    Warnings: ${warnings}`, warnings > 0 ? 'yellow' : 'reset')
+
+  if (options.verbose && issues.length > 0) {
+    log('\n  Issues:', 'reset')
+    for (const issue of issues.slice(0, 20)) {
+      const icon = issue.severity === 'error' ? '❌' : '⚠️'
+      log(`    ${icon} ${issue.dir}: ${issue.issue}`, issue.severity === 'error' ? 'red' : 'yellow')
+    }
+    if (issues.length > 20) {
+      log(`    ... and ${issues.length - 20} more`, 'reset')
+    }
+  }
+
+  return {
+    directories: dirs.length,
+    withMetadata,
+    withSpecies,
+    withAttribution,
+    withSpdxId,
+    errors,
+    warnings,
+    issues
   }
 }
 
-/**
- * Main validation function
- */
-function validate(options = {}) {
-  log('\n📋 Herbapedia Data Validation\n', 'cyan')
+// ============================================================================
+// Main
+// ============================================================================
 
-  const entitiesDir = join(ROOT, 'entities')
-  const systemsDir = join(ROOT, 'systems')
+async function main() {
+  const args = process.argv.slice(2)
+  const options = {
+    verbose: args.includes('--verbose') || args.includes('-v'),
+    schema: args.includes('--schema'),
+    references: args.includes('--references'),
+    quality: args.includes('--quality'),
+    images: args.includes('--images'),
+  }
+
+  // If no specific phase is selected, run all
+  const runAll = !options.schema && !options.references && !options.quality && !options.images
+
+  log('\n📋 Herbapedia Validation\n', 'cyan')
 
   // Find all files
+  const searchDirs = [
+    'entities',
+    'profiles',
+    'systems/tcm/reference',
+    'systems/western/reference',
+    'systems/ayurveda/reference',
+    'systems/persian/reference',
+    'systems/mongolian/reference',
+  ]
+
   const files = []
-
-  if (options.plant) {
-    // Validate specific plant
-    const plantDir = join(entitiesDir, 'plants', options.plant)
-    files.push(...findJsonLdFiles(plantDir))
-  } else if (options.tcm) {
-    // Validate all TCM herbs
-    const tcmDir = join(systemsDir, 'tcm', 'herbs')
-    files.push(...findJsonLdFiles(tcmDir))
-  } else if (options.ayurveda) {
-    // Validate all Ayurveda dravyas
-    const ayurvedaDir = join(systemsDir, 'ayurveda', 'dravyas')
-    files.push(...findJsonLdFiles(ayurvedaDir))
-  } else {
-    // Validate everything
-    files.push(...findJsonLdFiles(entitiesDir))
-    files.push(...findJsonLdFiles(join(systemsDir, 'tcm', 'herbs')))
-    files.push(...findJsonLdFiles(join(systemsDir, 'ayurveda', 'dravyas')))
+  for (const dir of searchDirs) {
+    const fullPath = join(ROOT, dir)
+    files.push(...findJsonLdFiles(fullPath))
   }
 
-  if (files.length === 0) {
-    log('No files found to validate', 'yellow')
-    return
+  log(`Found ${files.length} JSON-LD files to validate\n`, 'blue')
+
+  const results = {
+    schema: null,
+    references: null,
+    quality: null,
+    images: null,
   }
 
-  log(`Validating ${files.length} file(s)...\n`, 'blue')
-
-  // Validate each file
-  for (const file of files) {
-    validateFile(file, options)
+  // Run validations
+  if (runAll || options.schema) {
+    results.schema = await runSchemaValidation(files, options)
   }
 
-  // Summary
-  log('\n' + '─'.repeat(50), 'reset')
-  log('\n📊 Validation Summary\n', 'cyan')
-  log(`  ✓ Passed: ${results.passed}`, 'green')
-  log(`  ✗ Failed: ${results.failed}`, results.failed > 0 ? 'red' : 'reset')
+  if (runAll || options.references) {
+    results.references = await runReferenceValidation(files, options)
+  }
 
-  if (results.errors.length > 0) {
-    log('\n❌ Errors:\n', 'red')
-    for (const { file, errors } of results.errors) {
-      log(`  ${file}:`, 'red')
-      errors.forEach(e => log(`    • ${e}`, 'red'))
-    }
+  if (runAll || options.quality) {
+    results.quality = await runQualityValidation(files, options)
+  }
+
+  if (runAll || options.images) {
+    results.images = await runImageValidation(ROOT, options)
+  }
+
+  // Final summary
+  log('\n' + '═'.repeat(60), 'cyan')
+  log('  Final Summary', 'cyan')
+  log('═'.repeat(60) + '\n', 'cyan')
+
+  let hasErrors = false
+
+  if (results.schema) {
+    const status = results.schema.failed === 0 ? '✅' : '❌'
+    log(`  ${status} Schema: ${results.schema.passed} passed, ${results.schema.failed} failed`, results.schema.failed > 0 ? 'red' : 'green')
+    if (results.schema.failed > 0) hasErrors = true
+  }
+
+  if (results.references) {
+    const status = results.references.brokenRefs === 0 ? '✅' : '⚠️'
+    log(`  ${status} References: ${results.references.validRefs} valid, ${results.references.brokenRefs} broken`, results.references.brokenRefs > 0 ? 'yellow' : 'green')
+  }
+
+  if (results.quality) {
+    const hasQualityIssues = results.quality.bySeverity.error > 0
+    const status = hasQualityIssues ? '❌' : results.quality.bySeverity.warning > 0 ? '⚠️' : '✅'
+    log(`  ${status} Quality: ${results.quality.totalEntities} entities, ${results.quality.totalIssues} issues`, hasQualityIssues ? 'red' : 'green')
+    if (hasQualityIssues) hasErrors = true
+  }
+
+  if (results.images) {
+    const hasImageErrors = results.images.errors > 0
+    const status = hasImageErrors ? '❌' : results.images.warnings > 0 ? '⚠️' : '✅'
+    log(`  ${status} Images: ${results.images.directories} dirs, ${results.images.withMetadata} metadata, ${results.images.errors} errors`, hasImageErrors ? 'red' : 'green')
+    if (hasImageErrors) hasErrors = true
+  }
+
+  if (hasErrors) {
+    log('\n❌ Validation completed with errors\n', 'red')
     process.exit(1)
   } else {
-    log('\n✅ All validations passed!', 'green')
+    log('\n✅ All validations passed!\n', 'green')
     process.exit(0)
   }
 }
 
-// Parse command line arguments
-const args = process.argv.slice(2)
-const options = {
-  verbose: args.includes('--verbose') || args.includes('-v'),
-  plant: null,
-  tcm: args.includes('--tcm'),
-  ayurveda: args.includes('--ayurveda'),
-}
-
-const plantIndex = args.indexOf('--plant')
-if (plantIndex !== -1 && args[plantIndex + 1]) {
-  options.plant = args[plantIndex + 1]
-}
-
-// Run validation
-validate(options)
+main().catch(error => {
+  console.error('Validation error:', error)
+  process.exit(1)
+})

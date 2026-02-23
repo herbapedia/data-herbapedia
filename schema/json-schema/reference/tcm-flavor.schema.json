@@ -1,0 +1,149 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herbapedia.org/schema/json-schema/reference/tcm-flavor.schema.json",
+  "$title": "TCM Flavor",
+  "description": "Traditional Chinese Medicine flavor (五味 - Wu Wei/Five Flavors). Each flavor has specific therapeutic actions and organ affinities. Not just taste, but functional category.",
+  "type": "object",
+  "allOf": [
+    { "$ref": "./reference-entity.schema.json" }
+  ],
+  "required": ["@id", "@type", "name"],
+  "properties": {
+    "@id": {
+      "description": "Unique identifier: tcm/flavor/{slug}.",
+      "type": "string",
+      "pattern": "^tcm/flavor/[a-z0-9-]+$",
+      "examples": [
+        "tcm/flavor/acrid",
+        "tcm/flavor/sweet",
+        "tcm/flavor/bitter",
+        "tcm/flavor/sour",
+        "tcm/flavor/salty",
+        "tcm/flavor/bland",
+        "tcm/flavor/astringent"
+      ]
+    },
+    "@type": {
+      "type": "array",
+      "items": { "type": "string" },
+      "contains": { "const": "tcm:Flavor" },
+      "examples": [["tcm:Flavor"]]
+    },
+    "name": {
+      "description": "Flavor name in Chinese and English.",
+      "$ref": "../core/language-map.schema.json",
+      "examples": [{ "zh-Hant": "辛", "zh-Hans": "辛", "en": "Acrid/Pungent" }]
+    },
+    "pinyin": {
+      "description": "Pinyin romanization.",
+      "type": "string",
+      "examples": ["xīn", "gān", "kǔ", "suān", "xián", "dàn", "sè"]
+    },
+    "symbol": {
+      "description": "Chinese character.",
+      "type": "string",
+      "examples": ["辛", "甘", "苦", "酸", "鹹", "淡", "澀"]
+    },
+    "fiveElement": {
+      "description": "Associated Five Element phase.",
+      "type": "string",
+      "enum": ["wood", "fire", "earth", "metal", "water"],
+      "_documentation": {
+        "wood": "酸 Sour - Liver",
+        "fire": "苦 Bitter - Heart",
+        "earth": "甘 Sweet - Spleen",
+        "metal": "辛 Acrid - Lung",
+        "water": "鹹 Salty - Kidney"
+      }
+    },
+    "associatedOrgan": {
+      "description": "Primary organ affinity.",
+      "type": "string",
+      "examples": ["Liver", "Heart", "Spleen", "Lung", "Kidney"]
+    },
+    "qiDirection": {
+      "description": "Direction of qi movement.",
+      "type": "string",
+      "enum": ["ascending", "descending", "floating", "sinking", "dispersing", "gathering"],
+      "_documentation": {
+        "acrid": "dispersing, ascending",
+        "sweet": "gathering, ascending",
+        "bitter": "descending, drying",
+        "sour": "gathering, astringing",
+        "salty": "descending, softening"
+      }
+    },
+    "functions": {
+      "description": "General therapeutic functions of this flavor.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "effectOnQi": {
+      "description": "Effect on qi/blood/fluids.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "contraindications": {
+      "description": "Conditions where this flavor should be avoided or used cautiously.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "isStandardFlavor": {
+      "description": "Whether this is one of the five standard flavors.",
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": true,
+  "_documentation": {
+    "iriPattern": "tcm/flavor/{slug}",
+    "directory": "systems/tcm/reference/flavors.jsonld",
+    "sevenFlavors": {
+      "acrid": {
+        "chinese": "辛",
+        "element": "metal",
+        "organ": "Lung",
+        "action": "Disperses, promotes circulation, releases exterior",
+        "caution": "Consumes qi and yin, avoid in deficiency"
+      },
+      "sweet": {
+        "chinese": "甘",
+        "element": "earth",
+        "organ": "Spleen",
+        "action": "Tonifies, harmonizes, moistens",
+        "caution": "Can cause stagnation, dampness"
+      },
+      "bitter": {
+        "chinese": "苦",
+        "element": "fire",
+        "organ": "Heart",
+        "action": "Drains, dries, descends, clears heat",
+        "caution": "Can damage fluids, digestion"
+      },
+      "sour": {
+        "chinese": "酸",
+        "element": "wood",
+        "organ": "Liver",
+        "action": "Astringes, absorbs, generates fluids",
+        "caution": "Can cause stagnation"
+      },
+      "salty": {
+        "chinese": "鹹",
+        "element": "water",
+        "organ": "Kidney",
+        "action": "Softens hardness, drains, descends",
+        "caution": "Can damage blood"
+      },
+      "bland": {
+        "chinese": "淡",
+        "element": "none",
+        "organ": "none specific",
+        "action": "Leaches out dampness, promotes urination",
+        "caution": "Can damage fluids with overuse"
+      },
+      "astringent": {
+        "chinese": "澀",
+        "element": "none",
+        "organ": "none specific",
+        "action": "Astringes, binds, absorbs",
+        "caution": "Can trap pathogens"
+      }
+    }
+  }
+}

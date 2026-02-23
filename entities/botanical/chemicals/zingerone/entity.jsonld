@@ -1,0 +1,61 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/chemical/zingerone",
+  "@type": [
+    "botany:ChemicalCompound",
+    "schema:BioChemEntity"
+  ],
+  "name": {
+    "en": "Zingerone",
+    "zh-Hant": "薑酮",
+    "zh-Hans": "姜酮"
+  },
+  "iupacName": "4-(4-hydroxy-3-methoxyphenyl)butan-2-one",
+  "commonName": [
+    "Zingerone",
+    "Vanillylacetone"
+  ],
+  "systematicName": "4-(4-Hydroxy-3-methoxyphenyl)butan-2-one",
+  "molecularFormula": "C11H14O3",
+  "molecularWeight": 194.23,
+  "casNumber": "122-48-5",
+  "pubchemCID": "5281083",
+  "chebiID": "CHEBI:50568",
+  "inchi": "InChI=1S/C11H14O3/c1-8(12)3-4-9-5-6-10(13)11(14-2)7-9/h5-7,13H,3-4H2,1-2H3",
+  "inchiKey": "KMBOPIFDNJCXGT-UHFFFAOYSA-N",
+  "smiles": "CC(=O)CCc1ccc(O)c(OC)c1",
+  "compoundClass": "Phenylpropanoid; Ketone",
+  "description": {
+    "en": "A minor constituent of ginger with a mild, sweet, spicy odor. Less pungent than gingerol or shogaol but contributes to the overall flavor profile. Also found in gingerbread and other cooked ginger preparations.",
+    "zh-Hant": "薑中的微量成分，具有溫和、甜辣的氣味。比薑辣素或薑烯酚辛辣味淡，但有助於整體風味。也存在於薑餅和其他熟薑製品中。"
+  },
+  "foundIn": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/ginger"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/zingiber-officinale"
+    }
+  ],
+  "pharmacology": [
+    "Anti-inflammatory activity",
+    "Gastroprotective effects",
+    "Antiemetic effects",
+    "Antioxidant activity"
+  ],
+  "safetyData": {
+    "ld50": "Oral, mouse: 2.18 g/kg",
+    "toxicity": "Low toxicity",
+    "warnings": [
+      "Generally recognized as safe for food use"
+    ]
+  },
+  "provenance": {
+    "created": "2024-01-15",
+    "modified": "2026-02-20T17:59:34.449Z",
+    "source": "PubChem, ChEBI, Scientific Literature",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  }
+}

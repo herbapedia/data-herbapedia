@@ -1,8 +1,8 @@
 {
-  "@context": "../schema/context/tcm.jsonld",
+  "@context": "https://www.herbapedia.org/schema/context/tcm.jsonld",
   "@graph": [
     {
-      "@id": "flavor/sweet",
+      "@id": "https://www.herbapedia.org/system/tcm/flavor/sweet",
       "@type": "tcm:Flavor",
       "flavorValue": "sweet",
       "prefLabel": {
@@ -18,7 +18,7 @@
       "associatedOrgan": "spleen"
     },
     {
-      "@id": "flavor/sour",
+      "@id": "https://www.herbapedia.org/system/tcm/flavor/sour",
       "@type": "tcm:Flavor",
       "flavorValue": "sour",
       "prefLabel": {
@@ -34,7 +34,7 @@
       "associatedOrgan": "liver"
     },
     {
-      "@id": "flavor/bitter",
+      "@id": "https://www.herbapedia.org/system/tcm/flavor/bitter",
       "@type": "tcm:Flavor",
       "flavorValue": "bitter",
       "prefLabel": {
@@ -50,7 +50,7 @@
       "associatedOrgan": "heart"
     },
     {
-      "@id": "flavor/acrid",
+      "@id": "https://www.herbapedia.org/system/tcm/flavor/acrid",
       "@type": "tcm:Flavor",
       "flavorValue": "acrid",
       "prefLabel": {
@@ -66,7 +66,7 @@
       "associatedOrgan": "lung"
     },
     {
-      "@id": "flavor/salty",
+      "@id": "https://www.herbapedia.org/system/tcm/flavor/salty",
       "@type": "tcm:Flavor",
       "flavorValue": "salty",
       "prefLabel": {
@@ -82,7 +82,7 @@
       "associatedOrgan": "kidney"
     },
     {
-      "@id": "flavor/astringent",
+      "@id": "https://www.herbapedia.org/system/tcm/flavor/astringent",
       "@type": "tcm:Flavor",
       "flavorValue": "astringent",
       "prefLabel": {
@@ -97,7 +97,7 @@
       }
     },
     {
-      "@id": "flavor/bland",
+      "@id": "https://www.herbapedia.org/system/tcm/flavor/bland",
       "@type": "tcm:Flavor",
       "flavorValue": "bland",
       "prefLabel": {

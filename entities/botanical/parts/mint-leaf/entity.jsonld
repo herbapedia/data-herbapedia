@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/mint-leaf",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Mint Leaf",
+    "zh-Hant": "薄荷",
+    "zh-Hans": "薄荷"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/mint"
+  },
+  "partType": "leaf",
+  "description": {
+    "en": "The leaf of Mentha haplocalyx, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.822Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herbapedia.org/schema/json-schema/herbal/herbal-preparation.schema.json",
+  "title": "Herbal Preparation",
+  "description": "The CENTRAL entity in Herbapedia. An herbal preparation is a substance prepared from botanical sources (plants or plant parts) for therapeutic or culinary use. This is what medicine system profiles (TCM, Western, Ayurveda) interpret. A single preparation can have MULTIPLE system profiles.",
+  "type": "object",
+  "allOf": [
+    { "$ref": "../core/entity.schema.json" }
+  ],
+  "required": ["@id", "@type", "name", "derivedFrom"],
+  "properties": {
+    "@id": {
+      "description": "Unique identifier: preparation/{slug}. Slug describes the preparation, e.g., 'fresh-ginger-rhizome', 'dried-ginseng-root', 'turmeric-powder'.",
+      "type": "string",
+      "pattern": "^preparation/[a-z0-9-]+$",
+      "examples": [
+        "preparation/fresh-ginger-rhizome",
+        "preparation/dried-ginger-rhizome",
+        "preparation/white-ginseng-root",
+        "preparation/red-ginseng-root",
+        "preparation/turmeric-powder"
+      ]
+    },
+    "@type": {
+      "type": "array",
+      "items": { "type": "string" },
+      "contains": { "const": "herbal:HerbalPreparation" },
+      "examples": [["herbal:HerbalPreparation", "schema:DietarySupplement"]]
+    },
+    "derivedFrom": {
+      "description": "CRITICAL: The botanical source(s) for this preparation. Can be a PlantSpecies (whole plant used) or PlantPart (specific part used). For compound preparations, can reference multiple sources.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" },
+      "minItems": 1,
+      "examples": [
+        [{ "@id": "botanical/part/zingiber-officinale-rhizome" }],
+        [{ "@id": "botanical/part/panax-ginseng-root" }],
+        [{ "@id": "botanical/species/camellia-sinensis" }],
+        [{ "@id": "botanical/part/curcuma-longa-rhizome" }, { "@id": "botanical/part/piper-nigrum-fruit" }]
+      ]
+    },
+    "preparationMethod": {
+      "description": "How this preparation is processed from the raw botanical material.",
+      "type": "string",
+      "enum": [
+        "fresh",
+        "dried",
+        "steamed",
+        "roasted",
+        "fried",
+        "stir-fried",
+        "carbonized",
+        "fermented",
+        "pickled",
+        "extracted",
+        "powdered",
+        "ground",
+        "decocted",
+        "infused",
+        "tinctured",
+        "distilled",
+        "cold-pressed",
+        "steam-distilled",
+        "freeze-dried",
+        "spray-dried",
+        "concentrated",
+        "standardized",
+        "raw",
+        "processed"
+      ],
+      "examples": ["fresh", "dried", "steamed", "powdered"]
+    },
+    "preparationDetails": {
+      "description": "Detailed description of the preparation process.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "form": {
+      "description": "Physical form of the preparation.",
+      "type": "string",
+      "enum": ["whole", "sliced", "crushed", "powder", "granule", "capsule", "tablet", "liquid", "oil", "extract", "tincture", "tea", "paste"],
+      "examples": ["sliced", "powder", "whole"]
+    },
+    "appearance": {
+      "description": "Physical appearance description.",
+      "$ref": "../core/language-map.schema.json",
+      "examples": [{ "en": "Firm, knobby rhizome with yellowish flesh and brown skin" }]
+    },
+    "commonUsage": {
+      "description": "Non-system-specific usage (culinary, cosmetic, industrial). This is FACTUAL usage, not therapeutic claims.",
+      "type": "object",
+      "properties": {
+        "culinary": {
+          "description": "Use in food and beverages.",
+          "$ref": "../core/language-map.schema.json"
+        },
+        "cosmetic": {
+          "description": "Use in cosmetics and skincare.",
+          "$ref": "../core/language-map.schema.json"
+        },
+        "industrial": {
+          "description": "Industrial applications.",
+          "$ref": "../core/language-map.schema.json"
+        },
+        "aromatherapy": {
+          "description": "Use in aromatherapy.",
+          "$ref": "../core/language-map.schema.json"
+        }
+      }
+    },
+    "storageRequirements": {
+      "description": "How to store this preparation.",
+      "$ref": "../core/language-map.schema.json",
+      "examples": [{ "en": "Store in cool, dry place away from direct sunlight" }]
+    },
+    "shelfLife": {
+      "description": "Typical shelf life.",
+      "type": "string",
+      "examples": ["2-3 years when properly stored"]
+    },
+    "safetyInfo": {
+      "description": "General safety information (not system-specific).",
+      "type": "object",
+      "properties": {
+        "allergens": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "pregnancySafety": {
+          "$ref": "../core/language-map.schema.json"
+        },
+        "generalContraindications": {
+          "$ref": "../core/language-map.schema.json"
+        },
+        "drugInteractions": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "warnings": {
+          "type": "array",
+          "items": { "$ref": "../core/language-map.schema.json" }
+        }
+      }
+    },
+    "hasTCMProfile": {
+      "description": "TCM interpretation of this preparation. A preparation can have multiple TCM profiles if processed differently.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" },
+      "examples": [[{ "@id": "tcm/profile/sheng-jiang" }]]
+    },
+    "hasWesternProfile": {
+      "description": "Western herbalism interpretation.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" },
+      "examples": [[{ "@id": "western/profile/fresh-ginger" }]]
+    },
+    "hasAyurvedaProfile": {
+      "description": "Ayurvedic interpretation.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" },
+      "examples": [[{ "@id": "ayurveda/profile/nagara" }]]
+    },
+    "relatedPreparations": {
+      "description": "Other preparations from the same botanical source with different processing.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" },
+      "examples": [
+        [{ "@id": "preparation/dried-ginger-rhizome" }]
+      ]
+    },
+    "substitutes": {
+      "description": "Preparations that can substitute for this one.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "preparation": { "$ref": "../core/iri-reference.schema.json" },
+          "notes": { "type": "string" }
+        }
+      }
+    }
+  },
+  "additionalProperties": true,
+  "_documentation": {
+    "iriPattern": "preparation/{slug}",
+    "directory": "entities/preparations/{slug}/entity.jsonld",
+    "centralRole": "The HerbalPreparation is the PIVOT entity between botanical sources and therapeutic interpretations",
+    "keyInsight": "A single HerbalPreparation can have MULTIPLE system profiles - it is NOT exclusive to one medicine system",
+    "relationshipModel": {
+      "derivedFrom": "1+ BotanicalEntity (PlantSpecies or PlantPart)",
+      "hasTCMProfile": "0+ TCMProfile",
+      "hasWesternProfile": "0+ WesternHerbalProfile",
+      "hasAyurvedaProfile": "0+ AyurvedaProfile"
+    },
+    "examples": {
+      "freshGinger": {
+        "@id": "preparation/fresh-ginger-rhizome",
+        "@type": ["herbal:HerbalPreparation"],
+        "derivedFrom": [{ "@id": "botanical/part/zingiber-officinale-rhizome" }],
+        "preparationMethod": "fresh",
+        "name": { "en": "Fresh Ginger", "zh-Hant": "生薑" },
+        "commonUsage": {
+          "culinary": { "en": "Cooking, tea, beverages" }
+        },
+        "hasTCMProfile": [{ "@id": "tcm/profile/sheng-jiang" }],
+        "hasWesternProfile": [{ "@id": "western/profile/fresh-ginger" }],
+        "hasAyurvedaProfile": [{ "@id": "ayurveda/profile/nagara" }]
+      },
+      "driedGinger": {
+        "@id": "preparation/dried-ginger-rhizome",
+        "@type": ["herbal:HerbalPreparation"],
+        "derivedFrom": [{ "@id": "botanical/part/zingiber-officinale-rhizome" }],
+        "preparationMethod": "dried",
+        "name": { "en": "Dried Ginger", "zh-Hant": "乾薑" },
+        "relatedPreparations": [{ "@id": "preparation/fresh-ginger-rhizome" }],
+        "hasTCMProfile": [{ "@id": "tcm/profile/gan-jiang" }]
+      },
+      "whiteVsRedGinseng": {
+        "description": "Different preparations from same botanical source with different properties",
+        "whiteGinseng": {
+          "@id": "preparation/white-ginseng-root",
+          "preparationMethod": "dried",
+          "hasTCMProfile": [{ "@id": "tcm/profile/bai-shen" }]
+        },
+        "redGinseng": {
+          "@id": "preparation/red-ginseng-root",
+          "preparationMethod": "steamed",
+          "hasTCMProfile": [{ "@id": "tcm/profile/hong-shen" }]
+        }
+      }
+    }
+  }
+}

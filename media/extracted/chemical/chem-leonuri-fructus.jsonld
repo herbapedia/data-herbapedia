@@ -1,0 +1,226 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/chemical/leonuri-fructus",
+  "@type": ["herbapedia:ChemicalAnalysisData", "schema:Dataset"],
+  "dataType": "ChemicalAnalysis",
+  "sourceDocument": "CHEM_____Leonuri_Fructus_V1.pdf",
+  "scientificName": "Leonurus japonicus",
+  "chineseName": "茺蔚子",
+  "pinyinName": "Chong Wei Zi",
+  "identificationMethod": ["TLC", "HPLC-Fingerprint", "HPLC-Assay"],
+  "referenceCompounds": [
+    {
+      "name": "Stachydrine hydrochloride",
+      "chineseName": "鹽酸水蘇鹼",
+      "formula": "C₇H₁₃NO₂·HCl",
+      "purpose": ["TLC identification", "HPLC fingerprint marker", "Assay quantification"]
+    }
+  ],
+  "assayLimits": {
+    "stachydrine": {
+      "compound": "Stachydrine hydrochloride",
+      "formula": "C₇H₁₃NO₂·HCl",
+      "note": "No minimum content specified in document"
+    }
+  },
+  "tlcMethod": {
+    "appendixReference": "Appendix I",
+    "stationaryPhase": "HPTLC silica gel G60 plate",
+    "developingSolvent": {
+      "components": ["n-butanol", "formic acid", "water"],
+      "ratio": "3:1:0.5 (v/v/v)"
+    },
+    "visualizationReagent": {
+      "reagent": "Iodine vapor",
+      "procedure": "Expose plate to iodine vapor in a closed chamber for 20-30 minutes until spots or bands become visible",
+      "visualization": "Visible light"
+    },
+    "testSolution": {
+      "sampleAmount": "2.0 g",
+      "solvent": "50% methanol",
+      "solventVolume": "30 mL",
+      "extraction": "Heat under reflux for 20 minutes",
+      "concentration": "Rotary evaporator under reduced pressure to dryness",
+      "reconstitution": "Dissolve residue in 2 mL of 50% methanol",
+      "filtration": "0.45 μm PTFE filter"
+    },
+    "standardSolution": {
+      "concentration": "1.0 mg/mL in 50% methanol",
+      "compound": "Stachydrine hydrochloride"
+    },
+    "applicationVolumes": {
+      "standardSolution": "4 μL",
+      "testSolution": "1 μL"
+    },
+    "developingDistance": "Approximately 4 cm",
+    "identificationCriteria": {
+      "positiveMarkers": ["Stachydrine hydrochloride"],
+      "requirement": "Test sample must show spots or bands with same color and Rf value as stachydrine hydrochloride reference"
+    }
+  },
+  "hplcFingerprint": {
+    "appendixReference": "Appendix II",
+    "chromatographicSystem": {
+      "column": {
+        "type": "Amino-bonded silica gel column (NH₂)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "ELSD (Evaporative Light Scattering Detector)",
+      "detectorParameters": {
+        "driftTubeTemperature": "120°C",
+        "carrierGasFlowRate": "3.2 L/min (N₂)"
+      },
+      "flowRate": "1.0 mL/min",
+      "injectionVolume": "5 μL"
+    },
+    "mobilePhase": {
+      "solventA": "Acetonitrile",
+      "solventB": "0.2% Acetic acid aqueous solution",
+      "gradientProgram": [
+        {
+          "timeRange": "0-35 min",
+          "solventA": "90% → 55%",
+          "solventB": "10% → 45%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolution": {
+      "name": "Std-FP",
+      "concentration": "500 mg/L",
+      "compound": "Stachydrine hydrochloride",
+      "preparation": "5.0 mg in 10 mL of 50% methanol"
+    },
+    "testSolution": {
+      "sampleAmount": "1.0 g",
+      "solvent": "50% methanol",
+      "solventVolume": "30 mL × 2 extractions",
+      "extraction": "Heat under reflux for 1 hour, repeat once",
+      "concentration": "Rotary evaporator under reduced pressure to dryness",
+      "finalVolume": "5 mL volumetric flask",
+      "reconstitution": "50% methanol",
+      "filtration": "0.22 μm nylon membrane filter"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "peakAreaRSD": "≤ 5.0% (Stachydrine)",
+      "retentionTimeRSD": "≤ 2.0% (Stachydrine)",
+      "theoreticalPlates": "≥ 25,000 (based on Stachydrine)",
+      "resolution": "≥ 1.5 (between peak 2 and nearest adjacent peak)"
+    },
+    "identificationCriteria": {
+      "retentionTimeTolerance": "≤ 2.0% difference between sample and standard"
+    }
+  },
+  "hplcAssay": {
+    "appendixReference": "Appendix III",
+    "chromatographicSystem": {
+      "column": {
+        "type": "Amino-bonded polyvinyl alcohol",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "ELSD (Evaporative Light Scattering Detector)",
+      "detectorParameters": {
+        "driftTubeTemperature": "120°C",
+        "carrierGasFlowRate": "3.2 L/min (N₂)"
+      },
+      "flowRate": "1.0 mL/min"
+    },
+    "mobilePhase": {
+      "solventA": "Acetonitrile",
+      "solventB": "0.2% Acetic acid aqueous solution",
+      "gradientProgram": [
+        {
+          "timeRange": "0-35 min",
+          "solventA": "90% → 55%",
+          "solventB": "10% → 45%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "stockSolution": {
+        "name": "Std-Stock",
+        "concentration": "4000 mg/L",
+        "compound": "Stachydrine hydrochloride",
+        "preparation": "20.0 mg in 5 mL of 50% methanol"
+      },
+      "workingSolutions": {
+        "name": "Std-AS",
+        "concentrations": ["100", "300", "400", "500", "1000 mg/L"],
+        "description": "5-point calibration series diluted from stock solution with 50% methanol"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "1.0 g",
+      "solvent": "50% methanol",
+      "extractionVolume": "30 mL × 2 extractions",
+      "extraction": "Heat under reflux for 1 hour, repeat once",
+      "concentration": "Rotary evaporator under reduced pressure to dryness",
+      "finalDilution": "Volumetric flask with 50% methanol",
+      "filtration": "0.22 μm nylon membrane filter"
+    },
+    "calibration": {
+      "method": "5-point calibration curve",
+      "plot": "ln(Peak area) vs. ln(concentration) for ELSD",
+      "formula": "C = e^[(ln(A) - I) / m]"
+    },
+    "contentCalculation": {
+      "formula": "Content (%) = (C × V × D) / (10000 × W)",
+      "parameters": {
+        "C": "Concentration of analyte in test solution (mg/L)",
+        "V": "Final make-up volume (mL)",
+        "D": "Dilution factor",
+        "W": "Weight of sample (g)"
+      }
+    }
+  },
+  "rrtValues": [
+    {
+      "peakNumber": 1,
+      "identification": "Characteristic peak",
+      "rrt": 0.71,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Stachydrine"
+    },
+    {
+      "peakNumber": 2,
+      "compound": "Stachydrine",
+      "identification": "Indicator peak",
+      "rrt": 1.00,
+      "acceptableRange": null,
+      "referenceMarker": true,
+      "referenceTo": "self"
+    },
+    {
+      "peakNumber": 3,
+      "identification": "Characteristic peak",
+      "rrt": 1.64,
+      "acceptableRange": "±0.04",
+      "referenceMarker": false,
+      "referenceTo": "Stachydrine"
+    }
+  ],
+  "characteristicPeaks": {
+    "count": 3,
+    "requirement": "Test sample chromatogram should have 3 characteristic peaks consistent with the relative retention time ranges in the reference fingerprint chromatogram"
+  },
+  "appendices": {
+    "appendixI": {
+      "title": "Chromatography – Thin-Layer Chromatography",
+      "description": "General procedures for TLC including plate types, application methods, developing chambers, Rf calculation and interpretation"
+    },
+    "appendixII": {
+      "title": "GC and HPLC/UHPLC Fingerprinting",
+      "description": "Methods for establishing chromatographic fingerprints using marker peaks and RRT values"
+    },
+    "appendixIII": {
+      "title": "Chromatography – HPLC/UHPLC",
+      "description": "General HPLC/UHPLC procedures including system suitability tests (theoretical plates, repeatability, resolution, tailing factor) and quantitative calculations using DAD and ELSD detectors"
+    }
+  },
+  "extractedAt": "2026-02-20"
+}

@@ -1,12 +1,12 @@
 {
-  "@context": "../../schema/context/tcm.jsonld",
-  "@id": "tcm/black-sesame-seed",
+  "@context": "https://www.herbapedia.org/schema/context/tcm.jsonld",
+  "@id": "https://www.herbapedia.org/system/tcm/profile/black-sesame-seed",
   "@type": [
     "tcm:Herb",
     "schema:DietarySupplement"
   ],
   "derivedFromPlant": {
-    "@id": "plant/black-sesame-seed"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/black-sesame-seed"
   },
   "name": {
     "en": "Black Sesame Seed",
@@ -19,19 +19,19 @@
     "zh-Hans": "巨胜子"
   },
   "hasCategory": {
-    "@id": "category/tonify-qi"
+    "@id": "https://www.herbapedia.org/system/tcm/category/tonify-yin"
   },
   "hasNature": {
-    "@id": "nature/neutral"
+    "@id": "https://www.herbapedia.org/system/tcm/nature/neutral"
   },
   "hasFlavor": [
     {
-      "@id": "flavor/sweet"
+      "@id": "https://www.herbapedia.org/system/tcm/flavor/sweet"
     }
   ],
   "entersMeridian": [
     {
-      "@id": "meridian/spleen"
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/spleen"
     }
   ],
   "tcmHistory": {
@@ -53,6 +53,8 @@
   "created": "2026-02-18T09:14:55.250Z",
   "license": "https://creativecommons.org/licenses/by-sa/4.0/",
   "sameAs": [
-    "https://www.wikidata.org/wiki/Q2763698"
+    {
+      "@id": "https://www.wikidata.org/wiki/Q2763698"
+    }
   ]
 }

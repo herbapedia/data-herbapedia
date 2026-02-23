@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/preparation/lingzhi-spores",
+  "@type": [
+    "herbal:HerbalPreparation",
+    "schema:DietarySupplement"
+  ],
+  "name": {
+    "en": "Lingzhi Spores",
+    "zh-Hant": "野生靈芝",
+    "zh-Hans": "野生灵芝"
+  },
+  "derivedFrom": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/lingzhi-spores"
+    }
+  ],
+  "preparationMethod": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/method/dried"
+  },
+  "form": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/form/whole"
+  },
+  "hasTCMProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/profile/lingzhi-spores"
+    }
+  ],
+  "safetyInfo": {},
+  "provenance": {
+    "created": "2026-02-20",
+    "source": "Generated from TCM profile",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "description": {
+    "en": "Herbal preparation derived from Lingzhi Spores. Lingzhi is reputed to have many medicinal properties: it nourishes the heart and blood; pacifies the spirit; tonifies the chi; relieves coughing symptoms and supports weak digestion. Sweet and neutral..."
+  },
+  "image": "media/images/lingzhi-spores/lingzhi-spores.jpg"
+}

@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/chinese-rhubarb-root",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/chinese-rhubarb-root",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"

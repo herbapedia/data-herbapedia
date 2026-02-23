@@ -1,0 +1,776 @@
+{
+  "generated": "2026-02-23T10:45:17.904Z",
+  "description": "Mapping from old directory names to scientific name directories",
+  "mappings": {
+    "algae": {
+      "newSlug": "sargassum-fusiforme",
+      "scientificName": "Sargassum fusiforme",
+      "entityType": "botanical"
+    },
+    "aloe-vera": {
+      "newSlug": "aloe-barbadensis",
+      "scientificName": "Aloe barbadensis",
+      "entityType": "botanical"
+    },
+    "amber": {
+      "newSlug": "succinum",
+      "scientificName": "Succinum",
+      "entityType": "botanical"
+    },
+    "american-ginseng": {
+      "newSlug": "panax-quinquefolium",
+      "scientificName": "Panax quinquefolium",
+      "entityType": "botanical"
+    },
+    "argan": {
+      "newSlug": "argania-spinosa",
+      "scientificName": "Argania spinosa",
+      "entityType": "botanical"
+    },
+    "asparagus-root": {
+      "newSlug": "asparagus-cochinchinensis",
+      "scientificName": "Asparagus cochinchinensis",
+      "entityType": "botanical"
+    },
+    "baizhu": {
+      "newSlug": "atractylodes-macrocephala",
+      "scientificName": "Atractylodes macrocephala",
+      "entityType": "botanical"
+    },
+    "baiziren": {
+      "newSlug": "platycladus-orientalis",
+      "scientificName": "Platycladus Orientalis",
+      "entityType": "botanical"
+    },
+    "balm-mint": {
+      "newSlug": "melissa-officinalis",
+      "scientificName": "Melissa officinalis",
+      "entityType": "botanical"
+    },
+    "barley": {
+      "newSlug": "hordeum-vulgare",
+      "scientificName": "Hordeum vulgare",
+      "entityType": "botanical"
+    },
+    "beishashen": {
+      "newSlug": "glehnia-littoralis",
+      "scientificName": "Glehnia littoralis",
+      "entityType": "botanical"
+    },
+    "bilberry": {
+      "newSlug": "vaccinium-myrtillus",
+      "scientificName": "Vaccinium myrtillus",
+      "entityType": "botanical"
+    },
+    "birds-nest": {
+      "newSlug": "swiftlets-nest",
+      "scientificName": "Swiftlet's Nest",
+      "entityType": "botanical"
+    },
+    "bitter-orange": {
+      "newSlug": "citrus-aurantium",
+      "scientificName": "Citrus Aurantium",
+      "entityType": "botanical"
+    },
+    "black-sesame-seed": {
+      "newSlug": "sesami-nigram",
+      "scientificName": "Sesami Nigram",
+      "entityType": "botanical"
+    },
+    "blueberry": {
+      "newSlug": "vaccinium-cyanococcus",
+      "scientificName": "Vaccinium Cyanococcus",
+      "entityType": "botanical"
+    },
+    "borage-extract": {
+      "newSlug": "borago-officinalis",
+      "scientificName": "Borago officinalis",
+      "entityType": "botanical"
+    },
+    "buguzhi": {
+      "newSlug": "psoralea-corylifolia",
+      "scientificName": "Psoralea corylifolia",
+      "entityType": "botanical"
+    },
+    "cangzhu": {
+      "newSlug": "atractylodes-lancea-atractylodes-chinensis",
+      "scientificName": "Atractylodes lancea Atractylodes chinensis",
+      "entityType": "botanical"
+    },
+    "cardamom": {
+      "newSlug": "amomum-villosum",
+      "scientificName": "Amomum villosum",
+      "entityType": "botanical"
+    },
+    "chamomile": {
+      "newSlug": "matricaria-chamomilla",
+      "scientificName": "Matricaria chamomilla",
+      "entityType": "botanical"
+    },
+    "changpu": {
+      "newSlug": "acorus-tatarinowii",
+      "scientificName": "Acorus Tatarinowii",
+      "entityType": "botanical"
+    },
+    "chinese-angelica-or-dong-quai": {
+      "newSlug": "angelica-sinensis",
+      "scientificName": "Angelica sinensis",
+      "entityType": "botanical"
+    },
+    "chinese-bellflower": {
+      "newSlug": "platycodon-grandiflorum",
+      "scientificName": "Platycodon grandiflorum",
+      "entityType": "botanical"
+    },
+    "chinese-mugwort-leaf": {
+      "newSlug": "artemisia-argyi",
+      "scientificName": "Artemisia argyi",
+      "entityType": "botanical"
+    },
+    "chinese-rhubarb-root": {
+      "newSlug": "rheum-palmatum",
+      "scientificName": "Rheum palmatum",
+      "entityType": "botanical"
+    },
+    "chondroitin-sulfate": {
+      "newSlug": "chondroitin-sulfate-galactosaminoglucuronoglycan-sulfate",
+      "scientificName": "Chondroitin Sulfate/ Galactosaminoglucuronoglycan Sulfate",
+      "entityType": "botanical"
+    },
+    "chrysanthemum": {
+      "newSlug": "chrysanthemum-morifolium",
+      "scientificName": "Chrysanthemum morifolium",
+      "entityType": "botanical"
+    },
+    "chuanxinlian": {
+      "newSlug": "andrographis-paniculata",
+      "scientificName": "Andrographis paniculata",
+      "entityType": "botanical"
+    },
+    "chuanxiong": {
+      "newSlug": "ligusticum-striatum",
+      "scientificName": "Ligusticum striatum",
+      "entityType": "botanical"
+    },
+    "clove": {
+      "newSlug": "syzygium-aromaticum",
+      "scientificName": "Syzygium aromaticum",
+      "entityType": "botanical"
+    },
+    "cordyceps": {
+      "newSlug": "cordyceps-sinensis",
+      "scientificName": "Cordyceps sinensis",
+      "entityType": "botanical"
+    },
+    "corn-silk": {
+      "newSlug": "zea-mays",
+      "scientificName": "Zea mays",
+      "entityType": "botanical"
+    },
+    "cranberry": {
+      "newSlug": "vaccinium-macrocarpon",
+      "scientificName": "Vaccinium macrocarpon",
+      "entityType": "botanical"
+    },
+    "cysteine-hci": {
+      "newSlug": "l-cysteine",
+      "scientificName": "L-Cysteine",
+      "entityType": "botanical"
+    },
+    "dandelion": {
+      "newSlug": "taraxacum-officinale",
+      "scientificName": "Taraxacum Officinale",
+      "entityType": "botanical"
+    },
+    "dangshen": {
+      "newSlug": "codonopsis-pilosula",
+      "scientificName": "Codonopsis pilosula",
+      "entityType": "botanical"
+    },
+    "danshen": {
+      "newSlug": "salvia-miltiorrhiza",
+      "scientificName": "Salvia miltiorrhiza",
+      "entityType": "botanical"
+    },
+    "deer-antler": {
+      "newSlug": "cervus-nippon-temminck",
+      "scientificName": "Cervus nippon Temminck",
+      "entityType": "botanical"
+    },
+    "deer-horn-gelatine": {
+      "newSlug": "colla-cornus-cervi",
+      "scientificName": "Colla Cornus Cervi",
+      "entityType": "botanical"
+    },
+    "dihuang": {
+      "newSlug": "rehmannia-glutinosa",
+      "scientificName": "Rehmannia glutinosa",
+      "entityType": "botanical"
+    },
+    "dragon-bone": {
+      "newSlug": "draconis-os",
+      "scientificName": "Draconis os",
+      "entityType": "botanical"
+    },
+    "duhuo": {
+      "newSlug": "angelica-pubescens",
+      "scientificName": "Angelica pubescens",
+      "entityType": "botanical"
+    },
+    "duzhong": {
+      "newSlug": "eucommia-ulmoides",
+      "scientificName": "Eucommia ulmoides",
+      "entityType": "botanical"
+    },
+    "echinacea": {
+      "newSlug": "echinacea-purpurea-echinacea-angustfolia-dc",
+      "scientificName": "Echinacea purpurea Echinacea angustfolia DC",
+      "entityType": "botanical"
+    },
+    "eucalyptus": {
+      "newSlug": "eucalyptus-globulus",
+      "scientificName": "Eucalyptus globulus",
+      "entityType": "botanical"
+    },
+    "evening-primrose": {
+      "newSlug": "oenothera-biennis",
+      "scientificName": "Oenothera biennis",
+      "entityType": "botanical"
+    },
+    "evodia-fruit": {
+      "newSlug": "evodia-rutaecarpa",
+      "scientificName": "Evodia rutaecarpa",
+      "entityType": "botanical"
+    },
+    "fangfeng": {
+      "newSlug": "saposhnikovia-divaricata",
+      "scientificName": "Saposhnikovia divaricata",
+      "entityType": "botanical"
+    },
+    "fangji": {
+      "newSlug": "stephania-tetrandra",
+      "scientificName": "Stephania tetrandra",
+      "entityType": "botanical"
+    },
+    "fleece-flower": {
+      "newSlug": "reynoutria-multiflora",
+      "scientificName": "Reynoutria multiflora",
+      "entityType": "botanical"
+    },
+    "fuling": {
+      "newSlug": "poria-cocos",
+      "scientificName": "Poria cocos",
+      "entityType": "botanical"
+    },
+    "garcinia-cambogia-fruit": {
+      "newSlug": "garcinia-cambogia",
+      "scientificName": "Garcinia Cambogia",
+      "entityType": "botanical"
+    },
+    "garlic": {
+      "newSlug": "allium-sativum",
+      "scientificName": "Allium sativum",
+      "entityType": "botanical"
+    },
+    "ginger": {
+      "newSlug": "zingiber-officinale",
+      "scientificName": "Zingiber officinale",
+      "entityType": "botanical"
+    },
+    "ginkgo": {
+      "newSlug": "ginkgo-biloba",
+      "scientificName": "Ginkgo biloba",
+      "entityType": "botanical"
+    },
+    "ginseng": {
+      "newSlug": "panax-ginseng",
+      "scientificName": "Panax ginseng",
+      "entityType": "botanical"
+    },
+    "glycine": {
+      "newSlug": "l-glycine",
+      "scientificName": "l-glycine",
+      "entityType": "botanical"
+    },
+    "gouqizi": {
+      "newSlug": "lycium-barbarum",
+      "scientificName": "Lycium barbarum",
+      "entityType": "botanical"
+    },
+    "grape-seed": {
+      "newSlug": "vitis-vinifera",
+      "scientificName": "Vitis vinifera",
+      "entityType": "botanical"
+    },
+    "great-burdock": {
+      "newSlug": "arctium-lappa",
+      "scientificName": "Arctium lappa",
+      "entityType": "botanical"
+    },
+    "green-tea": {
+      "newSlug": "camellia-sinensis",
+      "scientificName": "Camellia Sinensis",
+      "entityType": "botanical"
+    },
+    "guijia-or-guiban": {
+      "newSlug": "carapace-and-plastrum-of-chinemys-reevesii",
+      "scientificName": "Carapace and plastrum of Chinemys reevesii",
+      "entityType": "botanical"
+    },
+    "hawthorn": {
+      "newSlug": "crataegus-pinnatifida",
+      "scientificName": "Crataegus pinnatifida",
+      "entityType": "botanical"
+    },
+    "hehuanhua": {
+      "newSlug": "albizia-julibrissin",
+      "scientificName": "Albizia julibrissin",
+      "entityType": "botanical"
+    },
+    "honey": {
+      "newSlug": "mel",
+      "scientificName": "Mel",
+      "entityType": "botanical"
+    },
+    "horny-goat-weed": {
+      "newSlug": "epimedium-brevicornum",
+      "scientificName": "Epimedium brevicornum",
+      "entityType": "botanical"
+    },
+    "indian-mulberry-root": {
+      "newSlug": "morinda-officinalis",
+      "scientificName": "Morinda officinalis",
+      "entityType": "botanical"
+    },
+    "indigowoad-root-banlangen": {
+      "newSlug": "isatis-tinctoria",
+      "scientificName": "Isatis tinctoria",
+      "entityType": "botanical"
+    },
+    "inositol": {
+      "newSlug": "myoinositol",
+      "scientificName": "Myoinositol",
+      "entityType": "botanical"
+    },
+    "jiaogulan": {
+      "newSlug": "gynostemma-pentaphyllum",
+      "scientificName": "Gynostemma pentaphyllum",
+      "entityType": "botanical"
+    },
+    "jinyingzi": {
+      "newSlug": "rosa-laevigata",
+      "scientificName": "Rosa laevigata",
+      "entityType": "botanical"
+    },
+    "jinyinhua": {
+      "newSlug": "lonicera-japonica",
+      "scientificName": "Lonicera japonica",
+      "entityType": "botanical"
+    },
+    "jobs-tears": {
+      "newSlug": "coix-lacryma-jobi",
+      "scientificName": "Coix lacryma-jobi",
+      "entityType": "botanical"
+    },
+    "jojoba": {
+      "newSlug": "simmondsia-chinensis",
+      "scientificName": "Simmondsia chinensis",
+      "entityType": "botanical"
+    },
+    "konjac-jelly": {
+      "newSlug": "amorphophallus-konjac",
+      "scientificName": "Amorphophallus konjac",
+      "entityType": "botanical"
+    },
+    "kushen": {
+      "newSlug": "sophora-flavescens",
+      "scientificName": "Sophora flavescens",
+      "entityType": "botanical"
+    },
+    "lavender": {
+      "newSlug": "lavandula-angustifolia",
+      "scientificName": "Lavandula angustifolia",
+      "entityType": "botanical"
+    },
+    "lianqiao": {
+      "newSlug": "forsythia-suspensa",
+      "scientificName": "Forsythia suspensa",
+      "entityType": "botanical"
+    },
+    "lingzhi-reishi": {
+      "newSlug": "ganoderma-lucidum",
+      "scientificName": "Ganoderma lucidum",
+      "entityType": "botanical"
+    },
+    "lingzhi-spores": {
+      "newSlug": "ganoderma-lucidum",
+      "scientificName": "Ganoderma lucidum",
+      "entityType": "botanical"
+    },
+    "liquorice-root": {
+      "newSlug": "glycyrrhiza-uralensis",
+      "scientificName": "Glycyrrhiza uralensis",
+      "entityType": "botanical"
+    },
+    "lotus-leaf": {
+      "newSlug": "nelumbo-nucifera",
+      "scientificName": "Nelumbo nucifera",
+      "entityType": "botanical"
+    },
+    "lysine": {
+      "newSlug": "l-lysine",
+      "scientificName": "L-Lysine",
+      "entityType": "botanical"
+    },
+    "maidong": {
+      "newSlug": "ophiopogon-japonicus",
+      "scientificName": "Ophiopogon japonicus",
+      "entityType": "botanical"
+    },
+    "methionine": {
+      "newSlug": "l-methionine",
+      "scientificName": "L-Methionine",
+      "entityType": "botanical"
+    },
+    "milk-thistle": {
+      "newSlug": "silybum-marianum",
+      "scientificName": "Silybum marianum",
+      "entityType": "botanical"
+    },
+    "milk-vetch": {
+      "newSlug": "astragalus-membranaceus",
+      "scientificName": "Astragalus membranaceus",
+      "entityType": "botanical"
+    },
+    "mint": {
+      "newSlug": "mentha-haplocalyx",
+      "scientificName": "Mentha haplocalyx",
+      "entityType": "botanical"
+    },
+    "mohanlian": {
+      "newSlug": "eclipta-prostrata",
+      "scientificName": "Eclipta prostrata",
+      "entityType": "botanical"
+    },
+    "muli": {
+      "newSlug": "crassostrea-gigas",
+      "scientificName": "Crassostrea gigas",
+      "entityType": "botanical"
+    },
+    "niuxi": {
+      "newSlug": "achyranthes-bidentata",
+      "scientificName": "Achyranthes bidentata",
+      "entityType": "botanical"
+    },
+    "nuzhenzi": {
+      "newSlug": "ligustrum-lucidum",
+      "scientificName": "Ligustrum lucidum",
+      "entityType": "botanical"
+    },
+    "omega-3": {
+      "newSlug": "docosahexaenoic-acid-dha-eicosapentaenoic-acid-epa-3-fatty-acids",
+      "scientificName": "Docosahexaenoic Acid (DHA), Eicosapentaenoic Acid (EPA) / ω-3 fatty acids",
+      "entityType": "botanical"
+    },
+    "omega-6": {
+      "newSlug": "gamma-linolenic-acid-gla-linoleic-acid-la-arachidonic-acid-aa-6-fatty-acids",
+      "scientificName": "Gamma-linolenic acid (GLA), Linoleic Acid (LA), Arachidonic Acid (AA) / ω-6 fatty acids",
+      "entityType": "botanical"
+    },
+    "omega-9": {
+      "newSlug": "oleic-acid-erucic-acid-9-fatty-acids",
+      "scientificName": "Oleic acid, Erucic acid / ω-9 fatty acids",
+      "entityType": "botanical"
+    },
+    "orobanches": {
+      "newSlug": "orobanche-coerulescens",
+      "scientificName": "Orobanche coerulescens",
+      "entityType": "botanical"
+    },
+    "paba": {
+      "newSlug": "para-amino-benzoic-acid",
+      "scientificName": "Para Amino Benzoic Acid",
+      "entityType": "botanical"
+    },
+    "patchouli": {
+      "newSlug": "pogostemon-cablin",
+      "scientificName": "Pogostemon cablin",
+      "entityType": "botanical"
+    },
+    "peilan": {
+      "newSlug": "eupatorium-fortunei",
+      "scientificName": "Eupatorium fortunei",
+      "entityType": "botanical"
+    },
+    "peppermint": {
+      "newSlug": "mentha-piperita",
+      "scientificName": "Mentha × piperita",
+      "entityType": "botanical"
+    },
+    "quanshen": {
+      "newSlug": "bistorta-officinalis",
+      "scientificName": "Bistorta officinalis",
+      "entityType": "botanical"
+    },
+    "rhodiola": {
+      "newSlug": "rhodiola-rosea",
+      "scientificName": "Rhodiola rosea",
+      "entityType": "botanical"
+    },
+    "rosemary": {
+      "newSlug": "salvia-rosmarinus",
+      "scientificName": "Salvia rosmarinus",
+      "entityType": "botanical"
+    },
+    "roucongrong": {
+      "newSlug": "cistanche-deserticola",
+      "scientificName": "Cistanche deserticola",
+      "entityType": "botanical"
+    },
+    "sage": {
+      "newSlug": "salvia-officinalis",
+      "scientificName": "Salvia officinalis",
+      "entityType": "botanical"
+    },
+    "saw-palmetto": {
+      "newSlug": "serenoa-repens",
+      "scientificName": "Serenoa repens",
+      "entityType": "botanical"
+    },
+    "shanzha": {
+      "newSlug": "crataegus-pinnatifida",
+      "scientificName": "Crataegus pinnatifida",
+      "entityType": "botanical"
+    },
+    "shanzhuyu": {
+      "newSlug": "cornus-officinalis",
+      "scientificName": "Cornus officinalis",
+      "entityType": "botanical"
+    },
+    "shegan": {
+      "newSlug": "belamcanda-chinensis",
+      "scientificName": "Belamcanda chinensis",
+      "entityType": "botanical"
+    },
+    "shengma": {
+      "newSlug": "actaea-heracleifolia",
+      "scientificName": "Actaea heracleifolia",
+      "entityType": "botanical"
+    },
+    "shihu": {
+      "newSlug": "dendrobium-nobile",
+      "scientificName": "Dendrobium nobile",
+      "entityType": "botanical"
+    },
+    "shouwuteng": {
+      "newSlug": "reynoutria-multiflora",
+      "scientificName": "Reynoutria multiflora",
+      "entityType": "botanical"
+    },
+    "soy": {
+      "newSlug": "glycine-max",
+      "scientificName": "Glycine max",
+      "entityType": "botanical"
+    },
+    "st-johns-wort": {
+      "newSlug": "hypericum-perforatum",
+      "scientificName": "Hypericum perforatum",
+      "entityType": "botanical"
+    },
+    "suanzaoren": {
+      "newSlug": "ziziphus-jujuba-var-spinosa",
+      "scientificName": "Ziziphus jujuba var spinosa",
+      "entityType": "botanical"
+    },
+    "suoyang": {
+      "newSlug": "cynomorium-coccineum",
+      "scientificName": "Cynomorium coccineum",
+      "entityType": "botanical"
+    },
+    "tangerine-peel": {
+      "newSlug": "citrus-reticulata",
+      "scientificName": "Citrus reticulata",
+      "entityType": "botanical"
+    },
+    "taoren-or-peach-kernel": {
+      "newSlug": "prunus-persica",
+      "scientificName": "Prunus persica",
+      "entityType": "botanical"
+    },
+    "tea-tree": {
+      "newSlug": "melaleuca-alternifolia",
+      "scientificName": "Melaleuca alternifolia",
+      "entityType": "botanical"
+    },
+    "thyme": {
+      "newSlug": "thymus-vulgaris",
+      "scientificName": "Thymus vulgaris",
+      "entityType": "botanical"
+    },
+    "tianma": {
+      "newSlug": "gastrodia-elata",
+      "scientificName": "Gastrodia elata",
+      "entityType": "botanical"
+    },
+    "tree-peony": {
+      "newSlug": "paeonia-suffruticosa",
+      "scientificName": "Paeonia Suffruticosa",
+      "entityType": "botanical"
+    },
+    "turmeric": {
+      "newSlug": "curcuma-longa",
+      "scientificName": "Curcuma longa",
+      "entityType": "botanical"
+    },
+    "tusizi": {
+      "newSlug": "cuscuta-chinensis",
+      "scientificName": "Cuscuta chinensis",
+      "entityType": "botanical"
+    },
+    "valerian": {
+      "newSlug": "valeriana-officinalis",
+      "scientificName": "Valeriana officinalis",
+      "entityType": "botanical"
+    },
+    "vitamin-a": {
+      "newSlug": "beta-carotene-retinol",
+      "scientificName": "Beta-carotene, Retinol",
+      "entityType": "botanical"
+    },
+    "vitamin-b1": {
+      "newSlug": "thiamin",
+      "scientificName": "Thiamin",
+      "entityType": "botanical"
+    },
+    "vitamin-b12": {
+      "newSlug": "cyanocobalamin",
+      "scientificName": "Cyanocobalamin",
+      "entityType": "botanical"
+    },
+    "vitamin-b2": {
+      "newSlug": "riboflavin-lactoflavin",
+      "scientificName": "Riboflavin Lactoflavin",
+      "entityType": "botanical"
+    },
+    "vitamin-b3-niacin": {
+      "newSlug": "nicotinic-acid",
+      "scientificName": "Nicotinic Acid",
+      "entityType": "botanical"
+    },
+    "vitamin-b5": {
+      "newSlug": "pantothenic-acid",
+      "scientificName": "Pantothenic Acid",
+      "entityType": "botanical"
+    },
+    "vitamin-b6": {
+      "newSlug": "pyridoxine-pyridoxal-pyridoxamine",
+      "scientificName": "Pyridoxine Pyridoxal Pyridoxamine",
+      "entityType": "botanical"
+    },
+    "vitamin-b7-biotin": {
+      "newSlug": "vitamin-h",
+      "scientificName": "Vitamin H",
+      "entityType": "botanical"
+    },
+    "vitamin-b9-folate-folic-acid": {
+      "newSlug": "folacin-folic-acid-pteroylglutamic-acid",
+      "scientificName": "Folacin Folic Acid Pteroylglutamic Acid",
+      "entityType": "botanical"
+    },
+    "vitamin-c": {
+      "newSlug": "ascorbic-acid-ascorbyl-palmitate",
+      "scientificName": "Ascorbic acid, ascorbyl palmitate",
+      "entityType": "botanical"
+    },
+    "vitamin-d-calciferol-cholecalciferol-ergocalciferol": {
+      "newSlug": "1-25-dihydroxycholecalciferol",
+      "scientificName": "1 25 dihydroxycholecalciferol",
+      "entityType": "botanical"
+    },
+    "vitamin-e": {
+      "newSlug": "d-alpha-tocopherol-d-beta-tocopherol-d-gamma-tocopherol-d-delta-tocopherol-tocopheryl-acetate-tocopheryl-succinate",
+      "scientificName": "d-Alpha-tocopherol d-Beta-tocopherol d-Gamma-tocopherol d-Delta-tocopherol; Tocopheryl acetate Tocopheryl succinate",
+      "entityType": "botanical"
+    },
+    "vitamin-p-bioflavonoids": {
+      "newSlug": "bioflavonoids",
+      "scientificName": "Bioflavonoids",
+      "entityType": "botanical"
+    },
+    "wheat": {
+      "newSlug": "triticum-aestivum",
+      "scientificName": "Triticum aestivum",
+      "entityType": "botanical"
+    },
+    "white-mulberry-leaf": {
+      "newSlug": "morus-alba",
+      "scientificName": "Morus alba",
+      "entityType": "botanical"
+    },
+    "white-peony-root": {
+      "newSlug": "paeonia-lactiflora-pall",
+      "scientificName": "Paeonia lactiflora pall",
+      "entityType": "botanical"
+    },
+    "white-willow-bark": {
+      "newSlug": "salix-alba",
+      "scientificName": "Salix Alba",
+      "entityType": "botanical"
+    },
+    "wild-yam": {
+      "newSlug": "dioscorea-villosa",
+      "scientificName": "Dioscorea Villosa",
+      "entityType": "botanical"
+    },
+    "woad-or-glastum": {
+      "newSlug": "isatis-tinctoria",
+      "scientificName": "Isatis tinctoria",
+      "entityType": "botanical"
+    },
+    "wuweizi": {
+      "newSlug": "schisandra-chinensis",
+      "scientificName": "Schisandra chinensis",
+      "entityType": "botanical"
+    },
+    "xinyihua": {
+      "newSlug": "magnolia-denudata",
+      "scientificName": "Magnolia denudata",
+      "entityType": "botanical"
+    },
+    "xiongcane": {
+      "newSlug": "bombyx-mori",
+      "scientificName": "Bombyx mori",
+      "entityType": "botanical"
+    },
+    "yuanzhi": {
+      "newSlug": "polygala-tenuifolia",
+      "scientificName": "Polygala tenuifolia",
+      "entityType": "botanical"
+    },
+    "yunzhi": {
+      "newSlug": "trametes-versicolor",
+      "scientificName": "Trametes versicolor",
+      "entityType": "botanical"
+    },
+    "zexie": {
+      "newSlug": "alisma-plantago-aquatica",
+      "scientificName": "Alisma plantago-aquatica",
+      "entityType": "botanical"
+    },
+    "zhiko": {
+      "newSlug": "citrus-aurantium",
+      "scientificName": "Citrus aurantium",
+      "entityType": "botanical"
+    },
+    "zhusun": {
+      "newSlug": "dictyophora-indusiata",
+      "scientificName": "Dictyophora indusiata",
+      "entityType": "botanical"
+    },
+    "zisuye": {
+      "newSlug": "perilla-frutescens",
+      "scientificName": "Perilla frutescens",
+      "entityType": "botanical"
+    }
+  }
+}

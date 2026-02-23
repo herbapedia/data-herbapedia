@@ -1,0 +1,210 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herbapedia.org/schema/json-schema/profiles/mongolian-profile.schema.json",
+  "title": "Mongolian Traditional Medicine Profile",
+  "description": "Mongolian Traditional Medicine interpretation of an HerbalPreparation. Combines Tibetan Medicine (Sowa Rigpa) with TCM and Ayurveda elements, adapted to nomadic lifestyle. Uses Three Roots (Heyi, Xila, Badagan), Five Elements, and unique diagnostic/treatment methods.",
+  "type": "object",
+  "allOf": [
+    { "$ref": "./profile-base.schema.json" }
+  ],
+  "required": ["@id", "@type", "name", "profiles"],
+  "properties": {
+    "@id": {
+      "description": "Unique identifier: mongolian/profile/{slug}.",
+      "type": "string",
+      "pattern": "^mongolian/profile/[a-z0-9-]+$",
+      "examples": ["mongolian/profile/gazar-gowa", "mongolian/profile/manjistha"]
+    },
+    "@type": {
+      "type": "array",
+      "items": { "type": "string" },
+      "contains": { "const": "mongolian:HerbProfile" },
+      "examples": [["mongolian:HerbProfile", "schema:DietarySupplement"]]
+    },
+    "profiles": {
+      "description": "The HerbalPreparation that this profile interprets.",
+      "$ref": "../core/iri-reference.schema.json",
+      "examples": [{ "@id": "preparation/fresh-ginger-rhizome" }]
+    },
+    "mongolianName": {
+      "description": "Mongolian name of the herb ( Cyrillic or Traditional Script).",
+      "type": "string",
+      "examples": ["гацар гова", "манжист"]
+    },
+    "tibetanName": {
+      "description": "Tibetan name (Sowa Rigpa tradition).",
+      "type": "string",
+      "examples": ["ས་འཛིན་", "མན་ཇི་ཥ་"]
+    },
+    "tibetanWylie": {
+      "description": "Wylie transliteration of Tibetan name.",
+      "type": "string",
+      "examples": ["sa 'dzin", "man dzi sha"]
+    },
+    "hasElement": {
+      "description": "Associated Five Element(s) in Mongolian medicine.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" },
+      "examples": [[{ "@id": "mongolian/element/fire" }, { "@id": "mongolian/element/earth" }]],
+      "_documentation": {
+        "wood": "Mokh (мод) - Growth, expansion, liver",
+        "fire": "Gal (гал) - Transformation, heart",
+        "earth": "Shoroo (шороо) - Stability, spleen",
+        "metal": "Tumur (төмөр) - Structure, lung",
+        "water": "Us (ус) - Flow, kidney"
+      }
+    },
+    "affectsRoots": {
+      "description": "How this herb affects the Three Roots ( три үндэс).",
+      "type": "object",
+      "properties": {
+        "heyi": {
+          "description": "Effect on Heyi ( гий/རླུང་) - Wind/Air root (similar to Vata).",
+          "type": "object",
+          "properties": {
+            "effect": {
+              "type": "string",
+              "enum": ["increases", "decreases", "balances"]
+            },
+            "notes": { "type": "string" }
+          }
+        },
+        "xila": {
+          "description": "Effect on Xila ( шил/མཁྲིས་པ་) - Bile/Fire root (similar to Pitta).",
+          "type": "object",
+          "properties": {
+            "effect": {
+              "type": "string",
+              "enum": ["increases", "decreases", "balances"]
+            },
+            "notes": { "type": "string" }
+          }
+        },
+        "badagan": {
+          "description": "Effect on Badagan ( бадган/བད་ཀན་) - Phlegm/Water root (similar to Kapha).",
+          "type": "object",
+          "properties": {
+            "effect": {
+              "type": "string",
+              "enum": ["increases", "decreases", "balances"]
+            },
+            "notes": { "type": "string" }
+          }
+        }
+      },
+      "_documentation": {
+        "heyi": "Heyi ( гий) - Wind energy, governs movement, nervous system. Similar to Vata",
+        "xila": "Xila ( шил) - Bile/Fire energy, governs transformation, digestion. Similar to Pitta",
+        "badagan": "Badagan ( бадган) - Phlegm/Water energy, governs structure, immunity. Similar to Kapha"
+      }
+    },
+    "hasTaste": {
+      "description": "Six tastes in Mongolian medicine.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" },
+      "examples": [[{ "@id": "mongolian/taste/sweet" }, { "@id": "mongolian/taste/hot" }]],
+      "_documentation": {
+        "sweet": "Amttai (амттай) - Nourishes, increases Badagan",
+        "sour": "Honghorgoi (хонхоргор) - Astringent, increases blood/bile",
+        "salty": "Davshtai (давстай) - Softens, loosens",
+        "hot": "Haluun (халуун) - Heats, digests",
+        "bitter": "Gashuun (гашуун) - Cools, dries",
+        "astringent": "Bairgui (байрингуй) - Binds, dries"
+      }
+    },
+    "hasPotency": {
+      "description": "Seventeen potencies ( arvan doloon nans) - post-digestive effects.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" },
+      "examples": [[{ "@id": "mongolian/potency/cooling" }, { "@id": "mongolian/potency/light" }]]
+    },
+    "therapeuticClass": {
+      "description": "Therapeutic classification in Mongolian medicine.",
+      "type": "string",
+      "examples": ["fever herbs", "bile herbs", "phlegm herbs", "wound herbs", "poison herbs"]
+    },
+    "mongolianFunctions": {
+      "description": "Functions in Mongolian language.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "indications": {
+      "description": "Indications in Mongolian medicine terms.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "contraIndications": {
+      "description": "Contraindications.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "dosage": {
+      "description": "Dosage information.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "preparationMethod": {
+      "description": "Traditional preparation methods.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "decoction",
+          "powder",
+          "pill",
+          "paste",
+          "fermented",
+          "butter",
+          "milk-boiled",
+          "roasted",
+          "ash"
+        ]
+      }
+    },
+    "classicalReferences": {
+      "description": "References to classical texts.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string",
+            "examples": [
+              "Four Tantras (Rgyud bzhi)",
+              "Blue Beryl (Vaidurya sngon po)",
+              "Mongolian Medical Canon"
+            ]
+          },
+          "reference": { "type": "string" },
+          "quote": { "type": "string" }
+        }
+      }
+    },
+    "modernResearch": {
+      "description": "Modern scientific research.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "nomadicUsage": {
+      "description": "Traditional nomadic applications.",
+      "$ref": "../core/language-map.schema.json"
+    }
+  },
+  "additionalProperties": true,
+  "_documentation": {
+    "iriPattern": "mongolian/profile/{slug}",
+    "directory": "systems/mongolian/profiles/{slug}/profile.jsonld",
+    "keyConcepts": {
+      "three_roots": "Heyi ( гий/རླུང་), Xila ( шил/མཁྲིས་པ་), Badagan ( бадган/བད་ཀན་)",
+      "five_elements": "Wood ( м), Fire ( г), Earth ( ш), Metal ( т), Water ( у)",
+      "six_tastes": "Sweet, Sour, Salty, Hot, Bitter, Astringent",
+      "seventeen_potencies": "Heavy, Oily, Cool, Dull, Light, Rough, Hot, Sharp + 9 more"
+    },
+    "classicalTexts": {
+      "four_tantras": "Rgyud bzhi ( Four Tantras) - 12th century, foundation of Tibetan/Mongolian medicine",
+      "blue_beryl": "Vaidurya sngon po - Desi Sangye Gyatso, 17th century",
+      "mongolian_canon": "Traditional Mongolian medical compendium"
+    },
+    "relationshipToOtherSystems": {
+      "tcm": "Shares Five Elements, some meridian concepts",
+      "ayurveda": "Three Roots correspond to Three Doshas (Heyi≈Vata, Xila≈Pitta, Badagan≈Kapha)",
+      "tibetan": "Direct lineage from Sowa Rigpa ( Tibetan medicine)"
+    }
+  }
+}

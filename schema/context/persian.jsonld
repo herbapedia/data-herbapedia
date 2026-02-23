@@ -1,0 +1,481 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "https://www.herbapedia.org/",
+    "@vocab": "https://www.herbapedia.org/vocab/persian/",
+
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+
+    "schema": "https://schema.org/",
+    "dc": "http://purl.org/dc/terms/",
+    "wd": "http://www.wikidata.org/entity/",
+
+    "herbapedia": "https://www.herbapedia.org/vocab/core/",
+    "tcm": "https://www.herbapedia.org/vocab/tcm/",
+    "ayurveda": "https://www.herbapedia.org/vocab/ayurveda/",
+    "western": "https://www.herbapedia.org/vocab/western/",
+    "persian": "https://www.herbapedia.org/vocab/persian/",
+    "mongolian": "https://www.herbapedia.org/vocab/mongolian/",
+
+    "id": "@id",
+    "type": "@type",
+    "graph": "@graph",
+
+    // =========================================================================
+    // Persian Medicine Core Vocabulary
+    // =========================================================================
+
+    "PersianHerb": {
+      "@id": "persian:Herb",
+      "@type": "@id"
+    },
+    "PersianDrug": {
+      "@id": "persian:Drug",
+      "@type": "@id"
+    },
+    "PersianProfile": {
+      "@id": "persian:Profile",
+      "@type": "@id"
+    },
+
+    // =========================================================================
+    // Persian Medicine Properties
+    // =========================================================================
+
+    /**
+     * Mizaj (Temperament)
+     * The fundamental quality of a substance in Persian Medicine
+     * Defined as the interaction of four qualities: Hot/Cold × Wet/Dry
+     *
+     * Examples:
+     * - Hot-Wet (e.g., Aniseed)
+     * - Hot-Dry (e.g., Ginger)
+     * - Cold-Wet (e.g., Lettuce)
+     * - Cold-Dry (e.g., Sandalwood)
+     */
+    "hasTemperament": {
+      "@id": "persian:hasTemperament",
+      "@type": "@id"
+    },
+
+    /**
+     * Element (Arkan)
+     * The four elements that constitute all matter
+     */
+    "hasElement": {
+      "@id": "persian:hasElement",
+      "@type": "@id"
+    },
+
+    /**
+     * Degree (Darjah)
+     * The intensity of a quality, ranked from 1st to 4th degree
+     * 1st: Mild effect, 4th: Extreme effect
+     */
+    "hasDegree": {
+      "@id": "persian:hasDegree",
+      "@type": "@id"
+    },
+
+    /**
+     * Persian Quality (Kayfiyyah)
+     * Individual qualities: Hot, Cold, Wet, Dry
+     */
+    "hasQuality": {
+      "@id": "persian:hasQuality",
+      "@type": "@id",
+      "@container": "@set"
+    },
+
+    /**
+     * Mizaj Balance Quality
+     * The quality (Hot/Cold/Wet/Dry) that dominates in the temperament
+     */
+    "balanceQuality": {
+      "@id": "persian:balanceQuality",
+      "@type": "xsd:string"
+    },
+
+    /**
+     * Persian Dosage Form (Shorbat, Syrup, etc.)
+     */
+    "persianDosageForm": {
+      "@id": "persian:dosageForm",
+      "@type": "xsd:string"
+    },
+
+    /**
+     * Tadbīr (Correction/Modification)
+     * Methods to modify the temperament of a substance
+     */
+    "hasTadbir": {
+      "@id": "persian:hasTadbir",
+      "@type": "@id",
+      "@container": "@set"
+    },
+
+    /**
+     * Mohallil (Anti-inflammatory)
+     */
+    "isMohallil": {
+      "@id": "persian:isMohallil",
+      "@type": "xsd:boolean"
+    },
+
+    /**
+     * Mufattih (Deobstruent)
+     * Opens obstructions
+     */
+    "isMufattih": {
+      "@id": "persian:isMufattih",
+      "@type": "xsd:boolean"
+    },
+
+    /**
+     * Mudirr (Emmenagogue)
+     * Promotes menstrual flow
+     */
+    "isMudirr": {
+      "@id": "persian:isMudirr",
+      "@type": "xsd:boolean"
+    },
+
+    /**
+     * Muqawwi (Tonic)
+     * Strengthens the body
+     */
+    "isMuqawwi": {
+      "@id": "persian:isMuqawwi",
+      "@type": "xsd:boolean"
+    },
+
+    /**
+     * Mukhaddir (Narcotic/Sedative)
+     */
+    "isMukhaddir": {
+      "@id": "persian:isMukhaddir",
+      "@type": "xsd:boolean"
+    },
+
+    /**
+     * Mugharri (Carminative)
+     * Expels gas
+     */
+    "isMugharri": {
+      "@id": "persian:isMugharri",
+      "@type": "xsd:boolean"
+    },
+
+    /**
+     * Mulayyin (Laxative)
+     */
+    "isMulayyin": {
+      "@id": "persian:isMulayyin",
+      "@type": "xsd:boolean"
+    },
+
+    /**
+     * Musakkin (Analgesic/Antipyretic)
+     */
+    "isMusakkin": {
+      "@id": "persian:isMusakkin",
+      "@type": "xsd:boolean"
+    },
+
+    /**
+     * Mu`allid (Emetic)
+     */
+    "isMuallid": {
+      "@id": "persian:isMuallid",
+      "@type": "xsd:boolean"
+    },
+
+    /**
+     * Munzij (Concoctive)
+     * Turns morbid humors into mature form
+     */
+    "isMunzij": {
+      "@id": "persian:isMunzij",
+      "@type": "xsd:boolean"
+    },
+
+    /**
+     * Persian Name
+     */
+    "persianName": {
+      "@id": "persian:persianName",
+      "@container": "@language"
+    },
+
+    /**
+     * Arabic Name (if different from Persian)
+     */
+    "arabicName": {
+      "@id": "persian:arabicName",
+      "@container": "@language"
+    },
+
+    /**
+     * Unani Name (used in Greco-Arabic medicine)
+     */
+    "unaniName": {
+      "@id": "persian:unaniName",
+      "@container": "@language"
+    },
+
+    /**
+     * Source Chapter in Canon of Medicine
+     * The chapter in Avicenna's Canon where this substance is discussed
+     */
+    "canonChapter": {
+      "@id": "persian:canonChapter",
+      "@type": "xsd:string"
+    },
+
+    /**
+     * Canon of Medicine Quote
+     */
+    "canonQuote": {
+      "@id": "persian:canonQuote",
+      "@container": "@language"
+    },
+
+    /**
+     * Makhzan al-Adwiya Reference
+     * Reference to the Makhzan al-Adwiya (Storehouse of Medicaments)
+     */
+    "makhzanReference": {
+      "@id": "persian:makhzanReference",
+      "@type": "xsd:string"
+    },
+
+    /**
+     * Al-Tasrif Reference
+     * Reference to Al-Tasrif by Al-Zahrawi
+     */
+    "tasrifReference": {
+      "@id": "persian:tasrifReference",
+      "@type": "xsd:string"
+    },
+
+    /**
+     * Action on Akhlat (Humors)
+     * Affects blood, phlegm, yellow bile, black bile
+     */
+    "actionOnAkhlat": {
+      "@id": "persian:actionOnAkhlat",
+      "@container": "@set"
+    },
+
+    /**
+     * Action on A`da (Organs)
+     */
+    "actionOnAda": {
+      "@id": "persian:actionOnAda",
+      "@type": "@id",
+      "@container": "@set"
+    },
+
+    /**
+     * Recommended for Quwa (Faculties)
+     * Mental faculties: common sense, imagination, cognition, memory
+     */
+    "recommendedForQuwa": {
+      "@id": "persian:recommendedForQuwa",
+      "@container": "@set"
+    },
+
+    /**
+     * Beneficial for Umoor Tabi`iyyah
+     * Natural functions: nutrition, growth, reproduction
+     */
+    "beneficialForUmoorTabiiyya": {
+      "@id": "persian:beneficialForUmoorTabiiyya",
+      "@container": "@set"
+    },
+
+    /**
+     * Persian Traditional Usage
+     */
+    "persianTraditionalUsage": {
+      "@id": "persian:traditionalUsage",
+      "@container": "@language"
+    },
+
+    /**
+     * Persian Modern Research
+     */
+    "persianModernResearch": {
+      "@id": "persian:modernResearch",
+      "@container": "@language"
+    },
+
+    /**
+     * Persian Clinical Notes
+     */
+    "persianClinicalNotes": {
+      "@id": "persian:clinicalNotes",
+      "@container": "@language"
+    },
+
+    /**
+     * Persian Contraindications
+     */
+    "persianContraindications": {
+      "@id": "persian:contraindications",
+      "@container": "@language"
+    },
+
+    /**
+     * Persian Dosage
+     */
+    "persianDosage": {
+      "@id": "persian:dosage",
+      "@container": "@language"
+    },
+
+    /**
+     * Substitution (Abdal)
+     * Substances that can substitute for each other
+     */
+    "substitutes": {
+      "@id": "persian:substitutes",
+      "@type": "@id",
+      "@container": "@set"
+    },
+
+    // =========================================================================
+    // Reference Vocabulary Terms
+    // =========================================================================
+
+    /**
+     * Temperament Value
+     * Controlled vocabulary for Mizaj values
+     */
+    "temperamentValue": {
+      "@id": "persian:temperamentValue",
+      "@type": "xsd:string"
+    },
+
+    /**
+     * Element Value
+     */
+    "elementValue": {
+      "@id": "persian:elementValue",
+      "@type": "xsd:string"
+    },
+
+    /**
+     * Degree Value (1-4)
+     */
+    "degreeValue": {
+      "@id": "persian:degreeValue",
+      "@type": "xsd:integer"
+    },
+
+    /**
+     * Quality Value (Hot, Cold, Wet, Dry)
+     */
+    "qualityValue": {
+      "@id": "persian:qualityValue",
+      "@type": "xsd:string"
+    },
+
+    /**
+     * Quality Strength (1-4)
+     */
+    "qualityStrength": {
+      "@id": "persian:qualityStrength",
+      "@type": "xsd:integer"
+    },
+
+    /**
+     * Tadbir (Correction Method)
+     */
+    "tadbirValue": {
+      "@id": "persian:tadbirValue",
+      "@type": "xsd:string"
+    },
+
+    // =========================================================================
+    // Common Properties from Core
+    // =========================================================================
+
+    "name": {
+      "@id": "schema:name",
+      "@container": "@language"
+    },
+    "description": {
+      "@id": "schema:description",
+      "@container": "@language"
+    },
+    "alternateName": {
+      "@id": "schema:alternateName",
+      "@container": "@set"
+    },
+    "image": {
+      "@id": "schema:image",
+      "@type": "@id"
+    },
+    "sameAs": {
+      "@id": "schema:sameAs",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "source": {
+      "@id": "dc:source",
+      "@type": "xsd:string"
+    },
+    "sourceUrl": {
+      "@id": "dc:source",
+      "@type": "xsd:anyURI"
+    },
+    "creator": {
+      "@id": "dc:creator",
+      "@type": "xsd:string"
+    },
+    "created": {
+      "@id": "dc:created",
+      "@type": "xsd:dateTime"
+    },
+    "modified": {
+      "@id": "dc:modified",
+      "@type": "xsd:dateTime"
+    },
+    "license": {
+      "@id": "dc:license",
+      "@type": "@id"
+    },
+
+    "prefLabel": {
+      "@id": "skos:prefLabel",
+      "@container": "@language"
+    },
+    "altLabel": {
+      "@id": "skos:altLabel",
+      "@container": "@set"
+    },
+    "definition": {
+      "@id": "skos:definition",
+      "@container": "@language"
+    },
+    "broader": {
+      "@id": "skos:broader",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "narrower": {
+      "@id": "skos:narrower",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "related": {
+      "@id": "skos:related",
+      "@type": "@id",
+      "@container": "@set"
+    }
+  }
+}

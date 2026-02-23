@@ -1,0 +1,54 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/chemical/catechins",
+  "@type": [
+    "botany:ChemicalCompound",
+    "schema:BioChemEntity"
+  ],
+  "name": {
+    "en": "Catechins",
+    "zh-Hant": "兒茶素",
+    "zh-Hans": "儿茶素"
+  },
+  "commonName": [
+    "Catechins",
+    "Catechin polyphenols",
+    "Flavan-3-ols"
+  ],
+  "chebiID": "CHEBI:23052",
+  "compoundClass": "Flavonoids; Flavan-3-ols",
+  "description": {
+    "en": "A type of flavonoid abundant in tea (especially green tea), cacao, and various fruits. The main catechins in green tea are epicatechin (EC), epicatechin gallate (ECG), epigallocatechin (EGC), and epigallocatechin gallate (EGCG), the most biologically active."
+  },
+  "pharmacology": [
+    "Powerful antioxidant activity",
+    "Thermogenesis and fat oxidation",
+    "Cardiovascular protection",
+    "Neuroprotective effects",
+    "Anticancer properties",
+    "Antimicrobial activity"
+  ],
+  "bioavailability": {
+    "en": "Moderate bioavailability; peak plasma levels 1-2 hours post-ingestion; EGCG has lower bioavailability than catechins; metabolites detected in plasma."
+  },
+  "safetyData": {
+    "toxicity": "Generally safe; high doses may cause liver enzyme elevation in susceptible individuals",
+    "warnings": [
+      "May interact with blood thinners",
+      "High dose supplements require medical supervision"
+    ]
+  },
+  "provenance": {
+    "created": "2024-01-15",
+    "modified": "2026-02-20T17:59:34.446Z",
+    "source": "Flavonoid Research Literature",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "foundIn": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/green-tea"
+    }
+  ]
+}

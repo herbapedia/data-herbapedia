@@ -1,0 +1,35 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/preparation/fresh-turmeric",
+  "@type": [
+    "herbal:HerbalPreparation",
+    "schema:DietarySupplement"
+  ],
+  "name": {
+    "en": "Fresh Turmeric Rhizome",
+    "zh-Hant": "鮮薑黃",
+    "zh-Hans": "鲜姜黄"
+  },
+  "derivedFrom": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/part/turmeric-rhizome"
+    }
+  ],
+  "preparationMethod": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/method/fresh"
+  },
+  "form": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/form/whole"
+  },
+  "description": {
+    "en": "Fresh turmeric rhizome used in cooking and traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-21",
+    "source": "Herbapedia Team",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "image": "media/images/fresh-turmeric/fresh-turmeric.jpg"
+}

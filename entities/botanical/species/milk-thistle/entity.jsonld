@@ -1,0 +1,63 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/milk-thistle",
+  "@type": [
+    "botany:PlantSpecies",
+    "herbapedia:BotanicalSource",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Milk Thistle",
+    "zh-Hant": "乳薊果",
+    "zh-Hans": "乳蓟果"
+  },
+  "scientificName": "Silybum marianum",
+  "family": null,
+  "genus": null,
+  "description": {
+    "en": "Milk Thistle preparations consist of the dried fruits (also known as achenes) of Silybum marianum (L.) Gaertn.\n",
+    "zh-Hant": "乳薊果（學名：Silybum marianum）是一種具有藥用價值的天然產物。現代藥理學研究證實其含有多種生物活性成分，在傳統醫學和現代保健領域均有重要應用價值。",
+    "zh-Hans": "乳薊果（学名：Silybum marianum）是一种具有药用價值的天然產物。現代药理学研究证实其含有多种生物活性成分，在传统医学和現代保健領域均有重要应用價值。"
+  },
+  "image": "media/images/silybum-marianum/main.jpg",
+  "gbifID": 3145214,
+  "containsChemical": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/silymarin"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/flavonoids"
+    }
+  ],
+  "provenance": {
+    "created": "2026-02-18T09:16:32.060Z",
+    "modified": "2026-02-21T01:46:20.756Z",
+    "migratedFrom": "entities/plants/milk-thistle/entity.jsonld",
+    "source": "vitaherbapedia.com",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "classificationNote": "Reclassified as BotanicalSource"
+  },
+  "hasParts": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/part/milk-thistle-root"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/part/milk-thistle-seed"
+    }
+  ],
+  "hasChemicalProfile": {
+    "@id": "https://www.herbapedia.org/entity/botanical/chemical-profile/milk-thistle-seed"
+  },
+  "hasDNABarcode": {
+    "@id": "https://www.herbapedia.org/entity/botanical/barcode/milk-thistle"
+  },
+  "wikidataID": "Q193798",
+  "sourceType": "botanical",
+  "sourceSubType": "plant",
+  "hasWesternProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/western/profile/milk-thistle"
+    }
+  ],
+  "ncbiTaxonID": "50469"
+}

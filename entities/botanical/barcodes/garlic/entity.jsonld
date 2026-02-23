@@ -1,0 +1,50 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/botany.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/barcode/garlic",
+  "@type": [
+    "botany:DNABarcode",
+    "schema:Dataset"
+  ],
+  "name": {
+    "en": "Garlic DNA Barcode",
+    "zh-Hant": "大蒜DNA條碼",
+    "zh-Hans": "大蒜DNA条码"
+  },
+  "barcodes": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/garlic"
+  },
+  "sequence": [
+    {
+      "region": "rbcL",
+      "sequence": "ATGTCACCACAAACAGAAACTAAAGCAAGTGTTGGATTATAAAGGTCAGTTCGATCTTTGAATAATTCATTATTTGATTTATTCAAATCCACGTCGACTTGTAGACAGATCTTTTATAAAATTGTAAAAAATCAATCTTAAGTTTTTTATTTGATCCTTTTTATTAATTCAGAATCTTTTGTATATCTATTCATGAGTTAAACTTTTTATTTGTATCAAAAATCACTATATATATATATATATATATAATACATATATATATATATATTTATTCCTTTTATTTATTTCTTATAATTCATTTTTTTTTTTTTTTAATATAGATATATATATATATTTTATTTTTTTATATTTTTTTTTAATATATATATATATATATATATATATATATATATATA",
+      "length": 555,
+      "genbankAccession": "NC_034770"
+    },
+    {
+      "region": "matK",
+      "sequence": "TCTAGAGCAAGTCTTTGCCTTAAACTTGGTTTTTCTTATCAATTAAGAATCCTTTTATTTTCATTTTATTTGATGATTTTTCAAATATTATAAATCTTCAATTTTATATTTAATTTATCTTTTAATATTATTATCAATTTTTTTATTTATTTTTATTTTTATAAATAATTTGATACTTCTTTTATTAATACAACTTCAATATATATTTATTATATTTTATTTTATTTTTTTTCTATTATTAATAATTTATATAAATATTATTTCTTTAATATTTTAATTTTTTTTTTGAATTATTTTTTAATTTTTTTATATTTTAATATAATATTTAATATATTTATTTATTTTTTTTTAAATATTTTATATTTATTTTTTATATTTTTTTTATTTAATAATAATTTTATTTTTTTTTTTTTTAATATTAATATAATAATAA",
+      "length": 658,
+      "genbankAccession": "KJ730271"
+    },
+    {
+      "region": "ITS2",
+      "sequence": "CGATCGATACGTTTGAATGCATTGATATTCGTCGTGATGATTCACGATGCTTTGCTGCGAGCTTCTCTCCGCTCATCGATGAAGAACGTAGCGAAATGCGATACTTGGTGTGAATTGCAGAATCCCGTGAACCATCGAGTCTTTGAACGCAAGTTGCGCCCGAAGCCTTTAGTTGAGGGTACTGATGTGAATCGTCTTTTATCAACACTATATAC",
+      "length": 227,
+      "genbankAccession": "AY722266"
+    }
+  ],
+  "adulterantDetection": {
+    "canDetect": [
+      "Allium ampeloprasum",
+      "Allium ursinum"
+    ],
+    "description": {
+      "en": "DNA barcoding can distinguish Allium sativum from other Allium species"
+    }
+  },
+  "provenance": {
+    "created": "2026-02-21T00:00:00.000Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

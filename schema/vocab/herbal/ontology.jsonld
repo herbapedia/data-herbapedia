@@ -1,0 +1,202 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "https://www.herbapedia.org/vocab/herbal/",
+
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "schema": "https://schema.org/",
+
+    "herbapedia": "https://www.herbapedia.org/vocab/core/",
+    "herbal": "https://www.herbapedia.org/vocab/herbal/"
+  },
+
+  "@graph": [
+    {
+      "@id": "https://www.herbapedia.org/vocab/herbal/",
+      "@type": "owl:Ontology",
+      "rdfs:label": {
+        "en": "Herbapedia Herbal Preparation Vocabulary"
+      },
+      "rdfs:comment": "Herbal preparation vocabulary for the central pivot entity. A preparation is derived from botanical sources and can have multiple medicine system profiles."
+    },
+
+    {
+      "@id": "herbal:HerbalPreparation",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": ["herbapedia:Entity", "schema:DietarySupplement"],
+      "rdfs:label": {
+        "en": "Herbal Preparation",
+        "zh-Hant": "草藥製劑"
+      },
+      "rdfs:comment": "The CENTRAL entity in Herbapedia. An herbal preparation is a substance prepared from botanical sources for therapeutic or culinary use. A single preparation can have MULTIPLE system profiles from DIFFERENT medicine systems."
+    },
+
+    {
+      "@id": "herbal:PreparationMethod",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "skos:Concept",
+      "rdfs:label": {
+        "en": "Preparation Method",
+        "zh-Hant": "製備方法"
+      },
+      "rdfs:comment": "Methods of preparing herbs: dried, fresh, steamed, stir-fried, carbonized, fermented, extracted, etc."
+    },
+
+    {
+      "@id": "herbal:PreparationForm",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "skos:Concept",
+      "rdfs:label": {
+        "en": "Preparation Form",
+        "zh-Hant": "製劑形式"
+      },
+      "rdfs:comment": "Physical forms of preparations: whole, sliced, powder, tincture, tea, capsule, tablet, oil, extract, etc."
+    },
+
+    {
+      "@id": "herbal:CommonUsage",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "skos:Concept",
+      "rdfs:label": {
+        "en": "Common Usage",
+        "zh-Hant": "常見用途"
+      },
+      "rdfs:comment": "Common usage categories: culinary, cosmetic, therapeutic, supplement, etc."
+    },
+
+    {
+      "@id": "herbal:derivedFrom",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "herbal:HerbalPreparation",
+      "rdfs:range": "herbapedia:SourceMaterial",
+      "rdfs:label": {
+        "en": "derived from",
+        "zh-Hant": "衍生自"
+      },
+      "rdfs:comment": "Links a preparation to its source material (botanical, zoological, mineral, or chemical)."
+    },
+
+    {
+      "@id": "herbal:hasTCMProfile",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "herbal:HerbalPreparation",
+      "rdfs:range": "herbapedia:MedicineSystemProfile",
+      "rdfs:label": {
+        "en": "has TCM profile",
+        "zh-Hant": "具有中醫概況"
+      }
+    },
+
+    {
+      "@id": "herbal:hasWesternProfile",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "herbal:HerbalPreparation",
+      "rdfs:range": "herbapedia:MedicineSystemProfile",
+      "rdfs:label": {
+        "en": "has Western profile",
+        "zh-Hant": "具有西方草藥概況"
+      }
+    },
+
+    {
+      "@id": "herbal:hasAyurvedaProfile",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "herbal:HerbalPreparation",
+      "rdfs:range": "herbapedia:MedicineSystemProfile",
+      "rdfs:label": {
+        "en": "has Ayurveda profile",
+        "zh-Hant": "具有阿育吠陀概況"
+      }
+    },
+
+    {
+      "@id": "herbal:hasPersianProfile",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "herbal:HerbalPreparation",
+      "rdfs:range": "herbapedia:MedicineSystemProfile",
+      "rdfs:label": {
+        "en": "has Persian profile",
+        "zh-Hant": "具有波斯概況"
+      }
+    },
+
+    {
+      "@id": "herbal:hasMongolianProfile",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "herbal:HerbalPreparation",
+      "rdfs:range": "herbapedia:MedicineSystemProfile",
+      "rdfs:label": {
+        "en": "has Mongolian profile",
+        "zh-Hant": "具有蒙醫概況"
+      }
+    },
+
+    {
+      "@id": "herbal:preparationMethod",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "herbal:HerbalPreparation",
+      "rdfs:range": "herbal:PreparationMethod",
+      "rdfs:label": {
+        "en": "preparation method",
+        "zh-Hant": "製備方法"
+      }
+    },
+
+    {
+      "@id": "herbal:form",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "herbal:HerbalPreparation",
+      "rdfs:range": "herbal:PreparationForm",
+      "rdfs:label": {
+        "en": "form",
+        "zh-Hant": "形式"
+      }
+    },
+
+    {
+      "@id": "herbal:commonUsage",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "herbal:HerbalPreparation",
+      "rdfs:range": "herbal:CommonUsage",
+      "rdfs:label": {
+        "en": "common usage",
+        "zh-Hant": "常見用途"
+      }
+    },
+
+    {
+      "@id": "herbal:hasIngredients",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "herbal:HerbalPreparation",
+      "rdfs:range": "herbapedia:Entity",
+      "rdfs:label": {
+        "en": "has ingredients",
+        "zh-Hant": "具有成分"
+      }
+    },
+
+    {
+      "@id": "herbal:safetyInfo",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "herbal:HerbalPreparation",
+      "rdfs:range": "rdfs:Literal",
+      "rdfs:label": {
+        "en": "safety information",
+        "zh-Hant": "安全信息"
+      }
+    },
+
+    {
+      "@id": "herbal:preparationDetails",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "herbal:HerbalPreparation",
+      "rdfs:range": "rdfs:Literal",
+      "rdfs:label": {
+        "en": "preparation details",
+        "zh-Hant": "製備詳情"
+      }
+    }
+  ]
+}

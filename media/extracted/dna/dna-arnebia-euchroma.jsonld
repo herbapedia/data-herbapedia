@@ -1,0 +1,87 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/dna/arnebia-euchroma",
+  "@type": ["herbapedia:DNASequenceData", "schema:Dataset"],
+  "dataType": "DNASequence",
+  "sourceFile": "DNA____Arnebia_euchroma_V1.pdf",
+  "sourceDocument": "GCMTI FS:2023-2",
+  "title": {
+    "en": "Fact sheet of reference DNA sequences of Arnebia euchroma",
+    "zh-hk": "新疆紫草(Arnebia euchroma)之參考 DNA 序列資料表"
+  },
+  "scientificName": {
+    "full": "Arnebia euchroma",
+    "genus": "Arnebia",
+    "species": "euchroma",
+    "author": null
+  },
+  "loci": [
+    {
+      "name": "ITS2",
+      "fullName": "Internal transcribed spacer 2 of nuclear ribosomal RNA",
+      "description": {
+        "en": "Internal transcribed spacer 2 of nuclear ribosomal RNA (ITS2) sequence of plant voucher specimen of Arnebia euchroma and Chinese Materia Medica (CMM) Radix Arnebiae",
+        "zh-hk": "Arnebia euchroma 植物憑證標本及中藥材紫草標本的核糖體 DNA 第二內部轉錄間隔區(ITS2)序列"
+      },
+      "sequenceLength": 230,
+      "consensusSequence": "CACATCGCGTCACCCCATCCAAAATAATGTTGGATGTGGTGGATTGTGACCTCCTGTGTCTTGAGATGCAGTTGGTCGAAATTCGAGTCCGGAGCTTAGGACTTCACGACAAGTGGTGGTTGGATAACAACTCGCGTCATGTCGTGTGCCAAGCCTCCGTGTCTCCGTAGACCCTAAGGCGCGTGCTTTCCAACTCGTTCGTTGGGAAACCGTGCTACGACCG",
+      "specimenCount": 19,
+      "specimens": [
+        "RD587-1A", "RD588-1B", "RD589-1B", "RD590-1A", "RD591-1B", "RD592-1B",
+        "RD481-1A", "RD481-4A", "RD481-5B", "RD481-6A", "RD481-8A", "RD481-10A",
+        "RD482-1A", "RD483-1A", "RD483-2A", "RD483-3A", "RD483-5A", "RD483-7C",
+        "RD483-8A", "RD483-9A"
+      ],
+      "notes": "Some specimens (RD481-1A, RD481-6A) showed minor sequence variations at position 157 (R instead of A) and position 199 (Y instead of C)"
+    },
+    {
+      "name": "psbA-trnH",
+      "fullName": "Chloroplast psbA-trnH intergenic spacer",
+      "description": {
+        "en": "Chloroplast psbA-trnH intergenic spacer (psbA-trnH) sequence of plant voucher specimen of Arnebia euchroma and Chinese Materia Medica (CMM) Radix Arnebiae",
+        "zh-hk": "Arnebia euchroma 植物憑證標本及中藥材紫草標本的葉綠體 psbA-trnH 基因間區(psbA-trnH)序列"
+      },
+      "sequenceLength": 312,
+      "consensusSequence": "AAGACTCTGTCTTAGTGTAGTGTATAGGAGTTATTGAAAATAAAGGAGCAATAATCACCTTCTTCTTTTATCAAGAAGAGGGTATTGCTCCTTTATTTTCTTTTTATTTAGTTGTATTTTAGTTACATGGACTTTTATTCCTTACAAAAGCAAAAGAAGAAAAGGATTCATGATTGAGGATCTTATTTGTTCTGTTTTGTTTGTAATTTCTAAAACTCCGTCCCTTTTTTTTTTTTTTATACATTTTATATAAATGTATTATAATTATATATATTTATATTATATATAAGGGG",
+      "specimenCount": 19,
+      "specimens": [
+        "RD587-1A", "RD588-1B", "RD589-1B", "RD590-1A", "RD591-1B", "RD592-1B",
+        "RD481-1A", "RD481-4A", "RD481-5B", "RD481-6A", "RD481-8A", "RD481-10A",
+        "RD482-1A", "RD483-1A", "RD483-2A", "RD483-3A", "RD483-5A", "RD483-7C",
+        "RD483-8A", "RD483-9A"
+      ],
+      "notes": "CMM specimens (RD587-RD592) show shorter sequences. Plant voucher specimens (RD481-RD483) have additional 56bp at the 5' end and 27bp at the 3' end"
+    },
+    {
+      "name": "rbcL",
+      "fullName": "Partial chloroplast ribulose bisphosphate carboxylase large chain",
+      "description": {
+        "en": "Partial chloroplast ribulose bisphosphate carboxylase large chain (rbcL) sequence of plant voucher specimen of Arnebia euchroma and Chinese Materia Medica (CMM) Radix Arnebiae",
+        "zh-hk": "Arnebia euchroma 植物憑證標本及中藥材紫草標本的葉綠體二磷酸核酮糖羧化酶大鏈(rbcL)部分序列"
+      },
+      "sequenceLength": 555,
+      "consensusSequence": "AAGTGTTGGATTCAAAGCTGGTGTTAAAGAGTACAAATTGACTTATTATACTCCTGAATACCAAACCAAGGATACTGATATCTTGGCAGCATTCCGAGTAACTCCTCAACCTGGAGTTCCTCCTGAAGAAGCAGGGGCCGCAGTAGCTGCCGAATCTTCTACTGGTACATGGACAACGGTGTGGACCGATGGACTTACCAGCCTTGATCGTTACAAAGGGCGATGCTACCACATCGATCCCGTTCCGGGAGACGAAAATCAATATATATGTTATGTAGCTTATCCTTTAGACCTTTTTGAAGAAGGTTCTGTTACTAACATGTTTACTTCCATCGTAGGTAATGTATTTGGGTTCAAAGCCCTGCGCGCTCTACGTCTGGAAGATCTGCGAATCCCTCCTGCTTATGTTAAAACTTTCCAAGGCCCACCTCATGGGATCCAAGTTGAAAGAGATAAATTGAACAAGTACGGCCGTCCTTTGTTGGGATGTACTATTAAACCTAAATTGGGCTTATCCGCTAAAAACTACGGTAGAGCAGTTTATGAATGTCTT",
+      "specimenCount": 19,
+      "specimens": [
+        "RD587-1A", "RD588-1B", "RD589-1B", "RD590-1A", "RD591-1B", "RD592-1B",
+        "RD481-1A", "RD481-4A", "RD481-5B", "RD481-6A", "RD481-8A", "RD481-10A",
+        "RD482-1A", "RD483-1A", "RD483-2A", "RD483-3A", "RD483-5A", "RD483-7C",
+        "RD483-8A", "RD483-9A"
+      ]
+    }
+  ],
+  "specimen": {
+    "gcmtiCode": "GA0003596a00",
+    "type": "Chinese Materia Medica (CMM) Radix Arnebiae",
+    "totalSpecimens": 19
+  },
+  "methodology": {
+    "format": "FASTA",
+    "sequencingTargets": ["ITS2", "psbA-trnH", "rbcL"],
+    "specimenTypes": ["Plant voucher specimen", "Chinese Materia Medica (CMM) Radix Arnebiae"]
+  },
+  "extracted": {
+    "date": "2026-02-20",
+    "extractedBy": "automated extraction from PDF"
+  }
+}

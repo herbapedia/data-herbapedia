@@ -1,0 +1,324 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/chemical/chem-semen-vaccariae",
+  "@type": ["herbapedia:ChemicalAnalysisData", "schema:Dataset"],
+  "dataType": "ChemicalAnalysis",
+  "sourceDocument": "CHEM______Semen_Vaccariae_V1.pdf",
+  "scientificName": "Vaccaria segetalis",
+  "chineseName": "王不留行",
+  "pinyinName": "Wang Bu Liu Xing",
+  "englishName": "Semen Vaccariae",
+  "identificationMethod": ["TLC", "HPLC-Fingerprint", "HPLC-Assay"],
+  "referenceCompounds": [
+    {
+      "name": "Segetalin A",
+      "chineseName": "王不留行環肽A",
+      "formula": "C₃₁H₄₃N₇O₆",
+      "molecularWeight": "609.73 g/mol",
+      "purpose": ["TLC identification", "HPLC fingerprint marker", "Assay quantification"]
+    }
+  ],
+  "assayLimits": {
+    "segetalinA": {
+      "compound": "Segetalin A",
+      "formula": "C₃₁H₄₃N₇O₆",
+      "minimumContent": "0.028%",
+      "basis": "dried substance"
+    }
+  },
+  "tlcMethod": {
+    "appendixReference": "Appendix I",
+    "stationaryPhase": "HPTLC silica gel F254 plate",
+    "developingSolvent": {
+      "components": ["dichloromethane", "methanol"],
+      "ratio": "10:1 (v/v) for standard, 4:1 (v/v) for test solution",
+      "preparation": "Freshly prepared before use"
+    },
+    "sprayReagent": {
+      "composition": "10 mL sulfuric acid in 90 mL ethanol",
+      "visualization": "Heat at about 105°C for about 1 minute"
+    },
+    "testSolution": {
+      "sampleAmount": "10.0 g",
+      "solvent": "dichloromethane-methanol",
+      "solventRatio": "4:1 (v/v)",
+      "solventVolume": "30 mL",
+      "extraction": "Sonication (240 W) for 30 minutes",
+      "filtration": "Filter through filter paper",
+      "evaporation": "Rotary evaporator at reduced pressure",
+      "finalVolume": "1 mL methanol"
+    },
+    "standardSolutions": {
+      "concentration": "1.0 mg/mL in methanol",
+      "compounds": ["Segetalin A"]
+    },
+    "applicationVolumes": {
+      "standardSolutions": "6 μL each",
+      "testSolution": "6 μL"
+    },
+    "developingDistance": "8 cm",
+    "visualization": "UV light at 366 nm",
+    "identificationCriteria": {
+      "positiveMarkers": ["Segetalin A"],
+      "description": "Sample must give spot or band with chromatographic characteristics, including colour and Rf value, corresponding to those of segetalin A"
+    }
+  },
+  "hplcFingerprint": {
+    "appendixReference": "Appendix II",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "DAD",
+      "detectionWavelength": "219 nm",
+      "columnTemperature": "35°C",
+      "flowRate": "1.0 mL/min"
+    },
+    "mobilePhase": {
+      "solventA": "Water",
+      "solventB": "Acetonitrile",
+      "gradientProgram": [
+        {
+          "timeRange": "0-20 min",
+          "solventA": "90 → 85%",
+          "solventB": "10 → 15%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "20-40 min",
+          "solventA": "85 → 70%",
+          "solventB": "15 → 30%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "40-60 min",
+          "solventA": "70 → 30%",
+          "solventB": "30 → 70%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "segetalinA": {
+        "stockSolution": "100 mg/L (1.0 mg in 10 mL methanol)",
+        "storage": "Not specified"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "1.0 g",
+      "solvent": "methanol",
+      "solventVolume": "20 mL",
+      "extraction": "Sonication (240 W) for 30 minutes",
+      "centrifugation": "5000 × g for 5 minutes",
+      "filtration": "0.45 μm PTFE filter"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "peakAreaRSD": "≤ 5.0% (Segetalin A)",
+      "retentionTimeRSD": "≤ 2.0% (Segetalin A)",
+      "theoreticalPlates": "≥ 150,000 (based on Segetalin A)",
+      "resolution": "≥ 1.5 (between Segetalin A peak and adjacent peak)"
+    },
+    "identificationCriteria": {
+      "retentionTimeTolerance": "≤ 2.0% difference between sample and standard"
+    }
+  },
+  "hplcAssay": {
+    "appendixReference": "Appendix III",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "DAD",
+      "detectionWavelength": "219 nm",
+      "columnTemperature": "35°C",
+      "flowRate": "1.0 mL/min"
+    },
+    "mobilePhase": {
+      "solventA": "Water",
+      "solventB": "Methanol",
+      "ratio": "50:50 (v/v)",
+      "elution": "isocratic"
+    },
+    "runTime": "about 30 minutes",
+    "standardSolutions": {
+      "stockSolution": {
+        "concentration": "200 mg/L (2.0 mg in 10 mL methanol)",
+        "compound": "Segetalin A"
+      },
+      "workingSolutions": {
+        "concentrations": ["8", "20", "60", "100", "160 mg/L"],
+        "description": "Series of mixed standard solutions"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "0.5 g",
+      "solvent": "methanol",
+      "extractionVolume": "40 mL × 3 extractions",
+      "extraction": "Sonication (240 W) for 30 minutes",
+      "centrifugation": "5000 × g for 5 minutes",
+      "evaporation": "Rotary evaporator at reduced pressure",
+      "finalVolume": "2 mL",
+      "filtration": "0.45 μm PTFE filter"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "standardConcentration": "60 mg/L (Segetalin A Std-AS)",
+      "peakAreaRSD": "≤ 5.0% (Segetalin A)",
+      "retentionTimeRSD": "≤ 2.0% (Segetalin A)",
+      "theoreticalPlates": "≥ 1,500 (based on Segetalin A)",
+      "resolution": "≥ 1.5 (between Segetalin A peak and adjacent peak)"
+    },
+    "calibration": {
+      "method": "5-point calibration curve",
+      "plot": "Peak area vs. concentration (mg/L)",
+      "identificationTolerance": "≤ 2.0% difference in retention times"
+    },
+    "calculation": {
+      "concentrationFormula": "A = mC + I",
+      "contentFormula": "Content (%) = (C × V × D) / (10000 × W)",
+      "parameters": {
+        "C": "Concentration of analyte in test solution (mg/L)",
+        "V": "Final volume of test solution (mL)",
+        "D": "Dilution factor",
+        "W": "Sample weight (g)",
+        "A": "Peak area",
+        "m": "Slope of calibration curve",
+        "I": "Intercept of calibration curve"
+      }
+    }
+  },
+  "rrtValues": [
+    {
+      "peakNumber": 1,
+      "compound": "Erythrophenine",
+      "chineseName": "刺桐鹼",
+      "rrt": 0.24,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Segetalin A"
+    },
+    {
+      "peakNumber": 2,
+      "compound": "Unknown Peak 2",
+      "rrt": 0.44,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Segetalin A"
+    },
+    {
+      "peakNumber": 3,
+      "compound": "Unknown Peak 3",
+      "rrt": 0.59,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Segetalin A"
+    },
+    {
+      "peakNumber": 4,
+      "compound": "Unknown Peak 4",
+      "rrt": 0.71,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Segetalin A"
+    },
+    {
+      "peakNumber": 5,
+      "compound": "Unknown Peak 5",
+      "rrt": 0.92,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Segetalin A"
+    },
+    {
+      "peakNumber": 6,
+      "compound": "Segetalin A",
+      "chineseName": "王不留行環肽A",
+      "rrt": 1.00,
+      "acceptableRange": null,
+      "referenceMarker": true,
+      "referenceTo": "self"
+    }
+  ],
+  "physicochemicalTests": {
+    "heavyMetals": {
+      "appendix": "Appendix V",
+      "requirement": "Complies with regulations"
+    },
+    "pesticideResidues": {
+      "appendix": "Appendix VI",
+      "requirement": "Complies with regulations"
+    },
+    "mycotoxins": {
+      "appendix": "Appendix VII",
+      "requirement": "Complies with regulations"
+    },
+    "impurities": {
+      "appendix": "Appendix VIII",
+      "maximumContent": "1.0%"
+    },
+    "totalAsh": {
+      "appendix": "Appendix IX",
+      "maximumContent": "4.0%"
+    },
+    "acidInsolubleAsh": {
+      "appendix": "Appendix IX",
+      "maximumContent": "1.0%"
+    },
+    "moisture": {
+      "appendix": "Appendix X",
+      "maximumContent": "15.0%"
+    }
+  },
+  "appendices": {
+    "appendixI": {
+      "title": "Chromatography - Thin-Layer Chromatography",
+      "description": "General procedures for TLC including plate types, application methods, developing chambers, and Rf calculation"
+    },
+    "appendixII": {
+      "title": "GC and HPLC/UHPLC Fingerprinting",
+      "description": "Methods for establishing chromatographic fingerprints using marker peaks and RRT values"
+    },
+    "appendixIII": {
+      "title": "Chromatography - HPLC/UHPLC",
+      "description": "General HPLC/UHPLC procedures including system suitability tests and quantitative calculations"
+    },
+    "appendixIV": {
+      "title": "Chromatography - TLC",
+      "description": "Detailed TLC procedures for herbal identification"
+    },
+    "appendixV": {
+      "title": "Heavy Metals",
+      "description": "Heavy metal limits for herbal materials"
+    },
+    "appendixVI": {
+      "title": "Pesticide Residues",
+      "description": "Pesticide residue limits for herbal materials"
+    },
+    "appendixVII": {
+      "title": "Mycotoxins",
+      "description": "Mycotoxin limits for herbal materials"
+    },
+    "appendixVIII": {
+      "title": "Impurities",
+      "description": "Impurity limits for herbal materials"
+    },
+    "appendixIX": {
+      "title": "Ash Values",
+      "description": "Total ash and acid-insoluble ash determination methods"
+    },
+    "appendixX": {
+      "title": "Moisture",
+      "description": "Moisture content determination methods"
+    },
+    "appendixXII": {
+      "title": "RRT Calculation",
+      "description": "Formula for calculating relative retention times"
+    }
+  },
+  "extractedAt": "2026-02-20"
+}

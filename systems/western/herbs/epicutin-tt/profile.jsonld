@@ -1,11 +1,11 @@
 {
-  "@context": "../../schema/context/western.jsonld",
-  "@id": "western/epicutin-tt",
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/epicutin-tt",
   "@type": [
     "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
-    "@id": "plant/epicutin-tt"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/epicutin-tt"
   },
   "name": {
     "en": "Epicutin-TT",

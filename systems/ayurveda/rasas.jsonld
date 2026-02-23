@@ -1,8 +1,8 @@
 {
-  "@context": "../../schema/context/ayurveda.jsonld",
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
   "@graph": [
     {
-      "@id": "rasa/madhura",
+      "@id": "https://www.herbapedia.org/entity/rasa/madhura",
       "@type": "ayurveda:Rasa",
       "rasaValue": "sweet",
       "prefLabel": {
@@ -23,20 +23,20 @@
       ],
       "increasesDosha": [
         {
-          "@id": "dosha/kapha"
+          "@id": "https://www.herbapedia.org/entity/dosha/kapha"
         }
       ],
       "decreasesDosha": [
         {
-          "@id": "dosha/vata"
+          "@id": "https://www.herbapedia.org/entity/dosha/vata"
         },
         {
-          "@id": "dosha/pitta"
+          "@id": "https://www.herbapedia.org/entity/dosha/pitta"
         }
       ]
     },
     {
-      "@id": "rasa/amla",
+      "@id": "https://www.herbapedia.org/entity/rasa/amla",
       "@type": "ayurveda:Rasa",
       "rasaValue": "sour",
       "prefLabel": {
@@ -57,20 +57,20 @@
       ],
       "increasesDosha": [
         {
-          "@id": "dosha/pitta"
+          "@id": "https://www.herbapedia.org/entity/dosha/pitta"
         },
         {
-          "@id": "dosha/kapha"
+          "@id": "https://www.herbapedia.org/entity/dosha/kapha"
         }
       ],
       "decreasesDosha": [
         {
-          "@id": "dosha/vata"
+          "@id": "https://www.herbapedia.org/entity/dosha/vata"
         }
       ]
     },
     {
-      "@id": "rasa/lavana",
+      "@id": "https://www.herbapedia.org/entity/rasa/lavana",
       "@type": "ayurveda:Rasa",
       "rasaValue": "salty",
       "prefLabel": {
@@ -91,20 +91,20 @@
       ],
       "increasesDosha": [
         {
-          "@id": "dosha/pitta"
+          "@id": "https://www.herbapedia.org/entity/dosha/pitta"
         },
         {
-          "@id": "dosha/kapha"
+          "@id": "https://www.herbapedia.org/entity/dosha/kapha"
         }
       ],
       "decreasesDosha": [
         {
-          "@id": "dosha/vata"
+          "@id": "https://www.herbapedia.org/entity/dosha/vata"
         }
       ]
     },
     {
-      "@id": "rasa/katu",
+      "@id": "https://www.herbapedia.org/entity/rasa/katu",
       "@type": "ayurveda:Rasa",
       "rasaValue": "pungent",
       "prefLabel": {
@@ -125,20 +125,20 @@
       ],
       "increasesDosha": [
         {
-          "@id": "dosha/vata"
+          "@id": "https://www.herbapedia.org/entity/dosha/vata"
         },
         {
-          "@id": "dosha/pitta"
+          "@id": "https://www.herbapedia.org/entity/dosha/pitta"
         }
       ],
       "decreasesDosha": [
         {
-          "@id": "dosha/kapha"
+          "@id": "https://www.herbapedia.org/entity/dosha/kapha"
         }
       ]
     },
     {
-      "@id": "rasa/tikta",
+      "@id": "https://www.herbapedia.org/entity/rasa/tikta",
       "@type": "ayurveda:Rasa",
       "rasaValue": "bitter",
       "prefLabel": {
@@ -159,20 +159,20 @@
       ],
       "increasesDosha": [
         {
-          "@id": "dosha/vata"
+          "@id": "https://www.herbapedia.org/entity/dosha/vata"
         }
       ],
       "decreasesDosha": [
         {
-          "@id": "dosha/pitta"
+          "@id": "https://www.herbapedia.org/entity/dosha/pitta"
         },
         {
-          "@id": "dosha/kapha"
+          "@id": "https://www.herbapedia.org/entity/dosha/kapha"
         }
       ]
     },
     {
-      "@id": "rasa/kashaya",
+      "@id": "https://www.herbapedia.org/entity/rasa/kashaya",
       "@type": "ayurveda:Rasa",
       "rasaValue": "astringent",
       "prefLabel": {
@@ -193,15 +193,15 @@
       ],
       "increasesDosha": [
         {
-          "@id": "dosha/vata"
+          "@id": "https://www.herbapedia.org/entity/dosha/vata"
         }
       ],
       "decreasesDosha": [
         {
-          "@id": "dosha/pitta"
+          "@id": "https://www.herbapedia.org/entity/dosha/pitta"
         },
         {
-          "@id": "dosha/kapha"
+          "@id": "https://www.herbapedia.org/entity/dosha/kapha"
         }
       ]
     }

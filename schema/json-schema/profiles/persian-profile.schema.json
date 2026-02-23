@@ -1,0 +1,221 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herbapedia.org/schema/json-schema/profiles/persian-profile.schema.json",
+  "title": "Traditional Persian Medicine Profile",
+  "description": "Traditional Persian Medicine (TPM) interpretation of an HerbalPreparation. Uses concepts of Mizaj (temperament), four elements, and potency degrees. Based on the Canon of Medicine by Avicenna and Makhzan al-Adwiya by Aghili Khorasani.",
+  "type": "object",
+  "allOf": [
+    { "$ref": "./profile-base.schema.json" }
+  ],
+  "required": ["@id", "@type", "name", "profiles", "hasTemperament"],
+  "properties": {
+    "@id": {
+      "description": "Unique identifier: persian/profile/{slug}.",
+      "type": "string",
+      "pattern": "^persian/profile/[a-z0-9-]+$",
+      "examples": ["persian/profile/zanjabil", "persian/profile/zard-choob"]
+    },
+    "@type": {
+      "type": "array",
+      "items": { "type": "string" },
+      "contains": { "const": "persian:DrugProfile" },
+      "examples": [["persian:DrugProfile", "schema:DietarySupplement"]]
+    },
+    "profiles": {
+      "description": "The HerbalPreparation that this profile interprets.",
+      "$ref": "../core/iri-reference.schema.json",
+      "examples": [{ "@id": "preparation/fresh-ginger-rhizome" }]
+    },
+    "persianName": {
+      "description": "Persian/Farsi name of the drug (adviyah).",
+      "type": "string",
+      "examples": ["زنجبیل", "زردچوبه"]
+    },
+    "persianTransliteration": {
+      "description": "Transliteration of Persian name.",
+      "type": "string",
+      "examples": ["Zanjabil", "Zard-choob"]
+    },
+    "arabicName": {
+      "description": "Arabic name (commonly used in TPM texts).",
+      "type": "string",
+      "examples": ["زنجبيل", "كركم"]
+    },
+    "hasTemperament": {
+      "description": "Mizaj (مزاج) - The temperament of the substance. Combination of Hot/Cold with Wet/Dry.",
+      "$ref": "../core/iri-reference.schema.json",
+      "examples": [
+        { "@id": "persian/temperament/hot-dry" },
+        { "@id": "persian/temperament/cold-wet" }
+      ],
+      "_documentation": {
+        "hot-dry": "Hot and Dry temperament (Sardi-khoshk)",
+        "hot-wet": "Hot and Wet temperament (Sardi-tar)",
+        "cold-dry": "Cold and Dry temperament (Garmi-khoshk)",
+        "cold-wet": "Cold and Wet temperament (Garmi-tar)"
+      }
+    },
+    "temperamentDegree": {
+      "description": "Degree (potency) of the temperament, 1-4.",
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 4,
+      "examples": [2, 3],
+      "_documentation": {
+        "1": "First degree - mild effect, safe for most",
+        "2": "Second degree - moderate effect, some caution",
+        "3": "Third degree - strong effect, significant caution",
+        "4": "Fourth degree - very strong, potentially toxic"
+      }
+    },
+    "hasElement": {
+      "description": "Dominant element(s) in this substance.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" },
+      "examples": [[{ "@id": "persian/element/fire" }, { "@id": "persian/element/air" }]],
+      "_documentation": {
+        "fire": "Fire (آتش) - Hot and Dry",
+        "air": "Air (هوا) - Hot and Wet",
+        "water": "Water (آب) - Cold and Wet",
+        "earth": "Earth (خاک) - Cold and Dry"
+      }
+    },
+    "mizajConstituents": {
+      "description": "Temperament of constituent parts if compound.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "substance": { "$ref": "../core/iri-reference.schema.json" },
+          "temperament": { "$ref": "../core/iri-reference.schema.json" },
+          "proportion": { "type": "string" }
+        }
+      }
+    },
+    "actions": {
+      "description": "Therapeutic actions in TPM terms.",
+      "type": "array",
+      "items": { "type": "string" },
+      "examples": [["Mufarrih", "Muqawwi", "Muhallil", "Dafi"]]
+    },
+    "persianFunctions": {
+      "description": "Functions in Persian language.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "indications": {
+      "description": "Indications in TPM terms.",
+      "type": "array",
+      "items": { "type": "string" },
+      "examples": [["Sual", "Zukam", "Suda", "Waja al-Mafasil"]]
+    },
+    "affectedOrgans": {
+      "description": "Organs affected by this drug.",
+      "type": "array",
+      "items": { "type": "string" },
+      "examples": [["Kabid", "Qalb", "Mi'ah", "Ri'ah"]]
+    },
+    "contraindications": {
+      "description": "Contraindications according to TPM.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "adverseEffects": {
+      "description": "Harmful effects (Muzir) and how to mitigate them.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "corrective": {
+      "description": "Musleh (مصلح) - substances that correct adverse effects.",
+      "type": "array",
+      "items": { "type": "string" },
+      "examples": [["Asl", "Kafoor", "Sakanjabin"]]
+    },
+    "substitute": {
+      "description": "Badal (بدل) - substitute drugs with similar properties.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "dosage": {
+      "description": "Dosage information.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "dosageForm": {
+      "description": "Traditional dosage forms.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Naqu",
+          "Joshandah",
+          "Khulq",
+          "Sharbat",
+          "Majun",
+          "Itrifal",
+          "Jawarish",
+          "Qurs",
+          "Habb",
+          "Zarur",
+          "Tiryaq"
+        ]
+      },
+      "_documentation": {
+        "Naqu": "Infusion",
+        "Joshandah": "Decoction",
+        "Khulq": "Syrup",
+        "Sharbat": "Syrup beverage",
+        "Majun": "Semi-solid paste",
+        "Itrifal": "Triphala-based preparation",
+        "Jawarish": "Digestive confection",
+        "Qurs": "Tablet",
+        "Habb": "Pill",
+        "Zarur": "Powder",
+        "Tiryaq": "Antidote/electuary"
+      }
+    },
+    "administrationRoute": {
+      "description": "Route of administration.",
+      "type": "string",
+      "enum": ["oral", "topical", "inhalation", "rectal", "vaginal", "nasal", "ocular", "otic"]
+    },
+    "classicalReferences": {
+      "description": "References to classical Persian medicine texts.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string",
+            "examples": ["Al-Qānūn fī al-Ṭibb", "Makhzan al-Adwiya", "Tuhfat al-Mu'minin"]
+          },
+          "author": {
+            "type": "string",
+            "examples": ["Ibn Sina (Avicenna)", "Aghili Khorasani", "Momen Tonekaboni"]
+          },
+          "reference": { "type": "string" },
+          "quote": { "type": "string" }
+        }
+      }
+    },
+    "modernResearch": {
+      "description": "Modern scientific research relevant to TPM uses.",
+      "$ref": "../core/language-map.schema.json"
+    }
+  },
+  "additionalProperties": true,
+  "_documentation": {
+    "iriPattern": "persian/profile/{slug}",
+    "directory": "systems/persian/profiles/{slug}/profile.jsonld",
+    "keyConcepts": {
+      "mizaj": "Temperament - the fundamental quality of a substance (Hot/Cold × Wet/Dry)",
+      "arkan": "Four Elements - Fire, Air, Water, Earth",
+      "darajah": "Degree - potency level 1-4",
+      "musleh": "Corrective - substance that mitigates adverse effects",
+      "badal": "Substitute - alternative with similar properties"
+    },
+    "classicalTexts": {
+      "canon": "Al-Qānūn fī al-Ṭibb (Canon of Medicine) - Ibn Sina, 1025 CE",
+      "makhzan": "Makhzan al-Adwiya (Treasury of Drugs) - Aghili Khorasani, 1771 CE",
+      "tohfeh": "Tuhfat al-Mu'minin - Momen Tonekaboni, 1669 CE"
+    },
+    "keyDifferenceFromTCM": "TPM uses Hot/Cold × Wet/Dry temperament, not Yin/Yang and Five Elements",
+    "keyDifferenceFromAyurveda": "TPM uses four elements and temperament, not three doshas"
+  }
+}

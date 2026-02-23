@@ -1,0 +1,34 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/turmeric-flower",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Turmeric Flower",
+    "zh-Hant": "薑黃花",
+    "zh-Hans": "姜黄花"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/turmeric"
+  },
+  "partType": "flower",
+  "description": {
+    "en": "The cylindrical inflorescence of turmeric, arising from the rhizome. Bracts are greenish-white with pink tips, surrounding pale yellow flowers."
+  },
+  "morphology": {
+    "en": "Spike 10-15 cm long, 5-7 cm wide. Fertile bracts pale green, coma bracts white or pinkish. Flowers pale yellow, 3-5 cm long."
+  },
+  "floweringSeason": {
+    "en": "Late summer to autumn, but rarely produces seeds"
+  },
+  "provenance": {
+    "created": "2024-01-15",
+    "modified": "2024-01-15",
+    "source": "Flora of India",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  }
+}

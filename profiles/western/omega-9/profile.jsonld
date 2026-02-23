@@ -1,0 +1,28 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/omega-9",
+  "@type": [
+    "herbapedia:WesternHerbalProfile"
+  ],
+  "profiles": {
+    "@id": "https://www.herbapedia.org/entity/preparation/omega-9"
+  },
+  "name": {
+    "en": "Omega 9",
+    "zh-Hant": "奧米加9",
+    "zh-Hans": "奥米加9"
+  },
+  "derivedFromPlant": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/omega-9"
+  },
+  "westernTraditionalUsage": {
+    "en": "Omega 9 is an unsaturated fatty acid. Despite often being described as an essential fatty acid, meaning it can only be sourced from the diet, it is in fact produced by the body in limited amounts. However, this process is dependent on the presence of omega 3 and 6 oils, which your body cannot make and needs to obtain from frood. Omega 9 helps to reduce the risk of arteriosclerosis - hardening of the arteries - as well as cardiovascular disease and strokes and is thus important for cardiovascular health.\n",
+    "zh-Hant": "",
+    "zh-Hans": ""
+  },
+  "provenance": {
+    "created": "2026-02-20T15:22:03.246Z",
+    "modified": "2026-02-20T15:22:03.246Z",
+    "migratedFrom": "systems/western/herbs/omega-9/profile.jsonld"
+  }
+}

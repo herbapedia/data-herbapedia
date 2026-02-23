@@ -1,0 +1,195 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "https://www.herbapedia.org/",
+    "@vocab": "https://www.herbapedia.org/vocab/herbal/",
+
+    "herbal": "https://www.herbapedia.org/vocab/herbal/",
+    "botany": "https://www.herbapedia.org/vocab/botany/",
+    "schema": "https://schema.org/",
+    "dc": "http://purl.org/dc/terms/",
+    "skos": "http://www.w3.org/2004/02/skos/core/",
+
+    "HerbalPreparation": {
+      "@id": "herbal:HerbalPreparation",
+      "@type": "@id"
+    },
+
+    "derivedFrom": {
+      "@id": "herbal:derivedFrom",
+      "@type": "@id",
+      "@container": "@set",
+      "_comment": "CRITICAL: Links to botanical source (PlantSpecies or PlantPart). This is the foundation of the preparation."
+    },
+    "preparationMethod": {
+      "@id": "herbal:preparationMethod",
+      "@type": "@vocab",
+      "_comment": "How this preparation is processed: fresh, dried, steamed, roasted, etc."
+    },
+    "preparationDetails": {
+      "@id": "herbal:preparationDetails",
+      "@container": "@language",
+      "_comment": "Detailed description of the preparation process"
+    },
+    "form": {
+      "@id": "herbal:form",
+      "@type": "@vocab",
+      "_comment": "Physical form: whole, sliced, powder, capsule, tincture, etc."
+    },
+    "appearance": {
+      "@id": "herbal:appearance",
+      "@container": "@language",
+      "_comment": "Physical appearance description"
+    },
+
+    "commonUsage": {
+      "@id": "herbal:commonUsage",
+      "@type": "@json",
+      "_comment": "Non-therapeutic usage: culinary, cosmetic, industrial, aromatherapy"
+    },
+    "storageRequirements": {
+      "@id": "herbal:storageRequirements",
+      "@container": "@language"
+    },
+    "shelfLife": {
+      "@id": "herbal:shelfLife",
+      "@type": "xsd:string"
+    },
+    "safetyInfo": {
+      "@id": "herbal:safetyInfo",
+      "@type": "@json",
+      "_comment": "General safety information: allergens, contraindications, warnings"
+    },
+
+    "hasTCMProfile": {
+      "@id": "herbal:hasTCMProfile",
+      "@type": "@id",
+      "@container": "@set",
+      "_comment": "TCM interpretation of this preparation"
+    },
+    "hasWesternProfile": {
+      "@id": "herbal:hasWesternProfile",
+      "@type": "@id",
+      "@container": "@set",
+      "_comment": "Western herbalism interpretation"
+    },
+    "hasAyurvedaProfile": {
+      "@id": "herbal:hasAyurvedaProfile",
+      "@type": "@id",
+      "@container": "@set",
+      "_comment": "Ayurvedic interpretation"
+    },
+    "hasPersianProfile": {
+      "@id": "herbal:hasPersianProfile",
+      "@type": "@id",
+      "@container": "@set",
+      "_comment": "Persian (TPM) interpretation"
+    },
+    "hasMongolianProfile": {
+      "@id": "herbal:hasMongolianProfile",
+      "@type": "@id",
+      "@container": "@set",
+      "_comment": "Mongolian medicine interpretation"
+    },
+
+    "relatedPreparations": {
+      "@id": "herbal:relatedPreparations",
+      "@type": "@id",
+      "@container": "@set",
+      "_comment": "Other preparations from same botanical source with different processing"
+    },
+    "substitutes": {
+      "@id": "herbal:substitutes",
+      "@container": "@set",
+      "_comment": "Preparations that can substitute for this one"
+    },
+
+    "name": {
+      "@id": "schema:name",
+      "@container": "@language"
+    },
+    "description": {
+      "@id": "schema:description",
+      "@container": "@language"
+    },
+    "image": {
+      "@id": "schema:image",
+      "@type": "@id"
+    },
+    "sameAs": {
+      "@id": "schema:sameAs",
+      "@type": "@id",
+      "@container": "@set"
+    },
+
+    "provenance": {
+      "@id": "herbal:provenance",
+      "@type": "@json"
+    },
+    "source": {
+      "@id": "dc:source",
+      "@type": "xsd:string"
+    },
+    "created": {
+      "@id": "dc:created",
+      "@type": "xsd:dateTime"
+    },
+    "modified": {
+      "@id": "dc:modified",
+      "@type": "xsd:dateTime"
+    },
+    "license": {
+      "@id": "dc:license",
+      "@type": "@id"
+    },
+
+    "PreparationMethod": {
+      "@id": "herbal:PreparationMethod",
+      "@type": "@id",
+      "_context": "Controlled vocabulary for preparation methods"
+    },
+    "fresh": "herbal:preparationMethod/fresh",
+    "dried": "herbal:preparationMethod/dried",
+    "steamed": "herbal:preparationMethod/steamed",
+    "roasted": "herbal:preparationMethod/roasted",
+    "fried": "herbal:preparationMethod/fried",
+    "stir-fried": "herbal:preparationMethod/stir-fried",
+    "carbonized": "herbal:preparationMethod/carbonized",
+    "fermented": "herbal:preparationMethod/fermented",
+    "pickled": "herbal:preparationMethod/pickled",
+    "extracted": "herbal:preparationMethod/extracted",
+    "powdered": "herbal:preparationMethod/powdered",
+    "ground": "herbal:preparationMethod/ground",
+    "decocted": "herbal:preparationMethod/decocted",
+    "infused": "herbal:preparationMethod/infused",
+    "tinctured": "herbal:preparationMethod/tinctured",
+    "distilled": "herbal:preparationMethod/distilled",
+    "cold-pressed": "herbal:preparationMethod/cold-pressed",
+    "steam-distilled": "herbal:preparationMethod/steam-distilled",
+    "freeze-dried": "herbal:preparationMethod/freeze-dried",
+    "spray-dried": "herbal:preparationMethod/spray-dried",
+    "concentrated": "herbal:preparationMethod/concentrated",
+    "standardized": "herbal:preparationMethod/standardized",
+    "raw": "herbal:preparationMethod/raw",
+    "processed": "herbal:preparationMethod/processed",
+
+    "PreparationForm": {
+      "@id": "herbal:PreparationForm",
+      "@type": "@id",
+      "_context": "Controlled vocabulary for physical forms"
+    },
+    "whole": "herbal:form/whole",
+    "sliced": "herbal:form/sliced",
+    "crushed": "herbal:form/crushed",
+    "powder": "herbal:form/powder",
+    "granule": "herbal:form/granule",
+    "capsule": "herbal:form/capsule",
+    "tablet": "herbal:form/tablet",
+    "liquid": "herbal:form/liquid",
+    "oil": "herbal:form/oil",
+    "extract": "herbal:form/extract",
+    "tincture": "herbal:form/tincture",
+    "tea": "herbal:form/tea",
+    "paste": "herbal:form/paste"
+  }
+}

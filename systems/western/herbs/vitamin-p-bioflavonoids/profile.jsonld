@@ -1,11 +1,11 @@
 {
-  "@context": "../../schema/context/western.jsonld",
-  "@id": "western/vitamin-p-bioflavonoids",
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/vitamin-p-bioflavonoids",
   "@type": [
     "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
-    "@id": "plant/vitamin-p-bioflavonoids"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/vitamin-p-bioflavonoids"
   },
   "name": {
     "en": "Vitamin P, Bioflavonoids",

@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/jiaogulan-root",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Jiaogulan Root",
+    "zh-Hant": "絞股藍",
+    "zh-Hans": "绞股蓝"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/jiaogulan"
+  },
+  "partType": "root",
+  "description": {
+    "en": "The root of Gynostemma pentaphyllum, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.818Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

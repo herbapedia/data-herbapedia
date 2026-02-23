@@ -1,0 +1,239 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/persian.jsonld",
+  "@id": "https://www.herbapedia.org/system/persian/profile/reference/temperaments",
+  "@type": [
+    "persian:ReferenceCollection",
+    "skos:Collection"
+  ],
+  "name": {
+    "en": "Persian Four Temperaments",
+    "fa": "چهار مزاج"
+  },
+  "description": {
+    "en": "The four temperaments (مزاج - Mizaj) in Traditional Persian Medicine. Each person and substance has a unique combination of Hot/Cold and Wet/Dry qualities."
+  },
+  "members": [
+    {
+      "@id": "https://www.herbapedia.org/system/persian/profile/temperament/hot-dry",
+      "@type": [
+        "persian:Temperament"
+      ],
+      "name": {
+        "en": "Hot and Dry",
+        "fa": "گرم و خشک"
+      },
+      "persianName": "گرم و خشک",
+      "transliteration": "Garm-o-Khoshk",
+      "heat": "hot",
+      "moisture": "dry",
+      "associatedElement": {
+        "@id": "https://www.herbapedia.org/system/persian/profile/element/fire"
+      },
+      "associatedHumor": "safra",
+      "description": {
+        "en": "Dominant fire element, yellow bile humor. Intense, sharp, penetrating."
+      },
+      "physiologicalCharacteristics": [
+        "Strong digestion",
+        "Warm body",
+        "Quick metabolism",
+        "Tendency to thirst",
+        "Dry skin"
+      ],
+      "psychologicalCharacteristics": [
+        "Sharp intellect",
+        "Quick temper",
+        "Decisive",
+        "Ambitious",
+        "Impatient"
+      ],
+      "indications": [
+        "cold and wet conditions",
+        "phlegm disorders",
+        "sluggish digestion"
+      ],
+      "contraindications": [
+        "fever",
+        "inflammation",
+        "bleeding",
+        "hot conditions"
+      ],
+      "balancingFoods": [
+        "cooling foods",
+        "moistening foods",
+        "cucumber",
+        "yogurt"
+      ],
+      "oppositeTemperament": {
+        "@id": "https://www.herbapedia.org/system/persian/profile/temperament/cold-wet"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/persian/profile/temperament/hot-wet",
+      "@type": [
+        "persian:Temperament"
+      ],
+      "name": {
+        "en": "Hot and Wet",
+        "fa": "گرم و تر"
+      },
+      "persianName": "گرم و تر",
+      "transliteration": "Garm-o-Tar",
+      "heat": "hot",
+      "moisture": "wet",
+      "associatedElement": {
+        "@id": "https://www.herbapedia.org/system/persian/profile/element/air"
+      },
+      "associatedHumor": "dam",
+      "description": {
+        "en": "Dominant air element, blood humor. Balanced, vital, growth-promoting."
+      },
+      "physiologicalCharacteristics": [
+        "Good digestion",
+        "Warm, moist skin",
+        "Good circulation",
+        "Strong pulse",
+        "Rosy complexion"
+      ],
+      "psychologicalCharacteristics": [
+        "Joyful",
+        "Social",
+        "Optimistic",
+        "Creative",
+        "Expressive"
+      ],
+      "indications": [
+        "cold and dry conditions",
+        "melancholy",
+        "weakness"
+      ],
+      "contraindications": [
+        "hot conditions",
+        "excess moisture",
+        "fever"
+      ],
+      "balancingFoods": [
+        "cooling dry foods",
+        "barley",
+        "pomegranate"
+      ],
+      "oppositeTemperament": {
+        "@id": "https://www.herbapedia.org/system/persian/profile/temperament/cold-dry"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/persian/profile/temperament/cold-dry",
+      "@type": [
+        "persian:Temperament"
+      ],
+      "name": {
+        "en": "Cold and Dry",
+        "fa": "سرد و خشک"
+      },
+      "persianName": "سرد و خشک",
+      "transliteration": "Sard-o-Khoshk",
+      "heat": "cold",
+      "moisture": "dry",
+      "associatedElement": {
+        "@id": "https://www.herbapedia.org/system/persian/profile/element/earth"
+      },
+      "associatedHumor": "sauda",
+      "description": {
+        "en": "Dominant earth element, black bile humor. Heavy, stable, earthy."
+      },
+      "physiologicalCharacteristics": [
+        "Slow digestion",
+        "Cold body",
+        "Dry skin",
+        "Lean frame",
+        "Slow pulse"
+      ],
+      "psychologicalCharacteristics": [
+        "Thoughtful",
+        "Cautious",
+        "Deep thinking",
+        "Prone to worry",
+        "Melancholic"
+      ],
+      "indications": [
+        "hot and wet conditions",
+        "excess blood",
+        "fever"
+      ],
+      "contraindications": [
+        "cold conditions",
+        "dry conditions",
+        "depression"
+      ],
+      "balancingFoods": [
+        "warming moist foods",
+        "honey",
+        "dates",
+        "warm milk"
+      ],
+      "oppositeTemperament": {
+        "@id": "https://www.herbapedia.org/system/persian/profile/temperament/hot-wet"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/persian/profile/temperament/cold-wet",
+      "@type": [
+        "persian:Temperament"
+      ],
+      "name": {
+        "en": "Cold and Wet",
+        "fa": "سرد و تر"
+      },
+      "persianName": "سرد و تر",
+      "transliteration": "Sard-o-Tar",
+      "heat": "cold",
+      "moisture": "wet",
+      "associatedElement": {
+        "@id": "https://www.herbapedia.org/system/persian/profile/element/water"
+      },
+      "associatedHumor": "balgham",
+      "description": {
+        "en": "Dominant water element, phlegm humor. Cool, moist, slow."
+      },
+      "physiologicalCharacteristics": [
+        "Slow digestion",
+        "Cool, moist skin",
+        "Slow metabolism",
+        "Tendency to weight gain",
+        "Soft tissues"
+      ],
+      "psychologicalCharacteristics": [
+        "Calm",
+        "Patient",
+        "Slow to react",
+        "Lethargic tendency",
+        "Nurturing"
+      ],
+      "indications": [
+        "hot and dry conditions",
+        "burning fever",
+        "acute inflammation"
+      ],
+      "contraindications": [
+        "cold conditions",
+        "excess moisture",
+        "edema",
+        "phlegm disorders"
+      ],
+      "balancingFoods": [
+        "warming dry foods",
+        "ginger",
+        "pepper",
+        "dried fruits"
+      ],
+      "oppositeTemperament": {
+        "@id": "https://www.herbapedia.org/system/persian/profile/temperament/hot-dry"
+      }
+    }
+  ],
+  "_documentation": {
+    "classicalReference": "Ibn Sina (Avicenna), Al-Qanun fi al-Tibb (Canon of Medicine)",
+    "principle": "Treatment involves prescribing substances with opposite temperament to the disease",
+    "diagnosis": "Temperament is determined by pulse, urine, complexion, and psychological traits"
+  }
+}

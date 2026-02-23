@@ -1,0 +1,35 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/preparation/ginseng-tea",
+  "@type": [
+    "herbal:HerbalPreparation",
+    "schema:DietarySupplement"
+  ],
+  "name": {
+    "en": "Ginseng Tea",
+    "zh-Hant": "人蔘茶",
+    "zh-Hans": "人参茶"
+  },
+  "derivedFrom": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/part/ginseng-root"
+    }
+  ],
+  "preparationMethod": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/method/infused"
+  },
+  "form": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/form/tea"
+  },
+  "description": {
+    "en": "Tea made from ginseng root slices. Traditional preparation for energy and vitality."
+  },
+  "provenance": {
+    "created": "2026-02-21",
+    "source": "Herbapedia Team",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "image": "media/images/ginseng-tea/ginseng-tea.jpg"
+}

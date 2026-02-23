@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/chinese-angelica-or-dong-quai-root",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Chinese Angelica or Dong Quai Root",
+    "zh-Hant": "當歸",
+    "zh-Hans": "当归"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/chinese-angelica-or-dong-quai"
+  },
+  "partType": "root",
+  "description": {
+    "en": "The root of Angelica sinensis, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.810Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

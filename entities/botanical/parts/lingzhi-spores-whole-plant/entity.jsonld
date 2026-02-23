@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/lingzhi-spores-whole-plant",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Lingzhi Spores Whole Plant",
+    "zh-Hant": "野生靈芝",
+    "zh-Hans": "野生灵芝"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/lingzhi-spores"
+  },
+  "partType": "whole-plant",
+  "description": {
+    "en": "The whole-plant of Ganoderma lucidum, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.820Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

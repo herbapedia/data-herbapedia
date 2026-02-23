@@ -1,0 +1,157 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "https://www.herbapedia.org/system/tcm/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "https://www.herbapedia.org/system/tcm/herb-category-mapping",
+  "@type": "skos:Collection",
+  "rdfs:label": "TCM Herb to Category Mapping",
+  "rdfs:comment": "Correct category assignments for TCM herbs based on standard TCM classification (中药学)",
+  "mappings": {
+    "release-exterior": {
+      "warm-acrid": [
+        "sheng-jiang",
+        "fangfeng",
+        "zisuye"
+      ],
+      "cool-acrid": [
+        "mint",
+        "chrysanthemum",
+        "niuxi"
+      ]
+    },
+    "clear-heat": {
+      "clear-heat-drain-fire": [
+        "danshen",
+        "lianqiao"
+      ],
+      "clear-heat-dampness": [
+        "kushen",
+        "quanshen"
+      ],
+      "clear-heat-cool-blood": [
+        "dihuang",
+        "shoudihuang"
+      ],
+      "clear-heat-toxin": [
+        "dandelion",
+        "jinyinhua",
+        "chuanxinlian",
+        "indigowoad-root-banlangen"
+      ],
+      "clear-deficiency-heat": [
+        "shihu"
+      ]
+    },
+    "downward-draining": {
+      "purging": [
+        "chinese-rhubarb-root"
+      ]
+    },
+    "wind-damp-dispelling": [
+      "duhuo",
+      "fangji",
+      "niuxi"
+    ],
+    "transform-dampness": [
+      "cangzhu",
+      "huoxiang",
+      "peilan",
+      "cardamom"
+    ],
+    "leach-dampness": [
+      "fuling",
+      "zexie",
+      "jobs-tears",
+      "corn-silk"
+    ],
+    "warm-interior": [
+      "ganjiang"
+    ],
+    "rectify-qi": [
+      "tangerine-peel",
+      "zhiko",
+      "chuanxiong"
+    ],
+    "digestive": [
+      "shenqu"
+    ],
+    "hemostatic": [
+      "sanqi",
+      "aiye"
+    ],
+    "blood-quickening": [
+      "danshen",
+      "chuanxiong",
+      "taoren-or-peach-kernel",
+      "chinese-angelica-or-dong-quai"
+    ],
+    "stop-cough": [
+      "jiegeng",
+      "baigian"
+    ],
+    "calm-spirit": [
+      "suanzaoren",
+      "yuanzhi",
+      "muli",
+      "hehuanhua",
+      "dragon-bone"
+    ],
+    "calm-liver": [
+      "tianma",
+      "gouteng"
+    ],
+    "open-orifices": [
+      "changpu"
+    ],
+    "tonify-qi": [
+      "ren-shen",
+      "dangshen",
+      "baizhu",
+      "huangqi",
+      "liquorice-root",
+      "shan-yao",
+      "american-ginseng"
+    ],
+    "tonify-blood": [
+      "chinese-angelica-or-dong-quai",
+      "shudi",
+      "baishao",
+      "longyan"
+    ],
+    "tonify-yin": [
+      "maidong",
+      "beishashen",
+      "shihu",
+      "yuzhu",
+      "gouqizi",
+      "nuzhenzi",
+      "black-sesame-seed"
+    ],
+    "tonify-yang": [
+      "duzhong",
+      "buguzhi",
+      "roucongrong",
+      "suoyang",
+      "deer-antler",
+      "hugu"
+    ],
+    "astringent": [
+      "jinyingzi",
+      "shanzhuyu",
+      "wuweizi"
+    ],
+    "parasiticidal": [
+      "kulianpi"
+    ],
+    "external": [
+      "liugan"
+    ]
+  },
+  "_documentation": {
+    "source": "Based on standard TCM Materia Medica (中药学) classification",
+    "notes": "Some herbs belong to multiple categories based on their actions"
+  }
+}

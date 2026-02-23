@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/chinese-bellflower",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/chinese-bellflower",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"

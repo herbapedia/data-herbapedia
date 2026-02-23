@@ -1,0 +1,46 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/algae",
+  "@type": [
+    "herbapedia:BotanicalSource",
+    "phycology:AlgalSpecies",
+    "schema:Thing"
+  ],
+  "name": {
+    "en": "Algae",
+    "zh-Hant": "深海海藻",
+    "zh-Hans": "深海海藻"
+  },
+  "scientificName": "Sargassum fusiforme",
+  "family": null,
+  "genus": null,
+  "description": {
+    "en": "From the seaweed Saragassum pallidum (Turn) C. Ag. Or S. fusiforme (Harv) Setch.\n",
+    "zh-Hant": "深海海藻（學名：Sargassum fusiforme）是一種海洋藻類植物，在中醫藥學中具有軟堅散結、消痰利水的功效。現代研究表明其富含碘、褐藻酸等多種生物活性成分，具有調節甲狀腺功能、降血脂等藥理作用。",
+    "zh-Hans": "深海海藻（学名：Sargassum fusiforme）是一种海洋藻类植物，在中医药学中具有软堅散结、消痰利水的功效。現代研究表明其富含碘、褐藻酸等多种生物活性成分，具有调节甲狀腺功能、降血脂等药理作用。"
+  },
+  "image": "media/images/sargassum-fusiforme/main.jpg",
+  "gbifID": 3196917,
+  "provenance": {
+    "created": "2026-02-18T09:14:48.924Z",
+    "modified": "2026-02-21T01:46:20.745Z",
+    "migratedFrom": "entities/plants/algae/entity.jsonld",
+    "source": "vitaherbapedia.com",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "classificationNote": "Reclassified as BotanicalSource"
+  },
+  "hasParts": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/part/algae-whole-plant"
+    }
+  ],
+  "wikidataID": "Q1204264",
+  "sourceType": "botanical",
+  "sourceSubType": "alga",
+  "hasTCMProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/profile/algae"
+    }
+  ],
+  "ncbiTaxonID": "13077"
+}

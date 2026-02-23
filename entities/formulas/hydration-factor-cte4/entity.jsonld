@@ -1,0 +1,30 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/formula/hydration-factor-cte4",
+  "@type": [
+    "herbapedia:Formula",
+    "schema:DietarySupplement"
+  ],
+  "name": {
+    "en": "Hydration Factor CTE4",
+    "zh-Hant": "獨特保濕因子CTE4",
+    "zh-Hans": "独特保湿因子CTE4"
+  },
+  "scientificName": null,
+  "family": null,
+  "genus": null,
+  "description": {
+    "en": "Unique hydration factor used in cosmetic formulations for moisture retention."
+  },
+  "image": "media/images/hydration-factor-cte4/hydration-factor-cte4.jpg",
+  "provenance": {
+    "created": "2026-02-18T09:17:10.620Z",
+    "modified": "2026-02-21T01:46:20.753Z",
+    "migratedFrom": "entities/plants/hydration-factor-cte4/entity.jsonld",
+    "source": "vitaherbapedia.com",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "classificationNote": "Reclassified as Formula"
+  },
+  "sourceType": "formula",
+  "sourceSubType": "proprietary"
+}

@@ -1,0 +1,103 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "https://www.herbapedia.org/vocab/botany/",
+
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "schema": "https://schema.org/",
+
+    "herbapedia": "https://www.herbapedia.org/vocab/core/",
+    "botany": "https://www.herbapedia.org/vocab/botany/"
+  },
+
+  "@graph": [
+    {
+      "@id": "https://www.herbapedia.org/vocab/botany/",
+      "@type": "owl:Ontology",
+      "rdfs:label": {
+        "en": "Herbapedia Botany Vocabulary"
+      },
+      "rdfs:comment": "Botanical vocabulary for Herbapedia, including plant, fungal, and algal species classifications."
+    },
+
+    {
+      "@id": "botany:PlantSpecies",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "herbapedia:BotanicalSource",
+      "rdfs:label": {
+        "en": "Plant Species",
+        "zh-Hant": "植物物種"
+      },
+      "rdfs:comment": "A plant species entity containing botanical facts (taxonomy, distribution, morphology)."
+    },
+
+    {
+      "@id": "botany:FungalSpecies",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "herbapedia:BotanicalSource",
+      "rdfs:label": {
+        "en": "Fungal Species",
+        "zh-Hant": "真菌物種"
+      },
+      "rdfs:comment": "A fungal species (mushrooms, etc.) used in herbal medicine."
+    },
+
+    {
+      "@id": "botany:AlgalSpecies",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "herbapedia:BotanicalSource",
+      "rdfs:label": {
+        "en": "Algal Species",
+        "zh-Hant": "藻類物種"
+      },
+      "rdfs:comment": "An algal species used in herbal medicine."
+    },
+
+    {
+      "@id": "botany:PlantPart",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "herbapedia:Entity",
+      "rdfs:label": {
+        "en": "Plant Part",
+        "zh-Hant": "植物部位"
+      },
+      "rdfs:comment": "A specific part of a specific plant (root, leaf, stem, etc.)."
+    },
+
+    {
+      "@id": "botany:ChemicalCompound",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "herbapedia:Entity",
+      "rdfs:label": {
+        "en": "Chemical Compound",
+        "zh-Hant": "化學化合物"
+      },
+      "rdfs:comment": "A molecular entity (flavonoid, alkaloid, polysaccharide, etc.)."
+    },
+
+    {
+      "@id": "botany:ChemicalProfile",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "herbapedia:Entity",
+      "rdfs:label": {
+        "en": "Chemical Profile",
+        "zh-Hant": "化學成分"
+      },
+      "rdfs:comment": "Chemical composition data for a plant part."
+    },
+
+    {
+      "@id": "botany:DNABarcode",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "herbapedia:Entity",
+      "rdfs:label": {
+        "en": "DNA Barcode",
+        "zh-Hant": "DNA條碼"
+      },
+      "rdfs:comment": "DNA barcode for species identification."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/buguzhi-root",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Buguzhi Root",
+    "zh-Hant": "補骨脂",
+    "zh-Hans": "补骨脂"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/buguzhi"
+  },
+  "partType": "root",
+  "description": {
+    "en": "The root of Psoralea corylifolia, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.809Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

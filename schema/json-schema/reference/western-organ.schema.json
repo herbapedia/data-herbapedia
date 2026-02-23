@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herbapedia.org/schema/json-schema/reference/western-organ.schema.json",
+  "title": "Western Organ",
+  "description": "Western herbal organ affinity. Describes which organs or body systems an herb has an affinity for. Based on anatomical and physiological understanding, not energetic channels like TCM meridians.",
+  "type": "object",
+  "allOf": [
+    { "$ref": "./reference-entity.schema.json" }
+  ],
+  "required": ["@id", "@type", "name"],
+  "properties": {
+    "@id": {
+      "description": "Unique identifier: western/organ/{slug}.",
+      "type": "string",
+      "pattern": "^western/organ/[a-z0-9-]+$",
+      "examples": [
+        "western/organ/liver",
+        "western/organ/digestive-tract",
+        "western/organ/nervous-system",
+        "western/organ/respiratory-tract",
+        "western/organ/cardiovascular-system",
+        "western/organ/urinary-tract",
+        "western/organ/reproductive-system",
+        "western/organ/skin",
+        "western/organ/immune-system",
+        "western/organ/endocrine-system"
+      ]
+    },
+    "@type": {
+      "type": "array",
+      "items": { "type": "string" },
+      "contains": { "const": "western:Organ" },
+      "examples": [["western:Organ"]]
+    },
+    "name": {
+      "description": "Organ/system name.",
+      "$ref": "../core/language-map.schema.json",
+      "examples": [{ "en": "Liver" }, { "en": "Digestive Tract" }]
+    },
+    "organType": {
+      "description": "Classification of the organ type.",
+      "type": "string",
+      "enum": ["solid_organ", "hollow_organ", "gland", "tissue", "system"],
+      "_documentation": {
+        "solid_organ": "Liver, spleen, kidney, heart, etc.",
+        "hollow_organ": "Stomach, intestines, bladder, etc.",
+        "gland": "Thyroid, adrenal, pancreas, etc.",
+        "tissue": "Skin, connective tissue, muscle, etc.",
+        "system": "Nervous system, immune system, etc."
+      }
+    },
+    "bodySystem": {
+      "description": "The body system this organ belongs to.",
+      "$ref": "../core/iri-reference.schema.json"
+    },
+    "anatomicalLocation": {
+      "description": "Anatomical location description.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "physiologicalFunctions": {
+      "description": "Main physiological functions.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "associatedActions": {
+      "description": "Herbal actions that affect this organ.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" }
+    },
+    "commonHerbs": {
+      "description": "Herbs with strong affinity for this organ.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" }
+    },
+    "tcmEquivalent": {
+      "description": "Approximate TCM meridian equivalent.",
+      "$ref": "../core/iri-reference.schema.json"
+    },
+    "ayurvedaEquivalent": {
+      "description": "Approximate Ayurvedic concept equivalent.",
+      "type": "string"
+    }
+  },
+  "additionalProperties": true,
+  "_documentation": {
+    "iriPattern": "western/organ/{slug}",
+    "directory": "systems/western/reference/organs.jsonld",
+    "keyDistinction": {
+      "westernOrgan": "Anatomical/physiological organ affinity",
+      "notTCMMeridian": "Not an energetic channel (that's TCM meridian)",
+      "notAyurvedaDosha": "Not a constitutional type (that's Ayurveda dosha)"
+    },
+    "commonOrgans": {
+      "liver": "Detoxification, metabolism, bile production",
+      "digestive_tract": "Digestion, absorption, elimination",
+      "nervous_system": "Sensation, movement, cognition, emotion",
+      "respiratory_tract": "Gas exchange, immunity",
+      "cardiovascular_system": "Circulation, transport",
+      "urinary_tract": "Filtration, excretion, fluid balance",
+      "reproductive_system": "Reproduction, hormones",
+      "skin": "Protection, temperature regulation, sensation",
+      "immune_system": "Defense, inflammation, healing",
+      "endocrine_system": "Hormone production, metabolism"
+    }
+  }
+}

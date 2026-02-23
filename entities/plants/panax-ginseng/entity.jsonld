@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/panax-ginseng",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/panax-ginseng",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"
@@ -40,7 +40,7 @@
   },
   "hasPart": [
     {
-      "@id": "plant/panax-ginseng#root",
+      "@id": "https://www.herbapedia.org/entity/botanical/part/ginseng-root",
       "@type": "herbapedia:PlantPart",
       "name": {
         "en": "Root",
@@ -48,7 +48,7 @@
       }
     },
     {
-      "@id": "plant/panax-ginseng#leaf",
+      "@id": "https://www.herbapedia.org/entity/botanical/part/ginseng-leaf",
       "@type": "herbapedia:PlantPart",
       "name": {
         "en": "Leaf",
@@ -58,21 +58,24 @@
   ],
   "containsChemical": [
     {
-      "@id": "chemical/ginsenosides"
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/ginsenosides"
     },
     {
-      "@id": "chemical/polysaccharides"
-    },
-    {
-      "@id": "chemical/ginsenoses"
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/polysaccharides"
     }
   ],
   "image": "media/images/panax-ginseng/main.jpg",
   "url": "https://herbapedia.org/plants/panax-ginseng",
   "sameAs": [
-    "http://www.wikidata.org/entity/Q192163",
-    "https://www.gbif.org/species/3036592",
-    "https://en.wikipedia.org/wiki/Ginseng"
+    {
+      "@id": "http://www.wikidata.org/entity/Q192163"
+    },
+    {
+      "@id": "https://www.gbif.org/species/3036592"
+    },
+    {
+      "@id": "https://en.wikipedia.org/wiki/Ginseng"
+    }
   ],
   "source": "https://www.vitaherbapedia.com/ginseng",
   "license": "https://creativecommons.org/licenses/by-sa/4.0/",

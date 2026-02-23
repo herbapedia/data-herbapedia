@@ -1,0 +1,150 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/turmeric",
+  "@type": [
+    "western:Herb",
+    "schema:DietarySupplement"
+  ],
+  "profiles": {
+    "@id": "https://www.herbapedia.org/entity/preparation/turmeric-rhizome"
+  },
+  "name": {
+    "en": "Turmeric",
+    "zh-Hant": "薑黃"
+  },
+  "derivedFromPlant": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/turmeric"
+  },
+  "hasAction": [
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/anti-inflammatory"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/antioxidant"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/hepatic"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/antimicrobial"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/cardiotonic"
+    }
+  ],
+  "hasOrganAffinity": [
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/liver"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/joints"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/skin"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/brain"
+    }
+  ],
+  "primaryBodySystem": {
+    "@id": "https://www.herbapedia.org/system/western/profile/system/musculoskeletal"
+  },
+  "secondaryBodySystems": [
+    {
+      "@id": "https://www.herbapedia.org/system/western/profile/system/digestive"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/profile/system/cardiovascular"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/profile/system/immune"
+    }
+  ],
+  "westernTraditionalUsage": {
+    "en": "Turmeric has been used in Western herbal medicine since its introduction from India. Valued for its anti-inflammatory properties, particularly for joint conditions. Also used as a cholagogue, for digestive complaints, and as a general anti-inflammatory and antioxidant."
+  },
+  "westernModernResearch": {
+    "en": "One of the most extensively researched medicinal plants. Curcumin, the primary active compound, has demonstrated potent anti-inflammatory effects through COX-2, LOX, and NF-κB inhibition. Research supports benefits for osteoarthritis, depression, metabolic syndrome, and cognitive function. Poor bioavailability improved with piperine (black pepper) or lipid formulations."
+  },
+  "clinicalTrials": [
+    {
+      "condition": "Osteoarthritis of the knee",
+      "result": "Significant pain reduction comparable to ibuprofen",
+      "reference": "Journal of Medicinal Food, 2023"
+    },
+    {
+      "condition": "Major depressive disorder",
+      "result": "Significant improvement in depression scores",
+      "reference": "Phytotherapy Research, 2022"
+    },
+    {
+      "condition": "Metabolic syndrome",
+      "result": "Improved triglycerides, HDL, and inflammatory markers",
+      "reference": "Nutrition Journal, 2023"
+    }
+  ],
+  "activeConstituents": [
+    {
+      "name": "Curcumin (diferuloylmethane)",
+      "concentration": "2-5% of dried rhizome",
+      "activity": "Anti-inflammatory, antioxidant, hepatoprotective, neuroprotective"
+    },
+    {
+      "name": "Turmerones (α, β, ar-turmerone)",
+      "concentration": "1-3% essential oil",
+      "activity": "Anti-inflammatory, neuroprotective, enhances curcumin absorption"
+    },
+    {
+      "name": "Polysaccharides",
+      "concentration": "Variable",
+      "activity": "Immunomodulatory"
+    }
+  ],
+  "indications": [
+    "Osteoarthritis",
+    "Rheumatoid arthritis",
+    "Dyspepsia",
+    "Liver support",
+    "Hyperlipidemia",
+    "Depression",
+    "Cognitive decline",
+    "Skin inflammation"
+  ],
+  "contraindications": {
+    "en": "Gallbladder disease, bile duct obstruction, bleeding disorders, pregnancy (therapeutic doses). Discontinue 2 weeks before surgery."
+  },
+  "drugInteractions": [
+    {
+      "drug": "Anticoagulants and antiplatelet drugs",
+      "interaction": "Additive antiplatelet effect, increased bleeding risk",
+      "severity": "moderate"
+    },
+    {
+      "drug": "Chemotherapy drugs",
+      "interaction": "Variable - may enhance or interfere depending on drug",
+      "severity": "high"
+    },
+    {
+      "drug": "Iron supplements",
+      "interaction": "High doses may reduce iron absorption",
+      "severity": "low"
+    }
+  ],
+  "dosage": {
+    "en": "Standard: 1.5-3g dried root daily. Curcumin extract: 400-600mg 2-3 times daily. Enhanced bioavailability formulations: 500mg 1-2 times daily.",
+    "powder": "1-3g with food, best with black pepper (5mg piperine)",
+    "tincture": "2-4mL of 1:5 tincture, 2-3 times daily",
+    "capsule": "400-600mg standardized extract (95% curcuminoids), 2-3 times daily"
+  },
+  "bioavailabilityNote": {
+    "en": "Curcumin has poor bioavailability. Take with black pepper (piperine increases absorption by 2000%), fat (enhances lymphatic absorption), or use liposomal/phytosome formulations."
+  },
+  "evidenceLevel": "strong",
+  "safetyRating": {
+    "en": "Generally recognized as safe (GRAS). Well-tolerated in culinary amounts. High therapeutic doses may cause gastrointestinal upset."
+  },
+  "provenance": {
+    "created": "2024-01-15",
+    "source": "WHO Monographs, Natural Medicines Database, Cochrane Reviews"
+  }
+}

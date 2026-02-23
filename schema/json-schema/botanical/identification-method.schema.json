@@ -1,0 +1,209 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herbapedia.org/schema/json-schema/botanical/identification-method.schema.json",
+  "title": "Identification Method",
+  "description": "Documentation of analytical methods used to identify and authenticate plant materials. Includes chromatographic methods (HPLC, GC, TLC), spectroscopic methods (NMR, MS), DNA-based methods, and organoleptic evaluation.",
+  "type": "object",
+  "allOf": [
+    { "$ref": "../core/entity.schema.json" }
+  ],
+  "required": ["@id", "@type", "name", "methodType"],
+  "properties": {
+    "@id": {
+      "description": "Unique identifier: botanical/identification-method/{slug}.",
+      "type": "string",
+      "pattern": "^botanical/identification-method/[a-z0-9-]+$",
+      "examples": [
+        "botanical/identification-method/hplc-fingerprint",
+        "botanical/identification-method/dna-barcode-its2",
+        "botanical/identification-method/gc-ms-volatile-oils"
+      ]
+    },
+    "@type": {
+      "type": "array",
+      "items": { "type": "string" },
+      "contains": { "const": "botany:IdentificationMethod" },
+      "examples": [["botany:IdentificationMethod", "schema:Procedure"]]
+    },
+    "methodType": {
+      "description": "Category of identification method.",
+      "type": "string",
+      "enum": [
+        "chromatographic",
+        "spectroscopic",
+        "molecular",
+        "microscopic",
+        "organoleptic",
+        "morphological",
+        "chemical"
+      ],
+      "_documentation": {
+        "chromatographic": "HPLC, GC, TLC, GC-MS, LC-MS - separates compounds for analysis",
+        "spectroscopic": "NMR, IR, UV-Vis, MS - analyzes molecular structure",
+        "molecular": "DNA barcoding, PCR, sequencing - genetic identification",
+        "microscopic": "Light microscopy, SEM - examines cellular structure",
+        "organoleptic": "Sensory evaluation - taste, smell, appearance, texture",
+        "morphological": "Physical characteristics - shape, size, color",
+        "chemical": "Chemical tests - color reactions, precipitations"
+      }
+    },
+    "methodCategory": {
+      "description": "Specific method within the type.",
+      "type": "string",
+      "enum": [
+        "hplc",
+        "gc",
+        "gc-ms",
+        "lc-ms",
+        "tlc",
+        "hptlc",
+        "nmr",
+        "ftir",
+        "uv-vis",
+        "ms",
+        "dna-barcode",
+        "pcr",
+        "rt-pcr",
+        "sequencing",
+        "microscopy",
+        "sem",
+        "organoleptic",
+        "macroscopic",
+        "chemical-test"
+      ],
+      "_documentation": {
+        "hplc": "High-Performance Liquid Chromatography",
+        "gc": "Gas Chromatography",
+        "gc-ms": "Gas Chromatography-Mass Spectrometry",
+        "lc-ms": "Liquid Chromatography-Mass Spectrometry",
+        "tlc": "Thin Layer Chromatography",
+        "hptlc": "High-Performance Thin Layer Chromatography",
+        "nmr": "Nuclear Magnetic Resonance",
+        "ftir": "Fourier Transform Infrared Spectroscopy",
+        "uv-vis": "Ultraviolet-Visible Spectroscopy",
+        "ms": "Mass Spectrometry",
+        "dna-barcode": "DNA Barcoding (standard regions)",
+        "pcr": "Polymerase Chain Reaction",
+        "rt-pcr": "Real-Time PCR",
+        "sequencing": "DNA/RNA Sequencing",
+        "microscopy": "Light Microscopy",
+        "sem": "Scanning Electron Microscopy",
+        "organoleptic": "Sensory Evaluation",
+        "macroscopic": "Visual/Physical Examination",
+        "chemical-test": "Qualitative Chemical Tests"
+      }
+    },
+    "targetCompound": {
+      "description": "Compounds this method identifies.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" }
+    },
+    "targetRegion": {
+      "description": "For DNA methods: target barcode region.",
+      "type": "string",
+      "enum": ["rbcL", "matK", "ITS", "ITS2", "trnL-F", "trnH-psbA", "psbA-trnH", "COI"]
+    },
+    "equipment": {
+      "description": "Required equipment and instruments.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "samplePreparation": {
+      "description": "How to prepare the sample for analysis.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "procedure": {
+      "description": "Step-by-step procedure.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "referenceStandard": {
+      "description": "Reference standards or controls used.",
+      "type": "string"
+    },
+    "sensitivity": {
+      "description": "Detection sensitivity/limit.",
+      "type": "string",
+      "examples": ["0.1 ppm", "1 ng/mL", "0.01%"]
+    },
+    "specificity": {
+      "description": "Ability to distinguish target from similar compounds.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "precision": {
+      "description": "Reproducibility of results.",
+      "type": "string",
+      "examples": ["RSD < 2%", "CV < 5%"]
+    },
+    "accuracy": {
+      "description": "Accuracy of the method.",
+      "type": "string",
+      "examples": ["Recovery 95-105%", "±0.5%"]
+    },
+    "validationStatus": {
+      "description": "Validation status of the method.",
+      "type": "string",
+      "enum": ["pharmacopoeial", "validated", "in-house", "research", "preliminary"],
+      "_documentation": {
+        "pharmacopoeial": "Official pharmacopoeia method (USP, EP, ChP)",
+        "validated": "Validated per ICH guidelines",
+        "in-house": "Company/lab specific method",
+        "research": "Research laboratory method",
+        "preliminary": "Not yet validated"
+      }
+    },
+    "pharmacopoeiaReference": {
+      "description": "Reference to pharmacopoeial monograph.",
+      "type": "string",
+      "examples": ["USP <561>", "Ph.Eur. 2.2.29", "ChP 2020"]
+    },
+    "advantages": {
+      "description": "Advantages of this method.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "limitations": {
+      "description": "Limitations of this method.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "alternativeMethods": {
+      "description": "Alternative identification methods.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" }
+    },
+    "costLevel": {
+      "description": "Relative cost of the method.",
+      "type": "string",
+      "enum": ["low", "medium", "high", "very-high"]
+    },
+    "timeRequired": {
+      "description": "Approximate time for analysis.",
+      "type": "string",
+      "examples": ["30 minutes", "4 hours", "2 days"]
+    },
+    "citations": {
+      "description": "Scientific citations.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "doi": { "type": "string" },
+          "pmid": { "type": "string" },
+          "title": { "type": "string" }
+        }
+      }
+    }
+  },
+  "additionalProperties": true,
+  "_documentation": {
+    "iriPattern": "botanical/identification-method/{slug}",
+    "directory": "entities/botanical/methods/{slug}/entity.jsonld",
+    "purpose": "Document analytical methods for plant authentication and quality control",
+    "methodHierarchy": {
+      "Chromatographic": ["HPLC", "GC", "GC-MS", "LC-MS", "TLC", "HPTLC"],
+      "Spectroscopic": ["NMR", "FTIR", "UV-Vis", "MS"],
+      "Molecular": ["DNA Barcoding", "PCR", "Sequencing"],
+      "Traditional": ["Organoleptic", "Microscopic", "Macroscopic"]
+    }
+  }
+}

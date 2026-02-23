@@ -1,0 +1,28 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/iodine",
+  "@type": [
+    "herbapedia:WesternHerbalProfile"
+  ],
+  "profiles": {
+    "@id": "https://www.herbapedia.org/entity/preparation/iodine"
+  },
+  "name": {
+    "en": "Iodine",
+    "zh-Hant": "碘",
+    "zh-Hans": "碘"
+  },
+  "derivedFromPlant": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/iodine"
+  },
+  "westernTraditionalUsage": {
+    "en": "The main function of iodine in the human body is the making of iodine-containing thyroid hormones. It is also vital to hair growth. Since the main dietary source of iodine is from seafood and kelp, iodine deficiency tends to affect people living in inland areas causing hypothyroidism, distinguished by fatigue, an enlarged thyroid gland, depression and mental problems.\n",
+    "zh-Hant": "碘在人體中的主要功能是製造含碘的甲狀腺荷爾蒙。\n",
+    "zh-Hans": "碘在人体中的主要功能是製造含碘的甲状腺荷尔蒙。\n"
+  },
+  "provenance": {
+    "created": "2026-02-20T15:22:03.242Z",
+    "modified": "2026-02-20T15:22:03.242Z",
+    "migratedFrom": "systems/western/herbs/iodine/profile.jsonld"
+  }
+}

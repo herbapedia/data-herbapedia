@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herbapedia.org/schema/json-schema/core/iri-reference.schema.json",
+  "title": "IRI Reference",
+  "description": "A typed reference to another entity within the Herbapedia dataset. Uses the compact IRI format `{namespace}/{type}/{slug}` for internal references, or full URIs for external references.",
+  "type": "object",
+  "required": ["@id"],
+  "properties": {
+    "@id": {
+      "description": "The IRI identifying the referenced entity. For internal references, uses compact form like 'botanical/species/zingiber-officinale'. For external references, uses full URI.",
+      "type": "string",
+      "examples": [
+        "botanical/species/zingiber-officinale",
+        "botanical/part/zingiber-officinale-rhizome",
+        "preparation/fresh-ginger-rhizome",
+        "tcm/profile/sheng-jiang",
+        "tcm/nature/warm",
+        "http://www.wikidata.org/entity/Q1097047"
+      ]
+    },
+    "@type": {
+      "description": "Optional type hint for the referenced entity. Useful when the reference could be polymorphic.",
+      "type": "string",
+      "examples": ["botany:PlantSpecies", "herbal:HerbalPreparation"]
+    }
+  },
+  "additionalProperties": false,
+  "_documentation": {
+    "iriPatterns": {
+      "botanical/species/{slug}": "A plant species entity (e.g., botanical/species/zingiber-officinale)",
+      "botanical/part/{slug}": "A plant part entity (e.g., botanical/part/zingiber-officinale-rhizome)",
+      "botanical/chemical/{slug}": "A chemical compound (e.g., botanical/chemical/gingerol)",
+      "botanical/profile/{slug}": "A chemical profile (e.g., botanical/profile/zingiber-officinale-chemistry)",
+      "preparation/{slug}": "An herbal preparation (e.g., preparation/fresh-ginger-rhizome)",
+      "tcm/profile/{slug}": "A TCM herb profile (e.g., tcm/profile/sheng-jiang)",
+      "tcm/category/{slug}": "TCM herb category (e.g., tcm/category/release-exterior)",
+      "tcm/nature/{slug}": "TCM thermal nature (e.g., tcm/nature/warm)",
+      "tcm/flavor/{slug}": "TCM flavor (e.g., tcm/flavor/acrid)",
+      "tcm/meridian/{slug}": "TCM meridian (e.g., tcm/meridian/spleen)",
+      "western/profile/{slug}": "A Western herbal profile",
+      "western/action/{slug}": "Western herbal action (e.g., western/action/carminative)",
+      "western/organ/{slug}": "Western organ system (e.g., western/organ/digestive)",
+      "ayurveda/profile/{slug}": "An Ayurvedic dravya profile",
+      "ayurveda/rasa/{slug}": "Ayurvedic taste (e.g., ayurveda/rasa/madhura)",
+      "ayurveda/guna/{slug}": "Ayurvedic quality (e.g., ayurveda/guna/laghu)",
+      "ayurveda/virya/{slug}": "Ayurvedic potency (e.g., ayurveda/virya/ushna)",
+      "ayurveda/vipaka/{slug}": "Ayurvedic post-digestive effect",
+      "ayurveda/dosha/{slug}": "Ayurvedic dosha (e.g., ayurveda/dosha/vata)"
+    },
+    "usageNotes": [
+      "Always use the compact IRI format for internal references",
+      "The @id must match exactly the @id of the target entity",
+      "External references should use full URIs (Wikidata, GBIF, etc.)"
+    ]
+  }
+}

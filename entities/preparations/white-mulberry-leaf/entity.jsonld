@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/preparation/white-mulberry-leaf",
+  "@type": [
+    "herbal:HerbalPreparation",
+    "schema:DietarySupplement"
+  ],
+  "name": {
+    "en": "White Mulberry Leaf",
+    "zh-Hant": "桑白皮",
+    "zh-Hans": "桑白皮"
+  },
+  "derivedFrom": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/white-mulberry-leaf"
+    }
+  ],
+  "preparationMethod": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/method/dried"
+  },
+  "form": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/form/whole"
+  },
+  "hasTCMProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/profile/white-mulberry-leaf"
+    }
+  ],
+  "safetyInfo": {},
+  "provenance": {
+    "created": "2026-02-20",
+    "source": "Generated from TCM profile",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "description": {
+    "en": "Herbal preparation derived from White Mulberry Leaf. Morus alba, also known as white mulberry leaf, is bitter, sweet and cold in nature and enters the lung meridian. It expels fire in the lungs to enhance smooth, easy breathing and stop coughs. It is al..."
+  },
+  "image": "media/images/white-mulberry-leaf/white-mulberry-leaf.jpg"
+}

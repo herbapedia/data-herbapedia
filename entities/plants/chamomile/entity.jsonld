@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/chamomile",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/chamomile",
   "@type": [
     "botany:Plant",
     "schema:Thing"
@@ -31,14 +31,16 @@
   "image": "media/images/chamomile/chamomile.jpg",
   "containsChemical": [
     {
-      "@id": "chemical/essential-oils"
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/essential-oils"
     },
     {
-      "@id": "chemical/flavonoids"
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/flavonoids"
     }
   ],
   "sameAs": [
-    "https://www.wikidata.org/wiki/Q146135"
+    {
+      "@id": "https://www.wikidata.org/wiki/Q146135"
+    }
   ],
   "gbifId": "3121302",
   "created": "2026-02-20T00:00:00.000Z",

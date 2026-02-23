@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/evening-primrose-oil",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/evening-primrose-oil",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"

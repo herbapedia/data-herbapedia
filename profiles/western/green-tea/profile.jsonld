@@ -1,0 +1,33 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/green-tea",
+  "@type": [
+    "herbapedia:WesternHerbalProfile"
+  ],
+  "profiles": {
+    "@id": "https://www.herbapedia.org/entity/preparation/green-tea"
+  },
+  "name": {
+    "en": "Green Tea",
+    "zh-Hant": "綠茶",
+    "zh-Hans": "绿茶"
+  },
+  "derivedFromPlant": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/green-tea"
+  },
+  "westernTraditionalUsage": {
+    "en": "Green tea is renowned for its antioxidant properties, general health-enhancing effects and ability to help relieve mental and physical fatigue. It is also high in bioflavanoids, which help to fight free radicals. The traditional method is to steep the leaves in hot water to make a refreshing drink: green tea extract contains the leaves in a powdered form that has been standardised to guarantee a high dose of the active ingredients.\n",
+    "zh-Hant": "綠茶為天然抗氧化劑，服用能增強健康，幫助紓緩身體與腦部疲勞。綠茶多用作對抗頑疾，防止腦血栓，降低體內膽固醇，調節血糖和瘦身減重。\n",
+    "zh-Hans": "绿茶为天然抗氧化剂，服用能增强健康，帮助纾缓身体与脑部疲劳。绿茶多用作对抗顽疾，防止脑血栓，降低体内胆固醇，调节血糖和瘦身减重。\n"
+  },
+  "westernHistory": {
+    "en": "In China green tea has been used for centuries to treat poor digestion, headaches, prevent fatigue and sharpen the mind. Tea plants themselves are indigenous to rainy Asian forests and are cultivated widely across China, Sri Lanka, India, Japan, Indonesia and the African continent.\n",
+    "zh-Hant": "",
+    "zh-Hans": ""
+  },
+  "provenance": {
+    "created": "2026-02-20T15:22:03.241Z",
+    "modified": "2026-02-20T15:22:03.241Z",
+    "migratedFrom": "systems/western/herbs/green-tea/profile.jsonld"
+  }
+}

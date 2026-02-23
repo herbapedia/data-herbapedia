@@ -1,0 +1,90 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/chemical/ginsenosides",
+  "@type": [
+    "botany:ChemicalCompound",
+    "schema:BioChemEntity"
+  ],
+  "name": {
+    "en": "Ginsenosides",
+    "zh-Hant": "人蔘皂苷",
+    "zh-Hans": "人参皂苷"
+  },
+  "chebiID": "CHEBI:73682",
+  "description": {
+    "en": "A group of triterpene saponins (ginsenosides) that are the major bioactive compounds in ginseng. Over 30 different ginsenosides have been identified, classified into dammarane-type structures. They are divided into protopanaxadiol (PPD) and protopanaxatriol (PPT) groups based on their aglycone structure.",
+    "zh-Hant": "人蔘中的主要生物活性成分群，為三萜皂苷（人蔘皂苷）。已鑑定出30多種，分類為達瑪烷型結構。根據苷元結構分為原人蔘二醇（PPD）和原人蔘三醇（PPT）兩組。"
+  },
+  "molecularFormula": "C54H92O24 (Rb1 example)",
+  "molecularWeight": 1109.29,
+  "compoundClass": "Triterpene saponin; Dammarane-type",
+  "foundIn": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/american-ginseng"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/ginseng"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/panax-ginseng"
+    }
+  ],
+  "pharmacology": [
+    "Adaptogenic effects (non-specific stress resistance)",
+    "Immunomodulatory activity",
+    "Neuroprotective effects",
+    "Cardiovascular protection",
+    "Anti-fatigue effects",
+    "Cognitive enhancement"
+  ],
+  "subtypes": [
+    {
+      "name": "Protopanaxadiol (PPD) type",
+      "examples": [
+        "Rb1",
+        "Rb2",
+        "Rc",
+        "Rd",
+        "Rg3"
+      ],
+      "effects": [
+        "Sedative",
+        "Memory enhancement",
+        "Anti-inflammatory"
+      ]
+    },
+    {
+      "name": "Protopanaxatriol (PPT) type",
+      "examples": [
+        "Re",
+        "Rf",
+        "Rg1",
+        "Rg2",
+        "Rh1"
+      ],
+      "effects": [
+        "Stimulating",
+        "Vasodilation",
+        "Anti-fatigue"
+      ]
+    }
+  ],
+  "bioavailability": {
+    "en": "Poor oral bioavailability due to metabolism by intestinal bacteria. Gut microbiota convert ginsenosides to compound K, which is better absorbed."
+  },
+  "safetyData": {
+    "warnings": [
+      "May interact with anticoagulants",
+      "May affect blood pressure",
+      "Avoid during pregnancy without medical advice"
+    ]
+  },
+  "provenance": {
+    "created": "2024-01-15",
+    "modified": "2026-02-20T17:59:34.448Z",
+    "source": "PubChem, ChEBI, Scientific Literature",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  }
+}

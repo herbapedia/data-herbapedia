@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/vitamin-b7-biotin",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/vitamin-b7-biotin",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"

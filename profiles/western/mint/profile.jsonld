@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/mint",
+  "@type": [
+    "herbapedia:WesternHerbalProfile"
+  ],
+  "profiles": {
+    "@id": "https://www.herbapedia.org/entity/preparation/mint"
+  },
+  "name": {
+    "en": "Mint",
+    "zh-Hant": "薄荷",
+    "zh-Hans": "薄荷"
+  },
+  "derivedFromPlant": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/mint"
+  },
+  "hasOrganAffinity": [
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/respiratory"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/liver"
+    }
+  ],
+  "westernTraditionalUsage": {
+    "en": "Baohe, made from dried mint leaves, is a cooling herb that enters the liver and lung meridians. Its main actions are to release the exterior; dispel wind-heat; clear the head, brighten the eyes and benefit the throat; vent rashes; soothe liver chi stagnation; and disperse turbid chi from the abdomen. It is commonly used in the early stages of feverish illnesses like flu to treat symptoms such as headaches, sore throats, a temperature and a dry mouth.\n",
+    "zh-Hant": "薄荷是發散風熱藥，味辛，藥性涼，歸肺、肝經，能疏散風熱、清利頭目、利咽、疏肝解鬱、透疹，常用於風熱感冒、頭痛、咽痛。\n",
+    "zh-Hans": "薄荷是发散风热药，味辛，药性凉，归肺、肝经，能疏散风热、清利头目、利咽、疏肝解鬱、透疹，常用於风热感冒、头痛、咽痛。\n"
+  },
+  "westernHistory": {
+    "en": "First appeared in Tang Materia Medica.\n",
+    "zh-Hant": "【薄荷】在西方草藥學中的應用歷史悠久，現代研究證實其具有多種藥理活性。",
+    "zh-Hans": "【薄荷】在西方草药学中的应用历史悠久，現代研究证实其具有多种药理活性。"
+  },
+  "provenance": {
+    "created": "2026-02-20T15:22:03.245Z",
+    "modified": "2026-02-20T15:22:03.245Z",
+    "migratedFrom": "systems/western/herbs/mint/profile.jsonld"
+  }
+}

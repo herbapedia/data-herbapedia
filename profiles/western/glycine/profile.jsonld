@@ -1,0 +1,28 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/glycine",
+  "@type": [
+    "herbapedia:WesternHerbalProfile"
+  ],
+  "profiles": {
+    "@id": "https://www.herbapedia.org/entity/preparation/glycine"
+  },
+  "name": {
+    "en": "Glycine",
+    "zh-Hant": "甘氨酸",
+    "zh-Hans": "甘氨酸"
+  },
+  "derivedFromPlant": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/glycine"
+  },
+  "westernTraditionalUsage": {
+    "en": "Glycine is an amino acid of major importance in the production of many substances in the human body. It helps synthesise protein and amino acids, construct nucleic acids (our genetic material) and convert glucose into energy. It is also involved in the synthesis of bile and therefore vital for a healthy digestive system. Glycine is also a neurotransmitter in the central nervous system.\n",
+    "zh-Hant": "",
+    "zh-Hans": ""
+  },
+  "provenance": {
+    "created": "2026-02-20T15:22:03.241Z",
+    "modified": "2026-02-20T15:22:03.241Z",
+    "migratedFrom": "systems/western/herbs/glycine/profile.jsonld"
+  }
+}

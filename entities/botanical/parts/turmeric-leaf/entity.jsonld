@@ -1,0 +1,31 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/turmeric-leaf",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Turmeric Leaf",
+    "zh-Hant": "薑黃葉",
+    "zh-Hans": "姜黄叶"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/turmeric"
+  },
+  "partType": "leaf",
+  "description": {
+    "en": "The large, oblong leaves of turmeric, growing to 30-40 cm long. Used in traditional medicine and also as a wrapping for food in some cuisines."
+  },
+  "morphology": {
+    "en": "Oblong-lanceolate, 30-40 cm long, 10-15 cm wide. Green above, lighter below. Entire margin, parallel venation typical of monocots."
+  },
+  "provenance": {
+    "created": "2024-01-15",
+    "modified": "2024-01-15",
+    "source": "Flora of India",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  }
+}

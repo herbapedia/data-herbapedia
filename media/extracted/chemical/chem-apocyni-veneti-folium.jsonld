@@ -1,0 +1,286 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/chemical/apocyni-veneti-folium",
+  "@type": ["herbapedia:ChemicalAnalysisData", "schema:Dataset"],
+  "dataType": "ChemicalAnalysis",
+  "sourceDocument": "CHEM______Apocyni_Veneti_Folium_V1.pdf",
+  "scientificName": "Apocynum venetum L.",
+  "chineseName": "羅布麻葉",
+  "pinyinName": "Luobuma Ye",
+  "identificationMethod": ["TLC", "HPLC-Fingerprint", "HPLC-Assay"],
+  "referenceCompounds": [
+    {
+      "name": "Hyperoside",
+      "chineseName": "金絲桃苷",
+      "formula": "C₂₁H₂₀O₁₂",
+      "purpose": ["TLC identification", "HPLC fingerprint marker", "HPLC assay quantification"]
+    },
+    {
+      "name": "Isoquercitrin",
+      "chineseName": "異槲皮苷",
+      "formula": "C₂₁H₂₀O₁₂",
+      "purpose": ["TLC identification", "HPLC fingerprint marker (reference peak)", "HPLC assay quantification"]
+    }
+  ],
+  "assayLimits": {
+    "hyperoside": {
+      "compound": "Hyperoside",
+      "formula": "C₂₁H₂₀O₁₂",
+      "minimumContent": "0.45%",
+      "basis": "dried substance"
+    },
+    "isoquercitrin": {
+      "compound": "Isoquercitrin",
+      "formula": "C₂₁H₂₀O₁₂",
+      "minimumContent": "0.36%",
+      "basis": "dried substance"
+    }
+  },
+  "tlcMethod": {
+    "appendixReference": "Appendix I",
+    "stationaryPhase": "HPTLC silica gel F₂₅₄ plate",
+    "developingSolvent": {
+      "components": ["ethyl acetate", "butanone", "formic acid", "water"],
+      "ratio": "10:2:2:0.9 (v/v)"
+    },
+    "sprayReagent": {
+      "composition": "1 g aluminium trichloride dissolved in 100 mL ethanol",
+      "visualization": "UV light (366 nm) after spraying and drying"
+    },
+    "testSolution": {
+      "sampleAmount": "2.0 g",
+      "solvent": "50% ethanol",
+      "solventVolume": "30 mL",
+      "extraction": "ultrasonication (150 W) for 10 minutes"
+    },
+    "standardSolutions": {
+      "hyperoside": {
+        "concentration": "0.9 mg/mL in 50% ethanol",
+        "preparation": "4.5 mg in 5 mL 50% ethanol"
+      },
+      "isoquercitrin": {
+        "concentration": "1.0 mg/mL in 50% ethanol",
+        "preparation": "5.0 mg in 5 mL 50% ethanol"
+      }
+    },
+    "applicationVolumes": {
+      "hyperosideStandard": "0.3 µL",
+      "isoquercitrinStandard": "0.5 µL",
+      "testSolution": "3 µL"
+    },
+    "chamberSaturation": "15 minutes in twin trough chamber",
+    "developingDistance": "8 cm",
+    "visualization": "UV light (366 nm) after spraying with aluminium trichloride reagent",
+    "identificationCriteria": {
+      "positiveMarkers": ["Hyperoside", "Isoquercitrin"],
+      "identificationRequirement": "Sample must show spots or bands with characteristics (color and Rf value) corresponding to hyperoside and isoquercitrin"
+    }
+  },
+  "hplcFingerprint": {
+    "appendixReference": "Appendix II",
+    "chromatographicSystem": {
+      "detector": "DAD (Diode Array Detector)",
+      "detectionWavelength": "360 nm",
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 µm"
+      },
+      "flowRate": "1.0 mL/min",
+      "mobilePhase": {
+        "components": ["acetonitrile", "0.1% formic acid"],
+        "gradientProgram": [
+          {
+            "timeRange": "0-10 min",
+            "acetonitrile": "12% → 17%",
+            "formicAcid": "88% → 83%",
+            "elution": "linear gradient"
+          },
+          {
+            "timeRange": "10-23 min",
+            "acetonitrile": "17%",
+            "formicAcid": "83%",
+            "elution": "isocratic"
+          },
+          {
+            "timeRange": "23-35 min",
+            "acetonitrile": "17% → 20%",
+            "formicAcid": "83% → 80%",
+            "elution": "linear gradient"
+          },
+          {
+            "timeRange": "35-45 min",
+            "acetonitrile": "20% → 30%",
+            "formicAcid": "80% → 70%",
+            "elution": "linear gradient"
+          },
+          {
+            "timeRange": "45-50 min",
+            "acetonitrile": "30% → 70%",
+            "formicAcid": "70% → 30%",
+            "elution": "linear gradient"
+          }
+        ]
+      },
+      "runTime": "50 min"
+    },
+    "standardSolutions": {
+      "hyperosideStdFP": {
+        "concentration": "50 mg/L",
+        "preparation": "2.5 mg in 50 mL 70% ethanol",
+        "purpose": "fingerprinting"
+      },
+      "isoquercitrinStdFP": {
+        "concentration": "60 mg/L",
+        "preparation": "3.0 mg in 50 mL 70% ethanol",
+        "purpose": "fingerprinting"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "0.5 g",
+      "solvent": "70% ethanol",
+      "solventVolume": "20 mL",
+      "extraction": "ultrasonication (150 W) for 30 minutes",
+      "centrifugation": "5 minutes at approximately 3000 × g",
+      "filtration": "0.45 µm PTFE filter"
+    },
+    "injectionVolume": "10 µL",
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "peakAreaRSD": "≤ 5.0% (hyperoside and isoquercitrin)",
+      "retentionTimeRSD": "≤ 2.0% (hyperoside and isoquercitrin)",
+      "theoreticalPlates": "≥ 13,000 (based on hyperoside and isoquercitrin)",
+      "resolution": "≥ 1.5 (between peaks 1, 2 and adjacent peaks)"
+    },
+    "identificationCriteria": {
+      "retentionTimeTolerance": "≤ 2.0% difference between sample and standard"
+    }
+  },
+  "hplcAssay": {
+    "appendixReference": "Appendix III",
+    "chromatographicSystem": {
+      "detector": "DAD (Diode Array Detector)",
+      "detectionWavelength": "256 nm",
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 µm"
+      },
+      "flowRate": "1.0 mL/min",
+      "mobilePhase": {
+        "components": ["acetonitrile", "0.05% trifluoroacetic acid"],
+        "gradientProgram": [
+          {
+            "timeRange": "0-22 min",
+            "acetonitrile": "17% → 18%",
+            "tfa": "83% → 82%",
+            "elution": "linear gradient"
+          },
+          {
+            "timeRange": "22-30 min",
+            "acetonitrile": "18% → 35%",
+            "tfa": "82% → 65%",
+            "elution": "linear gradient"
+          }
+        ]
+      },
+      "runTime": "30 min"
+    },
+    "standardSolutions": {
+      "stockSolution": {
+        "name": "Std-Stock",
+        "concentration": "100 mg/L each",
+        "preparation": "1.0 mg hyperoside CRS and 1.0 mg isoquercitrin CRS in 10 mL 70% methanol",
+        "contents": ["hyperoside", "isoquercitrin"]
+      },
+      "workingSolutions": {
+        "name": "Std-AS",
+        "concentrations": ["2", "10", "20", "30", "60 mg/L"],
+        "description": "Series of mixed hyperoside and isoquercitrin standard solutions diluted from stock with 70% methanol"
+      },
+      "injectionVolume": "10 µL"
+    },
+    "testSolution": {
+      "sampleAmount": "0.2 g",
+      "solvent": "70% methanol",
+      "extractionVolume": "40 mL",
+      "extraction": "reflux for 3 hours",
+      "centrifugation": "5 minutes at approximately 3000 × g",
+      "finalVolume": "50 mL",
+      "filtration": "0.45 µm RC filter"
+    },
+    "systemSuitability": {
+      "standardSolution": "Std-AS (20 mg/L each)",
+      "replicateInjections": "5 (minimum)",
+      "injectionVolume": "10 µL",
+      "peakAreaRSD": "≤ 5.0% (hyperoside and isoquercitrin)",
+      "retentionTimeRSD": "≤ 2.0% (hyperoside and isoquercitrin)",
+      "theoreticalPlates": "≥ 8,000 (based on hyperoside and isoquercitrin)",
+      "resolution": "≥ 1.5 (between hyperoside, isoquercitrin peaks and adjacent peaks)"
+    },
+    "calibration": {
+      "method": "5-point calibration curve",
+      "plot": "Peak area vs. concentration (mg/L)",
+      "identificationTolerance": "≤ 5.0% difference in retention times"
+    }
+  },
+  "rrtValues": [
+    {
+      "peakNumber": 1,
+      "compound": "Hyperoside",
+      "chineseName": "金絲桃苷",
+      "rrt": 0.95,
+      "acceptableRange": "± 0.03",
+      "referenceMarker": false,
+      "referenceTo": "Isoquercitrin"
+    },
+    {
+      "peakNumber": 2,
+      "compound": "Isoquercitrin",
+      "chineseName": "異槲皮苷",
+      "rrt": 1.00,
+      "acceptableRange": null,
+      "referenceMarker": true,
+      "referenceTo": "self"
+    },
+    {
+      "peakNumber": 3,
+      "compound": "Unknown",
+      "rrt": 1.20,
+      "acceptableRange": "± 0.03",
+      "referenceMarker": false,
+      "referenceTo": "Isoquercitrin"
+    },
+    {
+      "peakNumber": 4,
+      "compound": "Unknown",
+      "rrt": 1.58,
+      "acceptableRange": "± 0.03",
+      "referenceMarker": false,
+      "referenceTo": "Isoquercitrin"
+    },
+    {
+      "peakNumber": 5,
+      "compound": "Unknown",
+      "rrt": 1.82,
+      "acceptableRange": "± 0.05",
+      "referenceMarker": false,
+      "referenceTo": "Isoquercitrin"
+    }
+  ],
+  "appendices": {
+    "appendixI": {
+      "title": "Chromatography - Thin-Layer Chromatography (TLC)",
+      "description": "General procedures for TLC including plate types (silica gel G, F254, HPTLC), application methods, developing chambers (twin trough), Rf calculation, and visualization techniques under UV light"
+    },
+    "appendixII": {
+      "title": "Gas Chromatographic and HPLC/UHPLC Fingerprinting",
+      "description": "Methods for establishing chromatographic fingerprints using marker peaks and RRT values. Requires at least 10 batches of representative samples tested in duplicate (20 data sets)"
+    },
+    "appendixIII": {
+      "title": "Chromatography - HPLC/UHPLC",
+      "description": "General HPLC/UHPLC procedures including system suitability tests (theoretical plates, repeatability, resolution, tailing factor) and quantitative calculations using calibration curves"
+    }
+  },
+  "extractedAt": "2026-02-21"
+}

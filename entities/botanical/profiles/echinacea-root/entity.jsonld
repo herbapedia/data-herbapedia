@@ -1,0 +1,51 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/botany.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/chemical-profile/echinacea-root",
+  "@type": [
+    "botany:ChemicalProfile",
+    "schema:Dataset"
+  ],
+  "name": {
+    "en": "Echinacea Root Chemical Profile",
+    "zh-Hant": "紫錐花根化學成分譜",
+    "zh-Hans": "紫锥花根化学成分谱"
+  },
+  "profileOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/part/echinacea-root"
+  },
+  "hasComponent": [
+    {
+      "compound": {
+        "@id": "https://www.herbapedia.org/entity/botanical/chemical/polysaccharides"
+      },
+      "relativeAbundance": "major",
+      "concentrationRange": {
+        "min": 1,
+        "max": 5,
+        "unit": "%"
+      },
+      "detectionMethod": "HPLC"
+    },
+    {
+      "compound": {
+        "@id": "https://www.herbapedia.org/entity/botanical/chemical/alkaloids"
+      },
+      "relativeAbundance": "major",
+      "concentrationRange": {
+        "min": 0.1,
+        "max": 2,
+        "unit": "%"
+      },
+      "detectionMethod": "HPLC"
+    }
+  ],
+  "analyticalMethod": "HPLC, GC-MS",
+  "description": {
+    "en": "Chemical composition profile of Echinacea root, containing key bioactive compounds including alkamides, caffeic acid derivatives, and polysaccharides."
+  },
+  "provenance": {
+    "created": "2026-02-21T00:00:00.000Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/preparation/dried-ginger",
+  "@type": [
+    "herbal:HerbalPreparation",
+    "schema:DietarySupplement"
+  ],
+  "name": {
+    "en": "Dried Ginger",
+    "zh-Hant": "乾薑",
+    "zh-Hans": "干姜"
+  },
+  "derivedFrom": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/ginger"
+    }
+  ],
+  "preparationMethod": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/method/dried"
+  },
+  "form": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/form/whole"
+  },
+  "hasTCMProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/profile/dried-ginger"
+    }
+  ],
+  "safetyInfo": {
+    "generalContraindications": {
+      "en": "Contraindicated in yin deficiency with heat signs, bleeding disorders, and pregnancy (use with caution).",
+      "zh-Hant": "陰虛內熱、血熱妄行者忌用，孕婦慎用。"
+    }
+  },
+  "provenance": {
+    "created": "2026-02-20",
+    "source": "Generated from TCM profile",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "description": {
+    "en": "Herbal preparation derived from Dried Ginger. Used for cold patterns affecting the spleen and stomach (abdominal pain, cold limbs, diarrhea), yang collapse with cold limbs and weak pulse, and cold phlegm in the lungs with wheezing...."
+  },
+  "image": "media/images/dried-ginger/dried-ginger.jpg"
+}

@@ -2,9 +2,28 @@
  * Traditional Chinese Medicine (TCM) types for Herbapedia
  *
  * All content properties are TCM-SCOPED (tcm:traditionalUsage, not generic)
+ *
+ * @deprecated Use types from './profiles/tcm' instead
  */
 
-import type { JsonLdNode, LanguageMap, SystemProfileBase } from './core'
+import type { LanguageMap, IRIReference, Provenance } from './core'
+
+// Base type for JSON-LD nodes
+/** @deprecated */
+export interface JsonLdNode {
+  '@id': string
+  '@type': string | string[]
+  '@context'?: string | string[]
+}
+
+/** @deprecated Use MedicineSystemProfile from './profiles/base' instead */
+export interface SystemProfileBase extends JsonLdNode {
+  profiles?: IRIReference
+  traditionalUsage?: LanguageMap
+  modernResearch?: LanguageMap
+  provenance?: Provenance
+  source?: string
+}
 
 // TCM Nature (四气/四性)
 export type TCMMedicineNature =

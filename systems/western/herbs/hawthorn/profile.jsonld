@@ -1,12 +1,12 @@
 {
-  "@context": "../../schema/context/western.jsonld",
-  "@id": "western/hawthorn",
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/hawthorn",
   "@type": [
     "western:Herb",
     "schema:DietarySupplement"
   ],
   "derivedFromPlant": {
-    "@id": "plant/hawthorn"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/hawthorn"
   },
   "name": {
     "en": "Hawthorn",
@@ -15,13 +15,23 @@
   },
   "scientificName": "Crataegus monogyna",
   "hasAction": [
-    { "@id": "western/action/circulatory" },
-    { "@id": "western/action/antioxidant" },
-    { "@id": "western/action/cardiotonic" }
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/circulatory"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/antioxidant"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/cardiotonic"
+    }
   ],
   "hasOrganAffinity": [
-    { "@id": "western/organ/heart" },
-    { "@id": "western/organ/cardiovascular" }
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/heart"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/cardiovascular"
+    }
   ],
   "westernHistory": {
     "en": "Hawthorn has been used in traditional medicine since the first century AD. The Greek herbalist Dioscorides wrote about its health benefits. In European folk medicine, it was known as a symbol of hope and used for heart ailments.",

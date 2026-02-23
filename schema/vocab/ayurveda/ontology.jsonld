@@ -1,0 +1,263 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "https://www.herbapedia.org/vocab/ayurveda/",
+
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "schema": "https://schema.org/",
+
+    "herbapedia": "https://www.herbapedia.org/vocab/core/",
+    "ayurveda": "https://www.herbapedia.org/vocab/ayurveda/"
+  },
+
+  "@graph": [
+    {
+      "@id": "https://www.herbapedia.org/vocab/ayurveda/",
+      "@type": "owl:Ontology",
+      "rdfs:label": {
+        "en": "Herbapedia Ayurveda Vocabulary"
+      },
+      "rdfs:comment": "Ayurvedic medicine vocabulary including dravya profiles, rasa, guna, virya, vipaka, and dosha properties."
+    },
+
+    {
+      "@id": "ayurveda:Dravya",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": ["herbapedia:MedicineSystemProfile", "schema:DietarySupplement"],
+      "rdfs:label": {
+        "en": "Ayurveda Dravya",
+        "zh-Hant": "阿育吠陀藥物",
+        "sa": "द्रव्य"
+      },
+      "rdfs:comment": "An Ayurvedic substance profile with Rasa Panchaka (rasa, guna, virya, vipaka, prabhava) and dosha effects."
+    },
+
+    {
+      "@id": "ayurveda:Rasa",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "skos:Concept",
+      "rdfs:label": {
+        "en": "Rasa (Taste)",
+        "zh-Hant": "味",
+        "sa": "रस"
+      },
+      "rdfs:comment": "The six tastes in Ayurveda: Madhura (Sweet), Amla (Sour), Lavana (Salty), Katu (Pungent), Tikta (Bitter), Kashaya (Astringent)."
+    },
+
+    {
+      "@id": "ayurveda:Guna",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "skos:Concept",
+      "rdfs:label": {
+        "en": "Guna (Quality)",
+        "zh-Hant": "屬性",
+        "sa": "गुण"
+      },
+      "rdfs:comment": "The 20 qualities in 10 opposing pairs: Heavy/Light, Cold/Hot, Oily/Dry, Dull/Sharp, Smooth/Rough, Dense/Liquid, Soft/Hard, Stable/Mobile, Subtle/Gross, Cloudy/Clear."
+    },
+
+    {
+      "@id": "ayurveda:Virya",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "skos:Concept",
+      "rdfs:label": {
+        "en": "Virya (Potency)",
+        "zh-Hant": "能量",
+        "sa": "वीर्य"
+      },
+      "rdfs:comment": "The potency of a substance: Ushna (Heating) or Sheeta (Cooling)."
+    },
+
+    {
+      "@id": "ayurveda:Vipaka",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "skos:Concept",
+      "rdfs:label": {
+        "en": "Vipaka (Post-Digestive Effect)",
+        "zh-Hant": "後味",
+        "sa": "विपाक"
+      },
+      "rdfs:comment": "The post-digestive taste transformation: Madhura (Sweet), Amla (Sour), or Katu (Pungent)."
+    },
+
+    {
+      "@id": "ayurveda:Dosha",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "skos:Concept",
+      "rdfs:label": {
+        "en": "Dosha",
+        "zh-Hant": "能量類型",
+        "sa": "दोष"
+      },
+      "rdfs:comment": "The three fundamental bio-energies: Vata (Wind), Pitta (Fire/Bile), Kapha (Water/Phlegm)."
+    },
+
+    {
+      "@id": "ayurveda:Prabhava",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "skos:Concept",
+      "rdfs:label": {
+        "en": "Prabhava (Special Effect)",
+        "zh-Hant": "特殊作用",
+        "sa": "प्रभाव"
+      },
+      "rdfs:comment": "Special effect beyond rasa, virya, vipaka. Unique therapeutic action not explained by the other properties."
+    },
+
+    {
+      "@id": "ayurveda:Category",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "skos:Concept",
+      "rdfs:label": {
+        "en": "Ayurveda Category",
+        "zh-Hant": "阿育吠陀分類"
+      },
+      "rdfs:comment": "Ayurvedic herb categories: Rasayana (rejuvenative), Medhya (brain tonic), etc."
+    },
+
+    {
+      "@id": "ayurveda:hasRasa",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "ayurveda:Dravya",
+      "rdfs:range": "ayurveda:Rasa",
+      "rdfs:label": {
+        "en": "has rasa",
+        "zh-Hant": "具有味"
+      }
+    },
+
+    {
+      "@id": "ayurveda:hasGuna",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "ayurveda:Dravya",
+      "rdfs:range": "ayurveda:Guna",
+      "rdfs:label": {
+        "en": "has guna",
+        "zh-Hant": "具有屬性"
+      }
+    },
+
+    {
+      "@id": "ayurveda:hasVirya",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "ayurveda:Dravya",
+      "rdfs:range": "ayurveda:Virya",
+      "rdfs:label": {
+        "en": "has virya",
+        "zh-Hant": "具有能量"
+      }
+    },
+
+    {
+      "@id": "ayurveda:hasVipaka",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "ayurveda:Dravya",
+      "rdfs:range": "ayurveda:Vipaka",
+      "rdfs:label": {
+        "en": "has vipaka",
+        "zh-Hant": "具有後味"
+      }
+    },
+
+    {
+      "@id": "ayurveda:balancesDosha",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "ayurveda:Dravya",
+      "rdfs:range": "ayurveda:Dosha",
+      "rdfs:label": {
+        "en": "balances dosha",
+        "zh-Hant": "平衡能量"
+      }
+    },
+
+    {
+      "@id": "ayurveda:increasesDosha",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "ayurveda:Dravya",
+      "rdfs:range": "ayurveda:Dosha",
+      "rdfs:label": {
+        "en": "increases dosha",
+        "zh-Hant": "增加能量"
+      }
+    },
+
+    {
+      "@id": "ayurveda:decreasesDosha",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "ayurveda:Dravya",
+      "rdfs:range": "ayurveda:Dosha",
+      "rdfs:label": {
+        "en": "decreases dosha",
+        "zh-Hant": "減少能量"
+      }
+    },
+
+    {
+      "@id": "ayurveda:hasPrabhava",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "ayurveda:Dravya",
+      "rdfs:range": "ayurveda:Prabhava",
+      "rdfs:label": {
+        "en": "has prabhava",
+        "zh-Hant": "具有特殊作用"
+      }
+    },
+
+    {
+      "@id": "ayurveda:hasCategory",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "ayurveda:Dravya",
+      "rdfs:range": "ayurveda:Category",
+      "rdfs:label": {
+        "en": "has category",
+        "zh-Hant": "具有分類"
+      }
+    },
+
+    {
+      "@id": "ayurveda:sanskritName",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "ayurveda:Dravya",
+      "rdfs:range": "rdfs:Literal",
+      "rdfs:label": {
+        "en": "Sanskrit name",
+        "zh-Hant": "梵文名稱"
+      }
+    },
+
+    {
+      "@id": "ayurveda:derivedFromPlant",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "ayurveda:Dravya",
+      "rdfs:range": "herbapedia:BotanicalSource",
+      "rdfs:label": {
+        "en": "derived from plant",
+        "zh-Hant": "來自植物"
+      }
+    },
+
+    {
+      "@id": "ayurveda:ayurvedaTraditionalUsage",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "ayurveda:Dravya",
+      "rdfs:range": "rdfs:Literal",
+      "rdfs:label": {
+        "en": "Ayurveda traditional usage",
+        "zh-Hant": "阿育吠陀傳統用法"
+      }
+    },
+
+    {
+      "@id": "ayurveda:ayurvedaModernResearch",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "ayurveda:Dravya",
+      "rdfs:range": "rdfs:Literal",
+      "rdfs:label": {
+        "en": "Ayurveda modern research",
+        "zh-Hant": "阿育吠陀現代研究"
+      }
+    }
+  ]
+}

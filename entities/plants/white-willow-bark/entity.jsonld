@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/white-willow-bark",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/white-willow-bark",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"

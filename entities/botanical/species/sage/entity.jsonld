@@ -1,0 +1,34 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/sage",
+  "@type": [
+    "herbapedia:BotanicalSource",
+    "botany:PlantSpecies",
+    "schema:Plant"
+  ],
+  "sourceType": "botanical",
+  "sourceSubType": "plant",
+  "scientificName": "Salvia officinalis",
+  "family": "Lamiaceae",
+  "name": {
+    "en": "Sage",
+    "zh-Hant": "鼠尾草",
+    "zh-Hans": "鼠尾草"
+  },
+  "description": {
+    "en": "A perennial evergreen subshrug with woody stems."
+  },
+  "wikidataID": "Q128889",
+  "hasExtract": [
+    {
+      "@id": "https://www.herbapedia.org/entity/preparation/sage-oil"
+    }
+  ],
+  "provenance": {
+    "created": "2026-02-21",
+    "source": "Created as source plant for essential oil",
+    "purpose": "Enable proper linking of essential oil extracts"
+  },
+  "gbifID": "2928782",
+  "ncbiTaxonID": "79468"
+}

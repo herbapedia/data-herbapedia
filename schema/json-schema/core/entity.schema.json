@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herbapedia.org/schema/json-schema/core/entity.schema.json",
+  "title": "Entity",
+  "description": "Abstract base entity for all Herbapedia data types. Every entity in the system inherits from this base, providing common identity, naming, and provenance fields.",
+  "type": "object",
+  "abstract": true,
+  "required": ["@id", "@type", "name"],
+  "properties": {
+    "@context": {
+      "description": "JSON-LD context reference. Can be a single URI or an array of URIs for multiple contexts.",
+      "oneOf": [
+        { "type": "string", "format": "uri" },
+        {
+          "type": "array",
+          "items": { "type": "string", "format": "uri" }
+        }
+      ],
+      "examples": [
+        "../../schema/context/core.jsonld",
+        ["../../schema/context/core.jsonld", "../../schema/context/tcm.jsonld"]
+      ]
+    },
+    "@id": {
+      "description": "Unique identifier for this entity. Uses a compact IRI format: `{namespace}/{type}/{slug}`. This ID is used for all cross-references between entities.",
+      "type": "string",
+      "pattern": "^[a-z]+/[a-z0-9-]+$",
+      "examples": [
+        "botanical/species/zingiber-officinale",
+        "preparation/fresh-ginger-rhizome",
+        "tcm/profile/sheng-jiang"
+      ]
+    },
+    "@type": {
+      "description": "JSON-LD type declaration. An array of RDF types that categorize this entity. The first type is the primary type, followed by any additional semantic types.",
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1,
+      "examples": [
+        ["botany:PlantSpecies", "schema:Plant"],
+        ["herbal:HerbalPreparation", "schema:DietarySupplement"],
+        ["tcm:HerbProfile"]
+      ]
+    },
+    "name": {
+      "description": "Primary name of the entity as a language map. Each key is a BCP 47 language tag, and the value is the name in that language. At minimum, English ('en') is required.",
+      "$ref": "./language-map.schema.json",
+      "examples": [
+        { "en": "Ginger", "zh-Hant": "薑", "zh-Hans": "姜" }
+      ]
+    },
+    "description": {
+      "description": "Detailed description of the entity as a language map.",
+      "$ref": "./language-map.schema.json"
+    },
+    "alternateName": {
+      "description": "Alternative names or synonyms for this entity.",
+      "type": "array",
+      "items": { "type": "string" },
+      "examples": [
+        ["Common ginger", "Garden ginger", "生姜"]
+      ]
+    },
+    "image": {
+      "description": "Primary image for this entity. Path is relative to the repository root.",
+      "type": "string",
+      "examples": ["media/images/species/zingiber-officinale/plant.jpg"]
+    },
+    "images": {
+      "description": "Additional images for this entity.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "sameAs": {
+      "description": "External authority references. Links this entity to equivalent entities in external databases like Wikidata, GBIF, or POWO.",
+      "type": "array",
+      "items": { "$ref": "./external-reference.schema.json" }
+    },
+    "source": {
+      "description": "Attribution of the data source.",
+      "$ref": "./provenance.schema.json"
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/woad-or-glastum",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/woad-or-glastum",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"

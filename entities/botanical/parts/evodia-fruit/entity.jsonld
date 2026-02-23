@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/evodia-fruit",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Evodia Fruit Fruit",
+    "zh-Hant": "吳茱萸",
+    "zh-Hans": "吴茱萸"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/evodia-fruit"
+  },
+  "partType": "fruit",
+  "description": {
+    "en": "The fruit of Evodia rutaecarpa, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.814Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

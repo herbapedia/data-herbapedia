@@ -1,0 +1,28 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/petrolatum",
+  "@type": [
+    "herbapedia:WesternHerbalProfile"
+  ],
+  "profiles": {
+    "@id": "https://www.herbapedia.org/entity/preparation/petrolatum"
+  },
+  "name": {
+    "en": "Petrolatum",
+    "zh-Hant": "礦油 又名凡士林",
+    "zh-Hans": "矿油 又名凡士林"
+  },
+  "derivedFromPlant": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/petrolatum"
+  },
+  "westernTraditionalUsage": {
+    "en": "Petrolatum or petroleum jelly is a clear mineral oil jelly best known as a topical treatment for chapped lips and a key ingredient in cosmetics and skin-care products. Topical application of petrolatum can help the skin's outer layer recover from damage. While petroleum jelly itself has no therapeutic properties, it forms a waterproof barrier over the skin, preventing infection and keeping the skin beneath supple by preventing water evaporation.\n",
+    "zh-Hant": "",
+    "zh-Hans": ""
+  },
+  "provenance": {
+    "created": "2026-02-20T15:22:03.247Z",
+    "modified": "2026-02-20T15:22:03.247Z",
+    "migratedFrom": "systems/western/herbs/petrolatum/profile.jsonld"
+  }
+}

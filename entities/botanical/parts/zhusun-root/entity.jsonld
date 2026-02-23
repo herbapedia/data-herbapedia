@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/zhusun-root",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Zhusun Root",
+    "zh-Hant": "竹笙",
+    "zh-Hans": "竹笙"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/zhusun"
+  },
+  "partType": "root",
+  "description": {
+    "en": "The root of Dictyophora indusiata, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.833Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

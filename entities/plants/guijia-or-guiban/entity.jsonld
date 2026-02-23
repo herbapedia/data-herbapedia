@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/guijia-or-guiban",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/guijia-or-guiban",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"

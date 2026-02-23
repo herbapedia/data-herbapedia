@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/indigowoad-root-banlangen",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/indigowoad-root-banlangen",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"

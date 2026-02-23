@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herbapedia.org/schema/json-schema/reference/western-system.schema.json",
+  "title": "Western Body System",
+  "description": "Western herbal body system classification. Major physiological systems of the body as understood by biomedical science. Used for categorizing herbs by their primary system affinity.",
+  "type": "object",
+  "allOf": [
+    { "$ref": "./reference-entity.schema.json" }
+  ],
+  "required": ["@id", "@type", "name"],
+  "properties": {
+    "@id": {
+      "description": "Unique identifier: western/system/{slug}.",
+      "type": "string",
+      "pattern": "^western/system/[a-z0-9-]+$",
+      "examples": [
+        "western/system/digestive",
+        "western/system/nervous",
+        "western/system/respiratory",
+        "western/system/cardiovascular",
+        "western/system/immune",
+        "western/system/endocrine",
+        "western/system/urinary",
+        "western/system/reproductive",
+        "western/system/integumentary",
+        "western/system/musculoskeletal",
+        "western/system/lymphatic"
+      ]
+    },
+    "@type": {
+      "type": "array",
+      "items": { "type": "string" },
+      "contains": { "const": "western:System" },
+      "examples": [["western:System"]]
+    },
+    "name": {
+      "description": "System name.",
+      "$ref": "../core/language-map.schema.json",
+      "examples": [{ "en": "Digestive System" }, { "en": "Nervous System" }]
+    },
+    "description": {
+      "description": "Description of this body system.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "components": {
+      "description": "Organs and structures that make up this system.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" }
+    },
+    "functions": {
+      "description": "Main functions of this system.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "associatedActions": {
+      "description": "Herbal actions that affect this system.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" }
+    },
+    "commonConditions": {
+      "description": "Common conditions affecting this system.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "keyHerbs": {
+      "description": "Key herbs for this system.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" }
+    }
+  },
+  "additionalProperties": true,
+  "_documentation": {
+    "iriPattern": "western/system/{slug}",
+    "directory": "systems/western/reference/systems.jsonld",
+    "elevenBodySystems": {
+      "digestive": "Mouth, esophagus, stomach, intestines, liver, pancreas, gallbladder",
+      "nervous": "Brain, spinal cord, nerves, sensory organs",
+      "respiratory": "Nose, pharynx, larynx, trachea, bronchi, lungs",
+      "cardiovascular": "Heart, blood vessels, blood",
+      "immune": "White blood cells, lymph nodes, spleen, thymus",
+      "endocrine": "Pituitary, thyroid, adrenals, pancreas, gonads",
+      "urinary": "Kidneys, ureters, bladder, urethra",
+      "reproductive": "Gonads, reproductive organs",
+      "integumentary": "Skin, hair, nails, sweat glands",
+      "musculoskeletal": "Bones, joints, muscles, tendons, ligaments",
+      "lymphatic": "Lymph vessels, lymph nodes, lymph fluid"
+    }
+  }
+}

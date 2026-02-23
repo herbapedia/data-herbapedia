@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/indian-mulberry-root",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Indian Mulberry Root Root",
+    "zh-Hant": "巴戟天",
+    "zh-Hans": "巴戟天"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/indian-mulberry-root"
+  },
+  "partType": "root",
+  "description": {
+    "en": "The root of Morinda officinalis, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.817Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

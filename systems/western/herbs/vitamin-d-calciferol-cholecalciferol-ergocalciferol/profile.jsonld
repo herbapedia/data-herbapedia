@@ -1,11 +1,11 @@
 {
-  "@context": "../../schema/context/western.jsonld",
-  "@id": "western/vitamin-d-calciferol-cholecalciferol-ergocalciferol",
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/vitamin-d-calciferol-cholecalciferol-ergocalciferol",
   "@type": [
     "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
-    "@id": "plant/vitamin-d-calciferol-cholecalciferol-ergocalciferol"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/vitamin-d-calciferol-cholecalciferol-ergocalciferol"
   },
   "name": {
     "en": "Vitamin D; Calciferol, Cholecalciferol, Ergocalciferol",

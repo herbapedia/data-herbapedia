@@ -1,0 +1,33 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/bilberry",
+  "@type": [
+    "herbapedia:WesternHerbalProfile"
+  ],
+  "profiles": {
+    "@id": "https://www.herbapedia.org/entity/preparation/bilberry"
+  },
+  "name": {
+    "en": "Bilberry",
+    "zh-Hant": "歐洲藍莓",
+    "zh-Hans": "欧洲蓝莓"
+  },
+  "derivedFromPlant": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/bilberry"
+  },
+  "westernTraditionalUsage": {
+    "en": "Bilberries are the fruits of a low-growing bush native to the temperate and sub-arctic regions of Northern Europe. They contain more antioxidants than any other type of berry, as well as being packed with vitamin C. The blue colour of bilberries comes from the pigment anthocyanin, which has been linked to the treatment of several diseases including circulatory disorders of the retina; vein and circulatory disorders including varicose veins; inadequate vein strength; and fragile capillaries.\n",
+    "zh-Hant": "歐洲藍莓對於改善一連串的視覺問題均有良效，如：視網膜血液循環不順、靜脈曲張，以及虛弱的血管和毛細血管。\n",
+    "zh-Hans": "欧洲蓝莓对于改善一连串的视觉问题均有良效，如：视网膜血液循环不顺、静脉曲张，以及虚弱的血管和毛细血管。\n"
+  },
+  "westernHistory": {
+    "en": "Bilberry has been used in European medicine for nearly a thousand years, primarily to treat gastric disorders and diarrhea. The fruit contains tannins, substances that act as both an anti-inflammatory and an astringent (constricting and tightening tissues), which is thought to be the reason for their ability to soothe stomach problems. The leaves of the bilberry plant were also traditionally used to treat diabetes.\n",
+    "zh-Hant": "",
+    "zh-Hans": ""
+  },
+  "provenance": {
+    "created": "2026-02-20T15:22:03.234Z",
+    "modified": "2026-02-20T15:22:03.234Z",
+    "migratedFrom": "systems/western/herbs/bilberry/profile.jsonld"
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herbapedia.org/schema/json-schema/reference/mongolian-taste.schema.json",
+  "title": "Mongolian Taste",
+  "description": "Mongolian Traditional Medicine six tastes ( зургаан амт). Each taste has specific effects on the Three Roots (Heyi, Xila, Badagan) and therapeutic applications.",
+  "type": "object",
+  "allOf": [
+    { "$ref": "./reference-entity.schema.json" }
+  ],
+  "required": ["@id", "@type", "name"],
+  "properties": {
+    "@id": {
+      "description": "Unique identifier: mongolian/taste/{slug}.",
+      "type": "string",
+      "pattern": "^mongolian/taste/[a-z0-9-]+$",
+      "examples": [
+        "mongolian/taste/sweet",
+        "mongolian/taste/sour",
+        "mongolian/taste/salty",
+        "mongolian/taste/hot",
+        "mongolian/taste/bitter",
+        "mongolian/taste/astringent"
+      ]
+    },
+    "@type": {
+      "type": "array",
+      "items": { "type": "string" },
+      "contains": { "const": "mongolian:Taste" },
+      "examples": [["mongolian:Taste"]]
+    },
+    "name": {
+      "description": "Taste name in Mongolian and English.",
+      "$ref": "../core/language-map.schema.json",
+      "examples": [{ "mn": "амттай", "en": "Sweet" }]
+    },
+    "mongolianName": {
+      "description": "Mongolian name (Cyrillic).",
+      "type": "string",
+      "examples": ["амттай", "хонхоргор", "давстай", "халуун", "гашуун", "байрингуй"]
+    },
+    "tibetanName": {
+      "description": "Tibetan name.",
+      "type": "string",
+      "examples": ["མངར་", "སྐྱུར་", "ལན་ཚྭ་", "ཚ་", "ཁ་", "བསྐ་"]
+    },
+    "tibetanWylie": {
+      "description": "Wylie transliteration.",
+      "type": "string",
+      "examples": ["mngar", "skyur", "lan tshwa", "tsha", "kha", "bska"]
+    },
+    "englishName": {
+      "description": "English translation.",
+      "type": "string",
+      "examples": ["Sweet", "Sour", "Salty", "Hot/Pungent", "Bitter", "Astringent"]
+    },
+    "elementComposition": {
+      "description": "Element composition of this taste.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "element": {
+            "type": "string",
+            "enum": ["space", "air", "fire", "water", "earth"]
+          },
+          "proportion": {
+            "type": "string",
+            "enum": ["primary", "secondary", "minor"]
+          }
+        }
+      },
+      "_documentation": {
+        "sweet": "Earth + Water",
+        "sour": "Fire + Earth",
+        "salty": "Water + Fire",
+        "hot": "Fire + Air",
+        "bitter": "Air + Space",
+        "astringent": "Air + Earth"
+      }
+    },
+    "effectOnRoots": {
+      "description": "How this taste affects the Three Roots.",
+      "type": "object",
+      "properties": {
+        "heyi": {
+          "type": "string",
+          "enum": ["increases", "decreases", "neutral"]
+        },
+        "xila": {
+          "type": "string",
+          "enum": ["increases", "decreases", "neutral"]
+        },
+        "badagan": {
+          "type": "string",
+          "enum": ["increases", "decreases", "neutral"]
+        }
+      }
+    },
+    "postDigestiveEffect": {
+      "description": "Post-digestive (Vipaka-like) effect.",
+      "type": "string",
+      "enum": ["sweet", "sour", "hot"]
+    },
+    "therapeuticActions": {
+      "description": "Therapeutic actions of this taste.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "indications": {
+      "description": "Conditions where this taste is beneficial.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "excessEffects": {
+      "description": "Effects of excess consumption.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "exampleSubstances": {
+      "description": "Common substances with this taste.",
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": true,
+  "_documentation": {
+    "iriPattern": "mongolian/taste/{slug}",
+    "directory": "systems/mongolian/reference/tastes.jsonld",
+    "sixTastes": {
+      "sweet": {
+        "mongolian": "амттай",
+        "elements": "Earth + Water",
+        "heyi": "decreases",
+        "xila": "decreases",
+        "badagan": "increases",
+        "actions": "Nourishes, builds tissues, soothes",
+        "excess": "Obesity, diabetes, tumors"
+      },
+      "sour": {
+        "mongolian": "хонхоргор",
+        "elements": "Fire + Earth",
+        "heyi": "decreases",
+        "xila": "increases",
+        "badagan": "increases",
+        "actions": "Stimulates digestion, energizes",
+        "excess": "Acidity, blood disorders"
+      },
+      "salty": {
+        "mongolian": "давстай",
+        "elements": "Water + Fire",
+        "heyi": "decreases",
+        "xila": "increases",
+        "badagan": "increases",
+        "actions": "Softens, lubricates, purges",
+        "excess": "Edema, skin disorders"
+      },
+      "hot": {
+        "mongolian": "халуун",
+        "elements": "Fire + Air",
+        "heyi": "increases",
+        "xila": "increases",
+        "badagan": "decreases",
+        "actions": "Warms, digests, stimulates",
+        "excess": "Dehydration, burning sensations"
+      },
+      "bitter": {
+        "mongolian": "гашуун",
+        "elements": "Air + Space",
+        "heyi": "increases",
+        "xila": "decreases",
+        "badagan": "decreases",
+        "actions": "Cools, dries, detoxifies",
+        "excess": "Weakness, emaciation"
+      },
+      "astringent": {
+        "mongolian": "байрингуй",
+        "elements": "Air + Earth",
+        "heyi": "increases",
+        "xila": "decreases",
+        "badagan": "decreases",
+        "actions": "Binds, dries, tones",
+        "excess": "Constipation, stagnation"
+      }
+    }
+  }
+}

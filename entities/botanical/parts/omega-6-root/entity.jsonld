@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/omega-6-root",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Omega 6 Root",
+    "zh-Hant": "奧米加6",
+    "zh-Hans": "奥米加6"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/omega-6"
+  },
+  "partType": "root",
+  "description": {
+    "en": "The root of Gamma-linolenic acid (GLA), Linoleic Acid (LA), Arachidonic Acid (AA) / ω-6 fatty acids, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.823Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

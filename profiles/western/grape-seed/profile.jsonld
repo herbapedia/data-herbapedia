@@ -1,0 +1,28 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/grape-seed",
+  "@type": [
+    "herbapedia:WesternHerbalProfile"
+  ],
+  "profiles": {
+    "@id": "https://www.herbapedia.org/entity/preparation/grape-seed"
+  },
+  "name": {
+    "en": "Grape Seed",
+    "zh-Hant": "葡萄核",
+    "zh-Hans": "葡萄核"
+  },
+  "derivedFromPlant": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/grape-seed"
+  },
+  "westernTraditionalUsage": {
+    "en": "Grape seed extract is a rich source of antioxidants and bioflavanoids and helps to protect cells from damage caused by oxidation and free radicals. Its antioxidant properties can also prevent blood vessels from deteriorating as the body ages and grape seed is thus thought to be an effective supplement to promote healthy circulation. It is also considered helpful in improving and preserving the elasticity of skin by stabilising collagen and elastin.\n",
+    "zh-Hant": "葡萄核蘊含豐富抗氧化劑和生物類黃酮，有助保護細胞免受由氧化和游離基造成之損害。葡萄核能促進健康循環，穩定膠原蛋白和彈性蛋白，改善和保護皮膚的彈性。\n",
+    "zh-Hans": "葡萄核蕴含丰富抗氧化剂和生物类黄酮，有助保护细胞免受由氧化和游离基造成之损害。葡萄核能促进健康循环，稳定胶原蛋白和弹性蛋白，改善和保护皮肤的弹性。\n"
+  },
+  "provenance": {
+    "created": "2026-02-20T15:22:03.241Z",
+    "modified": "2026-02-20T15:22:03.241Z",
+    "migratedFrom": "systems/western/herbs/grape-seed/profile.jsonld"
+  }
+}

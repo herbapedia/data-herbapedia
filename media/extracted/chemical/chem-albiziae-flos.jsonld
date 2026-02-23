@@ -1,0 +1,220 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/chemical/albiziae-flos",
+  "@type": ["herbapedia:ChemicalAnalysisData", "schema:Dataset"],
+  "dataType": "ChemicalAnalysis",
+  "sourceDocument": "CHEM_____Albiziae_Flos_V1.pdf",
+  "scientificName": "Albizia julibrissin",
+  "chineseName": "合歡花",
+  "pinyinName": "He Huan Hua",
+  "identificationMethod": ["TLC", "HPLC-Fingerprint", "HPLC-Assay"],
+  "referenceCompounds": [
+    {
+      "name": "Quercitrin",
+      "chineseName": "槲皮苷",
+      "formula": "C₂₁H₂₀O₁₁",
+      "purpose": ["TLC identification", "HPLC fingerprint marker", "Assay quantification"]
+    }
+  ],
+  "assayLimits": {
+    "quercitrin": {
+      "compound": "Quercitrin",
+      "formula": "C₂₁H₂₀O₁₁",
+      "minimumContent": "1.0%",
+      "basis": "dried substance"
+    }
+  },
+  "tlcMethod": {
+    "appendixReference": "Appendix I",
+    "stationaryPhase": "HPTLC silica gel F₂₅₄ plate",
+    "developingSolvent": {
+      "components": ["ethyl acetate", "formic acid", "water"],
+      "ratio": "15:0.5:0.5 (v/v)"
+    },
+    "sprayReagent": {
+      "composition": "0.5 g aluminium trichloride in 50 mL ethanol",
+      "visualization": "Heat at about 70°C (about 5-10 min), examine under UV light at 366 nm"
+    },
+    "testSolution": {
+      "sampleAmount": "1.0 g",
+      "solvent": "70% ethanol",
+      "solventVolume": "20 mL",
+      "extraction": "ultrasonication (270 W) for 30 min",
+      "evaporation": "rotary evaporator at reduced pressure",
+      "finalVolume": "1 mL in 70% ethanol"
+    },
+    "standardSolutions": {
+      "quercitrin": {
+        "concentration": "1.0 mg/mL in 70% ethanol",
+        "preparation": "1.0 mg quercitrin CRS in 1 mL 70% ethanol"
+      }
+    },
+    "applicationVolumes": {
+      "standardSolution": "1 μL",
+      "testSolution": "1 μL"
+    },
+    "developingDistance": "6 cm",
+    "chamberSaturation": "15 min in twin trough chamber",
+    "visualization": "UV light at 366 nm",
+    "identificationCriteria": {
+      "positiveMarkers": ["Quercitrin"],
+      "criteria": "Sample must give spot or band with chromatographic characteristics, including colour and Rf value, corresponding to that of quercitrin"
+    }
+  },
+  "hplcFingerprint": {
+    "appendixReference": "Appendix II",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "Diode array detector (DAD)",
+      "detectionWavelength": "254 nm",
+      "flowRate": "1.0 mL/min"
+    },
+    "mobilePhase": {
+      "solventA": "0.1% acetic acid",
+      "solventB": "Acetonitrile",
+      "gradientProgram": [
+        {
+          "timeRange": "0-35 min",
+          "solventA": "85% → 60%",
+          "solventB": "15% → 40%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "quercitrinStdFP": {
+        "concentration": "60 mg/L",
+        "preparation": "3.0 mg quercitrin in 50 mL 70% ethanol"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "0.25 g",
+      "solvent": "70% ethanol",
+      "solventVolume": "10 mL × 2 extractions",
+      "extraction": "ultrasonication (270 W) for 30 min",
+      "centrifugation": "5 min at approximately 5000 × g",
+      "finalVolume": "25 mL with 70% ethanol",
+      "filtration": "0.45 μm RC membrane filter"
+    },
+    "injectionVolume": "10 μL",
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "peakAreaRSD": "≤ 5.0% (Quercitrin)",
+      "retentionTimeRSD": "≤ 2.0% (Quercitrin)",
+      "theoreticalPlates": "≥ 26,000 (based on Quercitrin)",
+      "resolution": "≥ 1.5 (between peak 2 and adjacent peak)"
+    },
+    "identificationCriteria": {
+      "retentionTimeTolerance": "≤ 2.0% difference between sample and standard",
+      "characteristicPeaks": "3 peaks required"
+    }
+  },
+  "hplcAssay": {
+    "appendixReference": "Appendix III",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "Diode array detector (DAD)",
+      "detectionWavelength": "254 nm",
+      "flowRate": "1.0 mL/min"
+    },
+    "mobilePhase": {
+      "solventA": "0.1% acetic acid",
+      "solventB": "Acetonitrile",
+      "gradientProgram": [
+        {
+          "timeRange": "0-35 min",
+          "solventA": "85% → 60%",
+          "solventB": "15% → 40%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "stockSolution": {
+        "name": "Std-Stock",
+        "concentration": "1000 mg/L",
+        "compound": "Quercitrin",
+        "preparation": "5.0 mg quercitrin in 5 mL 70% ethanol"
+      },
+      "workingSolutions": {
+        "name": "Std-AS",
+        "concentrations": ["20", "60", "100", "150", "300 mg/L"],
+        "description": "Series of quercitrin standard solutions diluted with 70% ethanol"
+      },
+      "injectionVolume": "10 μL (for calibration)"
+    },
+    "testSolution": {
+      "sampleAmount": "0.25 g",
+      "solvent": "70% ethanol",
+      "solventVolume": "10 mL × 2 extractions",
+      "extraction": "ultrasonication (270 W) for 30 min",
+      "centrifugation": "5 min at approximately 5000 × g",
+      "finalVolume": "25 mL with 70% ethanol",
+      "filtration": "0.45 μm RC membrane filter",
+      "injectionVolume": "10 μL"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "standardSolution": "Std-AS (100 mg/L)",
+      "injectionVolume": "10 μL",
+      "peakAreaRSD": "≤ 5.0% (Quercitrin)",
+      "retentionTimeRSD": "≤ 2.0% (Quercitrin)",
+      "theoreticalPlates": "≥ 26,000 (based on Quercitrin)",
+      "resolution": "≥ 1.5 (between quercitrin peak and adjacent peak)"
+    },
+    "calibration": {
+      "method": "5-point calibration curve",
+      "plot": "Peak area vs. concentration (mg/L)",
+      "identificationTolerance": "≤ 5.0% difference in retention times"
+    }
+  },
+  "rrtValues": [
+    {
+      "peakNumber": 1,
+      "compound": "Unknown",
+      "rrt": 0.76,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Quercitrin"
+    },
+    {
+      "peakNumber": 2,
+      "compound": "Quercitrin",
+      "rrt": 1.00,
+      "acceptableRange": null,
+      "referenceMarker": true,
+      "referenceTo": "self"
+    },
+    {
+      "peakNumber": 3,
+      "compound": "Unknown",
+      "rrt": 1.18,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Quercitrin"
+    }
+  ],
+  "appendices": {
+    "appendixI": {
+      "title": "Chromatography – Thin-Layer Chromatography",
+      "description": "General procedures for TLC including plate types, application methods, developing chambers, and Rf calculation"
+    },
+    "appendixII": {
+      "title": "GC and HPLC/UHPLC Fingerprinting",
+      "description": "Methods for establishing chromatographic fingerprints using marker peaks and RRT values"
+    },
+    "appendixIII": {
+      "title": "Chromatography – HPLC/UHPLC",
+      "description": "General HPLC/UHPLC procedures including system suitability tests (theoretical plates, repeatability, resolution, tailing factor) and quantitative calculations"
+    }
+  },
+  "extractedAt": "2026-02-20"
+}

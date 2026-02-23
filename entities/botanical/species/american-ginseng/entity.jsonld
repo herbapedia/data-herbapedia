@@ -1,0 +1,54 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/american-ginseng",
+  "@type": [
+    "botany:PlantSpecies",
+    "herbapedia:BotanicalSource",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "American Ginseng",
+    "zh-Hant": "西洋蔘",
+    "zh-Hans": "西洋蔘"
+  },
+  "scientificName": "Panax quinquefolium",
+  "family": null,
+  "genus": null,
+  "description": {
+    "en": "From the roots of Panax quinquefolium L., family araliaceae.\n",
+    "zh-Hant": "西洋蔘（學名：Panax quinquefolium）為多年生草本植物，以其根部入藥。在中醫藥理論中歸屬於補益類藥物，具有補氣養血、健脾益肺等功效，是重要的傳統中藥材。",
+    "zh-Hans": "西洋参（学名：Panax quinquefolium）为多年生草本植物，以其根部入药。在中医药理論中歸属于补益类药物，具有补气养血、健脾益肺等功效，是重要的传统中药材。"
+  },
+  "image": "media/images/panax-quinquefolium/main.jpg",
+  "gbifID": 5372246,
+  "containsChemical": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/ginsenosides"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/polysaccharides"
+    }
+  ],
+  "provenance": {
+    "created": "2026-02-18T09:14:49.762Z",
+    "modified": "2026-02-21T01:46:20.746Z",
+    "migratedFrom": "entities/plants/american-ginseng/entity.jsonld",
+    "source": "vitaherbapedia.com",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "classificationNote": "Reclassified as BotanicalSource"
+  },
+  "hasParts": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/part/american-ginseng-root"
+    }
+  ],
+  "wikidataID": "Q2737217",
+  "sourceType": "botanical",
+  "sourceSubType": "plant",
+  "hasTCMProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/profile/american-ginseng"
+    }
+  ],
+  "ncbiTaxonID": "261462"
+}

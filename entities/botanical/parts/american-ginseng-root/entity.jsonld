@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/american-ginseng-root",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "American Ginseng Root",
+    "zh-Hant": "西洋蔘",
+    "zh-Hans": "西洋蔘"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/american-ginseng"
+  },
+  "partType": "root",
+  "description": {
+    "en": "The root of Panax quinquefolium, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.806Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

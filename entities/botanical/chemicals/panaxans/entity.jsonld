@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/chemical/panaxans",
+  "@type": [
+    "botany:ChemicalCompound",
+    "schema:BioChemEntity"
+  ],
+  "name": {
+    "en": "Panaxans",
+    "zh-Hant": "人蔘酮",
+    "zh-Hans": "人参酮"
+  },
+  "description": {
+    "en": "A class of polyacetylenic compounds found in ginseng with hypoglycemic (blood sugar lowering) activity. Panaxans A through I have been isolated and characterized."
+  },
+  "molecularFormula": "C17H26O3 (Panaxans A)",
+  "compoundClass": "Polyacetylene; Diol derivative",
+  "foundIn": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/ginseng"
+    }
+  ],
+  "pharmacology": [
+    "Hypoglycemic activity",
+    "Blood glucose regulation",
+    "Insulin sensitization"
+  ],
+  "safetyData": {
+    "warnings": [
+      "Monitor blood sugar if taking hypoglycemic medications"
+    ]
+  },
+  "provenance": {
+    "created": "2024-01-15",
+    "modified": "2026-02-20T17:59:34.448Z",
+    "source": "Scientific Literature",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  }
+}

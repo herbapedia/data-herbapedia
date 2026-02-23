@@ -1,0 +1,189 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/system/ayurveda/profile/reference/vipakas",
+  "@type": [
+    "ayurveda:ReferenceCollection",
+    "skos:Collection"
+  ],
+  "name": {
+    "en": "Ayurveda Vipakas (Post-Digestive Effects)",
+    "sa": "विपाक"
+  },
+  "description": {
+    "en": "The three post-digestive effects (विपाक - Vipaka) in Ayurveda. Vipaka is the final taste that emerges after digestion, which determines the long-term effect of a substance on the body."
+  },
+  "members": [
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/vipaka/sweet",
+      "@type": [
+        "ayurveda:Vipaka"
+      ],
+      "name": {
+        "en": "Sweet",
+        "sa": "मधुर"
+      },
+      "sanskritName": "मधुर",
+      "sanskritTransliteration": "Madhura",
+      "englishName": "Sweet",
+      "rasaTransformation": [
+        {
+          "@id": "https://www.herbapedia.org/system/ayurveda/profile/rasa/sweet"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/ayurveda/profile/rasa/salty"
+        }
+      ],
+      "effectOnDoshas": {
+        "vata": "decreases",
+        "pitta": "decreases",
+        "kapha": "increases"
+      },
+      "effectOnTissues": {
+        "en": "Nourishes all seven dhatus (tissues), promotes tissue growth and strength"
+      },
+      "effectOnExcretion": {
+        "en": "Promotes normal, well-formed stool"
+      },
+      "longTermEffects": {
+        "en": "Builds body tissues, promotes strength, vitality, and longevity"
+      },
+      "indications": [
+        "tissue depletion",
+        "weakness",
+        "vata disorders",
+        "pitta disorders"
+      ],
+      "contraindications": [
+        "diabetes",
+        "obesity",
+        "kapha excess",
+        "low agni"
+      ],
+      "exampleSubstances": [
+        "grains",
+        "legumes",
+        "dairy",
+        "sweet fruits",
+        "ghee"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/vipaka/sour",
+      "@type": [
+        "ayurveda:Vipaka"
+      ],
+      "name": {
+        "en": "Sour",
+        "sa": "अम्ल"
+      },
+      "sanskritName": "अम्ल",
+      "sanskritTransliteration": "Amla",
+      "englishName": "Sour",
+      "rasaTransformation": [
+        {
+          "@id": "https://www.herbapedia.org/system/ayurveda/profile/rasa/sour"
+        }
+      ],
+      "effectOnDoshas": {
+        "vata": "decreases",
+        "pitta": "increases",
+        "kapha": "increases"
+      },
+      "effectOnTissues": {
+        "en": "Can increase tissue warmth and metabolism, but may deplete tissues in excess"
+      },
+      "effectOnExcretion": {
+        "en": "Can cause loose stools or diarrhea, promotes elimination"
+      },
+      "longTermEffects": {
+        "en": "Increases digestive capacity, but can cause hyperacidity and tissue depletion"
+      },
+      "indications": [
+        "vata disorders",
+        "low digestion",
+        "constipation"
+      ],
+      "contraindications": [
+        "pitta disorders",
+        "ulcers",
+        "hyperacidity",
+        "bleeding disorders"
+      ],
+      "exampleSubstances": [
+        "fermented foods",
+        "yogurt",
+        "sour fruits",
+        "wine"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/vipaka/pungent",
+      "@type": [
+        "ayurveda:Vipaka"
+      ],
+      "name": {
+        "en": "Pungent",
+        "sa": "कटु"
+      },
+      "sanskritName": "कटु",
+      "sanskritTransliteration": "Katu",
+      "englishName": "Pungent",
+      "rasaTransformation": [
+        {
+          "@id": "https://www.herbapedia.org/system/ayurveda/profile/rasa/pungent"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/ayurveda/profile/rasa/bitter"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/ayurveda/profile/rasa/astringent"
+        }
+      ],
+      "effectOnDoshas": {
+        "vata": "increases",
+        "pitta": "increases",
+        "kapha": "decreases"
+      },
+      "effectOnTissues": {
+        "en": "Reduces tissue bulk, dries tissues, can deplete if used excessively"
+      },
+      "effectOnExcretion": {
+        "en": "Can cause dry, hard stool or constipation"
+      },
+      "longTermEffects": {
+        "en": "Reduces body mass, increases dryness, promotes elimination of wastes"
+      },
+      "indications": [
+        "kapha disorders",
+        "obesity",
+        "congestion",
+        "accumulations"
+      ],
+      "contraindications": [
+        "vata disorders",
+        "emaciation",
+        "dryness",
+        "weakness",
+        "children",
+        "elderly"
+      ],
+      "exampleSubstances": [
+        "ginger",
+        "pepper",
+        "chilies",
+        "garlic",
+        "pungent spices"
+      ]
+    }
+  ],
+  "_documentation": {
+    "classicalReference": "Charaka Samhita, Sutrasthana, Chapter 26",
+    "transformation": "Rasa (taste) is transformed into Vipaka during digestion by Agni (digestive fire)",
+    "generalRule": {
+      "sweet_and_salty": "Sweet Vipaka",
+      "sour": "Sour Vipaka",
+      "pungent_bitter_astringent": "Pungent Vipaka"
+    },
+    "clinicalNote": "Vipaka determines the long-term effect and post-digestive consequence of herbs and foods"
+  }
+}

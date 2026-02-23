@@ -1,11 +1,11 @@
 {
-  "@context": "../../schema/context/western.jsonld",
-  "@id": "western/aloe-vera",
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/aloe-vera",
   "@type": [
     "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
-    "@id": "plant/aloe-vera"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/aloe-vera"
   },
   "name": {
     "en": "Aloe Vera",

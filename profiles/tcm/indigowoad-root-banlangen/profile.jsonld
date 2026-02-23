@@ -1,0 +1,60 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/tcm.jsonld",
+  "@id": "https://www.herbapedia.org/system/tcm/profile/indigowoad-root-banlangen",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "profiles": {
+    "@id": "https://www.herbapedia.org/entity/preparation/indigowoad-root-banlangen"
+  },
+  "name": {
+    "en": "Indigowoad Root (Banlangen)",
+    "zh-Hant": "板藍根",
+    "zh-Hans": "板蓝根"
+  },
+  "pinyin": "Indigowoad Root (Banlangen)",
+  "chineseName": {
+    "zh-Hant": "板藍根",
+    "zh-Hans": "板蓝根"
+  },
+  "derivedFromPlant": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/indigowoad-root-banlangen"
+  },
+  "hasCategory": {
+    "@id": "https://www.herbapedia.org/system/tcm/category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "https://www.herbapedia.org/system/tcm/nature/neutral"
+  },
+  "hasFlavor": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/flavor/sweet"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/spleen"
+    }
+  ],
+  "tcmTraditionalUsage": {
+    "en": "Banlangen is made from the roots of the woad plant, which are harvested in northern China during the late autumn or early winter and dried. (Compare to Daqingye, which is made from the leaves of the same plant.) The granules are often drunk as a tea to relieve sore throats and influenza. It is bitter, cold herb that enters the heart and stomach meridians to clear heat, relieve fire toxicity, cool the blood and benefit the throat.\n",
+    "zh-Hant": "板藍根是清熱藥，味苦，藥性寒，歸心、肺、胃經，能清熱解毒，涼血利咽，主治溫熱病出現發熱、頭痛、咽痛等症狀。\n",
+    "zh-Hans": "板藍根是清热药，味苦，药性寒，歸心、肺、胃经，能清热解毒，涼血利咽，主治溫热病出現發热、头痛、咽痛等症狀。\n"
+  },
+  "tcmModernResearch": {
+    "en": "Woad has been found to be a rich source of the cancer preventing substance glucobrassicin, containing 20 times more than broccoli.\n",
+    "zh-Hant": "【板藍根】Modern Research內容待翻譯補充。",
+    "zh-Hans": "【板藍根】Modern Research內容待翻譯补充。"
+  },
+  "tcmHistory": {
+    "en": "First appeared in Shui Wen and the Divine Husbandman's Classic of the Materia Medica, classified as upper class.\n",
+    "zh-Hant": "始載於《神農本草經》，列為上品\n",
+    "zh-Hans": "始载于《神農本草经》，列为上品\n"
+  },
+  "provenance": {
+    "created": "2026-02-20T15:20:59.829Z",
+    "modified": "2026-02-20T15:20:59.829Z",
+    "migratedFrom": "systems/tcm/herbs/indigowoad-root-banlangen/profile.jsonld"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/evodia-fruit",
+  "@type": [
+    "botany:PlantSpecies",
+    "herbapedia:BotanicalSource",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Evodia Fruit",
+    "zh-Hant": "吳茱萸",
+    "zh-Hans": "吴茱萸"
+  },
+  "scientificName": "Evodia rutaecarpa",
+  "family": null,
+  "genus": null,
+  "description": {
+    "en": "From the nearly matured fruit of Evodia rutaecarpa (Juss.) Benth., family Rutaceae.\n",
+    "zh-Hant": "吳茱萸（學名：Evodia rutaecarpa）是一種具有藥用價值的漿果類植物。現代研究表明其富含花青素、類黃酮等抗氧化物質，具有保護心血管、改善視力等藥理活性。",
+    "zh-Hans": "吳茱萸（学名：Evodia rutaecarpa）是一种具有药用價值的浆果类植物。現代研究表明其富含花青素、类黃酮等抗氧化物质，具有保護心血管、改善視力等药理活性。"
+  },
+  "image": "media/images/evodia-rutaecarpa/main.jpg",
+  "gbifID": 5594365,
+  "provenance": {
+    "created": "2026-02-18T09:15:13.185Z",
+    "modified": "2026-02-21T01:46:20.750Z",
+    "migratedFrom": "entities/plants/evodia-fruit/entity.jsonld",
+    "source": "vitaherbapedia.com",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "classificationNote": "Reclassified as BotanicalSource"
+  },
+  "hasParts": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/part/evodia-fruit"
+    }
+  ],
+  "sourceType": "botanical",
+  "sourceSubType": "plant",
+  "hasTCMProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/profile/evodia-fruit"
+    }
+  ],
+  "wikidataID": "Q15343078",
+  "ncbiTaxonID": "53418"
+}

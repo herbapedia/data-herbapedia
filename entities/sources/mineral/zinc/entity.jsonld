@@ -1,0 +1,28 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/sources/mineral/zinc",
+  "@type": [
+    "herbapedia:MineralSource",
+    "herbapedia:SourceMaterial"
+  ],
+  "sourceType": "mineral",
+  "name": {
+    "en": "Zinc",
+    "zh-Hant": "鋅",
+    "zh-Hans": "锌"
+  },
+  "description": {
+    "en": "Zinc is an essential trace mineral involved in numerous aspects of cellular metabolism. Food sources include beef, liver, oysters, spices, and wheat bran.",
+    "zh-Hant": "鋅是一種必需的微量元素，參與細胞代謝的多個方面。食物來源包括牛肉、肝臟、牡蠣、香料和小麥麩皮。",
+    "zh-Hans": "锌是一种必需的微量元素，参与细胞代谢的多个方面。食物来源包括牛肉、肝脏、牡蛎、香料和小麦麸皮。"
+  },
+  "image": "media/images/zinc/zinc.jpg",
+  "provenance": {
+    "created": "2026-02-18T09:16:58.276Z",
+    "modified": "2026-02-21T09:59:00.000Z",
+    "migratedFrom": "entities/botanical/species/zinc/entity.jsonld",
+    "source": "vitaherbapedia.com",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "wikidataID": "Q758"
+}

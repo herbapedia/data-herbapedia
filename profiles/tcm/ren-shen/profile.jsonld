@@ -1,0 +1,108 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/tcm.jsonld",
+  "@id": "https://www.herbapedia.org/system/tcm/profile/ren-shen",
+  "@type": [
+    "tcm:Herb",
+    "schema:DietarySupplement"
+  ],
+  "profiles": {
+    "@id": "https://www.herbapedia.org/entity/preparation/ginseng-root"
+  },
+  "name": {
+    "en": "Ginseng",
+    "zh-Hant": "人蔘",
+    "zh-Hans": "人参"
+  },
+  "pinyin": "Rén Shēn",
+  "hanyuPinlu": "ren2 shen1",
+  "derivedFromPlant": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/ginseng"
+  },
+  "hasCategory": {
+    "@id": "https://www.herbapedia.org/system/tcm/category/tonify-qi"
+  },
+  "hasNature": {
+    "@id": "https://www.herbapedia.org/system/tcm/nature/warm"
+  },
+  "hasFlavor": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/flavor/sweet"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/flavor/bitter"
+    }
+  ],
+  "entersMeridian": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/spleen"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/lung"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/meridian/heart"
+    }
+  ],
+  "tcmFunctions": {
+    "en": "Powerfully tonifies primal qi, strengthens the spleen and nourishes the stomach, benefits the lung qi, generates fluids, quiets the spirit.",
+    "zh-Hant": "大補元氣，復脈固脫，補脾益肺，生津養血，安神益智。"
+  },
+  "tcmTraditionalUsage": {
+    "en": "The supreme qi tonic herb. Used for severe qi deficiency, prolapse, fatigue, loss of appetite, shortness of breath, spontaneous sweating, thirst, and heart palpitations. Famous for rescuing devastated yang in emergency situations.",
+    "zh-Hant": "大補元氣之聖藥。用於氣虛欲脫，脈微欲絕，脾氣不足，肺氣虧虛，津傷口渴，虛熱消渴，失眠多夢，驚悸健忘。"
+  },
+  "tcmModernResearch": {
+    "en": "Research shows adaptogenic effects on the central nervous system, immune modulation, anti-fatigue, cardiovascular protection, and anti-diabetic effects. Ginsenosides demonstrate diverse pharmacological activities including neuroprotection and anti-cancer properties."
+  },
+  "indications": [
+    "Severe qi deficiency",
+    "Collapse and shock",
+    "Spleen qi deficiency",
+    "Lung qi deficiency",
+    "Spontaneous sweating",
+    "Thirst from deficiency",
+    "Heart palpitations",
+    "Insomnia"
+  ],
+  "contraindications": {
+    "en": "Contraindicated in excess heat patterns, high fever, excess conditions. Avoid with veratrum (藜蘆). Use cautiously with radish (蘿蔔) which may reduce effects.",
+    "zh-Hant": "實熱證、濕熱證忌用。反藜蘆。服用人蔘時忌食蘿蔔。"
+  },
+  "dosage": {
+    "en": "3-9g decocted separately. For rescue from collapse: 15-30g decocted and taken as a strong brew.",
+    "zh-Hant": "煎服，3-9克，另煎兌服。救脫可用15-30克。"
+  },
+  "incompatibilities": {
+    "en": "Incompatible with Veratrum (藜蘆). Antagonized by Radish (蘿蔔)."
+  },
+  "dosageEffect": {
+    "small": {
+      "effect": "Gentle tonification, daily health maintenance"
+    },
+    "medium": {
+      "effect": "Treatment of qi deficiency patterns"
+    },
+    "large": {
+      "effect": "Rescue from collapse, emergency situations"
+    }
+  },
+  "comparisonNotes": {
+    "en": "Compared to American Ginseng (西洋參): Asian ginseng is warmer and more stimulating, better for qi and yang deficiency. American ginseng is cooler and more moistening, better for qi and yin deficiency with heat."
+  },
+  "classicalReferences": [
+    {
+      "text": "神農本草經",
+      "reference": "上品",
+      "quote": "味甘微寒。主補五臟，安精神，定魂魄，止驚悸，除邪氣，明目，開心益智。"
+    },
+    {
+      "text": "本草綱目",
+      "reference": "草部",
+      "quote": "治男婦一切虛證，發熱自汗，眩暈頭痛，反胃吐食，痎瘧，滑瀉久痢，小便頻數，淋瀝，勞倦內傷，中風中暑，痿痹，吐血，嗽血，下血，血淋，血崩，胎前產後諸病。"
+    }
+  ],
+  "provenance": {
+    "created": "2024-01-15",
+    "source": "神農本草經, 本草綱目, 中藥學教材"
+  }
+}

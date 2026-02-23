@@ -1,0 +1,19 @@
+{
+  "fileName": "main.jpg",
+  "species": "Valeriana officinalis",
+  "commonName": "Valerian",
+  "source": {
+    "url": "https://commons.wikimedia.org/wiki/File:Valeriana_officinalis_-_Niitv%C3%A4lja.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Valeriana_officinalis_-_Niitv%C3%A4lja.jpg/960px-Valeriana_officinalis_-_Niitv%C3%A4lja.jpg",
+    "platform": "Wikimedia Commons"
+  },
+  "attribution": {
+    "creator": "Wikipedia Contributor",
+    "license": "CC0 1.0 Universal",
+    "spdxId": "CC0-1.0",
+    "spdxUrl": "https://spdx.org/licenses/CC0-1.0.html",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "title": "Valeriana officinalis - Niitvälja"
+  },
+  "downloaded": "2026-02-23"
+}

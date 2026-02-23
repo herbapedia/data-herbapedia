@@ -1,0 +1,49 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/dihuang",
+  "@type": [
+    "botany:PlantSpecies",
+    "herbapedia:BotanicalSource",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Dihuang",
+    "zh-Hant": "生地黃、乾地黃  又名地黃",
+    "zh-Hans": "生地黄、乾地黄  又名地黄"
+  },
+  "scientificName": "Rehmannia glutinosa",
+  "family": null,
+  "genus": null,
+  "description": {
+    "en": "Root of Rehmannia glutinosa Libosch., family Scrophulariaceae.\n",
+    "zh-Hant": "生地黃、乾地黃  又名地黃（學名：Rehmannia glutinosa）是一種具有藥用價值的天然產物。現代藥理學研究證實其含有多種生物活性成分，在傳統醫學和現代保健領域均有重要應用價值。",
+    "zh-Hans": "生地黃、干地黃  又名地黃（学名：Rehmannia glutinosa）是一种具有药用價值的天然產物。現代药理学研究证实其含有多种生物活性成分，在传统医学和現代保健領域均有重要应用價值。"
+  },
+  "image": "media/images/rehmannia-glutinosa/main.jpg",
+  "gbifID": 7516558,
+  "provenance": {
+    "created": "2026-02-18T09:15:10.040Z",
+    "modified": "2026-02-21T01:46:20.750Z",
+    "migratedFrom": "entities/plants/dihuang/entity.jsonld",
+    "source": "vitaherbapedia.com",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "classificationNote": "Reclassified as BotanicalSource"
+  },
+  "hasParts": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/part/dihuang-root"
+    }
+  ],
+  "wikidataID": "Q1071605",
+  "sourceType": "botanical",
+  "sourceSubType": "plant",
+  "hasTCMProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/profile/dihuang"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/profile/shoudihuang"
+    }
+  ],
+  "ncbiTaxonID": "29695"
+}

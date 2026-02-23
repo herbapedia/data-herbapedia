@@ -1,0 +1,51 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/botany.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/chemical-profile/milk-thistle-seed",
+  "@type": [
+    "botany:ChemicalProfile",
+    "schema:Dataset"
+  ],
+  "name": {
+    "en": "Milk Thistle Seed Chemical Profile",
+    "zh-Hant": "乳薊籽化學成分譜",
+    "zh-Hans": "乳蓟籽化学成分谱"
+  },
+  "profileOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/part/milk-thistle-seed"
+  },
+  "hasComponent": [
+    {
+      "compound": {
+        "@id": "https://www.herbapedia.org/entity/botanical/chemical/silymarin"
+      },
+      "relativeAbundance": "major",
+      "concentrationRange": {
+        "min": 1,
+        "max": 4,
+        "unit": "%"
+      },
+      "detectionMethod": "HPLC"
+    },
+    {
+      "compound": {
+        "@id": "https://www.herbapedia.org/entity/botanical/chemical/flavonoids"
+      },
+      "relativeAbundance": "moderate",
+      "concentrationRange": {
+        "min": 0.3,
+        "max": 1.5,
+        "unit": "%"
+      },
+      "detectionMethod": "HPLC"
+    }
+  ],
+  "analyticalMethod": "HPLC",
+  "description": {
+    "en": "Chemical composition profile of Milk Thistle seed, containing key bioactive flavonolignans including silybin, silydianin, and silychristin."
+  },
+  "provenance": {
+    "created": "2026-02-21T00:00:00.000Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

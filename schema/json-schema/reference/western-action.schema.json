@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herbapedia.org/schema/json-schema/reference/western-action.schema.json",
+  "title": "Western Herbal Action",
+  "description": "Western herbal medicine therapeutic action (pharmacological activity). Describes the physiological effect an herb has on the body based on biomedical science. Examples: anti-inflammatory, carminative, adaptogen, nervine.",
+  "type": "object",
+  "allOf": [
+    { "$ref": "./reference-entity.schema.json" }
+  ],
+  "required": ["@id", "@type", "name"],
+  "properties": {
+    "@id": {
+      "description": "Unique identifier: western/action/{slug}.",
+      "type": "string",
+      "pattern": "^western/action/[a-z0-9-]+$",
+      "examples": [
+        "western/action/anti-inflammatory",
+        "western/action/carminative",
+        "western/action/adaptogen",
+        "western/action/nervine",
+        "western/action/expectorant",
+        "western/action/antimicrobial",
+        "western/action/hepatic",
+        "western/action/diuretic"
+      ]
+    },
+    "@type": {
+      "type": "array",
+      "items": { "type": "string" },
+      "contains": { "const": "western:Action" },
+      "examples": [["western:Action"]]
+    },
+    "name": {
+      "description": "Action name.",
+      "$ref": "../core/language-map.schema.json",
+      "examples": [{ "en": "Anti-inflammatory" }, { "en": "Carminative" }]
+    },
+    "definition": {
+      "description": "Formal definition of this action.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "mechanism": {
+      "description": "Known physiological or pharmacological mechanism.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "bodySystem": {
+      "description": "Primary body system(s) affected.",
+      "type": "array",
+      "items": { "type": "string" },
+      "examples": [["digestive", "nervous", "respiratory", "cardiovascular", "immune", "endocrine", "reproductive", "urinary", "integumentary", "musculoskeletal"]]
+    },
+    "physiologicalEffect": {
+      "description": "The physiological effect produced.",
+      "$ref": "../core/language-map.schema.json"
+    },
+    "clinicalIndications": {
+      "description": "Clinical conditions where this action is useful.",
+      "type": "array",
+      "items": { "type": "string" },
+      "examples": [["arthritis", "gastritis", "anxiety", "insomnia"]]
+    },
+    "evidenceLevel": {
+      "description": "Level of scientific evidence for this action.",
+      "type": "string",
+      "enum": ["traditional", "empirical", "preliminary", "moderate", "strong"],
+      "_documentation": {
+        "traditional": "Based on historical/traditional use",
+        "empirical": "Based on clinical experience",
+        "preliminary": "Some in vitro/animal studies",
+        "moderate": "Some human clinical trials",
+        "strong": "Multiple well-designed clinical trials"
+      }
+    },
+    "relatedActions": {
+      "description": "Related or complementary actions.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" }
+    },
+    "contraindications": {
+      "description": "Conditions where this action should be avoided.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "drugInteractions": {
+      "description": "Potential drug interactions.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "tcmEquivalents": {
+      "description": "Approximate TCM category equivalents.",
+      "type": "array",
+      "items": { "$ref": "../core/iri-reference.schema.json" }
+    },
+    "ayurvedaEquivalents": {
+      "description": "Approximate Ayurvedic concept equivalents.",
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": true,
+  "_documentation": {
+    "iriPattern": "western/action/{slug}",
+    "directory": "systems/western/reference/actions.jsonld",
+    "keyDistinction": {
+      "westernAction": "Pharmacological effect based on biomedical science",
+      "notTCMNature": "Not about heating/cooling (that's TCM nature)",
+      "notAyurvedaVirya": "Not about heating/cooling potency (that's Ayurveda virya)"
+    },
+    "commonActions": {
+      "adaptogen": "Helps body adapt to stress, normalizes function",
+      "alterative": "Gradually restores health, blood purifier",
+      "analgesic": "Relieves pain",
+      "anthelmintic": "Expels parasitic worms",
+      "anti-inflammatory": "Reduces inflammation",
+      "antimicrobial": "Kills or inhibits microorganisms",
+      "antioxidant": "Neutralizes free radicals",
+      "antispasmodic": "Relieves muscle spasms",
+      "astringent": "Tones tissues, reduces secretions",
+      "carminative": "Relieves gas and bloating",
+      "cholagogue": "Stimulates bile flow",
+      "demulcent": "Soothes mucous membranes",
+      "diaphoretic": "Promotes sweating",
+      "diuretic": "Increases urine output",
+      "emmenagogue": "Stimulates menstrual flow",
+      "expectorant": "Promotes expulsion of mucus",
+      "hepatic": "Supports liver function",
+      "hypnotic": "Induces sleep",
+      "hypotensive": "Lowers blood pressure",
+      "immunomodulator": "Modulates immune function",
+      "laxative": "Promotes bowel movements",
+      "nervine": "Supports nervous system",
+      "rubefacient": "Increases local blood flow",
+      "sedative": "Calms, reduces anxiety",
+      "stimulant": "Increases activity",
+      "stomachic": "Stimulates digestion",
+      "tonic": "Strengthens and restores",
+      "vulnerary": "Promotes wound healing"
+    }
+  }
+}

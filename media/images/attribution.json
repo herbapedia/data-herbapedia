@@ -1,0 +1,73 @@
+{
+  "description": "Image attribution for Herbapedia media library",
+  "lastUpdated": "2026-02-23",
+  "licenseReference": {
+    "spdxBaseUrl": "https://spdx.org/licenses/",
+    "note": "SPDX (Software Package Data Exchange) provides standardized license identifiers. See https://spdx.org/licenses/ for full list."
+  },
+  "globalAttribution": {
+    "vitaGreen": {
+      "copyright": "Vita Green Health Products Ltd.",
+      "license": "All rights reserved - used with permission",
+      "spdxId": "NONE",
+      "spdxUrl": null,
+      "note": "The majority of images in this library are copyrighted to Vita Green Health Products Ltd. and are used with permission."
+    }
+  },
+  "externalAttributions": {
+    "wikimedia": [
+      {
+        "directory": "matricaria-chamomilla",
+        "species": "Matricaria chamomilla",
+        "source": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Wild_Chamomile_(Matricaria_maritima)_-_William_Catto_-_ABDAG016173.jpg",
+        "creator": "William Catto",
+        "license": "Public Domain Mark 1.0",
+        "spdxId": "CC-PDDC",
+        "spdxUrl": "https://spdx.org/licenses/CC-PDDC.html",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      {
+        "directory": "crataegus-pinnatifida",
+        "species": "Crataegus pinnatifida",
+        "source": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:HawthornFruit.JPG",
+        "license": "CC0 1.0 Universal",
+        "spdxId": "CC0-1.0",
+        "spdxUrl": "https://spdx.org/licenses/CC0-1.0.html",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      {
+        "directory": "curcuma-longa",
+        "species": "Curcuma longa",
+        "source": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Curcuma_longa_roots.jpg",
+        "creator": "Simon A. Eugster",
+        "license": "Creative Commons Attribution Share Alike 3.0",
+        "spdxId": "CC-BY-SA-3.0",
+        "spdxUrl": "https://spdx.org/licenses/CC-BY-SA-3.0.html",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+      },
+      {
+        "directory": "valeriana-officinalis",
+        "species": "Valeriana officinalis",
+        "source": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Valeriana_officinalis_-_Niitvälja.jpg",
+        "license": "CC0 1.0 Universal",
+        "spdxId": "CC0-1.0",
+        "spdxUrl": "https://spdx.org/licenses/CC0-1.0.html",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ]
+  },
+  "imageDirectoryConvention": {
+    "botanicalSpecies": "Use Latin/scientific name slug (e.g., zingiber-officinale, panax-ginseng)",
+    "nonBotanical": "Use descriptive name (e.g., vitamin-c, calcium, deer-antler)",
+    "fileName": "main.jpg (standard), with variants as main-2.jpg, part-name.jpg, etc."
+  },
+  "metadataConvention": {
+    "file": "main.json alongside each main.jpg",
+    "requiredFields": ["fileName", "attribution.copyright", "attribution.spdxId"],
+    "spdxReference": "https://spdx.org/licenses/"
+  }
+}

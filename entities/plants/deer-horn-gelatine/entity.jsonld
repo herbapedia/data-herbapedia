@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/deer-horn-gelatine",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/deer-horn-gelatine",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"

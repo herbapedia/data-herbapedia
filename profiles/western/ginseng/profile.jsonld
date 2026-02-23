@@ -1,0 +1,143 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/ginseng",
+  "@type": [
+    "western:Herb",
+    "schema:DietarySupplement"
+  ],
+  "profiles": {
+    "@id": "https://www.herbapedia.org/entity/preparation/ginseng-root"
+  },
+  "name": {
+    "en": "Asian Ginseng",
+    "zh-Hant": "人蔘"
+  },
+  "derivedFromPlant": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/ginseng"
+  },
+  "hasAction": [
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/adaptogen"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/immunomodulator"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/action/antioxidant"
+    }
+  ],
+  "hasOrganAffinity": [
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/brain"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/adrenals"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/heart"
+    }
+  ],
+  "primaryBodySystem": {
+    "@id": "https://www.herbapedia.org/system/western/profile/system/endocrine"
+  },
+  "secondaryBodySystems": [
+    {
+      "@id": "https://www.herbapedia.org/system/western/profile/system/nervous"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/profile/system/immune"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/profile/system/cardiovascular"
+    }
+  ],
+  "westernTraditionalUsage": {
+    "en": "Ginseng has been used in Western herbal medicine since the 18th century when it was introduced from Asia. Valued as an adaptogen that helps the body cope with physical and mental stress, improves cognitive function, and enhances overall vitality and well-being."
+  },
+  "westernModernResearch": {
+    "en": "Extensively studied adaptogen. Ginsenosides (the active compounds) have demonstrated effects on the HPA axis, immune system modulation, and cognitive enhancement. Meta-analyses suggest benefits for fatigue, erectile dysfunction, and glycemic control in type 2 diabetes."
+  },
+  "clinicalTrials": [
+    {
+      "condition": "Chronic fatigue",
+      "result": "Significant improvement in fatigue scores",
+      "reference": "Journal of Ginseng Research, 2023"
+    },
+    {
+      "condition": "Cognitive function",
+      "result": "Improved working memory and reaction time",
+      "reference": "Nutrients, 2022"
+    },
+    {
+      "condition": "Type 2 diabetes",
+      "result": "Improved glycemic control and insulin sensitivity",
+      "reference": "Diabetes Care, 2023"
+    }
+  ],
+  "activeConstituents": [
+    {
+      "name": "Ginsenosides (Panaxosides)",
+      "concentration": "1-3% of dried root",
+      "activity": "Adaptogenic, immunomodulatory, neuroprotective"
+    },
+    {
+      "name": "Polysaccharides",
+      "concentration": "Variable",
+      "activity": "Immunomodulatory"
+    },
+    {
+      "name": "Peptides (Glutamyl peptides)",
+      "concentration": "Trace",
+      "activity": "Antioxidant"
+    }
+  ],
+  "indications": [
+    "Chronic fatigue and exhaustion",
+    "Stress adaptation",
+    "Cognitive decline",
+    "Immune support",
+    "Erectile dysfunction",
+    "Type 2 diabetes (adjunctive)",
+    "Athletic performance",
+    "General weakness"
+  ],
+  "contraindications": {
+    "en": "Hypertension, acute infections, anxiety disorders, pregnancy, breastfeeding. Discontinue before surgery."
+  },
+  "drugInteractions": [
+    {
+      "drug": "Warfarin",
+      "interaction": "May decrease INR/anticoagulant effect",
+      "severity": "moderate"
+    },
+    {
+      "drug": "MAO inhibitors",
+      "interaction": "Potential hypertensive crisis",
+      "severity": "high"
+    },
+    {
+      "drug": "Diabetes medications",
+      "interaction": "Additive hypoglycemic effect",
+      "severity": "moderate"
+    },
+    {
+      "drug": "Stimulants",
+      "interaction": "Additive stimulant effect",
+      "severity": "low"
+    }
+  ],
+  "dosage": {
+    "en": "Standard: 1-2g dried root daily. Standardized extract (4-7% ginsenosides): 100-200mg 1-2 times daily. Cycled use recommended: 2-3 weeks on, 1-2 weeks off.",
+    "tea": "1-2g dried root steeped, 1-2 times daily",
+    "tincture": "1-2mL of 1:5 tincture, 1-3 times daily",
+    "capsule": "200-400mg standardized extract, 1-2 times daily"
+  },
+  "evidenceLevel": "moderate",
+  "safetyRating": {
+    "en": "Generally safe in recommended doses for up to 3 months. Long-term use may cause side effects including hypertension, insomnia, and nervousness."
+  },
+  "provenance": {
+    "created": "2024-01-15",
+    "source": "WHO Monographs, German Commission E, Natural Medicines Database"
+  }
+}

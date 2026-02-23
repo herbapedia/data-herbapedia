@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/chinese-angelica-or-dong-quai",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/chinese-angelica-or-dong-quai",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"

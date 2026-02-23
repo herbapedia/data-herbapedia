@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/taoren-or-peach-kernel-root",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Taoren or peach kernel Root",
+    "zh-Hant": "桃仁",
+    "zh-Hans": "桃仁"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/taoren-or-peach-kernel"
+  },
+  "partType": "root",
+  "description": {
+    "en": "The root of Prunus persica, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.830Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

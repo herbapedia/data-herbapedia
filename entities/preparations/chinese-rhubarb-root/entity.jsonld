@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/preparation/chinese-rhubarb-root",
+  "@type": [
+    "herbal:HerbalPreparation",
+    "schema:DietarySupplement"
+  ],
+  "name": {
+    "en": "Chinese rhubarb root",
+    "zh-Hant": "大黃",
+    "zh-Hans": "大黄"
+  },
+  "derivedFrom": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/chinese-rhubarb-root"
+    }
+  ],
+  "preparationMethod": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/method/dried"
+  },
+  "form": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/form/whole"
+  },
+  "hasTCMProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/profile/chinese-rhubarb-root"
+    }
+  ],
+  "safetyInfo": {},
+  "provenance": {
+    "created": "2026-02-20",
+    "source": "Generated from TCM profile",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "description": {
+    "en": "Herbal preparation derived from Chinese rhubarb root. Made from the roots of the Chinese rhubarb plant, dahuang is a bitter, cooling herb for the meridians of the heart, spleen, stomach, liver and large intestine. It is traditionally used as a purgative ..."
+  },
+  "image": "media/images/chinese-rhubarb-root/chinese-rhubarb-root.jpg"
+}

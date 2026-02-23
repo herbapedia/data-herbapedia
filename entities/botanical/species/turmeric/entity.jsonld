@@ -1,0 +1,99 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/turmeric",
+  "@type": [
+    "botany:PlantSpecies",
+    "herbapedia:BotanicalSource",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Turmeric",
+    "zh-Hant": "薑黃",
+    "zh-Hans": "姜黄",
+    "hi": "हल्दी",
+    "sa": "हरिद्रा",
+    "ta": "மஞ்சள்"
+  },
+  "scientificName": "Curcuma longa",
+  "scientificNameAuthorship": "L.",
+  "family": "Zingiberaceae",
+  "genus": "Curcuma",
+  "specificEpithet": "longa",
+  "taxonomicClassification": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Liliopsida",
+    "order": "Zingiberales",
+    "family": "Zingiberaceae",
+    "genus": "Curcuma"
+  },
+  "commonName": {
+    "en": "Turmeric, Indian Saffron, Golden Spice",
+    "zh-Hant": "薑黃",
+    "zh-Hans": "姜黄",
+    "hi": "हल्दी",
+    "ta": "மஞ்சள்"
+  },
+  "description": {
+    "en": "A perennial flowering plant of the ginger family, cultivated for its rhizomes which are used as a spice, coloring agent, and in traditional medicine. Known for its bright yellow color and warm, bitter taste.",
+    "zh-Hant": "薑科多年生草本植物，其根莖用作香料、色素和傳統藥物。以其鮮豔的黃色和溫苦味著稱。"
+  },
+  "habitat": {
+    "en": "Tropical and subtropical regions. Requires warm, humid climate with well-drained, fertile soil. Annual rainfall of 1000-2000mm."
+  },
+  "origin": {
+    "en": "South Asia, specifically the Indian subcontinent. Cultivated for over 4,500 years."
+  },
+  "geographicalDistribution": {
+    "en": "India (largest producer), Bangladesh, Pakistan, Sri Lanka, Taiwan, China, Myanmar, Indonesia, and other tropical regions."
+  },
+  "growthForm": "herb",
+  "lifecycle": "perennial",
+  "hasParts": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/part/turmeric-rhizome"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/part/turmeric-leaf"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/part/turmeric-flower"
+    }
+  ],
+  "containsChemical": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/curcumin"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/turmerone"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/zingiberene"
+    }
+  ],
+  "hasChemicalProfile": {
+    "@id": "https://www.herbapedia.org/entity/botanical/chemical-profile/turmeric-rhizome"
+  },
+  "hasDNABarcode": {
+    "@id": "https://www.herbapedia.org/entity/botanical/barcode/turmeric"
+  },
+  "image": "media/images/curcuma-longa/main.jpg",
+  "gbifID": "2757833",
+  "powoID": "83939-2",
+  "wikidataID": "Q183354",
+  "conservationStatus": "LC",
+  "provenance": {
+    "created": "2024-01-15",
+    "modified": "2026-02-21T01:46:20.759Z",
+    "source": "GBIF, POWO, traditional medicine texts",
+    "classificationNote": "Reclassified as BotanicalSource"
+  },
+  "sourceType": "botanical",
+  "sourceSubType": "plant",
+  "hasWesternProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/western/profile/turmeric"
+    }
+  ],
+  "ncbiTaxonID": "13348"
+}

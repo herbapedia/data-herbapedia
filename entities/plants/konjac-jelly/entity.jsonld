@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/konjac-jelly",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/konjac-jelly",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"

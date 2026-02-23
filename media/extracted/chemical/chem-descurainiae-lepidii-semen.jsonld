@@ -1,0 +1,481 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/chemical/descurainiae-lepidii-semen",
+  "@type": ["herbapedia:ChemicalAnalysisData", "schema:Dataset"],
+  "dataType": "ChemicalAnalysis",
+  "sourceDocument": "CHEM______Descurainiae_Semen__Lepidii_Semen_V1.pdf",
+  "herbs": [
+    {
+      "part": "Part I",
+      "scientificName": "Descurainia sophia",
+      "latinName": "Descurainiae Semen",
+      "chineseName": "南葶藶子",
+      "pinyinName": "Nan Ting Li Zi",
+      "identificationMethod": ["TLC", "HPLC-Fingerprint", "HPLC-Assay"],
+      "referenceCompounds": [
+        {
+          "name": "Quercetin-3-O-beta-D-glucopyranosyl-7-O-beta-D-gentiobioside",
+          "chineseName": "槲皮素-3-O-beta-D-葡萄糖-7-O-beta-D-龍膽雙糖苷",
+          "formula": "C33H40O22",
+          "purpose": ["TLC identification", "HPLC assay quantification"]
+        },
+        {
+          "name": "Sinapic acid",
+          "chineseName": "芥子酸",
+          "purpose": ["HPLC fingerprint marker"]
+        }
+      ],
+      "tlcMethod": {
+        "appendixReference": "Appendix I",
+        "stationaryPhase": "HPTLC silica gel F254 plate",
+        "developingSolvent": {
+          "components": ["n-butanol", "water", "formic acid"],
+          "ratio": "6:3:2 (v/v)"
+        },
+        "sprayReagent": {
+          "composition": "2 g aluminium trichloride in 100 mL ethanol",
+          "visualization": "UV light at 366 nm after spraying and drying"
+        },
+        "standardSolution": {
+          "compound": "Quercetin-3-O-beta-D-glucopyranosyl-7-O-beta-D-gentiobioside",
+          "concentration": "1.0 mg in 10 mL methanol (0.1 mg/mL)",
+          "preparation": "Dissolve 1.0 mg CRS in 10 mL methanol"
+        },
+        "testSolution": {
+          "sampleAmount": "1.0 g",
+          "solvent": "70% methanol",
+          "solventVolume": "10 mL",
+          "extraction": "sonication (220 W) for 30 min, then filter"
+        },
+        "applicationVolumes": {
+          "standardSolution": "2 uL",
+          "testSolution": "2 uL"
+        },
+        "developingDistance": "8 cm",
+        "visualization": "UV light at 366 nm",
+        "identificationCriteria": {
+          "positiveMarkers": ["Quercetin-3-O-beta-D-glucopyranosyl-7-O-beta-D-gentiobioside"],
+          "method": "Sample must show spot or band with same color and Rf value as standard"
+        }
+      },
+      "hplcFingerprint": {
+        "appendixReference": "Appendix II",
+        "chromatographicSystem": {
+          "column": {
+            "type": "ODS bonded silica gel (C18)",
+            "dimensions": "4.6 x 250 mm",
+            "particleSize": "5 um"
+          },
+          "detector": "DAD",
+          "detectionWavelength": "254 nm",
+          "flowRate": "1.0 mL/min",
+          "injectionVolume": "10 uL"
+        },
+        "mobilePhase": {
+          "solventA": "0.1% Acetic acid",
+          "solventB": "Methanol",
+          "gradientProgram": [
+            {
+              "timeRange": "0-60 min",
+              "solventA": "65% to 50%",
+              "solventB": "35% to 50%",
+              "elution": "linear gradient"
+            }
+          ]
+        },
+        "standardSolution": {
+          "name": "Sinapic acid Std-FP",
+          "concentration": "10 mg/L",
+          "preparation": "0.1 mg sinapic acid CRS in 10 mL 70% methanol"
+        },
+        "testSolution": {
+          "sampleAmount": "1.0 g",
+          "solvent": "70% methanol",
+          "solventVolume": "20 mL",
+          "extraction": "sonication (180 W) for 30 min",
+          "finalVolume": "25 mL",
+          "filtration": "0.45 um PTFE filter"
+        },
+        "systemSuitability": {
+          "replicateInjections": "5 (minimum)",
+          "peakAreaRSD": "not more than 5.0% (sinapic acid)",
+          "retentionTimeRSD": "not more than 2.0% (sinapic acid)",
+          "theoreticalPlates": "not less than 10000 (sinapic acid)",
+          "resolution": "not less than 1.0 (peak 1 from adjacent peak)"
+        },
+        "identificationCriteria": {
+          "retentionTimeTolerance": "not more than 2.0% difference between sample and standard"
+        }
+      },
+      "rrtValues": [
+        {
+          "peakNumber": 1,
+          "compound": "Sinapic acid",
+          "rrt": 1.00,
+          "acceptableRange": null,
+          "referenceMarker": true,
+          "referenceTo": "self"
+        },
+        {
+          "peakNumber": 2,
+          "compound": "Unidentified",
+          "rrt": 1.82,
+          "acceptableRange": "+/-0.04",
+          "referenceMarker": false,
+          "referenceTo": "Sinapic acid"
+        },
+        {
+          "peakNumber": 3,
+          "compound": "Unidentified",
+          "rrt": 1.93,
+          "acceptableRange": "+/-0.03",
+          "referenceMarker": false,
+          "referenceTo": "Sinapic acid"
+        },
+        {
+          "peakNumber": 4,
+          "compound": "Unidentified",
+          "rrt": 2.29,
+          "acceptableRange": "+/-0.03",
+          "referenceMarker": false,
+          "referenceTo": "Sinapic acid"
+        },
+        {
+          "peakNumber": 5,
+          "compound": "Unidentified",
+          "rrt": 2.53,
+          "acceptableRange": "+/-0.03",
+          "referenceMarker": false,
+          "referenceTo": "Sinapic acid"
+        }
+      ],
+      "hplcAssay": {
+        "appendixReference": "Appendix III",
+        "chromatographicSystem": {
+          "column": {
+            "type": "ODS bonded silica gel (C18)",
+            "dimensions": "4.6 x 250 mm",
+            "particleSize": "5 um"
+          },
+          "detector": "DAD",
+          "detectionWavelength": "254 nm",
+          "flowRate": "1.0 mL/min",
+          "mobilePhase": "0.1% acetic acid - acetonitrile (89:11, v/v)",
+          "runTime": "about 20 min"
+        },
+        "standardSolutions": {
+          "stockSolution": {
+            "name": "Quercetin-3-O-beta-D-glucopyranosyl-7-O-beta-D-gentiobioside Std-Stock",
+            "concentration": "100 mg/L",
+            "preparation": "0.5 mg CRS in 5 mL 70% methanol"
+          },
+          "workingSolutions": {
+            "name": "Std-AS",
+            "concentrations": ["1", "10", "15", "20", "40 mg/L"],
+            "description": "Series of standard solutions prepared by diluting Std-Stock with 70% methanol"
+          },
+          "injectionVolume": "10 uL (for calibration)"
+        },
+        "testSolution": {
+          "sampleAmount": "1.0 g",
+          "solvent": "70% methanol",
+          "extractionVolume": "20 mL + repeat extraction",
+          "extraction": "reflux for 1 hour, repeat once",
+          "washVolume": "10 mL 70% methanol",
+          "finalVolume": "50 mL",
+          "filtration": "0.45 um PTFE filter",
+          "injectionVolume": "10 uL"
+        },
+        "systemSuitability": {
+          "replicateInjections": "5 (minimum)",
+          "standardSolution": "15 mg/L (Std-AS)",
+          "peakAreaRSD": "not more than 5.0%",
+          "retentionTimeRSD": "not more than 2.0%",
+          "theoreticalPlates": "not less than 5000",
+          "resolution": "not less than 1.5"
+        },
+        "calibration": {
+          "method": "5-point calibration curve",
+          "plot": "Peak area vs. concentration (mg/L)",
+          "identificationTolerance": "not more than 5.0% difference in retention times"
+        }
+      },
+      "assayLimits": {
+        "quercetinGlycoside": {
+          "compound": "Quercetin-3-O-beta-D-glucopyranosyl-7-O-beta-D-gentiobioside",
+          "formula": "C33H40O22",
+          "minimumContent": "0.076%",
+          "basis": "dried substance"
+        }
+      },
+      "tests": {
+        "heavyMetals": {
+          "appendixReference": "Appendix V",
+          "requirement": "meet the requirements"
+        },
+        "pesticideResidues": {
+          "appendixReference": "Appendix VI",
+          "requirement": "meet the requirements"
+        },
+        "mycotoxins": {
+          "appendixReference": "Appendix VII",
+          "requirement": "meet the requirements"
+        },
+        "foreignMatter": {
+          "appendixReference": "Appendix VIII",
+          "requirement": "not more than 5.0%"
+        },
+        "ash": {
+          "appendixReference": "Appendix IX",
+          "totalAsh": "not more than 8.0%",
+          "acidInsolubleAsh": "not more than 3.5%"
+        },
+        "waterContent": {
+          "appendixReference": "Appendix X",
+          "method": "Oven dried method",
+          "requirement": "not more than 9.0%"
+        }
+      },
+      "extractives": {
+        "appendixReference": "Appendix XI",
+        "waterSoluble": {
+          "method": "cold extraction method",
+          "requirement": "not less than 12.0%"
+        },
+        "ethanolSoluble": {
+          "method": "cold extraction method",
+          "requirement": "not less than 9.0%"
+        }
+      }
+    },
+    {
+      "part": "Part II",
+      "scientificName": "Lepidium apetalum",
+      "latinName": "Lepidii Semen",
+      "chineseName": "北葶藶子",
+      "pinyinName": "Bei Ting Li Zi",
+      "identificationMethod": ["TLC", "HPLC-Fingerprint", "HPLC-Assay"],
+      "referenceCompounds": [
+        {
+          "name": "Sinapic acid",
+          "chineseName": "芥子酸",
+          "purpose": ["TLC identification", "HPLC fingerprint marker"]
+        },
+        {
+          "name": "Quercetin",
+          "chineseName": "槲皮素",
+          "formula": "C15H10O7",
+          "purpose": ["HPLC assay quantification"]
+        }
+      ],
+      "tlcMethod": {
+        "appendixReference": "Appendix I",
+        "stationaryPhase": "HPTLC silica gel F254 plate",
+        "developingSolvent": {
+          "components": ["n-hexane", "ethyl acetate", "glacial acetic acid"],
+          "ratio": "10:6:1 (v/v)"
+        },
+        "standardSolution": {
+          "compound": "Sinapic acid",
+          "concentration": "1.0 mg in 10 mL methanol (0.1 mg/mL)",
+          "preparation": "Dissolve 1.0 mg CRS in 10 mL methanol"
+        },
+        "testSolution": {
+          "sampleAmount": "2.0 g",
+          "solvent": "methanol",
+          "solventVolume": "20 mL",
+          "extraction": "sonication (220 W) for 30 min, filter, evaporate to dryness at reduced pressure",
+          "finalVolume": "1 mL methanol"
+        },
+        "applicationVolumes": {
+          "standardSolution": "3 uL",
+          "testSolution": "4 uL"
+        },
+        "developingDistance": "8 cm",
+        "visualization": "UV light at 366 nm",
+        "identificationCriteria": {
+          "positiveMarkers": ["Sinapic acid"],
+          "method": "Sample must show spot or band with same color and Rf value as standard"
+        }
+      },
+      "hplcFingerprint": {
+        "appendixReference": "Appendix II",
+        "chromatographicSystem": {
+          "column": {
+            "type": "ODS bonded silica gel (C18)",
+            "dimensions": "4.6 x 250 mm",
+            "particleSize": "5 um"
+          },
+          "detector": "DAD",
+          "detectionWavelength": "324 nm",
+          "flowRate": "1.0 mL/min",
+          "mobilePhase": "0.1% acetic acid - acetonitrile (87:13, v/v)",
+          "runTime": "about 60 min",
+          "injectionVolume": "10 uL"
+        },
+        "standardSolution": {
+          "name": "Sinapic acid Std-FP",
+          "concentration": "50 mg/L",
+          "preparation": "0.5 mg sinapic acid CRS in 10 mL 50% methanol"
+        },
+        "testSolution": {
+          "sampleAmount": "1.0 g",
+          "solvent": "50% methanol",
+          "solventVolume": "20 mL",
+          "extraction": "sonication (180 W) for 30 min",
+          "finalVolume": "25 mL",
+          "filtration": "0.45 um PTFE filter"
+        },
+        "systemSuitability": {
+          "replicateInjections": "5 (minimum)",
+          "peakAreaRSD": "not more than 5.0% (sinapic acid)",
+          "retentionTimeRSD": "not more than 2.0% (sinapic acid)",
+          "theoreticalPlates": "not less than 10000 (sinapic acid)",
+          "resolution": "not less than 1.0 (peak 2 from adjacent peak)"
+        },
+        "identificationCriteria": {
+          "retentionTimeTolerance": "not more than 2.0% difference between sample and standard"
+        }
+      },
+      "rrtValues": [
+        {
+          "peakNumber": 1,
+          "compound": "Unidentified",
+          "rrt": 0.74,
+          "acceptableRange": "+/-0.03",
+          "referenceMarker": false,
+          "referenceTo": "Sinapic acid"
+        },
+        {
+          "peakNumber": 2,
+          "compound": "Sinapic acid",
+          "rrt": 1.00,
+          "acceptableRange": null,
+          "referenceMarker": true,
+          "referenceTo": "self"
+        },
+        {
+          "peakNumber": 3,
+          "compound": "Unidentified",
+          "rrt": 1.15,
+          "acceptableRange": "+/-0.03",
+          "referenceMarker": false,
+          "referenceTo": "Sinapic acid"
+        }
+      ],
+      "hplcAssay": {
+        "appendixReference": "Appendix III",
+        "chromatographicSystem": {
+          "column": {
+            "type": "ODS bonded silica gel (C18)",
+            "dimensions": "4.6 x 250 mm",
+            "particleSize": "5 um"
+          },
+          "detector": "DAD",
+          "detectionWavelength": "370 nm",
+          "flowRate": "1.0 mL/min",
+          "mobilePhase": "0.4% phosphoric acid - methanol (50:50, v/v)",
+          "runTime": "about 25 min"
+        },
+        "standardSolutions": {
+          "stockSolution": {
+            "name": "Quercetin Std-Stock",
+            "concentration": "100 mg/L",
+            "preparation": "0.5 mg quercetin CRS in 5 mL methanol"
+          },
+          "workingSolutions": {
+            "name": "Std-AS",
+            "concentrations": ["1", "10", "20", "30", "40 mg/L"],
+            "description": "Series of standard solutions prepared by diluting Std-Stock with methanol"
+          },
+          "injectionVolume": "10 uL (for calibration)"
+        },
+        "testSolution": {
+          "sampleAmount": "1.0 g",
+          "solvent": "methanol",
+          "extractionVolume": "30 mL methanol + 0.5 mL hydrochloric acid",
+          "extraction": "reflux for 2 hours",
+          "washVolume": "2 x 10 mL methanol",
+          "finalVolume": "50 mL",
+          "filtration": "0.45 um PTFE filter",
+          "injectionVolume": "10 uL"
+        },
+        "systemSuitability": {
+          "replicateInjections": "5 (minimum)",
+          "standardSolution": "20 mg/L (Std-AS)",
+          "peakAreaRSD": "not more than 5.0%",
+          "retentionTimeRSD": "not more than 2.0%",
+          "theoreticalPlates": "not less than 5000",
+          "resolution": "not less than 1.5"
+        },
+        "calibration": {
+          "method": "5-point calibration curve",
+          "plot": "Peak area vs. concentration (mg/L)",
+          "identificationTolerance": "not more than 5.0% difference in retention times"
+        }
+      },
+      "assayLimits": {
+        "quercetin": {
+          "compound": "Quercetin",
+          "formula": "C15H10O7",
+          "minimumContent": "0.10%",
+          "basis": "dried substance"
+        }
+      },
+      "tests": {
+        "heavyMetals": {
+          "appendixReference": "Appendix V",
+          "requirement": "meet the requirements"
+        },
+        "pesticideResidues": {
+          "appendixReference": "Appendix VI",
+          "requirement": "meet the requirements"
+        },
+        "mycotoxins": {
+          "appendixReference": "Appendix VII",
+          "requirement": "meet the requirements"
+        },
+        "foreignMatter": {
+          "appendixReference": "Appendix VIII",
+          "requirement": "not more than 7.0%"
+        },
+        "ash": {
+          "appendixReference": "Appendix IX",
+          "totalAsh": "not more than 7.5%",
+          "acidInsolubleAsh": "not more than 3.0%"
+        },
+        "waterContent": {
+          "appendixReference": "Appendix X",
+          "method": "Oven dried method",
+          "requirement": "not more than 9.0%"
+        }
+      },
+      "extractives": {
+        "appendixReference": "Appendix XI",
+        "waterSoluble": {
+          "method": "cold extraction method",
+          "requirement": "not less than 8.0%"
+        },
+        "ethanolSoluble": {
+          "method": "cold extraction method",
+          "requirement": "not less than 10.0%"
+        }
+      }
+    }
+  ],
+  "appendices": {
+    "appendixI": {
+      "title": "Chromatography - Thin-Layer Chromatography (TLC)",
+      "description": "General procedures for TLC including plate types (silica gel G, F254, HPTLC), application methods, developing chambers, Rf calculation, and visualization under UV light"
+    },
+    "appendixII": {
+      "title": "GC and HPLC/UHPLC Fingerprinting",
+      "description": "Methods for establishing chromatographic fingerprints using marker peaks and RRT values. Requires at least 10 batches of representative samples tested in duplicate"
+    },
+    "appendixIII": {
+      "title": "Chromatography - HPLC/UHPLC",
+      "description": "General HPLC/UHPLC procedures including system suitability tests (theoretical plates, repeatability, resolution, tailing factor) and quantitative calculations using 5-point calibration curve"
+    }
+  },
+  "extractedAt": "2026-02-20"
+}

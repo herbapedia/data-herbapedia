@@ -1,0 +1,168 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "https://www.herbapedia.org/vocab/herbal/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "schema": "https://schema.org/",
+    "herbapedia": "https://www.herbapedia.org/vocab/core/",
+    "herbal": "https://www.herbapedia.org/vocab/herbal/"
+  },
+  "@id": "https://www.herbapedia.org/vocab/herbal/forms",
+  "@type": ["skos:Collection"],
+  "rdfs:label": {
+    "en": "Herbal Preparation Forms"
+  },
+  "rdfs:comment": "Controlled vocabulary for physical forms of herbal preparations.",
+  "members": [
+    {
+      "@id": "https://www.herbapedia.org/vocab/herbal/form/whole",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Whole"
+      },
+      "skos:definition": {
+        "en": "Entire plant part, unprocessed"
+      },
+      "skos:example": {
+        "en": "Whole dried root, whole leaf"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/vocab/herbal/form/sliced",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Sliced"
+      },
+      "skos:definition": {
+        "en": "Plant part cut into pieces"
+      },
+      "skos:example": {
+        "en": "Sliced ginger rhizome"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/vocab/herbal/form/crushed",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Crushed"
+      },
+      "skos:definition": {
+        "en": "Mechanically broken into small pieces"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/vocab/herbal/form/powder",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Powder"
+      },
+      "skos:definition": {
+        "en": "Finely ground material"
+      },
+      "skos:example": {
+        "en": "Turmeric powder, ginseng powder"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/vocab/herbal/form/granule",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Granule"
+      },
+      "skos:definition": {
+        "en": "Small grain-like particles, often standardized extract"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/vocab/herbal/form/capsule",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Capsule"
+      },
+      "skos:definition": {
+        "en": "Encapsulated powder or extract"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/vocab/herbal/form/tablet",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Tablet"
+      },
+      "skos:definition": {
+        "en": "Compressed powder or extract into pill form"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/vocab/herbal/form/liquid",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Liquid"
+      },
+      "skos:definition": {
+        "en": "Fluid preparation"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/vocab/herbal/form/oil",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Oil"
+      },
+      "skos:definition": {
+        "en": "Fatty or essential oil extract"
+      },
+      "skos:example": {
+        "en": "Lavender oil, tea tree oil"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/vocab/herbal/form/extract",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Extract"
+      },
+      "skos:definition": {
+        "en": "Concentrated preparation using solvent extraction"
+      },
+      "skos:example": {
+        "en": "Ginkgo extract, milk thistle extract"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/vocab/herbal/form/tincture",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Tincture"
+      },
+      "skos:definition": {
+        "en": "Alcohol-based liquid extract"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/vocab/herbal/form/tea",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Tea"
+      },
+      "skos:definition": {
+        "en": "Water-infused or decocted preparation"
+      },
+      "skos:example": {
+        "en": "Chamomile tea, green tea"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/vocab/herbal/form/paste",
+      "@type": ["skos:Concept"],
+      "skos:prefLabel": {
+        "en": "Paste"
+      },
+      "skos:definition": {
+        "en": "Thick, spreadable preparation"
+      }
+    }
+  ]
+}

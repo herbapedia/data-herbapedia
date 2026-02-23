@@ -1,0 +1,46 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/cranberry",
+  "@type": [
+    "botany:PlantSpecies",
+    "herbapedia:BotanicalSource",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Cranberry",
+    "zh-Hant": "紅莓",
+    "zh-Hans": "红莓"
+  },
+  "scientificName": "Vaccinium macrocarpon",
+  "family": null,
+  "genus": null,
+  "description": {
+    "en": "Cranberry is a native fruit of North America. Nowadays, almost 98% of the world's supply is cultivated in natural and artificial bogs in the northern United States and Canada. Cranberry extract is prepared from its ripe fruit.\n",
+    "zh-Hant": "紅莓（學名：Vaccinium macrocarpon）是一種具有藥用價值的漿果類植物。現代研究表明其富含花青素、類黃酮等抗氧化物質，具有保護心血管、改善視力等藥理活性。",
+    "zh-Hans": "紅莓（学名：Vaccinium macrocarpon）是一种具有药用價值的浆果类植物。現代研究表明其富含花青素、类黃酮等抗氧化物质，具有保護心血管、改善視力等药理活性。"
+  },
+  "image": "media/images/vaccinium-macrocarpon/main.jpg",
+  "gbifID": 2882841,
+  "provenance": {
+    "created": "2026-02-18T09:16:20.738Z",
+    "modified": "2026-02-21T01:46:20.749Z",
+    "migratedFrom": "entities/plants/cranberry/entity.jsonld",
+    "source": "vitaherbapedia.com",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "classificationNote": "Reclassified as BotanicalSource"
+  },
+  "hasParts": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/part/cranberry-fruit"
+    }
+  ],
+  "sourceType": "botanical",
+  "sourceSubType": "plant",
+  "hasWesternProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/western/profile/cranberry"
+    }
+  ],
+  "wikidataID": "Q1076726",
+  "ncbiTaxonID": "232072"
+}

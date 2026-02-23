@@ -1,0 +1,216 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "https://www.herbapedia.org/",
+    "@vocab": "https://www.herbapedia.org/vocab/botany/",
+
+    "botany": "https://www.herbapedia.org/vocab/botany/",
+    "schema": "https://schema.org/",
+    "dwc": "http://rs.tdwg.org/dwc/terms/",
+    "gbif": "http://rs.gbif.org/terms/1.0/",
+    "dc": "http://purl.org/dc/terms/",
+    "skos": "http://www.w3.org/2004/02/skos/core/",
+
+    "PlantSpecies": {
+      "@id": "botany:PlantSpecies",
+      "@type": "@id"
+    },
+    "PlantPart": {
+      "@id": "botany:PlantPart",
+      "@type": "@id"
+    },
+    "ChemicalCompound": {
+      "@id": "botany:ChemicalCompound",
+      "@type": "@id"
+    },
+    "ChemicalProfile": {
+      "@id": "botany:ChemicalProfile",
+      "@type": "@id"
+    },
+    "DNABarcode": {
+      "@id": "botany:DNABarcode",
+      "@type": "@id"
+    },
+
+    "hasParts": {
+      "@id": "botany:hasPart",
+      "@type": "@id",
+      "@container": "@set",
+      "@comment": "Links a PlantSpecies to its constituent PlantPart entities"
+    },
+    "partOf": {
+      "@id": "botany:partOf",
+      "@type": "@id",
+      "@comment": "Links a PlantPart to its parent PlantSpecies"
+    },
+    "partType": {
+      "@id": "botany:partType",
+      "@type": "@vocab",
+      "@comment": "The type of plant part (root, rhizome, leaf, flower, etc.)"
+    },
+    "containsChemical": {
+      "@id": "botany:containsChemical",
+      "@type": "@id",
+      "@container": "@set",
+      "@comment": "Links to ChemicalCompound entities present in this species or part"
+    },
+    "hasChemicalProfile": {
+      "@id": "botany:hasChemicalProfile",
+      "@type": "@id",
+      "@comment": "Links to a detailed ChemicalProfile entity"
+    },
+    "hasDNABarcode": {
+      "@id": "botany:hasDNABarcode",
+      "@type": "@id",
+      "@comment": "Links to a DNABarcode entity for species identification"
+    },
+    "profileOf": {
+      "@id": "botany:profileOf",
+      "@type": "@id",
+      "@comment": "Links a ChemicalProfile to the PlantSpecies or PlantPart it describes"
+    },
+    "hasComponent": {
+      "@id": "botany:hasComponent",
+      "@container": "@set",
+      "@comment": "Chemical components in a ChemicalProfile"
+    },
+    "barcodes": {
+      "@id": "botany:barcodes",
+      "@type": "@id",
+      "@comment": "Links a DNABarcode to the PlantSpecies it identifies"
+    },
+    "sequence": {
+      "@id": "botany:sequence",
+      "@container": "@set",
+      "@comment": "DNA barcode sequences with region information"
+    },
+
+    "scientificName": {
+      "@id": "dwc:scientificName",
+      "@type": "xsd:string",
+      "@comment": "The Latin binomial (genus + species) per botanical nomenclature"
+    },
+    "scientificNameAuthorship": {
+      "@id": "dwc:scientificNameAuthorship",
+      "@type": "xsd:string"
+    },
+    "family": {
+      "@id": "dwc:family",
+      "@type": "xsd:string"
+    },
+    "genus": {
+      "@id": "dwc:genus",
+      "@type": "xsd:string"
+    },
+    "specificEpithet": {
+      "@id": "dwc:specificEpithet",
+      "@type": "xsd:string"
+    },
+    "taxonID": {
+      "@id": "dwc:taxonID",
+      "@type": "xsd:string"
+    },
+    "gbifID": {
+      "@id": "gbif:GBIFID",
+      "@type": "xsd:string",
+      "@comment": "GBIF species identifier"
+    },
+    "powoID": {
+      "@id": "botany:powoID",
+      "@type": "xsd:string",
+      "@comment": "Plants of the World Online identifier"
+    },
+    "ncbiTaxonID": {
+      "@id": "botany:ncbiTaxonID",
+      "@type": "xsd:string",
+      "@comment": "NCBI Taxonomy database identifier"
+    },
+    "wikidataID": {
+      "@id": "botany:wikidataID",
+      "@type": "xsd:string",
+      "@comment": "Wikidata entity ID (Q number)"
+    },
+
+    "name": {
+      "@id": "schema:name",
+      "@container": "@language"
+    },
+    "description": {
+      "@id": "schema:description",
+      "@container": "@language"
+    },
+    "commonName": {
+      "@id": "botany:commonName",
+      "@container": "@language"
+    },
+    "habitat": {
+      "@id": "botany:habitat",
+      "@container": "@language"
+    },
+    "origin": {
+      "@id": "botany:origin",
+      "@container": "@language"
+    },
+    "geographicalDistribution": {
+      "@id": "botany:geographicalDistribution",
+      "@container": "@language"
+    },
+    "morphology": {
+      "@id": "botany:morphology",
+      "@container": "@language"
+    },
+    "harvestSeason": {
+      "@id": "botany:harvestSeason",
+      "@container": "@language"
+    },
+    "preparationNotes": {
+      "@id": "botany:preparationNotes",
+      "@container": "@language"
+    },
+
+    "growthForm": {
+      "@id": "botany:growthForm",
+      "@type": "@vocab"
+    },
+    "lifecycle": {
+      "@id": "botany:lifecycle",
+      "@type": "@vocab"
+    },
+    "conservationStatus": {
+      "@id": "botany:conservationStatus",
+      "@type": "@vocab",
+      "@comment": "IUCN conservation status"
+    },
+
+    "image": {
+      "@id": "schema:image",
+      "@type": "@id"
+    },
+    "sameAs": {
+      "@id": "schema:sameAs",
+      "@type": "@id",
+      "@container": "@set"
+    },
+
+    "provenance": {
+      "@id": "botany:provenance",
+      "@type": "@json"
+    },
+    "source": {
+      "@id": "dc:source",
+      "@type": "xsd:string"
+    },
+    "created": {
+      "@id": "dc:created",
+      "@type": "xsd:dateTime"
+    },
+    "modified": {
+      "@id": "dc:modified",
+      "@type": "xsd:dateTime"
+    },
+    "license": {
+      "@id": "dc:license",
+      "@type": "@id"
+    }
+  }
+}

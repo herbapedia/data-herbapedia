@@ -1,0 +1,38 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/ginger-leaf",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Ginger Leaf",
+    "zh-Hant": "薑葉",
+    "zh-Hans": "姜叶"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/ginger"
+  },
+  "partType": "leaf",
+  "description": {
+    "en": "The simple, lanceolate leaves of the ginger plant, growing alternately along the pseudostem."
+  },
+  "morphology": {
+    "en": "Lanceolate, 15-30 cm long, 2-5 cm wide. Dark green above, lighter green below. Tip acute, base tapering. Sheathing at base, no petiole."
+  },
+  "constituents": [
+    {
+      "name": "Essential Oil",
+      "percentage": "0.004-0.04%",
+      "notes": "Lower concentration than rhizome"
+    }
+  ],
+  "provenance": {
+    "created": "2024-01-15",
+    "modified": "2024-01-15",
+    "source": "Flora of China",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  }
+}

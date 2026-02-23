@@ -1,0 +1,31 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/ginger-stem",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Ginger Stem",
+    "zh-Hant": "薑莖",
+    "zh-Hans": "姜茎"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/ginger"
+  },
+  "partType": "stem",
+  "description": {
+    "en": "The aerial stems of the ginger plant, growing erect to 30-100 cm tall. Composed of leaf sheaths wrapped around a central pseudostem."
+  },
+  "morphology": {
+    "en": "Erect, unbranched pseudostem composed of tightly wrapped leaf sheaths. Each pseudostem produces 10-20 leaves."
+  },
+  "provenance": {
+    "created": "2024-01-15",
+    "modified": "2024-01-15",
+    "source": "Flora of China",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  }
+}

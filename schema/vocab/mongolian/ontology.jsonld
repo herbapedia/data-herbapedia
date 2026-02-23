@@ -1,0 +1,173 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "https://www.herbapedia.org/vocab/mongolian/",
+
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "schema": "https://schema.org/",
+
+    "herbapedia": "https://www.herbapedia.org/vocab/core/",
+    "mongolian": "https://www.herbapedia.org/vocab/mongolian/"
+  },
+
+  "@graph": [
+    {
+      "@id": "https://www.herbapedia.org/vocab/mongolian/",
+      "@type": "owl:Ontology",
+      "rdfs:label": {
+        "en": "Herbapedia Mongolian Traditional Medicine Vocabulary"
+      },
+      "rdfs:comment": "Mongolian Traditional Medicine vocabulary including herb profiles, Three Roots, Five Elements, Six Tastes, and Seventeen Potencies."
+    },
+
+    {
+      "@id": "mongolian:Herb",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": ["herbapedia:MedicineSystemProfile", "schema:DietarySupplement"],
+      "rdfs:label": {
+        "en": "Mongolian Herb",
+        "zh-Hant": "蒙醫草藥",
+        "mn": "эмийн ургамал"
+      },
+      "rdfs:comment": "A Mongolian Traditional Medicine herb profile with Three Roots effects, Five Elements, Six Tastes, and Seventeen Potencies."
+    },
+
+    {
+      "@id": "mongolian:Root",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "skos:Concept",
+      "rdfs:label": {
+        "en": "Three Roots (Гурван үндэс)",
+        "zh-Hant": "三根",
+        "mn": "Гурван үндэс"
+      },
+      "rdfs:comment": "The Three Roots (similar to Ayurvedic Doshas): Heyi (Wind), Xila (Bile), Badagan (Phlegm)."
+    },
+
+    {
+      "@id": "mongolian:Element",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "skos:Concept",
+      "rdfs:label": {
+        "en": "Five Elements (Таван махбод)",
+        "zh-Hant": "五行",
+        "mn": "Таван махбод"
+      },
+      "rdfs:comment": "The Five Elements: Wood (мод), Fire (гал), Earth (шороо), Metal (төмөр), Water (ус)."
+    },
+
+    {
+      "@id": "mongolian:Taste",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "skos:Concept",
+      "rdfs:label": {
+        "en": "Six Tastes (Зургаан амт)",
+        "zh-Hant": "六味",
+        "mn": "Зургаан амт"
+      },
+      "rdfs:comment": "The Six Tastes: Sweet, Sour, Salty, Bitter, Pungent, Astringent."
+    },
+
+    {
+      "@id": "mongolian:Potency",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "skos:Concept",
+      "rdfs:label": {
+        "en": "Seventeen Potencies (Арван долоор нанс)",
+        "zh-Hant": "十七效",
+        "mn": "Арван долоор нанс"
+      },
+      "rdfs:comment": "The Seventeen Potencies organized in 8 opposing pairs plus one neutral."
+    },
+
+    {
+      "@id": "mongolian:affectsRoot",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "mongolian:Herb",
+      "rdfs:range": "mongolian:Root",
+      "rdfs:label": {
+        "en": "affects root",
+        "zh-Hant": "影響根"
+      }
+    },
+
+    {
+      "@id": "mongolian:hasElement",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "mongolian:Herb",
+      "rdfs:range": "mongolian:Element",
+      "rdfs:label": {
+        "en": "has element",
+        "zh-Hant": "具有元素"
+      }
+    },
+
+    {
+      "@id": "mongolian:hasTaste",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "mongolian:Herb",
+      "rdfs:range": "mongolian:Taste",
+      "rdfs:label": {
+        "en": "has taste",
+        "zh-Hant": "具有味"
+      }
+    },
+
+    {
+      "@id": "mongolian:hasPotency",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "mongolian:Herb",
+      "rdfs:range": "mongolian:Potency",
+      "rdfs:label": {
+        "en": "has potency",
+        "zh-Hant": "具有效"
+      }
+    },
+
+    {
+      "@id": "mongolian:mongolianName",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "mongolian:Herb",
+      "rdfs:range": "rdfs:Literal",
+      "rdfs:label": {
+        "en": "Mongolian name",
+        "zh-Hant": "蒙文名稱"
+      }
+    },
+
+    {
+      "@id": "mongolian:derivedFromPlant",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "mongolian:Herb",
+      "rdfs:range": "herbapedia:BotanicalSource",
+      "rdfs:label": {
+        "en": "derived from plant",
+        "zh-Hant": "來自植物"
+      }
+    },
+
+    {
+      "@id": "mongolian:mongolianTraditionalUsage",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "mongolian:Herb",
+      "rdfs:range": "rdfs:Literal",
+      "rdfs:label": {
+        "en": "Mongolian traditional usage",
+        "zh-Hant": "蒙醫傳統用法"
+      }
+    },
+
+    {
+      "@id": "mongolian:mongolianModernResearch",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "mongolian:Herb",
+      "rdfs:range": "rdfs:Literal",
+      "rdfs:label": {
+        "en": "Mongolian modern research",
+        "zh-Hant": "蒙醫現代研究"
+      }
+    }
+  ]
+}

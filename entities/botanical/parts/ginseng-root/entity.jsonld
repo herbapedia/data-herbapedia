@@ -1,0 +1,64 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/ginseng-root",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Asian Ginseng Root",
+    "zh-Hant": "人蔘根",
+    "zh-Hans": "人参根",
+    "ko": "인삼뿌리"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/ginseng"
+  },
+  "partType": "root",
+  "description": {
+    "en": "The fleshy taproot of Asian ginseng, the primary medicinal part. Often resembles a human figure, with a main body and branching rootlets. Wild roots are more highly valued than cultivated.",
+    "zh-Hant": "人蔘的肉質主根，是主要的藥用部分。常呈人形，有主體和分枝的鬚根。野生參比園參更珍貴。"
+  },
+  "morphology": {
+    "en": "Fleshy, cylindrical, often branched with prominent annulations (growth rings). Color ranges from pale yellow to white internally. Rootlets (fine roots) extend from main body."
+  },
+  "harvestSeason": {
+    "en": "Cultivated: 4-6 years. Wild: 10-30+ years. Harvest in autumn after leaves yellow."
+  },
+  "constituents": [
+    {
+      "name": "Ginsenosides",
+      "percentage": "2-3%",
+      "notes": "Main active compounds, 30+ types identified"
+    },
+    {
+      "name": "Polysaccharides",
+      "percentage": "10-20%",
+      "notes": "Immune-modulating compounds"
+    },
+    {
+      "name": "Panaxans",
+      "percentage": "varies",
+      "notes": "Blood sugar regulating compounds"
+    }
+  ],
+  "containsChemical": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/ginsenosides"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/ginseng-polysaccharides"
+    },
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/panaxans"
+    }
+  ],
+  "provenance": {
+    "created": "2024-01-15",
+    "modified": "2024-01-15",
+    "source": "Chinese Pharmacopoeia",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  }
+}

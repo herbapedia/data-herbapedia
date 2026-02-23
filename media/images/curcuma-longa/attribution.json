@@ -1,0 +1,21 @@
+{
+  "fileName": "main.jpg",
+  "species": "Curcuma longa",
+  "commonName": "Turmeric",
+  "source": {
+    "url": "https://commons.wikimedia.org/wiki/File:Curcuma_longa_roots.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Curcuma_longa_roots.jpg/1280px-Curcuma_longa_roots.jpg",
+    "platform": "Wikimedia Commons"
+  },
+  "attribution": {
+    "creator": "Simon A. Eugster",
+    "license": "Creative Commons Attribution Share Alike 3.0",
+    "spdxId": "CC-BY-SA-3.0",
+    "spdxUrl": "https://spdx.org/licenses/CC-BY-SA-3.0.html",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "title": "Curcuma longa roots",
+    "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=31748137"
+  },
+  "downloaded": "2026-02-23",
+  "notes": "Own work by Simon A. Eugster"
+}

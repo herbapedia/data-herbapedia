@@ -1,0 +1,265 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/chemical/sophorae-tonkinensis",
+  "@type": ["herbapedia:ChemicalAnalysisData", "schema:Dataset"],
+  "dataType": "ChemicalAnalysis",
+  "sourceDocument": "CHEM_____Sophorae_Tonkinensis_Radix_et_Rhizoma_V1.pdf",
+  "scientificName": "Sophora tonkinensis Gagnep.",
+  "chineseName": "山豆根",
+  "pinyinName": "Shan Dou Gen",
+  "identificationMethod": ["TLC", "HPLC-Fingerprint", "HPLC-Assay"],
+  "referenceCompounds": [
+    {
+      "name": "Matrine",
+      "chineseName": "苦參鹼",
+      "formula": "C₁₅H₂₄N₂O",
+      "purpose": ["TLC identification", "HPLC fingerprint marker", "Assay quantification"]
+    },
+    {
+      "name": "Oxymatrine",
+      "chineseName": "氧化苦參鹼",
+      "formula": "C₁₅H₂₄N₂O₂",
+      "purpose": ["TLC identification", "HPLC fingerprint marker", "Assay quantification"]
+    },
+    {
+      "name": "Oxysophocarpine",
+      "chineseName": "氧化槐果鹼",
+      "purpose": ["HPLC fingerprint marker"]
+    }
+  ],
+  "assayLimits": {
+    "matrinePlusOxymatrine": {
+      "compounds": ["Matrine", "Oxymatrine"],
+      "formulas": ["C₁₅H₂₄N₂O", "C₁₅H₂₄N₂O₂"],
+      "minimumContent": "0.70%",
+      "basis": "dried substance (combined total)"
+    }
+  },
+  "tlcMethod": {
+    "appendixReference": "Appendix I",
+    "stationaryPhase": "HPTLC silica gel G60 plate",
+    "developingSolvent": {
+      "components": ["ammonium hydroxide solution (9.1%, w/v)", "n-butanol"],
+      "ratio": "2:3 (v/v)",
+      "preparation": "Use upper layer of the mixture"
+    },
+    "sprayReagent": {
+      "composition": "Modified Dragendorff's reagent",
+      "preparation": {
+        "solutionA": "0.85 g bismuth oxynitrate in mixture of 10 mL glacial acetic acid and 40 mL water",
+        "solutionB": "4 g potassium iodide in 10 mL water",
+        "finalPreparation": "Mix 5 mL Solution A, 5 mL Solution B, and 20 mL glacial acetic acid in 100-mL volumetric flask, dilute to mark with water"
+      },
+      "note": "Freshly prepare the reagent",
+      "visualization": "Heat at about 105°C until spots or bands become visible (about 1-2 min)"
+    },
+    "testSolution": {
+      "sampleAmount": "0.5 g",
+      "solvent": "methanol",
+      "additives": "0.2 mL ammonium hydroxide solution (25%, v/v)",
+      "solventVolume": "10 mL",
+      "extraction": "oscillate (120 r/min) for 15 min",
+      "processing": "Filter, evaporate to dryness at reduced pressure in rotary evaporator, dissolve residue in 1 mL methanol"
+    },
+    "standardSolutions": {
+      "matrine": {
+        "amount": "2.0 mg",
+        "solvent": "methanol",
+        "finalVolume": "1 mL",
+        "concentration": "2.0 mg/mL"
+      },
+      "oxymatrine": {
+        "amount": "2.0 mg",
+        "solvent": "methanol",
+        "finalVolume": "1 mL",
+        "concentration": "2.0 mg/mL"
+      }
+    },
+    "applicationVolumes": {
+      "standardSolutions": "4 μL each",
+      "testSolution": "4 μL"
+    },
+    "developingDistance": "about 5 cm",
+    "plateTreatment": "Heat at about 105°C (about 1-2 min) after development before spraying",
+    "visualization": "Examine under visible light",
+    "identificationCriteria": {
+      "positiveMarkers": ["Matrine", "Oxymatrine"],
+      "matchingRequirement": "Characteristic spots or bands matching the color and Rf value of reference standards"
+    }
+  },
+  "hplcFingerprint": {
+    "appendixReference": "Appendix II",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "DAD",
+      "detectionWavelength": "220 nm",
+      "columnTemperature": "30°C",
+      "flowRate": "1.0 mL/min",
+      "injectionVolume": "3 μL"
+    },
+    "mobilePhase": {
+      "solventA": "Methanol",
+      "solventB": "0.025 M Potassium dihydrogen phosphate solution (adjusted to pH 2.0 with phosphoric acid)",
+      "gradientProgram": [
+        {
+          "timeRange": "0-35 min",
+          "solventA": "3% → 12%",
+          "solventB": "97% → 88%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "testSolution": {
+      "sampleAmount": "1.5 g",
+      "solvent": "methanol",
+      "solventVolume": "50 mL",
+      "extraction": "reflux in water bath for 1 hour",
+      "centrifugation": "approximately 5000 × g for 5 minutes",
+      "repeatExtraction": "twice more",
+      "concentration": "Combine supernatants, evaporate to dryness under reduced pressure using rotary evaporator",
+      "finalVolume": "25 mL",
+      "filtration": "0.45 μm nylon membrane filter"
+    },
+    "standardSolutions": {
+      "stdFP": {
+        "description": "Mixed reference solution containing Matrine and Oxymatrine",
+        "injectionVolume": "3 μL"
+      }
+    },
+    "systemSuitability": {
+      "peakAreaRSD": "≤ 5.0% (Matrine and Oxymatrine)",
+      "retentionTimeRSD": "≤ 2.0% (Matrine and Oxymatrine)",
+      "theoreticalPlatesMatrine": "≥ 5000 (based on Matrine)",
+      "theoreticalPlatesOxymatrine": "≥ 10000 (based on Oxymatrine)",
+      "resolution": "≥ 1.5 (between Peak 1 and Peak 4 and their neighboring peaks)"
+    },
+    "identificationCriteria": {
+      "retentionTimeTolerance": "≤ 2.0% difference between sample and standard",
+      "characteristicPeaks": "Sample chromatogram must contain 4 characteristic peaks within specified RRT ranges"
+    }
+  },
+  "hplcAssay": {
+    "appendixReference": "Appendix III",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "DAD",
+      "detectionWavelength": "220 nm",
+      "columnTemperature": "30°C",
+      "flowRate": "1.0 mL/min"
+    },
+    "mobilePhase": {
+      "solventA": "Methanol",
+      "solventB": "0.025 M Potassium dihydrogen phosphate solution (adjusted to pH 2.0 with phosphoric acid)",
+      "gradientProgram": [
+        {
+          "timeRange": "0-35 min",
+          "solventA": "3% → 12%",
+          "solventB": "97% → 88%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "stockSolution": {
+        "matrine": {
+          "concentration": "1200 mg/L",
+          "preparation": "12.0 mg in 10 mL methanol"
+        },
+        "oxymatrine": {
+          "concentration": "2800 mg/L",
+          "preparation": "28.0 mg in 10 mL methanol"
+        },
+        "storage": "approximately 4°C"
+      },
+      "workingSolutions": {
+        "matrine": ["24", "40", "120", "240", "600 mg/L"],
+        "oxymatrine": ["56", "140", "560", "1400", "2800 mg/L"],
+        "description": "Series of mixed standard solutions prepared by diluting stock with methanol"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "1.5 g",
+      "solvent": "methanol",
+      "extractionVolume": "50 mL × 3 extractions",
+      "extraction": "reflux in water bath for 1 hour",
+      "centrifugation": "approximately 5000 × g for 5 minutes",
+      "evaporation": "rotary evaporator at reduced pressure",
+      "finalVolume": "25 mL",
+      "filtration": "0.45 μm nylon membrane filter"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "peakAreaRSD": "≤ 5.0% (Matrine and Oxymatrine)",
+      "retentionTimeRSD": "≤ 2.0% (Matrine and Oxymatrine)",
+      "theoreticalPlatesMatrine": "≥ 5000 (based on Matrine)",
+      "theoreticalPlatesOxymatrine": "≥ 10000 (based on Oxymatrine)"
+    },
+    "calibration": {
+      "method": "5-point calibration curve",
+      "plot": "Peak area vs. concentration (mg/L)",
+      "identificationTolerance": "≤ 2.0% difference in retention times"
+    }
+  },
+  "rrtValues": [
+    {
+      "peakNumber": 1,
+      "compound": "Matrine",
+      "chineseName": "苦參鹼",
+      "rrt": 0.61,
+      "acceptableRange": "± 0.03",
+      "referenceMarker": false,
+      "referenceTo": "Oxymatrine"
+    },
+    {
+      "peakNumber": 2,
+      "compound": "Unknown",
+      "chineseName": null,
+      "rrt": 0.81,
+      "acceptableRange": "± 0.05",
+      "referenceMarker": false,
+      "referenceTo": "Oxymatrine"
+    },
+    {
+      "peakNumber": 3,
+      "compound": "Oxysophocarpine",
+      "chineseName": "氧化槐果鹼",
+      "rrt": 0.91,
+      "acceptableRange": "± 0.03",
+      "referenceMarker": false,
+      "referenceTo": "Oxymatrine"
+    },
+    {
+      "peakNumber": 4,
+      "compound": "Oxymatrine",
+      "chineseName": "氧化苦參鹼",
+      "rrt": 1.00,
+      "acceptableRange": null,
+      "referenceMarker": true,
+      "referenceTo": "self",
+      "indicatorComponent": true
+    }
+  ],
+  "appendices": {
+    "appendixI": {
+      "title": "Chromatography – Thin-Layer Chromatography",
+      "description": "General procedures for TLC including plate types, application methods, developing chambers, and Rf calculation"
+    },
+    "appendixII": {
+      "title": "GC and HPLC/UHPLC Fingerprinting",
+      "description": "Methods for establishing chromatographic fingerprints using marker peaks and RRT values"
+    },
+    "appendixIII": {
+      "title": "Chromatography – HPLC/UHPLC",
+      "description": "General HPLC/UHPLC procedures including system suitability tests (theoretical plates, repeatability, resolution, tailing factor) and quantitative calculations"
+    }
+  },
+  "extractedAt": "2026-02-21"
+}

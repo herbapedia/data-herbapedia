@@ -1,0 +1,370 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/system/ayurveda/profile/reference/rasas",
+  "@type": [
+    "ayurveda:ReferenceCollection",
+    "skos:Collection"
+  ],
+  "name": {
+    "en": "Ayurveda Six Rasas",
+    "sa": "षड्रस"
+  },
+  "description": {
+    "en": "The six tastes (षड्रस - Shad Rasa) in Ayurveda. Each taste has specific effects on the doshas and the body."
+  },
+  "members": [
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/rasa/sweet",
+      "@type": [
+        "ayurveda:Rasa"
+      ],
+      "name": {
+        "en": "Sweet",
+        "sa": "मधुर"
+      },
+      "sanskritName": "मधुर",
+      "sanskritTransliteration": "Madhura",
+      "englishName": "Sweet",
+      "elementComposition": [
+        {
+          "element": "prithvi",
+          "proportion": "dominant"
+        },
+        {
+          "element": "apas",
+          "proportion": "secondary"
+        }
+      ],
+      "effectOnDoshas": {
+        "vata": "decreases",
+        "pitta": "decreases",
+        "kapha": "increases"
+      },
+      "effectOnDigestion": {
+        "en": "Nourishes and builds tissues, promotes strength and longevity"
+      },
+      "generalActions": [
+        "nourishes",
+        "builds tissues",
+        "promotes strength",
+        "soothes",
+        "moistens"
+      ],
+      "indications": [
+        "emaciation",
+        "weakness",
+        "depletion",
+        "burning sensations"
+      ],
+      "excessEffects": {
+        "en": "Obesity, diabetes, kapha disorders, lethargy, heaviness"
+      },
+      "contraindications": [
+        "diabetes",
+        "obesity",
+        "kapha excess",
+        "low agni"
+      ],
+      "exampleSubstances": [
+        "sugar",
+        "honey",
+        "licorice",
+        "shatavari",
+        "ashwagandha"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/rasa/sour",
+      "@type": [
+        "ayurveda:Rasa"
+      ],
+      "name": {
+        "en": "Sour",
+        "sa": "अम्ल"
+      },
+      "sanskritName": "अम्ल",
+      "sanskritTransliteration": "Amla",
+      "englishName": "Sour",
+      "elementComposition": [
+        {
+          "element": "prithvi",
+          "proportion": "dominant"
+        },
+        {
+          "element": "tejas",
+          "proportion": "secondary"
+        }
+      ],
+      "effectOnDoshas": {
+        "vata": "decreases",
+        "pitta": "increases",
+        "kapha": "increases"
+      },
+      "effectOnDigestion": {
+        "en": "Stimulates digestion, increases salivation and appetite"
+      },
+      "generalActions": [
+        "stimulates digestion",
+        "increases appetite",
+        "carminative",
+        "refreshes"
+      ],
+      "indications": [
+        "low appetite",
+        "sluggish digestion",
+        "vata disorders"
+      ],
+      "excessEffects": {
+        "en": "Hyperacidity, heartburn, skin diseases, pitta disorders"
+      },
+      "contraindications": [
+        "hyperacidity",
+        "ulcers",
+        "pitta disorders",
+        "skin diseases"
+      ],
+      "exampleSubstances": [
+        "amalaki",
+        "lemon",
+        "tamarind",
+        "fermented foods"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/rasa/salty",
+      "@type": [
+        "ayurveda:Rasa"
+      ],
+      "name": {
+        "en": "Salty",
+        "sa": "लवण"
+      },
+      "sanskritName": "लवण",
+      "sanskritTransliteration": "Lavana",
+      "englishName": "Salty",
+      "elementComposition": [
+        {
+          "element": "apas",
+          "proportion": "dominant"
+        },
+        {
+          "element": "tejas",
+          "proportion": "secondary"
+        }
+      ],
+      "effectOnDoshas": {
+        "vata": "decreases",
+        "pitta": "increases",
+        "kapha": "increases"
+      },
+      "effectOnDigestion": {
+        "en": "Enhances taste, softens tissues, promotes digestion"
+      },
+      "generalActions": [
+        "enhances taste",
+        "softens tissues",
+        "promotes digestion",
+        "laxative"
+      ],
+      "indications": [
+        "vata disorders",
+        "stiffness",
+        "constipation"
+      ],
+      "excessEffects": {
+        "en": "Hypertension, edema, skin diseases, premature aging, pitta disorders"
+      },
+      "contraindications": [
+        "hypertension",
+        "edema",
+        "pitta disorders",
+        "kidney disease"
+      ],
+      "exampleSubstances": [
+        "rock salt",
+        "sea salt",
+        "black salt"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/rasa/pungent",
+      "@type": [
+        "ayurveda:Rasa"
+      ],
+      "name": {
+        "en": "Pungent",
+        "sa": "कटु"
+      },
+      "sanskritName": "कटु",
+      "sanskritTransliteration": "Katu",
+      "englishName": "Pungent",
+      "elementComposition": [
+        {
+          "element": "tejas",
+          "proportion": "dominant"
+        },
+        {
+          "element": "vayu",
+          "proportion": "secondary"
+        }
+      ],
+      "effectOnDoshas": {
+        "vata": "increases",
+        "pitta": "increases",
+        "kapha": "decreases"
+      },
+      "effectOnDigestion": {
+        "en": "Stimulates digestion, clears sinuses, improves circulation"
+      },
+      "generalActions": [
+        "stimulates digestion",
+        "clears sinuses",
+        "improves circulation",
+        "reduces kapha"
+      ],
+      "indications": [
+        "kapha disorders",
+        "low digestion",
+        "congestion",
+        "obesity"
+      ],
+      "excessEffects": {
+        "en": "Burning sensations, dizziness, thirst, pitta disorders, vata disorders"
+      },
+      "contraindications": [
+        "pitta disorders",
+        "bleeding disorders",
+        "ulcers",
+        "depletion"
+      ],
+      "exampleSubstances": [
+        "ginger",
+        "black pepper",
+        "cayenne",
+        "garlic"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/rasa/bitter",
+      "@type": [
+        "ayurveda:Rasa"
+      ],
+      "name": {
+        "en": "Bitter",
+        "sa": "तिक्त"
+      },
+      "sanskritName": "तिक्त",
+      "sanskritTransliteration": "Tikta",
+      "englishName": "Bitter",
+      "elementComposition": [
+        {
+          "element": "akasha",
+          "proportion": "dominant"
+        },
+        {
+          "element": "vayu",
+          "proportion": "secondary"
+        }
+      ],
+      "effectOnDoshas": {
+        "vata": "increases",
+        "pitta": "decreases",
+        "kapha": "decreases"
+      },
+      "effectOnDigestion": {
+        "en": "Cleanses the mouth, improves taste perception, reduces toxins"
+      },
+      "generalActions": [
+        "reduces toxins",
+        "clears heat",
+        "reduces fever",
+        "antiparasitic",
+        "reduces fat"
+      ],
+      "indications": [
+        "fever",
+        "toxins",
+        "skin diseases",
+        "pitta disorders",
+        "parasites"
+      ],
+      "excessEffects": {
+        "en": "Depletion, weakness, dryness, vata disorders"
+      },
+      "contraindications": [
+        "vata disorders",
+        "emaciation",
+        "weakness",
+        "pregnancy"
+      ],
+      "exampleSubstances": [
+        "neem",
+        "gentian",
+        "goldenseal",
+        "bitter melon"
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/ayurveda/profile/rasa/astringent",
+      "@type": [
+        "ayurveda:Rasa"
+      ],
+      "name": {
+        "en": "Astringent",
+        "sa": "कषाय"
+      },
+      "sanskritName": "कषाय",
+      "sanskritTransliteration": "Kashaya",
+      "englishName": "Astringent",
+      "elementComposition": [
+        {
+          "element": "prithvi",
+          "proportion": "dominant"
+        },
+        {
+          "element": "vayu",
+          "proportion": "secondary"
+        }
+      ],
+      "effectOnDoshas": {
+        "vata": "increases",
+        "pitta": "decreases",
+        "kapha": "decreases"
+      },
+      "effectOnDigestion": {
+        "en": "Binds tissues, dries excess moisture, promotes healing"
+      },
+      "generalActions": [
+        "binds tissues",
+        "stops bleeding",
+        "dries moisture",
+        "promotes healing"
+      ],
+      "indications": [
+        "diarrhea",
+        "bleeding",
+        "wounds",
+        "excess moisture"
+      ],
+      "excessEffects": {
+        "en": "Constipation, dryness, stiffness, vata disorders"
+      },
+      "contraindications": [
+        "constipation",
+        "vata disorders",
+        "dryness"
+      ],
+      "exampleSubstances": [
+        "haritaki",
+        "arjuna",
+        "pomegranate rind",
+        "turmeric"
+      ]
+    }
+  ],
+  "_documentation": {
+    "classicalReference": "Charaka Samhita, Sutrasthana, Chapter 26",
+    "tasteSequence": "Sweet → Sour → Salty → Pungent → Bitter → Astringent (digestion order)",
+    "digestiveStages": "Madhura (beginning) → Amla (middle) → Katu (end) - vipaka transforms tastes"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/dna/angelica-sinensis",
+  "@type": ["herbapedia:DNASequenceData", "schema:Dataset"],
+  "dataType": "DNASequence",
+  "sourceFile": "DNA____Angelica_sinensis_V1.pdf",
+  "sourceDocument": "GCMTI FS:2023-4",
+  "title": {
+    "en": "Fact sheet of reference DNA sequences of Angelica sinensis",
+    "zh-hk": "當歸(Angelica sinensis)之參考 DNA 序列資料表"
+  },
+  "scientificName": {
+    "full": "Angelica sinensis",
+    "genus": "Angelica",
+    "species": "sinensis",
+    "author": ""
+  },
+  "loci": [
+    {
+      "name": "ITS2",
+      "fullName": "Internal transcribed spacer 2 of nuclear ribosomal RNA",
+      "description": {
+        "en": "Internal transcribed spacer 2 (ITS2) sequence of plant voucher specimen of Angelica sinensis and Chinese Materia Medica (CMM) Radix Angelicae Sinensis",
+        "zh-hk": "Angelica sinensis植物憑證標本及中藥材當歸標本的核糖體DNA第二內部轉錄間隔區(ITS2)序列"
+      },
+      "sequenceLength": 231,
+      "consensusSequence": "CGCATCATCTTTGCCCACAACCACTCACTCCTCGTGGAGCTGTACTGGTATGGGGGCGGAAATTGGCCTCCCGTGCCTTGTTGTGCGGTTGGCGCAAAAGTGAGTCTCCGGCGACGGACGTCGTGACATTGGTGGTTGTAAAATACCCTCATGTCTTGTCGCGCGAATCCGCGTCATCTTAGTGAGCTCAAGGACCCTTAGGCGGCACACACTTTGTGCACTTCGAATG",
+      "specimenCount": 22,
+      "specimens": [
+        "21RD75-1A", "21RD77-1A", "21RD78-1A", "21RD79-1A",
+        "21RD67-1A", "21RD67-3C", "21RD67-5C", "21RD67-7D", "21RD67-9C", "21RD67-10D",
+        "21RD68-1A", "21RD68-2A", "21RD68-3A", "21RD68-4A",
+        "21RD69-1A", "21RD69-3C", "21RD69-4D", "21RD69-6D", "21RD69-7C", "21RD69-9C"
+      ]
+    },
+    {
+      "name": "psbA-trnH",
+      "fullName": "Chloroplast psbA-trnH intergenic spacer",
+      "description": {
+        "en": "Chloroplast psbA-trnH intergenic spacer (psbA-trnH) sequence of plant voucher specimen of Angelica sinensis and Chinese Materia Medica (CMM) Radix Angelicae Sinensis",
+        "zh-hk": "Angelica sinensis植物憑證標本及中藥材當歸標本的葉綠體psbA-trnH基因間區(psbA-trnH)序列"
+      },
+      "sequenceLength": 305,
+      "consensusSequence": "ATAACTTTCCTCTAGACCTAGCTGCTGTTGAAGCTCCATCTACAAATGGGTAAGACCGGGTTTTAGTATATACGAGTTTTTTGAAATAAAAAAAAGCAATACCGCCCTCTTGTTCTATCAAGAGGGCGGTATTGCTTTTTTTATATTTCAGACTGTTTTAGATAAACAAATATTTTTGAATGATCAAAAAGGAATCCTTTGAAATAAAAATAAATAAAATAAAATTGGCGGGGCGGATGTAGCCAAGTGGATCAAGGCAGT",
+      "specimenCount": 22,
+      "specimens": [
+        "21RD75-1A", "21RD77-1A", "21RD78-1A", "21RD79-1A",
+        "21RD67-1A", "21RD67-3C", "21RD67-5C", "21RD67-7D", "21RD67-9C", "21RD67-10D",
+        "21RD68-1A", "21RD68-2A", "21RD68-3A", "21RD68-4A",
+        "21RD69-1A", "21RD69-3C", "21RD69-4D", "21RD69-6D", "21RD69-7C", "21RD69-9C"
+      ]
+    },
+    {
+      "name": "rbcL",
+      "fullName": "Partial chloroplast ribulose bisphosphate carboxylase large chain",
+      "description": {
+        "en": "Partial chloroplast ribulose bisphosphate carboxylase large chain (rbcL) sequence of plant voucher specimen of Angelica sinensis and Chinese Materia Medica (CMM) Radix Angelicae Sinensis",
+        "zh-hk": "Angelica sinensis植物憑證標本及中藥材當歸標本的葉綠體二磷酸核酮糖羧化酶大鏈(rbcL)部分序列"
+      },
+      "sequenceLength": 557,
+      "consensusSequence": "AGGTGTTGGATTCAAAGCTGGGGTTAAAGATTACAAATTGACTTATTATACTCCTGACTATGAAACCAAAGATACTGATATCTTGGCAGCATTCCGAGTAACTCCTCAACCTGGAGTTCCACCTGAAGAAGCGGGGGCCGCGGTAGCTGCCGAATCTTCTACTGGTACATGGACCACTGTGTGGACCGATGGACTTACCAGCCTTGATCGTTACAAAGGGCGCTGCTACGAAATCGAGCCCGTTGCTGGAGAAGAAAATCAATATATCGCTTATGTAGCTTACCCATTAGACCTTTTTGAAGAAGGTTCTGTTACTAACATGTTTACTTCCATTGTAGGTAATGTATTTGGGTTCAAAGCCCTGCGCGCTCTACGTCTGGAAGATCTGCGAATCCCCGTTGCTTATGTTAAAACTTTCCAAGGACCGCCTCATGGCATCCAAGTTGAGAGAGATAAATTGAACAAGTATGGTCGTCCCCTGTTGGGATGTACTATTAAACCTAAATTGGGGTTATCCGCTAAAAACTACGGTAGAGCGGTTTATGAATGTCTC",
+      "specimenCount": 22,
+      "specimens": [
+        "21RD75-1A", "21RD77-1A", "21RD78-1A", "21RD79-1A",
+        "21RD67-1A", "21RD67-3C", "21RD67-5C", "21RD67-7D", "21RD67-9C", "21RD67-10D",
+        "21RD68-1A", "21RD68-2A", "21RD68-3A", "21RD68-4A",
+        "21RD69-1A", "21RD69-3C", "21RD69-4D", "21RD69-6D", "21RD69-7C", "21RD69-9C"
+      ]
+    }
+  ],
+  "specimen": {
+    "gcmtiCode": "GA0000401a00",
+    "type": "Chinese Materia Medica (CMM) Radix Angelicae Sinensis",
+    "totalSpecimens": 22
+  },
+  "methodology": {
+    "format": "FASTA",
+    "sequencingTargets": ["ITS2", "psbA-trnH", "rbcL"],
+    "specimenTypes": ["Plant voucher specimen", "Chinese Materia Medica (CMM) Radix Angelicae Sinensis"]
+  },
+  "extracted": {
+    "date": "2026-02-20",
+    "extractedBy": "automated extraction from PDF"
+  }
+}

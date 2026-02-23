@@ -1,0 +1,51 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/botany.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/chemical-profile/chamomile-flower",
+  "@type": [
+    "botany:ChemicalProfile",
+    "schema:Dataset"
+  ],
+  "name": {
+    "en": "Chamomile Flower Chemical Profile",
+    "zh-Hant": "洋甘菊花化學成分譜",
+    "zh-Hans": "洋甘菊花化学成分谱"
+  },
+  "profileOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/part/chamomile-flower"
+  },
+  "hasComponent": [
+    {
+      "compound": {
+        "@id": "https://www.herbapedia.org/entity/botanical/chemical/essential-oils"
+      },
+      "relativeAbundance": "major",
+      "concentrationRange": {
+        "min": 0.3,
+        "max": 1.5,
+        "unit": "%"
+      },
+      "detectionMethod": "GC-MS"
+    },
+    {
+      "compound": {
+        "@id": "https://www.herbapedia.org/entity/botanical/chemical/flavonoids"
+      },
+      "relativeAbundance": "major",
+      "concentrationRange": {
+        "min": 0.5,
+        "max": 2,
+        "unit": "%"
+      },
+      "detectionMethod": "HPLC"
+    }
+  ],
+  "analyticalMethod": "GC-MS, HPLC",
+  "description": {
+    "en": "Chemical composition profile of Chamomile flower, containing key bioactive compounds including chamazulene, alpha-bisabolol, and flavonoids."
+  },
+  "provenance": {
+    "created": "2026-02-21T00:00:00.000Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

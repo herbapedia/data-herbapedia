@@ -1,0 +1,307 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/chemical/nelumbinis-stamen",
+  "@type": ["herbapedia:ChemicalAnalysisData", "schema:Dataset"],
+  "dataType": "ChemicalAnalysis",
+  "sourceDocument": "CHEM____Nelumbinis_Stamen_V1.pdf",
+  "scientificName": "Nelumbo nucifera",
+  "chineseName": "蓮鬚",
+  "pinyinName": "Lian Xu",
+  "englishName": "Nelumbinis Stamen",
+  "identificationMethod": ["TLC", "HPLC-Fingerprint", "HPLC-Assay"],
+  "referenceCompounds": [
+    {
+      "name": "Astragalin",
+      "chineseName": "紫雲英苷",
+      "formula": "C₂₁H₂₀O₁₁",
+      "purpose": ["TLC identification", "HPLC fingerprint marker", "Assay quantification"]
+    },
+    {
+      "name": "Kaempferol",
+      "chineseName": "山奈素",
+      "formula": "C₁₅H₁₀O₆",
+      "purpose": ["TLC identification", "HPLC fingerprint marker", "Assay quantification"]
+    }
+  ],
+  "assayLimits": {
+    "totalAstragalinAndKaempferol": {
+      "compounds": ["Astragalin", "Kaempferol"],
+      "formulas": ["C₂₁H₂₀O₁₁", "C₁₅H₁₀O₆"],
+      "minimumContent": "0.12%",
+      "basis": "dried substance (combined total)"
+    }
+  },
+  "tlcMethod": {
+    "appendixReference": "Appendix I",
+    "stationaryPhase": "HPTLC silica gel F₂₅₄ plate",
+    "developingSolvent": {
+      "components": ["ethyl acetate", "n-hexane", "formic acid", "water"],
+      "ratio": "6.5:2.5:1:0.5 (v/v)"
+    },
+    "sprayReagent": {
+      "composition": "1 g aluminium trichloride in 100 mL ethanol",
+      "visualization": "UV light at 366 nm after spraying and drying"
+    },
+    "testSolution": {
+      "sampleAmount": "2.0 g",
+      "solvent": "methanol",
+      "solventVolume": "10 mL",
+      "extraction": "ultrasonication (400 W) for 30 minutes",
+      "centrifugation": "4000 × g for 15 minutes",
+      "filtration": "0.45-μm nylon filter"
+    },
+    "standardSolutions": {
+      "concentration": "0.5 mg/mL in methanol",
+      "compounds": ["Astragalin", "Kaempferol"]
+    },
+    "applicationVolumes": {
+      "standardSolutions": "1 μL each",
+      "testSolution": "5 μL"
+    },
+    "developingDistance": "8 cm",
+    "chamberSaturation": "15 min in twin trough chamber",
+    "visualization": "UV light at 366 nm",
+    "identificationCriteria": {
+      "positiveMarkers": ["Astragalin", "Kaempferol"],
+      "criteria": "Sample must show spots or bands with chromatographic characteristics (colour and Rf values) corresponding to astragalin and kaempferol"
+    }
+  },
+  "hplcFingerprint": {
+    "appendixReference": "Appendix II",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "3.5 μm"
+      },
+      "detector": "DAD",
+      "detectionWavelength": "360 nm",
+      "columnTemperature": "30°C",
+      "flowRate": "1.0 mL/min",
+      "injectionVolume": "10 μL"
+    },
+    "mobilePhase": {
+      "solventA": "0.2% Phosphoric acid",
+      "solventB": "Acetonitrile",
+      "gradientProgram": [
+        {
+          "timeRange": "0-15 min",
+          "solventA": "80%",
+          "solventB": "20%",
+          "elution": "isocratic"
+        },
+        {
+          "timeRange": "15-50 min",
+          "solventA": "80% → 37%",
+          "solventB": "20% → 63%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "astragalin": {
+        "name": "Astragalin Std-FP",
+        "concentration": "40 mg/L",
+        "preparation": "0.4 mg in 10 mL 75% ethanol"
+      },
+      "kaempferol": {
+        "name": "Kaempferol Std-FP",
+        "concentration": "5 mg/L",
+        "preparation": "0.05 mg in 10 mL 75% ethanol"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "1.0 g",
+      "solvent": "75% ethanol",
+      "solventVolume": "15 mL × 3 extractions",
+      "finalVolume": "50 mL",
+      "extraction": "ultrasonication (200 W) for 30 minutes",
+      "centrifugation": "5000 × g for 15 minutes",
+      "filtration": "0.45-μm PTFE filter"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "injectionVolume": "10 μL",
+      "peakAreaRSD": "≤ 5.0% (Astragalin and Kaempferol)",
+      "retentionTimeRSD": "≤ 2.0% (Astragalin and Kaempferol)",
+      "theoreticalPlatesAstragalin": "≥ 50,000",
+      "theoreticalPlatesKaempferol": "≥ 100,000",
+      "resolutionPeak2": "≥ 1.5 (between peak 2 and closest peak)",
+      "resolutionPeak5": "≥ 1.5 (between peak 5 and closest peak)"
+    },
+    "identificationCriteria": {
+      "retentionTimeTolerance": "≤ 2.0% difference between sample and standard"
+    }
+  },
+  "hplcAssay": {
+    "appendixReference": "Appendix III",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "3.5 μm"
+      },
+      "detector": "DAD",
+      "detectionWavelength": "360 nm",
+      "columnTemperature": "30°C",
+      "flowRate": "1.0 mL/min"
+    },
+    "mobilePhase": {
+      "solventA": "0.2% Phosphoric acid",
+      "solventB": "Acetonitrile",
+      "gradientProgram": [
+        {
+          "timeRange": "0-15 min",
+          "solventA": "80%",
+          "solventB": "20%",
+          "elution": "isocratic"
+        },
+        {
+          "timeRange": "15-50 min",
+          "solventA": "80% → 37%",
+          "solventB": "20% → 63%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "stockSolution": {
+        "name": "Mixed astragalin and kaempferol Std-Stock",
+        "astragalinConcentration": "320 mg/L",
+        "kaempferolConcentration": "360 mg/L",
+        "preparation": "3.2 mg astragalin CRS and 3.6 mg kaempferol CRS in 10 mL 75% ethanol"
+      },
+      "workingSolutions": {
+        "name": "Mixed astragalin and kaempferol Std-AS",
+        "astragalinConcentrations": ["5", "10", "20", "40", "80 mg/L"],
+        "kaempferolConcentrations": ["0.5", "1", "1.5", "3", "6 mg/L"],
+        "description": "Series of mixed standard solutions for 5-point calibration"
+      },
+      "injectionVolume": "10 μL"
+    },
+    "testSolution": {
+      "sampleAmount": "1.0 g",
+      "solvent": "75% ethanol",
+      "extractionVolume": "15 mL × 3 extractions",
+      "finalVolume": "50 mL",
+      "extraction": "ultrasonication (200 W) for 30 minutes",
+      "centrifugation": "5000 × g for 15 minutes",
+      "filtration": "0.45-μm PTFE filter",
+      "injectionVolume": "10 μL"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "injectionVolume": "10 μL",
+      "standardConcentration": "20 mg/L astragalin and 1.5 mg/L kaempferol (Std-AS)",
+      "peakAreaRSD": "≤ 5.0% (Astragalin and Kaempferol)",
+      "retentionTimeRSD": "≤ 2.0% (Astragalin and Kaempferol)",
+      "theoreticalPlatesAstragalin": "≥ 50,000",
+      "theoreticalPlatesKaempferol": "≥ 100,000",
+      "resolution": "≥ 1.5 (between analyte peaks and adjacent peaks)"
+    },
+    "calibration": {
+      "method": "5-point calibration curve",
+      "plot": "Peak area vs. concentration (mg/L)",
+      "identificationTolerance": "≤ 5.0% difference in retention times"
+    }
+  },
+  "rrtValues": [
+    {
+      "peakNumber": 1,
+      "compound": "Unknown",
+      "rrt": 0.73,
+      "acceptableRange": "± 0.03",
+      "referenceMarker": false,
+      "referenceTo": "Astragalin"
+    },
+    {
+      "peakNumber": 2,
+      "compound": "Astragalin",
+      "rrt": 1.00,
+      "acceptableRange": null,
+      "referenceMarker": true,
+      "referenceTo": "self"
+    },
+    {
+      "peakNumber": 3,
+      "compound": "Unknown",
+      "rrt": 1.05,
+      "acceptableRange": "± 0.03",
+      "referenceMarker": false,
+      "referenceTo": "Astragalin"
+    },
+    {
+      "peakNumber": 4,
+      "compound": "Unknown",
+      "rrt": 1.57,
+      "acceptableRange": "± 0.03",
+      "referenceMarker": false,
+      "referenceTo": "Astragalin"
+    },
+    {
+      "peakNumber": 5,
+      "compound": "Kaempferol",
+      "rrt": 1.84,
+      "acceptableRange": "± 0.03",
+      "referenceMarker": false,
+      "referenceTo": "Astragalin"
+    }
+  ],
+  "tests": {
+    "heavyMetals": {
+      "method": "Appendix V",
+      "requirement": "Must meet the requirements"
+    },
+    "pesticideResidues": {
+      "method": "Appendix VI",
+      "requirement": "Must meet the requirements"
+    },
+    "mycotoxins": {
+      "method": "Appendix VII",
+      "requirement": "Must meet the requirements"
+    },
+    "foreignMatter": {
+      "method": "Appendix VIII",
+      "requirement": "Not more than 2.0%"
+    },
+    "ash": {
+      "totalAsh": {
+        "method": "Appendix IX",
+        "requirement": "Not more than 5.5%"
+      },
+      "acidInsolubleAsh": {
+        "method": "Appendix IX",
+        "requirement": "Not more than 1.0%"
+      }
+    },
+    "waterContent": {
+      "method": "Appendix X (Oven-dried method)",
+      "requirement": "Not more than 12.0%"
+    },
+    "extractives": {
+      "waterSoluble": {
+        "method": "Appendix XI (hot extraction method)",
+        "requirement": "Not less than 18.0%"
+      },
+      "ethanolSoluble": {
+        "method": "Appendix XI (hot extraction method)",
+        "requirement": "Not less than 20.0%"
+      }
+    }
+  },
+  "appendices": {
+    "appendixI": {
+      "title": "Chromatography – Thin-Layer Chromatography (TLC)",
+      "description": "General procedures for TLC including plate types, application methods, developing chambers, and Rf calculation"
+    },
+    "appendixII": {
+      "title": "GC and HPLC/UHPLC Fingerprinting",
+      "description": "Methods for establishing chromatographic fingerprints using marker peaks and RRT values"
+    },
+    "appendixIII": {
+      "title": "Chromatography – HPLC/UHPLC",
+      "description": "General HPLC/UHPLC procedures including system suitability tests (theoretical plates, repeatability, resolution, tailing factor) and quantitative calculations"
+    }
+  },
+  "extractedAt": "2026-02-20"
+}

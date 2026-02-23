@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/zingiber-officinale",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/zingiber-officinale",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"
@@ -40,7 +40,7 @@
   },
   "hasPart": [
     {
-      "@id": "plant/zingiber-officinale#rhizome",
+      "@id": "https://www.herbapedia.org/entity/botanical/part/ginger-rhizome",
       "@type": "herbapedia:PlantPart",
       "name": {
         "en": "Rhizome",
@@ -51,24 +51,30 @@
   ],
   "containsChemical": [
     {
-      "@id": "chemical/gingerol"
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/gingerol"
     },
     {
-      "@id": "chemical/shogaol"
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/shogaol"
     },
     {
-      "@id": "chemical/zingerone"
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/zingerone"
     },
     {
-      "@id": "chemical/zingiberene"
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/zingiberene"
     }
   ],
   "image": "media/images/zingiber-officinale/main.jpg",
   "url": "https://herbapedia.org/plants/zingiber-officinale",
   "sameAs": [
-    "http://www.wikidata.org/entity/Q129639",
-    "https://www.gbif.org/species/2752573",
-    "https://en.wikipedia.org/wiki/Ginger"
+    {
+      "@id": "http://www.wikidata.org/entity/Q129639"
+    },
+    {
+      "@id": "https://www.gbif.org/species/2752573"
+    },
+    {
+      "@id": "https://en.wikipedia.org/wiki/Ginger"
+    }
   ],
   "source": "https://www.vitaherbapedia.com",
   "license": "https://creativecommons.org/licenses/by-sa/4.0/",

@@ -1,0 +1,28 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/bitter-orange",
+  "@type": [
+    "herbapedia:WesternHerbalProfile"
+  ],
+  "profiles": {
+    "@id": "https://www.herbapedia.org/entity/preparation/bitter-orange"
+  },
+  "name": {
+    "en": "Bitter Orange",
+    "zh-Hant": "香檸檬",
+    "zh-Hans": "香柠檬"
+  },
+  "derivedFromPlant": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/bitter-orange"
+  },
+  "westernTraditionalUsage": {
+    "en": "Extract of bitter orange is an aid to fat loss and an appetite suppressant. It contains synephrine which is a stimulant, similar to caffeine and ephedrine, and is thought to have similar effects in terms of providing an energy boost, suppressing appetite and increasing metabolic rate and caloric expenditure. In Chinese medicine, the herb is also used to treat constipation, bloating and diarrhea caused by stagnant chi in the middle jiao (gastrointestinal organs). The fruits are harvested in summer when they are still green for maximum effectiveness.\n",
+    "zh-Hant": "香檸檬精華是一種有助減少身體脂肪和抑制食慾的營養補充劑，含刺激物 synephrine，功用跟咖啡因和麻黃素很相似，能夠抑制食慾，增加新陳代謝率和熱量的消耗。\n",
+    "zh-Hans": "香柠檬精华是一种有助减少身体脂肪和抑制食欲的营养补充剂，含刺激物 synephrine，功用跟咖啡因和麻黄素很相似，能够抑制食欲，增加新陈代谢率和热量的消耗。\n"
+  },
+  "provenance": {
+    "created": "2026-02-20T15:22:03.234Z",
+    "modified": "2026-02-20T15:22:03.234Z",
+    "migratedFrom": "systems/western/herbs/bitter-orange/profile.jsonld"
+  }
+}

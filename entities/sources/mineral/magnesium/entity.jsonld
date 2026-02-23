@@ -1,0 +1,28 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/sources/mineral/magnesium",
+  "@type": [
+    "herbapedia:MineralSource",
+    "herbapedia:SourceMaterial"
+  ],
+  "sourceType": "mineral",
+  "name": {
+    "en": "Magnesium",
+    "zh-Hant": "鎂",
+    "zh-Hans": "镁"
+  },
+  "description": {
+    "en": "Magnesium is an essential mineral involved in over 300 enzymatic reactions. Food sources include cocoa, sesame seeds, soybeans, wheat bran, and wheat germ.",
+    "zh-Hant": "鎂是一種必需礦物質，參與超過300種酶反應。食物來源包括可可、芝麻、大豆、小麥麩皮和小麥胚芽。",
+    "zh-Hans": "镁是一种必需矿物质，参与超过300种酶反应。食物来源包括可可、芝麻、大豆、小麦麸皮和小麦胚芽。"
+  },
+  "image": "media/images/magnesium/magnesium.jpg",
+  "provenance": {
+    "created": "2026-02-18T09:16:55.102Z",
+    "modified": "2026-02-21T09:59:00.000Z",
+    "migratedFrom": "entities/botanical/species/magnesium/entity.jsonld",
+    "source": "vitaherbapedia.com",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "wikidataID": "Q660"
+}

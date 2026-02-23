@@ -1,8 +1,8 @@
 {
   "@context": {
     "@version": 1.1,
-    "@base": "https://herbapedia.org/",
-    "@vocab": "https://herbapedia.org/vocab/core/",
+    "@base": "https://www.herbapedia.org/",
+    "@vocab": "https://www.herbapedia.org/vocab/core/",
 
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -18,10 +18,16 @@
     "wd": "http://www.wikidata.org/entity/",
     "wdt": "http://www.wikidata.org/prop/direct/",
 
-    "herbapedia": "https://herbapedia.org/vocab/core/",
-    "tcm": "https://herbapedia.org/vocab/tcm/",
-    "ayurveda": "https://herbapedia.org/vocab/ayurveda/",
-    "western": "https://herbapedia.org/vocab/western/",
+    "herbapedia": "https://www.herbapedia.org/vocab/core/",
+    "tcm": "https://www.herbapedia.org/vocab/tcm/",
+    "ayurveda": "https://www.herbapedia.org/vocab/ayurveda/",
+    "western": "https://www.herbapedia.org/vocab/western/",
+    "persian": "https://www.herbapedia.org/vocab/persian/",
+    "mongolian": "https://www.herbapedia.org/vocab/mongolian/",
+    "botany": "https://www.herbapedia.org/vocab/botany/",
+    "mycology": "https://www.herbapedia.org/vocab/mycology/",
+    "phycology": "https://www.herbapedia.org/vocab/phycology/",
+    "herbal": "https://www.herbapedia.org/vocab/herbal/",
 
     "id": "@id",
     "type": "@type",
@@ -58,6 +64,92 @@
     "Index": {
       "@id": "herbapedia:Index",
       "@type": "@id"
+    },
+
+    "SourceMaterial": {
+      "@id": "herbapedia:SourceMaterial",
+      "@type": "@id",
+      "@description": "Abstract base class for all source materials used in herbal medicine"
+    },
+    "BotanicalSource": {
+      "@id": "herbapedia:BotanicalSource",
+      "@type": "@id",
+      "@description": "Source materials from plants, fungi, or algae"
+    },
+    "ZoologicalSource": {
+      "@id": "herbapedia:ZoologicalSource",
+      "@type": "@id",
+      "@description": "Source materials from animal products (antler, shell, nest, etc.)"
+    },
+    "MineralSource": {
+      "@id": "herbapedia:MineralSource",
+      "@type": "@id",
+      "@description": "Source materials from minerals (calcium, iron, zinc, etc.)"
+    },
+    "ChemicalSource": {
+      "@id": "herbapedia:ChemicalSource",
+      "@type": "@id",
+      "@description": "Source materials that are isolated compounds (vitamins, amino acids, etc.)"
+    },
+    "Formula": {
+      "@id": "herbapedia:Formula",
+      "@type": "@id",
+      "@description": "Proprietary blends or standardized preparations containing multiple ingredients"
+    },
+
+    "sourceType": {
+      "@id": "herbapedia:sourceType",
+      "@type": "xsd:string",
+      "@description": "The primary category of a source material: botanical, zoological, mineral, or chemical"
+    },
+    "sourceSubType": {
+      "@id": "herbapedia:sourceSubType",
+      "@type": "xsd:string"
+    },
+    "animalName": {
+      "@id": "herbapedia:animalName",
+      "@container": "@language"
+    },
+    "animalScientificName": {
+      "@id": "herbapedia:animalScientificName",
+      "@type": "xsd:string"
+    },
+    "animalPart": {
+      "@id": "herbapedia:animalPart",
+      "@type": "xsd:string"
+    },
+    "chemicalSubType": {
+      "@id": "herbapedia:chemicalSubType",
+      "@type": "xsd:string"
+    },
+    "formulaCode": {
+      "@id": "herbapedia:formulaCode",
+      "@type": "xsd:string"
+    },
+    "proprietaryName": {
+      "@id": "herbapedia:proprietaryName",
+      "@container": "@language"
+    },
+    "hasIngredients": {
+      "@id": "herbapedia:hasIngredients",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "standardizedTo": {
+      "@id": "herbapedia:standardizedTo",
+      "@type": "@json"
+    },
+    "intendedUse": {
+      "@id": "herbapedia:intendedUse",
+      "@container": "@language"
+    },
+    "applicationMethod": {
+      "@id": "herbapedia:applicationMethod",
+      "@container": "@language"
+    },
+    "manufacturer": {
+      "@id": "herbapedia:manufacturer",
+      "@type": "xsd:string"
     },
 
     "gcmtiCode": {
@@ -204,6 +296,62 @@
       "@id": "herbapedia:hasPharmacologicalAction",
       "@type": "@id",
       "@container": "@set"
+    },
+
+    "hasLifeStage": {
+      "@id": "herbapedia:hasLifeStage",
+      "@type": "@id",
+      "@container": "@set",
+      "@description": "Links a species to its life stages (spores, mycelium, fruiting body, etc.)"
+    },
+    "isLifeStageOf": {
+      "@id": "herbapedia:isLifeStageOf",
+      "@type": "@id",
+      "@description": "Links a life stage form to its parent species"
+    },
+    "hasForm": {
+      "@id": "herbapedia:hasForm",
+      "@type": "@id",
+      "@container": "@set",
+      "@description": "Links a species to its forms (juvenile, adult, flowering, fruiting, etc.)"
+    },
+    "isFormOf": {
+      "@id": "herbapedia:isFormOf",
+      "@type": "@id",
+      "@description": "Links a form to its parent species"
+    },
+    "produces": {
+      "@id": "herbapedia:produces",
+      "@type": "@id",
+      "@container": "@set",
+      "@description": "Links an organism or part to what it produces (e.g., fruiting body produces spores)"
+    },
+    "producedBy": {
+      "@id": "herbapedia:producedBy",
+      "@type": "@id",
+      "@description": "Links a product to its producer"
+    },
+    "isProcessedFrom": {
+      "@id": "herbapedia:isProcessedFrom",
+      "@type": "@id",
+      "@description": "Links a processed product to its raw material (e.g., shoudihuang from dihuang)"
+    },
+    "processedInto": {
+      "@id": "herbapedia:processedInto",
+      "@type": "@id",
+      "@container": "@set",
+      "@description": "Links a raw material to its processed forms"
+    },
+    "isExtractOf": {
+      "@id": "herbapedia:isExtractOf",
+      "@type": "@id",
+      "@description": "Links an extract (oil, tincture, etc.) to its source material"
+    },
+    "hasExtract": {
+      "@id": "herbapedia:hasExtract",
+      "@type": "@id",
+      "@container": "@set",
+      "@description": "Links a source material to its extracts"
     },
 
     "slug": {

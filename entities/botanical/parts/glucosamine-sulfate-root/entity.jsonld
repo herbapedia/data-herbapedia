@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/glucosamine-sulfate-root",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Glucosamine Sulfate Root",
+    "zh-Hant": "硫酸葡萄糖胺",
+    "zh-Hans": "硫酸葡萄糖胺"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/glucosamine-sulfate"
+  },
+  "partType": "root",
+  "description": {
+    "en": "The root of Glucosamine Sulfate, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.816Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

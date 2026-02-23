@@ -1,0 +1,53 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/chemical/saponins",
+  "@type": [
+    "botany:ChemicalCompound",
+    "schema:BioChemEntity"
+  ],
+  "name": {
+    "en": "Saponins",
+    "zh-Hant": "皂苷",
+    "zh-Hans": "皂苷"
+  },
+  "commonName": [
+    "Saponins",
+    "Sapogenins"
+  ],
+  "chebiID": "CHEBI:26605",
+  "compoundClass": "Glycosides; Triterpenes/Steroids",
+  "description": {
+    "en": "A class of natural plant compounds characterized by their ability to form soap-like foams when shaken in aqueous solution. Composed of a triterpene or steroid aglycone linked to one or more sugar moieties. Named from the Latin 'sapo' (soap)."
+  },
+  "pharmacology": [
+    "Immunomodulatory effects",
+    "Hypocholesterolemic activity",
+    "Anticancer properties",
+    "Anti-inflammatory effects",
+    "Antimicrobial activity",
+    "Expectorant and mucolytic effects"
+  ],
+  "bioavailability": {
+    "en": "Poor oral bioavailability due to surfactant properties; limited absorption in small intestine; metabolized by intestinal bacteria."
+  },
+  "safetyData": {
+    "toxicity": "Generally low toxicity; hemolytic at high concentrations",
+    "warnings": [
+      "May cause gastrointestinal irritation",
+      "Can enhance absorption of other compounds"
+    ]
+  },
+  "provenance": {
+    "created": "2024-01-15",
+    "modified": "2026-02-20T17:59:34.448Z",
+    "source": "Saponin Chemistry Literature",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "foundIn": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/dangshen"
+    }
+  ]
+}

@@ -2,9 +2,9 @@
   "@context": [
     "./core.jsonld",
     {
-      "tcm": "https://herbapedia.org/vocab/tcm/",
-      "ayurveda": "https://herbapedia.org/vocab/ayurveda/",
-      "western": "https://herbapedia.org/vocab/western/"
+      "tcm": "https://www.herbapedia.org/vocab/tcm/",
+      "ayurveda": "https://www.herbapedia.org/vocab/ayurveda/",
+      "western": "https://www.herbapedia.org/vocab/western/"
     }
   ]
 }

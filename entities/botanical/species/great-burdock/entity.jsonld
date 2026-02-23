@@ -1,0 +1,46 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/great-burdock",
+  "@type": [
+    "botany:PlantSpecies",
+    "herbapedia:BotanicalSource",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Great Burdock",
+    "zh-Hant": "牛蒡",
+    "zh-Hans": "牛蒡"
+  },
+  "scientificName": "Arctium lappa",
+  "family": null,
+  "genus": null,
+  "description": {
+    "en": "Arctium lappa L., family compositae.\n",
+    "zh-Hant": "牛蒡（學名：Arctium lappa）是一種具有藥用價值的天然產物。現代藥理學研究證實其含有多種生物活性成分，在傳統醫學和現代保健領域均有重要應用價值。",
+    "zh-Hans": "牛蒡（学名：Arctium lappa）是一种具有药用價值的天然產物。現代药理学研究证实其含有多种生物活性成分，在传统医学和現代保健領域均有重要应用價值。"
+  },
+  "image": "media/images/arctium-lappa/main.jpg",
+  "gbifID": 7353729,
+  "provenance": {
+    "created": "2026-02-18T09:15:19.339Z",
+    "modified": "2026-02-21T01:46:20.752Z",
+    "migratedFrom": "entities/plants/great-burdock/entity.jsonld",
+    "source": "vitaherbapedia.com",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "classificationNote": "Reclassified as BotanicalSource"
+  },
+  "hasParts": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/part/great-burdock-root"
+    }
+  ],
+  "sourceType": "botanical",
+  "sourceSubType": "plant",
+  "hasTCMProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/profile/great-burdock"
+    }
+  ],
+  "wikidataID": "Q160416",
+  "ncbiTaxonID": "53646"
+}

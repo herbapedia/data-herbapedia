@@ -1,11 +1,11 @@
 {
-  "@context": "../../schema/context/western.jsonld",
-  "@id": "western/grape-seed",
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/grape-seed",
   "@type": [
     "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
-    "@id": "plant/grape-seed"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/grape-seed"
   },
   "name": {
     "en": "Grape Seed",

@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/asparagus-root",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/asparagus-root",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"

@@ -1,0 +1,691 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/reference/organs",
+  "@type": [
+    "western:ReferenceCollection",
+    "skos:Collection"
+  ],
+  "name": {
+    "en": "Western Organ Affinities"
+  },
+  "description": {
+    "en": "Organs and tissues that herbs may specifically target or affect, based on traditional use and pharmacological evidence."
+  },
+  "members": [
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/liver",
+      "@type": [
+        "western:Organ"
+      ],
+      "name": {
+        "en": "Liver"
+      },
+      "organType": "solid_organ",
+      "bodySystem": {
+        "@id": "https://www.herbapedia.org/system/western/profile/system/digestive"
+      },
+      "anatomicalLocation": {
+        "en": "Upper right abdomen, below diaphragm"
+      },
+      "physiologicalFunctions": [
+        "detoxification",
+        "bile production",
+        "protein synthesis",
+        "glycogen storage"
+      ],
+      "associatedActions": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/hepatic"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/cholagogue"
+        }
+      ],
+      "commonHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/milk-thistle"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/dandelion-root"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/turmeric"
+        }
+      ],
+      "tcmEquivalent": {
+        "@id": "https://www.herbapedia.org/system/tcm/meridian/liver"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/heart",
+      "@type": [
+        "western:Organ"
+      ],
+      "name": {
+        "en": "Heart"
+      },
+      "organType": "solid_organ",
+      "bodySystem": {
+        "@id": "https://www.herbapedia.org/system/western/profile/system/cardiovascular"
+      },
+      "anatomicalLocation": {
+        "en": "Center of chest, left of midline"
+      },
+      "physiologicalFunctions": [
+        "pumps blood",
+        "circulates oxygen and nutrients"
+      ],
+      "associatedActions": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/cardiotonic"
+        }
+      ],
+      "commonHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/hawthorn"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/motherwort"
+        }
+      ],
+      "tcmEquivalent": {
+        "@id": "https://www.herbapedia.org/system/tcm/meridian/heart"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/brain",
+      "@type": [
+        "western:Organ"
+      ],
+      "name": {
+        "en": "Brain"
+      },
+      "organType": "solid_organ",
+      "bodySystem": {
+        "@id": "https://www.herbapedia.org/system/western/profile/system/nervous"
+      },
+      "anatomicalLocation": {
+        "en": "Cranial cavity"
+      },
+      "physiologicalFunctions": [
+        "cognition",
+        "memory",
+        "emotion",
+        "motor control",
+        "sensory processing"
+      ],
+      "associatedActions": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/nervine"
+        }
+      ],
+      "commonHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/ginkgo"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/gotu-kola"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/bacopa"
+        }
+      ],
+      "tcmEquivalent": "Not a specific TCM organ (Heart houses Shen/Mind)"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/lungs",
+      "@type": [
+        "western:Organ"
+      ],
+      "name": {
+        "en": "Lungs"
+      },
+      "organType": "solid_organ",
+      "bodySystem": {
+        "@id": "https://www.herbapedia.org/system/western/profile/system/respiratory"
+      },
+      "anatomicalLocation": {
+        "en": "Thoracic cavity"
+      },
+      "physiologicalFunctions": [
+        "gas exchange",
+        "oxygen absorption",
+        "carbon dioxide removal"
+      ],
+      "associatedActions": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/expectorant"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/demulcent"
+        }
+      ],
+      "commonHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/licorice"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/thyme"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/mullein"
+        }
+      ],
+      "tcmEquivalent": {
+        "@id": "https://www.herbapedia.org/system/tcm/meridian/lung"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/stomach",
+      "@type": [
+        "western:Organ"
+      ],
+      "name": {
+        "en": "Stomach"
+      },
+      "organType": "hollow_organ",
+      "bodySystem": {
+        "@id": "https://www.herbapedia.org/system/western/profile/system/digestive"
+      },
+      "anatomicalLocation": {
+        "en": "Upper left abdomen"
+      },
+      "physiologicalFunctions": [
+        "food storage",
+        "mechanical digestion",
+        "acid secretion",
+        "initial protein digestion"
+      ],
+      "associatedActions": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/carminative"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/spasmolytic"
+        }
+      ],
+      "commonHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/ginger"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/peppermint"
+        }
+      ],
+      "tcmEquivalent": {
+        "@id": "https://www.herbapedia.org/system/tcm/meridian/stomach"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/intestines",
+      "@type": [
+        "western:Organ"
+      ],
+      "name": {
+        "en": "Intestines"
+      },
+      "organType": "hollow_organ",
+      "bodySystem": {
+        "@id": "https://www.herbapedia.org/system/western/profile/system/digestive"
+      },
+      "anatomicalLocation": {
+        "en": "Abdominal cavity"
+      },
+      "physiologicalFunctions": [
+        "nutrient absorption",
+        "water absorption",
+        "waste formation",
+        "microbiome support"
+      ],
+      "associatedActions": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/carminative"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/spasmolytic"
+        }
+      ],
+      "commonHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/fennel"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/slippery-elm"
+        }
+      ],
+      "tcmEquivalent": "Large Intestine/Spleen meridians"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/kidneys",
+      "@type": [
+        "western:Organ"
+      ],
+      "name": {
+        "en": "Kidneys"
+      },
+      "organType": "solid_organ",
+      "bodySystem": {
+        "@id": "https://www.herbapedia.org/system/western/profile/system/urinary"
+      },
+      "anatomicalLocation": {
+        "en": "Retroperitoneal, either side of spine"
+      },
+      "physiologicalFunctions": [
+        "filtration",
+        "urine production",
+        "electrolyte balance",
+        "blood pressure regulation"
+      ],
+      "associatedActions": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/diuretic"
+        }
+      ],
+      "commonHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/dandelion-leaf"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/nettle"
+        }
+      ],
+      "tcmEquivalent": {
+        "@id": "https://www.herbapedia.org/system/tcm/meridian/kidney"
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/adrenals",
+      "@type": [
+        "western:Organ"
+      ],
+      "name": {
+        "en": "Adrenal Glands"
+      },
+      "organType": "gland",
+      "bodySystem": {
+        "@id": "https://www.herbapedia.org/system/western/profile/system/endocrine"
+      },
+      "anatomicalLocation": {
+        "en": "Superior to kidneys"
+      },
+      "physiologicalFunctions": [
+        "cortisol production",
+        "adrenaline production",
+        "aldosterone production",
+        "stress response"
+      ],
+      "associatedActions": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/adaptogen"
+        }
+      ],
+      "commonHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/ashwagandha"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/licorice"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/rhodiola"
+        }
+      ],
+      "tcmEquivalent": "Kidney Yang"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/pancreas",
+      "@type": [
+        "western:Organ"
+      ],
+      "name": {
+        "en": "Pancreas"
+      },
+      "organType": "gland",
+      "bodySystem": {
+        "@id": "https://www.herbapedia.org/system/western/profile/system/digestive"
+      },
+      "anatomicalLocation": {
+        "en": "Behind stomach"
+      },
+      "physiologicalFunctions": [
+        "insulin production",
+        "glucagon production",
+        "digestive enzyme production"
+      ],
+      "associatedActions": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/hypoglycemic"
+        }
+      ],
+      "commonHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/gymnema"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/bitter-melon"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/fenugreek"
+        }
+      ],
+      "tcmEquivalent": "Spleen function"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/uterus",
+      "@type": [
+        "western:Organ"
+      ],
+      "name": {
+        "en": "Uterus"
+      },
+      "organType": "hollow_organ",
+      "bodySystem": {
+        "@id": "https://www.herbapedia.org/system/western/profile/system/reproductive"
+      },
+      "anatomicalLocation": {
+        "en": "Pelvic cavity, female"
+      },
+      "physiologicalFunctions": [
+        "menstruation",
+        "pregnancy",
+        "labor"
+      ],
+      "associatedActions": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/emmenagogue"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/spasmolytic"
+        }
+      ],
+      "commonHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/dong-quai"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/raspberry-leaf"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/motherwort"
+        }
+      ],
+      "tcmEquivalent": "Uterus (Bao Gong) - connected to Kidney/Liver"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/skin",
+      "@type": [
+        "western:Organ"
+      ],
+      "name": {
+        "en": "Skin"
+      },
+      "organType": "tissue",
+      "bodySystem": {
+        "@id": "https://www.herbapedia.org/system/western/profile/system/integumentary"
+      },
+      "anatomicalLocation": {
+        "en": "External body covering"
+      },
+      "physiologicalFunctions": [
+        "protection",
+        "temperature regulation",
+        "sensation",
+        "vitamin D synthesis"
+      ],
+      "associatedActions": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/vulnerary"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/anti-inflammatory"
+        }
+      ],
+      "commonHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/calendula"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/witch-hazel"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/chickweed"
+        }
+      ],
+      "tcmEquivalent": "Lung controls skin and body hair"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/joints",
+      "@type": [
+        "western:Organ"
+      ],
+      "name": {
+        "en": "Joints"
+      },
+      "organType": "tissue",
+      "bodySystem": {
+        "@id": "https://www.herbapedia.org/system/western/profile/system/musculoskeletal"
+      },
+      "physiologicalFunctions": [
+        "movement",
+        "flexibility",
+        "weight bearing"
+      ],
+      "associatedActions": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/anti-inflammatory"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/anodyne"
+        }
+      ],
+      "commonHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/turmeric"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/boswellia"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/devils-claw"
+        }
+      ],
+      "tcmEquivalent": "Bi syndrome - wind-damp-cold"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/thyroid",
+      "@type": [
+        "western:Organ"
+      ],
+      "name": {
+        "en": "Thyroid Gland"
+      },
+      "organType": "gland",
+      "bodySystem": {
+        "@id": "https://www.herbapedia.org/system/western/profile/system/endocrine"
+      },
+      "anatomicalLocation": {
+        "en": "Anterior neck"
+      },
+      "physiologicalFunctions": [
+        "metabolism regulation",
+        "growth",
+        "development"
+      ],
+      "associatedActions": [],
+      "commonHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/ bladderwrack"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/ashwagandha"
+        }
+      ],
+      "tcmEquivalent": "Related to Kidney and Heart"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/prostate",
+      "@type": [
+        "western:Organ"
+      ],
+      "name": {
+        "en": "Prostate Gland"
+      },
+      "organType": "gland",
+      "bodySystem": {
+        "@id": "https://www.herbapedia.org/system/western/profile/system/reproductive"
+      },
+      "anatomicalLocation": {
+        "en": "Male pelvis, below bladder"
+      },
+      "physiologicalFunctions": [
+        "semen production",
+        "ejaculation"
+      ],
+      "associatedActions": [],
+      "commonHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/saw-palmetto"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/pygeum"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/nettle-root"
+        }
+      ],
+      "tcmEquivalent": "Kidney function"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/digestive",
+      "@type": [
+        "western:Organ",
+        "western:SystemAlias"
+      ],
+      "name": {
+        "en": "Digestive System"
+      },
+      "organType": "body_system",
+      "bodySystem": {
+        "@id": "https://www.herbapedia.org/system/western/profile/system/digestive"
+      },
+      "description": {
+        "en": "The digestive system including stomach, intestines, liver, pancreas, and related organs."
+      },
+      "associatedActions": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/carminative"
+        },
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/hepatic"
+        }
+      ],
+      "commonHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/ginger"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/peppermint"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/chamomile"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/nervous-system",
+      "@type": [
+        "western:Organ",
+        "western:SystemAlias"
+      ],
+      "name": {
+        "en": "Nervous System"
+      },
+      "organType": "body_system",
+      "bodySystem": {
+        "@id": "https://www.herbapedia.org/system/western/profile/system/nervous"
+      },
+      "description": {
+        "en": "The nervous system including brain, spinal cord, and peripheral nerves."
+      },
+      "associatedActions": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/nervine"
+        }
+      ],
+      "commonHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/valerian"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/chamomile"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/passionflower"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/cardiovascular",
+      "@type": [
+        "western:Organ",
+        "western:SystemAlias"
+      ],
+      "name": {
+        "en": "Cardiovascular System"
+      },
+      "organType": "body_system",
+      "bodySystem": {
+        "@id": "https://www.herbapedia.org/system/western/profile/system/cardiovascular"
+      },
+      "description": {
+        "en": "The cardiovascular system including heart, blood vessels, and circulation."
+      },
+      "associatedActions": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/cardiotonic"
+        }
+      ],
+      "commonHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/hawthorn"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/garlic"
+        }
+      ]
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/western/organ/respiratory",
+      "@type": [
+        "western:Organ",
+        "western:SystemAlias"
+      ],
+      "name": {
+        "en": "Respiratory System"
+      },
+      "organType": "body_system",
+      "bodySystem": {
+        "@id": "https://www.herbapedia.org/system/western/profile/system/respiratory"
+      },
+      "description": {
+        "en": "The respiratory system including lungs, bronchi, and airways."
+      },
+      "associatedActions": [
+        {
+          "@id": "https://www.herbapedia.org/system/western/action/expectorant"
+        }
+      ],
+      "commonHerbs": [
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/thyme"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/peppermint"
+        },
+        {
+          "@id": "https://www.herbapedia.org/entity/preparation/mullein"
+        }
+      ]
+    }
+  ]
+}

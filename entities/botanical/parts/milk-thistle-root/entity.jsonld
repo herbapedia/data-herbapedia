@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/milk-thistle-root",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Milk Thistle Root",
+    "zh-Hant": "乳薊果",
+    "zh-Hans": "乳蓟果"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/milk-thistle"
+  },
+  "partType": "root",
+  "description": {
+    "en": "The root of Silybum marianum, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.821Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

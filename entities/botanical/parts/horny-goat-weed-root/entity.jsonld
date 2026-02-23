@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/horny-goat-weed-root",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Horny Goat Weed Root",
+    "zh-Hant": "淫羊藿",
+    "zh-Hans": "淫羊藿"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/horny-goat-weed"
+  },
+  "partType": "root",
+  "description": {
+    "en": "The root of Epimedium brevicornum, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.817Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

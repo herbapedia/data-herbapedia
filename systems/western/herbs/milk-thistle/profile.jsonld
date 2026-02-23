@@ -1,11 +1,11 @@
 {
-  "@context": "../../schema/context/western.jsonld",
-  "@id": "western/milk-thistle",
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/milk-thistle",
   "@type": [
     "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
-    "@id": "plant/milk-thistle"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/milk-thistle"
   },
   "name": {
     "en": "Milk Thistle",

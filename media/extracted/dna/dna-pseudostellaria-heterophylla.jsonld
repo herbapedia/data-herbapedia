@@ -1,0 +1,86 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/dna/pseudostellaria-heterophylla",
+  "@type": ["herbapedia:DNASequenceData", "schema:Dataset"],
+  "dataType": "DNASequence",
+  "sourceFile": "DNA_____Pseudostellaria_heterophylla_V1.pdf",
+  "sourceDocument": "GCMTI FS:2022-1",
+  "title": {
+    "en": "Fact sheet of reference DNA sequences of Pseudostellaria heterophylla",
+    "zh-hk": "孩兒參(Pseudostellaria heterophylla)之參考 DNA 序列資料表"
+  },
+  "scientificName": {
+    "full": "Pseudostellaria heterophylla",
+    "genus": "Pseudostellaria",
+    "species": "heterophylla",
+    "author": ""
+  },
+  "loci": [
+    {
+      "name": "ITS2",
+      "fullName": "Internal transcribed spacer 2",
+      "description": {
+        "en": "Internal transcribed spacer 2 (ITS2) of plant voucher specimen of Pseudostellaria heterophylla and Chinese Materia Medica (CMM) Radix Pseudostellariae",
+        "zh-hk": "植物憑證標本及中藥材太子參標本的核糖體DNA第二內部轉錄間隔區(ITS2)序列"
+      },
+      "sequenceLength": 231,
+      "consensusSequence": "CGCATCGCAGCCCCCTCACTCCCACCCTTAGTGGGATGGGGAGGAAGATGGTTTCCCGTGCCTCACCGGGCACGGTTGGCCTAAAATTGGAGCCTAAGGCATTGAGTTGTCGCGGCAATAGGTGGTGAACAAGGCCTTGGCCGTGCAAGCAACCAGTCGTGCAACCCTTTGACAATCGAAGCTCGTAGGAGACCCTATGATGTTGCCTTTTGGTGACACAAACTGTTG",
+      "specimenCount": 20,
+      "specimens": [
+        "21RD17-1A", "21RD18-1A", "21RD19-1A", "21RD20-1A", "21RD21-1A",
+        "21RD28-2A", "21RD28-4A", "21RD28-5A", "21RD28-6A", "21RD28-7A",
+        "21RD28-8A", "21RD28-9A", "21RD28-10A", "21RD29-1A", "21RD29-2A",
+        "21RD29-4A", "21RD29-5A", "21RD29-6A", "21RD29-7A", "21RD29-8A"
+      ]
+    },
+    {
+      "name": "psbA-trnH",
+      "fullName": "Chloroplast psbA-trnH intergenic spacer",
+      "description": {
+        "en": "Chloroplast psbA-trnH intergenic spacer (psbA-trnH) of plant voucher specimen of Pseudostellaria heterophylla and Chinese Materia Medica (CMM) Radix Pseudostellariae",
+        "zh-hk": "植物憑證標本及中藥材太子參標本的葉綠體psbA-trnH基因間區(psbA-trnH)序列"
+      },
+      "sequenceLength": 442,
+      "consensusSequence": "TCTATAAATGGATAAAATATCTTTTCTTTTTTAGTTTAGTATATACGAGTTTTTTTTTTTTAGTAAAGGAGCAATACTAGTTTCTTGATAGAACAAGAAATTTTTAAATGCTCCTTTACTAGTTAGTTTTTTTATTTCTTTACTCCAATCCTTACAAAAATTTTTTTTTACTAAAAAAAATACTTTACATAAAATCTTATTATCTTTTACGTTTAAAATGTCAATTCTTTTCTGTTAATTCTTGAATTAAGAATTAAACAAACTTAAAGTTTAAGTATTAAAGTTTTTTTATGTATTAGCAAAAGGGGCGGA",
+      "specimenCount": 20,
+      "specimens": [
+        "21RD17-1A", "21RD18-1A", "21RD19-1A", "21RD20-1A", "21RD21-1A",
+        "21RD28-2A", "21RD28-4A", "21RD28-5A", "21RD28-6A", "21RD28-7A",
+        "21RD28-8A", "21RD28-9A", "21RD28-10A", "21RD29-1A", "21RD29-2A",
+        "21RD29-4A", "21RD29-5A", "21RD29-6A", "21RD29-7A", "21RD29-8A"
+      ]
+    },
+    {
+      "name": "rbcL",
+      "fullName": "Partial chloroplast ribulose bisphosphate carboxylase large chain",
+      "description": {
+        "en": "Partial chloroplast ribulose bisphosphate carboxylase large chain (rbcL) of plant voucher specimen of Pseudostellaria heterophylla and Chinese Materia Medica (CMM) Radix Pseudostellariae",
+        "zh-hk": "植物憑證標本及中藥材太子參標本的葉綠體二磷酸核酮糖羧化酶大鏈(rbcL)部分序列"
+      },
+      "sequenceLength": 552,
+      "consensusSequence": "AAGTGTTGGATTTAAAGCTGGTGTTAAAGATTACAAATTGACTTATTATACTCCTGAGTATGAAACCCTGGATACTGATATCTTGGCAGCATTCCGAGTAACTCCTCAACCTGGAGTTCCACCCGAAGAAGCAGGGGCCGCAGTAGCCGCCGAATCTTCGACTGGTACATGGACAACTGTATGGACCGACGGACTTACCAGTCTTGATCGTTACAAAGGACGATGCTACCACATCGAGCCCGTTGCTGGAGAAGAAAATCAATATATTTGTTATGTAGCTTACCCCTTAGACCTTTTTGAGGAAGGCTCTGTTACTAACATGTTTACTTCCATTGTGGGTAATGTATTTGGGTTCAAAGCCTTGCGTGCTCTACGCTTGGAGGATTTGCGAATTCCTGTTGCTTATATAAAAACTTTCCAAGGCCCGCCTCACGGTATCCAAGTTGAAAGAGATAAATTGAACAAGTATGGCCGTCCCCTATTGGGATGCACCATTAAACCGAAATTAGGGTTATCCGCTAAAAACTATGGTCGAGCAGTTTATGAATGTCTT",
+      "specimenCount": 20,
+      "specimens": [
+        "21RD17-1A", "21RD18-1A", "21RD19-1A", "21RD20-1A", "21RD21-1A",
+        "21RD28-2A", "21RD28-4A", "21RD28-5A", "21RD28-6A", "21RD28-7A",
+        "21RD28-8A", "21RD28-9A", "21RD28-10A", "21RD29-1A", "21RD29-2A",
+        "21RD29-4A", "21RD29-5A", "21RD29-6A", "21RD29-7A", "21RD29-8A"
+      ],
+      "notes": "Specimen 21RD28-5A_ITS2 showed minor sequence variation (Y instead of C at position 161)"
+    }
+  ],
+  "specimen": {
+    "gcmtiCode": "GA0000260a00",
+    "type": "Chinese Materia Medica (CMM) Radix Pseudostellariae",
+    "totalSpecimens": 20
+  },
+  "methodology": {
+    "format": "FASTA",
+    "sequencingTargets": ["ITS2", "psbA-trnH", "rbcL"],
+    "specimenTypes": ["Plant voucher specimen", "Chinese Materia Medica (CMM) Radix Pseudostellariae"]
+  },
+  "extracted": {
+    "date": "2026-02-20",
+    "extractedBy": "automated extraction from PDF"
+  }
+}

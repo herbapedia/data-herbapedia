@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/preparation/chinese-mugwort-leaf",
+  "@type": [
+    "herbal:HerbalPreparation",
+    "schema:DietarySupplement"
+  ],
+  "name": {
+    "en": "Chinese Mugwort Leaf",
+    "zh-Hant": "艾葉",
+    "zh-Hans": "艾叶"
+  },
+  "derivedFrom": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/chinese-mugwort-leaf"
+    }
+  ],
+  "preparationMethod": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/method/dried"
+  },
+  "form": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/form/whole"
+  },
+  "hasTCMProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/profile/chinese-mugwort-leaf"
+    }
+  ],
+  "safetyInfo": {},
+  "provenance": {
+    "created": "2026-02-20",
+    "source": "Generated from TCM profile",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "description": {
+    "en": "Herbal preparation derived from Chinese Mugwort Leaf. Mugwort has bitter, pungent and warm properties and is associated with the liver and spleen and kidney. Taken internally, the herb warms the womb, disperses cold and alleviates pain, especially menstr..."
+  },
+  "image": "media/images/chinese-mugwort-leaf/chinese-mugwort-leaf.jpg"
+}

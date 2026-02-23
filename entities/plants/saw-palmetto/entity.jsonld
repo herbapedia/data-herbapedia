@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/saw-palmetto",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/saw-palmetto",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"
@@ -30,10 +30,10 @@
   "gbifId": 2735055,
   "containsChemical": [
     {
-      "@id": "chemical/flavonoids"
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/flavonoids"
     },
     {
-      "@id": "chemical/essential-oils"
+      "@id": "https://www.herbapedia.org/entity/botanical/chemical/essential-oils"
     }
   ],
   "modified": "2026-02-19T23:24:40.403Z"

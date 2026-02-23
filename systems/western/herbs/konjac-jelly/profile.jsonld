@@ -1,11 +1,11 @@
 {
-  "@context": "../../schema/context/western.jsonld",
-  "@id": "western/konjac-jelly",
+  "@context": "https://www.herbapedia.org/schema/context/western.jsonld",
+  "@id": "https://www.herbapedia.org/system/western/profile/konjac-jelly",
   "@type": [
     "herbapedia:WesternHerbProfile"
   ],
   "derivedFromPlant": {
-    "@id": "plant/konjac-jelly"
+    "@id": "https://www.herbapedia.org/entity/botanical/species/konjac-jelly"
   },
   "name": {
     "en": "Konjac jelly",

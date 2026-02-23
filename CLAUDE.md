@@ -1,11 +1,41 @@
-# CLAUDE.md - Herbapedia Data Repository Guidelines
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Project Overview
 
-This is **data-herbapedia**, the authoritative JSON-LD knowledge base for medicinal plants.
+**data-herbapedia** is the authoritative JSON-LD knowledge base for medicinal plants.
 It is a **dataset**, not an application. The Herbapedia website queries this dataset to render content.
 
-### Key Architectural Principle
+## Commands
+
+```bash
+# Validate all data files
+npm run validate
+
+# Validate specific plant entity
+node scripts/validate.js --plant ginseng
+
+# Validate all TCM herbs
+node scripts/validate.js --tcm
+
+# Validate with verbose output (shows passing files)
+node scripts/validate.js --verbose
+
+# Build distribution index files
+npm run build-index
+
+# Link plant entities to Wikidata
+node scripts/link-wikidata.js
+
+# Link plant entities to GBIF
+node scripts/link-gbif.js
+
+# Apply translations from batch files
+node scripts/apply-translations.js
+```
+
+## Key Architectural Principle
 
 **Plant ≠ Medicine**
 
@@ -29,58 +59,93 @@ This enables:
 ```
 data-herbapedia/
 ├── schema/
-│   ├── context/          # JSON-LD contexts (core.jsonld, tcm.jsonld, etc.)
-│   ├── shapes/           # SHACL validation shapes
-│   └── vocab/            # Ontology definitions (Turtle)
+│   ├── context/          # JSON-LD contexts
+│   │   ├── core.jsonld   # Base vocabulary (schema.org, Darwin Core, etc.)
+│   │   ├── tcm.jsonld    # TCM vocabulary extension
+│   │   ├── ayurveda.jsonld
+│   │   └── western.jsonld
+│   ├── shapes/           # SHACL validation (planned)
+│   └── vocab/            # Ontology definitions (Turtle, planned)
 │
 ├── entities/
-│   ├── plants/           # Botanical entities (entity.jsonld per plant)
-│   │   └── {slug}/
-│   │       └── entity.jsonld
+│   ├── plants/           # Botanical entities (185 total)
+│   │   └── {slug}/entity.jsonld
 │   └── chemicals/        # Chemical compounds
 │
-├── systems/              # Traditional medicine system profiles
-│   ├── tcm/herbs/        # TCM herb profiles
-│   │   └── {slug}/
-│   │       └── profile.jsonld
-│   ├── ayurveda/dravyas/ # Ayurvedic substance profiles
-│   └── western/herbs/    # Western herbalism profiles
-│
-├── media/
-│   └── images/           # Plant images, banners
+├── systems/
+│   ├── tcm/
+│   │   ├── herbs/        # TCM herb profiles (99 total)
+│   │   │   └── {slug}/profile.jsonld
+│   │   ├── natures.jsonld    # Reference: hot/warm/neutral/cool/cold
+│   │   ├── flavors.jsonld    # Reference: 五味
+│   │   ├── meridians.jsonld  # Reference: 十二经脉
+│   │   └── categories.jsonld # Herb category definitions
+│   ├── ayurveda/
+│   │   ├── dravyas/      # Ayurvedic substance profiles
+│   │   ├── doshas.jsonld
+│   │   ├── rasas.jsonld
+│   │   └── gunas.jsonld
+│   └── western/
+│       ├── herbs/        # Western herb profiles (87 total)
+│       │   └── {slug}/profile.jsonld
+│       ├── actions.jsonld    # Herbal actions (carminative, etc.)
+│       └── organs.jsonld     # Organ affinities
 │
 ├── types/                # TypeScript definitions
-│   ├── core.ts           # Plant, ChemicalCompound, etc.
-│   ├── tcm.ts            # TCMHerbProfile, etc.
-│   ├── ayurveda.ts       # AyurvedaDravyaProfile, etc.
+│   ├── core.ts           # Plant, ChemicalCompound, LanguageMap
+│   ├── tcm.ts            # TCMHerbProfile, TCMMeridian, etc.
+│   ├── ayurveda.ts       # AyurvedaDravyaProfile, DoshaType
 │   └── index.ts          # Re-exports
 │
-└── scripts/              # Validation and build scripts
+├── scripts/              # Validation and utility scripts
+│
+├── dist/                 # Build output (gitignored)
+│   ├── index.json        # Master index with merged data
+│   ├── categories.json   # Category definitions with counts
+│   ├── plants.json       # All plant entities
+│   └── tcm-herbs.json    # All TCM profiles
+│
+└── media/images/         # Plant images
 ```
+
+## IRI Reference Patterns
+
+IRIs follow consistent patterns for referencing entities and controlled vocabularies:
+
+| Pattern | Example | Usage |
+|---------|---------|-------|
+| `plant/{slug}` | `plant/ginseng` | Plant entity reference |
+| `plant/{slug}#{part}` | `plant/ginger#rhizome` | Specific plant part |
+| `tcm/{slug}` | `tcm/ren-shen` | TCM herb profile |
+| `western/{slug}` | `western/ginger` | Western herb profile |
+| `nature/{value}` | `nature/warm` | TCM thermal nature |
+| `flavor/{value}` | `flavor/sweet` | TCM flavor (五味) |
+| `meridian/{value}` | `meridian/spleen` | TCM meridian |
+| `category/{value}` | `category/tonify-qi` | TCM herb category |
+| `western/action/{value}` | `western/action/carminative` | Western herbal action |
+| `western/organ/{value}` | `western/organ/digestive` | Western organ affinity |
 
 ## Data Format
 
 ### Plant Entity (entities/plants/{slug}/entity.jsonld)
 
+Contains ONLY botanical data. No system-specific content.
+
 ```json
 {
   "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/ginger",
+  "@id": "plant/ginseng",
   "@type": ["schema:Plant", "herbapedia:MedicinalPlant"],
-  "scientificName": "Zingiber officinale",
+  "scientificName": "Panax ginseng",
   "name": {
-    "en": "Ginger",
-    "zh-Hant": "薑",
-    "zh-Hans": "姜"
+    "en": "Ginseng",
+    "zh-Hant": "人蔘",
+    "zh-Hans": "人蔘"
   },
-  "description": {
-    "en": "A flowering plant whose rhizome is widely used as a spice...",
-    "zh-Hant": "多年生草本植物..."
-  },
-  "image": "media/images/ginger/ginger.jpg",
-  "sameAs": [
-    { "@id": "https://www.wikidata.org/wiki/Q1097047" }
-  ]
+  "description": { "...": "..." },
+  "image": "media/images/ginseng/ginseng.jpg",
+  "containsChemical": [{ "@id": "chemical/ginsenosides" }],
+  "sameAs": [{ "@id": "http://www.wikidata.org/entity/Q192163" }]
 }
 ```
 
@@ -88,25 +153,34 @@ data-herbapedia/
 
 ```json
 {
-  "@context": ["../../schema/context/core.jsonld", "../../schema/context/tcm.jsonld"],
-  "@id": "tcm/sheng-jiang",
+  "@context": "../../schema/context/tcm.jsonld",
+  "@id": "tcm/ren-shen",
   "@type": ["tcm:Herb", "schema:DietarySupplement"],
-  "derivedFromPlant": { "@id": "plant/ginger#rhizome" },
-  "name": {
-    "zh-Hant": "生薑",
-    "zh-Hans": "生姜",
-    "en": "Fresh Ginger"
-  },
+  "derivedFromPlant": { "@id": "plant/panax-ginseng#root" },
+  "name": { "en": "Ginseng Root", "zh-Hant": "人蔘" },
+  "pinyin": "Rén Shēn",
+  "hasCategory": { "@id": "category/tonify-qi" },
   "hasNature": { "@id": "nature/warm" },
-  "hasFlavor": [{ "@id": "flavor/acrid" }],
-  "entersMeridian": [
-    { "@id": "meridian/lung" },
-    { "@id": "meridian/spleen" }
-  ],
-  "tcmFunctions": {
-    "zh-Hant": "發汗解表，溫中止嘔...",
-    "en": "Releases exterior, warms middle burner..."
-  }
+  "hasFlavor": [{ "@id": "flavor/sweet" }, { "@id": "flavor/bitter" }],
+  "entersMeridian": [{ "@id": "meridian/spleen" }, { "@id": "meridian/lung" }],
+  "tcmFunctions": { "en": "...", "zh-Hant": "..." },
+  "tcmTraditionalUsage": { "en": "...", "zh-Hant": "..." },
+  "tcmModernResearch": { "en": "...", "zh-Hant": "..." }
+}
+```
+
+### Western Profile (systems/western/herbs/{slug}/profile.jsonld)
+
+```json
+{
+  "@context": "../../schema/context/western.jsonld",
+  "@id": "western/ginger",
+  "@type": ["western:Herb", "schema:DietarySupplement"],
+  "derivedFromPlant": { "@id": "plant/ginger" },
+  "name": { "en": "Ginger", "zh-Hant": "生薑" },
+  "hasAction": [{ "@id": "western/action/carminative" }],
+  "hasOrganAffinity": [{ "@id": "western/organ/digestive" }],
+  "westernTraditionalUsage": { "en": "...", "zh-Hant": "..." }
 }
 ```
 
@@ -114,103 +188,68 @@ data-herbapedia/
 
 ### Language Codes
 
-Use these language codes consistently:
 - `en` - English
 - `zh-Hant` - Traditional Chinese (繁體中文)
 - `zh-Hans` - Simplified Chinese (简体中文)
 - `hi` - Hindi
 - `sa` - Sanskrit
 
-### System-Scoped Content
+### System-Scoped Properties
 
-Content properties are NOT generic. They are scoped to each medicine system:
+Content properties are scoped to each medicine system. NEVER create generic properties:
 
-- **TCM**: `tcmFunctions`, `tcmTraditionalUsage`, `tcmModernResearch`
-- **Ayurveda**: `ayurvedaTraditionalUsage`, `ayurvedaModernResearch`
-- **Western**: `westernTraditionalUsage`, `westernModernResearch`
+| System | Properties |
+|--------|------------|
+| TCM | `tcmFunctions`, `tcmTraditionalUsage`, `tcmModernResearch`, `tcmHistory`, `tcmSafetyConsideration` |
+| Ayurveda | `ayurvedaTraditionalUsage`, `ayurvedaModernResearch` |
+| Western | `westernTraditionalUsage`, `westernModernResearch`, `westernHistory` |
 
-DO NOT create generic properties like `herbapedia:traditionalUsage`.
+**Wrong**: `herbapedia:traditionalUsage`
+**Right**: `tcm:traditionalUsage` or `western:traditionalUsage`
 
-## Validation
+### Non-Plant Entities
 
-Run validation using:
-```bash
-npm run validate
-```
+The `entities/plants/` directory also contains non-plant entities:
+- Vitamins: `vitamin-a`, `vitamin-b1`, etc.
+- Minerals: `calcium`, `iron`, `magnesium`, etc.
+- Nutrients: `choline`, `glucosamine-sulfate`, etc.
+- Oils: `argan-oil`, `lavender-oil`, etc.
 
-This checks:
-1. JSON-LD syntax validity
-2. Required fields presence
-3. Language map completeness
-4. Reference integrity
-
-## Publishing Versions
-
-This dataset is published as versioned GitHub releases:
-
-1. Update version in package.json
-2. Run validation: `npm run validate`
-3. Generate distribution: `npm run build`
-4. Create git tag: `git tag v1.x.x`
-5. Push tag: `git push origin v1.x.x`
-6. Create GitHub release with bundled data
-
-Consumers can then fetch specific versions:
-```
-https://github.com/herbapedia/data-herbapedia/releases/download/v1.2.0/herbapedia-data.tar.gz
-```
-
-## TypeScript Types
-
-Import types for type-safe access:
-
-```typescript
-import type { Plant, TCMHerbProfile, LanguageMap } from '@herbapedia/data/types'
-
-// Access plant data
-const plant: Plant = loadPlant('ginger')
-const name = plant.name['zh-Hant'] // 薑
-
-// Access TCM profile
-const tcm: TCMHerbProfile = loadTCMProfile('sheng-jiang')
-const nature = tcm.hasNature // { "@id": "nature/warm" }
-```
-
-## Common Tasks
-
-### Adding a New Plant
-
-1. Create directory: `entities/plants/{slug}/`
-2. Create `entity.jsonld` with required fields
-3. Add image to `media/images/{slug}/`
-4. Add system profiles as needed (TCM, Ayurveda, Western)
-5. Run validation
-
-### Adding TCM Profile for Existing Plant
-
-1. Create directory: `systems/tcm/herbs/{tcm-slug}/`
-2. Create `profile.jsonld` linking to plant via `derivedFromPlant`
-3. Include TCM-specific properties (nature, flavor, meridians)
-4. Run validation
-
-### Adding Translations
-
-1. Find the entity or profile file
-2. Add translations to all `LanguageMap` fields
-3. Ensure all languages are present (en, zh-Hant, zh-Hans minimum)
-4. Run validation
+The validator handles these differently (e.g., no `scientificName` required).
 
 ## File Naming Conventions
 
 - **Slugs**: lowercase, hyphen-separated (`zingiber-officinale`, `sheng-jiang`)
-- **Files**: `entity.jsonld` for plants, `profile.jsonld` for system profiles
+- **Plant files**: `entity.jsonld`
+- **Profile files**: `profile.jsonld`
 - **Images**: match the slug, include variant suffix if needed (`ginger.jpg`, `ginger-root.jpg`)
 
 ## External References
 
 Use `sameAs` to link to external authorities:
-- Wikidata: `https://www.wikidata.org/entity/Q...`
-- GBIF: `https://www.gbif.org/species/...`
-- Wikipedia: `https://en.wikipedia.org/wiki/...`
+- Wikidata: `http://www.wikidata.org/entity/Q...`
+- GBIF: Use `gbifID` property with the numeric ID
 
-This enables data enrichment and cross-referencing.
+Utility scripts:
+- `node scripts/link-wikidata.js` - Auto-link to Wikidata
+- `node scripts/link-gbif.js` - Auto-link to GBIF species data
+
+## TypeScript Configuration
+
+The project uses TypeScript 5.3+ with ES2022 target and strict mode enabled.
+Types are for development only; there is no runtime TypeScript compilation.
+The `noEmit` flag is set - types are consumed directly from `.ts` files.
+
+## Publishing Workflow
+
+1. Update version in package.json
+2. Run validation: `npm run validate`
+3. Generate distribution: `npm run build-index`
+4. Create git tag: `git tag v1.x.x`
+5. Push tag: `git push origin v1.x.x`
+6. Create GitHub release with bundled data
+
+Consumers fetch specific versions:
+```
+https://github.com/herbapedia/data-herbapedia/releases/download/v1.2.0/herbapedia-data.tar.gz
+```

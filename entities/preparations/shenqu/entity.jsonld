@@ -1,0 +1,58 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/preparation/shenqu",
+  "@type": [
+    "herbal:HerbalPreparation",
+    "schema:DietarySupplement"
+  ],
+  "name": {
+    "en": "Shenqu",
+    "zh-Hant": "炒神曲",
+    "zh-Hans": "炒神曲"
+  },
+  "preparationMethod": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/method/fermented"
+  },
+  "form": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/form/whole"
+  },
+  "hasTCMProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/profile/shenqu"
+    }
+  ],
+  "safetyInfo": {},
+  "provenance": {
+    "created": "2026-02-20",
+    "source": "Generated from TCM profile",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "description": {
+    "en": "Herbal preparation derived from Shenqu. Shenqu, a leavened mixture of grains and herbs, is sweet, acrid and warm in nature. It enters the spleen and stomach meridians to aid in the digestion and absorption of nutrients, reduce food stagnati..."
+  },
+  "image": "media/images/shenqu/shenqu.jpg",
+  "preparationDetails": {
+    "en": "Fermented mixture of wheat flour, bran, and herbs (typically including Artemisia, Xanthium, and others)"
+  },
+  "hasIngredients": [
+    {
+      "ingredient": {
+        "@id": "https://www.herbapedia.org/entity/botanical/species/wheat"
+      },
+      "role": "base"
+    },
+    {
+      "ingredient": {
+        "@id": "https://www.herbapedia.org/entity/botanical/species/chinese-mugwort-leaf"
+      },
+      "role": "active"
+    }
+  ],
+  "derivedFrom": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/wheat"
+    }
+  ]
+}

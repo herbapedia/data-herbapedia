@@ -1,0 +1,251 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/chemical/verbenae-herba",
+  "@type": ["herbapedia:ChemicalAnalysisData", "schema:Dataset"],
+  "dataType": "ChemicalAnalysis",
+  "sourceDocument": "CHEM_____Verbenae_Herba_V1.pdf",
+  "scientificName": "Verbena officinalis",
+  "chineseName": "馬鞭草",
+  "pinyinName": "Mabiancao",
+  "identificationMethod": ["TLC", "HPLC-Fingerprint", "HPLC-Assay"],
+  "referenceCompounds": [
+    {
+      "name": "Hastatoside",
+      "chineseName": "戟葉馬鞭草苷",
+      "formula": "C₁₇H₂₄O₁₁",
+      "purpose": ["TLC identification", "HPLC fingerprint marker", "Assay quantification"]
+    },
+    {
+      "name": "Verbenalin",
+      "chineseName": "馬鞭草苷",
+      "formula": "C₁₇H₂₄O₁₀",
+      "purpose": ["TLC identification", "HPLC fingerprint marker", "Assay quantification"]
+    }
+  ],
+  "assayLimits": {
+    "totalHastatosideAndVerbenalin": {
+      "compounds": ["Hastatoside", "Verbenalin"],
+      "formulas": ["C₁₇H₂₄O₁₁", "C₁₇H₂₄O₁₀"],
+      "minimumContent": "0.71%",
+      "basis": "dried substance (combined total)"
+    }
+  },
+  "tlcMethod": {
+    "appendixReference": "Appendix I",
+    "stationaryPhase": "HPTLC silica gel F₂₅₄ plate",
+    "developingSolvent": {
+      "components": ["ethyl acetate", "water", "formic acid", "glacial acetic acid"],
+      "ratio": "8:2:1:1 (v/v)"
+    },
+    "sprayReagent": {
+      "composition": "5 mL sulfuric acid in 95 mL ethanol with 1 g vanillin",
+      "visualization": "Heat at about 105°C until spots or bands become visible (about 5 min)"
+    },
+    "testSolution": {
+      "sampleAmount": "1.0 g",
+      "solvent": "methanol",
+      "solventVolume": "10 mL",
+      "extraction": "ultrasonication (350 W) for 30 min",
+      "filtration": "0.45 μm nylon filter"
+    },
+    "standardSolutions": {
+      "hastatoside": {
+        "concentration": "1.1 mg/mL in methanol"
+      },
+      "verbenalin": {
+        "concentration": "1.3 mg/mL in methanol"
+      }
+    },
+    "applicationVolumes": {
+      "hastatosideStandardSolution": "2 μL",
+      "verbenalinStandardSolution": "2 μL",
+      "testSolution": "5 μL"
+    },
+    "developingDistance": "6 cm",
+    "equilibrationTime": "15 min",
+    "visualization": "visible light after staining",
+    "identificationCriteria": {
+      "positiveMarkers": ["Hastatoside", "Verbenalin"],
+      "description": "Sample should show spots or bands corresponding in color and Rf values to hastatoside and verbenalin"
+    }
+  },
+  "hplcFingerprint": {
+    "appendixReference": "Appendix II",
+    "chromatographicSystem": {
+      "column": {
+        "type": "C18 bonded silica gel",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "DAD",
+      "detectionWavelength": "230 nm",
+      "columnTemperature": "30°C",
+      "flowRate": "1.0 mL/min",
+      "injectionVolume": "5 μL"
+    },
+    "mobilePhase": {
+      "solventA": "0.05% Phosphoric Acid",
+      "solventB": "Acetonitrile",
+      "gradientProgram": [
+        {
+          "timeRange": "0-10 min",
+          "solventA": "90%",
+          "solventB": "10%",
+          "elution": "isocratic"
+        },
+        {
+          "timeRange": "10-30 min",
+          "solventA": "90% → 80%",
+          "solventB": "10% → 20%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "30-60 min",
+          "solventA": "80% → 60%",
+          "solventB": "20% → 40%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "hastatoside": {
+        "name": "Std-FP",
+        "concentration": "220 mg/L",
+        "preparation": "2.2 mg in 10 mL 80% methanol"
+      },
+      "verbenalin": {
+        "name": "Std-FP",
+        "concentration": "200 mg/L",
+        "preparation": "2.0 mg in 10 mL 80% methanol"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "1.0 g",
+      "solvent": "80% methanol",
+      "solventVolume": "20 mL",
+      "extraction": "ultrasonication (240 W) for 45 min",
+      "centrifugation": "4000 × g for 5 min",
+      "filtration": "0.45 μm nylon filter"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "peakAreaRSD": "≤ 5.0%",
+      "retentionTimeRSD": "≤ 2.0%",
+      "theoreticalPlates": "≥ 15,000 and ≥ 25,000 (based on characteristic peaks)",
+      "resolution": "≥ 1.5 (between peaks 1 and 2 and their adjacent peaks)"
+    },
+    "identificationCriteria": {
+      "retentionTimeTolerance": "≤ 2.0% difference between sample and standard"
+    }
+  },
+  "hplcAssay": {
+    "appendixReference": "Appendix III",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "DAD",
+      "detectionWavelength": "238 nm",
+      "columnTemperature": "30°C",
+      "flowRate": "1.0 mL/min",
+      "elutionTime": "about 28 min"
+    },
+    "mobilePhase": {
+      "solventA": "0.05% Phosphoric Acid",
+      "solventB": "Acetonitrile",
+      "ratio": "90:10 (v/v)",
+      "elution": "isocratic"
+    },
+    "standardSolutions": {
+      "stockSolution": {
+        "name": "Std-Stock",
+        "hastatosideConcentration": "1350 mg/L",
+        "verbenalinConcentration": "1060 mg/L",
+        "preparation": "13.5 mg hastatoside CRS and 10.6 mg verbenalin CRS in 10 mL 80% methanol"
+      },
+      "workingSolutions": {
+        "name": "Std-AS",
+        "hastatosideConcentrations": ["2.7", "13.5", "67.5", "135", "270 mg/L"],
+        "verbenalinConcentrations": ["10.6", "53", "106", "212", "424 mg/L"],
+        "description": "Series of mixed standard solutions diluted from Std-Stock with 80% methanol"
+      },
+      "injectionVolume": "5 μL (for calibration)"
+    },
+    "testSolution": {
+      "sampleAmount": "0.1 g",
+      "solvent": "80% methanol",
+      "extractionVolume": "15 mL × 2 extractions",
+      "extraction": "ultrasonication (240 W) for 45 min",
+      "centrifugation": "4000 × g for 5 min",
+      "evaporation": "rotary evaporator at reduced pressure",
+      "finalVolume": "10 mL",
+      "filtration": "0.45 μm nylon filter",
+      "injectionVolume": "5 μL"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "injectionVolume": "5 μL",
+      "standardConcentrations": "67.5 mg/L (hastatoside) and 106 mg/L (verbenalin) Std-AS",
+      "peakAreaRSD": "≤ 5.0% (hastatoside and verbenalin)",
+      "retentionTimeRSD": "≤ 2.0% (hastatoside and verbenalin)",
+      "theoreticalPlates": "≥ 10,000 (hastatoside and verbenalin)",
+      "resolution": "≥ 1.5 (between hastatoside/verbenalin and closest peaks)"
+    },
+    "calibration": {
+      "method": "5-point calibration curve",
+      "plot": "Peak area vs. concentration (mg/L)",
+      "identificationTolerance": "≤ 5.0% difference in retention times"
+    }
+  },
+  "rrtValues": [
+    {
+      "peakNumber": 1,
+      "compound": "Hastatoside",
+      "rrt": 0.83,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Verbenalin"
+    },
+    {
+      "peakNumber": 2,
+      "compound": "Verbenalin",
+      "rrt": 1.00,
+      "acceptableRange": null,
+      "referenceMarker": true,
+      "referenceTo": "self"
+    },
+    {
+      "peakNumber": 3,
+      "compound": "Unknown",
+      "rrt": 1.67,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Verbenalin"
+    },
+    {
+      "peakNumber": 4,
+      "compound": "Unknown",
+      "rrt": 2.03,
+      "acceptableRange": "±0.06",
+      "referenceMarker": false,
+      "referenceTo": "Verbenalin"
+    }
+  ],
+  "appendices": {
+    "appendixI": {
+      "title": "Chromatography – Thin-Layer Chromatography",
+      "description": "General procedures for TLC including plate types, application methods, developing chambers, and Rf calculation"
+    },
+    "appendixII": {
+      "title": "GC and HPLC/UHPLC Fingerprinting",
+      "description": "Methods for establishing chromatographic fingerprints using marker peaks and RRT values"
+    },
+    "appendixIII": {
+      "title": "Chromatography – HPLC/UHPLC",
+      "description": "General HPLC/UHPLC procedures including system suitability tests (theoretical plates, repeatability, resolution, tailing factor) and quantitative calculations"
+    }
+  },
+  "extractedAt": "2026-02-21"
+}

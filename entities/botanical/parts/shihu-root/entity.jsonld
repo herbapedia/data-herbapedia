@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/shihu-root",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Shihu Root",
+    "zh-Hant": "石斛",
+    "zh-Hans": "石斛"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/shihu"
+  },
+  "partType": "root",
+  "description": {
+    "en": "The root of Dendrobium nobile, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.828Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

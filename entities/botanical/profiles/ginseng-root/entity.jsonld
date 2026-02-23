@@ -1,0 +1,86 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/chemical-profile/ginseng-root",
+  "@type": [
+    "botany:ChemicalProfile",
+    "schema:Dataset"
+  ],
+  "name": {
+    "en": "Ginseng Root Chemical Profile",
+    "zh-Hant": "人蔘根化學成分"
+  },
+  "profileOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/part/ginseng-root"
+  },
+  "hasComponent": [
+    {
+      "compound": {
+        "@id": "https://www.herbapedia.org/entity/botanical/chemical/ginsenosides"
+      },
+      "relativeAbundance": "major",
+      "concentrationRange": {
+        "min": 1,
+        "max": 5,
+        "unit": "%"
+      },
+      "detectionMethod": "HPLC",
+      "notes": "Main bioactive compounds; includes Rb1, Rb2, Rc, Rd, Re, Rf, Rg1, Rg2, etc. Over 30 ginsenosides identified"
+    },
+    {
+      "compound": {
+        "@id": "https://www.herbapedia.org/entity/botanical/chemical/ginseng-polysaccharides"
+      },
+      "relativeAbundance": "minor",
+      "concentrationRange": {
+        "min": 5,
+        "max": 15,
+        "unit": "%"
+      },
+      "notes": "Immunomodulatory polysaccharides including ginsan"
+    },
+    {
+      "compound": {
+        "@id": "https://www.herbapedia.org/entity/botanical/chemical/panaxans"
+      },
+      "relativeAbundance": "minor",
+      "notes": "Peptidoglycans with hypoglycemic activity"
+    },
+    {
+      "compound": {
+        "@id": "https://www.herbapedia.org/entity/botanical/chemical/polysaccharides"
+      },
+      "relativeAbundance": "minor",
+      "notes": "Various polysaccharides with immunomodulatory effects"
+    },
+    {
+      "compound": {
+        "@id": "https://www.herbapedia.org/entity/botanical/chemical/essential-oils"
+      },
+      "relativeAbundance": "trace",
+      "concentrationRange": {
+        "min": 0.05,
+        "max": 0.5,
+        "unit": "%"
+      },
+      "notes": "Contains panaxynol, panaxydol, panaxytriol (polyacetylenes)"
+    }
+  ],
+  "analyticalMethod": "HPLC, LC-MS",
+  "qualityGrade": "ChP, KJP, USP",
+  "profileNotes": {
+    "en": "Ginsenoside content and profile varies with: (1) age of root (older = higher), (2) processing method (white vs red ginseng), (3) part of root (main root vs fine roots). Red ginseng has additional ginsenosides formed during steaming (Rg3, Rg5, Rk1)."
+  },
+  "citations": [
+    {
+      "doi": "10.1016/j.jpba.2018.12.040",
+      "title": "Ginsenosides: Sources, biosynthesis, biosynthetic regulation, and pharmacology",
+      "year": 2019,
+      "journal": "Journal of Pharmaceutical and Biomedical Analysis"
+    }
+  ],
+  "provenance": {
+    "created": "2026-02-21T00:00:00.000Z",
+    "source": "Chinese Pharmacopoeia, Korean Journal of Pharmacognosy, scientific literature",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

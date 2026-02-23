@@ -1,0 +1,315 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/chemical/centellae-herba",
+  "@type": ["herbapedia:ChemicalAnalysisData", "schema:Dataset"],
+  "dataType": "ChemicalAnalysis",
+  "sourceDocument": "CHEM_____Centellae_Herba_V1.pdf",
+  "scientificName": "Centella asiatica (L.) Urb.",
+  "chineseName": "積雪草",
+  "pinyinName": "Ji Xue Cao",
+  "identificationMethod": ["HPTLC", "HPLC-Fingerprint", "HPLC-Assay"],
+  "referenceCompounds": [
+    {
+      "name": "Asiaticoside",
+      "chineseName": "積雪草苷",
+      "formula": "C₄₈H₇₈O₁₉",
+      "molecularWeight": "959.12 g/mol",
+      "casNumber": "16830-15-2",
+      "purpose": ["HPTLC identification", "HPLC fingerprint marker", "Assay quantification"]
+    },
+    {
+      "name": "Madecassoside",
+      "chineseName": "羥基積雪草苷",
+      "formula": "C₄₈H₇₈O₂₀",
+      "molecularWeight": "975.12 g/mol",
+      "casNumber": "34540-22-2",
+      "purpose": ["HPTLC identification", "HPLC fingerprint marker (reference)", "Assay quantification"]
+    },
+    {
+      "name": "Madecassic acid",
+      "chineseName": "羥基積雪草酸",
+      "purpose": ["HPLC fingerprint marker"]
+    },
+    {
+      "name": "Asiatic acid",
+      "chineseName": "積雪草酸",
+      "purpose": ["HPLC fingerprint marker"]
+    }
+  ],
+  "assayLimits": {
+    "totalAsiaticosideAndMadecassoside": {
+      "compounds": ["Asiaticoside", "Madecassoside"],
+      "formulas": ["C₄₈H₇₈O₁₉", "C₄₈H₇₈O₂₀"],
+      "minimumContent": "0.97%",
+      "basis": "dried substance (combined total)"
+    }
+  },
+  "hptlcMethod": {
+    "appendixReference": "Appendix I",
+    "stationaryPhase": "HPTLC silica gel F₂₅₄ plate",
+    "developingSolvent": {
+      "components": ["ethyl acetate", "glacial acetic acid", "water"],
+      "ratio": "8:2.6:2.5 (v/v)"
+    },
+    "sprayReagent": {
+      "composition": "10 mL sulfuric acid in 90 mL ethanol",
+      "visualization": "Visible light after spraying and air drying"
+    },
+    "testSolution": {
+      "sampleAmount": "0.5 g",
+      "solvent": "70% ethanol",
+      "solventVolume": "10 mL",
+      "extraction": "ultrasonication (150 W) for 30 minutes"
+    },
+    "standardSolutions": {
+      "asiaticoside": {
+        "concentration": "1.0 mg/mL",
+        "preparation": "2.0 mg asiaticoside CRS in 2 mL 70% ethanol",
+        "applicationVolume": "3 μL"
+      },
+      "madecassoside": {
+        "concentration": "1.0 mg/mL",
+        "preparation": "2.0 mg madecassoside CRS in 2 mL 70% ethanol",
+        "applicationVolume": "4 μL"
+      }
+    },
+    "testApplicationVolume": "4 μL",
+    "developingChamber": "Twin-trough chamber",
+    "saturationTime": "15 minutes",
+    "developingDistance": "8 cm",
+    "identificationCriteria": {
+      "positiveMarkers": ["Asiaticoside", "Madecassoside"],
+      "criteria": "Sample chromatogram must show spots/bands with colors and Rf values corresponding to the standard solutions"
+    }
+  },
+  "hplcFingerprint": {
+    "appendixReference": "Appendix II",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "DAD",
+      "detectionWavelength": "205 nm",
+      "columnTemperature": "20°C",
+      "flowRate": "1.0 mL/min",
+      "injectionVolume": "5 μL"
+    },
+    "mobilePhase": {
+      "solventA": "Acetonitrile",
+      "solventB": "0.15% Phosphoric acid",
+      "gradientProgram": [
+        {
+          "timeRange": "0-15 min",
+          "solventA": "21%",
+          "solventB": "79%",
+          "elution": "isocratic"
+        },
+        {
+          "timeRange": "15-32 min",
+          "solventA": "21% → 36%",
+          "solventB": "79% → 64%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "32-50 min",
+          "solventA": "36% → 40%",
+          "solventB": "64% → 60%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "50-60 min",
+          "solventA": "40% → 80%",
+          "solventB": "60% → 20%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "asiaticoside": {
+        "concentration": "250 mg/L",
+        "preparation": "2.5 mg asiaticoside CRS in 10 mL 80% methanol"
+      },
+      "madecassoside": {
+        "concentration": "250 mg/L",
+        "preparation": "2.5 mg madecassoside CRS in 10 mL 80% methanol"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "0.5 g",
+      "solvent": "80% methanol",
+      "solventVolume": "20 mL",
+      "extraction": "reflux for 30 minutes",
+      "centrifugation": "3000 × g for 5 minutes",
+      "filtration": "0.45 μm PTFE filter"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "peakAreaRSD": "≤ 5.0% (both compounds)",
+      "retentionTimeRSD": "≤ 2.0% (both compounds)",
+      "theoreticalPlates": {
+        "asiaticoside": "≥ 100,000",
+        "madecassoside": "≥ 200,000"
+      },
+      "resolution": "≥ 1.0 (between peak 2 and 3 with adjacent peaks)"
+    },
+    "identificationCriteria": {
+      "retentionTimeTolerance": "≤ 2.0% difference between sample and standard"
+    }
+  },
+  "hplcAssay": {
+    "appendixReference": "Appendix III",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "DAD",
+      "detectionWavelength": "205 nm",
+      "flowRate": "1.0 mL/min"
+    },
+    "mobilePhase": {
+      "solventA": "Acetonitrile",
+      "solventB": "0.15% Phosphoric acid",
+      "gradientProgram": [
+        {
+          "timeRange": "0-10 min",
+          "solventA": "21%",
+          "solventB": "79%",
+          "elution": "isocratic"
+        },
+        {
+          "timeRange": "10-25 min",
+          "solventA": "21% → 23%",
+          "solventB": "79% → 77%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "25-50 min",
+          "solventA": "23%",
+          "solventB": "77%",
+          "elution": "isocratic"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "stockSolution": {
+        "concentration": "500 mg/L each",
+        "compounds": ["Asiaticoside", "Madecassoside"],
+        "preparation": "5.0 mg each CRS in 10 mL 80% methanol"
+      },
+      "workingSolutions": {
+        "asiaticoside": ["5", "10", "20", "40", "100 mg/L"],
+        "madecassoside": ["10", "30", "50", "75", "100 mg/L"],
+        "diluent": "80% methanol"
+      },
+      "mixedStandard": {
+        "asiaticoside": "20 mg/L",
+        "madecassoside": "50 mg/L"
+      },
+      "injectionVolume": "10 μL"
+    },
+    "testSolution": {
+      "sampleAmount": "0.5 g",
+      "solvent": "80% methanol",
+      "extractionVolume": "20 mL × 2 extractions",
+      "extraction": "reflux for 30 minutes",
+      "centrifugation": "3000 × g for 5 minutes",
+      "finalVolume": "50 mL",
+      "filtration": "0.45 μm PTFE filter",
+      "injectionVolume": "10 μL"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "injectionVolume": "10 μL",
+      "peakAreaRSD": "≤ 5.0% (both compounds)",
+      "retentionTimeRSD": "≤ 2.0% (both compounds)",
+      "theoreticalPlates": "≥ 18,000 (both compounds)",
+      "resolution": "≥ 1.5 (between target peaks and adjacent peaks)"
+    },
+    "calibration": {
+      "method": "5-point calibration curve",
+      "plot": "Peak area vs. concentration (mg/L)",
+      "identificationTolerance": "≤ 5.0% difference in retention times"
+    }
+  },
+  "rrtValues": [
+    {
+      "peakNumber": 1,
+      "compound": "Characteristic peak 1",
+      "rrt": 0.98,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Madecassoside"
+    },
+    {
+      "peakNumber": 2,
+      "compound": "Madecassoside",
+      "chineseName": "羥基積雪草苷",
+      "rrt": 1.00,
+      "acceptableRange": null,
+      "referenceMarker": true,
+      "referenceTo": "self"
+    },
+    {
+      "peakNumber": 3,
+      "compound": "Asiaticoside",
+      "chineseName": "積雪草苷",
+      "rrt": 1.16,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Madecassoside"
+    },
+    {
+      "peakNumber": 4,
+      "compound": "Characteristic peak 4",
+      "rrt": 1.22,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Madecassoside"
+    },
+    {
+      "peakNumber": 5,
+      "compound": "Characteristic peak 5",
+      "rrt": 1.50,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Madecassoside"
+    },
+    {
+      "peakNumber": 6,
+      "compound": "Madecassic acid",
+      "chineseName": "羥基積雪草酸",
+      "rrt": 1.94,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Madecassoside"
+    },
+    {
+      "peakNumber": 7,
+      "compound": "Asiatic acid",
+      "chineseName": "積雪草酸",
+      "rrt": 2.37,
+      "acceptableRange": "±0.04",
+      "referenceMarker": false,
+      "referenceTo": "Madecassoside"
+    }
+  ],
+  "appendices": {
+    "appendixI": {
+      "title": "Chromatography – Thin-Layer Chromatography",
+      "description": "General procedures for TLC including plate types, application methods, developing chambers, and Rf calculation"
+    },
+    "appendixII": {
+      "title": "GC and HPLC/UHPLC Fingerprinting",
+      "description": "Methods for establishing chromatographic fingerprints using marker peaks and RRT values"
+    },
+    "appendixIII": {
+      "title": "Chromatography – HPLC/UHPLC",
+      "description": "General HPLC/UHPLC procedures including system suitability tests (theoretical plates, repeatability, resolution, tailing factor) and quantitative calculations"
+    }
+  },
+  "extractedAt": "2026-02-21"
+}

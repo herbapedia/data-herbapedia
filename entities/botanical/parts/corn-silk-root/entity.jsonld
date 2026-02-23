@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/corn-silk-root",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Corn Silk Root",
+    "zh-Hant": "玉米穗絲",
+    "zh-Hans": "玉米穗丝"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/corn-silk"
+  },
+  "partType": "root",
+  "description": {
+    "en": "The root of Zea mays, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.812Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/milk-vetch-root",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Milk Vetch Root",
+    "zh-Hant": "黃耆",
+    "zh-Hans": "黄耆"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/milk-vetch"
+  },
+  "partType": "root",
+  "description": {
+    "en": "The root of Astragalus membranaceus, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.822Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

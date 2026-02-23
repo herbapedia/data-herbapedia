@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/fangji-root",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Fangji Root",
+    "zh-Hant": "防己",
+    "zh-Hans": "防己"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/fangji"
+  },
+  "partType": "root",
+  "description": {
+    "en": "The root of Stephania tetrandra, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.814Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

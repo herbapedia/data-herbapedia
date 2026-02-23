@@ -1,0 +1,38 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/vitamin-e",
+  "@type": [
+    "herbapedia:ChemicalSource",
+    "schema:Thing"
+  ],
+  "name": {
+    "en": "Vitamin E",
+    "zh-Hant": "維他命 E",
+    "zh-Hans": "维他命 E"
+  },
+  "scientificName": "d-Alpha-tocopherol d-Beta-tocopherol d-Gamma-tocopherol d-Delta-tocopherol; Tocopheryl acetate Tocopheryl succinate",
+  "family": null,
+  "genus": null,
+  "description": {
+    "en": "Vitamin E is found in vegetable oils (with the exception of coconut oil), alfalfa seeds, margarine, nuts (especially almonds, brazil nuts, hazelnuts, peanuts and pecans), sunflower seed kernels, asparagus, avocados, beef, blackberries, butter, eggs, green leafy vegetables, oats and seafoods.\n",
+    "zh-Hant": "維他命 E是一種重要的營養素，參與人體多種生理代謝過程。作為必需營養素，對維持機體正常功能具有重要作用。臨床研究表明適量補充有助於維持身體健康。",
+    "zh-Hans": "維他命 E是一种重要的營养素，參与人体多种生理代謝过程。作为必需營养素，對維持机体正常功能具有重要作用。臨床研究表明適量补充有助于維持身体健康。"
+  },
+  "image": "media/images/d-alpha-tocopherol-d-beta-tocopherol-d-gamma-tocopherol-d-delta-tocopherol-tocopheryl-acetate-tocopheryl-succinate/main.jpg",
+  "provenance": {
+    "created": "2026-02-18T09:16:49.672Z",
+    "modified": "2026-02-21T01:46:20.760Z",
+    "migratedFrom": "entities/plants/vitamin-e/entity.jsonld",
+    "source": "vitaherbapedia.com",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "classificationNote": "Reclassified as ChemicalSource"
+  },
+  "wikidataID": "Q183206",
+  "sourceType": "chemical",
+  "sourceSubType": "nutrient",
+  "hasWesternProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/western/profile/vitamin-e"
+    }
+  ]
+}

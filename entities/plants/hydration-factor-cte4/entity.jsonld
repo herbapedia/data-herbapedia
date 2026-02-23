@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/hydration-factor-cte4",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/hydration-factor-cte4",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"

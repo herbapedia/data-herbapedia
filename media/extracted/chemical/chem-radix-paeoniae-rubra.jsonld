@@ -1,0 +1,295 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/chemical/radix-paeoniae-rubra",
+  "@type": ["herbapedia:ChemicalAnalysisData", "schema:Dataset"],
+  "dataType": "ChemicalAnalysis",
+  "sourceDocument": "CHEM____Radix_Paeoniae_Rubra_V1.pdf",
+  "scientificName": "Paeonia lactiflora Pall. / Paeonia veitchii Lynch",
+  "chineseName": "赤芍",
+  "pinyinName": "Chi Shao",
+  "identificationMethod": ["Physicochemical", "TLC", "HPLC-Fingerprint", "HPLC-Assay"],
+  "referenceCompounds": [
+    {
+      "name": "Paeoniflorin",
+      "chineseName": "芍藥苷",
+      "formula": "C₂₃H₂₈O₁₁",
+      "purpose": ["TLC identification", "HPLC fingerprint marker", "Assay quantification"]
+    }
+  ],
+  "assayLimits": {
+    "paeoniflorin": {
+      "compound": "Paeoniflorin",
+      "formula": "C₂₃H₂₈O₁₁",
+      "minimumContent": "2.8%",
+      "basis": "dried substance"
+    }
+  },
+  "physicochemicalIdentification": {
+    "method": "Color reaction with ferric chloride",
+    "procedure": {
+      "sampleAmount": "0.5 g",
+      "solvent": "water",
+      "solventVolume": "10 mL",
+      "extraction": "boil and cool to room temperature",
+      "centrifugation": "3000 × g for 5 minutes",
+      "testVolume": "1 mL supernatant",
+      "reagent": "5% (w/v) ferric chloride (FeCl₃)",
+      "reagentVolume": "1 drop",
+      "positiveResult": "deep blue or dark green solution"
+    }
+  },
+  "tlcMethod": {
+    "appendixReference": "Appendix I",
+    "stationaryPhase": "HPTLC silica gel F₂₅₄ plate",
+    "developingSolvent": {
+      "components": ["dichloromethane", "ethyl acetate", "methanol", "formic acid"],
+      "ratio": "250:25:50:1 (v/v)"
+    },
+    "sprayReagent": {
+      "composition": "1 mL dilute sulfuric acid (50%, v/v) mixed with 10 mL of 2% (w/v) p-hydroxybenzaldehyde in methanol",
+      "preparation": "Prepare immediately before use",
+      "visualization": "Heat at approximately 110°C until spots or bands are clearly visible (approximately 15 minutes)"
+    },
+    "testSolution": {
+      "sampleAmount": "1.0 g",
+      "solvent": "methanol",
+      "solventVolume": "20 mL",
+      "extraction": "ultrasonication (560 W) for 30 minutes",
+      "processing": "Filter, evaporate filtrate to dryness under reduced pressure, dissolve residue in 1 mL methanol"
+    },
+    "standardSolutions": {
+      "concentration": "2.0 mg/mL in methanol",
+      "compound": "Paeoniflorin CRS"
+    },
+    "applicationVolumes": {
+      "standardSolution": "3 μL",
+      "testSolution": "0.5 μL"
+    },
+    "developingDistance": "approximately 4 cm",
+    "visualization": "visible light",
+    "identificationCriteria": {
+      "positiveMarkers": ["Paeoniflorin"],
+      "criteria": "Test solution must show spot or band corresponding in color and Rf value to Paeoniflorin reference"
+    }
+  },
+  "hplcFingerprint": {
+    "appendixReference": "Appendix II",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "UV",
+      "detectionWavelength": "273 nm",
+      "columnTemperature": "ambient",
+      "flowRate": "1.0 mL/min",
+      "injectionVolume": "10 μL"
+    },
+    "mobilePhase": {
+      "solventA": "Water",
+      "solventB": "Acetonitrile",
+      "gradientProgram": [
+        {
+          "timeRange": "0-10 min",
+          "solventA": "100% → 90%",
+          "solventB": "0% → 10%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "10-20 min",
+          "solventA": "90%",
+          "solventB": "10%",
+          "elution": "isocratic"
+        },
+        {
+          "timeRange": "20-60 min",
+          "solventA": "90% → 75%",
+          "solventB": "10% → 25%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "paeoniflorinStdFP": {
+        "concentration": "200 mg/L",
+        "preparation": "2.0 mg Paeoniflorin CRS in 10 mL methanol"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "0.2 g",
+      "solvent": "methanol",
+      "solventVolume": "10 mL",
+      "extraction": "ultrasonication (560 W) for 30 minutes",
+      "filtration": "0.45 μm RC (regenerated cellulose) filter"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "peakAreaRSD": "≤ 3.0% (Paeoniflorin)",
+      "retentionTimeRSD": "≤ 1.0% (Paeoniflorin)",
+      "theoreticalPlates": "≥ 50,000 (based on Paeoniflorin)"
+    },
+    "resolutionRequirements": {
+      "paeoniaLactiflora": "Resolution between Peak 1 and adjacent peak must be ≥ 1.0",
+      "paeoniaVeitchii": "Resolution between Peak 3 and adjacent peak must be ≥ 1.0"
+    },
+    "identificationCriteria": {
+      "retentionTimeTolerance": "≤ 2.0% difference between sample and standard"
+    }
+  },
+  "hplcAssay": {
+    "appendixReference": "Appendix III",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "UV",
+      "detectionWavelength": "230 nm",
+      "columnTemperature": "ambient",
+      "flowRate": "0.8 mL/min"
+    },
+    "mobilePhase": {
+      "solventA": "Water",
+      "solventB": "Acetonitrile",
+      "gradientProgram": [
+        {
+          "timeRange": "0-10 min",
+          "solventA": "82%",
+          "solventB": "18%",
+          "elution": "isocratic"
+        },
+        {
+          "timeRange": "10-20 min",
+          "solventA": "82% → 20%",
+          "solventB": "18% → 80%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "stockSolution": {
+        "concentration": "1000 mg/L",
+        "compound": "Paeoniflorin",
+        "preparation": "10.0 mg Paeoniflorin standard in 10 mL methanol",
+        "name": "Std-Stock"
+      },
+      "workingSolutions": {
+        "concentrations": ["1", "10", "50", "100", "200 mg/L"],
+        "description": "Series of standard solutions (Std-AS) prepared from stock by dilution with methanol"
+      },
+      "injectionVolume": "10 μL (for calibration)"
+    },
+    "testSolution": {
+      "sampleAmount": "0.2 g",
+      "solvent": "methanol",
+      "extractionVolume": "10 mL",
+      "extraction": "ultrasonication (560 W) for 30 minutes",
+      "centrifugation": "3000 × g for 5 minutes",
+      "repeatExtraction": "twice",
+      "evaporation": "rotary evaporator at reduced pressure",
+      "finalVolume": "10 mL",
+      "filtration": "0.45 μm RC membrane"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "injectionVolume": "10 μL",
+      "standardConcentration": "10 mg/L (Paeoniflorin Std-AS)",
+      "peakAreaRSD": "≤ 5.0% (Paeoniflorin)",
+      "retentionTimeRSD": "≤ 2.0% (Paeoniflorin)",
+      "theoreticalPlates": "≥ 5,000 (based on Paeoniflorin)",
+      "resolution": "≥ 1.5 (between Paeoniflorin peak and adjacent peak)"
+    },
+    "calibration": {
+      "method": "5-point calibration curve",
+      "plot": "Peak area vs. concentration (mg/L)",
+      "identificationTolerance": "≤ 5.0% difference in retention times"
+    }
+  },
+  "rrtValues": {
+    "paeoniaLactiflora": [
+      {
+        "peakNumber": 1,
+        "compound": "unidentified",
+        "rrt": 0.69,
+        "acceptableRange": "± 0.05",
+        "referenceMarker": false,
+        "referenceTo": "Paeoniflorin"
+      },
+      {
+        "peakNumber": 2,
+        "compound": "unidentified",
+        "rrt": 0.84,
+        "acceptableRange": "± 0.03",
+        "referenceMarker": false,
+        "referenceTo": "Paeoniflorin"
+      },
+      {
+        "peakNumber": 3,
+        "compound": "Paeoniflorin",
+        "rrt": 1.00,
+        "acceptableRange": null,
+        "referenceMarker": true,
+        "referenceTo": "self"
+      },
+      {
+        "peakNumber": 4,
+        "compound": "unidentified",
+        "rrt": 1.46,
+        "acceptableRange": "± 0.07",
+        "referenceMarker": false,
+        "referenceTo": "Paeoniflorin"
+      }
+    ],
+    "paeoniaVeitchii": [
+      {
+        "peakNumber": 1,
+        "compound": "unidentified",
+        "rrt": 0.56,
+        "acceptableRange": "± 0.03",
+        "referenceMarker": false,
+        "referenceTo": "Paeoniflorin"
+      },
+      {
+        "peakNumber": 2,
+        "compound": "unidentified",
+        "rrt": 0.64,
+        "acceptableRange": "± 0.03",
+        "referenceMarker": false,
+        "referenceTo": "Paeoniflorin"
+      },
+      {
+        "peakNumber": 3,
+        "compound": "Paeoniflorin",
+        "rrt": 1.00,
+        "acceptableRange": null,
+        "referenceMarker": true,
+        "referenceTo": "self"
+      },
+      {
+        "peakNumber": 4,
+        "compound": "unidentified",
+        "rrt": 1.46,
+        "acceptableRange": "± 0.07",
+        "referenceMarker": false,
+        "referenceTo": "Paeoniflorin"
+      }
+    ]
+  },
+  "appendices": {
+    "appendixI": {
+      "title": "Chromatography – Thin-Layer Chromatography",
+      "description": "General procedures for TLC including plate types, application methods, developing chambers, and Rf calculation"
+    },
+    "appendixII": {
+      "title": "GC and HPLC/UHPLC Fingerprinting",
+      "description": "Methods for establishing chromatographic fingerprints using marker peaks and RRT values"
+    },
+    "appendixIII": {
+      "title": "Chromatography – HPLC/UHPLC",
+      "description": "General HPLC/UHPLC procedures including system suitability tests (theoretical plates, repeatability, resolution, tailing factor) and quantitative calculations"
+    }
+  },
+  "extractedAt": "2026-02-20"
+}

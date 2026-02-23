@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/chondroitin-sulfate-root",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Chondroitin Sulfate Root",
+    "zh-Hant": "軟骨素",
+    "zh-Hans": "软骨素"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/chondroitin-sulfate"
+  },
+  "partType": "root",
+  "description": {
+    "en": "The root of Chondroitin Sulfate/ Galactosaminoglucuronoglycan Sulfate, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.811Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

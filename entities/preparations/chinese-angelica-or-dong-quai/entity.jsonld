@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/preparation/chinese-angelica-or-dong-quai",
+  "@type": [
+    "herbal:HerbalPreparation",
+    "schema:DietarySupplement"
+  ],
+  "name": {
+    "en": "Chinese Angelica or Dong Quai",
+    "zh-Hant": "當歸",
+    "zh-Hans": "当归"
+  },
+  "derivedFrom": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/species/chinese-angelica-or-dong-quai"
+    }
+  ],
+  "preparationMethod": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/method/dried"
+  },
+  "form": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/form/whole"
+  },
+  "hasTCMProfile": [
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/profile/chinese-angelica-or-dong-quai"
+    }
+  ],
+  "safetyInfo": {},
+  "provenance": {
+    "created": "2026-02-20",
+    "source": "Generated from TCM profile",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "description": {
+    "en": "Herbal preparation derived from Chinese Angelica or Dong Quai. Warm in nature, danggui enters the heart, liver and spleen meridians. It is most useful for enriching and nourishing the blood, activating blood circulation and addressing weaknesses of the heart. Oth..."
+  },
+  "image": "media/images/chinese-angelica-or-dong-quai/chinese-angelica-or-dong-quai.jpg"
+}

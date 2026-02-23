@@ -1,0 +1,255 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/chemical/ilicis-pubescentis",
+  "@type": ["herbapedia:ChemicalAnalysisData", "schema:Dataset"],
+  "dataType": "ChemicalAnalysis",
+  "sourceDocument": "CHEM_____Ilicis_Pubescentis_Radix_et_Caulis_V1.pdf",
+  "scientificName": "Ilex pubescens",
+  "chineseName": "毛冬青",
+  "pinyinName": "Mao Dong Qing",
+  "identificationMethod": ["TLC", "HPLC-Fingerprint", "HPLC-Assay"],
+  "referenceCompounds": [
+    {
+      "name": "Ilexin A",
+      "chineseName": "冬青素 A",
+      "formula": "C30H46O6",
+      "purpose": ["TLC identification", "HPLC fingerprint marker", "Assay quantification"]
+    }
+  ],
+  "assayLimits": {
+    "ilexinA": {
+      "compound": "Ilexin A",
+      "formula": "C30H46O6",
+      "minimumContent": "0.26%",
+      "basis": "dried substance"
+    }
+  },
+  "tlcMethod": {
+    "appendixReference": "Appendix I",
+    "stationaryPhase": "HPTLC silica gel F254 plate",
+    "developingSolvent": {
+      "components": ["dichloromethane", "ethyl acetate", "methanol", "water", "formic acid"],
+      "ratio": "20:5:2:1:0.3 (v/v)",
+      "preparation": "Shake mixture, use lower layer"
+    },
+    "sprayReagent": {
+      "composition": "10 mL sulfuric acid in 90 mL ethanol",
+      "visualization": "Heat at approximately 105°C (about 2 minutes)"
+    },
+    "testSolution": {
+      "sampleAmount": "1.0 g",
+      "solvent": "methanol",
+      "solventVolume": "20 mL",
+      "extraction": "ultrasonication (320 W) for 30 minutes",
+      "centrifugation": "approximately 3000 × g for 10 minutes"
+    },
+    "standardSolutions": {
+      "concentration": "1.0 mg/mL in methanol",
+      "compounds": ["Ilexin A"]
+    },
+    "applicationVolumes": {
+      "standardSolutions": "1 μL",
+      "testSolution": "5 μL"
+    },
+    "developingDistance": "8 cm",
+    "chamberSaturation": "15 minutes in twin-trough chamber",
+    "visualization": "UV light at 366 nm after derivatization",
+    "identificationCriteria": {
+      "positiveMarkers": ["Ilexin A"],
+      "criteria": "Test solution chromatogram should show characteristic spot or band with same color and corresponding Rf value as Ilexin A reference"
+    }
+  },
+  "hplcFingerprint": {
+    "appendixReference": "Appendix II",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "DAD (Diode Array Detector)",
+      "detectionWavelength": "210 nm",
+      "flowRate": "1.0 mL/min"
+    },
+    "mobilePhase": {
+      "solventA": "0.1% phosphoric acid",
+      "solventB": "Acetonitrile",
+      "gradientProgram": [
+        {
+          "timeRange": "0-16 min",
+          "solventA": "81% → 80%",
+          "solventB": "19% → 20%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "16-30 min",
+          "solventA": "80% → 70%",
+          "solventB": "20% → 30%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "30-40 min",
+          "solventA": "70% → 65%",
+          "solventB": "30% → 35%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "40-50 min",
+          "solventA": "65% → 55%",
+          "solventB": "35% → 45%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "50-60 min",
+          "solventA": "55% → 10%",
+          "solventB": "45% → 90%",
+          "elution": "linear gradient"
+        },
+        {
+          "timeRange": "60-65 min",
+          "solventA": "10%",
+          "solventB": "90%",
+          "elution": "isocratic"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "ilexinA": {
+        "name": "Std-FP",
+        "concentration": "300 mg/L",
+        "preparation": "3.0 mg Ilexin A in 10 mL methanol"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "1.0 g",
+      "solvent": "methanol",
+      "solventVolume": "20 mL",
+      "extraction": "ultrasonication (500 W) for 1 hour",
+      "centrifugation": "approximately 3000 × g for 10 minutes",
+      "filtration": "0.45 μm PTFE filter"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "injectionVolume": "10 μL",
+      "peakAreaRSD": "≤ 5.0% (Ilexin A)",
+      "retentionTimeRSD": "≤ 2.0% (Ilexin A)",
+      "theoreticalPlates": "≥ 1,200,000 (based on Ilexin A)",
+      "resolution": "≥ 1.0 (between peak 4 and adjacent peak)"
+    },
+    "identificationCriteria": {
+      "retentionTimeTolerance": "≤ 2.0% difference between sample and standard"
+    }
+  },
+  "hplcAssay": {
+    "appendixReference": "Appendix III",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "DAD (Diode Array Detector)",
+      "detectionWavelength": "210 nm",
+      "flowRate": "1.0 mL/min"
+    },
+    "mobilePhase": {
+      "solventA": "0.1% phosphoric acid",
+      "solventB": "Acetonitrile",
+      "gradientProgram": [
+        {
+          "timeRange": "0-30 min",
+          "solventA": "70% → 20%",
+          "solventB": "30% → 80%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "stockSolution": {
+        "name": "Std-Stock",
+        "concentration": "1000 mg/L",
+        "compounds": ["Ilexin A"],
+        "preparation": "5.0 mg Ilexin A in 5 mL methanol"
+      },
+      "workingSolutions": {
+        "name": "Std-AS",
+        "concentrations": ["25", "50", "100", "200", "400 mg/L"],
+        "description": "Series of standard solutions diluted from stock with methanol"
+      },
+      "injectionVolume": "10 μL (for calibration)"
+    },
+    "testSolution": {
+      "sampleAmount": "1.0 g",
+      "solvent": "methanol",
+      "extractionVolume": "20 mL × 2 extractions",
+      "extraction": "ultrasonication (500 W) for 1 hour",
+      "centrifugation": "approximately 3000 × g for 10 minutes",
+      "finalVolume": "50 mL",
+      "filtration": "0.45 μm PTFE filter",
+      "injectionVolume": "10 μL"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "injectionVolume": "10 μL",
+      "standardConcentration": "100 mg/L (Ilexin A Std-AS)",
+      "peakAreaRSD": "≤ 5.0% (Ilexin A)",
+      "retentionTimeRSD": "≤ 2.0% (Ilexin A)",
+      "theoreticalPlates": "≥ 60,000 (based on Ilexin A)",
+      "resolution": "≥ 1.5 (between Ilexin A peak and adjacent peak)"
+    },
+    "calibration": {
+      "method": "5-point calibration curve",
+      "plot": "Peak area vs. concentration (mg/L)",
+      "identificationTolerance": "≤ 5.0% difference in retention times"
+    }
+  },
+  "rrtValues": [
+    {
+      "peakNumber": 1,
+      "compound": "Unidentified peak 1",
+      "rrt": 0.28,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Ilexin A"
+    },
+    {
+      "peakNumber": 2,
+      "compound": "Unidentified peak 2",
+      "rrt": 0.61,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Ilexin A"
+    },
+    {
+      "peakNumber": 3,
+      "compound": "Unidentified peak 3",
+      "rrt": 0.82,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Ilexin A"
+    },
+    {
+      "peakNumber": 4,
+      "compound": "Ilexin A",
+      "rrt": 1.00,
+      "acceptableRange": null,
+      "referenceMarker": true,
+      "referenceTo": "self"
+    }
+  ],
+  "appendices": {
+    "appendixI": {
+      "title": "Chromatography – Thin-Layer Chromatography",
+      "description": "General procedures for TLC including plate types, application methods, developing chambers, and Rf calculation"
+    },
+    "appendixII": {
+      "title": "GC and HPLC/UHPLC Fingerprinting",
+      "description": "Methods for establishing chromatographic fingerprints using marker peaks and RRT values"
+    },
+    "appendixIII": {
+      "title": "Chromatography – HPLC/UHPLC",
+      "description": "General HPLC/UHPLC procedures including system suitability tests (theoretical plates, repeatability, resolution, tailing factor) and quantitative calculations"
+    }
+  },
+  "extractedAt": "2026-02-21"
+}

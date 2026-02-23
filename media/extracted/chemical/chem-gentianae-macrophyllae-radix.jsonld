@@ -1,0 +1,262 @@
+{
+  "@context": "../../../schema/context/core.jsonld",
+  "@id": "media/extracted/chemical/gentianae-macrophyllae-radix",
+  "@type": ["herbapedia:ChemicalAnalysisData", "schema:Dataset"],
+  "dataType": "ChemicalAnalysis",
+  "sourceDocument": "CHEM____Gentianae_Macrophyllae_Radix_V1.pdf",
+  "scientificName": "Gentiana macrophylla Pall.",
+  "alternateScientificName": "Gentiana straminea Maxim.",
+  "chineseName": "秦艽",
+  "pinyinName": "Qin Jiao",
+  "identificationMethod": ["TLC", "HPLC-Fingerprint", "HPLC-Assay"],
+  "referenceCompounds": [
+    {
+      "name": "Gentiopicroside",
+      "chineseName": "龍膽苦苷",
+      "formula": "C₁₆H₂₀O₉",
+      "purpose": ["TLC identification", "HPLC fingerprint marker", "Assay quantification"]
+    },
+    {
+      "name": "Loganic acid",
+      "chineseName": "馬錢苷酸",
+      "formula": "C₁₆H₂₄O₁₀",
+      "purpose": ["TLC identification", "HPLC fingerprint marker", "Assay quantification"]
+    }
+  ],
+  "assayLimits": {
+    "gentiopicroside": {
+      "compound": "Gentiopicroside",
+      "formula": "C₁₆H₂₀O₉",
+      "minimumContent": "3.7%",
+      "basis": "dried substance"
+    },
+    "loganicAcid": {
+      "compound": "Loganic acid",
+      "formula": "C₁₆H₂₄O₁₀",
+      "minimumContent": "1.5%",
+      "basis": "dried substance"
+    }
+  },
+  "tlcMethod": {
+    "appendixReference": "Appendix I",
+    "stationaryPhase": "HPTLC silica gel F₂₅₄ plate",
+    "developingSolvent": {
+      "components": ["ethyl acetate", "ethanol", "water", "glacial acetic acid"],
+      "ratio": "5:1:0.5:0.1 (v/v)"
+    },
+    "testSolution": {
+      "sampleAmount": "0.5 g",
+      "solvent": "ethanol",
+      "solventVolume": "5 mL",
+      "extraction": "ultrasonication (270 W) for 15 minutes"
+    },
+    "standardSolutions": {
+      "gentiopicroside": {
+        "concentration": "1.0 mg/mL in ethanol"
+      },
+      "loganicAcid": {
+        "concentration": "1.0 mg/mL in ethanol"
+      }
+    },
+    "applicationVolumes": {
+      "gentiopicrosideStandard": "1 μL",
+      "loganicAcidStandard": "2 μL",
+      "testSolution": "1 μL"
+    },
+    "developingDistance": "5 cm",
+    "chamberSaturation": "15 minutes in twin trough chamber",
+    "visualization": "UV light at 254 nm",
+    "identificationCriteria": {
+      "positiveMarkers": ["Gentiopicroside", "Loganic acid"],
+      "description": "Sample must give spots or bands with chromatographic characteristics, including colour and Rf values, corresponding to those of gentiopicroside and loganic acid"
+    }
+  },
+  "hplcFingerprint": {
+    "appendixReference": "Appendix II",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "DAD",
+      "detectionWavelength": "254 nm",
+      "flowRate": "1.0 mL/min",
+      "injectionVolume": "10 μL"
+    },
+    "mobilePhase": {
+      "solventA": "0.1% Acetic acid",
+      "solventB": "Acetonitrile",
+      "gradientProgram": [
+        {
+          "timeRange": "0-60 min",
+          "solventA": "95% → 85%",
+          "solventB": "5% → 15%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "gentiopicrosideStdFP": {
+        "concentration": "800 mg/L",
+        "preparation": "8.0 mg in 10 mL water"
+      },
+      "loganicAcidStdFP": {
+        "concentration": "300 mg/L",
+        "preparation": "3.0 mg in 10 mL water"
+      }
+    },
+    "testSolution": {
+      "sampleAmount": "0.25 g",
+      "solvent": "water",
+      "solventVolume": "10 mL × 2 extractions",
+      "extraction": "ultrasonication (270 W) for 30 minutes",
+      "centrifugation": "5000 × g for 5 minutes",
+      "finalVolume": "25 mL",
+      "filtration": "0.45 μm RC filter"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "peakAreaRSD": "≤ 5.0% (Gentiopicroside and Loganic acid)",
+      "retentionTimeRSD": "≤ 2.0% (Gentiopicroside and Loganic acid)",
+      "theoreticalPlates": {
+        "gentiopicroside": "≥ 35000",
+        "loganicAcid": "≥ 20000"
+      },
+      "resolution": "≥ 1.5 (between peak 1 and closest peak; between peak 4 and closest peak)"
+    },
+    "identificationCriteria": {
+      "retentionTimeTolerance": "≤ 2.0% difference between sample and standard"
+    }
+  },
+  "hplcAssay": {
+    "appendixReference": "Appendix III",
+    "chromatographicSystem": {
+      "column": {
+        "type": "ODS bonded silica gel (C18)",
+        "dimensions": "4.6 × 250 mm",
+        "particleSize": "5 μm"
+      },
+      "detector": "DAD",
+      "detectionWavelength": "254 nm",
+      "flowRate": "1.0 mL/min"
+    },
+    "mobilePhase": {
+      "solventA": "0.1% Acetic acid",
+      "solventB": "Acetonitrile",
+      "gradientProgram": [
+        {
+          "timeRange": "0-60 min",
+          "solventA": "95% → 85%",
+          "solventB": "5% → 15%",
+          "elution": "linear gradient"
+        }
+      ]
+    },
+    "standardSolutions": {
+      "stockSolution": {
+        "name": "Std-Stock",
+        "gentiopicrosideConcentration": "1800 mg/L",
+        "loganicAcidConcentration": "675 mg/L",
+        "preparation": "18.0 mg gentiopicroside CRS and 6.75 mg loganic acid CRS in 10 mL water"
+      },
+      "workingSolutions": {
+        "name": "Std-AS",
+        "gentiopicrosideConcentrations": ["20", "200", "400", "800", "1200 mg/L"],
+        "loganicAcidConcentrations": ["7.5", "75", "150", "300", "450 mg/L"],
+        "description": "Series of mixed standard solutions"
+      },
+      "injectionVolume": "10 μL"
+    },
+    "testSolution": {
+      "sampleAmount": "0.25 g",
+      "solvent": "water",
+      "extractionVolume": "10 mL × 2 extractions",
+      "extraction": "ultrasonication (270 W) for 30 minutes",
+      "centrifugation": "5000 × g for 5 minutes",
+      "finalVolume": "25 mL",
+      "filtration": "0.45 μm RC filter",
+      "injectionVolume": "10 μL"
+    },
+    "systemSuitability": {
+      "replicateInjections": "5 (minimum)",
+      "injectionVolume": "10 μL",
+      "standardConcentration": "400 mg/L gentiopicroside and 150 mg/L loganic acid (Std-AS)",
+      "peakAreaRSD": "≤ 5.0% (Gentiopicroside and Loganic acid)",
+      "retentionTimeRSD": "≤ 2.0% (Gentiopicroside and Loganic acid)",
+      "theoreticalPlates": {
+        "gentiopicroside": "≥ 35000",
+        "loganicAcid": "≥ 20000"
+      },
+      "resolution": "≥ 1.5 (between gentiopicroside peak and closest peak; between loganic acid peak and closest peak)"
+    },
+    "calibration": {
+      "method": "5-point calibration curve",
+      "plot": "Peak area vs. concentration (mg/L)",
+      "identificationTolerance": "≤ 5.0% difference in retention times"
+    }
+  },
+  "rrtValues": [
+    {
+      "peakNumber": 1,
+      "compound": "Loganic acid",
+      "rrt": 1.00,
+      "acceptableRange": null,
+      "referenceMarker": true,
+      "referenceTo": "self",
+      "notes": "Marker 1"
+    },
+    {
+      "peakNumber": 2,
+      "compound": "Unidentified",
+      "rrt": 1.29,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Peak 1 (Loganic acid)"
+    },
+    {
+      "peakNumber": 3,
+      "compound": "Unidentified",
+      "rrt": 1.34,
+      "acceptableRange": "±0.03",
+      "referenceMarker": false,
+      "referenceTo": "Peak 1 (Loganic acid)"
+    },
+    {
+      "peakNumber": 4,
+      "compound": "Gentiopicroside",
+      "rrt": 1.00,
+      "acceptableRange": null,
+      "referenceMarker": true,
+      "referenceTo": "self",
+      "notes": "Marker 2"
+    }
+  ],
+  "sourceMaterials": [
+    {
+      "name": "Gentiana macrophylla Pall.",
+      "partUsed": "dried root",
+      "chineseName": "秦艽"
+    },
+    {
+      "name": "Gentiana straminea Maxim.",
+      "partUsed": "dried root",
+      "chineseName": "麻花秦艽"
+    }
+  ],
+  "appendices": {
+    "appendixI": {
+      "title": "Chromatography – Thin-Layer Chromatography (TLC)",
+      "description": "General procedures for TLC including plate types, application methods, developing chambers, and Rf calculation"
+    },
+    "appendixII": {
+      "title": "GC and HPLC/UHPLC Fingerprinting",
+      "description": "Methods for establishing chromatographic fingerprints using marker peaks and RRT values"
+    },
+    "appendixIII": {
+      "title": "Chromatography – HPLC/UHPLC",
+      "description": "General HPLC/UHPLC procedures including system suitability tests (theoretical plates, repeatability, resolution, tailing factor) and quantitative calculations"
+    }
+  },
+  "extractedAt": "2026-02-20"
+}

@@ -1,6 +1,6 @@
 {
-  "@context": "../../schema/context/core.jsonld",
-  "@id": "plant/milk-vetch",
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/species/milk-vetch",
   "@type": [
     "schema:Plant",
     "herbapedia:MedicinalPlant"

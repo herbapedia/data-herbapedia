@@ -1,0 +1,35 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/preparation/ginger-tea",
+  "@type": [
+    "herbal:HerbalPreparation",
+    "schema:DietarySupplement"
+  ],
+  "name": {
+    "en": "Ginger Tea",
+    "zh-Hant": "薑茶",
+    "zh-Hans": "姜茶"
+  },
+  "derivedFrom": [
+    {
+      "@id": "https://www.herbapedia.org/entity/botanical/part/ginger-rhizome"
+    }
+  ],
+  "preparationMethod": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/method/infused"
+  },
+  "form": {
+    "@id": "https://www.herbapedia.org/vocab/herbal/form/tea"
+  },
+  "description": {
+    "en": "Ginger tea made from fresh or dried ginger rhizome. Common remedy for nausea and digestive issues."
+  },
+  "provenance": {
+    "created": "2026-02-21",
+    "source": "Herbapedia Team",
+    "contributors": [
+      "Herbapedia Team"
+    ]
+  },
+  "image": "media/images/ginger-tea/ginger-tea.jpg"
+}

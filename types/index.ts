@@ -1,45 +1,244 @@
 /**
  * Herbapedia Type Definitions
  *
- * Main entry point for all type exports
+ * Main entry point for all type exports.
  *
- * ARCHITECTURE PRINCIPLE: System-Scoped Content
+ * ARCHITECTURE PRINCIPLES:
  *
- * Content properties (traditionalUsage, modernResearch, etc.) are NOT generic.
- * They are scoped to each medicine system's vocabulary:
+ * 1. **Plant ≠ Medicine** - Botanical facts are separate from therapeutic interpretations
+ * 2. **HerbalPreparation is Central** - The pivot between botanical sources and system profiles
+ * 3. **System Profiles are Interpretations** - A single preparation can have multiple profiles
+ * 4. **Content is System-Scoped** - Use tcm:traditionalUsage, NOT generic traditionalUsage
  *
- * - TCM: tcm:traditionalUsage, tcm:modernResearch, tcm:functions
- * - Ayurveda: ayurveda:traditionalUsage, ayurveda:modernResearch
- * - Western: western:traditionalUsage, western:modernResearch
- *
- * The core Plant entity contains ONLY botanical data (taxonomy, distribution).
- * System-specific content lives in system-specific profiles.
+ * @example
+ * ```typescript
+ * import type { PlantSpecies, HerbalPreparation, TCMProfile } from '@herbapedia/data/types'
+ * ```
  */
 
-// Core types
+// ============================================================================
+// Core Types
+// ============================================================================
+
 export type {
-  JsonLdContext,
-  JsonLdNode,
+  Entity,
+  IRIReference,
+  ExternalReference,
   LanguageMap,
-  PlantPartType,
-  PlantPart,
-  Plant,
-  ChemicalCompound,
-  PharmacologicalAction,
-  Category,
-  SystemProfileBase,
-  HerbIndexEntry,
-  MasterIndex,
+  Provenance,
 } from './core'
 
-// TCM types
+export {
+  isIRIReference,
+  isLanguageMap,
+  extractSlug,
+  extractEntityType,
+  extractNamespace,
+  buildIRI,
+  isNamespace,
+  IRI_NAMESPACES,
+} from './core'
+
+// ============================================================================
+// Botanical Types
+// ============================================================================
+
 export type {
-  TCMMedicineNature,
+  PlantSpecies,
+  PlantPart,
+  ChemicalCompound,
+  ChemicalProfile,
+  DNABarcode,
+  PlantPartType,
+  GrowthForm,
+  Lifecycle,
+  ConservationStatus,
+  TaxonomicClassification,
+} from './botanical'
+
+export {
+  isPlantSpecies,
+  isPlantPart,
+  isChemicalCompound,
+} from './botanical'
+
+// ============================================================================
+// Source Material Types
+// ============================================================================
+
+export type {
+  SourceMaterial,
+  SourceMaterialType,
+  BotanicalSource,
+  BotanicalSubType,
+  ZoologicalSource,
+  ZoologicalSubType,
+  MineralSource,
+  ChemicalSource,
+} from './source-material'
+
+export {
+  isBotanicalSource,
+  isZoologicalSource,
+  isMineralSource,
+  isChemicalSource,
+  classifySourceMaterial,
+  SOURCE_MATERIAL_NAMESPACES,
+} from './source-material'
+
+// ============================================================================
+// Preparation Types
+// ============================================================================
+
+export type {
+  HerbalPreparation,
+  SystemProfiles,
+  CommonUsage,
+  SafetyInfo,
+  PreparationMethod,
+  PreparationForm,
+} from './preparation'
+
+export {
+  isHerbalPreparation,
+  hasAnyProfile,
+  getPrimarySource,
+  isDerivedFrom,
+} from './preparation'
+
+// ============================================================================
+// Formula Types
+// ============================================================================
+
+export type {
+  Formula,
+  FormulaIngredient,
+} from './formula'
+
+export {
+  isFormula,
+  FORMULA_NAMESPACES,
+} from './formula'
+
+// ============================================================================
+// Profile Types
+// ============================================================================
+
+export type {
+  MedicineSystemProfile,
+  TCMProfile,
+  TCMDosageEffect,
+  WesternHerbalProfile,
+  AyurvedaProfile,
+  DoshaEffect,
+  PersianProfile,
+  MongolianProfile,
+} from './profiles/base'
+
+export {
+  isMedicineSystemProfile,
+  isTCMProfile,
+  isWesternProfile,
+  isAyurvedaProfile,
+  isPersianProfile,
+  isMongolianProfile,
+} from './profiles/base'
+
+export { SEVANA_KALA_MEANINGS } from './profiles/ayurveda'
+
+// ============================================================================
+// Persian Medicine Profile Types
+// ============================================================================
+
+export type {
+  PersianTemperament,
+  PersianElement,
+  PersianDegree,
+  PersianDosageForm,
+} from './profiles/persian'
+
+export {
+  isPersianTemperament,
+  isPersianElement,
+  isPersianDegree,
+  PERSIAN_DOSAGE_FORMS,
+} from './profiles/persian'
+
+// ============================================================================
+// Mongolian Medicine Profile Types
+// ============================================================================
+
+export type {
+  MongolianElement,
+  MongolianRoot,
+  MongolianTaste,
+  MongolianPotency,
+  ThreeRootsEffect,
+  RootEffect,
+  MongolianPreparationMethod,
+} from './profiles/mongolian'
+
+export {
+  isMongolianElement,
+  isMongolianRoot,
+  isMongolianTaste,
+  isMongolianPotency,
+  THREE_ROOTS,
+  FIVE_ELEMENTS,
+} from './profiles/mongolian'
+
+// ============================================================================
+// Reference Types (Controlled Vocabularies)
+// ============================================================================
+
+export type {
+  ReferenceEntity,
+  // TCM References
+  TCMCategory,
+  TCMNature,
   TCMFlavor,
   TCMMeridian,
+  // Western References
+  WesternAction,
+  WesternOrgan,
+  WesternSystem,
+  // Ayurveda References
+  AyurvedaRasa,
+  AyurvedaGuna,
+  AyurvedaVirya,
+  AyurvedaVipaka,
+  AyurvedaDosha,
+  AyurvedaPrabhava,
+} from './reference'
+
+export {
+  isReferenceEntity,
+  isTCMCategory,
+  isTCMNature,
+  isTCMFlavor,
+  isTCMMeridian,
+  isWesternAction,
+  isWesternOrgan,
+  isWesternSystem,
+  isAyurvedaRasa,
+  isAyurvedaGuna,
+  isAyurvedaVirya,
+  isAyurvedaVipaka,
+  isAyurvedaDosha,
+  isAyurvedaPrabhava,
+} from './reference'
+
+// ============================================================================
+// TCM Types (Alternative definitions)
+// ============================================================================
+
+export type {
+  TCMMedicineNature,
+  TCMFlavor as TCMFlavorType,
+  TCMMeridian as TCMMeridianType,
   TCMExtraMeridian,
   TCMElement,
-  TCMCategory,
+  TCMCategory as TCMCategoryType,
   TCMNatureEntity,
   TCMFlavorEntity,
   TCMMeridianEntity,
@@ -48,7 +247,10 @@ export type {
   TCMHerbIndex,
 } from './tcm'
 
-// Ayurveda types
+// ============================================================================
+// Ayurveda Types (Alternative definitions)
+// ============================================================================
+
 export type {
   DoshaType,
   RasaType,
@@ -66,7 +268,16 @@ export type {
   AyurvedaDravyaIndex,
 } from './ayurveda'
 
-// Re-export commonly used types
-export type { Plant as PlantEntity } from './core'
+// ============================================================================
+// Type Aliases
+// ============================================================================
+
+// Alternative names for clarity
+/** @deprecated Use PlantSpecies instead */
+export type { PlantSpecies as Plant } from './botanical'
+
+/** @deprecated Use TCMProfile instead */
 export type { TCMHerbProfile as TCMHerb } from './tcm'
+
+/** @deprecated Use AyurvedaProfile instead */
 export type { AyurvedaDravyaProfile as AyurvedaDravya } from './ayurveda'

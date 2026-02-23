@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/core.jsonld",
+  "@id": "https://www.herbapedia.org/entity/botanical/part/dandelion-root",
+  "@type": [
+    "botany:PlantPart",
+    "schema:Plant"
+  ],
+  "name": {
+    "en": "Dandelion Root",
+    "zh-Hant": "蒲公英",
+    "zh-Hans": "蒲公英"
+  },
+  "partOf": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/dandelion"
+  },
+  "partType": "root",
+  "description": {
+    "en": "The root of Taraxacum Officinale, used in traditional medicine."
+  },
+  "provenance": {
+    "created": "2026-02-20T17:10:51.813Z",
+    "source": "Generated from species data",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}
