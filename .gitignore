@@ -36,3 +36,5 @@ coverage/
 
 # TypeScript cache
 *.tsbuildinfo
+
+TODO.*.md

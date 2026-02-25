@@ -4,7 +4,7 @@
  * This module provides configurable caching for entities with:
  * - LRU (Least Recently Used) eviction
  * - TTL (Time To Live) expiration
- * - Memory size limits
+ * - Lazy size calculation for performance
  * - Cache statistics
  */
 
@@ -18,6 +18,8 @@ export interface CacheOptions {
   maxSize?: number
   /** Time to live in milliseconds (default: 30 minutes) */
   ttl?: number
+  /** Enable lazy size calculation (default: true) */
+  lazySize?: boolean
 }
 
 /**
@@ -25,7 +27,7 @@ export interface CacheOptions {
  */
 interface CacheEntry<T> {
   entity: T
-  size: number
+  size?: number // Optional - lazy calculated when lazySize is true
   accessedAt: number
   createdAt: number
 }
@@ -62,15 +64,48 @@ export class SmartCache<T> {
     hits: 0,
     misses: 0,
     evictions: 0,
+    sizeCalculations: 0,
   }
-  private currentSize = 0
+  private _currentSize = 0
+  private sizeCache = new Map<string, number>()
 
   constructor(options: CacheOptions = {}) {
     this.options = {
       maxEntities: options.maxEntities ?? 500,
       maxSize: options.maxSize ?? 50 * 1024 * 1024, // 50MB
       ttl: options.ttl ?? 1000 * 60 * 30, // 30 minutes
+      lazySize: options.lazySize ?? true,
     }
+  }
+
+  /**
+   * Get current size, calculating lazily if needed.
+   */
+  private getCurrentSize(): number {
+    if (this.options.lazySize) {
+      return this.calculateTotalSize()
+    }
+    return this._currentSize
+  }
+
+  /**
+   * Calculate size of a single entity (with caching).
+   */
+  private getEntitySize(key: string, entity: T): number {
+    if (!this.options.lazySize) {
+      return this.calculateSize(entity)
+    }
+
+    // Check cache first
+    if (this.sizeCache.has(key)) {
+      return this.sizeCache.get(key)!
+    }
+
+    // Calculate and cache
+    const size = this.calculateSize(entity)
+    this.sizeCache.set(key, size)
+    this.stats.sizeCalculations++
+    return size
   }
 
   /**
@@ -103,7 +138,7 @@ export class SmartCache<T> {
    * May trigger eviction if limits are reached.
    */
   set(key: string, entity: T): void {
-    const size = this.calculateSize(entity)
+    const size = this.getEntitySize(key, entity)
 
     // If single entity exceeds max size, don't cache
     if (size > this.options.maxSize) {
@@ -113,7 +148,7 @@ export class SmartCache<T> {
     // Evict until we have space
     while (
       (this.cache.size >= this.options.maxEntities ||
-       this.currentSize + size > this.options.maxSize) &&
+       this.getCurrentSize() + size > this.options.maxSize) &&
       this.cache.size > 0
     ) {
       this.evictLRU()
@@ -126,13 +161,15 @@ export class SmartCache<T> {
 
     const entry: CacheEntry<T> = {
       entity,
-      size,
+      size: this.options.lazySize ? undefined : size,
       accessedAt: Date.now(),
       createdAt: Date.now(),
     }
 
     this.cache.set(key, entry)
-    this.currentSize += size
+    if (!this.options.lazySize) {
+      this._currentSize += size
+    }
   }
 
   /**
@@ -149,7 +186,17 @@ export class SmartCache<T> {
     const entry = this.cache.get(key)
     if (!entry) return false
 
-    this.currentSize -= entry.size
+    // Update size tracking
+    if (this.options.lazySize) {
+      const cachedSize = this.sizeCache.get(key)
+      if (cachedSize) {
+        this._currentSize -= cachedSize
+        this.sizeCache.delete(key)
+      }
+    } else if (entry.size) {
+      this._currentSize -= entry.size
+    }
+
     return this.cache.delete(key)
   }
 
@@ -158,7 +205,8 @@ export class SmartCache<T> {
    */
   clear(): void {
     this.cache.clear()
-    this.currentSize = 0
+    this._currentSize = 0
+    this.sizeCache.clear()
   }
 
   /**
@@ -170,7 +218,7 @@ export class SmartCache<T> {
       hits: this.stats.hits,
       misses: this.stats.misses,
       evictions: this.stats.evictions,
-      size: this.currentSize,
+      size: this.getCurrentSize(),
       entities: this.cache.size,
       hitRate: total > 0 ? this.stats.hits / total : 0,
     }
@@ -191,6 +239,26 @@ export class SmartCache<T> {
   }
 
   // ===========================================================================
+
+  /**
+   * Calculate total size of all cached entities.
+   */
+  private calculateTotalSize(): number {
+    let total = 0
+    for (const [key, entry] of this.cache.entries()) {
+      if (this.sizeCache.has(key)) {
+        total += this.sizeCache.get(key)!
+      } else if (entry.size) {
+        total += entry.size
+      } else {
+        // Calculate on-demand
+        const size = this.calculateSize(entry.entity)
+        this.sizeCache.set(key, size)
+        total += size
+      }
+    }
+    return total
+  }
 
   /**
    * Calculate the approximate size of an entity in bytes.
@@ -231,4 +299,5 @@ export const entityCache = new SmartCache<unknown>({
   maxEntities: 500,
   maxSize: 50 * 1024 * 1024,
   ttl: 1000 * 60 * 30,
+  lazySize: true,
 })

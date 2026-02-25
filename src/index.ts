@@ -1,7 +1,7 @@
 /**
  * @herbapedia/data - Herbapedia Dataset Query Package
  *
- * This package provides TypeScript types and a query API for the Herbapedia
+ * This package provides TypeScript types and a modular query API for the Herbapedia
  * medicinal plant knowledge base.
  *
  * ## Architecture
@@ -28,48 +28,72 @@
  * ## Quick Start
  *
  * ```typescript
- * import { HerbapediaDataset } from '@herbapedia/data'
- *
- * const dataset = new HerbapediaDataset('./path/to/data-herbapedia')
- *
- * // Load a plant
- * const ginger = dataset.getPlantSpecies('zingiber-officinale')
- * console.log(ginger?.scientificName) // "Zingiber officinale"
- *
- * // Get preparations from this plant
- * const preps = dataset.getPreparationsForPlant('zingiber-officinale')
- *
- * // Get all medicine system profiles for a preparation
- * const profiles = dataset.getAllProfilesForPreparation('fresh-ginger-rhizome')
- * console.log(profiles.tcm?.pinyin) // "Shēng Jiāng"
- * ```
- *
- * ## Modular API (New)
- *
- * For more fine-grained control, you can use the modular query classes:
- *
- * ```typescript
  * import { EntityLoader, BotanicalQueries, ProfileQueries } from '@herbapedia/data'
  *
- * const loader = new EntityLoader({ dataPath: './path/to/data-herbapedia' })
+ * // Create loader with data path
+ * const loader = new EntityLoader({ dataPath: './data-herbapedia' })
+ *
+ * // Create query modules
  * const botanical = new BotanicalQueries(loader)
  * const profiles = new ProfileQueries(loader)
  *
- * const plant = botanical.getPlantSpecies('ginseng')
- * const tcmProfile = profiles.getTCMProfile('ren-shen')
+ * // Load a plant species
+ * const ginger = await botanical.getPlantSpeciesAsync('zingiber-officinale')
+ * console.log(ginger?.scientificName) // "Zingiber officinale"
+ *
+ * // Get a TCM profile
+ * const tcmProfile = profiles.getTCMProfile('sheng-jiang')
+ * console.log(tcmProfile?.pinyin) // "Shēng Jiāng"
  * ```
+ *
+ * ## Modules
+ *
+ * - **EntityLoader**: Core entity loading with caching
+ * - **BotanicalQueries**: Plant species, parts, chemicals
+ * - **PreparationQueries**: Herbal preparations
+ * - **ProfileQueries**: Medicine system profiles (TCM, Western, Ayurveda, etc.)
+ * - **SearchIndex**: Full-text search with Lunr.js
+ * - **QueryIndex**: Pre-built indexes for fast lookups
+ * - **EntityBuilder**: Fluent API for creating entities
  *
  * @packageDocumentation
  */
 
-// Main class (backward compatible)
-export { HerbapediaDataset, default } from './dataset'
-
-// New modular API
+// Core modules
 export { EntityLoader } from './core/loader'
 export type { LoaderOptions } from './core/loader'
 export { SmartCache, entityCache } from './core/cache'
 export type { CacheOptions, CacheStats } from './core/cache'
+export { QueryIndex } from './core/query-index'
+export type { QueryIndexOptions, IndexEntry } from './core/query-index'
+
+// Re-export from new core config
+export {
+  NAMESPACE_MAP,
+  ENTITY_TYPE_CONFIG,
+  DEFAULT_CONFIG,
+  DEFAULT_CACHE_CONFIG,
+  resolveNamespace,
+  getEntityConfig,
+  detectEntityType,
+  toFullIRI,
+  toRelativeIRI,
+  iriToFilePath,
+  // Type guards
+  isPlantSpecies as isPlantSpeciesConfig,
+  isTCMProfile as isTCMProfileConfig,
+  isWesternProfile as isWesternProfileConfig,
+  isAyurvedaProfile as isAyurvedaProfileConfig,
+  isPersianProfile as isPersianProfileConfig,
+  isMongolianProfile as isMongolianProfileConfig,
+  isChemicalCompound as isChemicalCompoundConfig,
+  isHerbalPreparation as isHerbalPreparationConfig,
+} from './core/config'
+export type { Namespace, EntityType, HerbapediaConfig, CacheConfig } from './core/config'
+
+// Re-export Result type for explicit error handling
+export { ok, err, mapResult, flatMapResult } from './types/index'
+export type { Result, Ok, Err } from './types/index'
 
 // Query modules
 export { BotanicalQueries } from './queries/botanical'
@@ -84,6 +108,27 @@ export { EntityBuilder, PlantSpeciesBuilder, ChemicalCompoundBuilder } from './b
 // Validation helpers
 export { EntityValidator } from './validation/helpers'
 export type { ValidationError, ValidationResult, ValidationOptions } from './validation/helpers'
+
+// Plugin system
+export { PluginRegistry, pluginRegistry } from './plugins/index'
+export type { PluginStats } from './plugins/index'
+export type {
+  PluginMetadata,
+  PluginContext,
+  ValidatorPlugin,
+  ValidatorPluginOptions,
+  PluginValidationResult,
+  PluginValidationError,
+  ExporterPlugin,
+  ExportContext,
+  SerializeResult,
+} from './plugins/index'
+export {
+  BaseValidatorPlugin,
+  requiredFieldsValidator,
+  iriFormatValidator,
+  csvExporter,
+} from './plugins/index'
 
 // Re-export types from types/
 export type {

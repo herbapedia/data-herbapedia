@@ -62,14 +62,19 @@
       ]
     },
     "image": {
-      "description": "Primary image for this entity. Path is relative to the repository root.",
+      "description": "Primary image for this entity. Path uses scientific/Latin name directory, relative to repository root.",
       "type": "string",
-      "examples": ["media/images/species/zingiber-officinale/plant.jpg"]
+      "pattern": "^media/images/[a-z0-9-]+/main\\.jpg$",
+      "examples": ["media/images/zingiber-officinale/main.jpg", "media/images/panax-ginseng/main.jpg"]
     },
     "images": {
-      "description": "Additional images for this entity.",
+      "description": "Additional images for this entity (variants, different plant parts, etc.).",
       "type": "array",
-      "items": { "type": "string" }
+      "items": {
+        "type": "string",
+        "pattern": "^media/images/[a-z0-9-]+/[a-z0-9-]+\\.jpg$"
+      },
+      "examples": [["media/images/panax-ginseng/flower.jpg", "media/images/panax-ginseng/root.jpg"]]
     },
     "sameAs": {
       "description": "External authority references. Links this entity to equivalent entities in external databases like Wikidata, GBIF, or POWO.",

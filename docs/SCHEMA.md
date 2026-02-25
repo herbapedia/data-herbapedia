@@ -588,3 +588,109 @@ This enables queries in both directions:
 - "What species does this part belong to?" → `ginger-rhizome.partOf`
 - "What compounds are in chamomile?" → `chamomile.containsChemical`
 - "What species contain flavonoids?" → `flavonoids.foundIn`
+
+---
+
+## Image Metadata Schema
+
+The Herbapedia dataset includes a comprehensive image metadata system with SPDX license tracking.
+
+### Image File Organization
+
+Images are stored in `media/images/` organized by scientific name:
+
+```
+media/images/
+├── panax-ginseng/     # Scientific name slug
+│   ├── main.jpg       # Primary image
+│   └── main.json      # Attribution metadata
+├── curcuma-longa/
+│   ├── main.jpg
+│   └── main.json
+└── vitamin-c/         # Non-plant products
+    ├── main.jpg
+    └── main.json
+```
+
+### ImageMetadata Schema
+
+```json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["fileName", "attribution", "downloaded"],
+  "properties": {
+    "fileName": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+\\.jpg$"
+    },
+    "species": {
+      "type": "string",
+      "description": "Scientific name (required for botanical images)"
+    },
+    "commonName": {
+      "type": "string"
+    },
+    "attribution": {
+      "type": "object",
+      "required": ["copyright", "license", "source", "spdxId"],
+      "properties": {
+        "copyright": { "type": "string" },
+        "creator": { "type": "string" },
+        "license": { "type": "string" },
+        "licenseUrl": { "type": ["string", "null"] },
+        "source": { "type": "string" },
+        "sourceUrl": { "type": ["string", "null"] },
+        "spdxId": { "type": "string", "enum": ["NONE", "CC0-1.0", "CC-PDDC", "CC-BY-SA-3.0", "CC-BY-4.0"] },
+        "spdxUrl": { "type": ["string", "null"] }
+      }
+    },
+    "downloaded": {
+      "type": "string",
+      "format": "date"
+    }
+  }
+}
+```
+
+### SPDX License Identifiers
+
+| SPDX ID | Description | Use Case |
+|---------|-------------|----------|
+| `NONE` | All rights reserved | Proprietary images (Vita Green) |
+| `CC0-1.0` | Creative Commons Zero | Public domain dedication |
+| `CC-PDDC` | Public Domain Mark | Works in public domain |
+| `CC-BY-SA-3.0` | Attribution Share-Alike | Wikimedia Commons (derivative) |
+| `CC-BY-4.0` | Attribution only | Wikimedia Commons |
+
+### Non-Plant Exemptions
+
+These directory types are exempt from requiring a `species` field:
+
+- **Oils**: `*oil`, `*essential-oil`
+- **Extracts**: `*extract`
+- **Compounds**: `chitosan`, `capigen`, `epicutin-tt`
+- **Formulations**: `factor-*`, `mpc`, `hydration-factor-*`
+- **Processed**: `shenqu`, `shoudihuang`
+
+### Validation
+
+Run image validation with:
+
+```bash
+node scripts/validate.js --images
+```
+
+Expected output:
+
+```
+Phase 4: Image Library Validation
+  Results: 178 image directories checked
+    Directories: 178
+    With metadata: 178
+    With species: 158 (plants)
+    With attribution: 178
+    With SPDX ID: 178
+    Errors: 0
+    Warnings: 0
+```

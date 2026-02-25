@@ -37,7 +37,6 @@
   "description": {
     "en": "Herbal preparation derived from Shoudihuang. A sweet, warming herb for the kidney and liver meridians with invigorating and rejuvenating effects. It is used for nourishing the blood, tonifying the liver and kidney yin, replenishing jing (kidney ..."
   },
-  "image": "media/images/shoudihuang/shoudihuang.jpg",
   "isProcessedFrom": {
     "@id": "https://www.herbapedia.org/entity/botanical/species/dihuang"
   },

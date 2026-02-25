@@ -1,11 +1,14 @@
 {
   "fileName": "main.jpg",
   "attribution": {
-    "copyright": "Vita Green Health Products Ltd.",
-    "license": "All rights reserved - used with permission",
-    "licenseUrl": null,
-    "source": "Vita Green Health Products Ltd.",
-    "note": "This image is copyrighted and used with permission from Vita Green Health Products Ltd."
+    "copyright": "William Catto",
+    "creator": "William Catto",
+    "license": "Public Domain Mark 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wild_Chamomile_(Matricaria_maritima)_-_William_Catto_-_ABDAG016173.jpg",
+    "spdxId": "CC-PDDC",
+    "spdxUrl": "https://spdx.org/licenses/CC-PDDC.html"
   },
   "downloaded": "2026-02-23",
   "species": "Matricaria chamomilla"

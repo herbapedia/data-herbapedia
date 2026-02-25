@@ -5,6 +5,16 @@
     "module": "ESNext",
     "moduleResolution": "bundler",
     "strict": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noFallthroughCasesInSwitch": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
@@ -14,16 +24,13 @@
     "outDir": "./dist",
     "rootDir": ".",
     "baseUrl": ".",
-    "paths": {
-      "@/*": ["./*"]
-    },
     "resolveJsonModule": true,
     "allowImportingTsExtensions": true,
     "noEmit": true
   },
   "include": [
-    "types/**/*",
-    "scripts/**/*"
+    "src/core/**/*",
+    "src/types/**/*"
   ],
   "exclude": [
     "node_modules",

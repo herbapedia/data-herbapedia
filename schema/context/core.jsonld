@@ -400,6 +400,30 @@
       "@id": "dc:license",
       "@type": "@id"
     },
+    "spdxId": {
+      "@id": "herbapedia:spdxId",
+      "@type": "xsd:string"
+    },
+    "spdxUrl": {
+      "@id": "herbapedia:spdxUrl",
+      "@type": "@id"
+    },
+    "attribution": {
+      "@id": "herbapedia:attribution",
+      "@type": "@id"
+    },
+    "copyright": {
+      "@id": "dc:rights",
+      "@type": "xsd:string"
+    },
+    "creator": {
+      "@id": "dc:creator",
+      "@type": "xsd:string"
+    },
+    "sourceUrl": {
+      "@id": "dc:source",
+      "@type": "@id"
+    },
 
     "inLanguage": {
       "@id": "schema:inLanguage",

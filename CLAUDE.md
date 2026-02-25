@@ -10,16 +10,16 @@ It is a **dataset**, not an application. The Herbapedia website queries this dat
 ## Commands
 
 ```bash
-# Validate all data files
+# Validate all data files (4 phases: schema, references, quality, images)
 npm run validate
 
-# Validate specific plant entity
-node scripts/validate.js --plant ginseng
+# Validate specific phases
+node scripts/validate.js --schema       # JSON-LD schema validation
+node scripts/validate.js --references   # IRI reference integrity
+node scripts/validate.js --quality      # Content quality checks
+node scripts/validate.js --images       # Image library validation (metadata, SPDX)
 
-# Validate all TCM herbs
-node scripts/validate.js --tcm
-
-# Validate with verbose output (shows passing files)
+# Validate with verbose output (shows details)
 node scripts/validate.js --verbose
 
 # Build distribution index files
@@ -92,10 +92,20 @@ data-herbapedia/
 │       └── organs.jsonld     # Organ affinities
 │
 ├── types/                # TypeScript definitions
-│   ├── core.ts           # Plant, ChemicalCompound, LanguageMap
-│   ├── tcm.ts            # TCMHerbProfile, TCMMeridian, etc.
-│   ├── ayurveda.ts       # AyurvedaDravyaProfile, DoshaType
-│   └── index.ts          # Re-exports
+│   ├── index.ts          # Re-exports, Result<T,E> type
+│   ├── entity.ts         # Entity interfaces (PlantSpecies, HerbalPreparation, etc.)
+│   ├── language-map.ts   # LanguageMap type and helpers
+│   ├── core.ts           # Legacy core types (deprecated - use entity.ts)
+│   ├── tcm.ts            # TCM types (deprecated - use entity.ts)
+│   └── ayurveda.ts       # Ayurveda types (deprecated - use entity.ts)
+│
+├── src/                  # API source code (NEW)
+│   ├── index.ts          # Main API entry
+│   ├── core/             # Core modules
+│   │   ├── config.ts     # Centralized config, NAMESPACE_MAP, type guards
+│   │   ├── loader.ts     # Async entity loader
+│   │   └── cache.ts      # Smart cache with lazy size calculation
+│   └── queries/          # Query modules
 │
 ├── scripts/              # Validation and utility scripts
 │
@@ -105,7 +115,14 @@ data-herbapedia/
 │   ├── plants.json       # All plant entities
 │   └── tcm-herbs.json    # All TCM profiles
 │
-└── media/images/         # Plant images
+└── media/images/         # Plant images (organized by scientific name)
+    ├── attribution.json  # Global attribution registry
+    ├── panax-ginseng/    # Example: Panax ginseng images
+    │   ├── main.jpg      # Primary image
+    │   └── main.json     # Attribution metadata (SPDX ID, copyright)
+    └── curcuma-longa/    # Example: Turmeric images
+        ├── main.jpg
+        └── main.json
 ```
 
 ## IRI Reference Patterns
@@ -143,7 +160,7 @@ Contains ONLY botanical data. No system-specific content.
     "zh-Hans": "人蔘"
   },
   "description": { "...": "..." },
-  "image": "media/images/ginseng/ginseng.jpg",
+  "image": "media/images/panax-ginseng/main.jpg",
   "containsChemical": [{ "@id": "chemical/ginsenosides" }],
   "sameAs": [{ "@id": "http://www.wikidata.org/entity/Q192163" }]
 }
@@ -222,7 +239,56 @@ The validator handles these differently (e.g., no `scientificName` required).
 - **Slugs**: lowercase, hyphen-separated (`zingiber-officinale`, `sheng-jiang`)
 - **Plant files**: `entity.jsonld`
 - **Profile files**: `profile.jsonld`
-- **Images**: match the slug, include variant suffix if needed (`ginger.jpg`, `ginger-root.jpg`)
+- **Image directories**: scientific/Latin name slug (`panax-ginseng/`, `curcuma-longa/`)
+- **Image files**: `main.jpg` (primary), `main-2.jpg`, `flower.jpg` (variants)
+- **Image metadata**: `main.json` alongside each image with attribution and SPDX ID
+
+## Image Library Structure
+
+Images are organized by **scientific name** (Latin), not common names:
+
+```
+media/images/
+├── attribution.json              # Global registry (Vita Green, Wikimedia sources)
+├── panax-ginseng/                # Panax ginseng (Ginseng)
+│   ├── main.jpg                  # Primary image
+│   └── main.json                 # Attribution + SPDX ID
+├── curcuma-longa/                # Curcuma longa (Turmeric)
+│   ├── main.jpg
+│   └── main.json
+└── vitamin-c/                    # Non-plant entities (no scientific name)
+    ├── main.jpg
+    └── main.json
+```
+
+### Image Metadata Format
+
+Each `main.json` contains:
+
+```json
+{
+  "fileName": "main.jpg",
+  "species": "Panax ginseng",
+  "commonName": "Ginseng",
+  "attribution": {
+    "copyright": "Vita Green Health Products Ltd.",
+    "license": "All rights reserved - used with permission",
+    "source": "Vita Green Health Products Ltd.",
+    "spdxId": "NONE",
+    "spdxUrl": null
+  },
+  "downloaded": "2026-02-23"
+}
+```
+
+### SPDX License IDs
+
+| Source | SPDX ID | Description |
+|--------|---------|-------------|
+| Vita Green | `NONE` | All rights reserved - used with permission |
+| Wikimedia (PD) | `CC-PDDC` | Public Domain Mark |
+| Wikimedia (CC0) | `CC0-1.0` | Creative Commons Zero |
+| Wikimedia (BY-SA) | `CC-BY-SA-3.0` | Creative Commons Attribution Share-Alike |
 
 ## External References
 

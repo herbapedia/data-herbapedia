@@ -119,6 +119,17 @@
         "en": "Western modern research",
         "zh-Hant": "西方現代研究"
       }
+    },
+
+    {
+      "@id": "western:hasSystemAffinity",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "western:Herb",
+      "rdfs:range": "western:System",
+      "rdfs:label": {
+        "en": "has system affinity",
+        "zh-Hant": "有系統親和性"
+      }
     }
   ]
 }

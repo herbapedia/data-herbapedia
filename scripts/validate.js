@@ -534,7 +534,7 @@ async function runQualityValidation(files, options) {
 
 // Non-plant products that don't need scientific names
 const NON_PLANT_IMAGE_TYPES = [
-  'oil', 'extract', 'factor', 'mpc', 'chitosan', 'shenqu', 'shoudihuang'
+  'oil', 'extract', 'factor', 'mpc', 'chitosan', 'shenqu', 'shoudihuang', 'capigen', 'epicutin'
 ]
 
 function isNonPlantImageType(dirName) {
@@ -585,16 +585,17 @@ async function runImageValidation(root, options) {
         withSpecies++
       }
 
-      // Check for attribution/copyright
-      if (!metadata.copyright) {
+      // Check for attribution/copyright (nested in attribution object)
+      const attribution = metadata.attribution || {}
+      if (!attribution.copyright) {
         warnings++
         issues.push({ dir, issue: 'Missing copyright holder', severity: 'warning' })
       } else {
         withAttribution++
       }
 
-      // Check for SPDX ID
-      if (!metadata.spdxId) {
+      // Check for SPDX ID (nested in attribution object)
+      if (!attribution.spdxId) {
         warnings++
         issues.push({ dir, issue: 'Missing SPDX ID', severity: 'warning' })
       } else {

@@ -625,7 +625,27 @@ herbapedia:ChemicalAnalysisData - Chemical analysis data
 herbapedia:gcmtiCode          - GCMTI specimen identifier
 herbapedia:containsChemical   - Links plant to compound
 herbapedia:hasPart            - Links species to parts
-herbapedia:derivedFrom        - Links preparation to source
+herbapedia:derivedFrom       - Links preparation to source
+```
+
+### Inverse Properties
+
+All object properties in the Herbapedia ontology have defined inverse properties using `owl:inverseOf`:
+
+```
++-------------------+-----------------------+----------------------------------+
+| Property          | Inverse Property      | Description                      |
++-------------------+-----------------------+----------------------------------+
+| herbapedia:hasPart| herbapedia:partOf    | Species has part / Part belongs  |
+| containsChemical | foundIn               | Plant contains / Compound found |
+| derivedFrom      | isSourceOf            | Preparation derived / Source for |
+| hasExtract       | isExtractOf          | Material has extract / Extract  |
+| hasLifeStage     | isLifeStageOf        | Species has stage / Stage of    |
+| hasProcessedForm | isProcessedFrom      | Material has form / Form from   |
+| hasImages        | isImageOf             | Entity has image / Image of    |
+| hasProfile       | isProfileOf           | Prep has profile / Profile of  |
+| hasChemicalProfile| isChemicalProfileOf  | Plant has profile / Profile for|
++-------------------+-----------------------+----------------------------------+
 ```
 
 ### TCM Vocabulary
@@ -1195,9 +1215,98 @@ RRTValues[]
 
 ---
 
+## Image Library
+
+### Image Organization
+
+Images are organized by **scientific name** (Latin nomenclature) in the `media/images/` directory:
+
+```
+media/images/
+├── attribution.json              # Global attribution registry
+├── panax-ginseng/                # Panax ginseng (Ginseng)
+│   ├── main.jpg                  # Primary image
+│   └── main.json                 # Metadata with SPDX license
+├── curcuma-longa/                # Curcuma longa (Turmeric)
+│   ├── main.jpg
+│   └── main.json
+└── vitamin-c/                    # Non-plant entities (no scientific name required)
+    ├── main.jpg
+    └── main.json
+```
+
+### Image Metadata Structure
+
+Each image has an accompanying `main.json` metadata file:
+
+```json
+{
+  "fileName": "main.jpg",
+  "species": "Panax ginseng",
+  "commonName": "Ginseng",
+  "attribution": {
+    "copyright": "Vita Green Health Products Ltd.",
+    "license": "All rights reserved - used with permission",
+    "licenseUrl": null,
+    "source": "Vita Green Health Products Ltd.",
+    "spdxId": "NONE",
+    "spdxUrl": null
+  },
+  "downloaded": "2026-02-23"
+}
+```
+
+### SPDX License Identifiers
+
+All images include SPDX (Software Package Data Exchange) license identifiers:
+
+| Source | SPDX ID | Description |
+|--------|---------|-------------|
+| Vita Green | `NONE` | All rights reserved - used with permission |
+| Wikimedia (PD) | `CC-PDDC` | Public Domain Mark |
+| Wikimedia (CC0) | `CC0-1.0` | Creative Commons Zero |
+| Wikimedia (BY-SA) | `CC-BY-SA-3.0` | Creative Commons Attribution Share-Alike |
+
+### Non-Plant Image Types
+
+Non-plant products (oils, extracts, compounds) are exempt from the scientific name requirement:
+
+| Type | Examples |
+|------|----------|
+| Oils | argan-oil, lavender-oil, jojoba-seed-oil |
+| Extracts/Compounds | chitosan, capigen, epicutin-tt |
+| Formulations | factor-arl, mpc, hydration-factor-cte4 |
+| Processed herbs | shenqu, shoudihuang |
+
+### Image Ontology Classes
+
+```
+herbapedia:Image
+    |-- subClassOf: schema:ImageObject
+    |-- hasMetadata --> ImageMetadata
+
+herbapedia:ImageMetadata
+    |-- fileName: xsd:string
+    |-- species: xsd:string (optional for non-plants)
+    |-- hasAttribution --> Attribution
+    |-- downloaded: xsd:date
+
+herbapedia:Attribution
+    |-- copyright: xsd:string
+    |-- creator: xsd:string (optional)
+    |-- license: xsd:string
+    |-- licenseUrl: xsd:anyURI (optional)
+    |-- source: xsd:string
+    |-- sourceUrl: xsd:anyURI (optional)
+    |-- spdxId: xsd:string
+    |-- spdxUrl: xsd:anyURI (optional)
+```
+
+---
+
 ## Document Information
 
-- **Version**: 1.0.0
-- **Last Updated**: 2026-02-21
+- **Version**: 1.1.0
+- **Last Updated**: 2026-02-24
 - **Authors**: Herbapedia Project
 - **License**: CC BY-SA 4.0

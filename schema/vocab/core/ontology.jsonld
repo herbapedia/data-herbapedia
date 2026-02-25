@@ -175,6 +175,31 @@
       "rdfs:comment": "The central pivot entity - a substance prepared from botanical sources for therapeutic or culinary use."
     },
 
+    {
+      "@id": "herbapedia:MedicineSystemProfile",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "herbapedia:Entity",
+      "rdfs:label": {
+        "en": "Medicine System Profile",
+        "zh-Hant": "醫藥系統檔案"
+      },
+      "rdfs:comment": "Abstract base class for all medicine system-specific herb profiles (TCM, Western, Ayurveda, Persian, Mongolian)."
+    },
+
+    // Disjoint class declarations for SourceMaterial hierarchy
+    {
+      "@id": "herbapedia:BotanicalSource",
+      "owl:disjointWith": ["herbapedia:ZoologicalSource", "herbapedia:MineralSource", "herbapedia:ChemicalSource"]
+    },
+    {
+      "@id": "herbapedia:ZoologicalSource",
+      "owl:disjointWith": ["herbapedia:MineralSource", "herbapedia:ChemicalSource"]
+    },
+    {
+      "@id": "herbapedia:MineralSource",
+      "owl:disjointWith": ["herbapedia:ChemicalSource"]
+    },
+
     // ========================================================================
     // CORE PROPERTIES
     // ========================================================================
@@ -270,6 +295,1169 @@
         "en": "is processed from"
       },
       "rdfs:comment": "Links a processed preparation to its raw material."
+    },
+
+    {
+      "@id": "herbapedia:hasProcessedForm",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": "herbapedia:isProcessedFrom",
+      "rdfs:label": {
+        "en": "has processed form"
+      }
+    },
+
+    {
+      "@id": "herbapedia:isSourceOf",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": "herbal:derivedFrom",
+      "rdfs:label": {
+        "en": "is source of"
+      }
+    },
+
+    {
+      "@id": "herbapedia:isLifeStageOf",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": "herbapedia:hasLifeStage",
+      "rdfs:label": {
+        "en": "is life stage of"
+      }
+    },
+
+    {
+      "@id": "herbapedia:isImageOf",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": "herbapedia:hasImages",
+      "rdfs:label": {
+        "en": "is image of"
+      }
+    },
+
+    {
+      "@id": "herbapedia:hasProfile",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "herbal:HerbalPreparation",
+      "rdfs:range": "herbapedia:MedicineSystemProfile",
+      "rdfs:label": {
+        "en": "has profile"
+      },
+      "rdfs:comment": "Links a preparation to its system-specific profile."
+    },
+
+    {
+      "@id": "herbapedia:isProfileOf",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": "herbapedia:hasProfile",
+      "rdfs:label": {
+        "en": "is profile of"
+      }
+    },
+
+    {
+      "@id": "herbapedia:hasChemicalProfile",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "herbapedia:BotanicalSource",
+      "rdfs:range": "botany:ChemicalProfile",
+      "rdfs:label": {
+        "en": "has chemical profile"
+      },
+      "rdfs:comment": "Links a botanical source to its chemical analysis profile."
+    },
+
+    {
+      "@id": "herbapedia:isChemicalProfileOf",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": "herbapedia:hasChemicalProfile",
+      "rdfs:label": {
+        "en": "is chemical profile of"
+      }
+    },
+
+    // ========================================================================
+    // TAXONOMY AND CLASSIFICATION PROPERTIES
+    // ========================================================================
+
+    {
+      "@id": "botany:hasFamily",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "botany:PlantSpecies",
+      "rdfs:range": "botany:Family",
+      "rdfs:label": {
+        "en": "has family"
+      },
+      "rdfs:comment": "Links a plant species to its taxonomic family."
+    },
+
+    {
+      "@id": "botany:hasGenus",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "botany:PlantSpecies",
+      "rdfs:range": "botany:Genus",
+      "rdfs:label": {
+        "en": "has genus"
+      },
+      "rdfs:comment": "Links a plant species to its genus."
+    },
+
+    {
+      "@id": "botany:memberOf",
+      "@type": "owl:ObjectProperty",
+      "owl:inverseOf": "botany:hasFamily",
+      "rdfs:label": {
+        "en": "member of"
+      }
+    },
+
+    // ========================================================================
+    // MEDICINE SYSTEM PROFILE PROPERTIES
+    // ========================================================================
+
+    {
+      "@id": "herbapedia:derivedFromPlant",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "herbapedia:MedicineSystemProfile",
+      "rdfs:range": "herbapedia:BotanicalSource",
+      "rdfs:label": {
+        "en": "derived from plant"
+      },
+      "rdfs:comment": "Links a medicine system profile to its source botanical material."
+    },
+
+    {
+      "@id": "herbapedia:hasCategory",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": {
+        "en": "has category"
+      },
+      "rdfs:comment": "Links a herb to its medicinal category (e.g., tonic, purgative)."
+    },
+
+    {
+      "@id": "herbapedia:hasNature",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": {
+        "en": "has nature"
+      },
+      "rdfs:comment": "Links a herb to its thermal nature (hot, warm, neutral, cool, cold)."
+    },
+
+    {
+      "@id": "herbapedia:hasFlavor",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": {
+        "en": "has flavor"
+      },
+      "rdfs:comment": "Links a herb to its taste/flavor (sweet, bitter, sour, salty, pungent)."
+    },
+
+    {
+      "@id": "herbapedia:entersMeridian",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "tcm:Herb",
+      "rdfs:range": "tcm:Meridian",
+      "rdfs:label": {
+        "en": "enters meridian"
+      },
+      "rdfs:comment": "Links a TCM herb to the meridians it affects."
+    },
+
+    {
+      "@id": "herbapedia:hasAction",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": {
+        "en": "has action"
+      },
+      "rdfs:comment": "Links a herb to its therapeutic action."
+    },
+
+    {
+      "@id": "herbapedia:hasOrganAffinity",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": {
+        "en": "has organ affinity"
+      },
+      "rdfs:comment": "Links a herb to the organs/systems it primarily affects."
+    },
+
+    {
+      "@id": "herbapedia:affectsDosha",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "ayurveda:Dravya",
+      "rdfs:range": "ayurveda:Dosha",
+      "rdfs:label": {
+        "en": "affects dosha"
+      },
+      "rdfs:comment": "Links an Ayurvedic substance to the doshas it affects."
+    },
+
+    {
+      "@id": "herbapedia:hasRasa",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": {
+        "en": "has rasa"
+      },
+      "rdfs:comment": "Links an Ayurvedic substance to its rasa (taste)."
+    },
+
+    {
+      "@id": "herbapedia:hasGuna",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": {
+        "en": "has guna"
+      },
+      "rdfs:comment": "Links an Ayurvedic substance to its guna (quality)."
+    },
+
+    {
+      "@id": "herbapedia:hasVirya",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": {
+        "en": "has virya"
+      },
+      "rdfs:comment": "Links an Ayurvedic substance to its virya (potency)."
+    },
+
+    {
+      "@id": "herbapedia:hasVipaka",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": {
+        "en": "has vipaka"
+      },
+      "rdfs:comment": "Links an Ayurvedic substance to its vipaka (post-digestive effect)."
+    },
+
+    // ========================================================================
+    // MEDIA AND IMAGES
+    // ========================================================================
+
+    {
+      "@id": "herbapedia:Image",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "schema:ImageObject",
+      "rdfs:label": {
+        "en": "Image",
+        "zh-Hant": "圖像"
+      },
+      "rdfs:comment": "An image file with associated metadata including attribution and licensing."
+    },
+
+    {
+      "@id": "herbapedia:ImageMetadata",
+      "@type": "owl:Class",
+      "rdfs:label": {
+        "en": "Image Metadata",
+        "zh-Hant": "圖像元數據"
+      },
+      "rdfs:comment": "Metadata for an image including attribution, licensing (SPDX), and source information."
+    },
+
+    {
+      "@id": "herbapedia:Attribution",
+      "@type": "owl:Class",
+      "rdfs:label": {
+        "en": "Attribution",
+        "zh-Hant": "署名"
+      },
+      "rdfs:comment": "Copyright and license attribution information for media assets."
+    },
+
+    {
+      "@id": "herbapedia:hasImages",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "herbapedia:Entity",
+      "rdfs:range": "herbapedia:Image",
+      "rdfs:label": {
+        "en": "has images"
+      },
+      "rdfs:comment": "Links an entity to its associated images."
+    },
+
+    {
+      "@id": "herbapedia:hasMetadata",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "herbapedia:Image",
+      "rdfs:range": "herbapedia:ImageMetadata",
+      "rdfs:label": {
+        "en": "has metadata"
+      },
+      "rdfs:comment": "Links an image to its metadata."
+    },
+
+    {
+      "@id": "herbapedia:hasAttribution",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "herbapedia:ImageMetadata",
+      "rdfs:range": "herbapedia:Attribution",
+      "rdfs:label": {
+        "en": "has attribution"
+      },
+      "rdfs:comment": "Links image metadata to attribution information."
+    },
+
+    // ========================================================================
+    // SPDX AND LICENSING PROPERTIES
+    // ========================================================================
+
+    {
+      "@id": "herbapedia:spdxId",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "herbapedia:Attribution",
+      "rdfs:range": "xsd:string",
+      "rdfs:label": {
+        "en": "SPDX ID"
+      },
+      "rdfs:comment": "SPDX License Identifier (e.g., CC0-1.0, CC-BY-SA-3.0, NONE for all-rights-reserved)."
+    },
+
+    {
+      "@id": "herbapedia:spdxUrl",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "herbapedia:Attribution",
+      "rdfs:range": "xsd:anyURI",
+      "rdfs:label": {
+        "en": "SPDX URL"
+      },
+      "rdfs:comment": "URL to the SPDX license definition at spdx.org."
+    },
+
+    {
+      "@id": "herbapedia:fileName",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "herbapedia:ImageMetadata",
+      "rdfs:range": "xsd:string",
+      "rdfs:label": {
+        "en": "file name"
+      },
+      "rdfs:comment": "Name of the image file."
+    },
+
+    {
+      "@id": "herbapedia:downloaded",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "herbapedia:ImageMetadata",
+      "rdfs:range": "xsd:date",
+      "rdfs:label": {
+        "en": "downloaded"
+      },
+      "rdfs:comment": "Date when the image was downloaded/acquired."
+    },
+
+    // ========================================================================
+    // TCM SPECIFIC PROPERTIES
+    // ========================================================================
+
+    {
+      "@id": "tcm:pinyin",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "tcm:Herb",
+      "rdfs:range": "xsd:string",
+      "rdfs:label": {
+        "en": "pinyin"
+      },
+      "rdfs:comment": "Pinyin romanization of the Chinese herb name."
+    },
+
+    {
+      "@id": "tcm:chineseName",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "tcm:Herb",
+      "rdfs:label": {
+        "en": "Chinese name"
+      },
+      "rdfs:comment": "Chinese character name of the herb."
+    },
+
+    {
+      "@id": "tcm:latinPharmaceuticalName",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "tcm:Herb",
+      "rdfs:range": "xsd:string",
+      "rdfs:label": {
+        "en": "Latin pharmaceutical name"
+      },
+      "rdfs:comment": "Latin pharmaceutical name of the herb."
+    },
+
+    {
+      "@id": "tcm:medicinalPart",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "tcm:Herb",
+      "rdfs:label": {
+        "en": "medicinal part"
+      },
+      "rdfs:comment": "Part of the plant used medicinally."
+    },
+
+    {
+      "@id": "tcm:processingMethod",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "tcm:Herb",
+      "rdfs:range": "xsd:string",
+      "rdfs:label": {
+        "en": "processing method"
+      },
+      "rdfs:comment": "Method of processing the herb (pao zhi)."
+    },
+
+    {
+      "@id": "tcm:actions",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "tcm:Herb",
+      "rdfs:label": {
+        "en": "actions"
+      },
+      "rdfs:comment": "TCM therapeutic actions."
+    },
+
+    {
+      "@id": "tcm:indications",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "tcm:Herb",
+      "rdfs:label": {
+        "en": "indications"
+      },
+      "rdfs:comment": "Conditions for which the herb is indicated."
+    },
+
+    {
+      "@id": "tcm:contraindications",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "tcm:Herb",
+      "rdfs:label": {
+        "en": "contraindications"
+      },
+      "rdfs:comment": "Conditions where use is contraindicated."
+    },
+
+    {
+      "@id": "tcm:dosage",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "tcm:Herb",
+      "rdfs:label": {
+        "en": "dosage"
+      },
+      "rdfs:comment": "Recommended dosage range."
+    },
+
+    {
+      "@id": "tcm:preparation",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "tcm:Herb",
+      "rdfs:label": {
+        "en": "preparation"
+      },
+      "rdfs:comment": "Preparation instructions."
+    },
+
+    {
+      "@id": "tcm:combinesWith",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "tcm:Herb",
+      "rdfs:range": "tcm:Herb",
+      "rdfs:label": {
+        "en": "combines with"
+      },
+      "rdfs:comment": "Herbs commonly combined with this herb."
+    },
+
+    {
+      "@id": "tcm:comparesTo",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "tcm:Herb",
+      "rdfs:range": "tcm:Herb",
+      "rdfs:label": {
+        "en": "compares to"
+      },
+      "rdfs:comment": "Herbs with similar properties for comparison."
+    },
+
+    {
+      "@id": "tcm:adverseReaction",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "tcm:Herb",
+      "rdfs:label": {
+        "en": "adverse reaction"
+      },
+      "rdfs:comment": "Potential adverse reactions."
+    },
+
+    {
+      "@id": "tcm:prohibitedCombination",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "tcm:Herb",
+      "rdfs:label": {
+        "en": "prohibited combination"
+      },
+      "rdfs:comment": "Herbs or foods that should not be combined."
+    },
+
+    {
+      "@id": "tcm:storageInstructions",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "tcm:Herb",
+      "rdfs:label": {
+        "en": "storage instructions"
+      },
+      "rdfs:comment": "How to store the herb."
+    },
+
+    {
+      "@id": "tcm:sideEffects",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "tcm:Herb",
+      "rdfs:label": {
+        "en": "side effects"
+      },
+      "rdfs:comment": "Potential side effects."
+    },
+
+    {
+      "@id": "tcm:history",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "tcm:Herb",
+      "rdfs:label": {
+        "en": "history"
+      },
+      "rdfs:comment": "Historical background of use."
+    },
+
+    {
+      "@id": "tcm:traditionalUsage",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "tcm:Herb",
+      "rdfs:label": {
+        "en": "traditional usage"
+      },
+      "rdfs:comment": "Traditional usage patterns."
+    },
+
+    {
+      "@id": "tcm:modernResearch",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "tcm:Herb",
+      "rdfs:label": {
+        "en": "modern research"
+      },
+      "rdfs:comment": "Modern scientific research findings."
+    },
+
+    {
+      "@id": "tcm:clinicalNotes",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "tcm:Herb",
+      "rdfs:label": {
+        "en": "clinical notes"
+      },
+      "rdfs:comment": "Clinical application notes."
+    },
+
+    {
+      "@id": "tcm:classicalReference",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "tcm:Herb",
+      "rdfs:label": {
+        "en": "classical reference"
+      },
+      "rdfs:comment": "References to classical TCM texts."
+    },
+
+    {
+      "@id": "tcm:functions",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "tcm:Herb",
+      "rdfs:label": {
+        "en": "functions"
+      },
+      "rdfs:comment": "TCM functions (gong xiao)."
+    },
+
+    {
+      "@id": "tcm:importance",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "tcm:Herb",
+      "rdfs:label": {
+        "en": "importance"
+      },
+      "rdfs:comment": "Importance rating in TCM practice."
+    },
+
+    {
+      "@id": "tcm:safetyConsideration",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "tcm:Herb",
+      "rdfs:label": {
+        "en": "safety consideration"
+      },
+      "rdfs:comment": "Safety considerations and warnings."
+    },
+
+    {
+      "@id": "tcm:botanicalSource",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "tcm:Herb",
+      "rdfs:label": {
+        "en": "botanical source"
+      },
+      "rdfs:comment": "Botanical source description."
+    },
+
+    {
+      "@id": "tcm:meridianValue",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "tcm:Meridian",
+      "rdfs:range": "xsd:string",
+      "rdfs:label": {
+        "en": "meridian value"
+      },
+      "rdfs:comment": "Meridian identifier value."
+    },
+
+    {
+      "@id": "tcm:natureValue",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "tcm:Nature",
+      "rdfs:range": "xsd:string",
+      "rdfs:label": {
+        "en": "nature value"
+      },
+      "rdfs:comment": "Thermal nature value (hot, warm, neutral, cool, cold)."
+    },
+
+    {
+      "@id": "tcm:flavorValue",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "tcm:Flavor",
+      "rdfs:range": "xsd:string",
+      "rdfs:label": {
+        "en": "flavor value"
+      },
+      "rdfs:comment": "Flavor value (sweet, sour, bitter, pungent, salty)."
+    },
+
+    {
+      "@id": "tcm:element",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "tcm:Herb",
+      "rdfs:range": "xsd:string",
+      "rdfs:label": {
+        "en": "element"
+      },
+      "rdfs:comment": "Five Elements association."
+    },
+
+    {
+      "@id": "tcm:yinYang",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "tcm:Herb",
+      "rdfs:range": "xsd:string",
+      "rdfs:label": {
+        "en": "yin yang"
+      },
+      "rdfs:comment": "Yin-Yang property."
+    },
+
+    {
+      "@id": "tcm:associatedOrgan",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "tcm:Herb",
+      "rdfs:range": "xsd:string",
+      "rdfs:label": {
+        "en": "associated organ"
+      },
+      "rdfs:comment": "Zang-fu organ association."
+    },
+
+    // ========================================================================
+    // WESTERN HERBAL PROPERTIES
+    // ========================================================================
+
+    {
+      "@id": "western:hasSystemAffinity",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "western:Herb",
+      "rdfs:range": "western:SystemAffinity",
+      "rdfs:label": {
+        "en": "has system affinity"
+      },
+      "rdfs:comment": "Links a herb to body systems it affects."
+    },
+
+    {
+      "@id": "western:hasEnergeticQuality",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "western:Herb",
+      "rdfs:range": "western:EnergeticQuality",
+      "rdfs:label": {
+        "en": "has energetic quality"
+      },
+      "rdfs:comment": "Links a herb to its energetic qualities (warming, cooling, etc.)."
+    },
+
+    {
+      "@id": "western:partsUsed",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "western:Herb",
+      "rdfs:label": {
+        "en": "parts used"
+      },
+      "rdfs:comment": "Parts of the plant used."
+    },
+
+    {
+      "@id": "western:preparationMethod",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "western:Herb",
+      "rdfs:label": {
+        "en": "preparation method"
+      },
+      "rdfs:comment": "Methods of preparing the herb."
+    },
+
+    {
+      "@id": "western:dosage",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "western:Herb",
+      "rdfs:label": {
+        "en": "dosage"
+      },
+      "rdfs:comment": "Recommended dosage."
+    },
+
+    {
+      "@id": "western:actions",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "western:Herb",
+      "rdfs:label": {
+        "en": "actions"
+      },
+      "rdfs:comment": "Western herbal actions."
+    },
+
+    {
+      "@id": "western:indications",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "western:Herb",
+      "rdfs:label": {
+        "en": "indications"
+      },
+      "rdfs:comment": "Conditions for which the herb is indicated."
+    },
+
+    {
+      "@id": "western:contraindications",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "western:Herb",
+      "rdfs:label": {
+        "en": "contraindications"
+      },
+      "rdfs:comment": "Conditions where use is contraindicated."
+    },
+
+    {
+      "@id": "western:interactions",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "western:Herb",
+      "rdfs:label": {
+        "en": "interactions"
+      },
+      "rdfs:comment": "Drug-herb or herb-herb interactions."
+    },
+
+    {
+      "@id": "western:history",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "western:Herb",
+      "rdfs:label": {
+        "en": "history"
+      },
+      "rdfs:comment": "Historical background of use."
+    },
+
+    {
+      "@id": "western:traditionalUsage",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "western:Herb",
+      "rdfs:label": {
+        "en": "traditional usage"
+      },
+      "rdfs:comment": "Traditional usage patterns."
+    },
+
+    {
+      "@id": "western:modernResearch",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "western:Herb",
+      "rdfs:label": {
+        "en": "modern research"
+      },
+      "rdfs:comment": "Modern scientific research findings."
+    },
+
+    {
+      "@id": "western:clinicalNotes",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "western:Herb",
+      "rdfs:label": {
+        "en": "clinical notes"
+      },
+      "rdfs:comment": "Clinical application notes."
+    },
+
+    {
+      "@id": "western:functions",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "western:Herb",
+      "rdfs:label": {
+        "en": "functions"
+      },
+      "rdfs:comment": "Western herbal functions."
+    },
+
+    {
+      "@id": "western:importance",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "western:Herb",
+      "rdfs:label": {
+        "en": "importance"
+      },
+      "rdfs:comment": "Importance rating."
+    },
+
+    {
+      "@id": "western:safetyConsideration",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "western:Herb",
+      "rdfs:label": {
+        "en": "safety consideration"
+      },
+      "rdfs:comment": "Safety considerations and warnings."
+    },
+
+    {
+      "@id": "western:botanicalSource",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "western:Herb",
+      "rdfs:label": {
+        "en": "botanical source"
+      },
+      "rdfs:comment": "Botanical source description."
+    },
+
+    {
+      "@id": "western:constituentProfile",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "western:Herb",
+      "rdfs:label": {
+        "en": "constituent profile"
+      },
+      "rdfs:comment": "Chemical constituent profile."
+    },
+
+    {
+      "@id": "western:actionValue",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "western:HerbalAction",
+      "rdfs:range": "xsd:string",
+      "rdfs:label": {
+        "en": "action value"
+      },
+      "rdfs:comment": "Action identifier value."
+    },
+
+    {
+      "@id": "western:organValue",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "western:OrganAffinity",
+      "rdfs:range": "xsd:string",
+      "rdfs:label": {
+        "en": "organ value"
+      },
+      "rdfs:comment": "Organ affinity identifier value."
+    },
+
+    {
+      "@id": "western:systemValue",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "western:SystemAffinity",
+      "rdfs:range": "xsd:string",
+      "rdfs:label": {
+        "en": "system value"
+      },
+      "rdfs:comment": "System affinity identifier value."
+    },
+
+    // ========================================================================
+    // AYURVEDA PROPERTIES
+    // ========================================================================
+
+    {
+      "@id": "ayurveda:sanskritName",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "ayurveda:Dravya",
+      "rdfs:label": {
+        "en": "Sanskrit name"
+      },
+      "rdfs:comment": "Sanskrit name of the dravya."
+    },
+
+    {
+      "@id": "ayurveda:hindiName",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "ayurveda:Dravya",
+      "rdfs:label": {
+        "en": "Hindi name"
+      },
+      "rdfs:comment": "Hindi name of the dravya."
+    },
+
+    {
+      "@id": "ayurveda:balancesDosha",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "ayurveda:Dravya",
+      "rdfs:range": "ayurveda:Dosha",
+      "rdfs:label": {
+        "en": "balances dosha"
+      },
+      "rdfs:comment": "Doshas that this dravya balances."
+    },
+
+    {
+      "@id": "ayurveda:increasesDosha",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "ayurveda:Dravya",
+      "rdfs:range": "ayurveda:Dosha",
+      "rdfs:label": {
+        "en": "increases dosha"
+      },
+      "rdfs:comment": "Doshas that this dravya increases (vriddhi)."
+    },
+
+    {
+      "@id": "ayurveda:decreasesDosha",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "ayurveda:Dravya",
+      "rdfs:range": "ayurveda:Dosha",
+      "rdfs:label": {
+        "en": "decreases dosha"
+      },
+      "rdfs:comment": "Doshas that this dravya decreases (shamana)."
+    },
+
+    {
+      "@id": "ayurveda:karma",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "ayurveda:Dravya",
+      "rdfs:label": {
+        "en": "karma"
+      },
+      "rdfs:comment": "Ayurvedic actions (karma)."
+    },
+
+    {
+      "@id": "ayurveda:indications",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "ayurveda:Dravya",
+      "rdfs:label": {
+        "en": "indications"
+      },
+      "rdfs:comment": "Conditions for which the dravya is indicated."
+    },
+
+    {
+      "@id": "ayurveda:contraindications",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "ayurveda:Dravya",
+      "rdfs:label": {
+        "en": "contraindications"
+      },
+      "rdfs:comment": "Conditions where use is contraindicated."
+    },
+
+    {
+      "@id": "ayurveda:dosage",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "ayurveda:Dravya",
+      "rdfs:label": {
+        "en": "dosage"
+      },
+      "rdfs:comment": "Recommended dosage."
+    },
+
+    {
+      "@id": "ayurveda:anupana",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "ayurveda:Dravya",
+      "rdfs:label": {
+        "en": "anupana"
+      },
+      "rdfs:comment": "Vehicle or medium for administration (anupana)."
+    },
+
+    {
+      "@id": "ayurveda:history",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "ayurveda:Dravya",
+      "rdfs:label": {
+        "en": "history"
+      },
+      "rdfs:comment": "Historical background of use."
+    },
+
+    {
+      "@id": "ayurveda:traditionalUsage",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "ayurveda:Dravya",
+      "rdfs:label": {
+        "en": "traditional usage"
+      },
+      "rdfs:comment": "Traditional usage patterns."
+    },
+
+    {
+      "@id": "ayurveda:modernResearch",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "ayurveda:Dravya",
+      "rdfs:label": {
+        "en": "modern research"
+      },
+      "rdfs:comment": "Modern scientific research findings."
+    },
+
+    {
+      "@id": "ayurveda:clinicalNotes",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "ayurveda:Dravya",
+      "rdfs:label": {
+        "en": "clinical notes"
+      },
+      "rdfs:comment": "Clinical application notes."
+    },
+
+    {
+      "@id": "ayurveda:classicalReference",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "ayurveda:Dravya",
+      "rdfs:label": {
+        "en": "classical reference"
+      },
+      "rdfs:comment": "References to classical Ayurvedic texts."
+    },
+
+    {
+      "@id": "ayurveda:functions",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "ayurveda:Dravya",
+      "rdfs:label": {
+        "en": "functions"
+      },
+      "rdfs:comment": "Ayurvedic functions."
+    },
+
+    {
+      "@id": "ayurveda:importance",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "ayurveda:Dravya",
+      "rdfs:label": {
+        "en": "importance"
+      },
+      "rdfs:comment": "Importance rating."
+    },
+
+    {
+      "@id": "ayurveda:safetyConsideration",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "ayurveda:Dravya",
+      "rdfs:label": {
+        "en": "safety consideration"
+      },
+      "rdfs:comment": "Safety considerations and warnings."
+    },
+
+    {
+      "@id": "ayurveda:botanicalSource",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "ayurveda:Dravya",
+      "rdfs:label": {
+        "en": "botanical source"
+      },
+      "rdfs:comment": "Botanical source description."
+    },
+
+    {
+      "@id": "ayurveda:mahabhuta",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "ayurveda:Dravya",
+      "rdfs:range": "xsd:string",
+      "rdfs:label": {
+        "en": "mahabhuta"
+      },
+      "rdfs:comment": "Five Great Elements (Pancha Mahabhuta) composition."
+    },
+
+    {
+      "@id": "ayurveda:rasaValue",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "ayurveda:Rasa",
+      "rdfs:range": "xsd:string",
+      "rdfs:label": {
+        "en": "rasa value"
+      },
+      "rdfs:comment": "Taste value (sweet, sour, salty, pungent, bitter, astringent)."
+    },
+
+    {
+      "@id": "ayurveda:viryaValue",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "ayurveda:Virya",
+      "rdfs:range": "xsd:string",
+      "rdfs:label": {
+        "en": "virya value"
+      },
+      "rdfs:comment": "Potency value (heating or cooling)."
+    },
+
+    {
+      "@id": "ayurveda:vipakaValue",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "ayurveda:Vipaka",
+      "rdfs:range": "xsd:string",
+      "rdfs:label": {
+        "en": "vipaka value"
+      },
+      "rdfs:comment": "Post-digestive effect value (sweet, sour, pungent)."
+    },
+
+    {
+      "@id": "ayurveda:gunaValue",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "ayurveda:Guna",
+      "rdfs:range": "xsd:string",
+      "rdfs:label": {
+        "en": "guna value"
+      },
+      "rdfs:comment": "Quality value (heavy/light, dry/unctuous, etc.)."
+    },
+
+    {
+      "@id": "ayurveda:doshaType",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "ayurveda:Dosha",
+      "rdfs:range": "xsd:string",
+      "rdfs:label": {
+        "en": "dosha type"
+      },
+      "rdfs:comment": "Dosha type value (Vata, Pitta, Kapha)."
+    },
+
+    {
+      "@id": "ayurveda:opposite",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "ayurveda:Guna",
+      "rdfs:range": "ayurveda:Guna",
+      "rdfs:label": {
+        "en": "opposite"
+      },
+      "rdfs:comment": "Opposing guna (e.g., heavy opposes light)."
     }
 
   ]

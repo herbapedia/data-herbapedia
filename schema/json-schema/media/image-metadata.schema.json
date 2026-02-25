@@ -1,0 +1,136 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herbapedia.org/schema/json-schema/media/image-metadata.schema.json",
+  "title": "Image Metadata",
+  "description": "Metadata for plant images including attribution, licensing (SPDX), and source information. Stored as main.json alongside each image file.",
+  "type": "object",
+  "required": ["fileName", "attribution", "downloaded"],
+  "properties": {
+    "fileName": {
+      "description": "Name of the image file this metadata describes.",
+      "type": "string",
+      "pattern": "^[a-z0-9-]+\\.jpg$",
+      "examples": ["main.jpg", "flower.jpg", "root.jpg"]
+    },
+    "species": {
+      "description": "Scientific/Latin name of the species. Required for botanical images, optional for non-plant products.",
+      "type": "string",
+      "examples": ["Panax ginseng", "Curcuma longa", "Zingiber officinale"]
+    },
+    "commonName": {
+      "description": "Common name in English for reference.",
+      "type": "string",
+      "examples": ["Ginseng", "Turmeric", "Ginger"]
+    },
+    "attribution": {
+      "description": "Copyright and license attribution information.",
+      "type": "object",
+      "required": ["copyright", "license", "source"],
+      "properties": {
+        "copyright": {
+          "description": "Copyright holder of the image.",
+          "type": "string",
+          "examples": [
+            "Vita Green Health Products Ltd.",
+            "Wikimedia Commons",
+            "Simon A. Eugster"
+          ]
+        },
+        "creator": {
+          "description": "Original creator/photographer if different from copyright holder.",
+          "type": "string",
+          "examples": ["William Catto", "Simon A. Eugster"]
+        },
+        "license": {
+          "description": "Human-readable license description.",
+          "type": "string",
+          "examples": [
+            "All rights reserved - used with permission",
+            "CC0 1.0 Universal",
+            "Creative Commons Attribution Share Alike 3.0",
+            "Public Domain Mark 1.0"
+          ]
+        },
+        "licenseUrl": {
+          "description": "URL to the full license text.",
+          "type": ["string", "null"],
+          "format": "uri",
+          "examples": [
+            "https://creativecommons.org/publicdomain/zero/1.0/",
+            "https://creativecommons.org/licenses/by-sa/3.0/"
+          ]
+        },
+        "source": {
+          "description": "Source of the image.",
+          "type": "string",
+          "examples": [
+            "Vita Green Health Products Ltd.",
+            "Wikimedia Commons"
+          ]
+        },
+        "sourceUrl": {
+          "description": "URL to the original source image.",
+          "type": ["string", "null"],
+          "format": "uri",
+          "examples": [
+            "https://commons.wikimedia.org/wiki/File:Curcuma_longa_roots.jpg"
+          ]
+        },
+        "spdxId": {
+          "description": "SPDX License Identifier. Use 'NONE' for all-rights-reserved images.",
+          "type": "string",
+          "enum": [
+            "NONE",
+            "CC0-1.0",
+            "CC-PDDC",
+            "CC-BY-3.0",
+            "CC-BY-4.0",
+            "CC-BY-SA-3.0",
+            "CC-BY-SA-4.0",
+            "CC-BY-NC-3.0",
+            "CC-BY-NC-4.0",
+            "CC-BY-NC-SA-3.0",
+            "CC-BY-NC-SA-4.0"
+          ],
+          "examples": ["NONE", "CC0-1.0", "CC-PDDC", "CC-BY-SA-3.0"]
+        },
+        "spdxUrl": {
+          "description": "URL to the SPDX license definition.",
+          "type": ["string", "null"],
+          "format": "uri",
+          "examples": [
+            "https://spdx.org/licenses/CC0-1.0.html",
+            "https://spdx.org/licenses/CC-BY-SA-3.0.html"
+          ]
+        },
+        "note": {
+          "description": "Additional notes about usage rights or restrictions.",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "downloaded": {
+      "description": "Date when the image was downloaded/acquired, in ISO 8601 format (YYYY-MM-DD).",
+      "type": "string",
+      "format": "date",
+      "examples": ["2026-02-23", "2026-02-20"]
+    },
+    "width": {
+      "description": "Image width in pixels.",
+      "type": "integer",
+      "minimum": 1
+    },
+    "height": {
+      "description": "Image height in pixels.",
+      "type": "integer",
+      "minimum": 1
+    },
+    "caption": {
+      "description": "Optional caption describing the image content.",
+      "type": "string",
+      "examples": ["Ginseng root cross-section", "Flowering turmeric plant"]
+    }
+  },
+  "additionalProperties": false
+}

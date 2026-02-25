@@ -1,11 +1,14 @@
 {
   "fileName": "main.jpg",
   "attribution": {
-    "copyright": "Vita Green Health Products Ltd.",
-    "license": "All rights reserved - used with permission",
-    "licenseUrl": null,
-    "source": "Vita Green Health Products Ltd.",
-    "note": "This image is copyrighted and used with permission from Vita Green Health Products Ltd."
+    "copyright": "Simon A. Eugster",
+    "creator": "Simon A. Eugster",
+    "license": "Creative Commons Attribution Share Alike 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Curcuma_longa_roots.jpg",
+    "spdxId": "CC-BY-SA-3.0",
+    "spdxUrl": "https://spdx.org/licenses/CC-BY-SA-3.0.html"
   },
   "downloaded": "2026-02-23",
   "species": "Curcuma longa"

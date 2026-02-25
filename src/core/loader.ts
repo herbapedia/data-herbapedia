@@ -11,33 +11,11 @@
 
 import { readFileSync, existsSync, promises as fs } from 'fs'
 import { join } from 'path'
-import type { Entity } from '../../types/core'
-import { isFullIRI, toRelativeIRI } from '../../types/core'
-import { SmartCache } from './cache'
-
-/**
- * IRI namespace to directory mapping.
- */
-const NAMESPACE_MAP: Record<string, string> = {
-  'botanical/species': 'entities/botanical/species',
-  'botanical/part': 'entities/botanical/parts',
-  'botanical/chemical': 'entities/botanical/chemicals',
-  'botanical/chemical-profile': 'entities/botanical/profiles',
-  'botanical/profile': 'entities/botanical/profiles',
-  'botanical/barcode': 'entities/botanical/barcodes',
-  'preparation': 'entities/preparations',
-  'formula': 'entities/formulas',
-  'profile/tcm': 'profiles/tcm',
-  'tcm/profile': 'profiles/tcm',
-  'profile/western': 'profiles/western',
-  'western/profile': 'profiles/western',
-  'profile/ayurveda': 'profiles/ayurveda',
-  'ayurveda/profile': 'profiles/ayurveda',
-  'profile/persian': 'profiles/persian',
-  'persian/profile': 'profiles/persian',
-  'profile/mongolian': 'profiles/mongolian',
-  'mongolian/profile': 'profiles/mongolian',
-}
+import type { Entity } from '../types/index.js'
+import { ok, err, type Result } from '../types/index.js'
+import { isFullIRI, toRelativeIRI } from '../../types/core.js'
+import { SmartCache } from './cache.js'
+import { NAMESPACE_MAP, iriToFilePath } from './config.js'
 
 /**
  * Loader configuration options.
@@ -72,9 +50,18 @@ export class EntityLoader {
   /**
    * Load an entity by its IRI.
    * Supports both full IRIs and relative IRIs.
-   * @deprecated Use loadAsync for production code
+   * @deprecated Use loadAsync for production code - this method is sync and blocking
    */
   load<T extends Entity>(iri: string): T | null {
+    // Use async version internally for consistency
+    return this.loadSync(iri)
+  }
+
+  /**
+   * Synchronous load - uses fs.readFileSync directly.
+   * Use only when async is not possible (e.g., SSR initial render).
+   */
+  loadSync<T extends Entity>(iri: string): T | null {
     const normalizedIri = this.normalizeIRI(iri)
 
     // Check cache first
@@ -97,6 +84,40 @@ export class EntityLoader {
     } catch (error) {
       console.error(`Error loading ${iri}:`, error)
       return null
+    }
+  }
+
+  /**
+   * Load an entity and return Result type for explicit error handling.
+   * Preferred method for production use - non-blocking with typed errors.
+   * @param iri - The full or relative IRI
+   */
+  async loadResult<T extends Entity>(iri: string): Promise<Result<T>> {
+    const normalizedIri = this.normalizeIRI(iri)
+
+    // Check cache first
+    const cached = this.cache.get(normalizedIri)
+    if (cached) {
+      return ok(cached as T)
+    }
+
+    // Load from filesystem
+    const path = this.iriToPath(normalizedIri)
+
+    try {
+      await fs.access(path)
+    } catch {
+      return err(new Error(`Entity not found: ${iri}`))
+    }
+
+    try {
+      const content = await fs.readFile(path, 'utf-8')
+      const entity = JSON.parse(content) as T
+      this.cache.set(normalizedIri, entity)
+      return ok(entity)
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error)
+      return err(new Error(`Failed to load ${iri}: ${message}`))
     }
   }
 
@@ -207,18 +228,22 @@ export class EntityLoader {
 
   /**
    * Convert a relative IRI to a filesystem path.
+   * Uses centralized config for namespace mapping.
    */
   private iriToPath(relativeIri: string): string {
-    const { namespace, slug } = this.parseIRI(relativeIri)
-
-    const dir = NAMESPACE_MAP[namespace]
-    if (!dir) {
-      throw new Error(`Unknown IRI namespace: ${namespace}`)
+    try {
+      return iriToFilePath(relativeIri, this.dataPath)
+    } catch {
+      // Fallback to legacy parsing for backwards compatibility
+      const { namespace, slug } = this.parseIRI(relativeIri)
+      const namespaceMap = NAMESPACE_MAP as Record<string, string>
+      const dir = namespaceMap[namespace]
+      if (!dir) {
+        throw new Error(`Unknown IRI namespace: ${namespace}`)
+      }
+      const filename = namespace.includes('profile') ? 'profile.jsonld' : 'entity.jsonld'
+      return join(this.dataPath, dir, slug, filename)
     }
-
-    // Determine filename based on entity type
-    const filename = namespace.includes('profile') ? 'profile.jsonld' : 'entity.jsonld'
-    return join(this.dataPath, dir, slug, filename)
   }
 
   /**
