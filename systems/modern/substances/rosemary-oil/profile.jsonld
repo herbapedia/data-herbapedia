@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/modern-medicine.jsonld",
+  "@id": "https://www.herbapedia.org/system/modern/profile/rosemary-oil",
+  "@type": [
+    "modern:SubstanceProfile"
+  ],
+  "derivedFromSource": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/rosemary-oil"
+  },
+  "name": {
+    "en": "Rosemary oil",
+    "zh-Hant": "迷迭香油",
+    "zh-Hans": "迷迭香油"
+  },
+  "clinicalEvidence": {
+    "en": "Rosemary oil has a strong, refreshing herbal smell and is valued for its ability to fight mental fatigue and help with headaches. It also has an antiseptic and astringent effect. When applied topically in a lotion it is most beneficial for improving blood circulation and decongesting the skin, helping to ease puffiness and swelling and treating conditions such as acne, dermatitis and eczema. It is also beneficial for respiratory problems.\n",
+    "zh-Hant": "迷迭香油具濃郁和清新的草藥氣味，能消除精神疲勞和舒緩頭痛。迷迭香油亦有消毒和止血的作用。當迷迭香油用作潤膚霜時，可以幫助改善血液循環、改善皮膚紅腫、減輕擁塞、腫大和有助治療痘痘、皮膚炎和濕疹。迷迭香油同時有助舒緩呼吸道問題。\n",
+    "zh-Hans": "迷迭香油具浓郁和清新的草药气味，能消除精神疲劳和舒缓头痛。迷迭香油亦有消毒和止血的作用。当迷迭香油用作润肤霜时，可以帮助改善血液循环、改善皮肤红肿、减轻拥塞、肿大和有助治疗痘痘、皮肤炎和湿疹。迷迭香油同时有助舒缓呼吸道问题。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/westherbs-en/rosemary-oil/",
+  "regulatoryCategory": [
+    "Cosmetic Ingredient"
+  ]
+}

@@ -269,6 +269,29 @@ export type {
 } from './ayurveda'
 
 // ============================================================================
+// Modern Medicine Types
+// ============================================================================
+
+export type {
+  ModernMedicineProfile,
+  FDAStatus,
+  PregnancyCategory,
+  LactationSafety,
+  EfficacyRating,
+  EvidenceLevel,
+  RecommendedDietaryAllowance,
+  TolerableUpperIntake,
+  DrugInteraction,
+  FoodInteraction,
+} from './modern'
+
+export {
+  isModernMedicineProfile,
+  isMineralSource,
+  isChemicalSource,
+} from './modern'
+
+// ============================================================================
 // Type Aliases
 // ============================================================================
 

@@ -183,7 +183,22 @@
         "en": "Medicine System Profile",
         "zh-Hant": "醫藥系統檔案"
       },
-      "rdfs:comment": "Abstract base class for all medicine system-specific herb profiles (TCM, Western, Ayurveda, Persian, Mongolian)."
+      "rdfs:comment": "Abstract base class for all medicine system-specific herb profiles (Modern Medicine, TCM, Western, Ayurveda, Persian, Mongolian)."
+    },
+
+    // ========================================================================
+    // MODERN MEDICINE PROFILE CLASS
+    // ========================================================================
+
+    {
+      "@id": "modern:SubstanceProfile",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "herbapedia:MedicineSystemProfile",
+      "rdfs:label": {
+        "en": "Modern Medicine Profile",
+        "zh-Hant": "現代醫學檔案"
+      },
+      "rdfs:comment": "Evidence-based clinical profile for substances used in modern medicine, including vitamins, minerals, amino acids, and pharmaceuticals."
     },
 
     // Disjoint class declarations for SourceMaterial hierarchy
@@ -1458,6 +1473,432 @@
         "en": "opposite"
       },
       "rdfs:comment": "Opposing guna (e.g., heavy opposes light)."
+    },
+
+    // ========================================================================
+    // MODERN MEDICINE PROPERTIES - Identification
+    // ========================================================================
+
+    {
+      "@id": "modern:casNumber",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "modern:SubstanceProfile",
+      "rdfs:range": "xsd:string",
+      "rdfs:label": {
+        "en": "CAS number"
+      },
+      "rdfs:comment": "CAS Registry Number - unique numerical identifier for chemical substances."
+    },
+
+    {
+      "@id": "modern:unii",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "modern:SubstanceProfile",
+      "rdfs:range": "xsd:string",
+      "rdfs:label": {
+        "en": "UNII"
+      },
+      "rdfs:comment": "Unique Ingredient Identifier (FDA) - non-proprietary identifier for substances in regulated products."
+    },
+
+    {
+      "@id": "modern:inn",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "modern:SubstanceProfile",
+      "rdfs:label": {
+        "en": "INN"
+      },
+      "rdfs:comment": "International Nonproprietary Name (WHO) - globally recognized name for pharmaceutical substances."
+    },
+
+    {
+      "@id": "modern:drugBankId",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "modern:SubstanceProfile",
+      "rdfs:range": "xsd:string",
+      "rdfs:label": {
+        "en": "DrugBank ID"
+      },
+      "rdfs:comment": "DrugBank database identifier."
+    },
+
+    {
+      "@id": "modern:pubChemId",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "modern:SubstanceProfile",
+      "rdfs:range": "xsd:string",
+      "rdfs:label": {
+        "en": "PubChem ID"
+      },
+      "rdfs:comment": "PubChem Compound identifier."
+    },
+
+    // ========================================================================
+    // MODERN MEDICINE PROPERTIES - Regulatory
+    // ========================================================================
+
+    {
+      "@id": "modern:fdaStatus",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "modern:SubstanceProfile",
+      "rdfs:range": "xsd:string",
+      "rdfs:label": {
+        "en": "FDA status"
+      },
+      "rdfs:comment": "FDA regulatory status (GRAS, NDI, Drug, OTC, Medical Food, etc.)."
+    },
+
+    {
+      "@id": "modern:regulatoryCategory",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "modern:SubstanceProfile",
+      "rdfs:label": {
+        "en": "regulatory category"
+      },
+      "rdfs:comment": "Regulatory categories (Dietary Supplement, OTC Drug, Prescription Drug, etc.)."
+    },
+
+    {
+      "@id": "modern:emaStatus",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "modern:SubstanceProfile",
+      "rdfs:label": {
+        "en": "EMA status"
+      },
+      "rdfs:comment": "European Medicines Agency regulatory status."
+    },
+
+    // ========================================================================
+    // MODERN MEDICINE PROPERTIES - Clinical Evidence
+    // ========================================================================
+
+    {
+      "@id": "modern:clinicalEvidence",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "modern:SubstanceProfile",
+      "rdfs:label": {
+        "en": "clinical evidence"
+      },
+      "rdfs:comment": "Summary of clinical trial evidence and research findings."
+    },
+
+    {
+      "@id": "modern:efficacyRating",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "modern:SubstanceProfile",
+      "rdfs:range": "xsd:string",
+      "rdfs:label": {
+        "en": "efficacy rating"
+      },
+      "rdfs:comment": "Efficacy rating from Natural Medicines Database or similar (Effective, Likely Effective, Possibly Effective, etc.)."
+    },
+
+    {
+      "@id": "modern:evidenceLevel",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "modern:SubstanceProfile",
+      "rdfs:range": "xsd:string",
+      "rdfs:label": {
+        "en": "evidence level"
+      },
+      "rdfs:comment": "Level of evidence (A: Strong, B: Moderate, C: Limited, D: Theoretical)."
+    },
+
+    // ========================================================================
+    // MODERN MEDICINE PROPERTIES - Dosing & Pharmacology
+    // ========================================================================
+
+    {
+      "@id": "modern:rda",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "modern:SubstanceProfile",
+      "rdfs:label": {
+        "en": "RDA"
+      },
+      "rdfs:comment": "Recommended Dietary Allowance by age and gender group."
+    },
+
+    {
+      "@id": "modern:ul",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "modern:SubstanceProfile",
+      "rdfs:label": {
+        "en": "UL"
+      },
+      "rdfs:comment": "Tolerable Upper Intake Level - maximum daily intake unlikely to cause adverse effects."
+    },
+
+    {
+      "@id": "modern:dosageRange",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "modern:SubstanceProfile",
+      "rdfs:label": {
+        "en": "dosage range"
+      },
+      "rdfs:comment": "Typical dosage range for supplementation."
+    },
+
+    {
+      "@id": "modern:bioavailability",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "modern:SubstanceProfile",
+      "rdfs:label": {
+        "en": "bioavailability"
+      },
+      "rdfs:comment": "Bioavailability information - how well the substance is absorbed."
+    },
+
+    {
+      "@id": "modern:halfLife",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "modern:SubstanceProfile",
+      "rdfs:label": {
+        "en": "half-life"
+      },
+      "rdfs:comment": "Biological half-life of the substance."
+    },
+
+    {
+      "@id": "modern:metabolism",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "modern:SubstanceProfile",
+      "rdfs:label": {
+        "en": "metabolism"
+      },
+      "rdfs:comment": "Metabolic pathway and processing in the body."
+    },
+
+    // ========================================================================
+    // MODERN MEDICINE PROPERTIES - Safety & Interactions
+    // ========================================================================
+
+    {
+      "@id": "modern:drugInteraction",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "modern:SubstanceProfile",
+      "rdfs:label": {
+        "en": "drug interaction"
+      },
+      "rdfs:comment": "Drug-drug or drug-supplement interactions."
+    },
+
+    {
+      "@id": "modern:foodInteraction",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "modern:SubstanceProfile",
+      "rdfs:label": {
+        "en": "food interaction"
+      },
+      "rdfs:comment": "Food-drug or food-supplement interactions."
+    },
+
+    {
+      "@id": "modern:contraindication",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "modern:SubstanceProfile",
+      "rdfs:label": {
+        "en": "contraindication"
+      },
+      "rdfs:comment": "Conditions or situations where use is contraindicated."
+    },
+
+    {
+      "@id": "modern:adverseEffect",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "modern:SubstanceProfile",
+      "rdfs:label": {
+        "en": "adverse effect"
+      },
+      "rdfs:comment": "Potential adverse effects and side effects."
+    },
+
+    {
+      "@id": "modern:pregnancyCategory",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "modern:SubstanceProfile",
+      "rdfs:range": "xsd:string",
+      "rdfs:label": {
+        "en": "pregnancy category"
+      },
+      "rdfs:comment": "FDA pregnancy category (A, B, C, D, X, N)."
+    },
+
+    {
+      "@id": "modern:lactationSafety",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "modern:SubstanceProfile",
+      "rdfs:range": "xsd:string",
+      "rdfs:label": {
+        "en": "lactation safety"
+      },
+      "rdfs:comment": "Safety rating for breastfeeding (Safe, Likely Safe, Unsafe, Insufficient Information)."
+    },
+
+    {
+      "@id": "modern:toxicity",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "modern:SubstanceProfile",
+      "rdfs:label": {
+        "en": "toxicity"
+      },
+      "rdfs:comment": "Toxicity information and LD50 values."
+    },
+
+    // ========================================================================
+    // MODERN MEDICINE PROPERTIES - Mechanism of Action
+    // ========================================================================
+
+    {
+      "@id": "modern:mechanismOfAction",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "modern:SubstanceProfile",
+      "rdfs:label": {
+        "en": "mechanism of action"
+      },
+      "rdfs:comment": "Molecular mechanism of action - how the substance works in the body."
+    },
+
+    {
+      "@id": "modern:targetReceptor",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "modern:SubstanceProfile",
+      "rdfs:label": {
+        "en": "target receptor"
+      },
+      "rdfs:comment": "Target receptors, enzymes, or proteins affected by the substance."
+    },
+
+    {
+      "@id": "modern:pharmacodynamics",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "modern:SubstanceProfile",
+      "rdfs:label": {
+        "en": "pharmacodynamics"
+      },
+      "rdfs:comment": "Pharmacodynamic properties - effects of the substance on the body."
+    },
+
+    {
+      "@id": "modern:pharmacokinetics",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "modern:SubstanceProfile",
+      "rdfs:label": {
+        "en": "pharmacokinetics"
+      },
+      "rdfs:comment": "Pharmacokinetic properties - absorption, distribution, metabolism, excretion."
+    },
+
+    // ========================================================================
+    // MODERN MEDICINE PROPERTIES - Indications
+    // ========================================================================
+
+    {
+      "@id": "modern:indication",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "modern:SubstanceProfile",
+      "rdfs:label": {
+        "en": "indication"
+      },
+      "rdfs:comment": "FDA-approved or evidence-based indications for use."
+    },
+
+    {
+      "@id": "modern:offLabelUse",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "modern:SubstanceProfile",
+      "rdfs:label": {
+        "en": "off-label use"
+      },
+      "rdfs:comment": "Off-label uses supported by evidence."
+    },
+
+    {
+      "@id": "modern:investigationalUse",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "modern:SubstanceProfile",
+      "rdfs:label": {
+        "en": "investigational use"
+      },
+      "rdfs:comment": "Uses currently under investigation in clinical trials."
+    },
+
+    {
+      "@id": "modern:deficiencySymptoms",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "modern:SubstanceProfile",
+      "rdfs:label": {
+        "en": "deficiency symptoms"
+      },
+      "rdfs:comment": "Symptoms and conditions associated with deficiency."
+    },
+
+    {
+      "@id": "modern:excessSymptoms",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "modern:SubstanceProfile",
+      "rdfs:label": {
+        "en": "excess symptoms"
+      },
+      "rdfs:comment": "Symptoms and conditions associated with excess/toxicity."
+    },
+
+    // ========================================================================
+    // MODERN MEDICINE PROPERTIES - Sources & Forms
+    // ========================================================================
+
+    {
+      "@id": "modern:dietarySources",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "modern:SubstanceProfile",
+      "rdfs:label": {
+        "en": "dietary sources"
+      },
+      "rdfs:comment": "Natural dietary sources of the substance."
+    },
+
+    {
+      "@id": "modern:supplementForms",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "modern:SubstanceProfile",
+      "rdfs:label": {
+        "en": "supplement forms"
+      },
+      "rdfs:comment": "Available supplement forms and formulations."
+    },
+
+    {
+      "@id": "modern:absorptionEnhancers",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "modern:SubstanceProfile",
+      "rdfs:label": {
+        "en": "absorption enhancers"
+      },
+      "rdfs:comment": "Substances that enhance absorption (e.g., vitamin C enhances iron absorption)."
+    },
+
+    {
+      "@id": "modern:absorptionInhibitors",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "modern:SubstanceProfile",
+      "rdfs:label": {
+        "en": "absorption inhibitors"
+      },
+      "rdfs:comment": "Substances that inhibit absorption (e.g., phytates inhibit iron absorption)."
+    },
+
+    // ========================================================================
+    // MODERN MEDICINE - Source Reference
+    // ========================================================================
+
+    {
+      "@id": "modern:derivedFromSource",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "modern:SubstanceProfile",
+      "rdfs:range": "herbapedia:SourceMaterial",
+      "rdfs:label": {
+        "en": "derived from source"
+      },
+      "rdfs:comment": "Links a modern medicine profile to its source material (mineral, chemical compound, etc.)."
     }
 
   ]

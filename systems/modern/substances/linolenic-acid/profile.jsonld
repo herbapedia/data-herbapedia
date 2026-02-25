@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/modern-medicine.jsonld",
+  "@id": "https://www.herbapedia.org/system/modern/profile/linolenic-acid",
+  "@type": [
+    "modern:SubstanceProfile"
+  ],
+  "derivedFromSource": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/linolenic-acid"
+  },
+  "name": {
+    "en": "Linolenic Acid",
+    "zh-Hant": "亞麻油酸",
+    "zh-Hans": "亚麻油酸"
+  },
+  "clinicalEvidence": {
+    "en": "The body converts linolenic acid into longer chain fatty acids which are thought to lower blood pressure. Other positive effects include anti-inflammatory and anti-blood clotting actions, and lowering cholesterol and triglyceride levels. These fatty acids may also reduce the risks and symptoms for other disorders including diabetes, stroke, rheumatoid arthritis, asthma, inflammatory bowel disease, ulcerative colitis, some cancers and mental decline.\n",
+    "zh-Hant": "",
+    "zh-Hans": ""
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/nutrients-en/linolenic-acid/",
+  "regulatoryCategory": [
+    "Cosmetic Ingredient"
+  ]
+}

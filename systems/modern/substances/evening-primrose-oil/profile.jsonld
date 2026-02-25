@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/modern-medicine.jsonld",
+  "@id": "https://www.herbapedia.org/system/modern/profile/evening-primrose-oil",
+  "@type": [
+    "modern:SubstanceProfile"
+  ],
+  "derivedFromSource": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/evening-primrose-oil"
+  },
+  "name": {
+    "en": "Evening Primrose Oil",
+    "zh-Hant": "月見草油",
+    "zh-Hans": "月见草油"
+  },
+  "clinicalEvidence": {
+    "en": "Evening Primrose Oil is relatively high in essential fatty acids, particularly gamma-linolenic acid. Clinical studies have focused on the oil's use in treating problems associated with essential fatty acid deficiency including atopic eczema, premenstrual syndrome, inflammation and diabetic peripheral neuropathy.\n",
+    "zh-Hant": "月見草油有豐富的脂肪酸，尤以伽瑪次亞麻酸最為豐富。脂肪酸是人體必需的要素，臨床研究指出，缺乏伽瑪次亞麻酸與濕疹、經前綜合症、糖尿周邊神經病變有關，而進食月見草油則有助改善此情況。\n",
+    "zh-Hans": "月见草油有丰富的脂肪酸，尤以伽玛次亚麻酸最为丰富。脂肪酸是人体必需的要素，临床研究指出，缺乏伽玛次亚麻酸与湿疹、经前综合症、糖尿周边神经病变有关，而进食月见草油则有助改善此情况。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/westherbs-en/evening-primrose-oil/",
+  "regulatoryCategory": [
+    "Cosmetic Ingredient"
+  ]
+}

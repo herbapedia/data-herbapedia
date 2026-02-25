@@ -30,6 +30,7 @@ export const NAMESPACE_MAP = {
   'ayurveda': 'https://www.herbapedia.org/system/ayurveda/profile/',
   'persian': 'https://www.herbapedia.org/system/persian/profile/',
   'mongolian': 'https://www.herbapedia.org/system/mongolian/profile/',
+  'modern': 'https://www.herbapedia.org/system/modern/profile/',
 
   // Vocabulary namespaces
   'herbapedia': 'https://www.herbapedia.org/vocab/core/',
@@ -121,6 +122,11 @@ export const ENTITY_TYPE_CONFIG = {
     paths: ['systems/mongolian/herbs'],
     required: ['mongolianName', 'affectsRoots'],
     schema: 'profiles/mongolian-profile.schema.json',
+  },
+  'ModernMedicineProfile': {
+    paths: ['systems/modern/substances'],
+    required: ['name', 'derivedFromSource'],
+    schema: 'profiles/modern-medicine-profile.schema.json',
   },
 } as const
 
@@ -286,6 +292,15 @@ export function isHerbalPreparation(entity: { '@type': string[] }): boolean {
   )
 }
 
+/**
+ * Type guard to check if entity is a Modern Medicine Profile
+ */
+export function isModernMedicineProfile(entity: { '@type': string[] }): boolean {
+  return entity['@type'].some(t =>
+    t.includes('modern:SubstanceProfile') || t.includes('ModernMedicineProfile')
+  )
+}
+
 // ============================================================================
 // Utility Functions
 // ============================================================================
@@ -359,6 +374,7 @@ export function iriToFilePath(iri: string, dataPath: string): string {
     'ayurveda': 'systems/ayurveda/dravyas',
     'persian': 'systems/persian/drugs',
     'mongolian': 'systems/mongolian/herbs',
+    'modern': 'systems/modern/substances',
   }
 
   const dir = namespaceToDir[namespace as keyof typeof namespaceToDir]
@@ -369,7 +385,7 @@ export function iriToFilePath(iri: string, dataPath: string): string {
   // Determine file name
   let fileName: string
   if (namespace === 'tcm' || namespace === 'western' || namespace === 'ayurveda' ||
-      namespace === 'persian' || namespace === 'mongolian') {
+      namespace === 'persian' || namespace === 'mongolian' || namespace === 'modern') {
     fileName = 'profile.jsonld'
   } else {
     fileName = 'entity.jsonld'

@@ -1,0 +1,172 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@import": "./core.jsonld",
+
+    "modern": "https://www.herbapedia.org/vocab/modern/",
+
+    "SubstanceProfile": {
+      "@id": "modern:SubstanceProfile",
+      "@type": "@id"
+    },
+
+    "derivedFromSource": {
+      "@id": "modern:derivedFromSource",
+      "@type": "@id"
+    },
+
+    "casNumber": {
+      "@id": "modern:casNumber",
+      "@type": "xsd:string"
+    },
+    "unii": {
+      "@id": "modern:unii",
+      "@type": "xsd:string"
+    },
+    "inn": {
+      "@id": "modern:inn",
+      "@container": "@language"
+    },
+    "drugBankId": {
+      "@id": "modern:drugBankId",
+      "@type": "xsd:string"
+    },
+    "pubChemId": {
+      "@id": "modern:pubChemId",
+      "@type": "xsd:string"
+    },
+
+    "fdaStatus": {
+      "@id": "modern:fdaStatus",
+      "@type": "xsd:string"
+    },
+    "regulatoryCategory": {
+      "@id": "modern:regulatoryCategory",
+      "@container": "@set"
+    },
+    "emaStatus": {
+      "@id": "modern:emaStatus",
+      "@container": "@language"
+    },
+
+    "clinicalEvidence": {
+      "@id": "modern:clinicalEvidence",
+      "@container": "@language"
+    },
+    "efficacyRating": {
+      "@id": "modern:efficacyRating",
+      "@type": "xsd:string"
+    },
+    "evidenceLevel": {
+      "@id": "modern:evidenceLevel",
+      "@type": "xsd:string"
+    },
+
+    "rda": {
+      "@id": "modern:rda"
+    },
+    "ul": {
+      "@id": "modern:ul"
+    },
+    "dosageRange": {
+      "@id": "modern:dosageRange",
+      "@container": "@language"
+    },
+    "bioavailability": {
+      "@id": "modern:bioavailability",
+      "@container": "@language"
+    },
+    "halfLife": {
+      "@id": "modern:halfLife",
+      "@container": "@language"
+    },
+    "metabolism": {
+      "@id": "modern:metabolism",
+      "@container": "@language"
+    },
+
+    "drugInteraction": {
+      "@id": "modern:drugInteraction",
+      "@container": "@set"
+    },
+    "foodInteraction": {
+      "@id": "modern:foodInteraction",
+      "@container": "@set"
+    },
+    "contraindication": {
+      "@id": "modern:contraindication",
+      "@container": "@language"
+    },
+    "adverseEffect": {
+      "@id": "modern:adverseEffect",
+      "@container": "@language"
+    },
+    "pregnancyCategory": {
+      "@id": "modern:pregnancyCategory",
+      "@type": "xsd:string"
+    },
+    "lactationSafety": {
+      "@id": "modern:lactationSafety",
+      "@type": "xsd:string"
+    },
+    "toxicity": {
+      "@id": "modern:toxicity",
+      "@container": "@language"
+    },
+
+    "mechanismOfAction": {
+      "@id": "modern:mechanismOfAction",
+      "@container": "@language"
+    },
+    "targetReceptor": {
+      "@id": "modern:targetReceptor",
+      "@container": "@set"
+    },
+    "pharmacodynamics": {
+      "@id": "modern:pharmacodynamics",
+      "@container": "@language"
+    },
+    "pharmacokinetics": {
+      "@id": "modern:pharmacokinetics",
+      "@container": "@language"
+    },
+
+    "indication": {
+      "@id": "modern:indication",
+      "@container": "@set"
+    },
+    "offLabelUse": {
+      "@id": "modern:offLabelUse",
+      "@container": "@set"
+    },
+    "investigationalUse": {
+      "@id": "modern:investigationalUse",
+      "@container": "@set"
+    },
+    "deficiencySymptoms": {
+      "@id": "modern:deficiencySymptoms",
+      "@container": "@language"
+    },
+    "excessSymptoms": {
+      "@id": "modern:excessSymptoms",
+      "@container": "@language"
+    },
+
+    "dietarySources": {
+      "@id": "modern:dietarySources",
+      "@container": "@set"
+    },
+    "supplementForms": {
+      "@id": "modern:supplementForms",
+      "@container": "@set"
+    },
+    "absorptionEnhancers": {
+      "@id": "modern:absorptionEnhancers",
+      "@container": "@set"
+    },
+    "absorptionInhibitors": {
+      "@id": "modern:absorptionInhibitors",
+      "@container": "@set"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/modern-medicine.jsonld",
+  "@id": "https://www.herbapedia.org/system/modern/profile/vitamin-b9-folate-folic-acid",
+  "@type": [
+    "modern:SubstanceProfile"
+  ],
+  "derivedFromSource": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/vitamin-b9-folate-folic-acid"
+  },
+  "name": {
+    "en": "Vitamin B9, Folate, Folic Acid",
+    "zh-Hant": "維他命 B9 又名葉酸",
+    "zh-Hans": "维他命 B9 又名叶酸"
+  },
+  "clinicalEvidence": {
+    "en": "Vitamin B9, also known as folate, is need to synthesise the nucleic acids DNA and RNA in our genes, and to form heme, the iron-containing protein in haemoglobin. Folic acid is also needed for the interconversion of serine from glycine; for the formation of the amino acids tyrosine from phenylalanine; glutamic acid from histidine; and methionine from homocysteine. It is also essential for the synthesis of choline from ethanolamine. Folic acid is crucial for the formation of a healthy foetus and an important nutritional supplement for all women of child bearing age, as it can help prevent conditions including spina bifida.\n",
+    "zh-Hant": "",
+    "zh-Hans": ""
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/vitamins-en/vitamin-b9-folate-folic-acid/",
+  "regulatoryCategory": [
+    "Dietary Supplement"
+  ],
+  "fdaStatus": "GRAS"
+}

@@ -88,6 +88,7 @@ export {
   isMongolianProfile as isMongolianProfileConfig,
   isChemicalCompound as isChemicalCompoundConfig,
   isHerbalPreparation as isHerbalPreparationConfig,
+  isModernMedicineProfile as isModernMedicineProfileConfig,
 } from './core/config'
 export type { Namespace, EntityType, HerbapediaConfig, CacheConfig } from './core/config'
 

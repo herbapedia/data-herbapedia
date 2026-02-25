@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/modern-medicine.jsonld",
+  "@id": "https://www.herbapedia.org/system/modern/profile/peppermint-oil",
+  "@type": [
+    "modern:SubstanceProfile"
+  ],
+  "derivedFromSource": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/peppermint-oil"
+  },
+  "name": {
+    "en": "Peppermint oil",
+    "zh-Hant": "胡椒薄荷油",
+    "zh-Hans": "胡椒薄荷油"
+  },
+  "clinicalEvidence": {
+    "en": "This pleasant, menthol smelling oil is used to treat a variety of conditions, from stimulating the digestive system to relieving mental fatigue. Peppermint is also used to treat puerperal fever and abdominal pains. It inhibits the growth of certain bacteria, and can help soothe and relax muscles when inhaled or applied to the skin.\n",
+    "zh-Hant": "胡椒薄荷油帶有讓人愉快的薄荷香氣，常被用作各種用途，從刺激消化系統到消除精神疲勞，均有幫助。胡椒薄荷也多用作治療因分娩而產生的發燒和腹痛。胡椒薄荷能抑制細菌生長，而吸入或外塗胡椒薄荷油則有助舒緩和放鬆肌肉。\n",
+    "zh-Hans": "胡椒薄荷油带有让人愉快的薄荷香气，常被用作各种用途，从刺激消化系统到消除精神疲劳，均有帮助。胡椒薄荷也多用作治疗因分娩而产生的发烧和腹痛。胡椒薄荷能抑制细菌生长，而吸入或外涂胡椒薄荷油则有助舒缓和放松肌肉。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/westherbs-en/peppermint-oil/",
+  "regulatoryCategory": [
+    "Cosmetic Ingredient"
+  ]
+}

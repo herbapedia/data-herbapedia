@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/modern-medicine.jsonld",
+  "@id": "https://www.herbapedia.org/system/modern/profile/thyme-oil",
+  "@type": [
+    "modern:SubstanceProfile"
+  ],
+  "derivedFromSource": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/thyme-oil"
+  },
+  "name": {
+    "en": "Thyme oil",
+    "zh-Hant": "百里香油",
+    "zh-Hans": "百里香油"
+  },
+  "clinicalEvidence": {
+    "en": "An amber coloured liquid with a strong herbal smell, the volatile oil of Thymus has long been used to treat respiratory problems including coughs and chest congestion. It also exerts a calming influence on smooth muscle and has been found to contain flavonoids that give the herb antioxidant properties.\n",
+    "zh-Hant": "百里香油帶有琥珀的顏色，兼有一種強烈的草藥氣味，長期以來被用來治療咳嗽和胸膛擁塞等呼吸問題。百里香油具鬆弛肌肉的效用，並含有抗氧化活性的黃酮類化合物(flavonoids)。\n",
+    "zh-Hans": "百里香油带有琥珀的颜色，兼有一种强烈的草药气味，长期以来被用来治疗咳嗽和胸膛拥塞等呼吸问题。百里香油具松弛肌肉的效用，并含有抗氧化活性的黄酮类化合物(flavonoids)。\n"
+  },
+  "source": "vitaherbapedia.com",
+  "sourceUrl": "https://www.vitaherbapedia.com/en/shop/westherbs-en/thyme-oil/",
+  "regulatoryCategory": [
+    "Cosmetic Ingredient"
+  ]
+}
