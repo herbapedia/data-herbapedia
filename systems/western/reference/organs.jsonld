@@ -18,7 +18,9 @@
         "western:Organ"
       ],
       "name": {
-        "en": "Liver"
+        "en": "Liver",
+        "zh-Hant": "肝",
+        "zh-Hans": "肝"
       },
       "organType": "solid_organ",
       "bodySystem": {
@@ -62,7 +64,9 @@
         "western:Organ"
       ],
       "name": {
-        "en": "Heart"
+        "en": "Heart",
+        "zh-Hant": "心",
+        "zh-Hans": "心"
       },
       "organType": "solid_organ",
       "bodySystem": {
@@ -98,7 +102,9 @@
         "western:Organ"
       ],
       "name": {
-        "en": "Brain"
+        "en": "Brain",
+        "zh-Hant": "腦",
+        "zh-Hans": "脑"
       },
       "organType": "solid_organ",
       "bodySystem": {
@@ -138,7 +144,9 @@
         "western:Organ"
       ],
       "name": {
-        "en": "Lungs"
+        "en": "Lungs",
+        "zh-Hant": "肺",
+        "zh-Hans": "肺"
       },
       "organType": "solid_organ",
       "bodySystem": {
@@ -181,7 +189,9 @@
         "western:Organ"
       ],
       "name": {
-        "en": "Stomach"
+        "en": "Stomach",
+        "zh-Hant": "胃",
+        "zh-Hans": "胃"
       },
       "organType": "hollow_organ",
       "bodySystem": {
@@ -222,7 +232,9 @@
         "western:Organ"
       ],
       "name": {
-        "en": "Intestines"
+        "en": "Intestines",
+        "zh-Hant": "腸",
+        "zh-Hans": "肠"
       },
       "organType": "hollow_organ",
       "bodySystem": {
@@ -261,7 +273,9 @@
         "western:Organ"
       ],
       "name": {
-        "en": "Kidneys"
+        "en": "Kidneys",
+        "zh-Hant": "腎",
+        "zh-Hans": "肾"
       },
       "organType": "solid_organ",
       "bodySystem": {
@@ -299,7 +313,9 @@
         "western:Organ"
       ],
       "name": {
-        "en": "Adrenal Glands"
+        "en": "Adrenal Glands",
+        "zh-Hant": "腎上腺",
+        "zh-Hans": "肾上腺"
       },
       "organType": "gland",
       "bodySystem": {
@@ -338,7 +354,9 @@
         "western:Organ"
       ],
       "name": {
-        "en": "Pancreas"
+        "en": "Pancreas",
+        "zh-Hant": "胰",
+        "zh-Hans": "胰"
       },
       "organType": "gland",
       "bodySystem": {
@@ -376,7 +394,9 @@
         "western:Organ"
       ],
       "name": {
-        "en": "Uterus"
+        "en": "Uterus",
+        "zh-Hant": "子宮",
+        "zh-Hans": "子宫"
       },
       "organType": "hollow_organ",
       "bodySystem": {
@@ -417,7 +437,9 @@
         "western:Organ"
       ],
       "name": {
-        "en": "Skin"
+        "en": "Skin",
+        "zh-Hant": "皮膚",
+        "zh-Hans": "皮肤"
       },
       "organType": "tissue",
       "bodySystem": {
@@ -459,7 +481,9 @@
         "western:Organ"
       ],
       "name": {
-        "en": "Joints"
+        "en": "Joints",
+        "zh-Hant": "關節",
+        "zh-Hans": "关节"
       },
       "organType": "tissue",
       "bodySystem": {
@@ -497,7 +521,9 @@
         "western:Organ"
       ],
       "name": {
-        "en": "Thyroid Gland"
+        "en": "Thyroid Gland",
+        "zh-Hant": "甲狀腺",
+        "zh-Hans": "甲状腺"
       },
       "organType": "gland",
       "bodySystem": {
@@ -528,7 +554,9 @@
         "western:Organ"
       ],
       "name": {
-        "en": "Prostate Gland"
+        "en": "Prostate Gland",
+        "zh-Hant": "前列腺",
+        "zh-Hans": "前列腺"
       },
       "organType": "gland",
       "bodySystem": {
@@ -562,7 +590,9 @@
         "western:SystemAlias"
       ],
       "name": {
-        "en": "Digestive System"
+        "en": "Digestive System",
+        "zh-Hant": "消化系統",
+        "zh-Hans": "消化系统"
       },
       "organType": "body_system",
       "bodySystem": {
@@ -598,7 +628,9 @@
         "western:SystemAlias"
       ],
       "name": {
-        "en": "Nervous System"
+        "en": "Nervous System",
+        "zh-Hant": "神經系統",
+        "zh-Hans": "神经系统"
       },
       "organType": "body_system",
       "bodySystem": {
@@ -631,7 +663,9 @@
         "western:SystemAlias"
       ],
       "name": {
-        "en": "Cardiovascular System"
+        "en": "Cardiovascular System",
+        "zh-Hant": "心血管系統",
+        "zh-Hans": "心血管系统"
       },
       "organType": "body_system",
       "bodySystem": {
@@ -661,7 +695,9 @@
         "western:SystemAlias"
       ],
       "name": {
-        "en": "Respiratory System"
+        "en": "Respiratory System",
+        "zh-Hant": "呼吸系統",
+        "zh-Hans": "呼吸系统"
       },
       "organType": "body_system",
       "bodySystem": {

@@ -18,7 +18,9 @@
         "western:Action"
       ],
       "name": {
-        "en": "Carminative"
+        "en": "Carminative",
+        "zh-Hant": "驅風",
+        "zh-Hans": "驱风"
       },
       "description": {
         "en": "Relieves flatulence and digestive discomfort by expelling gas from the stomach and intestines."
@@ -57,7 +59,9 @@
         "western:Action"
       ],
       "name": {
-        "en": "Spasmolytic (Antispasmodic)"
+        "en": "Spasmolytic (Antispasmodic)",
+        "zh-Hant": "解痙",
+        "zh-Hans": "解痉"
       },
       "description": {
         "en": "Relieves smooth muscle spasms, particularly in the digestive, respiratory, and urinary tracts."
@@ -98,7 +102,9 @@
         "western:Action"
       ],
       "name": {
-        "en": "Anti-inflammatory"
+        "en": "Anti-inflammatory",
+        "zh-Hant": "抗炎",
+        "zh-Hans": "抗炎"
       },
       "description": {
         "en": "Reduces inflammation and inflammatory processes in the body."
@@ -139,7 +145,9 @@
         "western:Action"
       ],
       "name": {
-        "en": "Antioxidant"
+        "en": "Antioxidant",
+        "zh-Hant": "抗氧化",
+        "zh-Hans": "抗氧化"
       },
       "description": {
         "en": "Neutralizes free radicals and protects cells from oxidative damage."
@@ -179,7 +187,9 @@
         "western:Action"
       ],
       "name": {
-        "en": "Hepatic"
+        "en": "Hepatic",
+        "zh-Hant": "護肝",
+        "zh-Hans": "护肝"
       },
       "description": {
         "en": "Supports liver function, protects hepatocytes, and promotes bile flow."
@@ -218,7 +228,9 @@
         "western:Action"
       ],
       "name": {
-        "en": "Cholagogue"
+        "en": "Cholagogue",
+        "zh-Hant": "利膽",
+        "zh-Hans": "利胆"
       },
       "description": {
         "en": "Promotes the flow of bile from the gallbladder to the intestines."
@@ -256,7 +268,9 @@
         "western:Action"
       ],
       "name": {
-        "en": "Nervine"
+        "en": "Nervine",
+        "zh-Hant": "滋養神經",
+        "zh-Hans": "滋养神经"
       },
       "description": {
         "en": "Supports and nourishes the nervous system. Subcategories: nervine tonic, nervine relaxant, nervine stimulant."
@@ -293,7 +307,9 @@
         "western:Action"
       ],
       "name": {
-        "en": "Anodyne (Analgesic)"
+        "en": "Anodyne (Analgesic)",
+        "zh-Hant": "止痛",
+        "zh-Hans": "止痛"
       },
       "description": {
         "en": "Relieves pain without causing unconsciousness."
@@ -333,7 +349,9 @@
         "western:Action"
       ],
       "name": {
-        "en": "Diuretic"
+        "en": "Diuretic",
+        "zh-Hant": "利尿",
+        "zh-Hans": "利尿"
       },
       "description": {
         "en": "Increases urine production and excretion."
@@ -372,7 +390,9 @@
         "western:Action"
       ],
       "name": {
-        "en": "Expectorant"
+        "en": "Expectorant",
+        "zh-Hant": "祛痰",
+        "zh-Hans": "祛痰"
       },
       "description": {
         "en": "Promotes the expulsion of mucus from the respiratory tract."
@@ -411,7 +431,9 @@
         "western:Action"
       ],
       "name": {
-        "en": "Immunomodulator"
+        "en": "Immunomodulator",
+        "zh-Hant": "免疫調節",
+        "zh-Hans": "免疫调节"
       },
       "description": {
         "en": "Modulates immune function - may enhance or suppress immune activity depending on context."
@@ -450,7 +472,9 @@
         "western:Action"
       ],
       "name": {
-        "en": "Antimicrobial"
+        "en": "Antimicrobial",
+        "zh-Hant": "抗微生物",
+        "zh-Hans": "抗微生物"
       },
       "description": {
         "en": "Inhibits or destroys bacteria, viruses, fungi, or parasites."
@@ -488,7 +512,9 @@
         "western:Action"
       ],
       "name": {
-        "en": "Adaptogen"
+        "en": "Adaptogen",
+        "zh-Hant": "適應原",
+        "zh-Hans": "适应原"
       },
       "description": {
         "en": "Helps the body adapt to stress, normalizes physiological functions, and increases resistance to stressors."
@@ -533,7 +559,9 @@
         "western:Action"
       ],
       "name": {
-        "en": "Emmenagogue"
+        "en": "Emmenagogue",
+        "zh-Hant": "通經",
+        "zh-Hans": "通经"
       },
       "description": {
         "en": "Stimulates menstrual flow and regulates the menstrual cycle."
@@ -572,7 +600,9 @@
         "western:Action"
       ],
       "name": {
-        "en": "Cardiotonic"
+        "en": "Cardiotonic",
+        "zh-Hant": "強心",
+        "zh-Hans": "强心"
       },
       "description": {
         "en": "Strengthens and tones the heart muscle, improves cardiac output."
@@ -615,7 +645,9 @@
         "western:Action"
       ],
       "name": {
-        "en": "Hypotensive"
+        "en": "Hypotensive",
+        "zh-Hant": "降壓",
+        "zh-Hans": "降压"
       },
       "description": {
         "en": "Lowers blood pressure."
@@ -656,7 +688,9 @@
         "western:Action"
       ],
       "name": {
-        "en": "Demulcent"
+        "en": "Demulcent",
+        "zh-Hant": "潤滑",
+        "zh-Hans": "润滑"
       },
       "description": {
         "en": "Soothes and protects mucous membranes by forming a protective film."
@@ -697,7 +731,9 @@
         "western:Action"
       ],
       "name": {
-        "en": "Vulnerary"
+        "en": "Vulnerary",
+        "zh-Hant": "癒傷",
+        "zh-Hans": "愈伤"
       },
       "description": {
         "en": "Promotes wound healing and tissue repair."
@@ -736,7 +772,9 @@
         "western:Action"
       ],
       "name": {
-        "en": "Sedative"
+        "en": "Sedative",
+        "zh-Hant": "鎮靜",
+        "zh-Hans": "镇静"
       },
       "description": {
         "en": "Calms the nervous system, reduces anxiety, and promotes sleep."
@@ -772,7 +810,9 @@
         "western:Action"
       ],
       "name": {
-        "en": "Antispasmodic"
+        "en": "Antispasmodic",
+        "zh-Hant": "抗痙攣",
+        "zh-Hans": "抗痉挛"
       },
       "description": {
         "en": "Relieves muscle spasms and cramping. Also known as spasmolytic."
@@ -810,7 +850,9 @@
         "western:Action"
       ],
       "name": {
-        "en": "Anxiolytic"
+        "en": "Anxiolytic",
+        "zh-Hant": "抗焦慮",
+        "zh-Hans": "抗焦虑"
       },
       "description": {
         "en": "Reduces anxiety without excessive sedation."
@@ -846,7 +888,9 @@
         "western:Action"
       ],
       "name": {
-        "en": "Circulatory Stimulant"
+        "en": "Circulatory Stimulant",
+        "zh-Hant": "促進循環",
+        "zh-Hans": "促进循环"
       },
       "description": {
         "en": "Improves blood circulation and peripheral blood flow."
@@ -882,7 +926,9 @@
         "western:Action"
       ],
       "name": {
-        "en": "Diaphoretic"
+        "en": "Diaphoretic",
+        "zh-Hant": "發汗",
+        "zh-Hans": "发汗"
       },
       "description": {
         "en": "Promotes sweating and helps eliminate toxins through the skin. Also known as sudorific."
