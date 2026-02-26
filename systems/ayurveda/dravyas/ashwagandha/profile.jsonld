@@ -1,0 +1,92 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/ashwagandha",
+  "@type": ["ayurveda:Dravya", "schema:DietarySupplement"],
+
+  "slug": "ashwagandha",
+
+  "name": {
+    "en": "Ashwagandha",
+    "sa": "अश्वगन्धा",
+    "sa-Latn": "Aśvagandhā",
+    "hi": "अश्वगंधा",
+    "zh-Hans": "南非醉茄",
+    "zh-Hant": "南非醉茄"
+  },
+
+  "alternateName": [
+    "Indian Ginseng",
+    "Winter Cherry",
+    "Withania"
+  ],
+
+  "description": {
+    "en": "An adaptogenic herb used in Ayurvedic medicine for stress relief, vitality, and as a rasayana (rejuvenative).",
+    "zh-Hans": "一种阿育吠陀医学中用于缓解压力和增强活力的适应原草药。",
+    "zh-Hant": "一種阿育吠陀醫學中用於緩解壓力和增強活力的適應原草藥。"
+  },
+
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/withania-somnifera"
+  },
+
+  "hasRasa": [
+    { "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/tikta" },
+    { "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/katu" }
+  ],
+
+  "hasGuna": [
+    { "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/laghu" },
+    { "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/snigdha" }
+  ],
+
+  "hasVirya": { "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/ushna" },
+  "hasVipaka": { "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/madhura" },
+
+  "affectsDosha": [
+    { "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/dosha/vata" },
+    { "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/dosha/kapha" }
+  ],
+
+  "hasPrabhava": { "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/prabhava/rasayana" },
+
+  "karma": ["rasayana", "balya", "vajikarana"],
+
+  "ayurvedaTraditionalUsage": {
+    "en": "Used as a rasayana (rejuvenative) for strengthening the body, improving sleep, reducing stress, and enhancing vitality. Primary herb for Vata disorders.",
+    "zh-Hans": "用作拉沙亚纳（回春剂）以增强体质、改善睡眠和减轻压力。",
+    "zh-Hant": "用作拉沙亞納（回春劑）以增強體質、改善睡眠和減輕壓力。"
+  },
+
+  "ayurvedaModernResearch": {
+    "en": "Clinical studies demonstrate adaptogenic effects, cortisol reduction, improved sleep quality, and potential benefits for anxiety and cognitive function."
+  },
+
+  "classicalReferences": [
+    {
+      "text": "Charaka Samhita",
+      "reference": "Rasayana Adhyaya 1.1.62-63"
+    },
+    {
+      "text": "Sushruta Samhita",
+      "reference": "Sutrasthana 29.38"
+    }
+  ],
+
+  "indications": ["stress", "insomnia", "fatigue", "weakness", "anxiety"],
+
+  "contraindications": {
+    "en": "Avoid in hyperthyroidism, pregnancy (in high doses). Use with caution in high Pitta conditions."
+  },
+
+  "dosage": {
+    "en": "3-6g root powder daily; 300-600mg extract (5% withanolides)"
+  },
+
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "license": "CC-BY-4.0",
+    "verified": true
+  }
+}
