@@ -131,7 +131,7 @@ export type {
   WesternHerbalProfile,
   AyurvedaProfile,
   DoshaEffect,
-  PersianProfile,
+  UnaniProfile,
   MongolianProfile,
 } from './profiles/base'
 
@@ -140,29 +140,29 @@ export {
   isTCMProfile,
   isWesternProfile,
   isAyurvedaProfile,
-  isPersianProfile,
+  isUnaniProfile,
   isMongolianProfile,
 } from './profiles/base'
 
 export { SEVANA_KALA_MEANINGS } from './profiles/ayurveda'
 
 // ============================================================================
-// Persian Medicine Profile Types
+// Unani Medicine Profile Types
 // ============================================================================
 
 export type {
-  PersianTemperament,
-  PersianElement,
-  PersianDegree,
-  PersianDosageForm,
-} from './profiles/persian'
+  UnaniTemperament,
+  UnaniElement,
+  UnaniDegree,
+  UnaniDosageForm,
+} from './profiles/unani'
 
 export {
-  isPersianTemperament,
-  isPersianElement,
-  isPersianDegree,
-  PERSIAN_DOSAGE_FORMS,
-} from './profiles/persian'
+  isUnaniTemperament,
+  isUnaniElement,
+  isUnaniDegree,
+  UNANI_DOSAGE_FORMS,
+} from './profiles/unani'
 
 // ============================================================================
 // Mongolian Medicine Profile Types

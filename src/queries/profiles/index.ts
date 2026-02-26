@@ -5,11 +5,11 @@
  * - TCM (Traditional Chinese Medicine)
  * - Western Herbal Medicine
  * - Ayurveda
- * - Persian (Unani/Tibb)
+ * - Unani (Unani/Tibb)
  * - Mongolian
  */
 
-import type { TCMProfile, WesternHerbalProfile, AyurvedaProfile, PersianProfile, MongolianProfile } from '../../types/profiles/base'
+import type { TCMProfile, WesternHerbalProfile, AyurvedaProfile, UnaniProfile, MongolianProfile } from '../../types/profiles/base'
 import type { HerbalPreparation } from '../../types/preparation'
 import type { EntityLoader } from '../core/loader'
 import { extractSlug } from '../core/loader'
@@ -66,14 +66,14 @@ export class ProfileQueries {
   }
 
   // ===========================================================================
-  // Persian Profiles
+  // Unani Profiles
   // ===========================================================================
 
   /**
-   * Get a Persian (TPM) profile by slug.
+   * Get a Unani (TPM) profile by slug.
    */
-  getPersianProfile(slug: string): PersianProfile | null {
-    return this.loader.load<PersianProfile>(`persian/profile/${slug}`)
+  getUnaniProfile(slug: string): UnaniProfile | null {
+    return this.loader.load<UnaniProfile>(`unani/profile/${slug}`)
   }
 
   // ===========================================================================
@@ -98,7 +98,7 @@ export class ProfileQueries {
     tcm?: TCMProfile
     western?: WesternHerbalProfile
     ayurveda?: AyurvedaProfile
-    persian?: PersianProfile
+    unani?: UnaniProfile
     mongolian?: MongolianProfile
   } {
     return {
@@ -111,8 +111,8 @@ export class ProfileQueries {
       ayurveda: prep.hasAyurvedaProfile?.[0]
         ? this.getAyurvedaProfile(extractSlug(prep.hasAyurvedaProfile[0]['@id']))
         : undefined,
-      persian: prep.hasPersianProfile?.[0]
-        ? this.getPersianProfile(extractSlug(prep.hasPersianProfile[0]['@id']))
+      unani: prep.hasUnaniProfile?.[0]
+        ? this.getUnaniProfile(extractSlug(prep.hasUnaniProfile[0]['@id']))
         : undefined,
       mongolian: prep.hasMongolianProfile?.[0]
         ? this.getMongolianProfile(extractSlug(prep.hasMongolianProfile[0]['@id']))

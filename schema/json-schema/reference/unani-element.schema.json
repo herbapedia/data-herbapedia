@@ -1,0 +1,151 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herbapedia.org/schema/json-schema/reference/unani-element.schema.json",
+  "title": "Unani Element",
+  "description": "Traditional Unani Medicine element (عنصر - Unsur). The four fundamental elements (Arkan) are Fire, Air, Water, and Earth. Each element has specific qualities and characteristics that determine the temperament of substances.",
+  "type": "object",
+  "allOf": [
+    { "$ref": "./reference-entity.schema.json" }
+  ],
+  "required": ["@id", "@type", "name"],
+  "properties": {
+    "@id": {
+      "description": "Unique identifier: unani/element/{slug}.",
+      "type": "string",
+      "pattern": "^unani/element/[a-z0-9-]+$",
+      "examples": [
+        "unani/element/fire",
+        "unani/element/air",
+        "unani/element/water",
+        "unani/element/earth"
+      ]
+    },
+    "@type": {
+      "type": "array",
+      "items": { "type": "string" },
+      "contains": { "const": "unani:Element" },
+      "examples": [["unani:Element"]]
+    },
+    "name": {
+      "description": "Element name in Unani and English.",
+      "$ref": "../core/language-map.schema.json",
+      "examples": [{ "fa": "آتش", "en": "Fire" }]
+    },
+    "unaniName": {
+      "description": "Unani name.",
+      "type": "string",
+      "examples": ["آتش", "هوا", "آب", "خاک"]
+    },
+    "transliteration": {
+      "description": "Transliteration.",
+      "type": "string",
+      "examples": ["Atash", "Hava", "Ab", "Khak"]
+    },
+    "arabicName": {
+      "description": "Arabic name.",
+      "type": "string",
+      "examples": ["نار", "هواء", "ماء", "تراب"]
+    },
+    "qualities": {
+      "description": "Primary qualities of this element.",
+      "type": "object",
+      "properties": {
+        "heat": {
+          "type": "string",
+          "enum": ["hot", "cold"]
+        },
+        "moisture": {
+          "type": "string",
+          "enum": ["wet", "dry"]
+        }
+      }
+    },
+    "associatedTemperament": {
+      "description": "The temperament produced by this element.",
+      "$ref": "../core/iri-reference.schema.json"
+    },
+    "associatedHumor": {
+      "description": "Associated humoral fluid.",
+      "type": "string",
+      "enum": ["dam", "balgham", "safra", "sauda"]
+    },
+    "characteristics": {
+      "description": "Characteristics of this element.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "physicalManifestations": {
+      "description": "Physical manifestations in the body.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "psychologicalManifestations": {
+      "description": "Psychological manifestations.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "organs": {
+      "description": "Organs associated with this element.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "seasons": {
+      "description": "Seasons associated with this element.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "ages": {
+      "description": "Life stages associated with this element.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "timesOfDay": {
+      "description": "Times of day associated with this element.",
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": true,
+  "_documentation": {
+    "iriPattern": "unani/element/{slug}",
+    "directory": "systems/unani/reference/elements.jsonld",
+    "fourElements": {
+      "fire": {
+        "unani": "آتش",
+        "qualities": "Hot and Dry",
+        "humor": "Yellow Bile (صفرا)",
+        "characteristics": ["Transformation", "Light", "Heat"],
+        "organs": ["Liver", "Heart"],
+        "season": "Summer",
+        "age": "Youth"
+      },
+      "air": {
+        "unani": "هوا",
+        "qualities": "Hot and Wet",
+        "humor": "Blood (خون)",
+        "characteristics": ["Movement", "Expansion", "Lightness"],
+        "organs": ["Heart", "Lungs"],
+        "season": "Spring",
+        "age": "Childhood"
+      },
+      "water": {
+        "unani": "آب",
+        "qualities": "Cold and Wet",
+        "humor": "Phlegm (بلغم)",
+        "characteristics": ["Flow", "Cohesion", "Nourishment"],
+        "organs": ["Brain", "Kidneys"],
+        "season": "Winter",
+        "age": "Old age"
+      },
+      "earth": {
+        "unani": "خاک",
+        "qualities": "Cold and Dry",
+        "humor": "Black Bile (سودا)",
+        "characteristics": ["Stability", "Solidity", "Structure"],
+        "organs": ["Spleen", "Bones"],
+        "season": "Autumn",
+        "age": "Adulthood"
+      }
+    }
+  }
+}

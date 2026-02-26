@@ -206,7 +206,7 @@ export const IRI_NAMESPACES = {
   TCM_PROFILE: `${HERBAPEDIA_BASE_IRI}${ENTITY_PREFIX}profile/tcm`,
   WESTERN_PROFILE: `${HERBAPEDIA_BASE_IRI}${ENTITY_PREFIX}profile/western`,
   AYURVEDA_PROFILE: `${HERBAPEDIA_BASE_IRI}${ENTITY_PREFIX}profile/ayurveda`,
-  PERSIAN_PROFILE: `${HERBAPEDIA_BASE_IRI}${ENTITY_PREFIX}profile/persian`,
+  UNANI_PROFILE: `${HERBAPEDIA_BASE_IRI}${ENTITY_PREFIX}profile/unani`,
   MONGOLIAN_PROFILE: `${HERBAPEDIA_BASE_IRI}${ENTITY_PREFIX}profile/mongolian`,
 
   // TCM reference data
@@ -227,10 +227,10 @@ export const IRI_NAMESPACES = {
   AYURVEDA_VIPAKA: `${HERBAPEDIA_BASE_IRI}reference/ayurveda/vipaka`,
   AYURVEDA_DOSHA: `${HERBAPEDIA_BASE_IRI}reference/ayurveda/dosha`,
 
-  // Persian reference data
-  PERSIAN_TEMPERAMENT: `${HERBAPEDIA_BASE_IRI}reference/persian/temperament`,
-  PERSIAN_ELEMENT: `${HERBAPEDIA_BASE_IRI}reference/persian/element`,
-  PERSIAN_DEGREE: `${HERBAPEDIA_BASE_IRI}reference/persian/degree`,
+  // Unani reference data
+  UNANI_TEMPERAMENT: `${HERBAPEDIA_BASE_IRI}reference/unani/temperament`,
+  UNANI_ELEMENT: `${HERBAPEDIA_BASE_IRI}reference/unani/element`,
+  UNANI_DEGREE: `${HERBAPEDIA_BASE_IRI}reference/unani/degree`,
 
   // Mongolian reference data
   MONGOLIAN_ELEMENT: `${HERBAPEDIA_BASE_IRI}reference/mongolian/element`,

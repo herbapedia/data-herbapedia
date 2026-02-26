@@ -1,0 +1,124 @@
+# Species SHACL Shapes for Herbapedia Knowledge Graph
+#
+# This file defines validation rules for botanical species nodes.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix herbapedia: <https://www.herbapedia.org/ontology/> .
+@prefix graph: <https://www.herbapedia.org/graph/> .
+
+# =============================================================================
+# Species Node Shape
+# =============================================================================
+
+herbapedia:SpeciesShape
+  a sh:NodeShape ;
+  rdfs:label "Species Node Shape" ;
+  rdfs:comment "Validates botanical species nodes in the knowledge graph" ;
+  sh:targetClass schema:Plant, herbapedia:MedicinalPlant ;
+
+  # Must conform to base shapes
+  sh:node herbapedia:GraphNodeShape ;
+  sh:node herbapedia:NamedEntityShape ;
+  sh:node herbapedia:ReferenceableShape ;
+
+  # IRI must follow species pattern
+  sh:pattern "^https://www\\.herbapedia\\.org/graph/species/[a-z0-9-]+$" ;
+
+  # Scientific name is required
+  sh:property [
+    sh:path dwc:scientificName ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "Species must have exactly one scientific name" ;
+  ] ;
+
+  # Taxonomic rank (optional but recommended)
+  sh:property [
+    sh:path dwc:taxonRank ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:in ("species" "subspecies" "variety" "form") ;
+    sh:severity sh:Warning ;
+  ] ;
+
+  # Family (recommended)
+  sh:property [
+    sh:path dwc:family ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:severity sh:Info ;
+  ] ;
+
+  # Genus (recommended)
+  sh:property [
+    sh:path dwc:genus ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:severity sh:Info ;
+  ] ;
+
+  # External identifiers
+  sh:property [
+    sh:path herbapedia:gbifId ;
+    sh:datatype xsd:integer ;
+    sh:maxCount 1 ;
+  ] ;
+
+  sh:property [
+    sh:path schema:sameAs ;
+    sh:node herbapedia:IRIReferenceShape ;
+  ] ;
+
+  # Chemical composition references
+  sh:property [
+    sh:path herbapedia:containsChemical ;
+    sh:node herbapedia:IRIReferenceShape ;
+    sh:class herbapedia:Chemical ;
+  ] ;
+
+  # Part references
+  sh:property [
+    sh:path herbapedia:hasPart ;
+    sh:node herbapedia:IRIReferenceShape ;
+    sh:class herbapedia:Part ;
+  ] .
+
+# =============================================================================
+# Medicinal Plant Shape (extends Species)
+# =============================================================================
+
+herbapedia:MedicinalPlantShape
+  a sh:NodeShape ;
+  rdfs:label "Medicinal Plant Shape" ;
+  rdfs:comment "Validates medicinal plant species with traditional medicine uses" ;
+  sh:targetClass herbapedia:MedicinalPlant ;
+
+  # Must be a valid species
+  sh:node herbapedia:SpeciesShape ;
+
+  # Must have at least one profile reference (TCM, Ayurveda, or Western)
+  sh:or (
+    [ sh:property [
+        sh:path herbapedia:hasTcmProfile ;
+        sh:minCount 1 ;
+      ]
+    ]
+    [ sh:property [
+        sh:path herbapedia:hasAyurvedaProfile ;
+        sh:minCount 1 ;
+      ]
+    ]
+    [ sh:property [
+        sh:path herbapedia:hasWesternProfile ;
+        sh:minCount 1 ;
+      ]
+    ]
+  ) ;
+  sh:message "Medicinal plants should have at least one traditional medicine profile" ;
+  sh:severity sh:Warning .

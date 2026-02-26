@@ -84,7 +84,7 @@ export {
   isTCMProfile as isTCMProfileConfig,
   isWesternProfile as isWesternProfileConfig,
   isAyurvedaProfile as isAyurvedaProfileConfig,
-  isPersianProfile as isPersianProfileConfig,
+  isUnaniProfile as isUnaniProfileConfig,
   isMongolianProfile as isMongolianProfileConfig,
   isChemicalCompound as isChemicalCompoundConfig,
   isHerbalPreparation as isHerbalPreparationConfig,
@@ -99,6 +99,7 @@ export type { Result, Ok, Err } from './types/index'
 // Query modules
 export { BotanicalQueries } from './queries/botanical'
 export { PreparationQueries } from './queries/preparation'
+export type { ImageResult } from './queries/preparation'
 export { ProfileQueries } from './queries/profiles/index'
 export { SearchIndex } from './queries/search'
 export type { SearchResult, SearchIndexOptions } from './queries/search'

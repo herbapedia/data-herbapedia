@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herbapedia.org/schema/json-schema/reference/unani-temperament.schema.json",
+  "title": "Unani Temperament",
+  "description": "Traditional Unani Medicine temperament (مزاج - Mizaj). The four primary temperaments result from combinations of Hot/Cold with Wet/Dry. Each temperament has specific physiological and psychological characteristics.",
+  "type": "object",
+  "allOf": [
+    { "$ref": "./reference-entity.schema.json" }
+  ],
+  "required": ["@id", "@type", "name"],
+  "properties": {
+    "@id": {
+      "description": "Unique identifier: unani/temperament/{slug}.",
+      "type": "string",
+      "pattern": "^unani/temperament/[a-z0-9-]+$",
+      "examples": [
+        "unani/temperament/hot-dry",
+        "unani/temperament/hot-wet",
+        "unani/temperament/cold-dry",
+        "unani/temperament/cold-wet"
+      ]
+    },
+    "@type": {
+      "type": "array",
+      "items": { "type": "string" },
+      "contains": { "const": "unani:Temperament" },
+      "examples": [["unani:Temperament"]]
+    },
+    "name": {
+      "description": "Temperament name in Unani and English.",
+      "$ref": "../core/language-map.schema.json",
+      "examples": [{ "fa": "گرم و خشک", "en": "Hot and Dry" }]
+    },
+    "unaniName": {
+      "description": "Unani name.",
+      "type": "string",
+      "examples": ["گرم و خشک", "گرم و تر", "سرد و خشک", "سرد و تر"]
+    },
+    "transliteration": {
+      "description": "Transliteration.",
+      "type": "string",
+      "examples": ["Garm-o-Khoshk", "Garm-o-Tar", "Sard-o-Khoshk", "Sard-o-Tar"]
+    },
+    "heat": {
+      "description": "Heat quality.",
+      "type": "string",
+      "enum": ["hot", "cold"]
+    },
+    "moisture": {
+      "description": "Moisture quality.",
+      "type": "string",
+      "enum": ["wet", "dry"]
+    },
+    "associatedElement": {
+      "description": "Primary associated element.",
+      "$ref": "../core/iri-reference.schema.json"
+    },
+    "physiologicalCharacteristics": {
+      "description": "Physical characteristics of this temperament.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "psychologicalCharacteristics": {
+      "description": "Mental/emotional characteristics.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "associatedHumor": {
+      "description": "Associated humoral fluid (Akhlat).",
+      "type": "string",
+      "enum": ["dam", "balgham", "safra", "sauda"],
+      "_documentation": {
+        "dam": "Blood (خون) - Hot and Wet",
+        "balgham": "Phlegm (بلغم) - Cold and Wet",
+        "safra": "Yellow Bile (صفرا) - Hot and Dry",
+        "sauda": "Black Bile (سودا) - Cold and Dry"
+      }
+    },
+    "indications": {
+      "description": "Conditions where this temperament is beneficial.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "contraindications": {
+      "description": "Conditions where this temperament should be avoided.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "balancingFoods": {
+      "description": "Foods that balance this temperament.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "oppositeTemperament": {
+      "description": "The opposite temperament.",
+      "$ref": "../core/iri-reference.schema.json"
+    },
+    "tcmEquivalent": {
+      "description": "Approximate TCM nature equivalent.",
+      "$ref": "../core/iri-reference.schema.json"
+    },
+    "ayurvedaEquivalent": {
+      "description": "Approximate Ayurvedic concept equivalent.",
+      "type": "string"
+    }
+  },
+  "additionalProperties": true,
+  "_documentation": {
+    "iriPattern": "unani/temperament/{slug}",
+    "directory": "systems/unani/reference/temperaments.jsonld",
+    "fourTemperaments": {
+      "hot-dry": {
+        "unani": "گرم و خشک",
+        "element": "Fire (آتش)",
+        "humor": "Yellow Bile (صفرا)",
+        "characteristics": ["Quick thinking", "Sharp memory", "Slender build", "Warm skin"],
+        "excess": "Anger, inflammation, dryness"
+      },
+      "hot-wet": {
+        "unani": "گرم و تر",
+        "element": "Air (هوا)",
+        "humor": "Blood (خون)",
+        "characteristics": ["Social", "Optimistic", "Rosy complexion", "Good digestion"],
+        "excess": "Excess heat, moisture, inflammation"
+      },
+      "cold-dry": {
+        "unani": "سرد و خشک",
+        "element": "Earth (خاک)",
+        "humor": "Black Bile (سودا)",
+        "characteristics": ["Analytical", "Detail-oriented", "Thin", "Cool skin"],
+        "excess": "Anxiety, depression, dryness"
+      },
+      "cold-wet": {
+        "unani": "سرد و تر",
+        "element": "Water (آب)",
+        "humor": "Phlegm (بلغم)",
+        "characteristics": ["Calm", "Patient", "Sturdy build", "Cool moist skin"],
+        "excess": "Lethargy, weight gain, congestion"
+      }
+    }
+  }
+}

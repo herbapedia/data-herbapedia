@@ -79,11 +79,11 @@
       "@container": "@set",
       "_comment": "Ayurvedic interpretation"
     },
-    "hasPersianProfile": {
-      "@id": "herbal:hasPersianProfile",
+    "hasUnaniProfile": {
+      "@id": "herbal:hasUnaniProfile",
       "@type": "@id",
       "@container": "@set",
-      "_comment": "Persian (TPM) interpretation"
+      "_comment": "Unani (TPM) interpretation"
     },
     "hasMongolianProfile": {
       "@id": "herbal:hasMongolianProfile",

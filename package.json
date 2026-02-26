@@ -10,6 +10,10 @@
       "types": "./src/index.ts",
       "default": "./src/index.ts"
     },
+    "./graph": {
+      "types": "./src/graph/index.ts",
+      "default": "./src/graph/index.ts"
+    },
     "./types": {
       "types": "./types/index.ts",
       "default": "./types/index.ts"
@@ -22,6 +26,8 @@
       "types": "./src/dataset.ts",
       "default": "./src/dataset.ts"
     },
+    "./api/v1/graph/*": "./api/v1/graph/*.jsonld",
+    "./api/v1/node/*": "./api/v1/node/*/*.jsonld",
     "./schema/context/*": "./schema/context/*.jsonld",
     "./schema/json-schema/*": "./schema/json-schema/*.json",
     "./entities/*": "./entities/*",
@@ -34,11 +40,14 @@
     "entities",
     "systems",
     "media",
-    "dist"
+    "dist",
+    "api/v1"
   ],
   "scripts": {
     "validate": "node scripts/validate.js",
     "build-index": "node scripts/build-index.js",
+    "build-graph": "node --import tsx scripts/build-graph.ts",
+    "build": "npm run build-index && npm run build-graph",
     "typecheck": "tsc --noEmit"
   },
   "keywords": [
@@ -52,7 +61,8 @@
     "linked-data",
     "semantic-web",
     "botanical",
-    "pharmacognosy"
+    "pharmacognosy",
+    "knowledge-graph"
   ],
   "author": "Herbapedia",
   "license": "CC-BY-SA-4.0",
@@ -69,6 +79,7 @@
     "@types/node": "^20.0.0",
     "ajv": "^8.12.0",
     "jsonld": "^8.3.2",
+    "tsx": "^4.7.0",
     "typescript": "^5.3.0",
     "yaml": "^2.8.2"
   },

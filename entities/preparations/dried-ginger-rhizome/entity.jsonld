@@ -83,9 +83,9 @@
       "@id": "https://www.herbapedia.org/system/ayurveda/profile/nagara"
     }
   ],
-  "hasPersianProfile": [
+  "hasUnaniProfile": [
     {
-      "@id": "https://www.herbapedia.org/system/persian/profile/zanjabil"
+      "@id": "https://www.herbapedia.org/system/unani/profile/zanjabil"
     }
   ],
   "hasMongolianProfile": [

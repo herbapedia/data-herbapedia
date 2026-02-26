@@ -2,7 +2,7 @@
  * Base types for Medicine System Profiles.
  *
  * Medicine system profiles are INTERPRETATIONS of HerbalPreparations through
- * different traditional medicine frameworks (TCM, Western, Ayurveda, Persian, Mongolian).
+ * different traditional medicine frameworks (TCM, Western, Ayurveda, Unani, Mongolian).
  *
  * KEY PRINCIPLE: A single HerbalPreparation can have MULTIPLE system profiles.
  * They are NOT mutually exclusive.
@@ -17,7 +17,7 @@
  *     ├── TCMProfile
  *     ├── WesternHerbalProfile
  *     ├── AyurvedaProfile
- *     ├── PersianProfile
+ *     ├── UnaniProfile
  *     └── MongolianProfile
  * ```
  */
@@ -28,7 +28,7 @@ import type { Entity, IRIReference, LanguageMap } from '../core'
 import type { TCMProfile } from './tcm'
 import type { WesternHerbalProfile } from './western'
 import type { AyurvedaProfile } from './ayurveda'
-import type { PersianProfile } from './persian'
+import type { UnaniProfile } from './unani'
 import type { MongolianProfile } from './mongolian'
 
 // ============================================================================
@@ -74,7 +74,7 @@ export function isMedicineSystemProfile(entity: Entity): entity is MedicineSyste
     'tcm:HerbProfile',
     'western:HerbProfile',
     'ayurveda:DravyaProfile',
-    'persian:DrugProfile',
+    'unani:DrugProfile',
     'mongolian:HerbProfile'
   ]
   return entity['@type'].some(t => profileTypes.includes(t))
@@ -102,10 +102,10 @@ export function isAyurvedaProfile(entity: Entity): entity is AyurvedaProfile {
 }
 
 /**
- * Check if an entity is a Persian profile.
+ * Check if an entity is a Unani profile.
  */
-export function isPersianProfile(entity: Entity): entity is PersianProfile {
-  return entity['@type'].includes('persian:DrugProfile')
+export function isUnaniProfile(entity: Entity): entity is UnaniProfile {
+  return entity['@type'].includes('unani:DrugProfile')
 }
 
 /**
@@ -144,13 +144,13 @@ export type { WesternHerbalProfile } from './western'
 export type { AyurvedaProfile, DoshaEffect } from './ayurveda'
 
 // ============================================================================
-// Persian Profile (re-export for convenience)
+// Unani Profile (re-export for convenience)
 // ============================================================================
 
 /**
- * Persian Profile type placeholder - defined in ./persian.ts
+ * Unani Profile type placeholder - defined in ./unani.ts
  */
-export type { PersianProfile, PersianTemperament as TemperamentType } from './persian'
+export type { UnaniProfile, UnaniTemperament as TemperamentType } from './unani'
 
 // ============================================================================
 // Mongolian Profile (re-export for convenience)

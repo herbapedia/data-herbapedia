@@ -56,7 +56,7 @@ const ENTITY_SCHEMA_MAP = {
   'TCMProfile': { required: ['pinyin', 'hasCategory', 'hasNature', 'hasFlavor'] },
   'WesternHerbalProfile': { required: ['name', 'hasAction'] },
   'AyurvedaProfile': { required: ['sanskritName', 'hasRasa', 'hasVirya', 'hasVipaka'] },
-  'PersianProfile': { required: ['persianName', 'hasTemperament'] },
+  'UnaniProfile': { required: ['unaniName', 'hasTemperament'] },
   'MongolianProfile': { required: ['mongolianName', 'affectsRoots'] },
 }
 
@@ -105,7 +105,7 @@ function detectEntityType(data) {
     if (type.includes('tcm:Herb')) return 'TCMProfile'
     if (type.includes('western:Herb')) return 'WesternHerbalProfile'
     if (type.includes('ayurveda:Dravya')) return 'AyurvedaProfile'
-    if (type.includes('persian:Drug')) return 'PersianProfile'
+    if (type.includes('unani:Drug')) return 'UnaniProfile'
     if (type.includes('mongolian:Herb')) return 'MongolianProfile'
     if (type.includes('botany:PlantSpecies')) return 'PlantSpecies'
     if (type.includes('mycology:FungalSpecies')) return 'FungalSpecies'
@@ -666,7 +666,7 @@ async function main() {
     'systems/tcm/reference',
     'systems/western/reference',
     'systems/ayurveda/reference',
-    'systems/persian/reference',
+    'systems/unani/reference',
     'systems/mongolian/reference',
   ]
 

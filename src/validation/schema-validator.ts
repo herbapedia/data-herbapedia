@@ -59,7 +59,7 @@ const ENTITY_SCHEMA_MAP: Record<string, string> = {
   'TCMProfile': 'profiles/tcm-profile.schema.json',
   'WesternHerbalProfile': 'profiles/western-profile.schema.json',
   'AyurvedaProfile': 'profiles/ayurveda-profile.schema.json',
-  'PersianProfile': 'profiles/persian-profile.schema.json',
+  'UnaniProfile': 'profiles/unani-profile.schema.json',
   'MongolianProfile': 'profiles/mongolian-profile.schema.json',
 
   // Reference entities
@@ -174,7 +174,7 @@ export class SchemaValidator {
       if (type.includes('tcm:Herb') || type.includes('tcm:HerbProfile')) return 'TCMProfile'
       if (type.includes('western:Herb') || type.includes('western:HerbProfile')) return 'WesternHerbalProfile'
       if (type.includes('ayurveda:Dravya')) return 'AyurvedaProfile'
-      if (type.includes('persian:Drug')) return 'PersianProfile'
+      if (type.includes('unani:Drug')) return 'UnaniProfile'
       if (type.includes('mongolian:Herb')) return 'MongolianProfile'
       if (type.includes('botany:PlantSpecies')) return 'PlantSpecies'
       if (type.includes('botany:PlantPart')) return 'PlantPart'
@@ -313,7 +313,7 @@ export class SchemaValidator {
       'profiles/tcm',
       'profiles/western',
       'profiles/ayurveda',
-      'profiles/persian',
+      'profiles/unani',
       'profiles/mongolian',
     ]
 

@@ -26,6 +26,9 @@
   },
   "hasFlavor": [
     {
+      "@id": "https://www.herbapedia.org/system/tcm/flavor/sour"
+    },
+    {
       "@id": "https://www.herbapedia.org/system/tcm/flavor/sweet"
     }
   ],

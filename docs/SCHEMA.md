@@ -509,7 +509,7 @@ The central entity connecting botanical sources to system-specific profiles.
 | `preparation/{slug}` | `preparation/dried-ginger-rhizome` | Herbal preparation |
 | `tcm/profile/{slug}` | `tcm/profile/dried-ginger` | TCM profile |
 | `tcm/nature/{value}` | `tcm/nature/hot` | TCM thermal nature |
-| `tcm/flavor/{value}` | `tcm/flavor/pungent` | TCM flavor |
+| `tcm/flavor/{value}` | `tcm/flavor/acrid` | TCM flavor |
 | `tcm/meridian/{value}` | `tcm/meridian/spleen` | TCM meridian |
 | `tcm/category/{value}` | `tcm/category/warm-interior` | TCM category |
 | `western/profile/{slug}` | `western/profile/ginger` | Western profile |
@@ -521,7 +521,7 @@ The central entity connecting botanical sources to system-specific profiles.
 | `ayurveda/virya/{value}` | `ayurveda/virya/heating` | Ayurveda potency |
 | `ayurveda/vipaka/{value}` | `ayurveda/vipaka/pungent` | Ayurveda post-digestive |
 | `ayurveda/dosha/{value}` | `ayurveda/dosha/vata` | Ayurveda dosha |
-| `persian/profile/{slug}` | `persian/profile/zanjabil` | Persian profile |
+| `unani/profile/{slug}` | `unani/profile/zanjabil` | Unani profile |
 | `persian/temperament/{value}` | `persian/temperament/hot-dry` | Persian temperament |
 | `mongolian/profile/{slug}` | `mongolian/profile/gaa` | Mongolian profile |
 | `mongolian/root/{value}` | `mongolian/root/heyi` | Mongolian root |

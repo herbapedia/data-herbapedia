@@ -6,6 +6,7 @@
 
 export { BotanicalQueries } from './botanical'
 export { PreparationQueries } from './preparation'
+export type { ImageResult } from './preparation'
 export { ProfileQueries } from './profiles/index'
 export { SearchIndex } from './search'
 export type { SearchResult, SearchIndexOptions } from './search'

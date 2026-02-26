@@ -183,7 +183,7 @@
         "en": "Medicine System Profile",
         "zh-Hant": "醫藥系統檔案"
       },
-      "rdfs:comment": "Abstract base class for all medicine system-specific herb profiles (Modern Medicine, TCM, Western, Ayurveda, Persian, Mongolian)."
+      "rdfs:comment": "Abstract base class for all medicine system-specific herb profiles (Modern Medicine, TCM, Western, Ayurveda, Unani, Mongolian)."
     },
 
     // ========================================================================

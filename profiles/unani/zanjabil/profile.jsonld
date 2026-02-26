@@ -1,0 +1,123 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/unani.jsonld",
+  "@id": "https://www.herbapedia.org/system/unani/profile/zanjabil",
+  "@type": [
+    "unani:Drug",
+    "schema:DietarySupplement"
+  ],
+  "profiles": {
+    "@id": "https://www.herbapedia.org/entity/preparation/dried-ginger-rhizome"
+  },
+  "name": {
+    "en": "Ginger",
+    "fa": "زنجبیل",
+    "ar": "زنجبيل"
+  },
+  "unaniName": "زنجبیل",
+  "unaniTransliteration": "Zanjabil",
+  "arabicName": "زنجبيل",
+  "derivedFromPlant": {
+    "@id": "https://www.herbapedia.org/entity/botanical/species/ginger"
+  },
+  "hasTemperament": {
+    "@id": "https://www.herbapedia.org/system/unani/profile/temperament/hot-dry"
+  },
+  "temperamentDegree": 3,
+  "hasElement": [
+    {
+      "@id": "https://www.herbapedia.org/system/unani/profile/element/fire"
+    }
+  ],
+  "mizajConstituents": [
+    {
+      "substance": "Essential oils",
+      "temperament": {
+        "@id": "https://www.herbapedia.org/system/unani/profile/temperament/hot-dry"
+      },
+      "proportion": "dominant"
+    }
+  ],
+  "actions": [
+    "Mufarrih (refreshes)",
+    "Muqawwi (strengthens)",
+    "Hazim (digestive)",
+    "Mulattif (attenuates)",
+    "Muhallil (resolves)"
+  ],
+  "unaniFunctions": {
+    "en": "Warming, digestive, anti-flatulent, stimulant. Strengthens the heart and liver, improves appetite, aids digestion of heavy foods.",
+    "fa": "گرم‌کننده، گوارا، ضد نفخ، مقوی قلب و کبد"
+  },
+  "indications": [
+    "Weak digestion",
+    "Cold stomach",
+    "Loss of appetite",
+    "Flatulence and bloating",
+    "Phlegm congestion",
+    "Cold extremities",
+    "Weak heart",
+    "Sexual weakness"
+  ],
+  "affectedOrgans": [
+    "Stomach",
+    "Liver",
+    "Heart"
+  ],
+  "contraindications": {
+    "en": "Hot temperament conditions, fever, inflammation, bleeding disorders, gallbladder stones",
+    "fa": "مزاج گرم، تب، التهاب، خونریزی"
+  },
+  "adverseEffects": {
+    "en": "Excessive use may cause headache, irritability, and hot flashes in those with hot temperament"
+  },
+  "corrective": [
+    "Sekanjabin (oxymel)",
+    "Vinegar",
+    "Pomegranate juice"
+  ],
+  "substitute": [
+    "Long pepper",
+    "Black pepper"
+  ],
+  "dosage": {
+    "en": "Powder: 1-3g daily; Infusion: 0.5-1g per cup",
+    "fa": "پودر: ۱ تا ۳ گرم روزانه"
+  },
+  "dosageForm": [
+    "Naqu",
+    "Zarur",
+    "Majun",
+    "Sharbat"
+  ],
+  "administrationRoute": "oral",
+  "classicalReferences": [
+    {
+      "text": "Al-Qānūn fī al-Ṭibb",
+      "author": "Ibn Sina (Avicenna)",
+      "reference": "Book II, Simple Drugs",
+      "quote": "زنجبیل گرم و خشک در درجه سوم است، مقوی معده و هاضم غذا"
+    },
+    {
+      "text": "Makhzan al-Adwiya",
+      "author": "Aghili Shirazi",
+      "reference": "",
+      "quote": "مقوی قلب و کبد، گوارا، ضد نفخ"
+    },
+    {
+      "text": "Zad al-Musafirin",
+      "author": "Al-Jurjani",
+      "reference": "",
+      "quote": "برای ضعف معده و سوءهاضمه مفید است"
+    }
+  ],
+  "modernResearch": {
+    "en": "Contemporary studies confirm digestive, anti-inflammatory, and antioxidant properties. The hot-dry temperament aligns with its thermogenic and metabolic stimulating effects."
+  },
+  "nomadicUsage": {
+    "en": "Used by nomadic peoples to preserve food, aid digestion of heavy meat dishes, and provide warmth in cold climates"
+  },
+  "provenance": {
+    "created": "2024-01-15",
+    "source": "Canon of Medicine, Makhzan al-Adwiya"
+  }
+}

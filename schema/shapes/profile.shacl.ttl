@@ -1,0 +1,271 @@
+# Profile SHACL Shapes for Herbapedia Knowledge Graph
+#
+# This file defines base validation rules for medicinal profile nodes.
+# System-specific profiles (TCM, Ayurveda, Western) extend this base shape.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix schema: <https://schema.org/> .
+@prefix herbapedia: <https://www.herbapedia.org/ontology/> .
+@prefix graph: <https://www.herbapedia.org/graph/> .
+
+# =============================================================================
+# Base Profile Node Shape
+# =============================================================================
+
+herbapedia:ProfileShape
+  a sh:NodeShape ;
+  rdfs:label "Profile Node Shape" ;
+  rdfs:comment "Base shape for all medicinal profile nodes" ;
+  sh:targetClass herbapedia:Profile, herbapedia:MedicinalProfile ;
+
+  # Must conform to base shapes
+  sh:node herbapedia:GraphNodeShape ;
+  sh:node herbapedia:NamedEntityShape ;
+  sh:node herbapedia:ReferenceableShape ;
+
+  # Medical system is required
+  sh:property [
+    sh:path herbapedia:medicalSystem ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:in ("tcm" "ayurveda" "western" "unani" "mongolian" "modern") ;
+    sh:message "Profile must have a valid medical system" ;
+  ] ;
+
+  # Derived from plant/part reference (required)
+  sh:property [
+    sh:path herbapedia:derivedFrom ;
+    sh:node herbapedia:IRIReferenceShape ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "Profile must be derived from exactly one plant or part" ;
+  ] ;
+
+  # Traditional usage
+  sh:property [
+    sh:path herbapedia:traditionalUsage ;
+    sh:severity sh:Warning ;
+    sh:message "Profiles should include traditional usage information" ;
+  ] ;
+
+  # Modern research
+  sh:property [
+    sh:path herbapedia:modernResearch ;
+    sh:severity sh:Info ;
+  ] ;
+
+  # Safety considerations
+  sh:property [
+    sh:path herbapedia:safetyConsiderations ;
+    sh:severity sh:Warning ;
+  ] ;
+
+  # Contraindications
+  sh:property [
+    sh:path herbapedia:contraindications ;
+    sh:severity sh:Warning ;
+  ] .
+
+# =============================================================================
+# TCM Profile Shape
+# =============================================================================
+
+herbapedia:TcmProfileShape
+  a sh:NodeShape ;
+  rdfs:label "TCM Profile Shape" ;
+  rdfs:comment "Validates Traditional Chinese Medicine herb profiles" ;
+  sh:targetClass herbapedia:TcmProfile, herbapedia:TcmHerb ;
+
+  # Must be a valid profile
+  sh:node herbapedia:ProfileShape ;
+
+  # IRI must follow TCM profile pattern
+  sh:pattern "^https://www\\.herbapedia\\.org/graph/profile/tcm/[a-z0-9-]+$" ;
+
+  # Medical system must be TCM
+  sh:property [
+    sh:path herbapedia:medicalSystem ;
+    sh:hasValue "tcm" ;
+  ] ;
+
+  # Pinyin name (required)
+  sh:property [
+    sh:path herbapedia:pinyin ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "TCM profile must have a pinyin name" ;
+  ] ;
+
+  # Nature (required)
+  sh:property [
+    sh:path herbapedia:hasNature ;
+    sh:node herbapedia:IRIReferenceShape ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "TCM profile must have exactly one thermal nature" ;
+  ] ;
+
+  # Flavors (at least one required)
+  sh:property [
+    sh:path herbapedia:hasFlavor ;
+    sh:node herbapedia:IRIReferenceShape ;
+    sh:minCount 1 ;
+    sh:message "TCM profile must have at least one flavor" ;
+  ] ;
+
+  # Meridians (at least one recommended)
+  sh:property [
+    sh:path herbapedia:entersMeridian ;
+    sh:node herbapedia:IRIReferenceShape ;
+    sh:minCount 1 ;
+    sh:severity sh:Warning ;
+    sh:message "TCM profile should enter at least one meridian" ;
+  ] ;
+
+  # Category (recommended)
+  sh:property [
+    sh:path herbapedia:hasCategory ;
+    sh:node herbapedia:IRIReferenceShape ;
+    sh:maxCount 1 ;
+    sh:severity sh:Warning ;
+  ] ;
+
+  # TCM functions
+  sh:property [
+    sh:path herbapedia:tcmFunctions ;
+    sh:minCount 1 ;
+    sh:severity sh:Warning ;
+    sh:message "TCM profile should describe its functions" ;
+  ] .
+
+# =============================================================================
+# Ayurveda Profile Shape
+# =============================================================================
+
+herbapedia:AyurvedaProfileShape
+  a sh:NodeShape ;
+  rdfs:label "Ayurveda Profile Shape" ;
+  rdfs:comment "Validates Ayurvedic medicine dravya profiles" ;
+  sh:targetClass herbapedia:AyurvedaProfile, herbapedia:AyurvedaDravya ;
+
+  # Must be a valid profile
+  sh:node herbapedia:ProfileShape ;
+
+  # IRI must follow Ayurveda profile pattern
+  sh:pattern "^https://www\\.herbapedia\\.org/graph/profile/ayurveda/[a-z0-9-]+$" ;
+
+  # Medical system must be Ayurveda
+  sh:property [
+    sh:path herbapedia:medicalSystem ;
+    sh:hasValue "ayurveda" ;
+  ] ;
+
+  # Sanskrit name (recommended)
+  sh:property [
+    sh:path herbapedia:sanskritName ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:severity sh:Warning ;
+    sh:message "Ayurveda profile should have a Sanskrit name" ;
+  ] ;
+
+  # Rasa (taste) - required
+  sh:property [
+    sh:path herbapedia:hasRasa ;
+    sh:node herbapedia:IRIReferenceShape ;
+    sh:minCount 1 ;
+    sh:message "Ayurveda profile must have at least one rasa (taste)" ;
+  ] ;
+
+  # Virya (potency) - required
+  sh:property [
+    sh:path herbapedia:hasVirya ;
+    sh:node herbapedia:IRIReferenceShape ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "Ayurveda profile must have exactly one virya (potency)" ;
+  ] ;
+
+  # Vipaka (post-digestive taste) - required
+  sh:property [
+    sh:path herbapedia:hasVipaka ;
+    sh:node herbapedia:IRIReferenceShape ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "Ayurveda profile must have exactly one vipaka" ;
+  ] ;
+
+  # Guna (qualities) - recommended
+  sh:property [
+    sh:path herbapedia:hasGuna ;
+    sh:node herbapedia:IRIReferenceShape ;
+    sh:minCount 1 ;
+    sh:severity sh:Warning ;
+  ] ;
+
+  # Dosha effects - recommended
+  sh:property [
+    sh:path herbapedia:effectsDosha ;
+    sh:node herbapedia:IRIReferenceShape ;
+    sh:severity sh:Info ;
+  ] .
+
+# =============================================================================
+# Western Profile Shape
+# =============================================================================
+
+herbapedia:WesternProfileShape
+  a sh:NodeShape ;
+  rdfs:label "Western Profile Shape" ;
+  rdfs:comment "Validates Western herbal medicine profiles" ;
+  sh:targetClass herbapedia:WesternProfile, herbapedia:WesternHerb ;
+
+  # Must be a valid profile
+  sh:node herbapedia:ProfileShape ;
+
+  # IRI must follow Western profile pattern
+  sh:pattern "^https://www\\.herbapedia\\.org/graph/profile/western/[a-z0-9-]+$" ;
+
+  # Medical system must be Western
+  sh:property [
+    sh:path herbapedia:medicalSystem ;
+    sh:hasValue "western" ;
+  ] ;
+
+  # Common name (required)
+  sh:property [
+    sh:path herbapedia:commonName ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "Western profile must have a common name" ;
+  ] ;
+
+  # Herbal actions - at least one recommended
+  sh:property [
+    sh:path herbapedia:hasAction ;
+    sh:node herbapedia:IRIReferenceShape ;
+    sh:minCount 1 ;
+    sh:severity sh:Warning ;
+    sh:message "Western profile should have at least one herbal action" ;
+  ] ;
+
+  # Organ affinities - recommended
+  sh:property [
+    sh:path herbapedia:hasOrganAffinity ;
+    sh:node herbapedia:IRIReferenceShape ;
+    sh:severity sh:Info ;
+  ] ;
+
+  # Energetics (if applicable)
+  sh:property [
+    sh:path herbapedia:energetics ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:severity sh:Info ;
+  ] .

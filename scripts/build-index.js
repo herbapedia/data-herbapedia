@@ -4,7 +4,7 @@
  * Herbapedia Data Index Builder
  *
  * Generates index files for the architecture with:
- * - All 5 medicine systems (TCM, Western, Ayurveda, Persian, Mongolian)
+ * - All 5 medicine systems (TCM, Western, Ayurveda, Unani, Mongolian)
  * - Entity structure (entities/botanical/*, entities/preparations, profiles/*)
  * - Cross-reference indexes for efficient lookups
  *
@@ -149,7 +149,7 @@ function loadPreparations() {
     if (data.hasTCMProfile?.length) profiles.tcm = extractIriSlug(data.hasTCMProfile[0])
     if (data.hasWesternProfile?.length) profiles.western = extractIriSlug(data.hasWesternProfile[0])
     if (data.hasAyurvedaProfile?.length) profiles.ayurveda = extractIriSlug(data.hasAyurvedaProfile[0])
-    if (data.hasPersianProfile?.length) profiles.persian = extractIriSlug(data.hasPersianProfile[0])
+    if (data.hasUnaniProfile?.length) profiles.unani = extractIriSlug(data.hasUnaniProfile[0])
     if (data.hasMongolianProfile?.length) profiles.mongolian = extractIriSlug(data.hasMongolianProfile[0])
 
     if (Object.keys(profiles).length > 0) {
@@ -221,8 +221,8 @@ function loadProfiles(systemName) {
       }
     }
 
-    if (systemName === 'persian') {
-      // Persian: Index by temperament
+    if (systemName === 'unani') {
+      // Unani: Index by temperament
       extractIris(data.hasTemperament).forEach(t => {
         if (!index[`temperament:${t}`]) index[`temperament:${t}`] = []
         index[`temperament:${t}`].push(slug)
@@ -257,7 +257,7 @@ function build() {
     tcmProfiles: 0,
     westernProfiles: 0,
     ayurvedaProfiles: 0,
-    persianProfiles: 0,
+    unaniProfiles: 0,
     mongolianProfiles: 0,
     chemicals: 0,
     chemicalProfiles: 0,
@@ -279,7 +279,7 @@ function build() {
     westernBySystem: {},
     ayurvedaByDosha: {},
     ayurvedaByRasa: {},
-    persianByTemperament: {},
+    unaniByTemperament: {},
     mongolianByRoot: {},
     mongolianByElement: {},
     chemicalsByPlant: {},
@@ -338,15 +338,15 @@ function build() {
   }
   console.log(`    Found ${ayurvedaProfiles.length} Ayurveda profiles`)
 
-  // Load Persian profiles
-  console.log('  Loading Persian profiles...')
-  const { profiles: persianProfiles, index: persianIndex } = loadProfiles('persian')
-  counts.persianProfiles = persianProfiles.length
-  for (const [key, slugs] of Object.entries(persianIndex)) {
+  // Load Unani profiles
+  console.log('  Loading Unani profiles...')
+  const { profiles: unaniProfiles, index: unaniIndex } = loadProfiles('unani')
+  counts.unaniProfiles = unaniProfiles.length
+  for (const [key, slugs] of Object.entries(unaniIndex)) {
     const [type, value] = key.split(':')
-    if (type === 'temperament') indexes.persianByTemperament[value] = slugs
+    if (type === 'temperament') indexes.unaniByTemperament[value] = slugs
   }
-  console.log(`    Found ${persianProfiles.length} Persian profiles`)
+  console.log(`    Found ${unaniProfiles.length} Unani profiles`)
 
   // Load Mongolian profiles
   console.log('  Loading Mongolian profiles...')
@@ -448,7 +448,7 @@ function build() {
   console.log(`    TCM Profiles: ${counts.tcmProfiles}`)
   console.log(`    Western Profiles: ${counts.westernProfiles}`)
   console.log(`    Ayurveda Profiles: ${counts.ayurvedaProfiles}`)
-  console.log(`    Persian Profiles: ${counts.persianProfiles}`)
+  console.log(`    Unani Profiles: ${counts.unaniProfiles}`)
   console.log(`    Mongolian Profiles: ${counts.mongolianProfiles}`)
 }
 

@@ -71,7 +71,7 @@ export class QualityValidator {
     'TCMProfile': ['pinyin', 'hasCategory', 'hasNature', 'hasFlavor'],
     'WesternHerbalProfile': ['name', 'hasAction'],
     'AyurvedaProfile': ['sanskritName', 'hasRasa', 'hasVirya', 'hasVipaka'],
-    'PersianProfile': ['persianName', 'hasTemperament'],
+    'UnaniProfile': ['unaniName', 'hasTemperament'],
     'MongolianProfile': ['mongolianName', 'affectsRoots'],
   }
 
@@ -99,7 +99,7 @@ export class QualityValidator {
       { path: 'profiles/tcm', type: 'TCMProfile' },
       { path: 'profiles/western', type: 'WesternHerbalProfile' },
       { path: 'profiles/ayurveda', type: 'AyurvedaProfile' },
-      { path: 'profiles/persian', type: 'PersianProfile' },
+      { path: 'profiles/unani', type: 'UnaniProfile' },
       { path: 'profiles/mongolian', type: 'MongolianProfile' },
     ]
 

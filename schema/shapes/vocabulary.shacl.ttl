@@ -1,0 +1,254 @@
+# Vocabulary SHACL Shapes for Herbapedia Knowledge Graph
+#
+# This file defines validation rules for controlled vocabulary term nodes.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix herbapedia: <https://www.herbapedia.org/ontology/> .
+@prefix graph: <https://www.herbapedia.org/graph/> .
+
+# =============================================================================
+# Base Vocabulary Term Shape
+# =============================================================================
+
+herbapedia:VocabularyTermShape
+  a sh:NodeShape ;
+  rdfs:label "Vocabulary Term Shape" ;
+  rdfs:comment "Base shape for all controlled vocabulary terms" ;
+  sh:targetClass skos:Concept, herbapedia:VocabularyTerm ;
+
+  # Must conform to base shapes
+  sh:node herbapedia:GraphNodeShape ;
+  sh:node herbapedia:ReferenceableShape ;
+
+  # Preferred label is required
+  sh:property [
+    sh:path skos:prefLabel ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "Vocabulary term must have a preferred label" ;
+  ] ;
+
+  # Vocabulary type is required
+  sh:property [
+    sh:path herbapedia:vocabularyType ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "Vocabulary term must have a type" ;
+  ] ;
+
+  # Medical system (for system-specific vocabulary)
+  sh:property [
+    sh:path herbapedia:medicalSystem ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+  ] ;
+
+  # Definition (recommended)
+  sh:property [
+    sh:path skos:definition ;
+    sh:severity sh:Warning ;
+    sh:message "Vocabulary terms should have a definition" ;
+  ] .
+
+# =============================================================================
+# TCM Vocabulary Shapes
+# =============================================================================
+
+herbapedia:TcmVocabularyShape
+  a sh:NodeShape ;
+  rdfs:label "TCM Vocabulary Shape" ;
+  rdfs:comment "Base shape for TCM vocabulary terms" ;
+
+  # Must be a valid vocabulary term
+  sh:node herbapedia:VocabularyTermShape ;
+
+  # IRI must follow TCM vocab pattern
+  sh:pattern "^https://www\\.herbapedia\\.org/graph/vocab/tcm/[a-z]+/[a-z]+$" ;
+
+  # Medical system must be TCM
+  sh:property [
+    sh:path herbapedia:medicalSystem ;
+    sh:hasValue "tcm" ;
+  ] .
+
+# TCM Nature (四气)
+herbapedia:TcmNatureShape
+  a sh:NodeShape ;
+  rdfs:label "TCM Nature Shape" ;
+  rdfs:comment "Validates TCM thermal nature (四气) vocabulary" ;
+  sh:targetClass herbapedia:TcmNature ;
+
+  sh:node herbapedia:TcmVocabularyShape ;
+
+  sh:property [
+    sh:path herbapedia:vocabularyType ;
+    sh:hasValue "nature" ;
+  ] ;
+
+  sh:property [
+    sh:path skos:prefLabel ;
+    sh:in ("hot" "warm" "neutral" "cool" "cold") ;
+  ] .
+
+# TCM Flavor (五味)
+herbapedia:TcmFlavorShape
+  a sh:NodeShape ;
+  rdfs:label "TCM Flavor Shape" ;
+  rdfs:comment "Validates TCM flavor (五味) vocabulary" ;
+  sh:targetClass herbapedia:TcmFlavor ;
+
+  sh:node herbapedia:TcmVocabularyShape ;
+
+  sh:property [
+    sh:path herbapedia:vocabularyType ;
+    sh:hasValue "flavor" ;
+  ] ;
+
+  sh:property [
+    sh:path skos:prefLabel ;
+    sh:in ("sour" "bitter" "sweet" "pungent" "salty" "astringent" "bland") ;
+  ] .
+
+# TCM Meridian (十二经脉)
+herbapedia:TcmMeridianShape
+  a sh:NodeShape ;
+  rdfs:label "TCM Meridian Shape" ;
+  rdfs:comment "Validates TCM meridian (十二经脉) vocabulary" ;
+  sh:targetClass herbapedia:TcmMeridian ;
+
+  sh:node herbapedia:TcmVocabularyShape ;
+
+  sh:property [
+    sh:path herbapedia:vocabularyType ;
+    sh:hasValue "meridian" ;
+  ] .
+
+# TCM Category
+herbapedia:TcmCategoryShape
+  a sh:NodeShape ;
+  rdfs:label "TCM Category Shape" ;
+  rdfs:comment "Validates TCM herb category vocabulary" ;
+  sh:targetClass herbapedia:TcmCategory ;
+
+  sh:node herbapedia:TcmVocabularyShape ;
+
+  sh:property [
+    sh:path herbapedia:vocabularyType ;
+    sh:hasValue "category" ;
+  ] .
+
+# =============================================================================
+# Ayurveda Vocabulary Shapes
+# =============================================================================
+
+herbapedia:AyurvedaVocabularyShape
+  a sh:NodeShape ;
+  rdfs:label "Ayurveda Vocabulary Shape" ;
+  rdfs:comment "Base shape for Ayurveda vocabulary terms" ;
+
+  # Must be a valid vocabulary term
+  sh:node herbapedia:VocabularyTermShape ;
+
+  # IRI must follow Ayurveda vocab pattern
+  sh:pattern "^https://www\\.herbapedia\\.org/graph/vocab/ayurveda/[a-z]+/[a-z]+$" ;
+
+  # Medical system must be Ayurveda
+  sh:property [
+    sh:path herbapedia:medicalSystem ;
+    sh:hasValue "ayurveda" ;
+  ] .
+
+# Ayurveda Dosha
+herbapedia:AyurvedaDoshaShape
+  a sh:NodeShape ;
+  rdfs:label "Ayurveda Dosha Shape" ;
+  rdfs:comment "Validates Ayurveda dosha vocabulary" ;
+  sh:targetClass herbapedia:AyurvedaDosha ;
+
+  sh:node herbapedia:AyurvedaVocabularyShape ;
+
+  sh:property [
+    sh:path herbapedia:vocabularyType ;
+    sh:hasValue "dosha" ;
+  ] ;
+
+  sh:property [
+    sh:path skos:prefLabel ;
+    sh:in ("vata" "pitta" "kapha") ;
+  ] .
+
+# Ayurveda Rasa (taste)
+herbapedia:AyurvedaRasaShape
+  a sh:NodeShape ;
+  rdfs:label "Ayurveda Rasa Shape" ;
+  rdfs:comment "Validates Ayurveda rasa (taste) vocabulary" ;
+  sh:targetClass herbapedia:AyurvedaRasa ;
+
+  sh:node herbapedia:AyurvedaVocabularyShape ;
+
+  sh:property [
+    sh:path herbapedia:vocabularyType ;
+    sh:hasValue "rasa" ;
+  ] ;
+
+  sh:property [
+    sh:path skos:prefLabel ;
+    sh:in ("sweet" "sour" "salty" "pungent" "bitter" "astringent") ;
+  ] .
+
+# Ayurveda Guna (quality)
+herbapedia:AyurvedaGunaShape
+  a sh:NodeShape ;
+  rdfs:label "Ayurveda Guna Shape" ;
+  rdfs:comment "Validates Ayurveda guna (quality) vocabulary" ;
+  sh:targetClass herbapedia:AyurvedaGuna ;
+
+  sh:node herbapedia:AyurvedaVocabularyShape ;
+
+  sh:property [
+    sh:path herbapedia:vocabularyType ;
+    sh:hasValue "guna" ;
+  ] .
+
+# Ayurveda Virya (potency)
+herbapedia:AyurvedaViryaShape
+  a sh:NodeShape ;
+  rdfs:label "Ayurveda Virya Shape" ;
+  rdfs:comment "Validates Ayurveda virya (potency) vocabulary" ;
+  sh:targetClass herbapedia:AyurvedaVirya ;
+
+  sh:node herbapedia:AyurvedaVocabularyShape ;
+
+  sh:property [
+    sh:path herbapedia:vocabularyType ;
+    sh:hasValue "virya" ;
+  ] ;
+
+  sh:property [
+    sh:path skos:prefLabel ;
+    sh:in ("heating" "cooling") ;
+  ] .
+
+# Ayurveda Vipaka (post-digestive taste)
+herbapedia:AyurvedaVipakaShape
+  a sh:NodeShape ;
+  rdfs:label "Ayurveda Vipaka Shape" ;
+  rdfs:comment "Validates Ayurveda vipaka (post-digestive taste) vocabulary" ;
+  sh:targetClass herbapedia:AyurvedaVipaka ;
+
+  sh:node herbapedia:AyurvedaVocabularyShape ;
+
+  sh:property [
+    sh:path herbapedia:vocabularyType ;
+    sh:hasValue "vipaka" ;
+  ] ;
+
+  sh:property [
+    sh:path skos:prefLabel ;
+    sh:in ("sweet" "sour" "pungent") ;
+  ] .

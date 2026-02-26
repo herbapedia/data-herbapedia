@@ -200,7 +200,7 @@ export interface HerbalPreparation extends Entity {
   hasTCMProfile?: TCMProfileReference[]
   hasWesternProfile?: WesternProfileReference[]
   hasAyurvedaProfile?: AyurvedaProfileReference[]
-  hasPersianProfile?: PersianProfileReference[]
+  hasUnaniProfile?: UnaniProfileReference[]
   hasMongolianProfile?: MongolianProfileReference[]
 }
 
@@ -283,22 +283,22 @@ export interface AyurvedaProfile extends Entity {
 }
 
 /**
- * Persian profile reference
+ * Unani profile reference
  */
-export interface PersianProfileReference {
+export interface UnaniProfileReference {
   '@id': string
 }
 
 /**
- * Persian profile entity
+ * Unani profile entity
  */
-export interface PersianProfile extends Entity {
-  '@type': ['persian:Drug', 'herbapedia:MedicineSystemProfile']
+export interface UnaniProfile extends Entity {
+  '@type': ['unani:Drug', 'herbapedia:MedicineSystemProfile']
   derivedFromPlant: { '@id': string }
-  persianName?: LanguageMap
+  unaniName?: LanguageMap
   hasTemperament: { '@id': string }
   hasDegree?: number
-  persianTraditionalUsage?: LanguageMap
+  unaniTraditionalUsage?: LanguageMap
 }
 
 /**

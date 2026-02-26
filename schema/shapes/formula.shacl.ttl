@@ -1,0 +1,173 @@
+# Formula SHACL Shapes for Herbapedia Knowledge Graph
+#
+# This file defines validation rules for multi-herb formula nodes.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix schema: <https://schema.org/> .
+@prefix herbapedia: <https://www.herbapedia.org/ontology/> .
+@prefix graph: <https://www.herbapedia.org/graph/> .
+
+# =============================================================================
+# Formula Node Shape
+# =============================================================================
+
+herbapedia:FormulaShape
+  a sh:NodeShape ;
+  rdfs:label "Formula Node Shape" ;
+  rdfs:comment "Validates multi-herb formula nodes in the knowledge graph" ;
+  sh:targetClass herbapedia:Formula, herbapedia:HerbalFormula ;
+
+  # Must conform to base shapes
+  sh:node herbapedia:GraphNodeShape ;
+  sh:node herbapedia:NamedEntityShape ;
+  sh:node herbapedia:ReferenceableShape ;
+
+  # IRI must follow formula pattern
+  sh:pattern "^https://www\\.herbapedia\\.org/graph/formula/[a-z0-9-]+$" ;
+
+  # Must have at least one ingredient
+  sh:property [
+    sh:path herbapedia:hasIngredient ;
+    sh:node herbapedia:IRIReferenceShape ;
+    sh:minCount 1 ;
+    sh:message "Formula must have at least one ingredient" ;
+  ] ;
+
+  # Pinyin name (for TCM formulas)
+  sh:property [
+    sh:path herbapedia:pinyin ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:severity sh:Info ;
+  ] ;
+
+  # Chinese characters
+  sh:property [
+    sh:path herbapedia:chineseName ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:severity sh:Info ;
+  ] ;
+
+  # Formula category (TCM)
+  sh:property [
+    sh:path herbapedia:formulaCategory ;
+    sh:node herbapedia:IRIReferenceShape ;
+    sh:maxCount 1 ;
+    sh:severity sh:Info ;
+  ] ;
+
+  # Source text/reference
+  sh:property [
+    sh:path herbapedia:sourceText ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:severity sh:Info ;
+  ] ;
+
+  # Functions/indications
+  sh:property [
+    sh:path herbapedia:formulaFunction ;
+    sh:severity sh:Warning ;
+  ] ;
+
+  # Contraindications
+  sh:property [
+    sh:path herbapedia:contraindications ;
+    sh:severity sh:Warning ;
+  ] .
+
+# =============================================================================
+# Formula Ingredient Shape
+# =============================================================================
+
+herbapedia:FormulaIngredientShape
+  a sh:NodeShape ;
+  rdfs:label "Formula Ingredient Shape" ;
+  rdfs:comment "Validates ingredient references within formulas" ;
+
+  # Must reference a valid herb/preparation
+  sh:property [
+    sh:path herbapedia:ingredient ;
+    sh:node herbapedia:IRIReferenceShape ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "Ingredient must reference exactly one herb or preparation" ;
+  ] ;
+
+  # Dosage
+  sh:property [
+    sh:path herbapedia:dosage ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:severity sh:Info ;
+  ] ;
+
+  # Role in formula (jun/chen/zuo/shi 君臣佐使)
+  sh:property [
+    sh:path herbapedia:formulaRole ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:in ("jun" "chen" "zuo" "shi" "chief" "deputy" "assistant" "envoy") ;
+    sh:severity sh:Info ;
+  ] .
+
+# =============================================================================
+# TCM Classic Formula Shape
+# =============================================================================
+
+herbapedia:TcmClassicFormulaShape
+  a sh:NodeShape ;
+  rdfs:label "TCM Classic Formula Shape" ;
+  rdfs:comment "Validates classic TCM formulas from historical texts" ;
+  sh:targetClass herbapedia:ClassicFormula ;
+
+  # Must be a valid formula
+  sh:node herbapedia:FormulaShape ;
+
+  # Must have source text
+  sh:property [
+    sh:path herbapedia:sourceText ;
+    sh:minCount 1 ;
+    sh:message "Classic formulas must have a source text reference" ;
+  ] ;
+
+  # Historical origin
+  sh:property [
+    sh:path herbapedia:historicalOrigin ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:severity sh:Info ;
+  ] .
+
+# =============================================================================
+# Patent Formula Shape
+# =============================================================================
+
+herbapedia:PatentFormulaShape
+  a sh:NodeShape ;
+  rdfs:label "Patent Formula Shape" ;
+  rdfs:comment "Validates patented/pre-manufactured formulas" ;
+  sh:targetClass herbapedia:PatentFormula ;
+
+  # Must be a valid formula
+  sh:node herbapedia:FormulaShape ;
+
+  # Manufacturer
+  sh:property [
+    sh:path schema:manufacturer ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:severity sh:Info ;
+  ] ;
+
+  # Product code
+  sh:property [
+    sh:path herbapedia:productCode ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:severity sh:Info ;
+  ] .

@@ -1,0 +1,137 @@
+# Chemical SHACL Shapes for Herbapedia Knowledge Graph
+#
+# This file defines validation rules for chemical compound nodes.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix schema: <https://schema.org/> .
+@prefix chem: <https://pubchem.ncbi.nlm.nih.gov/ontology/> .
+@prefix herbapedia: <https://www.herbapedia.org/ontology/> .
+@prefix graph: <https://www.herbapedia.org/graph/> .
+
+# =============================================================================
+# Chemical Node Shape
+# =============================================================================
+
+herbapedia:ChemicalShape
+  a sh:NodeShape ;
+  rdfs:label "Chemical Node Shape" ;
+  rdfs:comment "Validates chemical compound nodes in the knowledge graph" ;
+  sh:targetClass herbapedia:Chemical, schema:ChemicalSubstance ;
+
+  # Must conform to base shapes
+  sh:node herbapedia:GraphNodeShape ;
+  sh:node herbapedia:NamedEntityShape ;
+  sh:node herbapedia:ReferenceableShape ;
+
+  # IRI must follow chemical pattern
+  sh:pattern "^https://www\\.herbapedia\\.org/graph/chemical/[a-z0-9-]+$" ;
+
+  # Chemical name is required
+  sh:property [
+    sh:path herbapedia:chemicalName ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "Chemical must have a name" ;
+  ] ;
+
+  # CAS Registry Number (optional but recommended)
+  sh:property [
+    sh:path herbapedia:casNumber ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:pattern "^[0-9]{1,7}-[0-9]{2}-[0-9]$" ;
+    sh:message "CAS number must be in format XXXXXXX-XX-X" ;
+    sh:severity sh:Warning ;
+  ] ;
+
+  # PubChem CID (optional)
+  sh:property [
+    sh:path herbapedia:pubchemCid ;
+    sh:datatype xsd:integer ;
+    sh:maxCount 1 ;
+    sh:severity sh:Info ;
+  ] ;
+
+  # InChI Key (optional)
+  sh:property [
+    sh:path herbapedia:inchiKey ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:pattern "^[A-Z]{14}-[A-Z]{10}-[A-Z]$" ;
+    sh:severity sh:Info ;
+  ] ;
+
+  # Molecular formula (optional)
+  sh:property [
+    sh:path chem:molecularFormula ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:severity sh:Info ;
+  ] ;
+
+  # Molecular weight (optional)
+  sh:property [
+    sh:path chem:molecularWeight ;
+    sh:datatype xsd:float ;
+    sh:maxCount 1 ;
+    sh:severity sh:Info ;
+  ] ;
+
+  # Chemical class
+  sh:property [
+    sh:path herbapedia:chemicalClass ;
+    sh:datatype xsd:string ;
+    sh:severity sh:Info ;
+  ] ;
+
+  # Found in species (inverse of containsChemical)
+  sh:property [
+    sh:path herbapedia:foundIn ;
+    sh:node herbapedia:IRIReferenceShape ;
+    sh:class herbapedia:Species ;
+  ] .
+
+# =============================================================================
+# Active Compound Shape
+# =============================================================================
+
+herbapedia:ActiveCompoundShape
+  a sh:NodeShape ;
+  rdfs:label "Active Compound Shape" ;
+  rdfs:comment "Validates active pharmacological compounds" ;
+  sh:targetClass herbapedia:ActiveCompound ;
+
+  # Must be a valid chemical
+  sh:node herbapedia:ChemicalShape ;
+
+  # Must have pharmacological activity described
+  sh:property [
+    sh:path herbapedia:pharmacologicalActivity ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:severity sh:Warning ;
+    sh:message "Active compounds should have pharmacological activity described" ;
+  ] .
+
+# =============================================================================
+# Ginsenoside Shape (example specific compound class)
+# =============================================================================
+
+herbapedia:GinsenosideShape
+  a sh:NodeShape ;
+  rdfs:label "Ginsenoside Shape" ;
+  rdfs:comment "Validates ginsenoside compounds" ;
+  sh:targetClass herbapedia:Ginsenoside ;
+
+  # Must be a valid active compound
+  sh:node herbapedia:ActiveCompoundShape ;
+
+  # Chemical class must be triterpene saponin
+  sh:property [
+    sh:path herbapedia:chemicalClass ;
+    sh:hasValue "triterpene saponin" ;
+  ] .

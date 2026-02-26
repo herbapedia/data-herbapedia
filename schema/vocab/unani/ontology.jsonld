@@ -1,0 +1,202 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "https://www.herbapedia.org/vocab/unani/",
+
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "schema": "https://schema.org/",
+
+    "herbapedia": "https://www.herbapedia.org/vocab/core/",
+    "unani": "https://www.herbapedia.org/vocab/unani/"
+  },
+
+  "@graph": [
+    {
+      "@id": "https://www.herbapedia.org/vocab/unani/",
+      "@type": "owl:Ontology",
+      "rdfs:label": {
+        "en": "Herbapedia Unani Medicine Vocabulary"
+      },
+      "rdfs:comment": "Unani Medicine (Greco-Arabic medicine) vocabulary including drug profiles, temperament (Mizaj), elements, and degrees based on Ibn Sina's Canon of Medicine."
+    },
+
+    {
+      "@id": "unani:Drug",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": ["herbapedia:MedicineSystemProfile", "schema:DietarySupplement"],
+      "rdfs:label": {
+        "en": "Unani Drug",
+        "zh-Hant": "尤那尼藥物",
+        "ur": "دوا",
+        "ar": "دواء"
+      },
+      "rdfs:comment": "A Unani Medicine drug profile with temperament (Mizaj), degree, and therapeutic properties based on Ibn Sina's Canon of Medicine."
+    },
+
+    {
+      "@id": "unani:Temperament",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "skos:Concept",
+      "rdfs:label": {
+        "en": "Temperament (Mizaj)",
+        "zh-Hant": "體質",
+        "ur": "مزاج",
+        "ar": "مزاج"
+      },
+      "rdfs:comment": "The four fundamental temperaments combining Hot/Cold with Wet/Dry: Hot-Wet, Hot-Dry, Cold-Wet, Cold-Dry."
+    },
+
+    {
+      "@id": "unani:Element",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "skos:Concept",
+      "rdfs:label": {
+        "en": "Element (Arkān)",
+        "zh-Hant": "元素",
+        "ur": "ارکان",
+        "ar": "أركان"
+      },
+      "rdfs:comment": "The four fundamental elements (Arkan): Fire (Nar), Air (Hawa), Water (Ab), Earth (Khak)."
+    },
+
+    {
+      "@id": "unani:Degree",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "skos:Concept",
+      "rdfs:label": {
+        "en": "Degree (Darajah)",
+        "zh-Hant": "等級",
+        "ur": "درجہ",
+        "ar": "درجة"
+      },
+      "rdfs:comment": "The potency level from 1 (mild) to 4 (very strong). Indicates the intensity of the temperament."
+    },
+
+    {
+      "@id": "unani:Humor",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "skos:Concept",
+      "rdfs:label": {
+        "en": "Humor (Akhlat)",
+        "zh-Hant": "體液",
+        "ur": "اخلاط",
+        "ar": "أخلاط"
+      },
+      "rdfs:comment": "The four humors: Blood (Dam), Phlegm (Balgham), Yellow Bile (Safra), Black Bile (Sauda)."
+    },
+
+    {
+      "@id": "unani:Organ",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": "skos:Concept",
+      "rdfs:label": {
+        "en": "Organ (A'za)",
+        "zh-Hant": "器官",
+        "ur": "اعضاء",
+        "ar": "أعضاء"
+      },
+      "rdfs:comment": "Body organs in Unani medicine: Heart, Brain, Liver, etc."
+    },
+
+    {
+      "@id": "unani:hasTemperament",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "unani:Drug",
+      "rdfs:range": "unani:Temperament",
+      "rdfs:label": {
+        "en": "has temperament",
+        "zh-Hant": "具有體質"
+      }
+    },
+
+    {
+      "@id": "unani:hasElement",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "unani:Drug",
+      "rdfs:range": "unani:Element",
+      "rdfs:label": {
+        "en": "has element",
+        "zh-Hant": "具有元素"
+      }
+    },
+
+    {
+      "@id": "unani:hasDegree",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "unani:Drug",
+      "rdfs:range": "unani:Degree",
+      "rdfs:label": {
+        "en": "has degree",
+        "zh-Hant": "具有等級"
+      }
+    },
+
+    {
+      "@id": "unani:affectsHumor",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "unani:Drug",
+      "rdfs:range": "unani:Humor",
+      "rdfs:label": {
+        "en": "affects humor",
+        "zh-Hant": "影響體液"
+      }
+    },
+
+    {
+      "@id": "unani:affectsOrgan",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "unani:Drug",
+      "rdfs:range": "unani:Organ",
+      "rdfs:label": {
+        "en": "affects organ",
+        "zh-Hant": "影響器官"
+      }
+    },
+
+    {
+      "@id": "unani:unaniName",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "unani:Drug",
+      "rdfs:range": "rdfs:Literal",
+      "rdfs:label": {
+        "en": "Unani name",
+        "zh-Hant": "尤那尼名稱"
+      }
+    },
+
+    {
+      "@id": "unani:derivedFromPlant",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "unani:Drug",
+      "rdfs:range": "herbapedia:BotanicalSource",
+      "rdfs:label": {
+        "en": "derived from plant",
+        "zh-Hant": "來自植物"
+      }
+    },
+
+    {
+      "@id": "unani:unaniTraditionalUsage",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "unani:Drug",
+      "rdfs:range": "rdfs:Literal",
+      "rdfs:label": {
+        "en": "Unani traditional usage",
+        "zh-Hant": "尤那尼傳統用法"
+      }
+    },
+
+    {
+      "@id": "unani:unaniModernResearch",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": "unani:Drug",
+      "rdfs:range": "rdfs:Literal",
+      "rdfs:label": {
+        "en": "Unani modern research",
+        "zh-Hant": "尤那尼現代研究"
+      }
+    }
+  ]
+}

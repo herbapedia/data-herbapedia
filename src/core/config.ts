@@ -28,7 +28,7 @@ export const NAMESPACE_MAP = {
   'tcm': 'https://www.herbapedia.org/system/tcm/profile/',
   'western': 'https://www.herbapedia.org/system/western/profile/',
   'ayurveda': 'https://www.herbapedia.org/system/ayurveda/profile/',
-  'persian': 'https://www.herbapedia.org/system/persian/profile/',
+  'unani': 'https://www.herbapedia.org/system/unani/profile/',
   'mongolian': 'https://www.herbapedia.org/system/mongolian/profile/',
   'modern': 'https://www.herbapedia.org/system/modern/profile/',
 
@@ -113,10 +113,10 @@ export const ENTITY_TYPE_CONFIG = {
     required: ['sanskritName', 'hasRasa', 'hasVirya'],
     schema: 'profiles/ayurveda-profile.schema.json',
   },
-  'PersianProfile': {
-    paths: ['systems/persian/drugs'],
-    required: ['persianName', 'hasTemperament'],
-    schema: 'profiles/persian-profile.schema.json',
+  'UnaniProfile': {
+    paths: ['systems/unani/drugs'],
+    required: ['unaniName', 'hasTemperament'],
+    schema: 'profiles/unani-profile.schema.json',
   },
   'MongolianProfile': {
     paths: ['systems/mongolian/herbs'],
@@ -257,11 +257,11 @@ export function isAyurvedaProfile(entity: { '@type': string[] }): boolean {
 }
 
 /**
- * Type guard to check if entity is a Persian Profile
+ * Type guard to check if entity is a Unani Profile
  */
-export function isPersianProfile(entity: { '@type': string[] }): boolean {
+export function isUnaniProfile(entity: { '@type': string[] }): boolean {
   return entity['@type'].some(t =>
-    t.includes('persian:Drug') || t.includes('PersianProfile')
+    t.includes('unani:Drug') || t.includes('UnaniProfile')
   )
 }
 
@@ -372,7 +372,7 @@ export function iriToFilePath(iri: string, dataPath: string): string {
     'tcm': 'systems/tcm/herbs',
     'western': 'systems/western/herbs',
     'ayurveda': 'systems/ayurveda/dravyas',
-    'persian': 'systems/persian/drugs',
+    'unani': 'systems/unani/drugs',
     'mongolian': 'systems/mongolian/herbs',
     'modern': 'systems/modern/substances',
   }
@@ -385,7 +385,7 @@ export function iriToFilePath(iri: string, dataPath: string): string {
   // Determine file name
   let fileName: string
   if (namespace === 'tcm' || namespace === 'western' || namespace === 'ayurveda' ||
-      namespace === 'persian' || namespace === 'mongolian' || namespace === 'modern') {
+      namespace === 'unani' || namespace === 'mongolian' || namespace === 'modern') {
     fileName = 'profile.jsonld'
   } else {
     fileName = 'entity.jsonld'

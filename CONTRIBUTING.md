@@ -216,7 +216,7 @@ Directory: `profiles/tcm/{slug}/profile.jsonld`
   "hasCategory": { "@id": "tcm/category/category-name" },
   "hasNature": { "@id": "tcm/nature/warm" },
   "hasFlavor": [
-    { "@id": "tcm/flavor/pungent" },
+    { "@id": "tcm/flavor/acrid" },
     { "@id": "tcm/flavor/sweet" }
   ],
   "entersMeridian": [

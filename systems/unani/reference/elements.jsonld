@@ -1,0 +1,192 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/unani.jsonld",
+  "@id": "https://www.herbapedia.org/system/unani/profile/reference/elements",
+  "@type": [
+    "unani:ReferenceCollection",
+    "skos:Collection"
+  ],
+  "name": {
+    "en": "Unani Four Elements",
+    "fa": "چهار عنصر"
+  },
+  "description": {
+    "en": "The four elements (عناصر أربعة - Anasir al-Arba'a) in Traditional Unani Medicine. All substances are composed of these elements in varying proportions."
+  },
+  "members": [
+    {
+      "@id": "https://www.herbapedia.org/system/unani/profile/element/fire",
+      "@type": [
+        "unani:Element"
+      ],
+      "name": {
+        "en": "Fire",
+        "fa": "آتش",
+        "ar": "نار"
+      },
+      "unaniName": "آتش",
+      "arabicName": "نار",
+      "transliteration": "Atash",
+      "qualities": {
+        "heat": "hot",
+        "moisture": "dry"
+      },
+      "associatedTemperament": {
+        "@id": "https://www.herbapedia.org/system/unani/profile/temperament/hot-dry"
+      },
+      "associatedHumor": "safra",
+      "characteristics": [
+        "Hot and dry to the highest degree",
+        "Transformative",
+        "Subtle and light",
+        "Rising upward"
+      ],
+      "organs": [
+        "Heart",
+        "Liver"
+      ],
+      "seasons": [
+        "Summer"
+      ],
+      "ages": [
+        "Youth",
+        "Prime of life"
+      ],
+      "description": {
+        "en": "Fire is hot and dry, associated with transformation, lightness, and upward movement. It corresponds to yellow bile humor."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/unani/profile/element/air",
+      "@type": [
+        "unani:Element"
+      ],
+      "name": {
+        "en": "Air",
+        "fa": "هوا",
+        "ar": "هواء"
+      },
+      "unaniName": "هوا",
+      "arabicName": "هواء",
+      "transliteration": "Hava",
+      "qualities": {
+        "heat": "hot",
+        "moisture": "wet"
+      },
+      "associatedTemperament": {
+        "@id": "https://www.herbapedia.org/system/unani/profile/temperament/hot-wet"
+      },
+      "associatedHumor": "dam",
+      "characteristics": [
+        "Hot and moist",
+        "Subtle and light",
+        "Expansive",
+        "Moving in all directions"
+      ],
+      "organs": [
+        "Lungs",
+        "Brain"
+      ],
+      "seasons": [
+        "Spring"
+      ],
+      "ages": [
+        "Childhood"
+      ],
+      "description": {
+        "en": "Air is hot and moist, associated with expansion, movement, and vitality. It corresponds to blood humor."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/unani/profile/element/water",
+      "@type": [
+        "unani:Element"
+      ],
+      "name": {
+        "en": "Water",
+        "fa": "آب",
+        "ar": "ماء"
+      },
+      "unaniName": "آب",
+      "arabicName": "ماء",
+      "transliteration": "Ab",
+      "qualities": {
+        "heat": "cold",
+        "moisture": "wet"
+      },
+      "associatedTemperament": {
+        "@id": "https://www.herbapedia.org/system/unani/profile/temperament/cold-wet"
+      },
+      "associatedHumor": "balgham",
+      "characteristics": [
+        "Cold and moist",
+        "Heavy",
+        "Flowing downward",
+        "Dissolving"
+      ],
+      "organs": [
+        "Kidneys",
+        "Bladder"
+      ],
+      "seasons": [
+        "Winter"
+      ],
+      "ages": [
+        "Old age"
+      ],
+      "description": {
+        "en": "Water is cold and moist, associated with flow, dissolution, and heaviness. It corresponds to phlegm humor."
+      }
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/unani/profile/element/earth",
+      "@type": [
+        "unani:Element"
+      ],
+      "name": {
+        "en": "Earth",
+        "fa": "خاک",
+        "ar": "تراب"
+      },
+      "unaniName": "خاک",
+      "arabicName": "تراب",
+      "transliteration": "Khak",
+      "qualities": {
+        "heat": "cold",
+        "moisture": "dry"
+      },
+      "associatedTemperament": {
+        "@id": "https://www.herbapedia.org/system/unani/profile/temperament/cold-dry"
+      },
+      "associatedHumor": "sauda",
+      "characteristics": [
+        "Cold and dry",
+        "Heavy and dense",
+        "Stable",
+        "Forming structure"
+      ],
+      "organs": [
+        "Spleen",
+        "Bones"
+      ],
+      "seasons": [
+        "Autumn"
+      ],
+      "ages": [
+        "Old age"
+      ],
+      "description": {
+        "en": "Earth is cold and dry, associated with stability, structure, and density. It corresponds to black bile humor."
+      }
+    }
+  ],
+  "_documentation": {
+    "classicalReference": "Derived from Greek medicine (Empedocles, Hippocrates, Galen) via Islamic medicine",
+    "humors": {
+      "fire": "Safra (Yellow Bile) - Hot/Dry",
+      "air": "Dam (Blood) - Hot/Wet",
+      "water": "Balgham (Phlegm) - Cold/Wet",
+      "earth": "Sauda (Black Bile) - Cold/Dry"
+    },
+    "composition": "All substances contain all four elements, but in different proportions"
+  }
+}

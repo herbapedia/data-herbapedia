@@ -26,7 +26,13 @@
   },
   "hasFlavor": [
     {
+      "@id": "https://www.herbapedia.org/system/tcm/flavor/bitter"
+    },
+    {
       "@id": "https://www.herbapedia.org/system/tcm/flavor/sweet"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/flavor/astringent"
     }
   ],
   "entersMeridian": [

@@ -1,23 +1,25 @@
 # Herbapedia Data Repository
 
-> The authoritative JSON-LD knowledge base for medicinal botany across all traditional medicine systems
+> The authoritative **JSON-LD Knowledge Graph** for medicinal botany across all traditional medicine systems
+
+## What is Herbapedia?
+
+Herbapedia is a **fully normalized knowledge graph** that provides:
+- **Single source of truth**: Each entity stored once, referenced by IRI
+- **Cross-system linking**: Same preparation viewed through TCM, Ayurveda, Western, and other lenses
+- **Semantic queries**: Traverse relationships, find paths, search across all nodes
+- **Schema validation**: SHACL shapes ensure data integrity
+- **Multiple formats**: Export to JSON-LD, RDF Turtle
 
 ## Current Status
 
 | Metric | Count |
 |--------|-------|
-| JSON-LD Files | 1,004 |
-| Schema Validation | ✅ 1,004 passed, 0 failed |
-| Reference Integrity | ✅ 2,719 valid, 0 broken |
-| Quality Checks | ✅ 670 entities, 0 issues |
-| Wikidata IDs | 158/177 (89%) |
-| GBIF IDs | 126/177 (71%) |
-| NCBI Taxonomy | 123/177 (69%) |
-| ChEBI IDs (chemicals) | 18/20 (90%) |
-| PubChem IDs (individual compounds) | 6/6 (100%) |
-| InChI (individual compounds) | 6/6 (100%) |
-
-> **Note**: Chemical entities include 6 individual compounds and 14 compound classes (alkaloids, flavonoids, etc.). PubChem IDs and InChI strings only exist for individual molecules, not compound classes. ChEBI provides class-level identifiers for compound groups.
+| JSON-LD Files | 1,004+ |
+| Schema Validation | ✅ All passed |
+| Reference Integrity | ✅ All valid |
+| Knowledge Graph Nodes | 500+ |
+| Medical Systems | 6 (TCM, Ayurveda, Western, Unani, Mongolian, Modern) |
 
 ### Entity Counts
 
@@ -43,10 +45,11 @@
 | **System Profiles** | |
 | TCM Profiles | 99 |
 | Western Profiles | 87 |
-| Ayurveda Profiles | 1 |
-| Persian Profiles | 1 |
+| Ayurveda Profiles | 1+ |
+| Unani Profiles | 1+ |
 | Mongolian Profiles | 1 |
-| **Total Entities** | **756** |
+| Modern Medicine | Added |
+| **Total Entities** | **756+** |
 
 ## Overview
 
@@ -85,6 +88,34 @@ All entities use fully qualified IRIs with the root: **`https://www.herbapedia.o
 
 ## Architecture
 
+### Knowledge Graph Architecture
+
+Herbapedia is built as a **fully normalized JSON-LD knowledge graph**:
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                        Knowledge Graph                               │
+│                                                                      │
+│  Species ──────► Part ──────► Preparation ──────► Profiles          │
+│     │              │               │                  │              │
+│     │              │               │                  ├── TCM        │
+│     │              │               │                  ├── Ayurveda   │
+│     │              │               │                  ├── Western    │
+│     │              │               │                  ├── Unani      │
+│     │              │               │                  └── Mongolian  │
+│     │              │               │                                  │
+│     ▼              ▼               ▼                                  │
+│  Chemical ◄──── References ────► Vocabulary                          │
+│                                                                      │
+└─────────────────────────────────────────────────────────────────────┘
+```
+
+**Key Principles:**
+1. **Full Normalization**: Each entity stored once, referenced by `@id`
+2. **IRI-based References**: All relationships use `{"@id": "https://..."}`
+3. **Schema-Driven**: SHACL shapes validate all nodes
+4. **Multi-System**: Same preparation has multiple system profiles
+
 ### Core Principle: HerbalPreparation is Central
 
 The architecture is built around **HerbalPreparation** as the central pivot entity:
@@ -96,10 +127,10 @@ PlantSpecies (Zingiber officinale)
         │
         └── HerbalPreparation (Dried Ginger Rhizome)
               │
-              ├── TCM Profile: 乾薑 (Gān Jiāng) - hot, pungent
+              ├── TCM Profile: 干姜 (Gān Jiāng) - hot, pungent
               ├── Western Profile: Ginger - carminative, anti-inflammatory
               ├── Ayurveda Profile: नागर (Nāgara) - pungent, heating
-              ├── Persian Profile: زنجبیل (Zanjabil) - hot-dry 3rd degree
+              ├── Unani Profile: زنجبیل (Zanjabil) - hot-dry
               └── Mongolian Profile: гаа (Gaa) - hot potency
 ```
 
@@ -159,7 +190,13 @@ data-herbapedia/
 │   │   ├── herbal/               # Preparation schemas
 │   │   ├── profiles/             # Medicine system profile schemas
 │   │   └── reference/            # Controlled vocabulary schemas
-│   └── context/                  # JSON-LD contexts
+│   ├── context/                  # JSON-LD contexts
+│   ├── shapes/                   # SHACL validation shapes
+│   │   ├── core.shacl.ttl        # Core node shapes
+│   │   ├── species.shacl.ttl     # Species validation
+│   │   ├── profile.shacl.ttl     # Profile validation
+│   │   └── ...
+│   └── vocab/                    # Ontology definitions
 │
 ├── entities/
 │   ├── botanical/
@@ -168,23 +205,37 @@ data-herbapedia/
 │   │   ├── chemicals/            # Chemical compounds (Gingerol)
 │   │   ├── profiles/             # Chemical profiles
 │   │   └── barcodes/             # DNA barcodes
-│   └── preparations/             # Herbal preparations (Dried Ginger)
+│   ├── preparations/             # Herbal preparations (Dried Ginger)
+│   └── plants/                   # Alternative plant entity location
 │
 ├── profiles/                     # Medicine system profiles
-│   ├── tcm/                      # TCM profiles (乾薑)
+│   ├── tcm/                      # TCM profiles (干姜)
 │   ├── western/                  # Western profiles (Ginger)
 │   ├── ayurveda/                 # Ayurveda profiles (नागर)
-│   ├── persian/                  # Persian profiles (زنجبیل)
+│   ├── unani/                    # Unani profiles (زنجبیل)
 │   └── mongolian/                # Mongolian profiles (гаа)
 │
 ├── systems/                      # Medicine systems
-│   ├── tcm/reference/            # Natures, Flavors, Meridians
+│   ├── tcm/                      # TCM herbs and reference data
+│   │   ├── herbs/                # TCM herb profiles
+│   │   └── reference/            # Natures, Flavors, Meridians
 │   ├── western/reference/        # Actions, Organs, Systems
 │   ├── ayurveda/reference/       # Rasas, Gunas, Viryas, Doshas
-│   ├── persian/reference/        # Temperaments, Elements, Degrees
+│   ├── unani/reference/          # Temperaments, Elements, Degrees
 │   └── mongolian/reference/      # Roots, Elements, Tastes, Potencies
 │
 ├── src/
+│   ├── graph/                    # Knowledge Graph module (NEW)
+│   │   ├── api/                  # Query, Traversal, Index APIs
+│   │   │   ├── GraphQuery.ts     # Entity lookup
+│   │   │   ├── GraphTraversal.ts # Relationship navigation
+│   │   │   └── GraphIndex.ts     # Search and listings
+│   │   ├── nodes/                # Node classes (Species, Profile, etc.)
+│   │   ├── registry/             # GraphRegistry for node storage
+│   │   ├── exporters/            # JSON-LD and Turtle exporters
+│   │   ├── validators/           # Schema and SHACL validation
+│   │   ├── GraphBuilder.ts       # Build orchestrator
+│   │   └── index.ts              # Module exports
 │   ├── dataset.ts                # HerbapediaDataset query API
 │   ├── index.ts                  # Main exports
 │   └── validation/               # Validation modules
@@ -199,18 +250,32 @@ data-herbapedia/
 │
 ├── scripts/
 │   ├── validate.js               # Comprehensive validation
-│   └── build-index.js            # Index builder
+│   ├── build-index.js            # Index builder
+│   └── build-graph.ts            # Knowledge Graph builder (NEW)
+│
+├── api/v1/                       # Built graph output (NEW)
+│   ├── node/                     # Individual node files
+│   │   ├── species/              # Species nodes
+│   │   ├── profile/              # Profile nodes by system
+│   │   │   ├── tcm/
+│   │   │   ├── ayurveda/
+│   │   │   └── western/
+│   │   └── vocab/                # Vocabulary nodes
+│   ├── graph/                    # Aggregated files
+│   │   ├── all.jsonld            # All nodes
+│   │   ├── species.jsonld        # All species
+│   │   ├── tcm-profiles.jsonld   # All TCM profiles
+│   │   └── vocabulary.jsonld     # All vocabulary
+│   ├── stats.json                # Graph statistics
+│   ├── context.jsonld            # Combined context
+│   └── version.json              # Build version
 │
 └── dist/                         # Build output
     ├── index.json                # Master index
-    ├── botanical-index.json      # Plant species index
-    ├── preparations-index.json   # Preparations index
-    └── cross-references.json     # All cross-reference mappings
+    └── ...
 ```
 
 ## TypeScript API
-
-📖 **[Full API Documentation](docs/API.md)** - Complete reference for all 50+ query methods
 
 ### Installation
 
@@ -218,7 +283,68 @@ data-herbapedia/
 npm install @herbapedia/data
 ```
 
-### Basic Usage
+### Knowledge Graph API (Recommended)
+
+The new Graph API provides clean, normalized access to all entities:
+
+```typescript
+import {
+  GraphBuilder,
+  GraphQuery,
+  GraphTraversal,
+  GraphIndex
+} from '@herbapedia/data/graph'
+
+// Build the knowledge graph
+const builder = new GraphBuilder({
+  dataRoot: './data-herbapedia',
+  outputDir: './api/v1'
+})
+await builder.build()
+const registry = builder.getRegistry()
+
+// Query API - Get entities
+const query = new GraphQuery(registry)
+const ginseng = query.getSpecies('panax-ginseng')
+const tcmProfile = query.getProfile('tcm', 'ren-shen')
+const westernProfile = query.getProfile('western', 'ginger')
+
+// Find related profiles
+const profiles = query.findProfilesForSpecies('panax-ginseng')
+const preparations = query.findPreparationsForSpecies('panax-ginseng')
+
+// Traversal API - Navigate relationships
+const traversal = new GraphTraversal(registry)
+const related = traversal.getRelatedNodes('species/panax-ginseng', 2)
+const path = traversal.getShortestPath(
+  'species/panax-ginseng',
+  'profile/tcm/ren-shen'
+)
+const derivedProfiles = traversal.traverseRelationship(
+  'species/panax-ginseng',
+  'derivedFrom'
+)
+
+// Index API - Search and list
+const index = new GraphIndex(registry)
+
+// List all entities
+const allSpecies = index.listSpecies()
+const tcmProfiles = index.listProfiles('tcm')
+const flavors = index.listVocabulary('tcm', 'flavor')
+
+// Full-text search (lunr.js powered)
+const results = index.search('ginseng')
+const chineseResults = index.search('補氣')  // Chinese works!
+
+// Statistics
+const stats = index.getStats()
+console.log(stats.totalNodes, stats.byType)
+```
+
+### Dataset API
+
+The HerbapediaDataset API provides a simpler interface:
 
 ```typescript
 import { HerbapediaDataset } from '@herbapedia/data'
@@ -236,12 +362,11 @@ const preparations = dataset.getPreparationsForPlant('ginger')
 const profiles = dataset.getAllProfilesForPreparation('dried-ginger-rhizome')
 console.log(profiles.tcm?.pinyin)      // "Gān Jiāng"
 console.log(profiles.western?.name)    // "Ginger"
-console.log(profiles.ayurveda?.sanskritName) // "नागर"
 ```
 
-### Modular API (New in v0.3.0)
+### Modular API
 
-For better performance and tree-shaking, use the modular API:
+For better performance and tree-shaking:
 
 ```typescript
 import {
@@ -258,12 +383,6 @@ const profiles = new ProfileQueries(loader)
 // Async loading (recommended for production)
 const plant = await botanical.getPlantSpeciesAsync('ginseng')
 const compounds = await botanical.getCompoundsInPlantAsync('ginseng')
-
-// Batch loading for efficiency
-const plants = await loader.batchLoad([
-  'botanical/species/ginseng',
-  'botanical/species/ginger'
-])
 ```
 
 ### Full-Text Search
@@ -408,7 +527,7 @@ import type {
   "pinyin": "Gān Jiāng",
   "hasCategory": { "@id": "tcm/category/warm-interior" },
   "hasNature": { "@id": "tcm/nature/hot" },
-  "hasFlavor": [{ "@id": "tcm/flavor/pungent" }],
+  "hasFlavor": [{ "@id": "tcm/flavor/acrid" }],
   "entersMeridian": [
     { "@id": "tcm/meridian/spleen" },
     { "@id": "tcm/meridian/stomach" }
@@ -417,6 +536,49 @@ import type {
 ```
 
 ## Scripts
+
+### Build Knowledge Graph
+
+```bash
+# Build with defaults
+npm run build-graph
+
+# Build with verbose output
+npm run build-graph -- --verbose
+
+# Clean build (removes all previous output)
+npm run build-graph -- --clean
+
+# Incremental build (only files changed since last build)
+npm run build-graph -- --since last
+
+# Incremental build (files changed since specific date)
+npm run build-graph -- --since 2026-02-01
+
+# Build with higher concurrency
+npm run build-graph -- --concurrency 20
+
+# Export to both JSON-LD and Turtle
+npm run build-graph -- --format jsonld,turtle
+
+# Skip validation
+npm run build-graph -- --no-validate
+```
+
+### Build Options
+
+| Option | Description | Default |
+|--------|-------------|---------|
+| `--data-root <path>` | Root directory of source data | current directory |
+| `--output-dir <path>` | Output directory | ./api/v1 |
+| `--format <formats>` | Export formats: jsonld,turtle | jsonld |
+| `--validate` | Enable validation | true |
+| `--no-validate` | Disable validation | - |
+| `--verbose, -v` | Enable verbose logging | false |
+| `--clean` | Clean output directory before build | false |
+| `--since <date>` | Incremental build since date | - |
+| `--concurrency <n>` | Concurrent file operations | 10 |
+| `--help, -h` | Show help | - |
 
 ### Validation
 
@@ -453,22 +615,21 @@ node scripts/generate-western-preparations.js
 node scripts/fix-iri-patterns.js
 ```
 
-## IRI Reference Patterns
+## IRI Patterns
+
+All entities in the knowledge graph use fully qualified IRIs:
 
 | Pattern | Example | Description |
 |---------|---------|-------------|
-| `botanical/species/{slug}` | `botanical/species/ginger` | Plant species |
-| `botanical/part/{slug}` | `botanical/part/ginger-rhizome` | Plant part |
-| `preparation/{slug}` | `preparation/dried-ginger-rhizome` | Herbal preparation |
-| `tcm/profile/{slug}` | `tcm/profile/dried-ginger` | TCM profile |
-| `western/profile/{slug}` | `western/profile/ginger` | Western profile |
-| `ayurveda/profile/{slug}` | `ayurveda/profile/nagara` | Ayurveda profile |
-| `persian/profile/{slug}` | `persian/profile/zanjabil` | Persian profile |
-| `mongolian/profile/{slug}` | `mongolian/profile/gaa` | Mongolian profile |
-| `tcm/nature/{value}` | `tcm/nature/hot` | TCM thermal nature |
-| `tcm/flavor/{value}` | `tcm/flavor/pungent` | TCM flavor |
-| `tcm/meridian/{value}` | `tcm/meridian/spleen` | TCM meridian |
-| `western/action/{value}` | `western/action/carminative` | Western action |
+| `https://www.herbapedia.org/graph/species/{slug}` | `.../species/panax-ginseng` | Plant species |
+| `https://www.herbapedia.org/graph/part/{slug}` | `.../part/ginseng-root` | Plant part |
+| `https://www.herbapedia.org/graph/chemical/{slug}` | `.../chemical/ginsenoside-rb1` | Chemical compound |
+| `https://www.herbapedia.org/graph/preparation/{slug}` | `.../preparation/dried-ginger` | Herbal preparation |
+| `https://www.herbapedia.org/graph/formula/{slug}` | `.../formula/si-jun-zi-tang` | Multi-herb formula |
+| `https://www.herbapedia.org/graph/profile/{system}/{slug}` | `.../profile/tcm/ren-shen` | System profile |
+| `https://www.herbapedia.org/graph/vocab/{system}/{type}/{value}` | `.../vocab/tcm/flavor/sweet` | Vocabulary term |
+| `https://www.herbapedia.org/graph/source/{slug}` | `.../source/vita-green` | Data source |
+| `https://www.herbapedia.org/graph/image/{slug}` | `.../image/panax-ginseng` | Image metadata |
 
 ## Contributing
 
@@ -477,7 +638,8 @@ node scripts/fix-iri-patterns.js
 3. Add or modify JSON-LD data files following the schema
 4. Validate using `node scripts/validate.js`
 5. Build index using `node scripts/build-index.js`
-6. Submit a pull request
+6. Build graph using `npm run build-graph`
+7. Submit a pull request
 
 ### Content Guidelines
 
@@ -485,6 +647,13 @@ node scripts/fix-iri-patterns.js
 - **System-Scoped Content**: Use `tcm:traditionalUsage`, not generic `traditionalUsage`
 - **IRI References**: Always use object format `{ "@id": "..." }` for references
 - **Required Fields**: Check JSON schemas for required fields per entity type
+
+## Documentation
+
+- **[API Reference](docs/api/README.md)** - Query, Traversal, Index APIs
+- **[Migration Guide](MIGRATE-KG-IMPORTANT.md)** - Migrating to the Knowledge Graph API
+- **[Examples](docs/EXAMPLES.md)** - Usage examples and patterns
+- **[Schema Documentation](docs/SCHEMA.md)** - JSON-LD schemas and contexts
 
 ## License
 

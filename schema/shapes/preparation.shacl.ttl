@@ -1,0 +1,166 @@
+# Preparation SHACL Shapes for Herbapedia Knowledge Graph
+#
+# This file defines validation rules for herbal preparation nodes.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix schema: <https://schema.org/> .
+@prefix herbapedia: <https://www.herbapedia.org/ontology/> .
+@prefix graph: <https://www.herbapedia.org/graph/> .
+
+# =============================================================================
+# Preparation Node Shape
+# =============================================================================
+
+herbapedia:PreparationShape
+  a sh:NodeShape ;
+  rdfs:label "Preparation Node Shape" ;
+  rdfs:comment "Validates herbal preparation nodes in the knowledge graph" ;
+  sh:targetClass herbapedia:Preparation, herbapedia:HerbalPreparation ;
+
+  # Must conform to base shapes
+  sh:node herbapedia:GraphNodeShape ;
+  sh:node herbapedia:NamedEntityShape ;
+  sh:node herbapedia:ReferenceableShape ;
+
+  # IRI must follow preparation pattern
+  sh:pattern "^https://www\\.herbapedia\\.org/graph/preparation/[a-z0-9-]+$" ;
+
+  # Preparation type is required
+  sh:property [
+    sh:path herbapedia:preparationType ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:in (
+      "decoction"       # 煎剂 - boiled extract
+      "infusion"        # 浸剂 - tea-like preparation
+      "tincture"        # 酊剂 - alcohol extract
+      "powder"          # 粉剂 - ground herb
+      "pill"            # 丸剂 - pill/pellet
+      "extract"         # 提取物 - concentrated extract
+      "oil"             # 油剂 - oil infusion
+      "ointment"        # 膏剂 - topical preparation
+      "syrup"           # 糖浆 - sweetened liquid
+      "capsule"         # 胶囊 - encapsulated powder
+      "tablet"          # 片剂 - compressed powder
+      "tea"             # 茶剂 - for brewing
+      "wine"            # 酒剂 - medicinal wine
+      "honey-pill"      # 蜜丸 - honey-bound pill
+      "water-pill"      # 水丸 - water-bound pill
+      "paste"           # 糊剂 - paste
+    ) ;
+    sh:message "Preparation must have a valid preparation type" ;
+  ] ;
+
+  # Derived from plant/part reference (required)
+  sh:property [
+    sh:path herbapedia:derivedFrom ;
+    sh:node herbapedia:IRIReferenceShape ;
+    sh:minCount 1 ;
+    sh:message "Preparation must be derived from at least one plant or part" ;
+  ] ;
+
+  # Processing method (paozhi 炮制)
+  sh:property [
+    sh:path herbapedia:processingMethod ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:severity sh:Info ;
+  ] ;
+
+  # Dosage information
+  sh:property [
+    sh:path herbapedia:typicalDosage ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:severity sh:Warning ;
+  ] ;
+
+  # Contraindications
+  sh:property [
+    sh:path herbapedia:contraindications ;
+    sh:severity sh:Warning ;
+  ] .
+
+# =============================================================================
+# Decoction Shape
+# =============================================================================
+
+herbapedia:DecoctionShape
+  a sh:NodeShape ;
+  rdfs:label "Decoction Shape" ;
+  rdfs:comment "Validates decoction (煎剂) preparations" ;
+  sh:targetClass herbapedia:Decoction ;
+
+  # Must be a valid preparation
+  sh:node herbapedia:PreparationShape ;
+
+  # Preparation type must be decoction
+  sh:property [
+    sh:path herbapedia:preparationType ;
+    sh:hasValue "decoction" ;
+  ] ;
+
+  # Should have brewing instructions
+  sh:property [
+    sh:path herbapedia:brewingInstructions ;
+    sh:severity sh:Info ;
+    sh:message "Decoctions should have brewing instructions" ;
+  ] .
+
+# =============================================================================
+# Tincture Shape
+# =============================================================================
+
+herbapedia:TinctureShape
+  a sh:NodeShape ;
+  rdfs:label "Tincture Shape" ;
+  rdfs:comment "Validates tincture (酊剂) preparations" ;
+  sh:targetClass herbapedia:Tincture ;
+
+  # Must be a valid preparation
+  sh:node herbapedia:PreparationShape ;
+
+  # Preparation type must be tincture
+  sh:property [
+    sh:path herbapedia:preparationType ;
+    sh:hasValue "tincture" ;
+  ] ;
+
+  # Should have alcohol concentration
+  sh:property [
+    sh:path herbapedia:alcoholConcentration ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:severity sh:Info ;
+  ] .
+
+# =============================================================================
+# Powder Shape
+# =============================================================================
+
+herbapedia:PowderShape
+  a sh:NodeShape ;
+  rdfs:label "Powder Shape" ;
+  rdfs:comment "Validates powder (粉剂) preparations" ;
+  sh:targetClass herbapedia:Powder ;
+
+  # Must be a valid preparation
+  sh:node herbapedia:PreparationShape ;
+
+  # Preparation type must be powder
+  sh:property [
+    sh:path herbapedia:preparationType ;
+    sh:hasValue "powder" ;
+  ] ;
+
+  # Should have particle size specification
+  sh:property [
+    sh:path herbapedia:particleSize ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:severity sh:Info ;
+  ] .

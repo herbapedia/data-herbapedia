@@ -112,12 +112,12 @@
     },
 
     {
-      "@id": "herbal:hasPersianProfile",
+      "@id": "herbal:hasUnaniProfile",
       "@type": "owl:ObjectProperty",
       "rdfs:domain": "herbal:HerbalPreparation",
       "rdfs:range": "herbapedia:MedicineSystemProfile",
       "rdfs:label": {
-        "en": "has Persian profile",
+        "en": "has Unani profile",
         "zh-Hant": "具有波斯概況"
       }
     },

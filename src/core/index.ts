@@ -33,7 +33,7 @@ export {
   isTCMProfile,
   isWesternProfile,
   isAyurvedaProfile,
-  isPersianProfile,
+  isUnaniProfile,
   isMongolianProfile,
   isChemicalCompound,
   isHerbalPreparation,

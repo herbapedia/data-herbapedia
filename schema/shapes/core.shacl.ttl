@@ -1,0 +1,135 @@
+# Core SHACL Shapes for Herbapedia Knowledge Graph
+#
+# This file defines base shapes that all nodes must conform to.
+# It establishes the core requirements for any node in the graph.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix herbapedia: <https://www.herbapedia.org/ontology/> .
+@prefix graph: <https://www.herbapedia.org/graph/> .
+
+# =============================================================================
+# Base Node Shape
+# =============================================================================
+
+herbapedia:GraphNodeShape
+  a sh:NodeShape ;
+  rdfs:label "Base Graph Node Shape" ;
+  rdfs:comment "All nodes in the knowledge graph must conform to this base shape" ;
+
+  # Required properties for ALL nodes
+  sh:property [
+    sh:path herbapedia:slug ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:pattern "^[a-z0-9]+(-[a-z0-9]+)*$" ;
+    sh:message "Slug must be lowercase, hyphen-separated identifier" ;
+  ] ;
+
+  sh:property [
+    sh:path herbapedia:createdAt ;
+    sh:datatype xsd:dateTime ;
+    sh:maxCount 1 ;
+  ] ;
+
+  sh:property [
+    sh:path herbapedia:updatedAt ;
+    sh:datatype xsd:dateTime ;
+    sh:maxCount 1 ;
+  ] .
+
+# =============================================================================
+# Named Entity Shape (entities with multilingual names)
+# =============================================================================
+
+herbapedia:NamedEntityShape
+  a sh:NodeShape ;
+  rdfs:label "Named Entity Shape" ;
+  rdfs:comment "Shape for entities that have multilingual names and descriptions" ;
+  sh:targetClass herbapedia:NamedEntity ;
+
+  # Must be a graph node
+  sh:node herbapedia:GraphNodeShape ;
+
+  # Name is required (as language map)
+  sh:property [
+    sh:path herbapedia:name ;
+    sh:minCount 1 ;
+    sh:message "Name is required for all named entities" ;
+  ] ;
+
+  # Description is recommended
+  sh:property [
+    sh:path herbapedia:description ;
+    sh:severity sh:Warning ;
+    sh:message "Description is recommended for all named entities" ;
+  ] .
+
+# =============================================================================
+# Referenceable Node Shape
+# =============================================================================
+
+herbapedia:ReferenceableShape
+  a sh:NodeShape ;
+  rdfs:label "Referenceable Node Shape" ;
+  rdfs:comment "Shape for nodes that can be referenced by other nodes" ;
+
+  # Must have a valid IRI as @id
+  sh:nodeKind sh:IRI ;
+
+  # IRI must follow our pattern
+  sh:pattern "^https://www\\.herbapedia\\.org/graph/" ;
+  sh:message "Node IRI must be in the herbapedia.org/graph namespace" .
+
+# =============================================================================
+# Language Map Validation
+# =============================================================================
+
+herbapedia:LanguageMapShape
+  a sh:NodeShape ;
+  rdfs:label "Language Map Shape" ;
+  rdfs:comment "Validates language-tagged string values" ;
+
+  # Each key must be a valid language code
+  sh:property [
+    sh:path rdf:value ;
+    sh:datatype xsd:string ;
+  ] .
+
+# =============================================================================
+# IRI Reference Shape
+# =============================================================================
+
+herbapedia:IRIReferenceShape
+  a sh:NodeShape ;
+  rdfs:label "IRI Reference Shape" ;
+  rdfs:comment "Validates that a value is a valid IRI reference" ;
+
+  # Must have @id property
+  sh:property [
+    sh:path herbapedia:id ;
+    sh:nodeKind sh:IRI ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "IRI reference must have exactly one @id property" ;
+  ] .
+
+# =============================================================================
+# Source Reference Shape
+# =============================================================================
+
+herbapedia:SourceReferenceShape
+  a sh:NodeShape ;
+  rdfs:label "Source Reference Shape" ;
+  rdfs:comment "Validates references to external authorities" ;
+
+  sh:or (
+    [ sh:pattern "^https?://www\\.wikidata\\.org/entity/Q[0-9]+$" ]
+    [ sh:pattern "^https?://www\\.gbif\\.org/species/[0-9]+$" ]
+    [ sh:pattern "^https?://eol\\.org/pages/[0-9]+$" ]
+    [ sh:pattern "^https?://www\\.itis\\.gov/servlet/SingleRpt/SingleRpt\\?" ]
+  ) ;
+  sh:message "Source reference must be a recognized authority URL" .

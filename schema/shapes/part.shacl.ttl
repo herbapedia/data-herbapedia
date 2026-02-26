@@ -1,0 +1,126 @@
+# Part SHACL Shapes for Herbapedia Knowledge Graph
+#
+# This file defines validation rules for plant part nodes.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix schema: <https://schema.org/> .
+@prefix herbapedia: <https://www.herbapedia.org/ontology/> .
+@prefix graph: <https://www.herbapedia.org/graph/> .
+
+# =============================================================================
+# Part Node Shape
+# =============================================================================
+
+herbapedia:PartShape
+  a sh:NodeShape ;
+  rdfs:label "Part Node Shape" ;
+  rdfs:comment "Validates plant part nodes in the knowledge graph" ;
+  sh:targetClass herbapedia:Part, herbapedia:PlantPart ;
+
+  # Must conform to base shapes
+  sh:node herbapedia:GraphNodeShape ;
+  sh:node herbapedia:NamedEntityShape ;
+  sh:node herbapedia:ReferenceableShape ;
+
+  # IRI must follow part pattern
+  sh:pattern "^https://www\\.herbapedia\\.org/graph/part/[a-z0-9-]+$" ;
+
+  # Part type is required
+  sh:property [
+    sh:path herbapedia:partType ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:in ("root" "rhizome" "stem" "bark" "leaf" "flower" "fruit" "seed" "whole" "resin" "oil" "other") ;
+    sh:message "Part must have a valid part type" ;
+  ] ;
+
+  # Parent species reference (recommended)
+  sh:property [
+    sh:path herbapedia:partOf ;
+    sh:node herbapedia:IRIReferenceShape ;
+    sh:class herbapedia:Species ;
+    sh:maxCount 1 ;
+    sh:severity sh:Info ;
+  ] ;
+
+  # Chemical composition references
+  sh:property [
+    sh:path herbapedia:containsChemical ;
+    sh:node herbapedia:IRIReferenceShape ;
+    sh:class herbapedia:Chemical ;
+  ] ;
+
+  # Usage information
+  sh:property [
+    sh:path herbapedia:partUsage ;
+    sh:datatype xsd:string ;
+    sh:severity sh:Info ;
+  ] ;
+
+  # Preparation methods
+  sh:property [
+    sh:path herbapedia:preparedAs ;
+    sh:node herbapedia:IRIReferenceShape ;
+    sh:class herbapedia:Preparation ;
+  ] .
+
+# =============================================================================
+# Root Part Shape
+# =============================================================================
+
+herbapedia:RootPartShape
+  a sh:NodeShape ;
+  rdfs:label "Root Part Shape" ;
+  rdfs:comment "Validates root part nodes specifically" ;
+  sh:targetClass herbapedia:RootPart ;
+
+  # Must be a valid part
+  sh:node herbapedia:PartShape ;
+
+  # Part type must be root
+  sh:property [
+    sh:path herbapedia:partType ;
+    sh:hasValue "root" ;
+  ] .
+
+# =============================================================================
+# Leaf Part Shape
+# =============================================================================
+
+herbapedia:LeafPartShape
+  a sh:NodeShape ;
+  rdfs:label "Leaf Part Shape" ;
+  rdfs:comment "Validates leaf part nodes specifically" ;
+  sh:targetClass herbapedia:LeafPart ;
+
+  # Must be a valid part
+  sh:node herbapedia:PartShape ;
+
+  # Part type must be leaf
+  sh:property [
+    sh:path herbapedia:partType ;
+    sh:hasValue "leaf" ;
+  ] .
+
+# =============================================================================
+# Flower Part Shape
+# =============================================================================
+
+herbapedia:FlowerPartShape
+  a sh:NodeShape ;
+  rdfs:label "Flower Part Shape" ;
+  rdfs:comment "Validates flower part nodes specifically" ;
+  sh:targetClass herbapedia:FlowerPart ;
+
+  # Must be a valid part
+  sh:node herbapedia:PartShape ;
+
+  # Part type must be flower
+  sh:property [
+    sh:path herbapedia:partType ;
+    sh:hasValue "flower" ;
+  ] .

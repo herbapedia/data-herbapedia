@@ -67,7 +67,7 @@ export class ReferenceValidator {
       { path: 'profiles/tcm', type: 'TCMProfile' },
       { path: 'profiles/western', type: 'WesternHerbalProfile' },
       { path: 'profiles/ayurveda', type: 'AyurvedaProfile' },
-      { path: 'profiles/persian', type: 'PersianProfile' },
+      { path: 'profiles/unani', type: 'UnaniProfile' },
       { path: 'profiles/mongolian', type: 'MongolianProfile' },
     ]
 
@@ -107,7 +107,7 @@ export class ReferenceValidator {
       'systems/tcm/reference',
       'systems/western/reference',
       'systems/ayurveda/reference',
-      'systems/persian/reference',
+      'systems/unani/reference',
       'systems/mongolian/reference',
     ]
 
@@ -283,9 +283,9 @@ export class ReferenceValidator {
           iri.startsWith('ayurveda/guna/') ||
           iri.startsWith('ayurveda/virya/') ||
           iri.startsWith('ayurveda/vipaka/') ||
-          iri.startsWith('persian/temperament/') ||
-          iri.startsWith('persian/element/') ||
-          iri.startsWith('persian/degree/') ||
+          iri.startsWith('unani/temperament/') ||
+          iri.startsWith('unani/element/') ||
+          iri.startsWith('unani/degree/') ||
           iri.startsWith('mongolian/root/') ||
           iri.startsWith('mongolian/element/') ||
           iri.startsWith('mongolian/taste/') ||

@@ -30,10 +30,19 @@
   },
   "include": [
     "src/core/**/*",
-    "src/types/**/*"
+    "src/types/**/*",
+    "src/graph/**/*",
+    "src/queries/**/*",
+    "src/builders/**/*",
+    "src/validation/**/*",
+    "src/plugins/**/*",
+    "src/index.ts",
+    "types/**/*",
+    "scripts/**/*"
   ],
   "exclude": [
     "node_modules",
-    "dist"
+    "dist",
+    "api"
   ]
 }

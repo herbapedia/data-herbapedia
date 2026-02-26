@@ -26,7 +26,10 @@
   },
   "hasFlavor": [
     {
-      "@id": "https://www.herbapedia.org/system/tcm/flavor/sweet"
+      "@id": "https://www.herbapedia.org/system/tcm/flavor/acrid"
+    },
+    {
+      "@id": "https://www.herbapedia.org/system/tcm/flavor/bitter"
     }
   ],
   "entersMeridian": [
