@@ -320,28 +320,33 @@ export class GraphBuilder {
         return false
       }
 
-      // Filter by @type: only load actual species, not chemicals
+      // Filter by @type: only load actual botanical species
       try {
         const data = JSON.parse(fs.readFileSync(entityPath, 'utf-8'))
         const types = Array.isArray(data['@type']) ? data['@type'] : [data['@type']]
 
-        // Check if this is a Species node (not Chemical, Source, etc.)
+        // Check if this is a Species/BotanicalSource node (not Chemical, Source, etc.)
         const isSpecies = types.some(t =>
+          t === 'botany:PlantSpecies' ||
+          t === 'herbapedia:BotanicalSource' ||
+          t === 'phycology:AlgalSpecies' ||
+          t === 'mycology:FungalSpecies' ||
           t === 'herbapedia:Species' ||
           t === 'Species' ||
-          t.includes('Species') ||
-          t === 'schema:Taxon' ||
-          t === 'dwc:Taxon'
+          t.includes('PlantSpecies') ||
+          t === 'schema:Plant'
         )
 
         // Skip if it is a Chemical or other non-species type
+        // Note: We specifically list exclusions - don't use includes('Source') because
+        // herbapedia:BotanicalSource is a valid species type
         const isNonSpecies = types.some(t =>
           t === 'herbapedia:Chemical' ||
           t === 'Chemical' ||
           t.includes('Chemical') ||
-          t === 'herbapedia:Source' ||
-          t === 'Source' ||
-          t.includes('Source')
+          t === 'herbapedia:ZoologicalSource' ||
+          t === 'herbapedia:MineralSource' ||
+          t === 'herbapedia:FungalSource' // Fungi have their own loader
         )
 
         return isSpecies && !isNonSpecies

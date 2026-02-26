@@ -50,11 +50,11 @@ export class SpeciesNodeBuilder {
 
   build(): SpeciesNode {
     if (!this._slug) throw new Error('Species slug is required')
-    if (!this._scientificName) throw new Error('Scientific name is required')
+    // scientificName can be empty for synthetic/non-botanical sources
 
     return new SpeciesNode({
       slug: this._slug,
-      scientificName: this._scientificName,
+      scientificName: this._scientificName || '',
       name: this._name,
       description: this._description,
       family: this._family,
