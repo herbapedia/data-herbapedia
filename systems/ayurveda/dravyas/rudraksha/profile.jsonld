@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/rudraksha",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "rudraksha",
+  "name": {
+    "sa": "Rudraksha",
+    "sa-Latn": "Rudraksha",
+    "as": "Rudrakya",
+    "bn": "Rudrakya",
+    "en": "Rudraksh",
+    "gu": "Rudraksh",
+    "hi": "Rudraki",
+    "kn": "Rudrakshi mara",
+    "ks": "Rudraksha",
+    "ml": "Rudraksha",
+    "mr": "Rudraksha",
+    "or": "Rudraksha",
+    "pa": "Rudraksha",
+    "ta": "Rudraksha",
+    "te": "Rudraksha",
+    "ur": "-"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/rudraksha"
+  },
+  "partUsed": "seed",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V4-049",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Fixed Oil and Fatty Acids."
+  }
+}

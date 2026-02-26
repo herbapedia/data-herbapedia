@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/masura",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "masura",
+  "name": {
+    "sa": "Masura",
+    "sa-Latn": "Masura",
+    "as": "Masuri",
+    "bn": "Masuri",
+    "en": "Lentil",
+    "gu": "Masura",
+    "hi": "Masur",
+    "kn": "Masura Bele",
+    "ks": "Chanam payar",
+    "ml": "Chanam payar",
+    "mr": "Masur",
+    "or": "Masur",
+    "pa": "Masur",
+    "ta": "Masoor Paruppu",
+    "te": "Masura Pappu",
+    "ur": "Masur"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/masura"
+  },
+  "partUsed": "seed",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V3-056",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Flavonoids and Vitamins."
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/sthauneya",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "sthauneya",
+  "name": {
+    "sa": "Sthauneya",
+    "sa-Latn": "Sthauneya",
+    "as": "Birmi",
+    "bn": "Birmi",
+    "en": "Himalayan Yew",
+    "gu": "Gethela Barmi",
+    "hi": "Thuner",
+    "kn": "Sthauneyak",
+    "ks": "Thuriangam",
+    "ml": "Thuriangam",
+    "mr": "Sthauney Barmi",
+    "or": "Talisabhed",
+    "pa": "Birmi",
+    "ta": "Talisapatri-Bhedam",
+    "te": "Taleesa Patri Bhedamu",
+    "ur": "Birmi"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/sthauneya"
+  },
+  "partUsed": "leaf",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V3-092",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/ka¶u"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/tikta"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/laghu"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/ushna"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/ka¶u"
+  },
+  "karma": [
+    "D¢pana",
+    "Kaphav¡tah¤t",
+    "Bhedana",
+    "K¤mighna",
+    "Vra¸ahara",
+    "ViÀaghna",
+    "KuÀhaghna"
+  ],
+  "constituents": {
+    "en": "Alkaloids - Taxine, Ephedrine, Glycoside, Tannins, Resins, Reducing"
+  }
+}

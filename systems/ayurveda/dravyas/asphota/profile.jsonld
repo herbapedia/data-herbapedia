@@ -1,0 +1,38 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/asphota",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "asphota",
+  "name": {
+    "sa": "Asphota",
+    "sa-Latn": "Asphota",
+    "as": "Haaparmaali",
+    "bn": "Haaparmaali",
+    "en": "-Hindi : Dudhibel",
+    "gu": "Dudhibel",
+    "hi": "Dudhibel",
+    "kn": "-Malayalam : -Marathi : -Oriya : Bonokonerinoi",
+    "ks": "-Marathi : -Oriya : Bonokonerinoi",
+    "ml": "-Oriya : Bonokonerinoi",
+    "mr": "Bonokonerinoi",
+    "or": "Bonokonerinoi",
+    "pa": "-Telugu : Nagamalle",
+    "ta": "Nagamalle",
+    "te": "Nagamalle",
+    "ur": "-"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/asphota"
+  },
+  "partUsed": "root",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V5-006",
+    "license": "CC-BY-4.0",
+    "verified": true
+  }
+}

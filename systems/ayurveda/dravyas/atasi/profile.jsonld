@@ -1,0 +1,79 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/atasi",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "atasi",
+  "name": {
+    "sa": "Atasi",
+    "sa-Latn": "Atasi",
+    "as": "Tisi",
+    "bn": "Masina",
+    "en": "Linseed",
+    "gu": "Alshi",
+    "hi": "Alsi",
+    "kn": "Agasebeeja",
+    "ks": "Alsi",
+    "ml": "Agastha",
+    "mr": "Atshi",
+    "or": "Atushi",
+    "pa": "Ali",
+    "ta": "Ali",
+    "te": "Avisa",
+    "ur": "Alsi"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/atasi"
+  },
+  "partUsed": "seed",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-014",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/madhura"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/tikta"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/guru"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/snigdha"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/ushna"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/ka¶u"
+  },
+  "karma": [
+    "V¡taghna",
+    "AcakÀuÀya"
+  ],
+  "indications": [
+    "K¤miroga",
+    "KuÀ¶ha",
+    "Pram®ha",
+    "áir°r°ga"
+  ],
+  "dosage": {
+    "en": "3-6 g of the drug in powder form."
+  },
+  "importantFormulations": [
+    "SarÀap¡di Taila"
+  ],
+  "constituents": {
+    "en": "Fixed oil, mucilage and protein."
+  }
+}

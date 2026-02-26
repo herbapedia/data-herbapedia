@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/kakanasika",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "kakanasika",
+  "name": {
+    "sa": "Kakanasika",
+    "sa-Latn": "Kakanasika",
+    "as": "Kurki",
+    "bn": "Kurki",
+    "en": "Tigers Claw",
+    "gu": "Bichu Hathajori",
+    "hi": "Bichu Hathajori",
+    "kn": "Garuda Mugu",
+    "ks": "-Marathi : Vinchuachajada",
+    "ml": "Vinchuachajada",
+    "mr": "Vinchuachajada",
+    "or": "Kaktundi",
+    "pa": "Kaktundi",
+    "ta": "Kakatundi",
+    "te": "Garudamukku",
+    "ur": "Pan"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/kakanasika"
+  },
+  "partUsed": "seed",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V3-037",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Fixed Oil- (Semidrying type)."
+  }
+}

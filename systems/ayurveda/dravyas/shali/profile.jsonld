@@ -1,0 +1,40 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/shali",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "shali",
+  "name": {
+    "sa": "Shali",
+    "sa-Latn": "Shali",
+    "as": "Dhan",
+    "bn": "Dhan",
+    "en": "Rice",
+    "gu": "Bhat",
+    "hi": "Chaval",
+    "kn": "Akkiege",
+    "ks": "Ari",
+    "ml": "Ari",
+    "mr": "Tandul",
+    "or": "-Tamil : Arshee",
+    "pa": "Arshee",
+    "ta": "Arshee",
+    "te": "Dhanyamu"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/shali"
+  },
+  "partUsed": "fruit",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V3-081",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Carbohydrate -Starch."
+  }
+}

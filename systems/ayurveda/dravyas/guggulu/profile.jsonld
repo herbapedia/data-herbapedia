@@ -1,0 +1,93 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/guggulu",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "guggulu",
+  "name": {
+    "sa": "Guggulu",
+    "sa-Latn": "Guggulu",
+    "as": "Guggul",
+    "bn": "Guggula",
+    "en": "Gum-gugul",
+    "gu": "Gugal",
+    "hi": "Guggul",
+    "kn": "Kanthagana",
+    "ks": "Guggul Dhoop",
+    "ml": "Gulgulu",
+    "mr": "Guggul",
+    "or": "Guggulu",
+    "pa": "Guggal",
+    "ta": "Mahisaksi Guggalu",
+    "te": "Makishakshi guggulu",
+    "ur": "Muqil (Shihappu)"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/guggulu"
+  },
+  "partUsed": "exudate",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-030",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/ka¶u"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/tikta"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/kashaya"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/laghu"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/sara"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/va¿ada"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/ushna"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/ka¶u"
+  },
+  "karma": [
+    "Balya",
+    "Ras¡yana",
+    "Var¸ya",
+    "V¡tabal¡sajit",
+    "Bhagnasandh¡nak¤t",
+    "Medohara"
+  ],
+  "indications": [
+    "Ëmav¡ta",
+    "KuÀ¶ha",
+    "Prameha",
+    "V¡tavy¡di",
+    "Granthi",
+    "áopha"
+  ],
+  "dosage": {
+    "en": "2-4 g of the drug."
+  },
+  "importantFormulations": [
+    "V¡t¡ri Guggulu",
+    "Yogar¡ja Guggulu",
+    "SiÆhan¡da"
+  ],
+  "constituents": {
+    "en": "Essential oil, gum, resin, steroids."
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/satavari",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "satavari",
+  "name": {
+    "sa": "Satavari",
+    "sa-Latn": "Satavari",
+    "as": "Satmull",
+    "bn": "Satamuli",
+    "en": "Asparagus",
+    "gu": "Satavari",
+    "hi": "Satavar",
+    "kn": "Ashadi poeru",
+    "ks": "Satavari Kizhangu",
+    "ml": "Satavari Kizhangu",
+    "mr": "Shatavari",
+    "or": "Satavar",
+    "pa": "Satavar",
+    "ta": "Shimai-Shadvari",
+    "te": "Sima-Shatawari (Dry Root)",
+    "ur": "Satawari"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/satavari"
+  },
+  "partUsed": "root",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V4-052",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Sugar, Glycosides, Saponin and Sitosterol."
+  }
+}

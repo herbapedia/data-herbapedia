@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/meshashringi",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "meshashringi",
+  "name": {
+    "sa": "Meshashringi",
+    "sa-Latn": "Meshashringi",
+    "as": "Medhasingi",
+    "bn": "Medhasingi",
+    "en": "Periploca of the wood",
+    "gu": "Kaavalee",
+    "hi": "Gudmaar",
+    "kn": "Kadhasige",
+    "ks": "Cakkarakkolli",
+    "ml": "Cakkarakkolli",
+    "mr": "Kaavalee",
+    "or": "-Tamil : Shirukurum Kaay",
+    "pa": "Shirukurum Kaay",
+    "ta": "Shirukurum Kaay",
+    "te": "Podapatro",
+    "ur": "-"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/meshashringi"
+  },
+  "partUsed": "leaf",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V5-052",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Triterpenoid saponins of gymnemic acid A, B, C and D with sugarresidues such as glucuronic acid, galacturonic acid, ferulic and angelic acids attached as"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/canda",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "canda",
+  "name": {
+    "sa": "Canda",
+    "sa-Latn": "Canda",
+    "as": "-English : -Gujrati : -Hindi : Choraka bheda",
+    "bn": "-Gujrati : -Hindi : Choraka bheda",
+    "en": "-Hindi : Choraka bheda",
+    "gu": "Choraka bheda",
+    "hi": "Choraka bheda",
+    "kn": "-Malayalam : -Marathi : -Oriya : -Punjabi : -Tamil : -Telugu : -Urdu : -",
+    "ks": "-Marathi : -Oriya : -Punjabi : -Tamil : -Telugu : -Urdu : -",
+    "ml": "-Oriya : -Punjabi : -Tamil : -Telugu : -Urdu : -",
+    "mr": "-Punjabi : -Tamil : -Telugu : -Urdu : -",
+    "or": "-Tamil : -Telugu : -Urdu : -",
+    "pa": "-Telugu : -Urdu : -",
+    "ta": "-Urdu : -",
+    "te": "-",
+    "ur": "-"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/canda"
+  },
+  "partUsed": "root",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V5-009",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Containing limonene, á-phellandrene, pinene, p-cymene, terpinolene,"
+  }
+}

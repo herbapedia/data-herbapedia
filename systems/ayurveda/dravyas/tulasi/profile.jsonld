@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/tulasi",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "tulasi",
+  "name": {
+    "sa": "Tulasi",
+    "sa-Latn": "Tulasi",
+    "as": "Tulasi",
+    "bn": "Tulasi",
+    "en": "Holi Basil",
+    "gu": "Tulsi",
+    "hi": "Tulasi",
+    "kn": "Tulasi",
+    "ks": "Tulasi",
+    "ml": "Tulasi",
+    "mr": "Tulasi",
+    "or": "Tulasi",
+    "pa": "Tulasi",
+    "ta": "Tulasi",
+    "te": "Tulasi",
+    "ur": "Tulsi"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/tulasi"
+  },
+  "partUsed": "seed",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V4-062",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Fixed Oil and Mucilage"
+  }
+}

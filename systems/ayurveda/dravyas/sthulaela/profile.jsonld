@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/sthulaela",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "sthulaela",
+  "name": {
+    "sa": "Sthulaela",
+    "sa-Latn": "Sthulaela",
+    "as": "Baara aliach",
+    "bn": "Baara aliach",
+    "en": "Greater or Nepal cardamom",
+    "gu": "Elaicho",
+    "hi": "Bari elachi",
+    "kn": "Dodda Yalakki",
+    "ks": "Valiya Elam",
+    "ml": "Valiya Elam",
+    "mr": "Mothi Elayachi",
+    "or": "Bada aleicha",
+    "pa": "Budi Eleichi",
+    "ta": "Periya Elam",
+    "te": "Pedda Elakulu",
+    "ur": "Badi Elaichi"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/sthulaela"
+  },
+  "partUsed": "seed",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V2-071",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Volatile Oil (rich in Cineole)."
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/adhaki",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "adhaki",
+  "name": {
+    "sa": "Adhaki",
+    "sa-Latn": "Adhaki",
+    "as": "Ruharmah",
+    "bn": "Arhar",
+    "en": "Pigeon Pea",
+    "gu": "Tuver",
+    "hi": "Arhar",
+    "kn": "Togari",
+    "ks": "Thuvara",
+    "ml": "Thuvara",
+    "mr": "Toor",
+    "or": "Harada",
+    "pa": "Arhar",
+    "ta": "Adagi Tuvari",
+    "te": "Kandulu",
+    "ur": "Arhar"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/adhaki"
+  },
+  "partUsed": "seed",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V4-002",
+    "license": "CC-BY-4.0",
+    "verified": true
+  }
+}

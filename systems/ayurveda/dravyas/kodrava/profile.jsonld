@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/kodrava",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "kodrava",
+  "name": {
+    "sa": "Kodrava",
+    "sa-Latn": "Kodrava",
+    "as": "Kodo aadhaan",
+    "bn": "Kodo aadhaan",
+    "en": "Kodo Millet",
+    "gu": "Kodro",
+    "hi": "Kodon",
+    "kn": "Harak",
+    "ks": "Varaku",
+    "ml": "Varaku",
+    "mr": "Kodra",
+    "or": "Kodua",
+    "pa": "Kodon",
+    "ta": "Varagu",
+    "te": "Arikelu",
+    "ur": "Kodon"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/kodrava"
+  },
+  "partUsed": "grain",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V5-040",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Hydrocarcons hentriacontanol, hentriacontanone; sterols such as βsitosterol, campestrol."
+  }
+}

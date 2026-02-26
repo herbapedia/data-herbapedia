@@ -1,0 +1,77 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/kulattha",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "kulattha",
+  "name": {
+    "sa": "Kulattha",
+    "sa-Latn": "Kulattha",
+    "as": "Kulattha",
+    "bn": "Kulattha",
+    "en": "Horse gram",
+    "gu": "Kalathi",
+    "hi": "Kulathi",
+    "kn": "Huruli",
+    "ks": "Kath",
+    "ml": "Mudiraa",
+    "mr": "Kulitha",
+    "or": "Lodhar",
+    "pa": "Lodhar",
+    "ta": "Kollu",
+    "te": "Ulavalu",
+    "ur": "Kulthi"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/kulattha"
+  },
+  "partUsed": "seed",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-051",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/kashaya"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/laghu"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/sara"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/ushna"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/ka¶u"
+  },
+  "karma": [
+    "Vid¡h¢",
+    "Svedasa´gr¡haka",
+    "K¤mihara",
+    "Kaphav¡tahara."
+  ],
+  "indications": [
+    "A¿mari",
+    "NaÀ¡rtava"
+  ],
+  "dosage": {
+    "en": "12 g of the drug in powder form for decoction."
+  },
+  "importantFormulations": [
+    "Saptas¡ra Kv¡tha C£r¸a",
+    "Dh¡nvantara Taila"
+  ],
+  "constituents": {
+    "en": "An enzyme (urease) and oil."
+  }
+}

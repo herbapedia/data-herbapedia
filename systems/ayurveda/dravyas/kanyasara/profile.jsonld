@@ -1,0 +1,76 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/kanyasara",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "kanyasara",
+  "name": {
+    "sa": "Kanyasara",
+    "sa-Latn": "Kanyasara",
+    "as": "Musabhar",
+    "bn": "Ghritakalmi",
+    "en": "Indian Aloe",
+    "gu": "Eliyo",
+    "hi": "Musabhar",
+    "kn": "Karibola",
+    "ks": "Musabbar",
+    "ml": "Chenninayakam",
+    "mr": "Korphad",
+    "or": "Musabara",
+    "pa": "Kalasohaga",
+    "ta": "Kattazhi",
+    "te": "Musambaram",
+    "ur": "Musabbar"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/kanyasara"
+  },
+  "partUsed": "leaf",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-041",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/ka¶u"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/ushna"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/ushna"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/ka¶u"
+  },
+  "karma": [
+    "Bhed¢",
+    "Pittanirhara¸a",
+    "Rajahpravartaka",
+    "Jvaranut."
+  ],
+  "indications": [
+    "Jvara",
+    "Udararoga",
+    "KaÀ¶¡rtava",
+    "Yak¤dvik¡ra"
+  ],
+  "dosage": {
+    "en": "125 - 500 mg of the drug in powder form."
+  },
+  "importantFormulations": [
+    "Rajahpravartin¢ Va¶¢",
+    "Cukkumtippaly¡di Gu¶ik¡"
+  ],
+  "constituents": {
+    "en": "Anthraquinone, glycoside"
+  }
+}

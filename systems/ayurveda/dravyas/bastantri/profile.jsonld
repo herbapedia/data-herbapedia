@@ -1,0 +1,38 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/bastantri",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "bastantri",
+  "name": {
+    "sa": "Bastantri",
+    "sa-Latn": "Bastantri",
+    "as": "Bijataadaka",
+    "bn": "Bijataadaka",
+    "en": "Elephant Creeper",
+    "gu": "Samudara Sosha",
+    "hi": "Samandar-kaa-paat",
+    "kn": "Samudrapala",
+    "ks": "Samudra Pacchha",
+    "ml": "Samudra Pacchha",
+    "mr": "Samudrashok",
+    "or": "-Tamil : Samudrappachai",
+    "pa": "Samudrappachai",
+    "ta": "Samudrappachai",
+    "te": "Samudrapaala",
+    "ur": "Samandarotha"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/bastantri"
+  },
+  "partUsed": "root",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V5-007",
+    "license": "CC-BY-4.0",
+    "verified": true
+  }
+}

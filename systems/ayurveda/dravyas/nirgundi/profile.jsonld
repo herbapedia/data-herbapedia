@@ -1,0 +1,38 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/nirgundi",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "nirgundi",
+  "name": {
+    "sa": "Nirgundi",
+    "sa-Latn": "Nirgundi",
+    "as": "Aslak",
+    "bn": "Nirgundi",
+    "en": "Five leaved chaste",
+    "gu": "Nagod",
+    "hi": "Nirgundi",
+    "kn": "Lakkigida",
+    "ks": "Indranee",
+    "ml": "Indranee",
+    "mr": "Lingad",
+    "or": "Sambhalu",
+    "pa": "Sambhalu",
+    "ta": "Karuno chchil",
+    "te": "Nallavavilli",
+    "ur": "Sambhalu"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/nirgundi"
+  },
+  "partUsed": "root",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V4-036",
+    "license": "CC-BY-4.0",
+    "verified": true
+  }
+}

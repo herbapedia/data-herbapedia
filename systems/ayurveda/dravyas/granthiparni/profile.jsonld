@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/granthiparni",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "granthiparni",
+  "name": {
+    "sa": "Granthiparni",
+    "sa-Latn": "Granthiparni",
+    "as": "Granthika",
+    "bn": "Hejurchei",
+    "en": "Knod Grass",
+    "gu": "Hatisul",
+    "hi": "Gathivan",
+    "kn": "-Malayalam : -Marathi : Dipmal",
+    "ks": "-Marathi : Dipmal",
+    "ml": "Dipmal",
+    "mr": "Dipmal",
+    "or": "-Tamil : -Telugu : Ranathem",
+    "pa": "-Telugu : Ranathem",
+    "ta": "Ranathem",
+    "te": "Ranathem",
+    "ur": "Pan"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/granthiparni"
+  },
+  "partUsed": "root",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V3-028",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Sterols."
+  }
+}

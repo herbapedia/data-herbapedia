@@ -1,0 +1,40 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/chirabilva",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "chirabilva",
+  "name": {
+    "sa": "Chirabilva",
+    "sa-Latn": "Chirabilva",
+    "as": "-English : -Gujrati : Kanjo",
+    "bn": "-Gujrati : Kanjo",
+    "en": "Kanjo",
+    "gu": "Kanjo",
+    "hi": "Chirabil",
+    "kn": "Tapasimara",
+    "ml": "Aval",
+    "mr": "Vavala",
+    "or": "Karanj",
+    "pa": "Papri",
+    "ta": "Avil Pattai",
+    "te": "Nemalinara",
+    "ur": "Papri"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/chirabilva"
+  },
+  "partUsed": "fruit",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V3-019",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Fixed Oil"
+  }
+}

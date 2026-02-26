@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/pullani",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "pullani",
+  "name": {
+    "sa": "Pullani",
+    "sa-Latn": "Pullani",
+    "as": "-English : -Gujrati : -Hindi : Kokkarai",
+    "bn": "-Gujrati : -Hindi : Kokkarai",
+    "en": "-Hindi : Kokkarai",
+    "gu": "Kokkarai",
+    "hi": "Kokkarai",
+    "kn": "Marsadabaguli",
+    "ks": "Pullaani",
+    "ml": "Pullaani",
+    "mr": "Ukshi",
+    "or": "-Tamil : Minnaarukoti",
+    "pa": "Minnaarukoti",
+    "ta": "Minnaarukoti",
+    "te": "Bandimurududu",
+    "ur": "-"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/pullani"
+  },
+  "partUsed": "leaf",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V5-068",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Octacesanol, sitosterol, calycopterin, 3'0-Methylcalycopterin, 4-0"
+  }
+}

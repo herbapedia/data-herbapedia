@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/katphala",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "katphala",
+  "name": {
+    "sa": "Katphala",
+    "sa-Latn": "Katphala",
+    "as": "Ajooree",
+    "bn": "Kayachhal",
+    "en": "Box Myrtle",
+    "gu": "Kayphal",
+    "hi": "Kayphajl",
+    "kn": "Kadujai Kai",
+    "ks": "Marut",
+    "ml": "Marut",
+    "mr": "Kaayphal",
+    "or": "Kanphal",
+    "pa": "Kanphal",
+    "ta": "Marudam",
+    "te": "Kaidaryamu",
+    "ur": "Kaiphal"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/katphala"
+  },
+  "partUsed": "fruit",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V3-043",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Waxy Material."
+  }
+}

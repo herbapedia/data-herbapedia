@@ -1,0 +1,88 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/yaani",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "yaani",
+  "name": {
+    "sa": "Yaani",
+    "sa-Latn": "Yaani",
+    "as": "Jain",
+    "bn": "Yamani",
+    "en": "Bishop's weed",
+    "gu": "Ajma",
+    "hi": "Ajwain",
+    "kn": "Oma",
+    "ks": "Kath",
+    "ml": "Omam",
+    "mr": "Onva",
+    "or": "Juani",
+    "pa": "Lodhar",
+    "ta": "Omam",
+    "te": "Vamu",
+    "ur": "-"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/yaani"
+  },
+  "partUsed": "fruit",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-082",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/ka¶u"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/tikta"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/laghu"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/r£kàa"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/ùikà¸a"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/ushna"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/ka¶u"
+  },
+  "karma": [
+    "á£lahara",
+    "Anulomana",
+    "D¢pana",
+    "K¤mighna",
+    "P¡cana",
+    "Rucya"
+  ],
+  "indications": [
+    "á£la",
+    "Ëdhm¡na",
+    "Ën¡ha",
+    "Gulma",
+    "K¤miroga",
+    "Udararoga"
+  ],
+  "dosage": {
+    "en": "3-6 g of the drug in power form."
+  },
+  "importantFormulations": [
+    "Yav¡n¢ â¡·ava"
+  ],
+  "constituents": {
+    "en": "Essential oil and fixed oil."
+  }
+}

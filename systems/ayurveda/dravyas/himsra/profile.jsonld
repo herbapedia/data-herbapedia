@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/himsra",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "himsra",
+  "name": {
+    "sa": "Himsra",
+    "sa-Latn": "Himsra",
+    "as": "-English : Ceper Plant",
+    "bn": "Ceper Plant",
+    "en": "Ceper Plant",
+    "gu": "Kabaree",
+    "hi": "Kabara",
+    "kn": "-Malayalam : -Marathi : Kabar",
+    "ks": "-Marathi : Kabar",
+    "ml": "Kabar",
+    "mr": "Kabar",
+    "or": "Barar",
+    "pa": "Barar",
+    "ta": "Jeevakamu",
+    "te": "Jeevakamu",
+    "ur": "Kabar"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/himsra"
+  },
+  "partUsed": "root",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V5-020",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "The roots contain alkaloid stachydrine. Glucobrassicin, neoglucobrassicin and 4-methoxyglucobrassicin have also been identified  in the roots."
+  }
+}

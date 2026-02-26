@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/draksha",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "draksha",
+  "name": {
+    "sa": "Draksha",
+    "sa-Latn": "Draksha",
+    "as": "Dakh",
+    "bn": "Maneka",
+    "en": "Dry Grapes",
+    "gu": "Drakh",
+    "hi": "Munkka",
+    "kn": "Draksha",
+    "ks": "Munthringya",
+    "ml": "Munthringya",
+    "mr": "Draksha",
+    "or": "Drakya",
+    "pa": "Munaca",
+    "ta": "Drakshai",
+    "te": "Draksha",
+    "ur": "Munaqqa"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/draksha"
+  },
+  "partUsed": "fruit",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V3-022",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Malic, Tartaric & Oxalic Acids, Carbohydrates and Tannins."
+  }
+}

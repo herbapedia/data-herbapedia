@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/ikshu",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "ikshu",
+  "name": {
+    "sa": "Ikshu",
+    "sa-Latn": "Ikshu",
+    "as": "Kusiyar",
+    "bn": "Ganna",
+    "en": "Sugarcane",
+    "gu": "Sherdi",
+    "hi": "Ikha",
+    "kn": "Kabbu",
+    "ks": "Karumbu",
+    "ml": "Karumbu",
+    "mr": "Ush",
+    "or": "Akhu",
+    "pa": "Ganna",
+    "ta": "Karumbu",
+    "te": "Gheraku",
+    "ur": "Ganna"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/ikshu"
+  },
+  "partUsed": "stem",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V2-023",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Sucrose."
+  }
+}

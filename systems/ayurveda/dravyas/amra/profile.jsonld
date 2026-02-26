@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/amra",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "amra",
+  "name": {
+    "sa": "Amra",
+    "sa-Latn": "Amra",
+    "as": "Am",
+    "bn": "Am",
+    "en": "Mango",
+    "gu": "Aambaro",
+    "hi": "Aam",
+    "kn": "Amavina",
+    "ks": "Manga",
+    "ml": "Manga",
+    "mr": "Aamba",
+    "or": "Amkoili",
+    "pa": "Amb",
+    "ta": "Mangottai Paruppu",
+    "te": "Mamidi-Jeedi",
+    "ur": "Aam"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/amra"
+  },
+  "partUsed": "seed",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V3-005",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Tannins - Pyrogallotannins"
+  }
+}

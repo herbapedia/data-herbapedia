@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/madayanti",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "madayanti",
+  "name": {
+    "sa": "Madayanti",
+    "sa-Latn": "Madayanti",
+    "as": "Mehadi",
+    "bn": "Mehadi",
+    "en": "Henna",
+    "gu": "Mendi",
+    "hi": "Mehandi",
+    "kn": "Goranta",
+    "ks": "Mailanelu",
+    "ml": "Mailanelu",
+    "mr": "Mendi",
+    "or": "Mehndi",
+    "pa": "Mehndi",
+    "ta": "Marudum",
+    "te": "Gorinta",
+    "ur": "Mehendi"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/madayanti"
+  },
+  "partUsed": "leaf",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V4-028",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Glycosides, colouring matter (Lawsone), Hennotannic acid, Essential"
+  }
+}

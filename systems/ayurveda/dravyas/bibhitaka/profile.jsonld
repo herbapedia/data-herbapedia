@@ -1,0 +1,84 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/bibhitaka",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "bibhitaka",
+  "name": {
+    "sa": "Bibhitaka",
+    "sa-Latn": "Bibhitaka",
+    "as": "Bhomora",
+    "bn": "Bayada",
+    "en": "Beleric Myrobalan",
+    "gu": "Bahedan",
+    "hi": "Bahera",
+    "kn": "Tare kai",
+    "ks": "Babelo",
+    "ml": "Tannikka",
+    "mr": "Baheda",
+    "or": "Baheda",
+    "pa": "Bahera",
+    "ta": "Thanrikkai",
+    "te": "Thanikkaya",
+    "ur": "Bahera"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/bibhitaka"
+  },
+  "partUsed": "fruit",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-019",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/kashaya"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/laghu"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/r£kàa"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/ushna"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/madhura"
+  },
+  "karma": [
+    "CakÀuÀya",
+    "Ke¿ya",
+    "Kaphapittajit",
+    "Bhedaka",
+    "K¤min¡¿ana",
+    "K¡sahara"
+  ],
+  "indications": [
+    "Chardi",
+    "K¡sa",
+    "K¤miroga",
+    "Vibandha",
+    "Svarabheda",
+    "Netraroga"
+  ],
+  "dosage": {
+    "en": "3-6 g of the drug in powder from."
+  },
+  "importantFormulations": [
+    "Triphal¡ C£r¸a",
+    "Triphal¡di Taila",
+    "Lava´ag¡di Va¶¢"
+  ],
+  "constituents": {
+    "en": "Gallic acid, tannic acid and glycosides."
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/tinisha",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "tinisha",
+  "name": {
+    "sa": "Tinisha",
+    "sa-Latn": "Tinisha",
+    "as": "Tinish",
+    "bn": "Tinish",
+    "en": "Sandan",
+    "gu": "Tanacha",
+    "hi": "Sandan",
+    "kn": "Karimutale",
+    "ks": "Totukara",
+    "ml": "Totukara",
+    "mr": "Timas",
+    "or": "Vanjan",
+    "pa": "Narivengai",
+    "ta": "Narivengai",
+    "te": "Tellamotuku",
+    "ur": "-"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/tinisha"
+  },
+  "partUsed": "wood",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V5-080",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Flavonoids mainly homoferreirin and ougeinin."
+  }
+}

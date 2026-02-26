@@ -1,0 +1,81 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/chandrasua",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "chandrasua",
+  "name": {
+    "sa": "Chandrasua",
+    "sa-Latn": "Chandrasua",
+    "as": "Halim",
+    "bn": "Chand Shura",
+    "en": "Common Cress",
+    "gu": "Aseriya",
+    "hi": "Chansur",
+    "kn": "Allibija",
+    "ks": "Alian",
+    "ml": "Asali",
+    "mr": "Ahaliva",
+    "or": "Chandasara",
+    "pa": "Holan",
+    "ta": "Allivirai",
+    "te": "Adityalu",
+    "ur": "Halim"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/chandrasua"
+  },
+  "partUsed": "seed",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-021",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/ka¶u"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/tikta"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/laghu"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/r£kàa"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/ùikà¸a"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/ushna"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/ka¶u"
+  },
+  "karma": [
+    "BalapuÀ¶ivivardhana",
+    "V¡ta¿leÀmah¤t."
+  ],
+  "indications": [
+    "Atis¡ra",
+    "Hikk¡",
+    "V¡tarakta"
+  ],
+  "dosage": {
+    "en": "3-6 g of the drug in powder form."
+  },
+  "importantFormulations": [
+    "Kast£ry¡di (V¡yu) Gu¶ik¡"
+  ],
+  "constituents": {
+    "en": "Alkaloids, essential oil, fixed oil and mucilage."
+  }
+}

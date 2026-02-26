@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/eranda",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "eranda",
+  "name": {
+    "sa": "Eranda",
+    "sa-Latn": "Eranda",
+    "as": "Erri",
+    "bn": "Bherenda",
+    "en": "Castor Oil Plant",
+    "gu": "Erando",
+    "hi": "Andeo",
+    "kn": "Harlu",
+    "ks": "Avanakku",
+    "ml": "Avanakku",
+    "mr": "Eramd",
+    "or": "Bheranda",
+    "pa": "Erand",
+    "ta": "Amanakku",
+    "te": "Amudamu",
+    "ur": "Erand"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/eranda"
+  },
+  "partUsed": "fruit",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V3-025",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "- Fixed Oil."
+  }
+}

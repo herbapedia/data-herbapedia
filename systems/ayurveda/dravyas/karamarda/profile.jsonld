@@ -1,0 +1,74 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/karamarda",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "karamarda",
+  "name": {
+    "sa": "Karamarda",
+    "sa-Latn": "Karamarda",
+    "as": "Karamacha",
+    "bn": "Karamacha",
+    "en": "Karamada",
+    "gu": "Karamada",
+    "hi": "Karaonda",
+    "kn": "Karayige",
+    "ks": "Modakam",
+    "ml": "Modakam",
+    "mr": "Karabanda",
+    "or": "-Tamil : Kalakkai",
+    "pa": "Kalakkai",
+    "ta": "Kalakkai",
+    "te": "Vaka",
+    "ur": "Pan"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/karamarda"
+  },
+  "partUsed": "root",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V3-041",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/ka¶u"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/tikta"
+    }
+  ],
+  "karma": [
+    "V¡tahara",
+    "Kaphahara",
+    "Recan¢",
+    "Ke¿ya",
+    "Bhrama Mohahara"
+  ],
+  "indications": [
+    "V¡tarakta",
+    "Ëmav¡ta",
+    "Ud¡varta",
+    "Udararoga",
+    "Pl¢h¡roga",
+    "ViÀavik¡ra",
+    "K¡sa",
+    "Gulma",
+    "K¤miroga"
+  ],
+  "dosage": {
+    "en": "48 g of drug for decoction."
+  },
+  "importantFormulations": [
+    "Aravind¡sava",
+    "Triphal¡di Taila"
+  ],
+  "constituents": {
+    "en": "Glycosides -Cardiac Glycosides"
+  }
+}

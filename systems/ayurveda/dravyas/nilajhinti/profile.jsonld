@@ -1,0 +1,38 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/nilajhinti",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "nilajhinti",
+  "name": {
+    "sa": "Nilajhinti",
+    "sa-Latn": "Nilajhinti",
+    "as": "Jhaati",
+    "bn": "Jhaati",
+    "en": "Kaataseriyo",
+    "gu": "Kaataseriyo",
+    "hi": "Nili",
+    "kn": "-Malayalam : Nilakurnni",
+    "ks": "Nilakurnni",
+    "ml": "Nilakurnni",
+    "mr": "Koraanti",
+    "or": "-Tamil : Shemmuli",
+    "pa": "Shemmuli",
+    "ta": "Shemmuli",
+    "te": "Mullugorant",
+    "ur": "-"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/nilajhinti"
+  },
+  "partUsed": "root",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V5-055",
+    "license": "CC-BY-4.0",
+    "verified": true
+  }
+}

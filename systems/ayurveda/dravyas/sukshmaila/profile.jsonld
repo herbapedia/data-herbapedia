@@ -1,0 +1,82 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/sukshmaila",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "sukshmaila",
+  "name": {
+    "sa": "Sukshmaila",
+    "sa-Latn": "Sukshmaila",
+    "as": "Sarooplaachi",
+    "bn": "Chota elaich",
+    "en": "Cardamom",
+    "gu": "Elchi",
+    "hi": "Choti Ilayachi",
+    "kn": "Elakki",
+    "ks": "Kath",
+    "ml": "Elam",
+    "mr": "Velloda",
+    "or": "Gujurati",
+    "pa": "Illachi",
+    "ta": "Siruelam",
+    "te": "Chinne Elakulu",
+    "ur": "Heel Khurd"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/sukshmaila"
+  },
+  "partUsed": "fruit",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-066",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/madhura"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/ka¶u"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/laghu"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/á¢ta"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/madhura"
+  },
+  "karma": [
+    "Anulomana",
+    "D¢pana",
+    "H¤dya",
+    "M£trala",
+    "Rocana"
+  ],
+  "indications": [
+    "Aruci",
+    "áv¡sa",
+    "Chardi",
+    "K¡sa",
+    "M£trak¤cchra"
+  ],
+  "dosage": {
+    "en": "250-500 mg of the drug in powder form."
+  },
+  "importantFormulations": [
+    "El¡di Modaka",
+    "El¡di C£r¸a",
+    "Sitopal¡di C£r¸a"
+  ],
+  "constituents": {
+    "en": "Essential oil."
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/vidarikanda",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "vidarikanda",
+  "name": {
+    "sa": "Vidarikanda",
+    "sa-Latn": "Vidarikanda",
+    "as": "Shimiya",
+    "bn": "Shimiya",
+    "en": "Indian Kudju",
+    "gu": "Khakharvel",
+    "hi": "VidareeKand",
+    "kn": "-Malayalam : -Marathi : Bendriya bel",
+    "ks": "-Marathi : Bendriya bel",
+    "ml": "Bendriya bel",
+    "mr": "Bendriya bel",
+    "or": "Siali",
+    "pa": "Siali",
+    "ta": "Nilpushni Kezhugu",
+    "te": "Nelagummudu",
+    "ur": "-"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/vidarikanda"
+  },
+  "partUsed": "tuber",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V5-090",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Pterocarpan-tuberosin, pterocarpanone-hydroxytuberosone, two"
+  }
+}

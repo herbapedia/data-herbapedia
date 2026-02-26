@@ -1,0 +1,76 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/atibala",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "atibala",
+  "name": {
+    "sa": "Atibala",
+    "sa-Latn": "Atibala",
+    "as": "Jayavandha",
+    "bn": "Badela",
+    "en": "Indian Mallow",
+    "gu": "Kansaki",
+    "hi": "Kanghi",
+    "kn": "Shrimudrigida",
+    "ks": "Kath",
+    "ml": "Uram",
+    "mr": "Chakrabhendi",
+    "or": "Pedipidika",
+    "pa": "Kangi",
+    "ta": "Tutti",
+    "te": "Tutturubenda",
+    "ur": "-"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/atibala"
+  },
+  "partUsed": "root",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-015",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/madhura"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/snigdha"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/á¢ta"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/madhura"
+  },
+  "karma": [
+    "Balya",
+    "V¡tahara",
+    "V¤Àya",
+    "Gr¡hi"
+  ],
+  "indications": [
+    "Raktapitta",
+    "V¡tarakta",
+    "M®ha"
+  ],
+  "dosage": {
+    "en": "3-6 g of the drug in powder form."
+  },
+  "importantFormulations": [
+    "Bal¡ Taila",
+    "N¡r¡ya¸a Taila",
+    "Mah¡n¡r¡yana Taila"
+  ],
+  "constituents": {
+    "en": "Asparagin."
+  }
+}

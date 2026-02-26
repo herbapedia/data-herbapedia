@@ -1,0 +1,81 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/darbha",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "darbha",
+  "name": {
+    "sa": "Darbha",
+    "sa-Latn": "Darbha",
+    "as": "Ulu",
+    "bn": "Ulu",
+    "en": "Thatch grass",
+    "gu": "Daabhdo",
+    "hi": "Daabha",
+    "kn": "Sanna dabbac hullu",
+    "ks": "Vidulam",
+    "ml": "Vidulam",
+    "mr": "Darsnaa",
+    "or": "Daaba",
+    "pa": "Daaba",
+    "ta": "Darbhaipul",
+    "te": "Darbalu",
+    "ur": "-"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/darbha"
+  },
+  "partUsed": "root",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V5-011",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/ka¶u"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/kashaya"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/tikta"
+    }
+  ],
+  "karma": [
+    "V¡tahara",
+    "Kaphahara",
+    "TridoÀahara",
+    "Vra¸a¿odhana",
+    "Vid¡h¢"
+  ],
+  "indications": [
+    "áotha",
+    "Ar¿a",
+    "K¡sa",
+    "K¤mi",
+    "KuÀ¶ha",
+    "DuÀ¶a Vra¸a",
+    "HutaviÀa",
+    "Gulma",
+    "Udara",
+    "Pl¢h¡roga",
+    "á£la",
+    "Mand¡gni",
+    "M£trabandha",
+    "Malabandha"
+  ],
+  "dosage": {
+    "en": "3-5 g"
+  },
+  "importantFormulations": [
+    "K¤mighna KaÀ¡ya C£r¸a"
+  ],
+  "constituents": {
+    "en": "Contains five triterpenoids viz. cylindrin, arundoin, fernenon,"
+  }
+}

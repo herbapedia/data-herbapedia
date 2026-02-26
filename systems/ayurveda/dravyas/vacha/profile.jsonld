@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/vacha",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "vacha",
+  "name": {
+    "sa": "Vacha",
+    "sa-Latn": "Vacha",
+    "as": "-English : The Sweet Flag",
+    "bn": "The Sweet Flag",
+    "en": "The Sweet Flag",
+    "gu": "Ghoduvaj",
+    "hi": "Bach",
+    "kn": "Baje",
+    "ks": "Vayambu",
+    "ml": "Vayambu",
+    "mr": "Vaca",
+    "or": "Varch",
+    "pa": "Varch",
+    "ta": "Vasambu",
+    "te": "Vasa",
+    "ur": "Waja-e-Turki"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/vacha"
+  },
+  "partUsed": "rhizome",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V2-075",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Volatile Oil (principal constituents of the Volatile oil are Asamyl"
+  }
+}

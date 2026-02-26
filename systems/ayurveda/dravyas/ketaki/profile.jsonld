@@ -1,0 +1,85 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/ketaki",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "ketaki",
+  "name": {
+    "sa": "Ketaki",
+    "sa-Latn": "Ketaki",
+    "as": "Katki",
+    "bn": "Katki",
+    "en": "Screw pine",
+    "gu": "Kevado",
+    "hi": "Kevada",
+    "kn": "Kadajlmudu",
+    "ks": "---Malayalam : Pookaitha",
+    "ml": "Pookaitha",
+    "mr": "Kewda",
+    "or": "Ketaki",
+    "pa": "Keora",
+    "ta": "Tazhai",
+    "te": "Mogali",
+    "ur": "---"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/ketaki"
+  },
+  "partUsed": "root",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-047",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/madhura"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/ka¶u"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/tikta"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/laghu"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/ushna"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/ka¶u"
+  },
+  "karma": [
+    "Balya",
+    "Ke¿ya",
+    "Ras¡yana",
+    "Var¸ya",
+    "Daurgandhyan¡¿ana",
+    "D¡r·hyakara",
+    "Saukhyakara",
+    "Kaph¡paha",
+    "CakÀuÀya."
+  ],
+  "indications": [
+    "Gulma",
+    "Netraroga",
+    "Kapharoga."
+  ],
+  "dosage": {
+    "en": "20-30 g of the drug for decoction."
+  },
+  "importantFormulations": [
+    "Triphal¡di Taila"
+  ],
+  "constituents": {
+    "en": "Essential oil."
+  }
+}

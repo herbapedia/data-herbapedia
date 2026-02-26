@@ -1,0 +1,24 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/modern-medicine.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/modern/for-health-professionals",
+  "@type": [
+    "modern:SubstanceProfile",
+    "schema:DietarySupplement"
+  ],
+  "slug": "for-health-professionals",
+  "name": {
+    "en": "For Health Professionals"
+  },
+  "classification": "other",
+  "source": {
+    "source": "NIH Office of Dietary Supplements",
+    "sourceUrl": "https://ods.od.nih.gov/HealthInformation/healthprofessional.aspx",
+    "license": "Public Domain",
+    "verified": true,
+    "verifiedDate": "'2026-02-26"
+  },
+  "dietarySources": [
+    "[National Center for Complementary and Integrative Health",
+    "[Department of Defense Operation Supplement"
+  ]
+}

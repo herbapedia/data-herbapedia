@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/vanyajiraka",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "vanyajiraka",
+  "name": {
+    "sa": "Vanyajiraka",
+    "sa-Latn": "Vanyajiraka",
+    "as": "Somaraaj",
+    "bn": "Somaraaj",
+    "en": "Purple Flebane",
+    "gu": "Kaaleejeeree",
+    "hi": "Kaalijeeree",
+    "kn": "Kaadujeerage",
+    "ks": "Krimishatru",
+    "ml": "Krimishatru",
+    "mr": "Kadujire",
+    "or": "-Tamil : Kaattuchirakam",
+    "pa": "Kaattuchirakam",
+    "ta": "Kaattuchirakam",
+    "te": "Adavijilakaroa",
+    "ur": "-"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/vanyajiraka"
+  },
+  "partUsed": "fruit",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V5-089",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Sterols, avenasterol and vernosterol, a bitter principle, essential"
+  }
+}

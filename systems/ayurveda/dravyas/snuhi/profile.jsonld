@@ -1,0 +1,83 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/snuhi",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "snuhi",
+  "name": {
+    "sa": "Snuhi",
+    "sa-Latn": "Snuhi",
+    "as": "Manasasij",
+    "bn": "Manasasij",
+    "en": "Milkhedge",
+    "gu": "Thor",
+    "hi": "Thuhar",
+    "kn": "Muru Kanina Kalli",
+    "ks": "Kath",
+    "ml": "Kalli",
+    "mr": "Nivadung",
+    "or": "Thor",
+    "pa": "Thohar",
+    "ta": "Elaikalli",
+    "te": "Kadajemudu",
+    "ur": "-"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/snuhi"
+  },
+  "partUsed": "stem",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-065",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/ka¶u"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/tikta"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/guru"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/ùikà¸a"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/ushna"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/ka¶u"
+  },
+  "karma": [
+    "Bhedana",
+    "TikÀ¸avirecana",
+    "Ëmakaphav¡tahara"
+  ],
+  "indications": [
+    "áotha",
+    "Gulma",
+    "KuÀ¶ha",
+    "Meha",
+    "Udararoga."
+  ],
+  "dosage": {
+    "en": "125 -250 mg of the drug in powder form."
+  },
+  "importantFormulations": [
+    "Abhay¡ Lava¸a",
+    "Citrak¡di Taila",
+    "Avittol¡di Bhasma"
+  ],
+  "constituents": {
+    "en": "Resin, gum and triterpenes."
+  }
+}

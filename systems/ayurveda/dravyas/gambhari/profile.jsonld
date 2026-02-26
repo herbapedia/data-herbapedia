@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/gambhari",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "gambhari",
+  "name": {
+    "sa": "Gambhari",
+    "sa-Latn": "Gambhari",
+    "as": "Gomari",
+    "bn": "Gamar",
+    "en": "Candahar Tree",
+    "gu": "Sawan",
+    "hi": "Gambhari",
+    "kn": "Seevani",
+    "ks": "Sevana",
+    "ml": "Sevana",
+    "mr": "Sivan",
+    "or": "Gambhari",
+    "pa": "Khambhari",
+    "ta": "Perunkurmizh",
+    "te": "Gummaditeku",
+    "ur": "Pan"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/gambhari"
+  },
+  "partUsed": "stem",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V3-026",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Lignans"
+  }
+}

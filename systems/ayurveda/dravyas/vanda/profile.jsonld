@@ -1,0 +1,40 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/vanda",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "vanda",
+  "name": {
+    "sa": "Vanda",
+    "sa-Latn": "Vanda",
+    "as": "Maandaa",
+    "bn": "Maandaa",
+    "en": "Mistletoe",
+    "gu": "Baando",
+    "hi": "Bandaa",
+    "kn": "Bandanike",
+    "ks": "Ittikkanni",
+    "ml": "Ittikkanni",
+    "mr": "Baandagul",
+    "or": "Vrudhongo",
+    "pa": "Pulluri",
+    "ta": "Baadanikaa",
+    "te": "Jeevakamu"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/vanda"
+  },
+  "partUsed": "leaf",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V5-084",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Leaves contain flavonoids such as Quercetin, quercetrin;Tannins"
+  }
+}

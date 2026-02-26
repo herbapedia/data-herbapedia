@@ -1,0 +1,83 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/kaseru",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "kaseru",
+  "name": {
+    "sa": "Kaseru",
+    "sa-Latn": "Kaseru",
+    "as": "Kaheru",
+    "bn": "Keshura",
+    "en": "Water chestnut",
+    "gu": "Kasela",
+    "hi": "Kaseru",
+    "kn": "Kasure gadd",
+    "ks": "Kath",
+    "ml": "Kazhi Muthanga",
+    "mr": "Kasara",
+    "or": "Kasaru Kawda",
+    "pa": "Kaseru",
+    "ta": "Gundatigagaddi",
+    "te": "Guntatungagaddi",
+    "ur": "Kaseru"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/kaseru"
+  },
+  "partUsed": "rhizome",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-046",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/madhura"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/kashaya"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/guru"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/á¢ta"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/madhura"
+  },
+  "karma": [
+    "CakÀuÀya",
+    "Gr¡h¢",
+    "Pittaghna",
+    "D¡haghna",
+    "áukrakara",
+    "Stanyakara",
+    "Rucikara."
+  ],
+  "indications": [
+    "Aruci",
+    "Atis¡ra",
+    "D¡ha",
+    "Daurbalya",
+    "Netraroga",
+    "áukrakÀya"
+  ],
+  "dosage": {
+    "en": "5-10 g of the drug in powder form."
+  },
+  "importantFormulations": [
+    "Saubh¡gya¿u¸h¶¢"
+  ],
+  "constituents": {
+    "en": "Starch, saponins, sugars and progesterone."
+  }
+}

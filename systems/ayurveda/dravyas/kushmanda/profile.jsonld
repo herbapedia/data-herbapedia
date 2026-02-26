@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/kushmanda",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "kushmanda",
+  "name": {
+    "sa": "Kushmanda",
+    "sa-Latn": "Kushmanda",
+    "as": "Kumra",
+    "bn": "Chal Kumra",
+    "en": "White guard melon",
+    "gu": "Safed Kohalu",
+    "hi": "Kushmand",
+    "kn": "Boodi Humbala",
+    "ks": "Kumbalanga",
+    "ml": "Kumbalanga",
+    "mr": "Kohala",
+    "or": "Kakharu",
+    "pa": "Petha",
+    "ta": "Pooshanikkai",
+    "te": "Boodida Gummadi",
+    "ur": "Petha"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/kushmanda"
+  },
+  "partUsed": "ft.",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V4-027",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Fatty Oil"
+  }
+}

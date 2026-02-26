@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/ushira",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "ushira",
+  "name": {
+    "sa": "Ushira",
+    "sa-Latn": "Ushira",
+    "as": "Usir",
+    "bn": "Venarramula",
+    "en": "Cuscus Grass",
+    "gu": "Sugandhi Valo",
+    "hi": "Khasa",
+    "kn": "Mudivala",
+    "ks": "Ramaceam",
+    "ml": "Ramaceam",
+    "mr": "Bala",
+    "or": "Ushira",
+    "pa": "Panni",
+    "ta": "Vetiver",
+    "te": "Vetivelu",
+    "ur": "Khas"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/ushira"
+  },
+  "partUsed": "root",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V3-100",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Essential Oil."
+  }
+}

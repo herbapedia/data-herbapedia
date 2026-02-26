@@ -1,0 +1,38 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/kakajangha",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "kakajangha",
+  "name": {
+    "sa": "Kakajangha",
+    "sa-Latn": "Kakajangha",
+    "as": "Naaskaaga",
+    "bn": "Naaskaaga",
+    "en": "Kaaliaghedi",
+    "gu": "Kaaliaghedi",
+    "hi": "Atrilal",
+    "kn": "Cibigid",
+    "ks": "Raankiraayat",
+    "ml": "Raankiraayat",
+    "mr": "Ghaatipittaapapadaa",
+    "or": "-Tamil : Chebira",
+    "pa": "Chebira",
+    "ta": "Chebira",
+    "te": "Chebira",
+    "ur": "-"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/kakajangha"
+  },
+  "partUsed": "seed",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V5-027",
+    "license": "CC-BY-4.0",
+    "verified": true
+  }
+}

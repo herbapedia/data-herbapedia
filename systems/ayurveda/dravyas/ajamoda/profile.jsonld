@@ -1,0 +1,86 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/ajamoda",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "ajamoda",
+  "name": {
+    "sa": "Ajamoda",
+    "sa-Latn": "Ajamoda",
+    "as": "Bonjamani",
+    "bn": "Randhuni",
+    "en": "Bodi Ajamo",
+    "gu": "Bodi Ajamo",
+    "hi": "Ajmuda",
+    "kn": "Oma",
+    "ks": "Fakhazur",
+    "ml": "Ayamodakum",
+    "mr": "Ajmoda",
+    "or": "Banajuani",
+    "pa": "Valjawain",
+    "ta": "Omam",
+    "te": "Naranji vamu",
+    "ur": "Ajmod"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/ajamoda"
+  },
+  "partUsed": "fruit",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-004",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/ka¶u"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/tikta"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/laghu"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/r£kàa"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/ushna"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/ka¶u"
+  },
+  "karma": [
+    "D¢pana",
+    "Vid¡h¢",
+    "Kaphav¡tajit",
+    "Rucik¤t",
+    "K¤mijit",
+    "á£laghna"
+  ],
+  "indications": [
+    "Gulma",
+    "Aruci",
+    "Ëdhm¡na",
+    "Hikk¡",
+    "Chardi K¤mi Roga",
+    "á£la"
+  ],
+  "dosage": {
+    "en": "1-3 g of the drug in powder form."
+  },
+  "importantFormulations": [
+    "Ajamod¡rka",
+    "Ajamod¡di C£r¸a."
+  ],
+  "constituents": {
+    "en": "Essential oil and fixed oil."
+  }
+}

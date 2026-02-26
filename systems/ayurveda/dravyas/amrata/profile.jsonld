@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/amrata",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "amrata",
+  "name": {
+    "sa": "Amrata",
+    "sa-Latn": "Amrata",
+    "as": "Amda",
+    "bn": "Amda",
+    "en": "Indian Hog Plum",
+    "gu": "Jangali Ambo",
+    "hi": "Ambada",
+    "kn": "Ambate",
+    "ks": "Ambazham",
+    "ml": "Ambazham",
+    "mr": "Ambada",
+    "or": "Aabada",
+    "pa": "Mampulecci",
+    "ta": "Mampulecci",
+    "te": "Ambalamu",
+    "ur": "Pan"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/amrata"
+  },
+  "partUsed": "stem_bark",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V3-007",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Tannins"
+  }
+}

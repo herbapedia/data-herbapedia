@@ -1,0 +1,24 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/katu",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "katu",
+  "name": {
+    "sa": "Katu",
+    "sa-Latn": "Katu"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/katu"
+  },
+  "partUsed": "pungent",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V7-019",
+    "license": "CC-BY-4.0",
+    "verified": true
+  }
+}

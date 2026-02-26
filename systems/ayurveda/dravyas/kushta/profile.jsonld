@@ -1,0 +1,79 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/kushta",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "kushta",
+  "name": {
+    "sa": "Kushta",
+    "sa-Latn": "Kushta",
+    "as": "Kud",
+    "bn": "Kudo",
+    "en": "-Hindi : Kutha",
+    "gu": "Kutha",
+    "hi": "Kutha",
+    "kn": "Changal Kustha",
+    "ks": "Kuth",
+    "ml": "Kottam",
+    "mr": "Upleta",
+    "or": "Kudha",
+    "pa": "Kuth",
+    "ta": "Goshtam",
+    "te": "Changalva Koshtu",
+    "ur": "Qust"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/kushta"
+  },
+  "partUsed": "root",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-052",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/ka¶u"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/tikta"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/laghu"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/ushna"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/ka¶u"
+  },
+  "karma": [
+    "Kaphav¡tajit",
+    "Rakta¿odhaka",
+    "Var¸ya",
+    "áukrala"
+  ],
+  "indications": [
+    "áv¡sa",
+    "K¡sa",
+    "KuÀ¶ha",
+    "V¡tarakta",
+    "Visarpa"
+  ],
+  "dosage": {
+    "en": "0.2-1.0 of the drug in powder form."
+  },
+  "importantFormulations": [
+    "K¶¶oamacukk¡di Taila."
+  ],
+  "constituents": {
+    "en": "Essential oil, alkaloid (saussurine) and bitter resin."
+  }
+}

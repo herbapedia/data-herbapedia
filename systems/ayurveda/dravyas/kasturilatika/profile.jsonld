@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/kasturilatika",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "kasturilatika",
+  "name": {
+    "sa": "Kasturilatika",
+    "sa-Latn": "Kasturilatika",
+    "as": "Latakasturi",
+    "bn": "Latakasturi",
+    "en": "Bhindo",
+    "gu": "Bhindo",
+    "hi": "Kasturi Kande",
+    "kn": "Kasturi Kande",
+    "ks": "Kattu Kasthuri",
+    "ml": "Kattu Kasthuri",
+    "mr": "Kasturbhendi",
+    "or": "Mushak Dana",
+    "pa": "Mushak Dana",
+    "ta": "Kasturi-vendai",
+    "te": "Kasturi Benda",
+    "ur": "-"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/kasturilatika"
+  },
+  "partUsed": "seed",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V4-020",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Fixed Oil and Volatile Oils"
+  }
+}

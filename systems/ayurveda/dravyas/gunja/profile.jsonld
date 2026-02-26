@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/gunja",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "gunja",
+  "name": {
+    "sa": "Gunja",
+    "sa-Latn": "Gunja",
+    "as": "Rati",
+    "bn": "Kunch",
+    "en": "Jequirity",
+    "gu": "Rati",
+    "hi": "Ratti",
+    "kn": "Guluganji",
+    "ks": "Kunni",
+    "ml": "Kunni",
+    "mr": "Gunja",
+    "or": "Kainch",
+    "pa": "Ratti",
+    "ta": "Kunrimani",
+    "te": "Guriginga",
+    "ur": "Ghongchi"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/gunja"
+  },
+  "partUsed": "root",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V2-022",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Glucoside (Glycyrrhizin)."
+  }
+}

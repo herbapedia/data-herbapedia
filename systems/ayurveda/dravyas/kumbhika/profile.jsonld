@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/kumbhika",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "kumbhika",
+  "name": {
+    "sa": "Kumbhika",
+    "sa-Latn": "Kumbhika",
+    "as": "Kumbhi",
+    "bn": "Kumbhi",
+    "en": "Kumbi",
+    "gu": "Sthala Kumbhi",
+    "hi": "Sthala Kumbhi",
+    "kn": "Daddala",
+    "ks": "Pezuntol",
+    "ml": "Pezuntol",
+    "mr": "Kumbhaa",
+    "or": "-Tamil : Kumbi",
+    "pa": "Kumbi",
+    "ta": "Kumbi",
+    "te": "Dudippi",
+    "ur": "-"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/kumbhika"
+  },
+  "partUsed": "seed",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V5-044",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Saponins (five sapogenols- careyagenol A, B, C, D & E); sterols, αspinosterol and α-spinosterone."
+  }
+}

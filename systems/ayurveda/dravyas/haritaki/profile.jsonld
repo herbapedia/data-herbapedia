@@ -1,0 +1,100 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/haritaki",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "haritaki",
+  "name": {
+    "sa": "Haritaki",
+    "sa-Latn": "Haritaki",
+    "as": "Shilikha",
+    "bn": "Haritaki",
+    "en": "Myrobalan",
+    "gu": "Hirdo",
+    "hi": "Harre",
+    "kn": "Alalekai",
+    "ks": "Halela",
+    "ml": "Katukka",
+    "mr": "Hirda",
+    "or": "Harida",
+    "pa": "Halela",
+    "ta": "Kadukkai",
+    "te": "Karaka",
+    "ur": "Halela"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/haritaki"
+  },
+  "partUsed": "fruit",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-033",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/madhura"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/amla"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/ka¶u"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/tikta"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/kashaya"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/laghu"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/r£kàa"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/ushna"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/madhura"
+  },
+  "karma": [
+    "CakÀuÀya",
+    "D¢pana",
+    "H¤dya",
+    "Medhya",
+    "SarvadoÀapra¿amana",
+    "Ra¿ayana",
+    "Anulomana"
+  ],
+  "indications": [
+    "áotha",
+    "Ar¿a",
+    "Aruci",
+    "H¤droga",
+    "K¡sa",
+    "P¡¸·u",
+    "Prameha",
+    "Ud¡varta"
+  ],
+  "dosage": {
+    "en": "3-6 g of the drug in powder form."
+  },
+  "importantFormulations": [
+    "Triphal¡ C£r¸a",
+    "Triphal¡di Taila",
+    "Abhay¡riÀ¶a",
+    "Agastya"
+  ],
+  "constituents": {
+    "en": "Tannins, anthraquinones and polyphenolic compounds."
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/syonaka",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "syonaka",
+  "name": {
+    "sa": "Syonaka",
+    "sa-Latn": "Syonaka",
+    "as": "Kering",
+    "bn": "Sonagachh",
+    "en": "Tentoo",
+    "gu": "Tentoo",
+    "hi": "Sonapatha",
+    "kn": "Tigudu",
+    "ks": "Palagripayanni",
+    "ml": "Palagripayanni",
+    "mr": "Tentoo",
+    "or": "Pamponiya",
+    "pa": "Tatpaling",
+    "ta": "Peruvagai",
+    "te": "Dundilumu",
+    "ur": "Sonapatha"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/syonaka"
+  },
+  "partUsed": "root",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V3-095",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Flavonoids and Tannins."
+  }
+}

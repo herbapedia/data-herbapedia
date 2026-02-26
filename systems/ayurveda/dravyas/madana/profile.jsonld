@@ -1,0 +1,80 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/madana",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "madana",
+  "name": {
+    "sa": "Madana",
+    "sa-Latn": "Madana",
+    "as": "Maen",
+    "bn": "Mainaphal",
+    "en": "Emetic nut",
+    "gu": "Mindhal",
+    "hi": "Manphal",
+    "kn": "Mangarikai",
+    "ks": "Madanfal",
+    "ml": "Malankara",
+    "mr": "Gal",
+    "or": "Maena",
+    "pa": "Mindhal",
+    "ta": "Marukkarai",
+    "te": "Mranga Kaya",
+    "ur": "Mainphal"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/madana"
+  },
+  "partUsed": "fruit",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-056",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/madhura"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/tikta"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/laghu"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/r£kàa"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/ushna"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/ka¶u"
+  },
+  "karma": [
+    "Vamana",
+    "Lekhana"
+  ],
+  "indications": [
+    "Gulma",
+    "KuÀ¶ha",
+    "Vidradhi",
+    "áleÀmajvara",
+    "Prati¿y¡ya"
+  ],
+  "dosage": {
+    "en": "0.5 -1.0 g of the drug in powder form for decoction."
+  },
+  "importantFormulations": [
+    "Pippaly¡di Taila."
+  ],
+  "constituents": {
+    "en": "Essential oil, saponin, tannin and resin."
+  }
+}

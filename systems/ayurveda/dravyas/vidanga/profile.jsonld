@@ -1,0 +1,86 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/vidanga",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "vidanga",
+  "name": {
+    "sa": "Vidanga",
+    "sa-Latn": "Vidanga",
+    "as": "Vidang",
+    "bn": "Vidang",
+    "en": "Vavding",
+    "gu": "Vavding",
+    "hi": "Vayavidanga",
+    "kn": "Vayuvilanga",
+    "ks": "Babading",
+    "ml": "Vizhalari",
+    "mr": "Vavading",
+    "or": "Bidanga",
+    "pa": "Babrung",
+    "ta": "Vayuvilangam",
+    "te": "Vayuvidangalu",
+    "ur": "Baobarang"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/vidanga"
+  },
+  "partUsed": "fruit",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-079",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/ka¶u"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/tikta"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/laghu"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/r£kàa"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/ùikà¸a"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/ushna"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/ka¶u"
+  },
+  "karma": [
+    "Anulomana",
+    "D¢pana",
+    "K¤min¡¿ana",
+    "V¡takaph¡paha"
+  ],
+  "indications": [
+    "á£la",
+    "K¤miroga",
+    "Udararoga",
+    "Ëdhm¢na"
+  ],
+  "dosage": {
+    "en": "5-10 g of the drug in powder form."
+  },
+  "importantFormulations": [
+    "Vi·a´g¡riÀ¶a",
+    "Vi·a´ga Lauha",
+    "Vi·a´g¡di Lauha"
+  ],
+  "constituents": {
+    "en": "Benzoquinones, alkaloid (Christembine), tannin and essential oil"
+  }
+}

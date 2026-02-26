@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/trapusha",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "trapusha",
+  "name": {
+    "sa": "Trapusha",
+    "sa-Latn": "Trapusha",
+    "as": "Ksheeraa",
+    "bn": "Ksheeraa",
+    "en": "Cucumber",
+    "gu": "Taanslee",
+    "hi": "Kheeraa",
+    "kn": "Mullusavte",
+    "ks": "Vellari",
+    "ml": "Vellari",
+    "mr": "Tause",
+    "or": "Kantiaali Kaakudi",
+    "pa": "Khiraa",
+    "ta": "Vellarikkaay",
+    "te": "Khirakaya",
+    "ur": "Kheeraa"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/trapusha"
+  },
+  "partUsed": "seed",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V5-082",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Fixed oil and sugars."
+  }
+}

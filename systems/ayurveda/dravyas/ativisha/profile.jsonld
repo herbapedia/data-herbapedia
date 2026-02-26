@@ -1,0 +1,84 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/ativisha",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "ativisha",
+  "name": {
+    "sa": "Ativisha",
+    "sa-Latn": "Ativisha",
+    "as": "Aatich",
+    "bn": "Ataicha",
+    "en": "Atis Root",
+    "gu": "Ativishni Kali",
+    "hi": "Atis",
+    "kn": "Ativisha",
+    "ks": "Kath",
+    "ml": "Atividayam",
+    "mr": "Ativisha",
+    "or": "Atushi",
+    "pa": "Atisa",
+    "ta": "Atividayam",
+    "te": "Ativasa",
+    "ur": "Atees"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/ativisha"
+  },
+  "partUsed": "root",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-016",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/ka¶u"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/tikta"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/laghu"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/r£kàa"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/ushna"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/ka¶u"
+  },
+  "karma": [
+    "D¢pana",
+    "P¡cana",
+    "Sa´gr¡hik¡",
+    "Kaphapittahara."
+  ],
+  "indications": [
+    "K¤miroga",
+    "Jvara",
+    "K¡sa",
+    "Chardi",
+    "Am¡tis¡ra"
+  ],
+  "dosage": {
+    "en": "0.6-2.0 g of the drug in powder form."
+  },
+  "importantFormulations": [
+    "Mah¡viÀagarbha Taila",
+    "Rodhr¡sava",
+    "áiv¡ Guik¡"
+  ],
+  "constituents": {
+    "en": "Alkaloids (atisine, dihydroatisine, hetisined and heteratisine)."
+  }
+}

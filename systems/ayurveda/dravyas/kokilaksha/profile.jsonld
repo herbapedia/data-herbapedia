@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/kokilaksha",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "kokilaksha",
+  "name": {
+    "sa": "Kokilaksha",
+    "sa-Latn": "Kokilaksha",
+    "as": "Kulekhara",
+    "bn": "-Gujrati : Ekharo",
+    "en": "Ekharo",
+    "gu": "Ekharo",
+    "hi": "Talmakhana",
+    "kn": "Nirmulli",
+    "ks": "Vayalculli",
+    "ml": "Vayalculli",
+    "mr": "Talimakhana",
+    "or": "Koillekha",
+    "pa": "--Tamil : Nirmulle",
+    "ta": "Nirmulle",
+    "te": "Talmakhana",
+    "ur": "Talmakhana"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/kokilaksha"
+  },
+  "partUsed": "root",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V2-043",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Essential oil"
+  }
+}

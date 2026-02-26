@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/methi",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "methi",
+  "name": {
+    "sa": "Methi",
+    "sa-Latn": "Methi",
+    "as": "-English : Fenugreek",
+    "bn": "Fenugreek",
+    "en": "Fenugreek",
+    "gu": "Methi",
+    "hi": "Methi",
+    "kn": "Menthe",
+    "ks": "Uluva",
+    "ml": "Uluva",
+    "mr": "Methi",
+    "or": "Methi",
+    "pa": "Methi",
+    "ta": "Mendium",
+    "te": "Mentulu",
+    "ur": "Methi"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/methi"
+  },
+  "partUsed": "seed",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V2-049",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Alkaloid, Sapogenins and Mucilage."
+  }
+}

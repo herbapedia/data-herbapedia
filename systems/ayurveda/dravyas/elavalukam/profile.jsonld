@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/elavalukam",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "elavalukam",
+  "name": {
+    "sa": "Elavalukam",
+    "sa-Latn": "Elavalukam",
+    "as": "Elavaaluka",
+    "bn": "Elavaaluka",
+    "en": "Sweet Cherry",
+    "gu": "Aaluvaalu",
+    "hi": "Aaluvaalu",
+    "kn": "-Malayalam : -Marathi : -Oriya : -Punjabi : Aaluvaalu",
+    "ks": "-Marathi : -Oriya : -Punjabi : Aaluvaalu",
+    "ml": "-Oriya : -Punjabi : Aaluvaalu",
+    "mr": "-Punjabi : Aaluvaalu",
+    "or": "Aaluvaalu",
+    "pa": "Aaluvaalu",
+    "ta": "Jeevakamu",
+    "te": "Jeevakamu",
+    "ur": "-"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/elavalukam"
+  },
+  "partUsed": "seed",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V5-015",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Prunasin (D-mandelonitrile-β-glucoside), Quercetin-3-0- rutinosyl-7,"
+  }
+}

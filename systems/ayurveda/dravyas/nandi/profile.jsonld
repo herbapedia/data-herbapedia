@@ -1,0 +1,38 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/nandi",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "nandi",
+  "name": {
+    "sa": "Nandi",
+    "sa-Latn": "Nandi",
+    "as": "Kamru",
+    "bn": "Kamru",
+    "en": "Naandrukheevad",
+    "gu": "Naandrukheevad",
+    "hi": "Beliya Peepal",
+    "kn": "Kadarasu",
+    "ks": "Kallarayal",
+    "ml": "Kallarayal",
+    "mr": "Nandee vruksh",
+    "or": "Plokhyo",
+    "pa": "Kagoli",
+    "ta": "Kagoli",
+    "te": "Kallaravi",
+    "ur": "-"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/nandi"
+  },
+  "partUsed": "root",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V5-054",
+    "license": "CC-BY-4.0",
+    "verified": true
+  }
+}

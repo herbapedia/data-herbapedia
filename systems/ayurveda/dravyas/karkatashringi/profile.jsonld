@@ -1,0 +1,81 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/karkatashringi",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "karkatashringi",
+  "name": {
+    "sa": "Karkatashringi",
+    "sa-Latn": "Karkatashringi",
+    "as": "Kakiasrngi",
+    "bn": "Kankda Shringi",
+    "en": "Crab's claw",
+    "gu": "Kakada shing",
+    "hi": "Kakadasingi",
+    "kn": "Kakadasingi",
+    "ks": "Kakkar",
+    "ml": "Karkatasringi",
+    "mr": "Kakadshingi",
+    "or": "Kakadashrungi",
+    "pa": "Kakar",
+    "ta": "Karkata singi",
+    "te": "Kakarsingi",
+    "ur": "Kakrasinghi"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/karkatashringi"
+  },
+  "partUsed": "leaf",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-044",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/tikta"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/kashaya"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/guru"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/ushna"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/ka¶u"
+  },
+  "karma": [
+    "K¡sahara",
+    "Kaphav¡tahara",
+    "Írdhvav¡tajit",
+    "Hikk¡nigraha¸a"
+  ],
+  "indications": [
+    "Aruci",
+    "áv¡sa",
+    "Chardi",
+    "Hikk¡",
+    "Jvara",
+    "K¡sa",
+    "KÀaya"
+  ],
+  "dosage": {
+    "en": "3-6 g of the drug in powder form."
+  },
+  "importantFormulations": [
+    "B¡lacaturbhadrik¡ C£r¸a"
+  ],
+  "constituents": {
+    "en": "Essential oil, tannins and resinous matters."
+  }
+}

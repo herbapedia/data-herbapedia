@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/mudga",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "mudga",
+  "name": {
+    "sa": "Mudga",
+    "sa-Latn": "Mudga",
+    "as": "Moong",
+    "bn": "Moong",
+    "en": "Green Gram",
+    "gu": "Mug",
+    "hi": "Munga",
+    "kn": "Hesara",
+    "ks": "Cherupayar",
+    "ml": "Cherupayar",
+    "mr": "Mung",
+    "or": "Muga",
+    "pa": "Mungi",
+    "ta": "Pattchai Payaru",
+    "te": "Pesalu",
+    "ur": "Moong"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/mudga"
+  },
+  "partUsed": "seed",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V3-057",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Saponin, Starch, Albuminoids and Oil."
+  }
+}

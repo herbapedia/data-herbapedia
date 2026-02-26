@@ -1,0 +1,80 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/bakuchi",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "bakuchi",
+  "name": {
+    "sa": "Bakuchi",
+    "sa-Latn": "Bakuchi",
+    "as": "Habucha",
+    "bn": "Bakuchi",
+    "en": "Bavachi",
+    "gu": "Bavachi",
+    "hi": "Babchi",
+    "kn": "Bauchige",
+    "ks": "Babchi",
+    "ml": "Karkokil",
+    "mr": "Bawchi",
+    "or": "Bakuchi",
+    "pa": "Babchi",
+    "ta": "Karpokarisi",
+    "te": "Bavanchalu",
+    "ur": "Babchi"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/bakuchi"
+  },
+  "partUsed": "fruit",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-018",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/ka¶u"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/tikta"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/r£kàa"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/á¢ta"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/ka¶u"
+  },
+  "karma": [
+    "Gr¡h¢",
+    "áleÀm¡srapittanut",
+    "Vra¸¡paha",
+    "H¤dya."
+  ],
+  "indications": [
+    "Jvara",
+    "K¤miroga",
+    "KuÀ¶ha",
+    "Meha",
+    "ávitra"
+  ],
+  "dosage": {
+    "en": "3-6 g of the drug in powder form."
+  },
+  "importantFormulations": [
+    "Somar¡j¢ Taila",
+    "Avalguj¡di Lepa"
+  ],
+  "constituents": {
+    "en": "Essential oil, fixed oil, Psoralen, psoralidin, isopsoralen and"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/gajapippali",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "gajapippali",
+  "name": {
+    "sa": "Gajapippali",
+    "sa-Latn": "Gajapippali",
+    "as": "Kulekhara",
+    "bn": "Gajapeepal",
+    "en": "Motopeepar",
+    "gu": "Motopeepar",
+    "hi": "Gajapeepal",
+    "kn": "Adkebeeluvalli",
+    "ks": "Attipali",
+    "ml": "Attipali",
+    "mr": "Gajapipalee",
+    "or": "Gajapeepal",
+    "pa": "Gajapeepal",
+    "ta": "Anaitippalee",
+    "te": "Enugopippal",
+    "ur": "-"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/gajapippali"
+  },
+  "partUsed": "fruit",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V2-019",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Glucosides viz. Scindapsin A & Scindapsin B, Sugars & Fixed Oil."
+  }
+}

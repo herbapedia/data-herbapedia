@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/mayakku",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "mayakku",
+  "name": {
+    "sa": "Mayakku",
+    "sa-Latn": "Mayakku",
+    "as": "Aphsa",
+    "bn": "Majoophal",
+    "en": "Oak-Gall",
+    "gu": "Muajoophal",
+    "hi": "Maajoophal",
+    "kn": "Machikaai",
+    "ks": "Majakaanee",
+    "ml": "Majakaanee",
+    "mr": "Maayaphal",
+    "or": "Mayakku",
+    "pa": "Maju",
+    "ta": "Machakaai",
+    "te": "Machikaaya",
+    "ur": "Mazu"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/mayakku"
+  },
+  "partUsed": "leaf",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V4-031",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Tannic Acid, Starch and Sugars"
+  }
+}

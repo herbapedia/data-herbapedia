@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/durva",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "durva",
+  "name": {
+    "sa": "Durva",
+    "sa-Latn": "Durva",
+    "as": "Durva",
+    "bn": "Durva",
+    "en": "Creeping Cynodon",
+    "gu": "Khadodhro",
+    "hi": "Doob",
+    "kn": "Garike Hullu",
+    "ks": "Koruka Pullu",
+    "ml": "Koruka Pullu",
+    "mr": "Doorva",
+    "or": "Dubada",
+    "pa": "Dubada",
+    "ta": "Aruvam Pullu",
+    "te": "Garika",
+    "ur": "Doob Ghas"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/durva"
+  },
+  "partUsed": "root",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V3-023",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Phenolic Phytotoxins and Flavonoids."
+  }
+}

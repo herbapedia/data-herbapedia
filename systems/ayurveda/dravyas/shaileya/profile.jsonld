@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/shaileya",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "shaileya",
+  "name": {
+    "sa": "Shaileya",
+    "sa-Latn": "Shaileya",
+    "as": "Shailaj",
+    "bn": "Shailaj",
+    "en": "Stone Flower",
+    "gu": "Patthar Phool",
+    "hi": "Charela",
+    "kn": "Shilapushpa",
+    "ks": "Sheleyam",
+    "ml": "Sheleyam",
+    "mr": "Dagad phool",
+    "or": "Ausneh",
+    "pa": "Ausneh",
+    "ta": "Kalpashee",
+    "te": "Ratipuvvu",
+    "ur": "Chhadila"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/shaileya"
+  },
+  "partUsed": "lichen",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V3-077",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Lichen acids - Atranorin and Lecanoric acid."
+  }
+}

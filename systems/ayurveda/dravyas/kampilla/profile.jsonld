@@ -1,0 +1,82 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/kampilla",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "kampilla",
+  "name": {
+    "sa": "Kampilla",
+    "sa-Latn": "Kampilla",
+    "as": "Lochan",
+    "bn": "Kamlagudi",
+    "en": "Kamala",
+    "gu": "Kapilo",
+    "hi": "Kabila",
+    "kn": "Kapila",
+    "ks": "Kameelak",
+    "ml": "Kampippala",
+    "mr": "Shendri",
+    "or": "Kamalagundi",
+    "pa": "Kamila",
+    "ta": "Kamala",
+    "te": "Kampillamu",
+    "ur": "Kamila"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/kampilla"
+  },
+  "partUsed": "fruit",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-037",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/ka¶u"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/laghu"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/r£kàa"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/ùikà¸a"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/ushna"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/ka¶u"
+  },
+  "karma": [
+    "K¤mighna",
+    "Vra¸¡paha",
+    "Virecana"
+  ],
+  "indications": [
+    "Ëdhm¡na",
+    "Gulma",
+    "K¤miroga",
+    "Vibandha",
+    "Vra¸a"
+  ],
+  "dosage": {
+    "en": "0.5-1.0 g of the drug in powder form."
+  },
+  "importantFormulations": [
+    "Dh¡nvantara Gh¤ta",
+    "Mi¿raka Sneha."
+  ],
+  "constituents": {
+    "en": "Resinous colouring matter (rottlerin)."
+  }
+}

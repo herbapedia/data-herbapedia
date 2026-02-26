@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/dhattura",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "dhattura",
+  "name": {
+    "sa": "Dhattura",
+    "sa-Latn": "Dhattura",
+    "as": "Dhatura",
+    "bn": "Dhutura",
+    "en": "White Thorn Apple",
+    "gu": "Dhaturo",
+    "hi": "Dhatura",
+    "kn": "Umbe",
+    "ks": "Ummam",
+    "ml": "Ummam",
+    "mr": "Dhatra",
+    "or": "Dudura",
+    "pa": "Dhatura",
+    "ta": "Oomattai",
+    "te": "Ummettha",
+    "ur": "Dhatura"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/dhattura"
+  },
+  "partUsed": "seed",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V3-021",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Alkaloids - Tropane Alkaloids - Hyoscyamine etc. and Fixed Oil"
+  }
+}

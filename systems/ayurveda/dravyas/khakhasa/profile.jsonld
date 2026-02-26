@@ -1,0 +1,76 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/khakhasa",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "khakhasa",
+  "name": {
+    "sa": "Khakhasa",
+    "sa-Latn": "Khakhasa",
+    "as": "Aaphim",
+    "bn": "Aaphim",
+    "en": "Opium",
+    "gu": "Khaskhas",
+    "hi": "Apheem",
+    "kn": "Gasgase",
+    "ks": "Avin",
+    "ml": "Avin",
+    "mr": "Khaskhas",
+    "or": "Aapu",
+    "pa": "Kasakash",
+    "ta": "Kasakash",
+    "te": "Gasgashaalu",
+    "ur": "Apheem"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/khakhasa"
+  },
+  "partUsed": "seed",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V5-036",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/tikta"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/madhura"
+    }
+  ],
+  "karma": [
+    "V¡takaphahara",
+    "Ke¿araµjana",
+    "ViÀaghna",
+    "M£trala",
+    "Ke¿ya",
+    "Garbhav¤ddhikara"
+  ],
+  "indications": [
+    "KuÀ¶ha",
+    "V¡tarakta",
+    "Ka¸·£",
+    "M£trak¤cchra",
+    "Raktavik¡ra",
+    "V¡tajanyakÀaya",
+    "M£Àik¡viÀa",
+    "áir¡granth¢",
+    "Dantaroga",
+    "K¡sa",
+    "áotha"
+  ],
+  "dosage": {
+    "en": "10 - 20 ml swarasa."
+  },
+  "importantFormulations": [
+    "M¡¸ikya Rasa"
+  ],
+  "constituents": {
+    "en": "Fixed oil containing esters of linoleic, palmitic, oleic acids."
+  }
+}

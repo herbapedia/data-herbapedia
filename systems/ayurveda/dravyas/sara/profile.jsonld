@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/sara",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "sara",
+  "name": {
+    "sa": "Sara",
+    "sa-Latn": "Sara",
+    "as": "Sara",
+    "bn": "Sara",
+    "en": "Sarkat",
+    "gu": "Sarkat",
+    "hi": "Sarkand",
+    "kn": "Munji Hullu",
+    "ks": "Ama",
+    "ml": "Ama",
+    "mr": "Munja",
+    "or": "Sara",
+    "pa": "Moonja",
+    "ta": "Munjipul",
+    "te": "Munja",
+    "ur": "Munja"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/sara"
+  },
+  "partUsed": "root",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V3-084",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Sugars."
+  }
+}

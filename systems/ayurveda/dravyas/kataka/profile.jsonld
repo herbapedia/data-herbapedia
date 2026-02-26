@@ -1,0 +1,91 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/kataka",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "kataka",
+  "name": {
+    "sa": "Kataka",
+    "sa-Latn": "Kataka",
+    "as": "Nirmali",
+    "bn": "Nirmali",
+    "en": "Clearing nut",
+    "gu": "Nirmali",
+    "hi": "Chillikavi",
+    "kn": "Katakam",
+    "ks": "Katakam",
+    "ml": "Katakam",
+    "mr": "Nirmal",
+    "or": "Nirmali",
+    "pa": "Nirmali",
+    "ta": "Kottai",
+    "te": "Chilla",
+    "ur": "-"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/kataka"
+  },
+  "partUsed": "seed",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V4-021",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/madhura"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/tikta"
+    }
+  ],
+  "karma": [
+    "áukrakara",
+    "Kaphana¿aka",
+    "ViÀaghna",
+    "Rucya",
+    "SaÆgr¡hi",
+    "Rakta Vik¡ra N¡¿aka",
+    "Ëma ViÀaghna",
+    "TridoÀahara",
+    "T¤À¸¡hara"
+  ],
+  "indications": [
+    "Agnim¡ndya",
+    "Aruci",
+    "áv¡sa",
+    "K¡sa",
+    "Jvara",
+    "Prameha",
+    "Mukha Daurgandhya",
+    "At¢s¡ra",
+    "KuÀ¶ha",
+    "Ka¸·£",
+    "Pradara",
+    "V¡tarakta",
+    "Dehadurgandha",
+    "Raktapitta"
+  ],
+  "dosage": {
+    "en": "5-10 gm"
+  },
+  "importantFormulations": [
+    "áat¡var¢ Gu·a",
+    "Kaly¡¸aka Gh¤ta",
+    "Triphal¡ Gh¤ta",
+    "B¤hat Phala Gh¤ta",
+    "Mah¡ Kaly¡naka Gh¤ta",
+    "Mah¡ Tiktaka Gh¤ta",
+    "Mah¡ Pancagavya Gh¤ta",
+    "Vasty¡may¡naka Gh¤ta",
+    "Candan¡di Taila",
+    "B¤hat Ch¡gal¡dya Gh¤ta"
+  ],
+  "constituents": {
+    "en": "Alkaloids."
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/chavya",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "chavya",
+  "name": {
+    "sa": "Chavya",
+    "sa-Latn": "Chavya",
+    "as": "Chepaan",
+    "bn": "Chei",
+    "en": "Cubeb",
+    "gu": "Chavka",
+    "hi": "Chavya",
+    "kn": "Kadumenasinaballi",
+    "ks": "Kattumulaku",
+    "ml": "Kattumulaku",
+    "mr": "Chavaka",
+    "or": "Chainkath",
+    "pa": "Chabak",
+    "ta": "Chavyam",
+    "te": "Chevyamu",
+    "ur": "Peepal Chab"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/chavya"
+  },
+  "partUsed": "stem",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V2-014",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Alkaloids, Glycosides and Steroids."
+  }
+}

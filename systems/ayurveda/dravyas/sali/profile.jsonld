@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/sali",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "sali",
+  "name": {
+    "sa": "Sali",
+    "sa-Latn": "Sali",
+    "as": "Chaval",
+    "bn": "Chaval",
+    "en": "Rice",
+    "gu": "Shalichokha",
+    "hi": "Chaval",
+    "kn": "Bhatto",
+    "ks": "Ari",
+    "ml": "Ari",
+    "mr": "Tandulamul",
+    "or": "Dhan",
+    "pa": "Dhan",
+    "ta": "Arishi",
+    "te": "Dhanyamu",
+    "ur": "Chaval"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/sali"
+  },
+  "partUsed": "root",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V2-066",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Sugars"
+  }
+}

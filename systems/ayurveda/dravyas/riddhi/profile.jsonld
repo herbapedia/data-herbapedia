@@ -1,0 +1,38 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/riddhi",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "riddhi",
+  "name": {
+    "sa": "Riddhi",
+    "sa-Latn": "Riddhi",
+    "as": "-English : -Gujrati : -Hindi : -Kannada : -Kashmiri : -Malayalam : -Marathi : -Oriya : -Punjabi : -Tamil : -Telugu : Jeevakamu",
+    "bn": "-Gujrati : -Hindi : -Kannada : -Kashmiri : -Malayalam : -Marathi : -Oriya : -Punjabi : -Tamil : -Telugu : Jeevakamu",
+    "en": "-Hindi : -Kannada : -Kashmiri : -Malayalam : -Marathi : -Oriya : -Punjabi : -Tamil : -Telugu : Jeevakamu",
+    "gu": "-Kannada : -Kashmiri : -Malayalam : -Marathi : -Oriya : -Punjabi : -Tamil : -Telugu : Jeevakamu",
+    "hi": "-Kashmiri : -Malayalam : -Marathi : -Oriya : -Punjabi : -Tamil : -Telugu : Jeevakamu",
+    "kn": "-Malayalam : -Marathi : -Oriya : -Punjabi : -Tamil : -Telugu : Jeevakamu",
+    "ks": "-Marathi : -Oriya : -Punjabi : -Tamil : -Telugu : Jeevakamu",
+    "ml": "-Oriya : -Punjabi : -Tamil : -Telugu : Jeevakamu",
+    "mr": "-Punjabi : -Tamil : -Telugu : Jeevakamu",
+    "or": "-Tamil : -Telugu : Jeevakamu",
+    "pa": "-Telugu : Jeevakamu",
+    "ta": "Jeevakamu",
+    "te": "Jeevakamu",
+    "ur": "-"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/riddhi"
+  },
+  "partUsed": "tuber",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V5-073",
+    "license": "CC-BY-4.0",
+    "verified": true
+  }
+}

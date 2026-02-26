@@ -1,0 +1,40 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/medasaka",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "medasaka",
+  "name": {
+    "sa": "Medasaka",
+    "sa-Latn": "Medasaka",
+    "as": "Kukurchite",
+    "bn": "Kukurchite",
+    "en": "Meda Lakadee",
+    "gu": "Meda Lakadee",
+    "hi": "Meda Lakadee",
+    "kn": "-Malayalam : -Marathi : Meda Lakadee",
+    "ks": "-Marathi : Meda Lakadee",
+    "ml": "Meda Lakadee",
+    "mr": "Meda Lakadee",
+    "or": "Medalakavi",
+    "pa": "Medalakavi",
+    "ta": "Meda",
+    "te": "Jeevakamu"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/medasaka"
+  },
+  "partUsed": "wood",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V5-051",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Alkaloids (Laurotetanine, actinodaphine, boldine, norboldine)."
+  }
+}

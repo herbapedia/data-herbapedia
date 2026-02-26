@@ -1,0 +1,84 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/sarala",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "sarala",
+  "name": {
+    "sa": "Sarala",
+    "sa-Latn": "Sarala",
+    "as": "Tarpin Telargaach",
+    "bn": "Tarpin Telargaach",
+    "en": "Long Leaved Pine",
+    "gu": "Sarala",
+    "hi": "Cheel",
+    "kn": "Sarala",
+    "ks": "Saralam",
+    "ml": "Saralam",
+    "mr": "Sarala",
+    "or": "Cheel",
+    "pa": "Cheel",
+    "ta": "Shirsal",
+    "te": "Sarala",
+    "ur": "Cheer"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/sarala"
+  },
+  "partUsed": "root",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V3-086",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/ka¶u"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/tikta"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/kashaya"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/madhura"
+    }
+  ],
+  "karma": [
+    "V¡tahara",
+    "Kaphahara",
+    "Var¸ya",
+    "ViÀaghna",
+    "Ka¸·£ghna"
+  ],
+  "indications": [
+    "ViÀavik¡ra",
+    "SarpaviÀa",
+    "Ka¸·£",
+    "Pi·ak¡",
+    "Ko¶ha",
+    "Bhrama",
+    "Prav¡hik¡",
+    "Raktapradara",
+    "KuÀ¶ha",
+    "Vra¸a",
+    "Jvara",
+    "Graharoga",
+    "V¡tavik¡ra",
+    "Mukhadurgandha"
+  ],
+  "dosage": {
+    "en": "2-6 g"
+  },
+  "importantFormulations": [
+    "Bal¡ Taila"
+  ],
+  "constituents": {
+    "en": "Resins - Oleo-resin."
+  }
+}

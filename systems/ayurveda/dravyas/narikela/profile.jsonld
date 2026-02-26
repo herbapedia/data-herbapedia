@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/narikela",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "narikela",
+  "name": {
+    "sa": "Narikela",
+    "sa-Latn": "Narikela",
+    "as": "Khopra",
+    "bn": "Narkel",
+    "en": "Coconut Palm",
+    "gu": "Naliar",
+    "hi": "Nariyal",
+    "kn": "Khobbari",
+    "ks": "Nalikeram",
+    "ml": "Nalikeram",
+    "mr": "Naral",
+    "or": "Nariyal",
+    "pa": "Narela",
+    "ta": "Tenkai",
+    "te": "Narikelamu",
+    "ur": "Narjil"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/narikela"
+  },
+  "partUsed": "endos.",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V3-062",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Fixed Oil."
+  }
+}

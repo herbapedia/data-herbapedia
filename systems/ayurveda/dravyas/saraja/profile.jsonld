@@ -1,0 +1,38 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/saraja",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "saraja",
+  "name": {
+    "sa": "Saraja",
+    "sa-Latn": "Saraja",
+    "as": "Shakgachha",
+    "bn": "Shakgachha",
+    "en": "White Damar tree",
+    "gu": "Chandras",
+    "hi": "Sandras",
+    "kn": "Rala",
+    "ks": "Payin",
+    "ml": "Payin",
+    "mr": "Raal",
+    "or": "Sava",
+    "pa": "Kungiliyam",
+    "ta": "Kungiliyam",
+    "te": "Tellaguggilarnu",
+    "ur": "Sandaras"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/saraja"
+  },
+  "partUsed": "exud.",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V4-050",
+    "license": "CC-BY-4.0",
+    "verified": true
+  }
+}

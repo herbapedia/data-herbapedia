@@ -1,0 +1,88 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/mishreya",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "mishreya",
+  "name": {
+    "sa": "Mishreya",
+    "sa-Latn": "Mishreya",
+    "as": "Guvamuri",
+    "bn": "Marui",
+    "en": "Fannel Fruit",
+    "gu": "Variyali",
+    "hi": "Saunf",
+    "kn": "Badisompu",
+    "ks": "Sanuf",
+    "ml": "Kattusatakuppa",
+    "mr": "Badishop",
+    "or": "Panamadhuri",
+    "pa": "Saunf",
+    "ta": "Shombu",
+    "te": "Sopu",
+    "ur": "Saunf"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/mishreya"
+  },
+  "partUsed": "fruit",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-057",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/madhura"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/ka¶u"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/tikta"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/laghu"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/r£kàa"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/á¢ta"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/madhura"
+  },
+  "karma": [
+    "Anulomana",
+    "Balya",
+    "D¢pana",
+    "V¡tapittahara",
+    "ËmadoÀahara"
+  ],
+  "indications": [
+    "á£la",
+    "Agnim¡ndya",
+    "K¡sa",
+    "Prav¡hik¡",
+    "RaktadoÀa",
+    "Ar¿as"
+  ],
+  "dosage": {
+    "en": "3-6 g. of the drug in powder form."
+  },
+  "importantFormulations": [
+    "Mi¿rey¡rka",
+    "Paµcasak¡ra C£r¸a"
+  ],
+  "constituents": {
+    "en": "Essential oil and fixed oil."
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/bilva",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "bilva",
+  "name": {
+    "sa": "Bilva",
+    "sa-Latn": "Bilva",
+    "as": "Bael",
+    "bn": "Bela",
+    "en": "Bael Root",
+    "gu": "Bilivaphal",
+    "hi": "Bel",
+    "kn": "Bilva",
+    "ks": "Koovalam",
+    "ml": "Koovalam",
+    "mr": "Baela",
+    "or": "Bela",
+    "pa": "Bil",
+    "ta": "Vilvam",
+    "te": "Maredu",
+    "ur": "Bel"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/bilva"
+  },
+  "partUsed": "root",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V3-016",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/kashaya"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/tikta"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/madhura"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/laghu"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/r£kàa"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/ushna"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/ka¶u"
+  },
+  "karma": [
+    "D¢pan¢ya",
+    "Kaphahara",
+    "V¡tahara",
+    "SaÆgr¡hi",
+    "Pittakara",
+    "ViÀaghna"
+  ],
+  "indications": [
+    "Chardi",
+    "V¡tavy¡dhi",
+    "á£la",
+    "áotha",
+    "At¢s¡ra",
+    "Rakt¡tis¡ra",
+    "KukÀi¿£la",
+    "Ëma¿£la",
+    "Ar¿a",
+    "Medoroga",
+    "Graha¸¢roga",
+    "Madhumeha",
+    "Prav¡hik¡"
+  ],
+  "dosage": {
+    "en": "15-30 ml"
+  },
+  "importantFormulations": [
+    "PuÀy¡nuga C£r¸a",
+    "Graha¸¢ Mihira T¡ila",
+    "Sudar¿ana C£r¸a",
+    "Candan¡di Taila",
+    "A¸u Taila"
+  ],
+  "constituents": {
+    "en": "Auraptene, Coumarins, Glycosides"
+  }
+}

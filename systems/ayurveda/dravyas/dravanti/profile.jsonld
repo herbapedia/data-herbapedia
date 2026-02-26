@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/dravanti",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "dravanti",
+  "name": {
+    "sa": "Dravanti",
+    "sa-Latn": "Dravanti",
+    "as": "-English : Purging nut",
+    "bn": "Purging nut",
+    "en": "Purging nut",
+    "gu": "Ratanjota",
+    "hi": "Laal Bagharend",
+    "kn": "Erandane danti",
+    "ks": "Katalaavanakku",
+    "ml": "Katalaavanakku",
+    "mr": "Thoradanti",
+    "or": "-Tamil : Kattamanakku",
+    "pa": "Kattamanakku",
+    "ta": "Kattamanakku",
+    "te": "Adavi Amadam",
+    "ur": "-"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/dravanti"
+  },
+  "partUsed": "seed",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V5-013",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Jatrophin, jatropholone A, fraxetin, coumarino-lignan (I)."
+  }
+}

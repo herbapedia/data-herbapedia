@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/lavaliphala",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "lavaliphala",
+  "name": {
+    "sa": "Lavaliphala",
+    "sa-Latn": "Lavaliphala",
+    "as": "Noyaal",
+    "bn": "Noyaal",
+    "en": "Star gooseberry",
+    "gu": "Khaati Aawala",
+    "hi": "Harfaarevadi",
+    "kn": "Karinelli",
+    "ks": "-Marathi : Raaya-aawal",
+    "ml": "Raaya-aawal",
+    "mr": "Raaya-aawal",
+    "or": "-Tamil : Arinelli",
+    "pa": "Arinelli",
+    "ta": "Arinelli",
+    "te": "Raachayusarike",
+    "ur": "-"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/lavaliphala"
+  },
+  "partUsed": "fruit",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V5-046",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Triterpenoids (β- amyrin, Phyllanthol) and Gallic acid."
+  }
+}

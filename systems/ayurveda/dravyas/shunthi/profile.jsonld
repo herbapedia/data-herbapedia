@@ -1,0 +1,85 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/shunthi",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "shunthi",
+  "name": {
+    "sa": "Shunthi",
+    "sa-Latn": "Shunthi",
+    "as": "Adasuth",
+    "bn": "Suntha",
+    "en": "Ginger root",
+    "gu": "Sunth",
+    "hi": "Sonth",
+    "kn": "Shunthi",
+    "ks": "Shonth",
+    "ml": "Chukku",
+    "mr": "Sunth",
+    "or": "Sunthi",
+    "pa": "Sund",
+    "ta": "Sukku",
+    "te": "Sonthi",
+    "ur": "Sonth"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/shunthi"
+  },
+  "partUsed": "rhizome",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-067",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/ka¶u"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/laghu"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/snigdha"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/ushna"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/madhura"
+  },
+  "karma": [
+    "Anulomana",
+    "D¢pana",
+    "H¤dya",
+    "P¡cana",
+    "V¡takaph¡paha",
+    "ËsmadoÀahara"
+  ],
+  "indications": [
+    "Agnim¡ndya",
+    "áv¡sa",
+    "Ëdhm¡na",
+    "Ëmav¡ta",
+    "P¡¸·u",
+    "Udararoga"
+  ],
+  "dosage": {
+    "en": "1-2 g of the drug in powder form."
+  },
+  "importantFormulations": [
+    "Saubh¡gya¿u¸h¶¢",
+    "Trikau",
+    "Saubh¡gya Vati",
+    "Vai¿v¡nara"
+  ],
+  "constituents": {
+    "en": "Essential oil, pungent constituents (gingerol and shogaol), resinous"
+  }
+}

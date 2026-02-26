@@ -1,0 +1,85 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/tvakapatra",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "tvakapatra",
+  "name": {
+    "sa": "Tvakapatra",
+    "sa-Latn": "Tvakapatra",
+    "as": "Tejpat",
+    "bn": "Tejpatra",
+    "en": "Indian Cinnamon",
+    "gu": "Tamala patra",
+    "hi": "Tejpatra",
+    "kn": "Tamalapatra",
+    "ks": "Dalchini pan",
+    "ml": "Karuvapatta patram",
+    "mr": "Tamalpatra",
+    "or": "Tejapatra",
+    "pa": "Tajpater",
+    "ta": "Lavangapatri",
+    "te": "Akupatri",
+    "ur": "Tezpat"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/tvakapatra"
+  },
+  "partUsed": "leaf",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-074",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/madhura"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/ka¶u"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/laghu"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/picchila"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/ùikà¸a"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/ushna"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/ka¶u"
+  },
+  "karma": [
+    "Kaphav¡tahara",
+    "Rucya",
+    "Ar¿oghna"
+  ],
+  "indications": [
+    "Ar¿a",
+    "Aruci",
+    "P¢nasa",
+    "H¤ll¡sa"
+  ],
+  "dosage": {
+    "en": "1-3 g of the drug in powder form."
+  },
+  "importantFormulations": [
+    "Citrak¡di Taila",
+    "K¡s¢s¡di Taila",
+    "Vajraka Taila"
+  ],
+  "constituents": {
+    "en": "Essential oils (d-α phellandrene and eugenol)."
+  }
+}

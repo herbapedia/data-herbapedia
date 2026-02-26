@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/nagavalli",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "nagavalli",
+  "name": {
+    "sa": "Nagavalli",
+    "sa-Latn": "Nagavalli",
+    "as": "Pan",
+    "bn": "Pan",
+    "en": "Betel Leaf",
+    "gu": "Pan",
+    "hi": "Pan",
+    "kn": "Veelyadele Ele",
+    "ks": "Vettila",
+    "ml": "Vettila",
+    "mr": "Pan",
+    "or": "Pan",
+    "pa": "Pan",
+    "ta": "Vettilai",
+    "te": "Tamulapaku",
+    "ur": "Pan"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/nagavalli"
+  },
+  "partUsed": "leaf",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V3-061",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Essential Oil, Amino Acids, Vitamins and Enzymes."
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/arka",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "arka",
+  "name": {
+    "sa": "Arka",
+    "sa-Latn": "Arka",
+    "as": "Akand",
+    "bn": "Akanda",
+    "en": "Madar Tree",
+    "gu": "Aakado",
+    "hi": "Aak",
+    "kn": "Ekka",
+    "ks": "Acka",
+    "ml": "Erikku",
+    "mr": "Rui",
+    "or": "Arakha",
+    "pa": "Ak",
+    "ta": "Vellerukku",
+    "te": "Jilledu",
+    "ur": "Madar"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/arka"
+  },
+  "partUsed": "root",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-008",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/ka¶u"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/tikta"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/laghu"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/sara"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/snigdha"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/ushna"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/ka¶u"
+  },
+  "karma": [
+    "Bhedana",
+    "D¢pana",
+    "K¤mighna",
+    "ViÀaghna",
+    "Vra¸ahara",
+    "V¡tah¤t",
+    "áopha",
+    "áv¡sahara"
+  ],
+  "indications": [
+    "áv¡sa",
+    "Gulma",
+    "K¤miroga",
+    "Ka¸·£",
+    "KuÀ¶ha",
+    "Vra¸a",
+    "áotha"
+  ],
+  "dosage": {
+    "en": "250-750 mg of the drug in powder form."
+  },
+  "importantFormulations": [
+    "Arkalava¸a"
+  ],
+  "constituents": {
+    "en": "Glycosides (calotropin)."
+  }
+}

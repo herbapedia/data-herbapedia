@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/manjishta",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "manjishta",
+  "name": {
+    "sa": "Manjishta",
+    "sa-Latn": "Manjishta",
+    "as": "Phuvva",
+    "bn": "Manjistha",
+    "en": "Indian Maddar",
+    "gu": "Manjitha",
+    "hi": "Manjitha",
+    "kn": "Manjustha",
+    "ks": "Manjatti",
+    "ml": "Manjatti",
+    "mr": "Manjihtha",
+    "or": "Manjistha",
+    "pa": "Manjistha",
+    "ta": "Manjitte",
+    "te": "Manjishtha",
+    "ur": "Majeeth"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/manjishta"
+  },
+  "partUsed": "stem",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V3-053",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Glycosides"
+  }
+}

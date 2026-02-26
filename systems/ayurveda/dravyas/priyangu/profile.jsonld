@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/priyangu",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "priyangu",
+  "name": {
+    "sa": "Priyangu",
+    "sa-Latn": "Priyangu",
+    "as": "Priyangu",
+    "bn": "Priyangu",
+    "en": "Ghaunla",
+    "gu": "Ghaunla",
+    "hi": "Priyangu",
+    "kn": "Kadu-edi",
+    "ks": "Nazhal",
+    "ml": "Nazhal",
+    "mr": "Gauhala",
+    "or": "Priyangu",
+    "pa": "Priyangu",
+    "ta": "Gnazalpoo",
+    "te": "Prenkhanamu",
+    "ur": "-"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/priyangu"
+  },
+  "partUsed": "fruit.",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V4-046",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Fixed Oil"
+  }
+}

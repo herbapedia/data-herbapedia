@@ -1,0 +1,89 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/upakunchika",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "upakunchika",
+  "name": {
+    "sa": "Upakunchika",
+    "sa-Latn": "Upakunchika",
+    "as": "Mota Kalajira",
+    "bn": "Mota Kalajira",
+    "en": "Small Fennel",
+    "gu": "Kalonji jeeru",
+    "hi": "Kalaunji",
+    "kn": "Karijirige",
+    "ks": "Kath",
+    "ml": "Karinjirakam",
+    "mr": "Kalaunji jire",
+    "or": "Kalvanji",
+    "pa": "Kalvanji",
+    "ta": "Karunjeerakam",
+    "te": "Peddajila karra",
+    "ur": "Kalongi"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/upakunchika"
+  },
+  "partUsed": "bark",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-076",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/ka¶u"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/tikta"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/laghu"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/r£kàa"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/ushna"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/ka¶u"
+  },
+  "karma": [
+    "CakÀuÀya",
+    "D¢pana",
+    "H¤dya",
+    "K¤mighna",
+    "Medhya",
+    "P¡cana",
+    "Pittala",
+    "Rucya",
+    "Sa´gr¡h¢",
+    "V¡takaph¡paha",
+    "Garbh¡¿ayavi¿odhana"
+  ],
+  "indications": [
+    "Atis¡ra",
+    "Ëdhm¡na",
+    "Gulma",
+    "K¤miroga"
+  ],
+  "dosage": {
+    "en": "1-3 g of the drug in powder form."
+  },
+  "importantFormulations": [
+    "N¡r¡ya¸a C£r¸a",
+    "K¡¸k¡yana Gu¶ik¡"
+  ],
+  "constituents": {
+    "en": "Essential oil, fixed oil, resin, saponin and tannin."
+  }
+}

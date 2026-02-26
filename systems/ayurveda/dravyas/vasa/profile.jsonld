@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/vasa",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "vasa",
+  "name": {
+    "sa": "Vasa",
+    "sa-Latn": "Vasa",
+    "as": "Titabahak",
+    "bn": "Bakas",
+    "en": "Vasaka",
+    "gu": "Ardusi",
+    "hi": "Adoosa",
+    "kn": "Adusoye",
+    "ks": "Adalodakam",
+    "ml": "Adalodakam",
+    "mr": "Adulsa",
+    "or": "Vasanga",
+    "pa": "Vishuti",
+    "ta": "Adatodai",
+    "te": "Adda",
+    "ur": "Adusa(Arusa)"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/vasa"
+  },
+  "partUsed": "root",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V4-067",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Alkaloids (Vasicine and Vasicinol) and Oil."
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/kankola",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "kankola",
+  "name": {
+    "sa": "Kankola",
+    "sa-Latn": "Kankola",
+    "as": "Kakkol",
+    "bn": "Kahabcbini",
+    "en": "Cubebs",
+    "gu": "Chanakabab",
+    "hi": "Seetalchini",
+    "kn": "Gandhamenasu",
+    "ks": "Kushfal",
+    "ml": "Cheenamulaku",
+    "mr": "Kankol",
+    "or": "Kababchini",
+    "pa": "Kababchini",
+    "ta": "Vaali milaku",
+    "te": "Chalavamiriyalu",
+    "ur": "Kababchini"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/kankola"
+  },
+  "partUsed": "fruit",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-039",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/ka¶u"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/tikta"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/laghu"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/ùikà¸a"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/ushna"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/ka¶u"
+  },
+  "karma": [
+    "D¢pana",
+    "Kaphav¡tahara",
+    "P¡cana",
+    "Rucya",
+    "Vasti¿odhana",
+    "Mukhadaurgandhyahara"
+  ],
+  "indications": [
+    "á£la",
+    "Aruci",
+    "M£trak¤cchra",
+    "M£kharoga"
+  ],
+  "dosage": {
+    "en": "1-2 g of the drug in powder form."
+  },
+  "importantFormulations": [
+    "Da¿am£l¡riÀa",
+    "Kum¡ry¡sava"
+  ],
+  "constituents": {
+    "en": "Essential oil (cubebin)."
+  }
+}

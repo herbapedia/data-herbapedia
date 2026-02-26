@@ -1,0 +1,86 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/gokshura",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "gokshura",
+  "name": {
+    "sa": "Gokshura",
+    "sa-Latn": "Gokshura",
+    "as": "Gokshura",
+    "bn": "Gokshura",
+    "en": "Caltrops root",
+    "gu": "Be tha gokharu",
+    "hi": "Gokhru",
+    "kn": "Sannanaggilu",
+    "ks": "Michirkand",
+    "ml": "Nerinjil",
+    "mr": "Sarate",
+    "or": "Gukhura",
+    "pa": "Bhakhra",
+    "ta": "Nerinjil",
+    "te": "Palleruveru",
+    "ur": "Khar-e-Khasak Khurd"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/gokshura"
+  },
+  "partUsed": "root",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-027",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/madhura"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/guru"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/snigdha"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/á¢ta"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/madhura"
+  },
+  "karma": [
+    "B¤Æha¸a",
+    "V¡tanut",
+    "V¤Àya",
+    "A¿mar¢hara",
+    "Vasti¿odhana"
+  ],
+  "indications": [
+    "á£laroga",
+    "Ar¿a",
+    "áv¡sa",
+    "Daurbalya",
+    "H¤droga",
+    "K¡sa",
+    "M£trak¤cchra",
+    "A¿mar¢",
+    "Pram®ha"
+  ],
+  "dosage": {
+    "en": "3-6 g of the drug in powder form. 20-30 g of the drug for decoction."
+  },
+  "importantFormulations": [
+    "GokÀur¡di Guggulu",
+    "Traika¸aka Gh¤ta",
+    "Dr¡kÀadi Cr£na"
+  ],
+  "constituents": {
+    "en": "Alkaloids and saponins."
+  }
+}

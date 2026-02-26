@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/sarshapa",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "sarshapa",
+  "name": {
+    "sa": "Sarshapa",
+    "sa-Latn": "Sarshapa",
+    "as": "Sarisa",
+    "bn": "Sarisa",
+    "en": "Mustard",
+    "gu": "Sarasad",
+    "hi": "Saraso",
+    "kn": "Sasuve",
+    "ks": "Katuka",
+    "ml": "Katuka",
+    "mr": "Mohari",
+    "or": "Sarayo",
+    "pa": "Sarayo",
+    "ta": "Kadugu",
+    "te": "Avalu",
+    "ur": "Sarson"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/sarshapa"
+  },
+  "partUsed": "seed",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V3-087",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Fixed Oil."
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/shati",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "shati",
+  "name": {
+    "sa": "Shati",
+    "sa-Latn": "Shati",
+    "as": "Katuri",
+    "bn": "Shati",
+    "en": "Spiked ginger lily",
+    "gu": "Kapurkachri",
+    "hi": "Kapurkachri",
+    "kn": "Goul Kachora",
+    "ks": "Kapoorkachara",
+    "ml": "Katcholam",
+    "mr": "Kapurakachari",
+    "or": "Gandhasunthi",
+    "pa": "Kachur",
+    "ta": "Poolankizangu Kichili Kizongu",
+    "te": "Gandha Kachuralu",
+    "ur": "-"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/shati"
+  },
+  "partUsed": "rhizome",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-064",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/ka¶u"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/tikta"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/kashaya"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/laghu"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/ùikà¸a"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/ushna"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/ka¶u"
+  },
+  "karma": [
+    "á£lahara",
+    "Gr¡h¢",
+    "Kaphav¡taghna",
+    "Mukha¿odhana"
+  ],
+  "indications": [
+    "á£la",
+    "áv¡sa",
+    "Chardi",
+    "K¡sa",
+    "Ka¸·£",
+    "Mukharoga"
+  ],
+  "dosage": {
+    "en": "1-3 g of the drug in powder form."
+  },
+  "importantFormulations": [
+    "Agastyhar¢tak¢ Ras¡yana",
+    "áa¶y¡di C£r¸a"
+  ],
+  "constituents": {
+    "en": "Essential oil."
+  }
+}

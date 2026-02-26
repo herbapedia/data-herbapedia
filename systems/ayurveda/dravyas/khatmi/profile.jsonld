@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/khatmi",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "khatmi",
+  "name": {
+    "sa": "Khatmi",
+    "sa-Latn": "Khatmi",
+    "as": "-English : Marsh Mallow",
+    "bn": "Marsh Mallow",
+    "en": "Marsh Mallow",
+    "gu": "Khatmi",
+    "hi": "Khatmi",
+    "kn": "-Malayalam : -Marathi : Khatmi",
+    "ks": "-Marathi : Khatmi",
+    "ml": "Khatmi",
+    "mr": "Khatmi",
+    "or": "-Tamil : Khatmi",
+    "pa": "Khatmi",
+    "ta": "Khatmi",
+    "te": "Khatmi",
+    "ur": "Aslua Khitmi"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/khatmi"
+  },
+  "partUsed": "root",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V5-037",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Galacturonic acid, galactose, glucose, xylose &"
+  }
+}

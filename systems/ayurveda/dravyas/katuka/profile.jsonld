@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/katuka",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "katuka",
+  "name": {
+    "sa": "Katuka",
+    "sa-Latn": "Katuka",
+    "as": "Katki",
+    "bn": "Hellebore",
+    "en": "Hellebore",
+    "gu": "Kadu",
+    "hi": "Kutki",
+    "kn": "Katuka rohini",
+    "ks": "Kaduk rohini",
+    "ml": "Kaduk rohini",
+    "mr": "Kutki",
+    "or": "Katuki",
+    "pa": "Karru",
+    "ta": "Katuka rohini",
+    "te": "Karukarohini",
+    "ur": "Kutki"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/katuka"
+  },
+  "partUsed": "rhizome",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V2-041",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Glucoside (Picrorhizin)."
+  }
+}

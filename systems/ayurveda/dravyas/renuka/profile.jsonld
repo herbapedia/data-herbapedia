@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/renuka",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "renuka",
+  "name": {
+    "sa": "Renuka",
+    "sa-Latn": "Renuka",
+    "as": "Renuka",
+    "bn": "Renuka",
+    "en": "Chaste-Tree",
+    "gu": "Harenu",
+    "hi": "Renukaa",
+    "kn": "Renuka",
+    "ks": "-Marathi : Renuka Beej",
+    "ml": "Renuka Beej",
+    "mr": "Renuka Beej",
+    "or": "-Tamil : Yettee",
+    "pa": "Yettee",
+    "ta": "Yettee",
+    "te": "Jeevakamu",
+    "ur": "-"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/renuka"
+  },
+  "partUsed": "fruit",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V5-072",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Seeds contain hydrocarbons such as n-tritriacontane, n-hentriacontane,"
+  }
+}

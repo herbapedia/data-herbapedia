@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/kadali",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "kadali",
+  "name": {
+    "sa": "Kadali",
+    "sa-Latn": "Kadali",
+    "as": "Kal",
+    "bn": "Kela",
+    "en": "Banana",
+    "gu": "Kela",
+    "hi": "Kela",
+    "kn": "Bale gadde",
+    "ks": "Kadali",
+    "ml": "Kadali",
+    "mr": "Kel",
+    "or": "Kadali",
+    "pa": "Kela",
+    "ta": "Vazhai",
+    "te": "Arati chettu",
+    "ur": "Kela (Mouz)"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/kadali"
+  },
+  "partUsed": "flower",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V4-018",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Saponins, Tannins, reducing and non-reducing Sugars, Sterols and"
+  }
+}

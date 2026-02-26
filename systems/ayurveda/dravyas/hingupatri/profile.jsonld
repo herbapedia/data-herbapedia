@@ -1,0 +1,80 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/hingupatri",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "hingupatri",
+  "name": {
+    "sa": "Hingupatri",
+    "sa-Latn": "Hingupatri",
+    "as": "Hing",
+    "bn": "Hing",
+    "en": "Hing",
+    "gu": "Hing",
+    "hi": "Hingupatri",
+    "kn": "Doddahingina Balli",
+    "ks": "Kayam",
+    "ml": "Kayam",
+    "mr": "Hing Patree",
+    "or": "Hengu",
+    "pa": "Hinge",
+    "ta": "Inguva",
+    "te": "Hingo Patramu",
+    "ur": "-"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/hingupatri"
+  },
+  "partUsed": "leaf",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V5-021",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/ka¶u"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/ùikà¸a"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/ushna"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/ka¶u"
+  },
+  "karma": [
+    "Anulomana",
+    "D¢pana",
+    "H¤dya",
+    "K¤mighna",
+    "P¡cana",
+    "Rucya",
+    "V¡takaphapra¿amana"
+  ],
+  "indications": [
+    "á£laroga",
+    "Ëdhm¡na",
+    "Gulma",
+    "H¤droga",
+    "K¤miroga",
+    "Udararoga",
+    ""
+  ],
+  "dosage": {
+    "en": "125-500 mg of the drug."
+  },
+  "importantFormulations": [
+    "Hi´gv¡À¶aka C£¤¸a",
+    "Hi´gv¡di C£r¸a",
+    "Hi´guvac¡d£ C"
+  ]
+}

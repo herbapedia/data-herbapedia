@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/hapusha",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "hapusha",
+  "name": {
+    "sa": "Hapusha",
+    "sa-Latn": "Hapusha",
+    "as": "Arar",
+    "bn": "Hayusha",
+    "en": "Juniper Berry",
+    "gu": "Palash",
+    "hi": "Havuber",
+    "kn": "Padma Beeja",
+    "ks": "-Marathi : Hosh",
+    "ml": "Hosh",
+    "mr": "Hosh",
+    "or": "Havulber",
+    "pa": "Havulber",
+    "ta": "Hapusha",
+    "te": "Hapusha",
+    "ur": "Abhal"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/hapusha"
+  },
+  "partUsed": "fruit",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V3-030",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Essential Oil and Flavonoids"
+  }
+}

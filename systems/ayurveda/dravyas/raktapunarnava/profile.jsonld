@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/raktapunarnava",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "raktapunarnava",
+  "name": {
+    "sa": "Raktapunarnava",
+    "sa-Latn": "Raktapunarnava",
+    "as": "Ronga Punarnabha",
+    "bn": "Rakta Punarnava",
+    "en": "Hog Weed",
+    "gu": "Saturdi",
+    "hi": "Gadapurna",
+    "kn": "Kommeberu",
+    "ks": "Chuvanna Tazhutama",
+    "ml": "Chuvanna Tazhutama",
+    "mr": "Rakta Punarnava",
+    "or": "Laalapuiruni",
+    "pa": "Iteit (Lal)",
+    "ta": "Mookarattai (Shihappu)",
+    "te": "Atikamamidi",
+    "ur": "Surkh Punarnava"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/raktapunarnava"
+  },
+  "partUsed": "root",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V3-072",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Alkaloid, Hentriacontane, β-Sitosterol, Ursolic Acid."
+  }
+}

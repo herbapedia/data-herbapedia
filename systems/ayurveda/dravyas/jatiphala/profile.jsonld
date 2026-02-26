@@ -1,0 +1,86 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/jatiphala",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "jatiphala",
+  "name": {
+    "sa": "Jatiphala",
+    "sa-Latn": "Jatiphala",
+    "as": "Jaiphal",
+    "bn": "Jaiphala",
+    "en": "Nutmeg",
+    "gu": "Jaiphala",
+    "hi": "Jaiphal",
+    "kn": "Jadikai",
+    "ks": "Jafal",
+    "ml": "Jatika",
+    "mr": "Jaiphal",
+    "or": "Jaiphal",
+    "pa": "Jaiphal",
+    "ta": "Sathikkai",
+    "te": "Jajikaya",
+    "ur": "Jauzbuwa"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/jatiphala"
+  },
+  "partUsed": "seed",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-036",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/ka¶u"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/tikta"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/laghu"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/ùikà¸a"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/ushna"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/ka¶u"
+  },
+  "karma": [
+    "D¢pana",
+    "Gr¡h¢",
+    "V¤Àya",
+    "Mukhakledan¡¿aka",
+    "Mukhadaurgandhyan¡¿aka",
+    "Kaphav¡t¡pana"
+  ],
+  "indications": [
+    "Atis¡ra",
+    "áv¡sa",
+    "Chardi",
+    "K¡sa",
+    "P¢nasa",
+    "Graha¸¢",
+    "Mukharoga"
+  ],
+  "dosage": {
+    "en": "0.5 - 1.0 g of the drug in powder form."
+  },
+  "importantFormulations": [
+    "J¡t¢phal¡di C£r¸a"
+  ],
+  "constituents": {
+    "en": "Essential oil and fixed oil."
+  }
+}

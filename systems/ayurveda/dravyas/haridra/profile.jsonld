@@ -1,0 +1,84 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/haridra",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "haridra",
+  "name": {
+    "sa": "Haridra",
+    "sa-Latn": "Haridra",
+    "as": "Haldhi",
+    "bn": "Halud",
+    "en": "Turmeric",
+    "gu": "Haldar",
+    "hi": "Haldi",
+    "kn": "Arishina",
+    "ks": "Ledar",
+    "ml": "Manjal",
+    "mr": "Halad",
+    "or": "Haladi",
+    "pa": "Haldi",
+    "ta": "Manjal",
+    "te": "Pasupu",
+    "ur": "Haldi"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/haridra"
+  },
+  "partUsed": "rhizome",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-032",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/ka¶u"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/tikta"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/r£kàa"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/ushna"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/ka¶u"
+  },
+  "karma": [
+    "K¤mighna",
+    "KuÀhaghna",
+    "Var¸ya",
+    "ViÀaghna",
+    "Kaphapittanut",
+    "Pramehan¡¿aka"
+  ],
+  "indications": [
+    "P¡¸·u",
+    "Prameha",
+    "Vra¸a",
+    "ViÀavik¡ra",
+    "KuÀ¶ha",
+    "Tvagroga",
+    "á¢tapitta",
+    "P¢nasa"
+  ],
+  "dosage": {
+    "en": "1-3 g of the drug in powder form."
+  },
+  "importantFormulations": [
+    "Haridr¡ Kha¸·a"
+  ],
+  "constituents": {
+    "en": "Essential oil and a colouring matter (curcumin)."
+  }
+}

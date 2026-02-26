@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/mulaka",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "mulaka",
+  "name": {
+    "sa": "Mulaka",
+    "sa-Latn": "Mulaka",
+    "as": "Mulo",
+    "bn": "Mula",
+    "en": "Radish",
+    "gu": "Mulo",
+    "hi": "Muli",
+    "kn": "Mullangi",
+    "ks": "Mullanki",
+    "ml": "Mullanki",
+    "mr": "Mula",
+    "or": "Mula",
+    "pa": "Moolak",
+    "ta": "Mullangi",
+    "te": "Mullangi",
+    "ur": "Turb"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/mulaka"
+  },
+  "partUsed": "seed",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V3-058",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Fixed Oil and Volatile Oil."
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/karchura",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "karchura",
+  "name": {
+    "sa": "Karchura",
+    "sa-Latn": "Karchura",
+    "as": "Katuri",
+    "bn": "Sali",
+    "en": "Zedoary",
+    "gu": "Kachuro",
+    "hi": "Kacura",
+    "kn": "Kachora",
+    "ks": "Kachalam",
+    "ml": "Kachalam",
+    "mr": "Kachora",
+    "or": "Kachoramu",
+    "pa": "Kachur",
+    "ta": "Kichili",
+    "te": "Kachoramu",
+    "ur": "Zarambad"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/karchura"
+  },
+  "partUsed": "rhizome",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V4-019",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Essential Oil and Resin."
+  }
+}

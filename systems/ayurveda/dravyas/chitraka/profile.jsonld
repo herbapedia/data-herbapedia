@@ -1,0 +1,87 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/chitraka",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "chitraka",
+  "name": {
+    "sa": "Chitraka",
+    "sa-Latn": "Chitraka",
+    "as": "Agiyachit",
+    "bn": "Chita",
+    "en": "Lead war",
+    "gu": "Chitrakmula",
+    "hi": "Chira",
+    "kn": "Chitramula",
+    "ks": "Chitra",
+    "ml": "Vellakeduveli",
+    "mr": "Chitraka",
+    "or": "Chitamula",
+    "pa": "Chitra",
+    "ta": "Chitramoolam",
+    "te": "Chitramulam",
+    "ur": "Sheetraj Hindi"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/chitraka"
+  },
+  "partUsed": "root",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-022",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/ka¶u"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/laghu"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/r£kàa"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/ùikà¸a"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/ushna"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/ka¶u"
+  },
+  "karma": [
+    "áothahara",
+    "D¢pana",
+    "Gr¡h¢",
+    "P¡cana",
+    "Kaphav¡tahara",
+    "Ar¿ohara",
+    "á"
+  ],
+  "indications": [
+    "Agnim¡ndya",
+    "Graha¸¢ Roga",
+    "Ar¿a",
+    "Udara á£la",
+    "Guda¿otha"
+  ],
+  "dosage": {
+    "en": "1-2 g of the drug in powder form."
+  },
+  "importantFormulations": [
+    "Citrak¡di Va¶¢",
+    "Citrakahar¢tak¢",
+    "Citrak¡di C£r¸a"
+  ],
+  "constituents": {
+    "en": "Plumbagin."
+  }
+}

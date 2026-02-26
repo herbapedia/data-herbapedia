@@ -1,0 +1,87 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/tila",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "tila",
+  "name": {
+    "sa": "Tila",
+    "sa-Latn": "Tila",
+    "as": "Simmasim",
+    "bn": "Tilagachh",
+    "en": "Sesame",
+    "gu": "Tall",
+    "hi": "Tila",
+    "kn": "Accheellu",
+    "ks": "Ellu",
+    "ml": "Ellu",
+    "mr": "Tila",
+    "or": "Til",
+    "pa": "Til",
+    "ta": "Ellu",
+    "te": "Nuvvulu",
+    "ur": "Kunjad"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/tila"
+  },
+  "partUsed": "seed",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V4-061",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/ka¶u"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/tikta"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/kashaya"
+    }
+  ],
+  "karma": [
+    "V¡tahara",
+    "Kaphahara",
+    "Pittahara",
+    "Rucik¤t",
+    "D¢pana",
+    "D¡hak¤t",
+    "K¤mighna",
+    "ViÀahara",
+    "Vra¸a¿odhaka",
+    "H¤dya"
+  ],
+  "indications": [
+    "áv¡sa",
+    "K¡sa",
+    "Hikk¡",
+    "P¡r¿va¿£la",
+    "KuÀ¶ha",
+    "M£trak¤cchra",
+    "Prati¿y¡ya",
+    "Aruci",
+    "P£tigandha",
+    "GaraviÀa",
+    "áotha",
+    "K¤mi",
+    "Rakta Vik¡ra",
+    "JantuviÀa",
+    "Bh£taroga"
+  ],
+  "dosage": {
+    "en": "1-2 gm of the seed in powder form."
+  },
+  "importantFormulations": [
+    "Mukt¡di Mahaµjana"
+  ],
+  "constituents": {
+    "en": "Fixed Oil"
+  }
+}

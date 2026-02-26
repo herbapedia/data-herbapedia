@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/karanja",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "karanja",
+  "name": {
+    "sa": "Karanja",
+    "sa-Latn": "Karanja",
+    "as": "Korach",
+    "bn": "Dahara karanja",
+    "en": "Kanaji",
+    "gu": "Kanaji",
+    "hi": "Karanj",
+    "kn": "Honge Beru",
+    "ks": "Pungu",
+    "ml": "Pungu",
+    "mr": "Karanja",
+    "or": "Karanja",
+    "pa": "Karanj",
+    "ta": "Pungai",
+    "te": "Ganuga",
+    "ur": "Karanj"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/karanja"
+  },
+  "partUsed": "root",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V2-037",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Karanjin, Kanugin, Demethoxy-kanugin, Pongachromene &"
+  }
+}

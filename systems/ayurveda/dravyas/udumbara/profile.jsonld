@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/udumbara",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "udumbara",
+  "name": {
+    "sa": "Udumbara",
+    "sa-Latn": "Udumbara",
+    "as": "Jambhaij",
+    "bn": "Jogmadumur",
+    "en": "Cluster Fig",
+    "gu": "Umardo",
+    "hi": "Gullar",
+    "kn": "Athimaro",
+    "ks": "Atti",
+    "ml": "Atti",
+    "mr": "Umbar",
+    "or": "Dumburi",
+    "pa": "Gullar",
+    "ta": "Atti",
+    "te": "Atti",
+    "ur": "Goolar"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/udumbara"
+  },
+  "partUsed": "fruit",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V3-099",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "β- Sitosterol, Lupeol Acetate and Carbohydrates"
+  }
+}

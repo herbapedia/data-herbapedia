@@ -1,0 +1,78 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/pashanabheda",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "pashanabheda",
+  "name": {
+    "sa": "Pashanabheda",
+    "sa-Latn": "Pashanabheda",
+    "as": "Patharkuchi",
+    "bn": "Patharkuchi",
+    "en": "Pashanbheda",
+    "gu": "Pashanbheda",
+    "hi": "Pakhanabheda",
+    "kn": "Alepgaya",
+    "ks": "Pashanbhed",
+    "ml": "Kallurvanchi",
+    "mr": "Pashanbheda",
+    "or": "Pasanbhedi",
+    "pa": "Kachalu",
+    "ta": "Sirupilai",
+    "te": "Kondapindi",
+    "ur": "-"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/pashanabheda"
+  },
+  "partUsed": "rhizome",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-059",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/tikta"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/kashaya"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/laghu"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/á¢ta"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/ka¶u"
+  },
+  "karma": [
+    "Bhedana",
+    "Vasti¿odhana",
+    "A¿marighna",
+    "M£travirecaniya"
+  ],
+  "indications": [
+    "A¿mari",
+    "Meha",
+    "M£trakicchra"
+  ],
+  "dosage": {
+    "en": "3-6 g of the drug in powder form. 20-30 g of the drug for decoction."
+  },
+  "importantFormulations": [
+    "A¿mar¢hara KaÀ¡ya C£r¸a",
+    "M£travirecaniya KaÀ¡ya C"
+  ],
+  "constituents": {
+    "en": "Tannic acid, gallic acid and glucose"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/punarnava",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "punarnava",
+  "name": {
+    "sa": "Punarnava",
+    "sa-Latn": "Punarnava",
+    "as": "Ranga Punarnabha",
+    "bn": "Rakta punarnava",
+    "en": "Horse Purslene",
+    "gu": "Dholisaturdi",
+    "hi": "Gadapurna",
+    "kn": "Sanadika",
+    "ks": "Vanjula Punarnava",
+    "ml": "Chuvanna Tazhutawa",
+    "mr": "Ghetuli",
+    "or": "Lalapuiruni",
+    "pa": "ltcit (Ial)",
+    "ta": "Mukurattai (Shihappu)",
+    "te": "Atikamamidi"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/punarnava"
+  },
+  "partUsed": "rakta",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-062",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Alkaloid (Punarnavine)."
+  }
+}

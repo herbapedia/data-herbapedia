@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/jyotishmati",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "jyotishmati",
+  "name": {
+    "sa": "Jyotishmati",
+    "sa-Latn": "Jyotishmati",
+    "as": "Kapalphotla",
+    "bn": "Staff tree",
+    "en": "Staff tree",
+    "gu": "Malkangani",
+    "hi": "Malkangani",
+    "kn": "Doddaganugae",
+    "ks": "Ceruppunnari",
+    "ml": "Ceruppunnari",
+    "mr": "Malkangoni",
+    "or": "Malkanguni",
+    "pa": "Malkangoni",
+    "ta": "Valuluvai",
+    "te": "Malkangani",
+    "ur": "Malkangani"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/jyotishmati"
+  },
+  "partUsed": "seed",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V2-030",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Alkaloids, Oil and Tannins."
+  }
+}

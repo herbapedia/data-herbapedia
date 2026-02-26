@@ -1,0 +1,80 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/jatamansi",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "jatamansi",
+  "name": {
+    "sa": "Jatamansi",
+    "sa-Latn": "Jatamansi",
+    "as": "Jatamansi",
+    "bn": "Jatamamsi",
+    "en": "Nardus root",
+    "gu": "Baalchad",
+    "hi": "Balchara",
+    "kn": "Bhootajata",
+    "ks": "Bhutijata",
+    "ml": "Manchi",
+    "mr": "Jatamansi",
+    "or": "Jatamansi",
+    "pa": "Billilotan",
+    "ta": "Jatamanji",
+    "te": "Jatamams",
+    "ur": "Sumbul-ut-teeb"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/jatamansi"
+  },
+  "partUsed": "rhizome",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-035",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/tikta"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/kashaya"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/laghu"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/á¢ta"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/ka¶u"
+  },
+  "karma": [
+    "Medhya",
+    "TridoÀanut",
+    "Var¸ya",
+    "Nidr¡janana",
+    "KuÀhaghna."
+  ],
+  "indications": [
+    "D¡ha",
+    "KuÀ¶ha",
+    "Visarpa",
+    "M¡nasaroga",
+    "Anidr¡"
+  ],
+  "dosage": {
+    "en": "2-3 g of the drug in powder form. 5-10 g of the drug for decoction."
+  },
+  "importantFormulations": [
+    "Ja¶¡m¡Æsyarka"
+  ],
+  "constituents": {
+    "en": "Essential oil and resinuous matter."
+  }
+}

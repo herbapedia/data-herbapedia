@@ -1,0 +1,81 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/asvattha",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "asvattha",
+  "name": {
+    "sa": "Asvattha",
+    "sa-Latn": "Asvattha",
+    "as": "Ahant",
+    "bn": "Asvattha",
+    "en": "Pipal tree",
+    "gu": "Piplo",
+    "hi": "Pipala",
+    "kn": "Arlo",
+    "ks": "Bad",
+    "ml": "Arayal",
+    "mr": "Pipal",
+    "or": "Aswatha",
+    "pa": "Pipal",
+    "ta": "Ashwarthan",
+    "te": "Ravichettu",
+    "ur": "-"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/asvattha"
+  },
+  "partUsed": "bark",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-013",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/kashaya"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/guru"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/r£kàa"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/á¢ta"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/ka¶u"
+  },
+  "karma": [
+    "Var¸ya",
+    "Kaphapittavin¡s¢",
+    "Sa´gr¡h¢",
+    "Bhagnasandh¡nakara",
+    "M£trasa"
+  ],
+  "indications": [
+    "Prameha",
+    "Raktapitta",
+    "Vra¸a",
+    "V¡tarakta",
+    "YonidoÀa"
+  ],
+  "dosage": {
+    "en": "20-30 g of the drug for decoction."
+  },
+  "importantFormulations": [
+    "Nyagrodh¡di C£r¸a",
+    "Nyagrodh¡di Kv¡tha C£r¸a"
+  ],
+  "constituents": {
+    "en": "Tannins."
+  }
+}

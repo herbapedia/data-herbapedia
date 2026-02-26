@@ -1,0 +1,85 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/tagara",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "tagara",
+  "name": {
+    "sa": "Tagara",
+    "sa-Latn": "Tagara",
+    "as": "Tagar",
+    "bn": "Tagar Paduka",
+    "en": "Indian Valerian",
+    "gu": "Tagar Ganthoda",
+    "hi": "Mushkbala",
+    "kn": "Mandibattal",
+    "ks": "Bala",
+    "ml": "Thakaram",
+    "mr": "Tagar",
+    "or": "Tagarapaduka",
+    "pa": "Mushkobala",
+    "ta": "Tagarai",
+    "te": "Grandhi Tagaramu",
+    "ur": "Tagar"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/tagara"
+  },
+  "partUsed": "rhizome",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-071",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/ka¶u"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/tikta"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/kashaya"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/laghu"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/snigdha"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/ushna"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/ka¶u"
+  },
+  "karma": [
+    "ViÀaghna",
+    "TridoÀahara",
+    "RaktadoÀahara",
+    "M¡nasadoÀhara."
+  ],
+  "indications": [
+    "Netraroga",
+    "Apasm¡ra",
+    "Unm¡da",
+    "áiroroga"
+  ],
+  "dosage": {
+    "en": "1-3 g of the drug in powder form."
+  },
+  "importantFormulations": [
+    "Dh¡nvantara Taila",
+    "Mah¡n¡r¡ya¸a Taila"
+  ],
+  "constituents": {
+    "en": "Essential oil."
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/svetajiraka",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "svetajiraka",
+  "name": {
+    "sa": "Svetajiraka",
+    "sa-Latn": "Svetajiraka",
+    "as": "Jira",
+    "bn": "Jira",
+    "en": "Cumin seed. Cumin",
+    "gu": "Jirautmi",
+    "hi": "Jira",
+    "kn": "Jirage",
+    "ks": "Safed Zoor",
+    "ml": "Jeerakam",
+    "mr": "Pandhare jire",
+    "or": "Dhalajeera",
+    "pa": "Safed Jira",
+    "ta": "Sheeragam",
+    "te": "Jilakarra",
+    "ur": "Zirah"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/svetajiraka"
+  },
+  "partUsed": "fruit",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-069",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/madhura"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/guru"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/snigdha"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/á¢ta"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/madhura"
+  },
+  "karma": [
+    "Rakta¿odhaka",
+    "ViÀaghna",
+    "TridoÀan¡¿ana",
+    "Dipana",
+    "Ëman¡¿ana",
+    "Jvarahara"
+  ],
+  "indications": [
+    "Agnim¡ndya",
+    "Aruci",
+    "Atis¡ra",
+    "áv¡sa",
+    "Jvara",
+    "K¡sa",
+    "Ka¸·£",
+    "KuÀ¶ha",
+    "Raktavik¡ra"
+  ],
+  "dosage": {
+    "en": "20-30 g of the drug for decoction."
+  },
+  "importantFormulations": [
+    "S¡riv¡dy¡sava"
+  ],
+  "constituents": {
+    "en": "Essential oil."
+  }
+}

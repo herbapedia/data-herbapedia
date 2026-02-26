@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/itkata",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "itkata",
+  "name": {
+    "sa": "Itkata",
+    "sa-Latn": "Itkata",
+    "as": "Dhanicha",
+    "bn": "Dhanicha",
+    "en": "Sasee Ikad",
+    "gu": "Sasee Ikad",
+    "hi": "Ikkada",
+    "kn": "Mullu jinangi",
+    "ks": "Kitamu",
+    "ml": "Kitamu",
+    "mr": "Raanshevari",
+    "or": "Tentua",
+    "pa": "Jhanjhan",
+    "ta": "Mudchembai",
+    "te": "Ettejangaa",
+    "ur": "-"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/itkata"
+  },
+  "partUsed": "root",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V5-022",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Amino acids such as lysine, arginine, histidine."
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/utpala",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "utpala",
+  "name": {
+    "sa": "Utpala",
+    "sa-Latn": "Utpala",
+    "as": "Kumud",
+    "bn": "Kumud",
+    "en": "Indian Blue Water Fily",
+    "gu": "Poyanu",
+    "hi": "Neel Kamal",
+    "kn": "Neeltare",
+    "ks": "Ambal Poovu",
+    "ml": "Ambal Poovu",
+    "mr": "Kamoda",
+    "or": "Neel Kamal",
+    "pa": "Neel Kamal",
+    "ta": "Alli",
+    "te": "Allitamara",
+    "ur": "Neelofar"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/utpala"
+  },
+  "partUsed": "flower",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V3-101",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Tannins."
+  }
+}

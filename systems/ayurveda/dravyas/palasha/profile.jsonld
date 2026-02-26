@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/palasha",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "palasha",
+  "name": {
+    "sa": "Palasha",
+    "sa-Latn": "Palasha",
+    "as": "Palaash",
+    "bn": "Palaash",
+    "en": "Butea seed",
+    "gu": "Khakharo",
+    "hi": "Dhak",
+    "kn": "Muttagamara",
+    "ks": "Plashu",
+    "ml": "Plashu",
+    "mr": "Palas",
+    "or": "-Tamil : Purasu",
+    "pa": "Purasu",
+    "ta": "Purasu",
+    "te": "Moduga",
+    "ur": "-"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/palasha"
+  },
+  "partUsed": "seed",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V5-059",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Fatty oil; amino acids."
+  }
+}

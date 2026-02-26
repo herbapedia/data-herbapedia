@@ -1,0 +1,83 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/svarnapatri",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "svarnapatri",
+  "name": {
+    "sa": "Svarnapatri",
+    "sa-Latn": "Svarnapatri",
+    "as": "Sonamukhi",
+    "bn": "Svamamukhi",
+    "en": "Indian Senna. Tinnevelly Senna",
+    "gu": "Mindhiaval",
+    "hi": "Sanaya",
+    "kn": "Nelavarika",
+    "ks": "Sna",
+    "ml": "Sunnamukhi",
+    "mr": "Sonamukhi",
+    "or": "Sunamukhi",
+    "pa": "Sannamakhi",
+    "ta": "Nilapponnai",
+    "te": "Sunamukhi",
+    "ur": "Sena"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/svarnapatri"
+  },
+  "partUsed": "leaf",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-068",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/ka¶u"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/tikta"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/kashaya"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/laghu"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/r£kàa"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/ùikà¸a"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/ushna"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/ka¶u"
+  },
+  "karma": [
+    "Recana"
+  ],
+  "indications": [
+    "Udararoga",
+    "Vibandha"
+  ],
+  "dosage": {
+    "en": "0.5-2 g of the drug in powder form."
+  },
+  "importantFormulations": [
+    "Paµcasak¡ra C£r¸a",
+    "S¡riv¡dy¡sava"
+  ],
+  "constituents": {
+    "en": "Anthraquinone, glucoside, flavonoids, steroids and resin."
+  }
+}

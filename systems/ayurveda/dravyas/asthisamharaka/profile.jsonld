@@ -1,0 +1,58 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/asthisamharaka",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "asthisamharaka",
+  "name": {
+    "sa": "Asthisamharaka",
+    "sa-Latn": "Asthisamharaka",
+    "as": "Harjara",
+    "bn": "Hadajora",
+    "en": "Hadasankala",
+    "gu": "Hadasankala",
+    "hi": "Hadjod",
+    "kn": "Mangaraballi",
+    "ks": "Changalam Parande",
+    "ml": "Changalam Parande",
+    "mr": "Kandvel",
+    "or": "Hadbhanga",
+    "pa": "Haddjor",
+    "ta": "Perandai",
+    "te": "Nalleru",
+    "ur": "Hathjod"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/asthisamharaka"
+  },
+  "partUsed": "stem",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V3-012",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/śnigdha"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/laghu"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/shita"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/katu"
+  },
+  "karma": [
+    "Ar"
+  ],
+  "constituents": {
+    "en": "Calcium Oxalate, Carotene and Ascorbic Acid"
+  }
+}

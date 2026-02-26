@@ -1,0 +1,40 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/patala",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "patala",
+  "name": {
+    "sa": "Patala",
+    "sa-Latn": "Patala",
+    "as": "Parul",
+    "bn": "Parul",
+    "en": "Rose Flower Fragrant",
+    "gu": "Podal",
+    "hi": "Padal",
+    "kn": "Padramora",
+    "ks": "Padiri",
+    "ml": "Padiri",
+    "mr": "Padal",
+    "or": "Boro",
+    "pa": "Padal",
+    "ta": "Padari",
+    "te": "Kaligottu"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/patala"
+  },
+  "partUsed": "root",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V3-067",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Bitter Substances, Sterols, Glycosides and Glyco-Alkaloids."
+  }
+}

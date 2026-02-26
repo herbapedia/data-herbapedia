@@ -1,0 +1,80 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/dhataki",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "dhataki",
+  "name": {
+    "sa": "Dhataki",
+    "sa-Latn": "Dhataki",
+    "as": "Dhaiphool",
+    "bn": "Dhaiphul",
+    "en": "Fire flame bush",
+    "gu": "Dhavadi",
+    "hi": "Dhai",
+    "kn": "Dhataki",
+    "ks": "Kath",
+    "ml": "Tattiripuvu",
+    "mr": "Dhayati",
+    "or": "Dhaiphula",
+    "pa": "Davi",
+    "ta": "Kattati",
+    "te": "Aarl Puruvu",
+    "ur": "-"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/dhataki"
+  },
+  "partUsed": "flower",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-024",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/ka¶u"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/kashaya"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/laghu"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/á¢ta"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/ka¶u"
+  },
+  "karma": [
+    "Gr¡h¢",
+    "ViÀaghna",
+    "Garbhasth¡pana",
+    "K¤minut",
+    "Sandh¡n¢ya."
+  ],
+  "indications": [
+    "Atis¡ra",
+    "Raktapitta",
+    "T¤À¸¡",
+    "Vra¸a",
+    "Visarpa"
+  ],
+  "dosage": {
+    "en": "3-6 g. of drug in powder form."
+  },
+  "importantFormulations": [
+    "B¤hat Gang¡dhara C£r¸a"
+  ],
+  "constituents": {
+    "en": "Tannin and glucoside."
+  }
+}

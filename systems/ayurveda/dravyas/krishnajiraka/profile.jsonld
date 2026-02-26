@@ -1,0 +1,80 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/krishnajiraka",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "krishnajiraka",
+  "name": {
+    "sa": "Krishnajiraka",
+    "sa-Latn": "Krishnajiraka",
+    "as": "Krisnjeera",
+    "bn": "Kala jira",
+    "en": "Black Caraway",
+    "gu": "Shahjirun",
+    "hi": "Kalajira",
+    "kn": "Kari jeerige",
+    "ks": "Krihunzur",
+    "ml": "Karunjiraka",
+    "mr": "Shahira",
+    "or": "Kalajira",
+    "pa": "Zira Siyah",
+    "ta": "Karamjiragam",
+    "te": "Nalla Jeelakarra",
+    "ur": "Zira Siyah"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/krishnajiraka"
+  },
+  "partUsed": "fruit",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-050",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/ka¶u"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/laghu"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/ushna"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/ka¶u"
+  },
+  "karma": [
+    "áothahara",
+    "CakÀuÀya",
+    "D¢pana",
+    "Jvaraghna",
+    "P¡cana",
+    "Rucya",
+    "Sa´gr¡h¢"
+  ],
+  "indications": [
+    "Agnim¡ndya",
+    "Ëdhm¡na",
+    "K¤miroga",
+    "Jir¸ajvara",
+    "Grahaniroga"
+  ],
+  "dosage": {
+    "en": "1-3 g of the drug in powder form."
+  },
+  "importantFormulations": [
+    "Jirak¡dyariÀ¶a",
+    "J¢rak¡di Modaka"
+  ],
+  "constituents": {
+    "en": "Essential oils (carvone and carvacrol)."
+  }
+}

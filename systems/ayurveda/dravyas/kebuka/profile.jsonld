@@ -1,0 +1,80 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/kebuka",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "kebuka",
+  "name": {
+    "sa": "Kebuka",
+    "sa-Latn": "Kebuka",
+    "as": "Kevu",
+    "bn": "Kevu",
+    "en": "-Hindi : Kebu",
+    "gu": "Kebu",
+    "hi": "Kebu",
+    "kn": "Chenglavaa-Koshtu",
+    "ks": "Channakkilannu",
+    "ml": "Channakkilannu",
+    "mr": "Pevaa",
+    "or": "-Tamil : Koshtam",
+    "pa": "Koshtam",
+    "ta": "Koshtam",
+    "te": "Chenglavaa-Koshtu",
+    "ur": "-"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/kebuka"
+  },
+  "partUsed": "rhizome",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V5-035",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/tikta"
+    }
+  ],
+  "karma": [
+    "Pittahara",
+    "Kaphahara",
+    "D¢pana",
+    "P¡cana",
+    "Gr¡h¢",
+    "K¤mighna",
+    "H¤dya",
+    "Rakta¿odhaka",
+    "Garbh¡¿¡ya Sa´kocaka"
+  ],
+  "indications": [
+    "Kaphapittaja Vik¡ra",
+    "Agnim¡ndya",
+    "Graha¸¢",
+    "K¤miroga",
+    "Raktavik¡ra",
+    "ál¢pada",
+    "Prameha",
+    "áv¢tra",
+    "KuÀ¶ha",
+    "Jvara",
+    "K¡sa",
+    "K¡mal¡",
+    "Ar¿a",
+    "Kaphaja",
+    "M£trak¤cchra"
+  ],
+  "dosage": {
+    "en": "3-6 g (after purification)."
+  },
+  "importantFormulations": [
+    "K¤mighna Kv¡tha C£r¸a"
+  ],
+  "constituents": {
+    "en": "Steroidal Saponins such as (Tigogenin and diosgenin)."
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/daruharidra",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "daruharidra",
+  "name": {
+    "sa": "Daruharidra",
+    "sa-Latn": "Daruharidra",
+    "as": "Kulekhara",
+    "bn": "Daruharidra",
+    "en": "Indian Berberry",
+    "gu": "Daruharidra",
+    "hi": "Talmakhana",
+    "kn": "Nirmulli",
+    "ks": "Vayalchulli",
+    "ml": "Vayalchulli",
+    "mr": "Talimakhana",
+    "or": "Koilrekha",
+    "pa": "--Tamil : Nirmulle",
+    "ta": "Nirmulle",
+    "te": "Nirugobbi",
+    "ur": "Talmakhana"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/daruharidra"
+  },
+  "partUsed": "stem",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V2-016",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Alkaloids"
+  }
+}

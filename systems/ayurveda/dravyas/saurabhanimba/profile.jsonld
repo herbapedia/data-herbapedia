@@ -1,0 +1,24 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/saurabhanimba",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "saurabhanimba",
+  "name": {
+    "sa": "Saurabhanimba",
+    "sa-Latn": "Saurabhanimba"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/saurabhanimba"
+  },
+  "partUsed": "tuber",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V6-003",
+    "license": "CC-BY-4.0",
+    "verified": true
+  }
+}

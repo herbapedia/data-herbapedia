@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/khubkalan",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "khubkalan",
+  "name": {
+    "sa": "Khubkalan",
+    "sa-Latn": "Khubkalan",
+    "as": "-English : Hedge-Mustard",
+    "bn": "Hedge-Mustard",
+    "en": "Hedge-Mustard",
+    "gu": "Khub Kalaan",
+    "hi": "Khub Kalaan",
+    "kn": "-Malayalam : -Marathi : Ranteekhee",
+    "ks": "-Marathi : Ranteekhee",
+    "ml": "Ranteekhee",
+    "mr": "Ranteekhee",
+    "or": "Janglisarson",
+    "pa": "Janglisarson",
+    "ta": "Jeevakamu",
+    "te": "Jeevakamu",
+    "ur": "Khubakalan"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/khubkalan"
+  },
+  "partUsed": "seed",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V5-039",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Fixed oil and Isorhamnetin."
+  }
+}

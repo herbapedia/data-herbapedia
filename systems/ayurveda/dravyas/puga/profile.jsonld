@@ -1,0 +1,80 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/puga",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "puga",
+  "name": {
+    "sa": "Puga",
+    "sa-Latn": "Puga",
+    "as": "Tamol",
+    "bn": "Supari",
+    "en": "Areca nut",
+    "gu": "Sopari",
+    "hi": "Supari",
+    "kn": "Adiks",
+    "ks": "Supari",
+    "ml": "Adakku",
+    "mr": "Supari",
+    "or": "Gua",
+    "pa": "Supari",
+    "ta": "Kamugu",
+    "te": "Paka chekka",
+    "ur": "Fufal"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/puga"
+  },
+  "partUsed": "seed",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-061",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/madhura"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/tikta"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/kashaya"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/r£kàa"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/ushna"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/madhura"
+  },
+  "karma": [
+    "Anulomana",
+    "áothahara",
+    "M£trala",
+    "V¡ta¿leÀmahara"
+  ],
+  "indications": [
+    "áotha",
+    "P¡¸·u"
+  ],
+  "dosage": {
+    "en": "20-30 g of the drug for decoction."
+  },
+  "importantFormulations": [
+    "Punarnav¡Àaka Kv¡tha C£r¸a",
+    "Punarnav¡sava"
+  ],
+  "constituents": {
+    "en": "Alkaloid (arecoline) tannins and fats."
+  }
+}

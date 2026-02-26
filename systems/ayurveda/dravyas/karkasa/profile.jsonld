@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/karkasa",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "karkasa",
+  "name": {
+    "sa": "Karkasa",
+    "sa-Latn": "Karkasa",
+    "as": "Titkaankarol",
+    "bn": "Titkaankarol",
+    "en": "Baanjhakartolaa",
+    "gu": "Baanjhakartolaa",
+    "hi": "Vanakakodaa",
+    "kn": "-Malayalam : -Marathi : Vaanjh-Kartoli",
+    "ks": "-Marathi : Vaanjh-Kartoli",
+    "ml": "Vaanjh-Kartoli",
+    "mr": "Vaanjh-Kartoli",
+    "or": "Kaankada",
+    "pa": "Paluppakai",
+    "ta": "Paluppakai",
+    "te": "Aagaakar",
+    "ur": "-"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/karkasa"
+  },
+  "partUsed": "root",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V5-031",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "α- eleostearic acid, 2-acetyl-5-chloropyrrole."
+  }
+}

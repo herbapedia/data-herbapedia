@@ -1,0 +1,84 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/gavedhuka",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "gavedhuka",
+  "name": {
+    "sa": "Gavedhuka",
+    "sa-Latn": "Gavedhuka",
+    "as": "Gadagad",
+    "bn": "Gadagad",
+    "en": "Adlay",
+    "gu": "Kasai",
+    "hi": "Kasai",
+    "kn": "Manjutti",
+    "ks": "Kaatugotampu",
+    "ml": "Kaatugotampu",
+    "mr": "Kasai",
+    "or": "-Tamil : Kaattukuntumani",
+    "pa": "Kaattukuntumani",
+    "ta": "Kaattukuntumani",
+    "te": "Adaviguruginja",
+    "ur": "-"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/gavedhuka"
+  },
+  "partUsed": "root",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V5-017",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/ka¶u"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/tikta"
+    }
+  ],
+  "karma": [
+    "V¡tahara",
+    "Kaphahara",
+    "á¢tapra¿amana",
+    "Stanyajanana",
+    "D¢pana",
+    "Recana",
+    "ViÀaghna",
+    "Mukha¿odhana",
+    "Av¤Àya",
+    "CakÀuÀya",
+    "R£cik¡raka",
+    "Vamihara"
+  ],
+  "indications": [
+    "KuÀ¶ha",
+    "K¤mi",
+    "Arocaka",
+    "Sant¡pa",
+    "D¡ha",
+    "Vami",
+    "K¡sa",
+    "áv¡sa",
+    "Dadru",
+    "Udara",
+    "Bh£tab¡dh¡",
+    "Grahab¡dh¡",
+    "Udarda"
+  ],
+  "dosage": {
+    "en": "3-6 g"
+  },
+  "importantFormulations": [
+    "M¡Àabal¡di Kv¡tha C£r¸a"
+  ],
+  "constituents": {
+    "en": "Benzoxazolinones, amino acids (leucine, tyrosine, histadin, arginine"
+  }
+}

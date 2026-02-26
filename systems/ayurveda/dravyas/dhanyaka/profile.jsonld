@@ -1,0 +1,92 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/dhanyaka",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "dhanyaka",
+  "name": {
+    "sa": "Dhanyaka",
+    "sa-Latn": "Dhanyaka",
+    "as": "Dhaniya",
+    "bn": "Dhane",
+    "en": "Coriander fruit",
+    "gu": "Dhana",
+    "hi": "Dhaniya",
+    "kn": "Havija",
+    "ks": "Dhaniwal",
+    "ml": "Malli",
+    "mr": "Dhane",
+    "or": "Dhania",
+    "pa": "Dhania",
+    "ta": "Kottamatli virai",
+    "te": "Dhaniyalu",
+    "ur": "Kishneez"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/dhanyaka"
+  },
+  "partUsed": "fruit",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-023",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/madhura"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/ka¶u"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/tikta"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/kashaya"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/laghu"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/snigdha"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/ushna"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/madhura"
+  },
+  "karma": [
+    "CakÀuÀya",
+    "D¢pana",
+    "Gr¡h¢",
+    "H¤dya.",
+    "P¡cana",
+    "TridoÀanut",
+    "M£trala"
+  ],
+  "indications": [
+    "Atis¡ra",
+    "Chardi",
+    "D¡ha",
+    "Jvara",
+    "T¤À¸¡",
+    "Aj¢r¸a"
+  ],
+  "dosage": {
+    "en": "1-3 g of the drug in powder form."
+  },
+  "importantFormulations": [
+    "Dh¡nyapaµcaka kv¡tha C£r¸a"
+  ],
+  "constituents": {
+    "en": "Essential oil (coriandrol)."
+  }
+}

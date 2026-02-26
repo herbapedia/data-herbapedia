@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/karnasphota",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "karnasphota",
+  "name": {
+    "sa": "Karnasphota",
+    "sa-Latn": "Karnasphota",
+    "as": "Jyotishmati (of Bengal)",
+    "bn": "Jyotishmati (of Bengal)",
+    "en": "Ballon Vine",
+    "gu": "Bodha",
+    "hi": "Kaanphuti",
+    "kn": "Kanakayya",
+    "ks": "Ulinna",
+    "ml": "Ulinna",
+    "mr": "Fatphati",
+    "or": "-Tamil : Modikkottan",
+    "pa": "Modikkottan",
+    "ta": "Modikkottan",
+    "te": "Vekkudutiga",
+    "ur": "-"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/karnasphota"
+  },
+  "partUsed": "seed",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V5-032",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Fixed oil."
+  }
+}

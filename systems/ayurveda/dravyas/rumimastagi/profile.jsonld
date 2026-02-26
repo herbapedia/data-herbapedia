@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/rumimastagi",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "rumimastagi",
+  "name": {
+    "sa": "Rumimastagi",
+    "sa-Latn": "Rumimastagi",
+    "as": "Rumi-Mastungi",
+    "bn": "Rumi-Mastungi",
+    "en": "Mastic",
+    "gu": "Rumi Mastagee",
+    "hi": "Rumi Mastagee",
+    "kn": "--Kashmiri : -Malayalam : -Marathi : Rumaa Mastakee",
+    "ks": "-Marathi : Rumaa Mastakee",
+    "ml": "Rumaa Mastakee",
+    "mr": "Rumaa Mastakee",
+    "or": "-Tamil : -Telugu : Jeevakamu",
+    "pa": "-Telugu : Jeevakamu",
+    "ta": "Jeevakamu",
+    "te": "Jeevakamu",
+    "ur": "Rumee Mastagee"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/rumimastagi"
+  },
+  "partUsed": "resin",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V5-075",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Resin, volatile oil, a bicyclic terpenoid and fatty acids."
+  }
+}

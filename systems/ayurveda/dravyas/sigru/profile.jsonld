@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/sigru",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "sigru",
+  "name": {
+    "sa": "Sigru",
+    "sa-Latn": "Sigru",
+    "as": "Sajina",
+    "bn": "Sajina",
+    "en": "Horse Radish Tree",
+    "gu": "Sargavo",
+    "hi": "Shajoma",
+    "kn": "Neegge",
+    "ks": "Murinna",
+    "ml": "Murinna",
+    "mr": "Sevaga",
+    "or": "Sajana",
+    "pa": "Sohanjana",
+    "ta": "Murungai",
+    "te": "Munaga Aku",
+    "ur": "Sehjan"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/sigru"
+  },
+  "partUsed": "leaf",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V2-070",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Carbohydrate, Protein, Carotene and Ascorbic acid."
+  }
+}

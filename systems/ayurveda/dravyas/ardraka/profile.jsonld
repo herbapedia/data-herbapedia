@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/ardraka",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "ardraka",
+  "name": {
+    "sa": "Ardraka",
+    "sa-Latn": "Ardraka",
+    "as": "Kulekhara",
+    "bn": "Ada",
+    "en": "Ginger",
+    "gu": "Adu",
+    "hi": "Adarakha",
+    "kn": "Alla",
+    "ks": "Inchi",
+    "ml": "Inchi",
+    "mr": "Ardrak",
+    "or": "Adi",
+    "pa": "Adi",
+    "ta": "Injee",
+    "te": "Allamu",
+    "ur": "Adrak"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/ardraka"
+  },
+  "partUsed": "rhizome",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V2-007",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Volatile Oil containing Cineole zingiberol, and sesquiterpene like"
+  }
+}

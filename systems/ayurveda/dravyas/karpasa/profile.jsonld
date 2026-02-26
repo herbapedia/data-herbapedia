@@ -1,0 +1,79 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/karpasa",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "karpasa",
+  "name": {
+    "sa": "Karpasa",
+    "sa-Latn": "Karpasa",
+    "as": "Karpasa",
+    "bn": "Bona",
+    "en": "Cotton plant seed",
+    "gu": "Kapasa",
+    "hi": "Kapasa",
+    "kn": "Hati",
+    "ks": "Kath",
+    "ml": "Karpasi",
+    "mr": "Sarki",
+    "or": "Lodhar",
+    "pa": "Lodhar",
+    "ta": "Parutti kkoottam",
+    "te": "Patti ginga",
+    "ur": "Pambadana"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/karpasa"
+  },
+  "partUsed": "seed",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-045",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/madhura"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/guru"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/snigdha"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/á¢ta"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/madhura"
+  },
+  "karma": [
+    "H¤dya",
+    "V¤Àya",
+    "Stanyajanana",
+    "Kaphakara"
+  ],
+  "indications": [
+    "D¡ha",
+    "árama",
+    "Bhr¡nti",
+    "M£rcch¡",
+    "StanyakÀya"
+  ],
+  "dosage": {
+    "en": "3-6 g of he drug in powder form."
+  },
+  "importantFormulations": [
+    "K¡rp¡s¡Àhv¡di Taila"
+  ],
+  "constituents": {
+    "en": "Fixed oil, resin and sterols."
+  }
+}

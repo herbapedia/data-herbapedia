@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/ambasthaki",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "ambasthaki",
+  "name": {
+    "sa": "Ambasthaki",
+    "sa-Latn": "Ambasthaki",
+    "as": "Masts Pal",
+    "bn": "Masts Pal",
+    "en": "Jamaican Sorrel",
+    "gu": "Ambodi",
+    "hi": "Patsan",
+    "kn": "Pudisoppu",
+    "ks": "Pariccakam",
+    "ml": "Pariccakam",
+    "mr": "Lalambari",
+    "or": "Khataa",
+    "pa": "Kolada",
+    "ta": "Pulichikire",
+    "te": "Pundikura",
+    "ur": "Patsan"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/ambasthaki"
+  },
+  "partUsed": "root",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V3-004",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Sterols and Polysaccharides"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/jayapala",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "jayapala",
+  "name": {
+    "sa": "Jayapala",
+    "sa-Latn": "Jayapala",
+    "as": "Kanibish",
+    "bn": "Jaipala",
+    "en": "Croton",
+    "gu": "Nepalo",
+    "hi": "Jamalgota",
+    "kn": "Nepal",
+    "ks": "Nervalam",
+    "ml": "Nervalam",
+    "mr": "Jepal",
+    "or": "Japolota",
+    "pa": "Japolota",
+    "ta": "Nervalam",
+    "te": "Nepalamu",
+    "ur": "Jamalgota"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/jayapala"
+  },
+  "partUsed": "seed",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V2-028",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Fixed oil, Resins & Phorbol esters."
+  }
+}

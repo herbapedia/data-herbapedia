@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/palasa",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "palasa",
+  "name": {
+    "sa": "Palasa",
+    "sa-Latn": "Palasa",
+    "as": "Palash",
+    "bn": "Palas",
+    "en": "Flame of the Forest",
+    "gu": "Khakharo",
+    "hi": "Dhak",
+    "kn": "Muttug",
+    "ks": "Palashinsamatha",
+    "ml": "Palashinsamatha",
+    "mr": "Kakracha",
+    "or": "Porasu",
+    "pa": "Tesh",
+    "ta": "Purasu",
+    "te": "Modyga Puvvu",
+    "ur": "Dhak (Tesu)"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/palasa"
+  },
+  "partUsed": "flower",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V4-037",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Glycosides and Flavonoids"
+  }
+}

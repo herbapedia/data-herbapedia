@@ -1,0 +1,71 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/yava",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "yava",
+  "name": {
+    "sa": "Yava",
+    "sa-Latn": "Yava",
+    "as": "Kulekhara",
+    "bn": "Jau",
+    "en": "Barley",
+    "gu": "Cheno",
+    "hi": "Jav",
+    "kn": "-Malayalam : Javegambu",
+    "ks": "Javegambu",
+    "ml": "Javegambu",
+    "mr": "Yava",
+    "or": "Javo",
+    "pa": "Javo",
+    "ta": "Barley",
+    "te": "Barlibiyam",
+    "ur": "Jau"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/yava"
+  },
+  "partUsed": "fruit",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V2-078",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/madhura"
+    }
+  ],
+  "karma": [
+    "Kaphapittahara",
+    "Medh¡vardhaka",
+    "Svara Vardhaka",
+    "Var¸a Vardhaka",
+    "Lekhana",
+    "Medohara",
+    "V¡tahara",
+    "V¤Àya"
+  ],
+  "indications": [
+    "P¢nasa",
+    "áv¡sa",
+    "K¡sa",
+    "Írustambha"
+  ],
+  "dosage": {
+    "en": "10-20 gm"
+  },
+  "importantFormulations": [
+    "Chinnodbhav¡di Kv¡tha C£r¸a",
+    "Gandharvahast¡di Kv¡tha C£r¸a",
+    "Bh¡r´gy¡di Kv¡tha C£r¸a",
+    "Arimed¡di Taila"
+  ],
+  "constituents": {
+    "en": "Starch, Sugars, Fats, Proteins (Albumin, Globulin, Prolamin and"
+  }
+}

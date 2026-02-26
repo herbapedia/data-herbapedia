@@ -1,0 +1,84 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/vijayaa",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "vijayaa",
+  "name": {
+    "sa": "Vijayaa",
+    "sa-Latn": "Vijayaa",
+    "as": "Bhan",
+    "bn": "Bhang",
+    "en": "Indian Hemp",
+    "gu": "Bhang",
+    "hi": "Bhaang",
+    "kn": "Bhangigida",
+    "ks": "Pang",
+    "ml": "Kanchavu",
+    "mr": "Bhang",
+    "or": "Bhanga",
+    "pa": "Bhang",
+    "ta": "Ganja",
+    "te": "Ganjayi",
+    "ur": "Qinaab"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/vijayaa"
+  },
+  "partUsed": "leaf",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-080",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/tikta"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/laghu"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/ùikà¸a"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/ushna"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/ka¶u"
+  },
+  "karma": [
+    "D¢pana",
+    "Gr¡h¢",
+    "Kaphahara",
+    "Nidr¡janana",
+    "P¡cana",
+    "V¡j¢kara",
+    "V¡kvrdhana",
+    "Vyav¡y¢"
+  ],
+  "indications": [
+    "Agnim¡ndya",
+    "Anidr¡",
+    "Atis¡ra",
+    "Klaibya",
+    "Graha¸¢roga"
+  ],
+  "dosage": {
+    "en": "125-250 mg of the drug in powder form."
+  },
+  "importantFormulations": [
+    "J¡t¢phal¡di C£r¸a",
+    "Madan¡nanda Modaka"
+  ],
+  "constituents": {
+    "en": "Resin (Cannabinols, particularly tetrahydrocannabinol)."
+  }
+}

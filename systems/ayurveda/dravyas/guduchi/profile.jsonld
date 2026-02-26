@@ -1,0 +1,85 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/guduchi",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "guduchi",
+  "name": {
+    "sa": "Guduchi",
+    "sa-Latn": "Guduchi",
+    "as": "Siddhilata",
+    "bn": "Gulancha",
+    "en": "Galac",
+    "gu": "Galac",
+    "hi": "Giloe",
+    "kn": "Amrutaballi",
+    "ks": "Amrita",
+    "ml": "Chittamrutu",
+    "mr": "Gulvel",
+    "or": "Guluchi",
+    "pa": "Gilo",
+    "ta": "Seendal",
+    "te": "Thippateega",
+    "ur": "Gilo"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/guduchi"
+  },
+  "partUsed": "stem_bark",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V1-029",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "hasRasa": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/tikta"
+    },
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/rasa/kashaya"
+    }
+  ],
+  "hasGuna": [
+    {
+      "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/guna/laghu"
+    }
+  ],
+  "hasVirya": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/virya/ushna"
+  },
+  "hasVipaka": {
+    "@id": "https://www.herbapedia.org/graph/vocab/ayurveda/vipaka/madhura"
+  },
+  "karma": [
+    "Balya",
+    "D¢pana",
+    "Ras¡yana",
+    "Sa´gr¡h¢",
+    "TridoÀa¿¡maka",
+    "Rakta¿odhaka",
+    "Jvaraghna"
+  ],
+  "indications": [
+    "Jvara",
+    "KuÀ¶ha",
+    "P¡¸·u",
+    "Prameha",
+    "V¡tarakta",
+    "K¡mal¡"
+  ],
+  "dosage": {
+    "en": "3-6 g of the drug in powder form. 20-30 g of the drug for decoction."
+  },
+  "importantFormulations": [
+    "Am¤t¡riÀa",
+    "Am¤tottara Kv¡tha C£r¸a",
+    "Gu·£c¢ Taila"
+  ],
+  "constituents": {
+    "en": "Terpenoids and alkaloids."
+  }
+}

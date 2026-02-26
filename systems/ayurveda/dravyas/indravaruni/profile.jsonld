@@ -1,0 +1,41 @@
+{
+  "@context": "https://www.herbapedia.org/schema/context/ayurveda.jsonld",
+  "@id": "https://www.herbapedia.org/graph/profile/ayurveda/indravaruni",
+  "@type": [
+    "ayurveda:Dravya",
+    "schema:DietarySupplement"
+  ],
+  "slug": "indravaruni",
+  "name": {
+    "sa": "Indravaruni",
+    "sa-Latn": "Indravaruni",
+    "as": "Gavadani",
+    "bn": "Rakhal",
+    "en": "Colocynth",
+    "gu": "Indrayan",
+    "hi": "Indrayan",
+    "kn": "Havumekke",
+    "ks": "Kattu Vellarikkai",
+    "ml": "Kattu Vellarikkai",
+    "mr": "Endrayana",
+    "or": "Gothakakudi",
+    "pa": "Indrayana",
+    "ta": "Peitummatti",
+    "te": "Chedupuchcha",
+    "ur": "Hanjal"
+  },
+  "derivedFrom": {
+    "@id": "https://www.herbapedia.org/graph/species/indravaruni"
+  },
+  "partUsed": "fruit",
+  "source": {
+    "source": "Ayurvedic Pharmacopoeia of India",
+    "sourceUrl": "https://www.ayush.gov.in/",
+    "identifier": "API-P1-V3-031",
+    "license": "CC-BY-4.0",
+    "verified": true
+  },
+  "constituents": {
+    "en": "Resins - Resinous Glycosides (Colocynthin and Colocynthitin),"
+  }
+}
