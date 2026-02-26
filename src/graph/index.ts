@@ -149,3 +149,10 @@ export {
   addIssueToNode,
   finalizeResult,
 } from './validators/index.js'
+
+// Utilities
+export {
+  extractSearchableFields,
+  RelationshipType,
+  type RelationshipTypeValue,
+} from './utils/index.js'

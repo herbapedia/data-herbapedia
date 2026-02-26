@@ -33,48 +33,10 @@ import type {
 } from '../types.js'
 import type { BrowserGraphRegistry } from './BrowserGraphRegistry.js'
 import type { BrowserRelationshipsData } from './BrowserGraphRegistry.js'
+import { RelationshipType, type RelationshipTypeValue } from '../utils/relationships.js'
 
-/**
- * Relationship types in the knowledge graph
- */
-export const RelationshipType = {
-  // Botanical relationships
-  HAS_PART: 'hasPart',
-  PART_OF: 'partOf',
-  CONTAINS_CHEMICAL: 'containsChemical',
-  FOUND_IN: 'foundIn',
-
-  // Profile relationships
-  DERIVED_FROM: 'derivedFrom',
-  HAS_CATEGORY: 'hasCategory',
-  HAS_NATURE: 'hasNature',
-  HAS_FLAVOR: 'hasFlavor',
-  ENTERS_MERIDIAN: 'entersMeridian',
-  HAS_DOSHA: 'hasDosha',
-  HAS_RASA: 'hasRasa',
-  HAS_GUNA: 'hasGuna',
-  HAS_VIRYA: 'hasVirya',
-  HAS_VIPAKA: 'hasVipaka',
-  HAS_ACTION: 'hasAction',
-  HAS_ORGAN_AFFINITY: 'hasOrganAffinity',
-
-  // Preparation relationships
-  HAS_INGREDIENT: 'hasIngredient',
-  INGREDIENT_IN: 'ingredientIn',
-
-  // Vocabulary relationships
-  BROADER: 'broader',
-  NARROWER: 'narrower',
-  RELATED: 'related',
-
-  // General relationships
-  SAME_AS: 'sameAs',
-  HAS_SOURCE: 'hasSource',
-  HAS_IMAGE: 'hasImage',
-  DEPICTS: 'depicts',
-} as const
-
-export type RelationshipTypeValue = typeof RelationshipType[keyof typeof RelationshipType]
+// Re-export for backward compatibility
+export { RelationshipType, type RelationshipTypeValue }
 
 /**
  * Options for traversal operations
@@ -392,6 +354,25 @@ export class BrowserGraphTraversal {
       flavors: this.traverseRelationship(profileId, RelationshipType.HAS_FLAVOR),
       meridians: this.traverseRelationship(profileId, RelationshipType.ENTERS_MERIDIAN),
       categories: this.traverseRelationship(profileId, RelationshipType.HAS_CATEGORY),
+    }
+  }
+
+  /**
+   * Get Ayurveda vocabulary for a profile
+   */
+  getAyurvedaVocabulary(profileId: string): {
+    doshas: GraphNode[]
+    rasas: GraphNode[]
+    gunas: GraphNode[]
+    viryas: GraphNode[]
+    vipakas: GraphNode[]
+  } {
+    return {
+      doshas: this.traverseRelationship(profileId, RelationshipType.HAS_DOSHA),
+      rasas: this.traverseRelationship(profileId, RelationshipType.HAS_RASA),
+      gunas: this.traverseRelationship(profileId, RelationshipType.HAS_GUNA),
+      viryas: this.traverseRelationship(profileId, RelationshipType.HAS_VIRYA),
+      vipakas: this.traverseRelationship(profileId, RelationshipType.HAS_VIPAKA),
     }
   }
 

@@ -29,6 +29,7 @@ import type {
   MedicalSystemValue,
 } from '../types.js'
 import type { BrowserGraphRegistry, BrowserSearchIndexData } from './BrowserGraphRegistry.js'
+import { extractSearchableFields } from '../utils/search.js'
 
 /**
  * Search result with relevance score
@@ -405,55 +406,4 @@ export class BrowserGraphIndex {
 
     return results.slice(0, limit)
   }
-}
-
-/**
- * Extract searchable fields from a node
- */
-function extractSearchableFields(node: GraphNode): Record<string, string> {
-  const fields: Record<string, string> = {}
-  const nodeData = node as unknown as Record<string, unknown>
-
-  // Always include slug
-  if (typeof nodeData.slug === 'string') {
-    fields.slug = nodeData.slug
-  }
-
-  // Extract text from language maps
-  const extractFromLangMap = (value: unknown): string => {
-    if (typeof value === 'object' && value !== null) {
-      const langMap = value as Record<string, string>
-      return Object.values(langMap).join(' ')
-    }
-    if (typeof value === 'string') {
-      return value
-    }
-    return ''
-  }
-
-  // Common fields to search
-  const searchableFields = [
-    'name',
-    'scientificName',
-    'pinyin',
-    'sanskritName',
-    'description',
-    'tcmFunctions',
-    'tcmTraditionalUsage',
-    'ayurvedaTraditionalUsage',
-    'westernTraditionalUsage',
-    'prefLabel',
-    'value',
-    'family',
-    'genus',
-  ]
-
-  for (const field of searchableFields) {
-    const value = nodeData[field]
-    if (value !== undefined && value !== null) {
-      fields[field] = extractFromLangMap(value)
-    }
-  }
-
-  return fields
 }

@@ -17,6 +17,7 @@ import lunr from 'lunr'
 import type { GraphNode, GraphStats, IRIReference } from '../types.js'
 import { GraphRegistry } from '../registry/GraphRegistry.js'
 import { GraphExporter } from './GraphExporter.js'
+import { extractSearchableFields } from '../utils/search.js'
 
 /**
  * Browser-compatible node format (optimized for size)
@@ -341,55 +342,4 @@ export class BrowserExporter extends GraphExporter {
 
     return refs
   }
-}
-
-/**
- * Extract searchable fields from a node
- */
-function extractSearchableFields(node: GraphNode): Record<string, string> {
-  const fields: Record<string, string> = {}
-  const nodeData = node as unknown as Record<string, unknown>
-
-  // Always include slug
-  if (typeof nodeData.slug === 'string') {
-    fields.slug = nodeData.slug
-  }
-
-  // Extract text from language maps
-  const extractFromLangMap = (value: unknown): string => {
-    if (typeof value === 'object' && value !== null) {
-      const langMap = value as Record<string, string>
-      return Object.values(langMap).join(' ')
-    }
-    if (typeof value === 'string') {
-      return value
-    }
-    return ''
-  }
-
-  // Common fields to search
-  const searchableFields = [
-    'name',
-    'scientificName',
-    'pinyin',
-    'sanskritName',
-    'description',
-    'tcmFunctions',
-    'tcmTraditionalUsage',
-    'ayurvedaTraditionalUsage',
-    'westernTraditionalUsage',
-    'prefLabel',
-    'value',
-    'family',
-    'genus',
-  ]
-
-  for (const field of searchableFields) {
-    const value = nodeData[field]
-    if (value !== undefined && value !== null) {
-      fields[field] = extractFromLangMap(value)
-    }
-  }
-
-  return fields
 }

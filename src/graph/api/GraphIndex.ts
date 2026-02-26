@@ -29,6 +29,7 @@ import type {
   MedicalSystemValue,
 } from '../types.js'
 import { GraphRegistry } from '../registry/GraphRegistry.js'
+import { extractSearchableFields } from '../utils/search.js'
 
 /**
  * Search result with relevance score
@@ -181,7 +182,7 @@ export class GraphIndex {
       this.nodeMap.set(iri, node)
 
       // Extract searchable content
-      const fields = this.extractSearchableFields(node)
+      const fields = extractSearchableFields(node)
       const content = Object.values(fields).join(' ')
 
       documents.push({
@@ -388,57 +389,6 @@ export class GraphIndex {
   }
 
   /**
-   * Extract searchable fields from a node
-   */
-  private extractSearchableFields(node: GraphNode): Record<string, string> {
-    const fields: Record<string, string> = {}
-    const nodeData = node as unknown as Record<string, unknown>
-
-    // Always include slug and @id
-    if (typeof nodeData.slug === 'string') {
-      fields.slug = nodeData.slug
-    }
-
-    // Extract text from language maps
-    const extractFromLangMap = (value: unknown): string => {
-      if (typeof value === 'object' && value !== null) {
-        const langMap = value as Record<string, string>
-        return Object.values(langMap).join(' ')
-      }
-      if (typeof value === 'string') {
-        return value
-      }
-      return ''
-    }
-
-    // Common fields to search
-    const searchableFields = [
-      'name',
-      'scientificName',
-      'pinyin',
-      'sanskritName',
-      'description',
-      'tcmFunctions',
-      'tcmTraditionalUsage',
-      'ayurvedaTraditionalUsage',
-      'westernTraditionalUsage',
-      'prefLabel',
-      'value',
-      'family',
-      'genus',
-    ]
-
-    for (const field of searchableFields) {
-      const value = nodeData[field]
-      if (value !== undefined && value !== null) {
-        fields[field] = extractFromLangMap(value)
-      }
-    }
-
-    return fields
-  }
-
-  /**
    * Fallback search when lunr fails
    */
   private fallbackSearch(query: string, limit: number): SearchResult[] {
@@ -447,7 +397,7 @@ export class GraphIndex {
     const allNodes = this.registry.getAllNodes()
 
     for (const node of allNodes) {
-      const fields = this.extractSearchableFields(node)
+      const fields = extractSearchableFields(node)
       const content = Object.values(fields).join(' ').toLowerCase()
 
       if (content.includes(lowerQuery)) {

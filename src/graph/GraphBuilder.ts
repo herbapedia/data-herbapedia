@@ -110,6 +110,7 @@ export class GraphBuilder {
     await this.loadSpecies()
     await this.loadParts()
     await this.loadChemicals()
+    await this.loadBarcodes()
 
     // Phase 3: Load preparations and formulas
     await this.loadPreparations()
@@ -298,7 +299,105 @@ export class GraphBuilder {
       }
     }
 
-    // Similar for rasas, gunas, viryas, vipakas...
+    // Load rasas
+    const rasasPath = path.join(ayurvedaDir, 'rasas.jsonld')
+    if (fs.existsSync(rasasPath)) {
+      const data = JSON.parse(fs.readFileSync(rasasPath, 'utf-8'))
+      const rasas = data['@graph'] || [data]
+
+      for (const rasa of rasas) {
+        try {
+          const value = rasa.rasaValue || this.extractValueFromIRI(rasa['@id'])
+          const iri = generateIRI(NodeType.AYURVEDA_RASA, value)
+
+          const node = new VocabularyNodeBuilder()
+            .iri(iri)
+            .value(value)
+            .prefLabel(rasa.prefLabel || {})
+            .description(rasa.description)
+            .build()
+
+          this.registry.registerNode(node, NodeType.AYURVEDA_RASA)
+        } catch (error) {
+          this.addError('transform', rasasPath, `Failed to transform rasa: ${error}`)
+        }
+      }
+    }
+
+    // Load gunas
+    const gunasPath = path.join(ayurvedaDir, 'gunas.jsonld')
+    if (fs.existsSync(gunasPath)) {
+      const data = JSON.parse(fs.readFileSync(gunasPath, 'utf-8'))
+      const gunas = data['@graph'] || [data]
+
+      for (const guna of gunas) {
+        try {
+          const value = guna.gunaValue || this.extractValueFromIRI(guna['@id'])
+          const iri = generateIRI(NodeType.AYURVEDA_GUNA, value)
+
+          const node = new VocabularyNodeBuilder()
+            .iri(iri)
+            .value(value)
+            .prefLabel(guna.prefLabel || {})
+            .description(guna.description)
+            .build()
+
+          this.registry.registerNode(node, NodeType.AYURVEDA_GUNA)
+        } catch (error) {
+          this.addError('transform', gunasPath, `Failed to transform guna: ${error}`)
+        }
+      }
+    }
+
+    // Load viryas
+    const viryasPath = path.join(ayurvedaDir, 'viryas.jsonld')
+    if (fs.existsSync(viryasPath)) {
+      const data = JSON.parse(fs.readFileSync(viryasPath, 'utf-8'))
+      const viryas = data['@graph'] || [data]
+
+      for (const virya of viryas) {
+        try {
+          const value = virya.viryaValue || this.extractValueFromIRI(virya['@id'])
+          const iri = generateIRI(NodeType.AYURVEDA_VIRYA, value)
+
+          const node = new VocabularyNodeBuilder()
+            .iri(iri)
+            .value(value)
+            .prefLabel(virya.prefLabel || {})
+            .description(virya.description)
+            .build()
+
+          this.registry.registerNode(node, NodeType.AYURVEDA_VIRYA)
+        } catch (error) {
+          this.addError('transform', viryasPath, `Failed to transform virya: ${error}`)
+        }
+      }
+    }
+
+    // Load vipakas
+    const vipakasPath = path.join(ayurvedaDir, 'vipakas.jsonld')
+    if (fs.existsSync(vipakasPath)) {
+      const data = JSON.parse(fs.readFileSync(vipakasPath, 'utf-8'))
+      const vipakas = data['@graph'] || [data]
+
+      for (const vipaka of vipakas) {
+        try {
+          const value = vipaka.vipakaValue || this.extractValueFromIRI(vipaka['@id'])
+          const iri = generateIRI(NodeType.AYURVEDA_VIPAKA, value)
+
+          const node = new VocabularyNodeBuilder()
+            .iri(iri)
+            .value(value)
+            .prefLabel(vipaka.prefLabel || {})
+            .description(vipaka.description)
+            .build()
+
+          this.registry.registerNode(node, NodeType.AYURVEDA_VIPAKA)
+        } catch (error) {
+          this.addError('transform', vipakasPath, `Failed to transform vipaka: ${error}`)
+        }
+      }
+    }
   }
 
   // =========================================================================
@@ -528,6 +627,62 @@ export class GraphBuilder {
   }
 
   // =========================================================================
+  // Barcodes Loading
+  // =========================================================================
+
+  private async loadBarcodes(): Promise<void> {
+    if (this.options.verbose) console.log('\n🧬 Loading barcodes...')
+
+    const barcodesDir = path.join(this.options.dataRoot, 'entities', 'botanical', 'barcodes')
+    if (!fs.existsSync(barcodesDir)) {
+      return
+    }
+
+    const slugs = fs.readdirSync(barcodesDir).filter(name => {
+      const entityPath = path.join(barcodesDir, name, 'entity.jsonld')
+      return fs.existsSync(entityPath)
+    })
+
+    for (const slug of slugs) {
+      const entityPath = path.join(barcodesDir, slug, 'entity.jsonld')
+      try {
+        const data = JSON.parse(fs.readFileSync(entityPath, 'utf-8'))
+        const node = this.transformBarcode(data, slug)
+
+        if (node) {
+          this.registry.registerNode(node, NodeType.BARCODE)
+        }
+      } catch (error) {
+        this.addError('load', entityPath, `Failed to load barcode: ${error}`)
+      }
+    }
+  }
+
+  private transformBarcode(data: Record<string, unknown>, slug: string): GraphNode | null {
+    const iri = generateIRI(NodeType.BARCODE, slug)
+    const node: GraphNode = {
+      '@context': 'https://www.herbapedia.org/schema/context/core.jsonld',
+      '@id': iri,
+      '@type': data['@type'] || ['botany:DNABarcode'],
+      slug,
+      name: (data.name as Record<string, string>) || {},
+    }
+
+    if (data.barcodes) {
+      const speciesSlug = this.extractSlugFromRef(data.barcodes)
+      if (speciesSlug) {
+        node.barcodes = { '@id': generateIRI(NodeType.SPECIES, speciesSlug) }
+      }
+    }
+
+    if (data.sequence) {
+      node.sequence = data.sequence
+    }
+
+    return node
+  }
+
+  // =========================================================================
   // Preparations Loading
   // =========================================================================
 
@@ -539,8 +694,49 @@ export class GraphBuilder {
       return
     }
 
-    // Load preparation entities
-    // This will be implemented based on the preparation schema
+    const slugs = fs.readdirSync(prepDir).filter(name => {
+      const entityPath = path.join(prepDir, name, 'entity.jsonld')
+      return fs.existsSync(entityPath)
+    })
+
+    for (const slug of slugs) {
+      const entityPath = path.join(prepDir, slug, 'entity.jsonld')
+      try {
+        const data = JSON.parse(fs.readFileSync(entityPath, 'utf-8'))
+        const node = this.transformPreparation(data, slug)
+
+        if (node) {
+          this.registry.registerNode(node, NodeType.PREPARATION)
+        }
+      } catch (error) {
+        this.addError('load', entityPath, `Failed to load preparation: ${error}`)
+      }
+    }
+  }
+
+  private transformPreparation(data: Record<string, unknown>, slug: string): GraphNode | null {
+    const iri = generateIRI(NodeType.PREPARATION, slug)
+    const node: GraphNode = {
+      '@context': 'https://www.herbapedia.org/schema/context/core.jsonld',
+      '@id': iri,
+      '@type': data['@type'] || ['herbal:HerbalPreparation'],
+      slug,
+      name: (data.name as Record<string, string>) || {},
+    }
+
+    if (data.derivedFrom) {
+      const refs = Array.isArray(data.derivedFrom) ? data.derivedFrom : [data.derivedFrom]
+      node.derivedFrom = refs.map((r: Record<string, string>) => {
+        const speciesSlug = this.extractSlugFromRef(r)
+        return { '@id': generateIRI(NodeType.SPECIES, speciesSlug) }
+      })[0]
+    }
+
+    if (data.preparationMethod) {
+      node.preparationMethod = data.preparationMethod as string
+    }
+
+    return node
   }
 
   // =========================================================================
@@ -555,7 +751,53 @@ export class GraphBuilder {
       return
     }
 
-    // Load formula entities
+    const slugs = fs.readdirSync(formulaDir).filter(name => {
+      const entityPath = path.join(formulaDir, name, 'entity.jsonld')
+      return fs.existsSync(entityPath)
+    })
+
+    for (const slug of slugs) {
+      const entityPath = path.join(formulaDir, slug, 'entity.jsonld')
+      try {
+        const data = JSON.parse(fs.readFileSync(entityPath, 'utf-8'))
+        const node = this.transformFormula(data, slug)
+
+        if (node) {
+          this.registry.registerNode(node, NodeType.FORMULA)
+        }
+      } catch (error) {
+        this.addError('load', entityPath, `Failed to load formula: ${error}`)
+      }
+    }
+  }
+
+  private transformFormula(data: Record<string, unknown>, slug: string): GraphNode | null {
+    const iri = generateIRI(NodeType.FORMULA, slug)
+    const node: GraphNode = {
+      '@context': 'https://www.herbapedia.org/schema/context/core.jsonld',
+      '@id': iri,
+      '@type': data['@type'] || ['herbapedia:Formula'],
+      slug,
+      name: (data.name as Record<string, string>) || {},
+    }
+
+    if (data.scientificName) {
+      node.scientificName = data.scientificName as string
+    }
+
+    if (data.description) {
+      node.description = data.description as Record<string, string>
+    }
+
+    if (data.hasIngredient) {
+      const refs = Array.isArray(data.hasIngredient) ? data.hasIngredient : [data.hasIngredient]
+      node.hasIngredient = refs.map((r: Record<string, string>) => {
+        const ingredientSlug = this.extractSlugFromRef(r)
+        return { '@id': generateIRI(NodeType.PREPARATION, ingredientSlug) }
+      })
+    }
+
+    return node
   }
 
   // =========================================================================
@@ -703,7 +945,86 @@ export class GraphBuilder {
       return
     }
 
-    // Similar to TCM profiles...
+    const slugs = fs.readdirSync(ayurvedaDir).filter(name => {
+      const profilePath = path.join(ayurvedaDir, name, 'profile.jsonld')
+      return fs.existsSync(profilePath)
+    })
+
+    for (const slug of slugs) {
+      const profilePath = path.join(ayurvedaDir, slug, 'profile.jsonld')
+      try {
+        const data = JSON.parse(fs.readFileSync(profilePath, 'utf-8'))
+        const node = this.transformAyurvedaProfile(data, slug)
+
+        if (node) {
+          this.registry.registerNode(node, NodeType.AYURVEDA_PROFILE)
+        }
+      } catch (error) {
+        this.addError('load', profilePath, `Failed to load Ayurveda profile: ${error}`)
+      }
+    }
+  }
+
+  private transformAyurvedaProfile(data: Record<string, unknown>, slug: string): GraphNode | null {
+    const iri = generateIRI(NodeType.AYURVEDA_PROFILE, slug)
+    const node: GraphNode = {
+      '@context': 'https://www.herbapedia.org/schema/context/ayurveda.jsonld',
+      '@id': iri,
+      '@type': data['@type'] || ['ayurveda:Dravya'],
+      slug,
+      name: (data.name as Record<string, string>) || {},
+    }
+
+    if (data.sanskritName) {
+      node.sanskritName = data.sanskritName as Record<string, string>
+    }
+
+    if (data.derivedFromPlant) {
+      const speciesSlug = this.extractSlugFromRef(data.derivedFromPlant)
+      if (speciesSlug) {
+        node.derivedFrom = { '@id': generateIRI(NodeType.SPECIES, speciesSlug) }
+      }
+    }
+
+    if (data.hasRasa) {
+      const refs = Array.isArray(data.hasRasa) ? data.hasRasa : [data.hasRasa]
+      node.hasRasa = refs.map((r: Record<string, string>) => {
+        const value = this.extractSlugFromRef(r)
+        return { '@id': generateIRI(NodeType.AYURVEDA_RASA, value) }
+      })
+    }
+
+    if (data.hasGuna) {
+      const refs = Array.isArray(data.hasGuna) ? data.hasGuna : [data.hasGuna]
+      node.hasGuna = refs.map((r: Record<string, string>) => {
+        const value = this.extractSlugFromRef(r)
+        return { '@id': generateIRI(NodeType.AYURVEDA_GUNA, value) }
+      })
+    }
+
+    if (data.hasVirya) {
+      const value = this.extractSlugFromRef(data.hasVirya)
+      node.hasVirya = { '@id': generateIRI(NodeType.AYURVEDA_VIRYA, value) }
+    }
+
+    if (data.hasVipaka) {
+      const value = this.extractSlugFromRef(data.hasVipaka)
+      node.hasVipaka = { '@id': generateIRI(NodeType.AYURVEDA_VIPAKA, value) }
+    }
+
+    if (data.balancesDosha) {
+      const refs = Array.isArray(data.balancesDosha) ? data.balancesDosha : [data.balancesDosha]
+      node.affectsDosha = refs.map((r: Record<string, string>) => {
+        const value = this.extractSlugFromRef(r)
+        return { '@id': generateIRI(NodeType.AYURVEDA_DOSHA, value) }
+      })
+    }
+
+    if (data.ayurvedaTraditionalUsage) {
+      node.ayurvedaTraditionalUsage = data.ayurvedaTraditionalUsage as Record<string, string>
+    }
+
+    return node
   }
 
   private async loadWesternProfiles(): Promise<void> {
@@ -714,7 +1035,66 @@ export class GraphBuilder {
       return
     }
 
-    // Similar to TCM profiles...
+    const slugs = fs.readdirSync(westernDir).filter(name => {
+      const profilePath = path.join(westernDir, name, 'profile.jsonld')
+      return fs.existsSync(profilePath)
+    })
+
+    for (const slug of slugs) {
+      const profilePath = path.join(westernDir, slug, 'profile.jsonld')
+      try {
+        const data = JSON.parse(fs.readFileSync(profilePath, 'utf-8'))
+        const node = this.transformWesternProfile(data, slug)
+
+        if (node) {
+          this.registry.registerNode(node, NodeType.WESTERN_PROFILE)
+        }
+      } catch (error) {
+        this.addError('load', profilePath, `Failed to load Western profile: ${error}`)
+      }
+    }
+  }
+
+  private transformWesternProfile(data: Record<string, unknown>, slug: string): GraphNode | null {
+    const iri = generateIRI(NodeType.WESTERN_PROFILE, slug)
+    const node: GraphNode = {
+      '@context': 'https://www.herbapedia.org/schema/context/western.jsonld',
+      '@id': iri,
+      '@type': data['@type'] || ['herbapedia:WesternHerbProfile'],
+      slug,
+      name: (data.name as Record<string, string>) || {},
+    }
+
+    if (data.derivedFromPlant) {
+      const speciesSlug = this.extractSlugFromRef(data.derivedFromPlant)
+      if (speciesSlug) {
+        node.derivedFrom = { '@id': generateIRI(NodeType.SPECIES, speciesSlug) }
+      }
+    }
+
+    if (data.westernTraditionalUsage) {
+      node.westernTraditionalUsage = data.westernTraditionalUsage as Record<string, string>
+    }
+
+    if (data.westernHistory) {
+      node.westernHistory = data.westernHistory as Record<string, string>
+    }
+
+    if (data.hasAction) {
+      const refs = Array.isArray(data.hasAction) ? data.hasAction : [data.hasAction]
+      node.hasAction = refs.map((r: Record<string, string>) => ({
+        '@id': `https://www.herbapedia.org/vocab/western/action/${this.extractSlugFromRef(r)}`
+      }))
+    }
+
+    if (data.hasOrganAffinity) {
+      const refs = Array.isArray(data.hasOrganAffinity) ? data.hasOrganAffinity : [data.hasOrganAffinity]
+      node.hasOrganAffinity = refs.map((r: Record<string, string>) => ({
+        '@id': `https://www.herbapedia.org/vocab/western/organ/${this.extractSlugFromRef(r)}`
+      }))
+    }
+
+    return node
   }
 
   private async loadUnaniProfiles(): Promise<void> {
@@ -725,7 +1105,33 @@ export class GraphBuilder {
       return
     }
 
-    // Load Unani profiles...
+    // Check for herbs or profiles subdirectory
+    const herbsDir = path.join(unaniDir, 'herbs')
+    const profilesDir = path.join(unaniDir, 'profiles')
+
+    const dataDir = fs.existsSync(herbsDir) ? herbsDir : (fs.existsSync(profilesDir) ? profilesDir : null)
+    if (!dataDir) {
+      return
+    }
+
+    const slugs = fs.readdirSync(dataDir).filter(name => {
+      const profilePath = path.join(dataDir, name, 'profile.jsonld')
+      return fs.existsSync(profilePath)
+    })
+
+    for (const slug of slugs) {
+      const profilePath = path.join(dataDir, slug, 'profile.jsonld')
+      try {
+        const data = JSON.parse(fs.readFileSync(profilePath, 'utf-8'))
+        const node = this.transformGenericProfile(data, slug, NodeType.UNANI_PROFILE)
+
+        if (node) {
+          this.registry.registerNode(node, NodeType.UNANI_PROFILE)
+        }
+      } catch (error) {
+        this.addError('load', profilePath, `Failed to load Unani profile: ${error}`)
+      }
+    }
   }
 
   private async loadMongolianProfiles(): Promise<void> {
@@ -736,7 +1142,57 @@ export class GraphBuilder {
       return
     }
 
-    // Load Mongolian profiles...
+    // Check for herbs or profiles subdirectory
+    const herbsDir = path.join(mongolianDir, 'herbs')
+    const profilesDir = path.join(mongolianDir, 'profiles')
+
+    const dataDir = fs.existsSync(herbsDir) ? herbsDir : (fs.existsSync(profilesDir) ? profilesDir : null)
+    if (!dataDir) {
+      return
+    }
+
+    const slugs = fs.readdirSync(dataDir).filter(name => {
+      const profilePath = path.join(dataDir, name, 'profile.jsonld')
+      return fs.existsSync(profilePath)
+    })
+
+    for (const slug of slugs) {
+      const profilePath = path.join(dataDir, slug, 'profile.jsonld')
+      try {
+        const data = JSON.parse(fs.readFileSync(profilePath, 'utf-8'))
+        const node = this.transformGenericProfile(data, slug, NodeType.MONGOLIAN_PROFILE)
+
+        if (node) {
+          this.registry.registerNode(node, NodeType.MONGOLIAN_PROFILE)
+        }
+      } catch (error) {
+        this.addError('load', profilePath, `Failed to load Mongolian profile: ${error}`)
+      }
+    }
+  }
+
+  private transformGenericProfile(data: Record<string, unknown>, slug: string, nodeType: NodeTypeValue): GraphNode | null {
+    const iri = generateIRI(nodeType, slug)
+    const node: GraphNode = {
+      '@context': 'https://www.herbapedia.org/schema/context/core.jsonld',
+      '@id': iri,
+      '@type': data['@type'] || ['herbapedia:HerbProfile'],
+      slug,
+      name: (data.name as Record<string, string>) || {},
+    }
+
+    if (data.derivedFromPlant) {
+      const speciesSlug = this.extractSlugFromRef(data.derivedFromPlant)
+      if (speciesSlug) {
+        node.derivedFrom = { '@id': generateIRI(NodeType.SPECIES, speciesSlug) }
+      }
+    }
+
+    if (data.description) {
+      node.description = data.description as Record<string, string>
+    }
+
+    return node
   }
 
   // =========================================================================
