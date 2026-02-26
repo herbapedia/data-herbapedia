@@ -4,8 +4,7 @@
  * Tests the base class functionality for all graph nodes.
  */
 
-import { describe, it } from 'mocha'
-import { expect } from 'chai'
+import { describe, it, expect } from 'vitest'
 import { GraphNodeBase, lang, ref, refs } from '../../../src/graph/nodes/GraphNodeBase.js'
 import { NodeType } from '../../../src/graph/types.js'
 

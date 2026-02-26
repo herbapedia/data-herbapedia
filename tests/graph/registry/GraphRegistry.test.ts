@@ -5,7 +5,7 @@
  */
 
 import { describe, it, from 'mocha'
-import { expect } from 'chai'
+import { expect } from 'vitest'
 import { GraphRegistry } from '../../../src/graph/registry/GraphRegistry.js'
 import { NodeType } from '../../../src/graph/types.js'
 import { minimalTestGraph, from '../fixtures/testGraph.js'

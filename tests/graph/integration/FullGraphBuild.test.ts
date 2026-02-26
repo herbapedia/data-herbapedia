@@ -4,8 +4,8 @@
  * Tests the complete build process with real data from the data-herbapedia directory.
  */
 
-import { describe, it, before, after } from 'mocha'
-import { expect } from 'chai'
+import { describe, it, beforeAll, afterAll } from 'vitest'
+import { expect } from 'vitest'
 import { GraphBuilder } from '../../../src/graph/GraphBuilder.js'
 import { GraphQuery } from '../../../src/graph/api/GraphQuery.js'
 import { GraphTraversal } from '../../../src/graph/api/GraphTraversal.js'

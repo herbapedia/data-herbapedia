@@ -43,7 +43,9 @@
     "build-index": "node scripts/build-index.js",
     "build-graph": "node --import tsx scripts/build-graph.ts",
     "build": "npm run build-index && npm run build-graph",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "keywords": [
     "herbapedia",
@@ -76,6 +78,7 @@
     "jsonld": "^8.3.2",
     "tsx": "^4.7.0",
     "typescript": "^5.3.0",
+    "vitest": "^2.0.0",
     "yaml": "^2.8.2"
   },
   "engines": {

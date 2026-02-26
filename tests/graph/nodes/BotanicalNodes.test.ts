@@ -4,8 +4,8 @@
  * Tests SpeciesNode, PartNode, and ChemicalNode builders and classes.
  */
 
-import { describe, it } from 'mocha'
-import { expect } from 'chai'
+import { describe, it } from 'vitest'
+import { expect } from 'vitest'
 import {
   SpeciesNode,
   SpeciesNodeBuilder,

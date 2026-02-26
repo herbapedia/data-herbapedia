@@ -4,8 +4,8 @@
  * Tests the complete query workflow with various query patterns.
  */
 
-import { describe, it, beforeEach } from 'mocha'
-import { expect } from 'chai'
+import { describe, it, beforeEach } from 'vitest'
+import { expect } from 'vitest'
 import { GraphRegistry } from '../../../src/graph/registry/GraphRegistry.js'
 import { GraphQuery } from '../../../src/graph/api/GraphQuery.js'
 import { GraphTraversal } from '../../../src/graph/api/GraphTraversal.js'

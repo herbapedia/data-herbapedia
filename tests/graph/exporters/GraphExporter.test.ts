@@ -4,8 +4,8 @@
  * Tests JSON-LD and Turtle export functionality.
  */
 
-import { describe, it, beforeEach, afterEach } from 'mocha'
-import { expect } from 'chai'
+import { describe, it, beforeEach, afterEach } from 'vitest'
+import { expect } from 'vitest'
 import { GraphExporter, JsonLdExporter, TurtleExporter } from '../../../src/graph/exporters/GraphExporter.js'
 import { GraphRegistry } from '../../../src/graph/registry/GraphRegistry.js'
 import { NodeType } from '../../../src/graph/types.js'

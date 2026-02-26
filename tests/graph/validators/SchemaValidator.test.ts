@@ -4,8 +4,8 @@
  * Tests JSON Schema-based validation for graph nodes.
  */
 
-import { describe, it, beforeEach } from 'mocha'
-import { expect } from 'chai'
+import { describe, it, beforeEach } from 'vitest'
+import { expect } from 'vitest'
 import { SchemaValidator } from '../../../src/graph/validators/SchemaValidator.js'
 import { GraphRegistry } from '../../../src/graph/registry/GraphRegistry.js'
 import { NodeType } from '../../../src/graph/types.js'

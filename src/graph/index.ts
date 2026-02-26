@@ -105,8 +105,6 @@ export {
 export { BrowserExporter } from './exporters/BrowserExporter.js'
 
 // Knowledge-Centric API
-
-// Knowledge-Centric API
 export {
   GraphQuery,
   GraphTraversal,

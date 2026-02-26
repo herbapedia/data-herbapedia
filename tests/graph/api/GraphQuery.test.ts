@@ -4,8 +4,8 @@
  * Tests the query functionality for the knowledge graph.
  */
 
-import { describe, it } from 'mocha'
-import { expect } from 'chai'
+import { describe, it } from 'vitest'
+import { expect } from 'vitest'
 import { GraphRegistry } from '../../../src/graph/registry/GraphRegistry.js'
 import { GraphQuery } from '../../../src/graph/api/GraphQuery.js'
 import { NodeType } from '../../../src/graph/types.js'

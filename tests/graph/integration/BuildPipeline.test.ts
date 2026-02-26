@@ -4,8 +4,8 @@
  * Tests the complete build process from loading to export.
  */
 
-import { describe, it } from 'mocha'
-import { expect } from 'chai'
+import { describe, it } from 'vitest'
+import { expect } from 'vitest'
 import { GraphBuilder } from '../../../src/graph/GraphBuilder.js'
 import { GraphQuery } from '../../../src/graph/api/GraphQuery.js'
 import { GraphIndex } from '../../../src/graph/api/GraphIndex.js'

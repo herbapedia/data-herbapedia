@@ -4,8 +4,8 @@
  * Tests TcmProfileNode, AyurvedaProfileNode, WesternProfileNode, and VocabularyNode.
  */
 
-import { describe, it } from 'mocha'
-import { expect } from 'chai'
+import { describe, it } from 'vitest'
+import { expect } from 'vitest'
 import {
   TcmProfileNode,
   TcmProfileNodeBuilder,
