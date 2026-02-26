@@ -38,12 +38,15 @@ describe('SpeciesNode', () => {
       }).to.throw('slug is required')
     })
 
-    it('should throw error when scientificName is missing', () => {
-      expect(() => {
-        SpeciesNode.builder()
-          .slug('panax-ginseng')
-          .build()
-      }).to.throw('Scientific name is required')
+    it('should allow empty scientificName for synthetic sources', () => {
+      // scientificName is optional for synthetic/non-botanical sources
+      const node = SpeciesNode.builder()
+        .slug('synthetic-compound')
+        .name({ en: 'Synthetic Compound' })
+        .build()
+
+      expect(node.slug).to.equal('synthetic-compound')
+      expect(node.scientificName).to.equal('')
     })
 
     it('should build with optional fields', () => {
