@@ -1,7 +1,7 @@
 {
   "name": "@herbapedia/data",
-  "version": "0.3.0",
-  "description": "JSON-LD knowledge base for medicinal botany - the authoritative Herbapedia data repository with TypeScript query API",
+  "version": "1.0.0",
+  "description": "JSON-LD Knowledge Graph for medicinal botany - the authoritative Herbapedia data repository with TypeScript API",
   "type": "module",
   "main": "./src/index.ts",
   "types": "./src/index.ts",
@@ -22,10 +22,6 @@
       "types": "./types/*.ts",
       "default": "./types/*.ts"
     },
-    "./dataset": {
-      "types": "./src/dataset.ts",
-      "default": "./src/dataset.ts"
-    },
     "./api/v1/graph/*": "./api/v1/graph/*.jsonld",
     "./api/v1/node/*": "./api/v1/node/*/*.jsonld",
     "./schema/context/*": "./schema/context/*.jsonld",
@@ -40,7 +36,6 @@
     "entities",
     "systems",
     "media",
-    "dist",
     "api/v1"
   ],
   "scripts": {
