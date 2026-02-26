@@ -102,6 +102,10 @@ export {
   TurtleExporter,
 } from './exporters/GraphExporter.js'
 
+export { BrowserExporter } from './exporters/BrowserExporter.js'
+
+// Knowledge-Centric API
+
 // Knowledge-Centric API
 export {
   GraphQuery,

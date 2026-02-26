@@ -287,8 +287,6 @@ export type {
 
 export {
   isModernMedicineProfile,
-  isMineralSource,
-  isChemicalSource,
 } from './modern'
 
 // ============================================================================
