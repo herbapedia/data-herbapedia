@@ -158,10 +158,6 @@ export class TcmProfileNode extends GraphNodeBase {
     this.source = data.source
     this.sameAs = data.sameAs
   }
-
-  static builder(): TcmProfileNodeBuilder {
-    return new TcmProfileNodeBuilder()
-  }
 }
 
 // ============================================================================

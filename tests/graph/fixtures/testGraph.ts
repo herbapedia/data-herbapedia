@@ -35,12 +35,14 @@ export const sampleSpeciesNode: GraphNode = {
 }
 
 // Sample TCM Profile Node
+// Note: For testing, derivedFrom references the species directly
+// In production, it would reference a part like 'panax-ginseng#root'
 export const sampleTcmProfileNode: GraphNode = {
   '@context': 'https://www.herbapedia.org/schema/context/tcm.jsonld',
   '@id': 'https://www.herbapedia.org/graph/profile/tcm/ren-shen',
   '@type': ['https://www.herbapedia.org/ontology/TcmHerb'],
   'slug': 'ren-shen',
-  'derivedFrom': { '@id': 'https://www.herbapedia.org/graph/species/panax-ginseng#root' },
+  'derivedFrom': { '@id': 'https://www.herbapedia.org/graph/species/panax-ginseng' },
   'name': {
     'en': 'Ginseng Root',
     'zh-Hant': '人蔘',

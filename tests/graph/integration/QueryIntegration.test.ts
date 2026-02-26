@@ -30,7 +30,7 @@ describe('Query Integration', () => {
     traversal = new GraphTraversal(registry)
     index = new GraphIndex(registry)
 
-    // Register test nodes
+    // Register test nodes and their references
     for (const node of minimalTestGraph) {
       const iri = node['@id']
       if (iri.includes('/species/')) {
@@ -40,12 +40,13 @@ describe('Query Integration', () => {
       } else if (iri.includes('/vocab/tcm/flavor/')) {
         registry.registerNode(node, NodeType.TCM_FLAVOR)
       }
+      // Register references for traversal to work
+      registry.registerReferences(node)
     }
   })
 
   describe('Query-Traversal Integration', () => {
-    it.skip('should query species and traverse to profiles', () => {
-      // TODO: Fix test - getIncomingReferences method may not exist or has different API
+    it('should query species and traverse to profiles', () => {
       // Query for species
       const species = query.getSpecies('panax-ginseng')
 
@@ -126,8 +127,7 @@ describe('Query Integration', () => {
   })
 
   describe('Traversal-Index Integration', () => {
-    it.skip('should get related nodes and index them', () => {
-      // TODO: Fix test - getRelatedNodes method may not exist or has different API
+    it('should get related nodes and index them', () => {
       const species = query.getSpecies('panax-ginseng')
 
       if (species) {
