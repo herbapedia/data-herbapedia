@@ -105,6 +105,10 @@ export class TcmProfileNode extends GraphNodeBase {
   readonly source?: string
   readonly sameAs?: IRIReference[]
 
+  static builder(): TcmProfileNodeBuilder {
+    return new TcmProfileNodeBuilder()
+  }
+
   constructor(data: {
     slug: string
     name: LanguageMap
