@@ -10,9 +10,9 @@
       "types": "./src/index.ts",
       "default": "./src/index.ts"
     },
-    "./graph": {
-      "types": "./src/graph/index.ts",
-      "default": "./src/graph/index.ts"
+    "./graph-browser": {
+      "types": "./src/graph/browser/index.ts",
+      "default": "./src/graph/browser/index.ts"
     },
     "./types": {
       "types": "./types/index.ts",

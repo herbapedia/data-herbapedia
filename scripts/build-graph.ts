@@ -270,6 +270,7 @@ async function main(): Promise<void> {
   try {
     // Import the graph module
     const { GraphBuilder, JsonLdExporter, TurtleExporter } = await import('../src/graph/index.js')
+    const { BrowserExporter } = await import('../src/graph/exporters/BrowserExporter.js')
 
     // Build the graph
     console.log('🔨 Building knowledge graph...')
@@ -307,6 +308,11 @@ async function main(): Promise<void> {
       const exporter = new TurtleExporter(registry, options.outputDir)
       await exporter.export({ pretty: true })
     }
+
+    // Export browser-compatible artifacts
+    console.log('\n📦 Exporting browser artifacts...')
+    const browserExporter = new BrowserExporter(registry, options.outputDir)
+    await browserExporter.export()
 
     // Print summary
     console.log('\n╔════════════════════════════════════════════════════════════╗')

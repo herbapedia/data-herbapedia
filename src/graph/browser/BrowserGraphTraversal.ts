@@ -111,7 +111,7 @@ export class BrowserGraphTraversal {
     if (!response.ok) {
       throw new Error(`Failed to load relationships from ${url}: ${response.statusText}`)
     }
-    const data: BrowserRelationshipsData = await response.json()
+    const data = await response.json() as BrowserRelationshipsData
     this.loadRelationships(data)
   }
 

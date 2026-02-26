@@ -85,7 +85,7 @@ export class BrowserGraphRegistry {
     if (!response.ok) {
       throw new Error(`Failed to load registry from ${url}: ${response.statusText}`)
     }
-    const data: BrowserRegistryData = await response.json()
+    const data = await response.json() as BrowserRegistryData
     this.loadData(data)
   }
 

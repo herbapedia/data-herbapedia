@@ -142,8 +142,8 @@ export class BrowserExporter extends GraphExporter {
       // Extract all references from this node
       const refs = this.extractAllReferences(node)
 
-      // Forward references
-      relationships.forward[sourceIRI] = refs
+      // Forward references (just the target IRIs)
+      relationships.forward[sourceIRI] = refs.map(r => r.targetIRI)
 
       // Build backward references and relationship index
       for (const { targetIRI, relationship } of refs) {
@@ -219,7 +219,7 @@ export class BrowserExporter extends GraphExporter {
     const searchIndexData: BrowserSearchIndex = {
       version: process.env.npm_package_version || '1.0.0',
       index: serializedIndex,
-      pipeline: JSON.stringify(lunr.PluginLoader), // Pipeline serialization
+      pipeline: '', // Pipeline is embedded in the serialized index
     }
 
     this.writeJsonFile(

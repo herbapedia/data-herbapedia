@@ -316,7 +316,39 @@ export class GraphBuilder {
 
     const slugs = fs.readdirSync(speciesDir).filter(name => {
       const entityPath = path.join(speciesDir, name, 'entity.jsonld')
-      return fs.existsSync(entityPath)
+      if (!fs.existsSync(entityPath)) {
+        return false
+      }
+
+      // Filter by @type: only load actual species, not chemicals
+      try {
+        const data = JSON.parse(fs.readFileSync(entityPath, 'utf-8'))
+        const types = Array.isArray(data['@type']) ? data['@type'] : [data['@type']]
+
+        // Check if this is a Species node (not Chemical, Source, etc.)
+        const isSpecies = types.some(t =>
+          t === 'herbapedia:Species' ||
+          t === 'Species' ||
+          t.includes('Species') ||
+          t === 'schema:Taxon' ||
+          t === 'dwc:Taxon'
+        )
+
+        // Skip if it is a Chemical or other non-species type
+        const isNonSpecies = types.some(t =>
+          t === 'herbapedia:Chemical' ||
+          t === 'Chemical' ||
+          t.includes('Chemical') ||
+          t === 'herbapedia:Source' ||
+          t === 'Source' ||
+          t.includes('Source')
+        )
+
+        return isSpecies && !isNonSpecies
+      } catch {
+        // If we can't parse, skip it
+        return false
+      }
     })
 
     for (const slug of slugs) {
